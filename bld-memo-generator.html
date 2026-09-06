@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLD Memo Letter Generator</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --panel: #171a23;
+    --accent: #ff8a3d;
+    --accent2: #4dd0e1;
+    --text: #eef0f4;
+    --muted: #8a8fa3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(circle at top, #1c2030 0%, #0f1117 60%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px 60px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+  }
+  p.subtitle {
+    color: var(--muted);
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    background: var(--panel);
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .field label {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .field input {
+    width: 70px;
+    padding: 7px 8px;
+    border-radius: 6px;
+    border: 1px solid #2b3040;
+    background: #10131c;
+    color: var(--text);
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  button#generateBtn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent), #ff6f3d);
+    color: #17130c;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 3px 10px rgba(255,138,61,0.35);
+  }
+  button#generateBtn:hover { transform: translateY(-1px); box-shadow: 0 5px 16px rgba(255,138,61,0.5); }
+  button#generateBtn:active { transform: translateY(0px); }
+
+  .groups {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+  }
+  .group {
+    background: var(--panel);
+    border-radius: 14px;
+    padding: 20px 22px;
+    flex: 1 1 340px;
+    min-width: 280px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+  }
+  .group h2 {
+    margin: 0 0 14px 0;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .group.corners h2 { color: var(--accent); }
+  .group.edges h2 { color: var(--accent2); }
+  .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    display: inline-block;
+  }
+  .group.corners .dot { background: var(--accent); }
+  .group.edges .dot { background: var(--accent2); }
+
+  .pairs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .pair {
+    background: #10131c;
+    border: 1px solid #262b3a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    min-width: 54px;
+    text-align: center;
+  }
+  .group.corners .pair { border-color: rgba(255,138,61,0.35); }
+  .group.edges .pair { border-color: rgba(77,208,225,0.35); }
+
+  .buffer-note {
+    margin-top: 14px;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 36px;
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>🧩 BLD Memo Letter Generator</h1>
+<p class="subtitle">Speffz-style letter pairs for practicing 3x3 blindfolded memorization</p>
+
+<div class="controls">
+  <div class="field">
+    <label for="pairCount">Pairs each</label>
+    <input type="number" id="pairCount" min="1" max="11" value="6">
+  </div>
+  <div class="field">
+    <label for="cornerBuffer">Corner buffer</label>
+    <input type="text" id="cornerBuffer" maxlength="1" value="A">
+  </div>
+  <div class="field">
+    <label for="edgeBuffer">Edge buffer</label>
+    <input type="text" id="edgeBuffer" maxlength="1" value="A">
+  </div>
+  <button id="generateBtn">🔀 Generate New Set</button>
+</div>
+
+<div class="groups">
+    <div class="group edges">
+    <h2><span class="dot"></span>Edges</h2>
+    <div class="pairs" id="edgePairs"></div>
+    <div class="buffer-note">Buffer letter excluded from the pool.</div>
+  </div>
+  <div class="group corners">
+    <h2><span class="dot"></span>Corners</h2>
+    <div class="pairs" id="cornerPairs"></div>
+    <div class="buffer-note">Buffer letter excluded from the pool.</div>
+  </div>
+
+</div>
+
+<footer>Letters follow the Speffz scheme (A–X, 24 positions per piece type). Set your buffer letters to match your own lettering setup.</footer>
+
+<script>
+  const ALL_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWX".split("");
+
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function makePairs(bufferLetter, count) {
+    const buffer = (bufferLetter || "").toUpperCase();
+    let pool = ALL_LETTERS.filter(l => l !== buffer);
+    pool = shuffle(pool);
+
+    const pairs = [];
+    let i = 0;
+    while (pairs.length < count && i + 1 < pool.length) {
+      let a = pool[i];
+      let b = pool[i + 1];
+      // avoid a pair being the same letter twice (shouldn't happen since pool has unique letters, but just in case)
+      if (a === b && i + 2 < pool.length) {
+        b = pool[i + 2];
+        pool[i + 2] = pool[i + 1];
+      }
+      pairs.push(a + b);
+      i += 2;
+    }
+    return pairs;
+  }
+
+  function render(pairs, containerId) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
+    pairs.forEach(p => {
+      const div = document.createElement("div");
+      div.className = "pair";
+      div.textContent = p;
+      container.appendChild(div);
+    });
+  }
+
+  function generate() {
+    const count = Math.min(11, Math.max(1, parseInt(document.getElementById("pairCount").value) || 6));
+    const cornerBuffer = document.getElementById("cornerBuffer").value || "A";
+    const edgeBuffer = document.getElementById("edgeBuffer").value || "A";
+
+    const cornerPairs = makePairs(cornerBuffer, count);
+    const edgePairs = makePairs(edgeBuffer, count);
+
+    render(cornerPairs, "cornerPairs");
+    render(edgePairs, "edgePairs");
+  }
+
+  document.getElementById("generateBtn").addEventListener("click", generate);
+
+  // generate an initial set on load
+  generate();
+</script>
+
+</body>
+</html>
