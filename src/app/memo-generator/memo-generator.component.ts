@@ -12,7 +12,7 @@ import { WORD_DICTIONARY } from '../shared/word-dictionary';
   styleUrls: ['./memo-generator.component.css']
 })
 export class MemoGeneratorComponent implements OnInit {
-  showWords = false;
+  showWords = true;
 
   constructor(public memoService: MemoService) {}
 
@@ -23,7 +23,7 @@ export class MemoGeneratorComponent implements OnInit {
   }
 
   generate() {
-    this.showWords = false;
+    this.showWords = true;
     this.memoService.generate();
   }
 

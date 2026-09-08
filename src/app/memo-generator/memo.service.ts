@@ -15,6 +15,39 @@ export class MemoService {
 
   readonly ALL_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWX".split("");
 
+  constructor() {
+    this.loadState();
+  }
+
+  private loadState() {
+    const saved = localStorage.getItem('bld-memo-state');
+    if (saved) {
+      try {
+        const state = JSON.parse(saved);
+        this.pairCount = state.pairCount || 6;
+        this.cornerBuffer = state.cornerBuffer || 'A';
+        this.edgeBuffer = state.edgeBuffer || 'A';
+        this.cornerPairs = state.cornerPairs || [];
+        this.edgePairs = state.edgePairs || [];
+        this.hasGenerated = state.hasGenerated || false;
+      } catch (e) {
+        console.error('Failed to parse memo state from local storage', e);
+      }
+    }
+  }
+
+  private saveState() {
+    const state = {
+      pairCount: this.pairCount,
+      cornerBuffer: this.cornerBuffer,
+      edgeBuffer: this.edgeBuffer,
+      cornerPairs: this.cornerPairs,
+      edgePairs: this.edgePairs,
+      hasGenerated: this.hasGenerated
+    };
+    localStorage.setItem('bld-memo-state', JSON.stringify(state));
+  }
+
   shuffle(arr: string[]): string[] {
     const a = arr.slice();
     for (let i = a.length - 1; i > 0; i--) {
@@ -52,5 +85,8 @@ export class MemoService {
     this.cornerPairs = this.makePairs(cornerBuffer, count);
     this.edgePairs = this.makePairs(edgeBuffer, count);
     this.hasGenerated = true;
+    
+    // Save to local storage after generating
+    this.saveState();
   }
 }
