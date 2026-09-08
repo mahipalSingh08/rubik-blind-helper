@@ -1,0 +1,87 @@
+<div class="memo-container">
+  <h1>🎲 True Scramble Practice</h1>
+  <p class="subtitle">Generate a valid 3x3 scramble and compute its exact blindfolded solution</p>
+
+  <div class="scramble-box">
+    <h2>Scramble</h2>
+    <div class="scramble-text">{{ scramble }}</div>
+    <button id="generateBtn" (click)="generate()">🔄 Generate New Scramble</button>
+  </div>
+  
+  <div class="cube-visualizer-container">
+    <div class="unfolded-cube">
+      <!-- U Face -->
+      <div class="face-spacer"></div>
+      <div class="cube-face">
+        <div class="sticker" *ngFor="let color of faces['U']" [style.background-color]="color"></div>
+      </div>
+      <div class="face-spacer"></div>
+      <div class="face-spacer"></div>
+      
+      <!-- Middle Row: L, F, R, B -->
+      <div class="cube-face">
+        <div class="sticker" *ngFor="let color of faces['L']" [style.background-color]="color"></div>
+      </div>
+      <div class="cube-face">
+        <div class="sticker" *ngFor="let color of faces['F']" [style.background-color]="color"></div>
+      </div>
+      <div class="cube-face">
+        <div class="sticker" *ngFor="let color of faces['R']" [style.background-color]="color"></div>
+      </div>
+      <div class="cube-face">
+        <div class="sticker" *ngFor="let color of faces['B']" [style.background-color]="color"></div>
+      </div>
+      
+      <!-- D Face -->
+      <div class="face-spacer"></div>
+      <div class="cube-face">
+        <div class="sticker" *ngFor="let color of faces['D']" [style.background-color]="color"></div>
+      </div>
+      <div class="face-spacer"></div>
+      <div class="face-spacer"></div>
+    </div>
+  </div>
+
+  <div class="parity-alert" *ngIf="parity">
+    ⚠️ <strong>Parity!</strong> There are an odd number of targets. Don't forget your parity algorithm!
+  </div>
+
+  <div class="groups">
+    <div class="group edges">
+      <h2><span class="dot"></span>Edges Solution</h2>
+      <div class="pairs">
+        <div class="pair" *ngFor="let p of edgePairs">{{ p }}</div>
+      </div>
+      <div class="buffer-note">Buffer: {{ memoService.edgeBuffer | uppercase }}</div>
+    </div>
+    
+    <div class="group corners">
+      <h2><span class="dot"></span>Corners Solution</h2>
+      <div class="pairs">
+        <div class="pair" *ngFor="let p of cornerPairs">{{ p }}</div>
+      </div>
+      <div class="buffer-note">Buffer: {{ memoService.cornerBuffer | uppercase }}</div>
+    </div>
+  </div>
+
+  <div class="words-section">
+    <button class="toggle-btn" (click)="toggleWords()">
+      {{ showWords ? '🙈 Hide Words' : '👀 Show Words' }}
+    </button>
+    
+    <div class="words-list" *ngIf="showWords">
+      <div class="word-group">
+        <h3 class="edges-color">Edges Words</h3>
+        <div class="word-item" *ngFor="let p of edgePairs">
+          <span class="pair-tag">{{ p }}</span> <span class="word-name">{{ getWord(p) }}</span>
+        </div>
+      </div>
+      <div class="word-group">
+        <h3 class="corners-color">Corners Words</h3>
+        <div class="word-item" *ngFor="let p of cornerPairs">
+          <span class="pair-tag">{{ p }}</span> <span class="word-name">{{ getWord(p) }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

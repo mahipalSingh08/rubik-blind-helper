@@ -1,0 +1,48 @@
+<div class="memo-container">
+  <h1>🧠 Multi-Blind Generator</h1>
+  <p class="subtitle">Generate letter pairs for multiple cubes at once</p>
+
+  <div class="controls">
+    <div class="field">
+      <label for="cubeCount">Cubes</label>
+      <input type="number" id="cubeCount" min="2" max="20" [(ngModel)]="memoService.multiCubeCount">
+    </div>
+    <div class="field">
+      <label for="multiPairsEach">Pairs each</label>
+      <input type="number" id="multiPairsEach" min="1" max="11" [(ngModel)]="memoService.multiPairsEach">
+    </div>
+    <div class="field">
+      <label for="cornerBuffer">Corner buffer</label>
+      <input type="text" id="cornerBuffer" maxlength="1" [(ngModel)]="memoService.cornerBuffer">
+    </div>
+    <div class="field">
+      <label for="edgeBuffer">Edge buffer</label>
+      <input type="text" id="edgeBuffer" maxlength="1" [(ngModel)]="memoService.edgeBuffer">
+    </div>
+    <button id="generateBtn" (click)="generate()">🔀 Generate Multi-Set</button>
+  </div>
+
+  <div class="multi-cubes-list">
+    <div class="cube-card" *ngFor="let cube of memoService.multiCubes; let i = index">
+      <h2>Cube {{ i + 1 }}</h2>
+      
+      <div class="groups">
+        <div class="group edges">
+          <h3><span class="dot"></span>Edges</h3>
+          <div class="pairs">
+            <div class="pair" *ngFor="let p of cube.edgePairs">{{ p }}</div>
+          </div>
+        </div>
+        
+        <div class="group corners">
+          <h3><span class="dot"></span>Corners</h3>
+          <div class="pairs">
+            <div class="pair" *ngFor="let p of cube.cornerPairs">{{ p }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Buffers are shared with the single-blind Memo Generator.</footer>
+</div>

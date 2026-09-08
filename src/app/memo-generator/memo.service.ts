@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
 
+export interface CubePairs {
+  cornerPairs: string[];
+  edgePairs: string[];
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,6 +17,12 @@ export class MemoService {
   edgePairs: string[] = [];
   
   hasGenerated: boolean = false;
+
+  // Multi-Blind state
+  multiCubeCount: number = 2;
+  multiPairsEach: number = 6;
+  multiCubes: CubePairs[] = [];
+  hasGeneratedMulti: boolean = false;
 
   readonly ALL_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWX".split("");
 
@@ -30,6 +41,11 @@ export class MemoService {
         this.cornerPairs = state.cornerPairs || [];
         this.edgePairs = state.edgePairs || [];
         this.hasGenerated = state.hasGenerated || false;
+        
+        this.multiCubeCount = state.multiCubeCount || 2;
+        this.multiPairsEach = state.multiPairsEach || 6;
+        this.multiCubes = state.multiCubes || [];
+        this.hasGeneratedMulti = state.hasGeneratedMulti || false;
       } catch (e) {
         console.error('Failed to parse memo state from local storage', e);
       }
@@ -43,7 +59,11 @@ export class MemoService {
       edgeBuffer: this.edgeBuffer,
       cornerPairs: this.cornerPairs,
       edgePairs: this.edgePairs,
-      hasGenerated: this.hasGenerated
+      hasGenerated: this.hasGenerated,
+      multiCubeCount: this.multiCubeCount,
+      multiPairsEach: this.multiPairsEach,
+      multiCubes: this.multiCubes,
+      hasGeneratedMulti: this.hasGeneratedMulti
     };
     localStorage.setItem('bld-memo-state', JSON.stringify(state));
   }
@@ -87,6 +107,23 @@ export class MemoService {
     this.hasGenerated = true;
     
     // Save to local storage after generating
+    this.saveState();
+  }
+
+  generateMulti() {
+    const count = Math.min(11, Math.max(1, this.multiPairsEach || 6));
+    const cubes = Math.min(20, Math.max(2, this.multiCubeCount || 2));
+    const cornerBuffer = this.cornerBuffer || "A";
+    const edgeBuffer = this.edgeBuffer || "A";
+
+    this.multiCubes = [];
+    for (let i = 0; i < cubes; i++) {
+      this.multiCubes.push({
+        cornerPairs: this.makePairs(cornerBuffer, count),
+        edgePairs: this.makePairs(edgeBuffer, count)
+      });
+    }
+    this.hasGeneratedMulti = true;
     this.saveState();
   }
 }

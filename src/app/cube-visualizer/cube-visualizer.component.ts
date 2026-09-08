@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,16 +9,50 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./cube-visualizer.component.css']
 })
 export class CubeVisualizerComponent {
-  // Letters A-X for the 6 faces.
-  // Standard Speffz order: U, L, F, R, B, D
-  // U = A B C D (Top, Right, Bottom, Left edges/corners)
+  is3D: boolean = false;
   
-  faces = [
-    { name: 'U', class: 'face-u', letters: ['A','B','C','D'], color: '#ffffff' },
-    { name: 'L', class: 'face-l', letters: ['E','F','G','H'], color: '#ff9800' },
-    { name: 'F', class: 'face-f', letters: ['I','J','K','L'], color: '#4caf50' },
-    { name: 'R', class: 'face-r', letters: ['M','N','O','P'], color: '#f44336' },
-    { name: 'B', class: 'face-b', letters: ['Q','R','S','T'], color: '#2196f3' },
-    { name: 'D', class: 'face-d', letters: ['U','V','W','X'], color: '#ffeb3b' }
-  ];
+  isDragging: boolean = false;
+  previousMousePosition: { x: number, y: number } = { x: 0, y: 0 };
+  rotateX: number = -30;
+  rotateY: number = -45;
+
+  onMouseDown(event: MouseEvent | TouchEvent) {
+    if (!this.is3D) return;
+    this.isDragging = true;
+    if (event instanceof MouseEvent) {
+      this.previousMousePosition = { x: event.clientX, y: event.clientY };
+    } else {
+      this.previousMousePosition = { x: event.touches[0].clientX, y: event.touches[0].clientY };
+    }
+  }
+
+  @HostListener('window:mousemove', ['$event'])
+  @HostListener('window:touchmove', ['$event'])
+  onMouseMove(event: MouseEvent | TouchEvent) {
+    if (!this.isDragging || !this.is3D) return;
+    event.preventDefault(); // Prevent scrolling while dragging cube
+    
+    let currentX, currentY;
+    if (event instanceof MouseEvent) {
+      currentX = event.clientX; 
+      currentY = event.clientY;
+    } else {
+      currentX = event.touches[0].clientX; 
+      currentY = event.touches[0].clientY;
+    }
+    
+    const deltaX = currentX - this.previousMousePosition.x;
+    const deltaY = currentY - this.previousMousePosition.y;
+    
+    this.rotateY += deltaX * 0.5;
+    this.rotateX -= deltaY * 0.5;
+    
+    this.previousMousePosition = { x: currentX, y: currentY };
+  }
+
+  @HostListener('window:mouseup')
+  @HostListener('window:touchend')
+  onMouseUp() {
+    this.isDragging = false;
+  }
 }

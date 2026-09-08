@@ -1,11 +1,16 @@
 <div class="tab-container">
-  <h1>🧊 2D Cube Speffz Visualizer</h1>
-  <p class="subtitle">Standard lettering scheme (U-L-F-R-B-D)</p>
+  <div class="header-section">
+    <div>
+      <h1>🧊 Speffz Visualizer</h1>
+      <p class="subtitle">Standard lettering scheme (U-L-F-R-B-D)</p>
+    </div>
+    <button class="toggle-btn" (click)="is3D = !is3D">
+      Switch to {{ is3D ? '2D Map' : 'Interactive 3D' }}
+    </button>
+  </div>
 
-  <div class="cube-grid">
-    <!-- Empty top left -->
+  <div class="cube-grid" *ngIf="!is3D">
     <div class="empty"></div>
-    <!-- U Face -->
     <div class="face-wrapper">
       <div class="face-title">U (Up)</div>
       <div class="face u-face">
@@ -14,10 +19,8 @@
         <div class="sticker bl corner">D</div><div class="sticker b edge">C</div><div class="sticker br corner">C</div>
       </div>
     </div>
-    <!-- Empty top right x2 -->
     <div class="empty"></div><div class="empty"></div>
 
-    <!-- Middle row: L, F, R, B -->
     <div class="face-wrapper">
       <div class="face-title">L (Left)</div>
       <div class="face l-face">
@@ -51,7 +54,6 @@
       </div>
     </div>
 
-    <!-- Bottom row: D -->
     <div class="empty"></div>
     <div class="face-wrapper">
       <div class="face-title">D (Down)</div>
@@ -62,5 +64,50 @@
       </div>
     </div>
     <div class="empty"></div><div class="empty"></div>
+  </div>
+  
+  <div class="scene-container" *ngIf="is3D">
+    <p class="drag-hint">🖱️ Click and drag to rotate the cube</p>
+    <div class="scene" (mousedown)="onMouseDown($event)" (touchstart)="onMouseDown($event)">
+      <div class="cube" [style.transform]="'translateZ(-150px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)'">
+        
+        <div class="cube__face cube__face--front f-face">
+          <div class="sticker tl corner">I</div><div class="sticker t edge">I</div><div class="sticker tr corner">J</div>
+          <div class="sticker l edge">L</div><div class="sticker c center">F</div><div class="sticker r edge">J</div>
+          <div class="sticker bl corner">L</div><div class="sticker b edge">K</div><div class="sticker br corner">K</div>
+        </div>
+        
+        <div class="cube__face cube__face--right r-face">
+          <div class="sticker tl corner">M</div><div class="sticker t edge">M</div><div class="sticker tr corner">N</div>
+          <div class="sticker l edge">P</div><div class="sticker c center">R</div><div class="sticker r edge">N</div>
+          <div class="sticker bl corner">P</div><div class="sticker b edge">O</div><div class="sticker br corner">O</div>
+        </div>
+        
+        <div class="cube__face cube__face--back b-face">
+          <div class="sticker tl corner">Q</div><div class="sticker t edge">Q</div><div class="sticker tr corner">R</div>
+          <div class="sticker l edge">T</div><div class="sticker c center">B</div><div class="sticker r edge">R</div>
+          <div class="sticker bl corner">T</div><div class="sticker b edge">S</div><div class="sticker br corner">S</div>
+        </div>
+        
+        <div class="cube__face cube__face--left l-face">
+          <div class="sticker tl corner">E</div><div class="sticker t edge">E</div><div class="sticker tr corner">F</div>
+          <div class="sticker l edge">H</div><div class="sticker c center">L</div><div class="sticker r edge">F</div>
+          <div class="sticker bl corner">H</div><div class="sticker b edge">G</div><div class="sticker br corner">G</div>
+        </div>
+        
+        <div class="cube__face cube__face--top u-face">
+          <div class="sticker tl corner">A</div><div class="sticker t edge">A</div><div class="sticker tr corner">B</div>
+          <div class="sticker l edge">D</div><div class="sticker c center">U</div><div class="sticker r edge">B</div>
+          <div class="sticker bl corner">D</div><div class="sticker b edge">C</div><div class="sticker br corner">C</div>
+        </div>
+        
+        <div class="cube__face cube__face--bottom d-face">
+          <div class="sticker tl corner">U</div><div class="sticker t edge">U</div><div class="sticker tr corner">V</div>
+          <div class="sticker l edge">X</div><div class="sticker c center">D</div><div class="sticker r edge">V</div>
+          <div class="sticker bl corner">X</div><div class="sticker b edge">W</div><div class="sticker br corner">W</div>
+        </div>
+        
+      </div>
+    </div>
   </div>
 </div>
