@@ -1,0 +1,32 @@
+<div class="tab-container">
+  <h1>🧠 Memo Helper</h1>
+  <p class="subtitle">Flashcards to train your letter-to-sticker recognition</p>
+
+  <div class="mode-toggle">
+    <button [class.active]="mode === 'corners'" (click)="setMode('corners')">Corners</button>
+    <button [class.active]="mode === 'edges'" (click)="setMode('edges')">Edges</button>
+  </div>
+
+  <div class="flashcard-container" (click)="flipCard()">
+    <div class="flashcard" [class.flipped]="flashcardFlipped">
+      <div class="front">
+        <span class="label">Letter</span>
+        <div class="big-text">{{ currentLetter }}</div>
+        <div class="hint">Tap to flip</div>
+      </div>
+      <div class="back">
+        <span class="label">Position</span>
+        <div class="big-text pos">{{ currentPosition }}</div>
+        <div class="hint">Tap to flip back</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="next-btn" (click)="nextCard()">Next Card ➔</button>
+
+  <div class="palace-sandbox">
+    <h2>Memory Palace Sandbox</h2>
+    <p>Type your rooms and the words you place in them to practice building a story.</p>
+    <textarea placeholder="e.g. Living room: TV has [AA batteries] and an [X-Wing] resting on it..."></textarea>
+  </div>
+</div>

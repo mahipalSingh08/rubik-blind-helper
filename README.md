@@ -1,27 +1,50 @@
-# BldTools
+# 🧩 BLD Tools: 3x3 Blindfolded Helper App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+A modern, sleek Angular application designed to help speedcubers learn, practice, and master 3x3 Rubik's Cube blindfolded (BLD) solving. Whether you're just starting to learn Old Pochmann or you're drilling your M2 letter pairs, this app has tools to accelerate your progress.
 
-## Development server
+## ✨ Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **📖 Word Dictionary (576 Pairs)**: A massive, searchable reference list mapping every single 2-letter Speffz combination to a concrete noun or image. Essential for building your memory sequences.
+- **🔀 Memo Generator**: Simulates the memorization phase of a solve. Generates random letter pairs for both corners and edges based on your custom buffer pieces. Includes a "Show Words" toggle to help you practice linking your generated pairs.
+- **🧠 Memo Helper**: An interactive digital flashcard system that tests your instant recognition of letter-to-sticker mappings (e.g., UBL = A), complete with a text sandbox for typing out your Memory Palace stories.
+- **🧊 2D Cube Visualizer**: An unfolded CSS grid visualization mapping the standard A-X Speffz lettering scheme across all six faces of the cube.
+- **🔄 Setup Moves Reference**: A fast, scannable cheat sheet for common corner (OP) and edge (M2) setup moves, including target stickers, setup execution, and undo moves.
+- **📚 Methods Guide**: Core explanations, logic, and algorithms for the Old Pochmann (Corners) and M2 (Edges) methods, including parity fixes.
 
-## Code scaffolding
+## 🚀 Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-## Build
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <your-github-repo-url>
+   cd bld-tools
+   ```
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Running the App
+Start the Angular development server:
+```bash
+npm run start
+```
+Navigate to `http://localhost:4200/` in your browser. The application will automatically reload if you change any of the source files.
 
-## Running unit tests
+### Building for Production
+To build the project for production deployment (like GitHub Pages or Vercel):
+```bash
+npm run build
+```
+The build artifacts will be stored in the `dist/` directory.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠️ Tech Stack
+- **Framework**: Angular v18
+- **Styling**: Vanilla CSS (CSS Variables, Flexbox, CSS Grid)
+- **Routing**: Angular Router
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📝 License
+This project is open source and available under the [MIT License](LICENSE).

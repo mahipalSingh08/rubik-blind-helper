@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg: #0f1117;
+  --panel: #171a23;
+  --accent: #ff8a3d;
+  --accent2: #4dd0e1;
+  --text: #eef0f4;
+  --muted: #8a8fa3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, #1c2030 0%, #0f1117 60%);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 16px;
+}
+h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+p.subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}

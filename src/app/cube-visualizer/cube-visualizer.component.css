@@ -1,0 +1,39 @@
+.tab-container { display: flex; flex-direction: column; align-items: center; padding-bottom: 60px; }
+.cube-grid { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px; 
+  max-width: 900px;
+  margin: 0 auto;
+}
+.face-wrapper { display: flex; flex-direction: column; align-items: center; }
+.face-title { color: var(--muted); font-size: 0.9rem; margin-bottom: 6px; font-weight: 600; }
+.face {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+  gap: 2px;
+  background: #2b3040;
+  padding: 4px;
+  border-radius: 6px;
+}
+.sticker {
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1.1rem;
+  color: #171a23;
+  border-radius: 4px;
+  user-select: none;
+}
+.sticker.corner { color: #fff; background: rgba(0,0,0,0.2); }
+.sticker.edge { color: #fff; background: rgba(0,0,0,0.1); }
+.sticker.center { font-size: 1.4rem; opacity: 0.7; }
+
+/* Colors */
+.u-face .sticker { background: #e0e0e0; }
+.u-face .sticker.corner, .u-face .sticker.edge { color: #171a23; }
+.l-face .sticker { background: #ff9800; }
+.f-face .sticker { background: #4caf50; }
+.r-face .sticker { background: #f44336; }
+.b-face .sticker { background: #2196f3; }
+.d-face .sticker { background: #ffeb3b; }
+.d-face .sticker.corner, .d-face .sticker.edge { color: #171a23; }

@@ -1,0 +1,2904 @@
+<div class="word-assoc-container">
+
+
+<h1>🔤 576 Letter-Pair Memo Reference</h1>
+<p class="subtitle">Word-association system — same approach used by real BLD speedcubers worldwide</p>
+
+<div class="search-wrap">
+  <input type="text" #searchBox (input)="onSearch($event)" placeholder="Type a pair, e.g. KP, RM, OK..." maxlength="2" placeholder="Type a pair, e.g. KP, RM, OK..." maxlength="2">
+</div>
+
+<div class="method-note">
+  This uses the <b>Letter Pair Image</b> method: every 2-letter combo maps to one concrete, easy-to-picture word or object —
+  the same technique used across the speedsolving community (Speffz + letter-pair images). Same-letter pairs (AA, BB...)
+  are marked separately since they represent a <b>flipped edge or twisted corner</b> in a real solve. Swap out any
+  association here for your own if a better image comes to mind — a self-picked image always sticks better than a borrowed one.
+</div>
+
+<div class="count-info" id="countInfo">{{ visibleCount === totalCount ? "Showing all " + totalCount + " pairs" : "Showing " + visibleCount + " matching pair(s)" }}</div>
+<div id="pairContainer" #pairContainer>
+<div class="prow double" data-pair="aa">
+  <div class="ptag">AA</div>
+  <div class="pimage">AA batteries</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="ab">
+  <div class="ptag">AB</div>
+  <div class="pimage">abbey</div>
+  
+</div>
+<div class="prow " data-pair="ac">
+  <div class="ptag">AC</div>
+  <div class="pimage">active</div>
+  
+</div>
+<div class="prow " data-pair="ad">
+  <div class="ptag">AD</div>
+  <div class="pimage">addition</div>
+  
+</div>
+<div class="prow " data-pair="ae">
+  <div class="ptag">AE</div>
+  <div class="pimage">aerial</div>
+  
+</div>
+<div class="prow " data-pair="af">
+  <div class="ptag">AF</div>
+  <div class="pimage">affluent</div>
+  
+</div>
+<div class="prow " data-pair="ag">
+  <div class="ptag">AG</div>
+  <div class="pimage">agent</div>
+  
+</div>
+<div class="prow " data-pair="ah">
+  <div class="ptag">AH</div>
+  <div class="pimage">Aha! (lightbulb moment)</div>
+  
+</div>
+<div class="prow " data-pair="ai">
+  <div class="ptag">AI</div>
+  <div class="pimage">air</div>
+  
+</div>
+<div class="prow " data-pair="aj">
+  <div class="ptag">AJ</div>
+  <div class="pimage">A.J. (a person's nickname)</div>
+  
+</div>
+<div class="prow " data-pair="ak">
+  <div class="ptag">AK</div>
+  <div class="pimage">Alaska (state)</div>
+  
+</div>
+<div class="prow " data-pair="al">
+  <div class="ptag">AL</div>
+  <div class="pimage">album</div>
+  
+</div>
+<div class="prow " data-pair="am">
+  <div class="ptag">AM</div>
+  <div class="pimage">amber</div>
+  
+</div>
+<div class="prow " data-pair="an">
+  <div class="ptag">AN</div>
+  <div class="pimage">annual</div>
+  
+</div>
+<div class="prow " data-pair="ao">
+  <div class="ptag">AO</div>
+  <div class="pimage">A-OK (thumbs-up)</div>
+  
+</div>
+<div class="prow " data-pair="ap">
+  <div class="ptag">AP</div>
+  <div class="pimage">apple</div>
+  
+</div>
+<div class="prow " data-pair="aq">
+  <div class="ptag">AQ</div>
+  <div class="pimage">aquatic</div>
+  
+</div>
+<div class="prow " data-pair="ar">
+  <div class="ptag">AR</div>
+  <div class="pimage">art</div>
+  
+</div>
+<div class="prow " data-pair="as">
+  <div class="ptag">AS</div>
+  <div class="pimage">Ace of Spades (card)</div>
+  
+</div>
+<div class="prow " data-pair="at">
+  <div class="ptag">AT</div>
+  <div class="pimage">atlantic</div>
+  
+</div>
+<div class="prow " data-pair="au">
+  <div class="ptag">AU</div>
+  <div class="pimage">auto</div>
+  
+</div>
+<div class="prow " data-pair="av">
+  <div class="ptag">AV</div>
+  <div class="pimage">avenue</div>
+  
+</div>
+<div class="prow " data-pair="aw">
+  <div class="ptag">AW</div>
+  <div class="pimage">Awl (leather tool)</div>
+  
+</div>
+<div class="prow " data-pair="ax">
+  <div class="ptag">AX</div>
+  <div class="pimage">axis</div>
+  
+</div>
+<div class="prow " data-pair="ba">
+  <div class="ptag">BA</div>
+  <div class="pimage">back</div>
+  
+</div>
+<div class="prow double" data-pair="bb">
+  <div class="ptag">BB</div>
+  <div class="pimage">bob</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="bc">
+  <div class="ptag">BC</div>
+  <div class="pimage">beach</div>
+  
+</div>
+<div class="prow " data-pair="bd">
+  <div class="ptag">BD</div>
+  <div class="pimage">body</div>
+  
+</div>
+<div class="prow " data-pair="be">
+  <div class="ptag">BE</div>
+  <div class="pimage">behind</div>
+  
+</div>
+<div class="prow " data-pair="bf">
+  <div class="ptag">BF</div>
+  <div class="pimage">beef</div>
+  
+</div>
+<div class="prow " data-pair="bg">
+  <div class="ptag">BG</div>
+  <div class="pimage">bag</div>
+  
+</div>
+<div class="prow " data-pair="bh">
+  <div class="ptag">BH</div>
+  <div class="pimage">Bahrain flag</div>
+  
+</div>
+<div class="prow " data-pair="bi">
+  <div class="ptag">BI</div>
+  <div class="pimage">bit</div>
+  
+</div>
+<div class="prow " data-pair="bj">
+  <div class="ptag">BJ</div>
+  <div class="pimage">Banjo</div>
+  
+</div>
+<div class="prow " data-pair="bk">
+  <div class="ptag">BK</div>
+  <div class="pimage">book</div>
+  
+</div>
+<div class="prow " data-pair="bl">
+  <div class="ptag">BL</div>
+  <div class="pimage">blue</div>
+  
+</div>
+<div class="prow " data-pair="bm">
+  <div class="ptag">BM</div>
+  <div class="pimage">beam</div>
+  
+</div>
+<div class="prow " data-pair="bn">
+  <div class="ptag">BN</div>
+  <div class="pimage">bank</div>
+  
+</div>
+<div class="prow " data-pair="bo">
+  <div class="ptag">BO</div>
+  <div class="pimage">board</div>
+  
+</div>
+<div class="prow " data-pair="bp">
+  <div class="ptag">BP</div>
+  <div class="pimage">BP gas station</div>
+  
+</div>
+<div class="prow " data-pair="bq">
+  <div class="ptag">BQ</div>
+  <div class="pimage">bouquet</div>
+  
+</div>
+<div class="prow " data-pair="br">
+  <div class="ptag">BR</div>
+  <div class="pimage">brain</div>
+  
+</div>
+<div class="prow " data-pair="bs">
+  <div class="ptag">BS</div>
+  <div class="pimage">base</div>
+  
+</div>
+<div class="prow " data-pair="bt">
+  <div class="ptag">BT</div>
+  <div class="pimage">boat</div>
+  
+</div>
+<div class="prow " data-pair="bu">
+  <div class="ptag">BU</div>
+  <div class="pimage">building</div>
+  
+</div>
+<div class="prow " data-pair="bv">
+  <div class="ptag">BV</div>
+  <div class="pimage">beverage</div>
+  
+</div>
+<div class="prow " data-pair="bw">
+  <div class="ptag">BW</div>
+  <div class="pimage">bowl</div>
+  
+</div>
+<div class="prow " data-pair="bx">
+  <div class="ptag">BX</div>
+  <div class="pimage">Box</div>
+  
+</div>
+<div class="prow " data-pair="ca">
+  <div class="ptag">CA</div>
+  <div class="pimage">can</div>
+  
+</div>
+<div class="prow " data-pair="cb">
+  <div class="ptag">CB</div>
+  <div class="pimage">cable</div>
+  
+</div>
+<div class="prow double" data-pair="cc">
+  <div class="ptag">CC</div>
+  <div class="pimage">cc (carbon-copy email icon)</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="cd">
+  <div class="ptag">CD</div>
+  <div class="pimage">cod</div>
+  
+</div>
+<div class="prow " data-pair="ce">
+  <div class="ptag">CE</div>
+  <div class="pimage">center</div>
+  
+</div>
+<div class="prow " data-pair="cf">
+  <div class="ptag">CF</div>
+  <div class="pimage">coffee</div>
+  
+</div>
+<div class="prow " data-pair="cg">
+  <div class="ptag">CG</div>
+  <div class="pimage">cage</div>
+  
+</div>
+<div class="prow " data-pair="ch">
+  <div class="ptag">CH</div>
+  <div class="pimage">church</div>
+  
+</div>
+<div class="prow " data-pair="ci">
+  <div class="ptag">CI</div>
+  <div class="pimage">circle</div>
+  
+</div>
+<div class="prow " data-pair="cj">
+  <div class="ptag">CJ</div>
+  <div class="pimage">C.J. (a person's nickname)</div>
+  
+</div>
+<div class="prow " data-pair="ck">
+  <div class="ptag">CK</div>
+  <div class="pimage">cake</div>
+  
+</div>
+<div class="prow " data-pair="cl">
+  <div class="ptag">CL</div>
+  <div class="pimage">classic</div>
+  
+</div>
+<div class="prow " data-pair="cm">
+  <div class="ptag">CM</div>
+  <div class="pimage">come</div>
+  
+</div>
+<div class="prow " data-pair="cn">
+  <div class="ptag">CN</div>
+  <div class="pimage">central</div>
+  
+</div>
+<div class="prow " data-pair="co">
+  <div class="ptag">CO</div>
+  <div class="pimage">court</div>
+  
+</div>
+<div class="prow " data-pair="cp">
+  <div class="ptag">CP</div>
+  <div class="pimage">cup</div>
+  
+</div>
+<div class="prow " data-pair="cq">
+  <div class="ptag">CQ</div>
+  <div class="pimage">Cue stick (pool)</div>
+  
+</div>
+<div class="prow " data-pair="cr">
+  <div class="ptag">CR</div>
+  <div class="pimage">cross</div>
+  
+</div>
+<div class="prow " data-pair="cs">
+  <div class="ptag">CS</div>
+  <div class="pimage">coast</div>
+  
+</div>
+<div class="prow " data-pair="ct">
+  <div class="ptag">CT</div>
+  <div class="pimage">cat</div>
+  
+</div>
+<div class="prow " data-pair="cu">
+  <div class="ptag">CU</div>
+  <div class="pimage">cutting</div>
+  
+</div>
+<div class="prow " data-pair="cv">
+  <div class="ptag">CV</div>
+  <div class="pimage">cover</div>
+  
+</div>
+<div class="prow " data-pair="cw">
+  <div class="ptag">CW</div>
+  <div class="pimage">cow</div>
+  
+</div>
+<div class="prow " data-pair="cx">
+  <div class="ptag">CX</div>
+  <div class="pimage">cox</div>
+  
+</div>
+<div class="prow " data-pair="da">
+  <div class="ptag">DA</div>
+  <div class="pimage">dam</div>
+  
+</div>
+<div class="prow " data-pair="db">
+  <div class="ptag">DB</div>
+  <div class="pimage">debris</div>
+  
+</div>
+<div class="prow " data-pair="dc">
+  <div class="ptag">DC</div>
+  <div class="pimage">Washington D.C. monument</div>
+  
+</div>
+<div class="prow double" data-pair="dd">
+  <div class="ptag">DD</div>
+  <div class="pimage">doodle</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="de">
+  <div class="ptag">DE</div>
+  <div class="pimage">deep</div>
+  
+</div>
+<div class="prow " data-pair="df">
+  <div class="ptag">DF</div>
+  <div class="pimage">duff</div>
+  
+</div>
+<div class="prow " data-pair="dg">
+  <div class="ptag">DG</div>
+  <div class="pimage">dog</div>
+  
+</div>
+<div class="prow " data-pair="dh">
+  <div class="ptag">DH</div>
+  <div class="pimage">Dharma wheel</div>
+  
+</div>
+<div class="prow " data-pair="di">
+  <div class="ptag">DI</div>
+  <div class="pimage">die</div>
+  
+</div>
+<div class="prow " data-pair="dj">
+  <div class="ptag">DJ</div>
+  <div class="pimage">DJ turntables</div>
+  
+</div>
+<div class="prow " data-pair="dk">
+  <div class="ptag">DK</div>
+  <div class="pimage">dak</div>
+  
+</div>
+<div class="prow " data-pair="dl">
+  <div class="ptag">DL</div>
+  <div class="pimage">delta</div>
+  
+</div>
+<div class="prow " data-pair="dm">
+  <div class="ptag">DM</div>
+  <div class="pimage">diamond</div>
+  
+</div>
+<div class="prow " data-pair="dn">
+  <div class="ptag">DN</div>
+  <div class="pimage">dinner</div>
+  
+</div>
+<div class="prow " data-pair="do">
+  <div class="ptag">DO</div>
+  <div class="pimage">down</div>
+  
+</div>
+<div class="prow " data-pair="dp">
+  <div class="ptag">DP</div>
+  <div class="pimage">deposit</div>
+  
+</div>
+<div class="prow " data-pair="dq">
+  <div class="ptag">DQ</div>
+  <div class="pimage">Dairy Queen</div>
+  
+</div>
+<div class="prow " data-pair="dr">
+  <div class="ptag">DR</div>
+  <div class="pimage">drive</div>
+  
+</div>
+<div class="prow " data-pair="ds">
+  <div class="ptag">DS</div>
+  <div class="pimage">does</div>
+  
+</div>
+<div class="prow " data-pair="dt">
+  <div class="ptag">DT</div>
+  <div class="pimage">diet</div>
+  
+</div>
+<div class="prow " data-pair="du">
+  <div class="ptag">DU</div>
+  <div class="pimage">dust</div>
+  
+</div>
+<div class="prow " data-pair="dv">
+  <div class="ptag">DV</div>
+  <div class="pimage">device</div>
+  
+</div>
+<div class="prow " data-pair="dw">
+  <div class="ptag">DW</div>
+  <div class="pimage">dwelling</div>
+  
+</div>
+<div class="prow " data-pair="dx">
+  <div class="ptag">DX</div>
+  <div class="pimage">dioxide</div>
+  
+</div>
+<div class="prow " data-pair="ea">
+  <div class="ptag">EA</div>
+  <div class="pimage">earth</div>
+  
+</div>
+<div class="prow " data-pair="eb">
+  <div class="ptag">EB</div>
+  <div class="pimage">ebony</div>
+  
+</div>
+<div class="prow " data-pair="ec">
+  <div class="ptag">EC</div>
+  <div class="pimage">Echo</div>
+  
+</div>
+<div class="prow " data-pair="ed">
+  <div class="ptag">ED</div>
+  <div class="pimage">edge</div>
+  
+</div>
+<div class="prow double" data-pair="ee">
+  <div class="ptag">EE</div>
+  <div class="pimage">eel</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="ef">
+  <div class="ptag">EF</div>
+  <div class="pimage">Effigy (straw doll)</div>
+  
+</div>
+<div class="prow " data-pair="eg">
+  <div class="ptag">EG</div>
+  <div class="pimage">egg</div>
+  
+</div>
+<div class="prow " data-pair="eh">
+  <div class="ptag">EH</div>
+  <div class="pimage">Eh? (shrug)</div>
+  
+</div>
+<div class="prow " data-pair="ei">
+  <div class="ptag">EI</div>
+  <div class="pimage">Eiffel Tower</div>
+  
+</div>
+<div class="prow " data-pair="ej">
+  <div class="ptag">EJ</div>
+  <div class="pimage">Eject button</div>
+  
+</div>
+<div class="prow " data-pair="ek">
+  <div class="ptag">EK</div>
+  <div class="pimage">EKG machine</div>
+  
+</div>
+<div class="prow " data-pair="el">
+  <div class="ptag">EL</div>
+  <div class="pimage">electric</div>
+  
+</div>
+<div class="prow " data-pair="em">
+  <div class="ptag">EM</div>
+  <div class="pimage">empty</div>
+  
+</div>
+<div class="prow " data-pair="en">
+  <div class="ptag">EN</div>
+  <div class="pimage">entire</div>
+  
+</div>
+<div class="prow " data-pair="eo">
+  <div class="ptag">EO</div>
+  <div class="pimage">Eon (hourglass)</div>
+  
+</div>
+<div class="prow " data-pair="ep">
+  <div class="ptag">EP</div>
+  <div class="pimage">Epaulette (shoulder badge)</div>
+  
+</div>
+<div class="prow " data-pair="eq">
+  <div class="ptag">EQ</div>
+  <div class="pimage">equator</div>
+  
+</div>
+<div class="prow " data-pair="er">
+  <div class="ptag">ER</div>
+  <div class="pimage">ER (emergency room sign)</div>
+  
+</div>
+<div class="prow " data-pair="es">
+  <div class="ptag">ES</div>
+  <div class="pimage">essence</div>
+  
+</div>
+<div class="prow " data-pair="et">
+  <div class="ptag">ET</div>
+  <div class="pimage">ethanol</div>
+  
+</div>
+<div class="prow " data-pair="eu">
+  <div class="ptag">EU</div>
+  <div class="pimage">eureka</div>
+  
+</div>
+<div class="prow " data-pair="ev">
+  <div class="ptag">EV</div>
+  <div class="pimage">EV (electric car)</div>
+  
+</div>
+<div class="prow " data-pair="ew">
+  <div class="ptag">EW</div>
+  <div class="pimage">Ew! (disgusted face)</div>
+  
+</div>
+<div class="prow " data-pair="ex">
+  <div class="ptag">EX</div>
+  <div class="pimage">express</div>
+  
+</div>
+<div class="prow " data-pair="fa">
+  <div class="ptag">FA</div>
+  <div class="pimage">face</div>
+  
+</div>
+<div class="prow " data-pair="fb">
+  <div class="ptag">FB</div>
+  <div class="pimage">fabric</div>
+  
+</div>
+<div class="prow " data-pair="fc">
+  <div class="ptag">FC</div>
+  <div class="pimage">facility</div>
+  
+</div>
+<div class="prow " data-pair="fd">
+  <div class="ptag">FD</div>
+  <div class="pimage">food</div>
+  
+</div>
+<div class="prow " data-pair="fe">
+  <div class="ptag">FE</div>
+  <div class="pimage">felt</div>
+  
+</div>
+<div class="prow double" data-pair="ff">
+  <div class="ptag">FF</div>
+  <div class="pimage">fife</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="fg">
+  <div class="ptag">FG</div>
+  <div class="pimage">figure</div>
+  
+</div>
+<div class="prow " data-pair="fh">
+  <div class="ptag">FH</div>
+  <div class="pimage">Field hockey stick</div>
+  
+</div>
+<div class="prow " data-pair="fi">
+  <div class="ptag">FI</div>
+  <div class="pimage">fish</div>
+  
+</div>
+<div class="prow " data-pair="fj">
+  <div class="ptag">FJ</div>
+  <div class="pimage">fuji</div>
+  
+</div>
+<div class="prow " data-pair="fk">
+  <div class="ptag">FK</div>
+  <div class="pimage">fake</div>
+  
+</div>
+<div class="prow " data-pair="fl">
+  <div class="ptag">FL</div>
+  <div class="pimage">floor</div>
+  
+</div>
+<div class="prow " data-pair="fm">
+  <div class="ptag">FM</div>
+  <div class="pimage">female</div>
+  
+</div>
+<div class="prow " data-pair="fn">
+  <div class="ptag">FN</div>
+  <div class="pimage">fan</div>
+  
+</div>
+<div class="prow " data-pair="fo">
+  <div class="ptag">FO</div>
+  <div class="pimage">four</div>
+  
+</div>
+<div class="prow " data-pair="fp">
+  <div class="ptag">FP</div>
+  <div class="pimage">Fanny pack</div>
+  
+</div>
+<div class="prow " data-pair="fq">
+  <div class="ptag">FQ</div>
+  <div class="pimage">French Quarter</div>
+  
+</div>
+<div class="prow " data-pair="fr">
+  <div class="ptag">FR</div>
+  <div class="pimage">frank</div>
+  
+</div>
+<div class="prow " data-pair="fs">
+  <div class="ptag">FS</div>
+  <div class="pimage">fisher</div>
+  
+</div>
+<div class="prow " data-pair="ft">
+  <div class="ptag">FT</div>
+  <div class="pimage">football</div>
+  
+</div>
+<div class="prow " data-pair="fu">
+  <div class="ptag">FU</div>
+  <div class="pimage">fuel</div>
+  
+</div>
+<div class="prow " data-pair="fv">
+  <div class="ptag">FV</div>
+  <div class="pimage">Flying V guitar</div>
+  
+</div>
+<div class="prow " data-pair="fw">
+  <div class="ptag">FW</div>
+  <div class="pimage">fawn</div>
+  
+</div>
+<div class="prow " data-pair="fx">
+  <div class="ptag">FX</div>
+  <div class="pimage">fox</div>
+  
+</div>
+<div class="prow " data-pair="ga">
+  <div class="ptag">GA</div>
+  <div class="pimage">gas</div>
+  
+</div>
+<div class="prow " data-pair="gb">
+  <div class="ptag">GB</div>
+  <div class="pimage">gable</div>
+  
+</div>
+<div class="prow " data-pair="gc">
+  <div class="ptag">GC</div>
+  <div class="pimage">Gift card</div>
+  
+</div>
+<div class="prow " data-pair="gd">
+  <div class="ptag">GD</div>
+  <div class="pimage">gadget</div>
+  
+</div>
+<div class="prow " data-pair="ge">
+  <div class="ptag">GE</div>
+  <div class="pimage">gear</div>
+  
+</div>
+<div class="prow " data-pair="gf">
+  <div class="ptag">GF</div>
+  <div class="pimage">Girlfriend (GF)</div>
+  
+</div>
+<div class="prow double" data-pair="gg">
+  <div class="ptag">GG</div>
+  <div class="pimage">gauge</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="gh">
+  <div class="ptag">GH</div>
+  <div class="pimage">Ghost</div>
+  
+</div>
+<div class="prow " data-pair="gi">
+  <div class="ptag">GI</div>
+  <div class="pimage">giant</div>
+  
+</div>
+<div class="prow " data-pair="gj">
+  <div class="ptag">GJ</div>
+  <div class="pimage">Good Job (trophy)</div>
+  
+</div>
+<div class="prow " data-pair="gk">
+  <div class="ptag">GK</div>
+  <div class="pimage">Goalkeeper gloves</div>
+  
+</div>
+<div class="prow " data-pair="gl">
+  <div class="ptag">GL</div>
+  <div class="pimage">glad</div>
+  
+</div>
+<div class="prow " data-pair="gm">
+  <div class="ptag">GM</div>
+  <div class="pimage">gum</div>
+  
+</div>
+<div class="prow " data-pair="gn">
+  <div class="ptag">GN</div>
+  <div class="pimage">gnu</div>
+  
+</div>
+<div class="prow " data-pair="go">
+  <div class="ptag">GO</div>
+  <div class="pimage">goes</div>
+  
+</div>
+<div class="prow " data-pair="gp">
+  <div class="ptag">GP</div>
+  <div class="pimage">gap</div>
+  
+</div>
+<div class="prow " data-pair="gq">
+  <div class="ptag">GQ</div>
+  <div class="pimage">GQ Magazine</div>
+  
+</div>
+<div class="prow " data-pair="gr">
+  <div class="ptag">GR</div>
+  <div class="pimage">group</div>
+  
+</div>
+<div class="prow " data-pair="gs">
+  <div class="ptag">GS</div>
+  <div class="pimage">gasoline</div>
+  
+</div>
+<div class="prow " data-pair="gt">
+  <div class="ptag">GT</div>
+  <div class="pimage">guitar</div>
+  
+</div>
+<div class="prow " data-pair="gu">
+  <div class="ptag">GU</div>
+  <div class="pimage">guy</div>
+  
+</div>
+<div class="prow " data-pair="gv">
+  <div class="ptag">GV</div>
+  <div class="pimage">governor</div>
+  
+</div>
+<div class="prow " data-pair="gw">
+  <div class="ptag">GW</div>
+  <div class="pimage">gown</div>
+  
+</div>
+<div class="prow " data-pair="gx">
+  <div class="ptag">GX</div>
+  <div class="pimage">G-Force (fighter jet)</div>
+  
+</div>
+<div class="prow " data-pair="ha">
+  <div class="ptag">HA</div>
+  <div class="pimage">hand</div>
+  
+</div>
+<div class="prow " data-pair="hb">
+  <div class="ptag">HB</div>
+  <div class="pimage">hub</div>
+  
+</div>
+<div class="prow " data-pair="hc">
+  <div class="ptag">HC</div>
+  <div class="pimage">hackney</div>
+  
+</div>
+<div class="prow " data-pair="hd">
+  <div class="ptag">HD</div>
+  <div class="pimage">head</div>
+  
+</div>
+<div class="prow " data-pair="he">
+  <div class="ptag">HE</div>
+  <div class="pimage">heart</div>
+  
+</div>
+<div class="prow " data-pair="hf">
+  <div class="ptag">HF</div>
+  <div class="pimage">hoof</div>
+  
+</div>
+<div class="prow " data-pair="hg">
+  <div class="ptag">HG</div>
+  <div class="pimage">highway</div>
+  
+</div>
+<div class="prow double" data-pair="hh">
+  <div class="ptag">HH</div>
+  <div class="pimage">Hip-Hop boombox</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="hi">
+  <div class="ptag">HI</div>
+  <div class="pimage">hill</div>
+  
+</div>
+<div class="prow " data-pair="hj">
+  <div class="ptag">HJ</div>
+  <div class="pimage">Hijacked plane</div>
+  
+</div>
+<div class="prow " data-pair="hk">
+  <div class="ptag">HK</div>
+  <div class="pimage">hook</div>
+  
+</div>
+<div class="prow " data-pair="hl">
+  <div class="ptag">HL</div>
+  <div class="pimage">hall</div>
+  
+</div>
+<div class="prow " data-pair="hm">
+  <div class="ptag">HM</div>
+  <div class="pimage">home</div>
+  
+</div>
+<div class="prow " data-pair="hn">
+  <div class="ptag">HN</div>
+  <div class="pimage">handle</div>
+  
+</div>
+<div class="prow " data-pair="ho">
+  <div class="ptag">HO</div>
+  <div class="pimage">house</div>
+  
+</div>
+<div class="prow " data-pair="hp">
+  <div class="ptag">HP</div>
+  <div class="pimage">hip</div>
+  
+</div>
+<div class="prow " data-pair="hq">
+  <div class="ptag">HQ</div>
+  <div class="pimage">Headquarters building</div>
+  
+</div>
+<div class="prow " data-pair="hr">
+  <div class="ptag">HR</div>
+  <div class="pimage">hair</div>
+  
+</div>
+<div class="prow " data-pair="hs">
+  <div class="ptag">HS</div>
+  <div class="pimage">hospital</div>
+  
+</div>
+<div class="prow " data-pair="ht">
+  <div class="ptag">HT</div>
+  <div class="pimage">hotel</div>
+  
+</div>
+<div class="prow " data-pair="hu">
+  <div class="ptag">HU</div>
+  <div class="pimage">human</div>
+  
+</div>
+<div class="prow " data-pair="hv">
+  <div class="ptag">HV</div>
+  <div class="pimage">haven</div>
+  
+</div>
+<div class="prow " data-pair="hw">
+  <div class="ptag">HW</div>
+  <div class="pimage">hawk</div>
+  
+</div>
+<div class="prow " data-pair="hx">
+  <div class="ptag">HX</div>
+  <div class="pimage">Hex (spell symbol)</div>
+  
+</div>
+<div class="prow " data-pair="ia">
+  <div class="ptag">IA</div>
+  <div class="pimage">Iowa (state)</div>
+  
+</div>
+<div class="prow " data-pair="ib">
+  <div class="ptag">IB</div>
+  <div class="pimage">I-Beam (steel girder)</div>
+  
+</div>
+<div class="prow " data-pair="ic">
+  <div class="ptag">IC</div>
+  <div class="pimage">ice</div>
+  
+</div>
+<div class="prow " data-pair="id">
+  <div class="ptag">ID</div>
+  <div class="pimage">idol</div>
+  
+</div>
+<div class="prow " data-pair="ie">
+  <div class="ptag">IE</div>
+  <div class="pimage">Internet Explorer</div>
+  
+</div>
+<div class="prow " data-pair="if">
+  <div class="ptag">IF</div>
+  <div class="pimage">Iffy (tightrope walker)</div>
+  
+</div>
+<div class="prow " data-pair="ig">
+  <div class="ptag">IG</div>
+  <div class="pimage">ignition</div>
+  
+</div>
+<div class="prow " data-pair="ih">
+  <div class="ptag">IH</div>
+  <div class="pimage">International Harvester tractor</div>
+  
+</div>
+<div class="prow double" data-pair="ii">
+  <div class="ptag">II</div>
+  <div class="pimage">Roman numeral II</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="ij">
+  <div class="ptag">IJ</div>
+  <div class="pimage">Injection needle</div>
+  
+</div>
+<div class="prow " data-pair="ik">
+  <div class="ptag">IK</div>
+  <div class="pimage">Ikea</div>
+  
+</div>
+<div class="prow " data-pair="il">
+  <div class="ptag">IL</div>
+  <div class="pimage">Illinois (state)</div>
+  
+</div>
+<div class="prow " data-pair="im">
+  <div class="ptag">IM</div>
+  <div class="pimage">imperial</div>
+  
+</div>
+<div class="prow " data-pair="in">
+  <div class="ptag">IN</div>
+  <div class="pimage">inn</div>
+  
+</div>
+<div class="prow " data-pair="io">
+  <div class="ptag">IO</div>
+  <div class="pimage">ion</div>
+  
+</div>
+<div class="prow " data-pair="ip">
+  <div class="ptag">IP</div>
+  <div class="pimage">Wi-Fi router</div>
+  
+</div>
+<div class="prow " data-pair="iq">
+  <div class="ptag">IQ</div>
+  <div class="pimage">IQ test</div>
+  
+</div>
+<div class="prow " data-pair="ir">
+  <div class="ptag">IR</div>
+  <div class="pimage">iron</div>
+  
+</div>
+<div class="prow " data-pair="is">
+  <div class="ptag">IS</div>
+  <div class="pimage">island</div>
+  
+</div>
+<div class="prow " data-pair="it">
+  <div class="ptag">IT</div>
+  <div class="pimage">IT department laptop</div>
+  
+</div>
+<div class="prow " data-pair="iu">
+  <div class="ptag">IU</div>
+  <div class="pimage">IUD (medical device)</div>
+  
+</div>
+<div class="prow " data-pair="iv">
+  <div class="ptag">IV</div>
+  <div class="pimage">ivory</div>
+  
+</div>
+<div class="prow " data-pair="iw">
+  <div class="ptag">IW</div>
+  <div class="pimage">Ironwork gate</div>
+  
+</div>
+<div class="prow " data-pair="ix">
+  <div class="ptag">IX</div>
+  <div class="pimage">Roman numeral IX</div>
+  
+</div>
+<div class="prow " data-pair="ja">
+  <div class="ptag">JA</div>
+  <div class="pimage">jail</div>
+  
+</div>
+<div class="prow " data-pair="jb">
+  <div class="ptag">JB</div>
+  <div class="pimage">Justin Bieber's microphone</div>
+  
+</div>
+<div class="prow " data-pair="jc">
+  <div class="ptag">JC</div>
+  <div class="pimage">juice</div>
+  
+</div>
+<div class="prow " data-pair="jd">
+  <div class="ptag">JD</div>
+  <div class="pimage">jade</div>
+  
+</div>
+<div class="prow " data-pair="je">
+  <div class="ptag">JE</div>
+  <div class="pimage">jean</div>
+  
+</div>
+<div class="prow " data-pair="jf">
+  <div class="ptag">JF</div>
+  <div class="pimage">Jaffa Cakes</div>
+  
+</div>
+<div class="prow " data-pair="jg">
+  <div class="ptag">JG</div>
+  <div class="pimage">jaguar</div>
+  
+</div>
+<div class="prow " data-pair="jh">
+  <div class="ptag">JH</div>
+  <div class="pimage">J.H. (business card)</div>
+  
+</div>
+<div class="prow " data-pair="ji">
+  <div class="ptag">JI</div>
+  <div class="pimage">jimmy</div>
+  
+</div>
+<div class="prow double" data-pair="jj">
+  <div class="ptag">JJ</div>
+  <div class="pimage">J.J. (a person's nickname)</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="jk">
+  <div class="ptag">JK</div>
+  <div class="pimage">JK! (just kidding wink)</div>
+  
+</div>
+<div class="prow " data-pair="jl">
+  <div class="ptag">JL</div>
+  <div class="pimage">jelly</div>
+  
+</div>
+<div class="prow " data-pair="jm">
+  <div class="ptag">JM</div>
+  <div class="pimage">jam</div>
+  
+</div>
+<div class="prow " data-pair="jn">
+  <div class="ptag">JN</div>
+  <div class="pimage">join</div>
+  
+</div>
+<div class="prow " data-pair="jo">
+  <div class="ptag">JO</div>
+  <div class="pimage">joint</div>
+  
+</div>
+<div class="prow " data-pair="jp">
+  <div class="ptag">JP</div>
+  <div class="pimage">jeep</div>
+  
+</div>
+<div class="prow " data-pair="jq">
+  <div class="ptag">JQ</div>
+  <div class="pimage">Jack & Queen (cards)</div>
+  
+</div>
+<div class="prow " data-pair="jr">
+  <div class="ptag">JR</div>
+  <div class="pimage">jordan</div>
+  
+</div>
+<div class="prow " data-pair="js">
+  <div class="ptag">JS</div>
+  <div class="pimage">jasmine</div>
+  
+</div>
+<div class="prow " data-pair="jt">
+  <div class="ptag">JT</div>
+  <div class="pimage">jet</div>
+  
+</div>
+<div class="prow " data-pair="ju">
+  <div class="ptag">JU</div>
+  <div class="pimage">junk</div>
+  
+</div>
+<div class="prow " data-pair="jv">
+  <div class="ptag">JV</div>
+  <div class="pimage">JV team jersey</div>
+  
+</div>
+<div class="prow " data-pair="jw">
+  <div class="ptag">JW</div>
+  <div class="pimage">jewelry</div>
+  
+</div>
+<div class="prow " data-pair="jx">
+  <div class="ptag">JX</div>
+  <div class="pimage">Jukebox</div>
+  
+</div>
+<div class="prow " data-pair="ka">
+  <div class="ptag">KA</div>
+  <div class="pimage">kat</div>
+  
+</div>
+<div class="prow " data-pair="kb">
+  <div class="ptag">KB</div>
+  <div class="pimage">kebab</div>
+  
+</div>
+<div class="prow " data-pair="kc">
+  <div class="ptag">KC</div>
+  <div class="pimage">Kansas City (skyline)</div>
+  
+</div>
+<div class="prow " data-pair="kd">
+  <div class="ptag">KD</div>
+  <div class="pimage">kid</div>
+  
+</div>
+<div class="prow " data-pair="ke">
+  <div class="ptag">KE</div>
+  <div class="pimage">keep</div>
+  
+</div>
+<div class="prow " data-pair="kf">
+  <div class="ptag">KF</div>
+  <div class="pimage">KFC bucket</div>
+  
+</div>
+<div class="prow " data-pair="kg">
+  <div class="ptag">KG</div>
+  <div class="pimage">keg</div>
+  
+</div>
+<div class="prow " data-pair="kh">
+  <div class="ptag">KH</div>
+  <div class="pimage">khan</div>
+  
+</div>
+<div class="prow " data-pair="ki">
+  <div class="ptag">KI</div>
+  <div class="pimage">kitchen</div>
+  
+</div>
+<div class="prow " data-pair="kj">
+  <div class="ptag">KJ</div>
+  <div class="pimage">Karaoke microphone</div>
+  
+</div>
+<div class="prow double" data-pair="kk">
+  <div class="ptag">KK</div>
+  <div class="pimage">KK (thumbs-up texting slang)</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="kl">
+  <div class="ptag">KL</div>
+  <div class="pimage">kale</div>
+  
+</div>
+<div class="prow " data-pair="km">
+  <div class="ptag">KM</div>
+  <div class="pimage">Kilometer road sign</div>
+  
+</div>
+<div class="prow " data-pair="kn">
+  <div class="ptag">KN</div>
+  <div class="pimage">knee</div>
+  
+</div>
+<div class="prow " data-pair="ko">
+  <div class="ptag">KO</div>
+  <div class="pimage">kosher</div>
+  
+</div>
+<div class="prow " data-pair="kp">
+  <div class="ptag">KP</div>
+  <div class="pimage">KP duty (potato peeler)</div>
+  
+</div>
+<div class="prow " data-pair="kq">
+  <div class="ptag">KQ</div>
+  <div class="pimage">King & Queen (chess)</div>
+  
+</div>
+<div class="prow " data-pair="kr">
+  <div class="ptag">KR</div>
+  <div class="pimage">kremlin</div>
+  
+</div>
+<div class="prow " data-pair="ks">
+  <div class="ptag">KS</div>
+  <div class="pimage">kiss</div>
+  
+</div>
+<div class="prow " data-pair="kt">
+  <div class="ptag">KT</div>
+  <div class="pimage">kit</div>
+  
+</div>
+<div class="prow " data-pair="ku">
+  <div class="ptag">KU</div>
+  <div class="pimage">KU Jayhawks</div>
+  
+</div>
+<div class="prow " data-pair="kv">
+  <div class="ptag">KV</div>
+  <div class="pimage">Kilovolt warning sign</div>
+  
+</div>
+<div class="prow " data-pair="kw">
+  <div class="ptag">KW</div>
+  <div class="pimage">kiwi</div>
+  
+</div>
+<div class="prow " data-pair="kx">
+  <div class="ptag">KX</div>
+  <div class="pimage">Kickboxing gloves</div>
+  
+</div>
+<div class="prow " data-pair="la">
+  <div class="ptag">LA</div>
+  <div class="pimage">land</div>
+  
+</div>
+<div class="prow " data-pair="lb">
+  <div class="ptag">LB</div>
+  <div class="pimage">library</div>
+  
+</div>
+<div class="prow " data-pair="lc">
+  <div class="ptag">LC</div>
+  <div class="pimage">local</div>
+  
+</div>
+<div class="prow " data-pair="ld">
+  <div class="ptag">LD</div>
+  <div class="pimage">lead</div>
+  
+</div>
+<div class="prow " data-pair="le">
+  <div class="ptag">LE</div>
+  <div class="pimage">led</div>
+  
+</div>
+<div class="prow " data-pair="lf">
+  <div class="ptag">LF</div>
+  <div class="pimage">leaf</div>
+  
+</div>
+<div class="prow " data-pair="lg">
+  <div class="ptag">LG</div>
+  <div class="pimage">light</div>
+  
+</div>
+<div class="prow " data-pair="lh">
+  <div class="ptag">LH</div>
+  <div class="pimage">Left-handed scissors</div>
+  
+</div>
+<div class="prow " data-pair="li">
+  <div class="ptag">LI</div>
+  <div class="pimage">limited</div>
+  
+</div>
+<div class="prow " data-pair="lj">
+  <div class="ptag">LJ</div>
+  <div class="pimage">Long jump sandpit</div>
+  
+</div>
+<div class="prow " data-pair="lk">
+  <div class="ptag">LK</div>
+  <div class="pimage">lake</div>
+  
+</div>
+<div class="prow double" data-pair="ll">
+  <div class="ptag">LL</div>
+  <div class="pimage">lily</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="lm">
+  <div class="ptag">LM</div>
+  <div class="pimage">lemon</div>
+  
+</div>
+<div class="prow " data-pair="ln">
+  <div class="ptag">LN</div>
+  <div class="pimage">link</div>
+  
+</div>
+<div class="prow " data-pair="lo">
+  <div class="ptag">LO</div>
+  <div class="pimage">lower</div>
+  
+</div>
+<div class="prow " data-pair="lp">
+  <div class="ptag">LP</div>
+  <div class="pimage">loop</div>
+  
+</div>
+<div class="prow " data-pair="lq">
+  <div class="ptag">LQ</div>
+  <div class="pimage">liquid</div>
+  
+</div>
+<div class="prow " data-pair="lr">
+  <div class="ptag">LR</div>
+  <div class="pimage">laurel</div>
+  
+</div>
+<div class="prow " data-pair="ls">
+  <div class="ptag">LS</div>
+  <div class="pimage">las</div>
+  
+</div>
+<div class="prow " data-pair="lt">
+  <div class="ptag">LT</div>
+  <div class="pimage">leather</div>
+  
+</div>
+<div class="prow " data-pair="lu">
+  <div class="ptag">LU</div>
+  <div class="pimage">lunch</div>
+  
+</div>
+<div class="prow " data-pair="lv">
+  <div class="ptag">LV</div>
+  <div class="pimage">leaves</div>
+  
+</div>
+<div class="prow " data-pair="lw">
+  <div class="ptag">LW</div>
+  <div class="pimage">Left Wing (hockey jersey)</div>
+  
+</div>
+<div class="prow " data-pair="lx">
+  <div class="ptag">LX</div>
+  <div class="pimage">Lexus LX (SUV)</div>
+  
+</div>
+<div class="prow " data-pair="ma">
+  <div class="ptag">MA</div>
+  <div class="pimage">may</div>
+  
+</div>
+<div class="prow " data-pair="mb">
+  <div class="ptag">MB</div>
+  <div class="pimage">mobile</div>
+  
+</div>
+<div class="prow " data-pair="mc">
+  <div class="ptag">MC</div>
+  <div class="pimage">machine</div>
+  
+</div>
+<div class="prow " data-pair="md">
+  <div class="ptag">MD</div>
+  <div class="pimage">medicine</div>
+  
+</div>
+<div class="prow " data-pair="me">
+  <div class="ptag">ME</div>
+  <div class="pimage">metal</div>
+  
+</div>
+<div class="prow " data-pair="mf">
+  <div class="ptag">MF</div>
+  <div class="pimage">muffin</div>
+  
+</div>
+<div class="prow " data-pair="mg">
+  <div class="ptag">MG</div>
+  <div class="pimage">magazine</div>
+  
+</div>
+<div class="prow " data-pair="mh">
+  <div class="ptag">MH</div>
+  <div class="pimage">mahogany</div>
+  
+</div>
+<div class="prow " data-pair="mi">
+  <div class="ptag">MI</div>
+  <div class="pimage">mine</div>
+  
+</div>
+<div class="prow " data-pair="mj">
+  <div class="ptag">MJ</div>
+  <div class="pimage">Michael Jackson's glove</div>
+  
+</div>
+<div class="prow " data-pair="mk">
+  <div class="ptag">MK</div>
+  <div class="pimage">mike</div>
+  
+</div>
+<div class="prow " data-pair="ml">
+  <div class="ptag">ML</div>
+  <div class="pimage">male</div>
+  
+</div>
+<div class="prow double" data-pair="mm">
+  <div class="ptag">MM</div>
+  <div class="pimage">mum</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="mn">
+  <div class="ptag">MN</div>
+  <div class="pimage">main</div>
+  
+</div>
+<div class="prow " data-pair="mo">
+  <div class="ptag">MO</div>
+  <div class="pimage">mother</div>
+  
+</div>
+<div class="prow " data-pair="mp">
+  <div class="ptag">MP</div>
+  <div class="pimage">map</div>
+  
+</div>
+<div class="prow " data-pair="mq">
+  <div class="ptag">MQ</div>
+  <div class="pimage">Mosquito</div>
+  
+</div>
+<div class="prow " data-pair="mr">
+  <div class="ptag">MR</div>
+  <div class="pimage">mirror</div>
+  
+</div>
+<div class="prow " data-pair="ms">
+  <div class="ptag">MS</div>
+  <div class="pimage">must</div>
+  
+</div>
+<div class="prow " data-pair="mt">
+  <div class="ptag">MT</div>
+  <div class="pimage">match</div>
+  
+</div>
+<div class="prow " data-pair="mu">
+  <div class="ptag">MU</div>
+  <div class="pimage">museum</div>
+  
+</div>
+<div class="prow " data-pair="mv">
+  <div class="ptag">MV</div>
+  <div class="pimage">maverick</div>
+  
+</div>
+<div class="prow " data-pair="mw">
+  <div class="ptag">MW</div>
+  <div class="pimage">mow</div>
+  
+</div>
+<div class="prow " data-pair="mx">
+  <div class="ptag">MX</div>
+  <div class="pimage">mix</div>
+  
+</div>
+<div class="prow " data-pair="na">
+  <div class="ptag">NA</div>
+  <div class="pimage">narrow</div>
+  
+</div>
+<div class="prow " data-pair="nb">
+  <div class="ptag">NB</div>
+  <div class="pimage">nebula</div>
+  
+</div>
+<div class="prow " data-pair="nc">
+  <div class="ptag">NC</div>
+  <div class="pimage">neck</div>
+  
+</div>
+<div class="prow " data-pair="nd">
+  <div class="ptag">ND</div>
+  <div class="pimage">need</div>
+  
+</div>
+<div class="prow " data-pair="ne">
+  <div class="ptag">NE</div>
+  <div class="pimage">needs</div>
+  
+</div>
+<div class="prow " data-pair="nf">
+  <div class="ptag">NF</div>
+  <div class="pimage">NFL football helmet</div>
+  
+</div>
+<div class="prow " data-pair="ng">
+  <div class="ptag">NG</div>
+  <div class="pimage">negative</div>
+  
+</div>
+<div class="prow " data-pair="nh">
+  <div class="ptag">NH</div>
+  <div class="pimage">New Hampshire (state)</div>
+  
+</div>
+<div class="prow " data-pair="ni">
+  <div class="ptag">NI</div>
+  <div class="pimage">nick</div>
+  
+</div>
+<div class="prow " data-pair="nj">
+  <div class="ptag">NJ</div>
+  <div class="pimage">New Jersey (state)</div>
+  
+</div>
+<div class="prow " data-pair="nk">
+  <div class="ptag">NK</div>
+  <div class="pimage">nuke</div>
+  
+</div>
+<div class="prow " data-pair="nl">
+  <div class="ptag">NL</div>
+  <div class="pimage">nail</div>
+  
+</div>
+<div class="prow " data-pair="nm">
+  <div class="ptag">NM</div>
+  <div class="pimage">New Mexico (state)</div>
+  
+</div>
+<div class="prow double" data-pair="nn">
+  <div class="ptag">NN</div>
+  <div class="pimage">nonsense</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="no">
+  <div class="ptag">NO</div>
+  <div class="pimage">novel</div>
+  
+</div>
+<div class="prow " data-pair="np">
+  <div class="ptag">NP</div>
+  <div class="pimage">napoleon</div>
+  
+</div>
+<div class="prow " data-pair="nq">
+  <div class="ptag">NQ</div>
+  <div class="pimage">N waiting in a queue</div>
+  
+</div>
+<div class="prow " data-pair="nr">
+  <div class="ptag">NR</div>
+  <div class="pimage">nerve</div>
+  
+</div>
+<div class="prow " data-pair="ns">
+  <div class="ptag">NS</div>
+  <div class="pimage">nose</div>
+  
+</div>
+<div class="prow " data-pair="nt">
+  <div class="ptag">NT</div>
+  <div class="pimage">network</div>
+  
+</div>
+<div class="prow " data-pair="nu">
+  <div class="ptag">NU</div>
+  <div class="pimage">nut</div>
+  
+</div>
+<div class="prow " data-pair="nv">
+  <div class="ptag">NV</div>
+  <div class="pimage">nova</div>
+  
+</div>
+<div class="prow " data-pair="nw">
+  <div class="ptag">NW</div>
+  <div class="pimage">newt</div>
+  
+</div>
+<div class="prow " data-pair="nx">
+  <div class="ptag">NX</div>
+  <div class="pimage">Nintendo Switch</div>
+  
+</div>
+<div class="prow " data-pair="oa">
+  <div class="ptag">OA</div>
+  <div class="pimage">oak</div>
+  
+</div>
+<div class="prow " data-pair="ob">
+  <div class="ptag">OB</div>
+  <div class="pimage">obstacle</div>
+  
+</div>
+<div class="prow " data-pair="oc">
+  <div class="ptag">OC</div>
+  <div class="pimage">ocean</div>
+  
+</div>
+<div class="prow " data-pair="od">
+  <div class="ptag">OD</div>
+  <div class="pimage">Odometer</div>
+  
+</div>
+<div class="prow " data-pair="oe">
+  <div class="ptag">OE</div>
+  <div class="pimage">Old English calligraphy</div>
+  
+</div>
+<div class="prow " data-pair="of">
+  <div class="ptag">OF</div>
+  <div class="pimage">office</div>
+  
+</div>
+<div class="prow " data-pair="og">
+  <div class="ptag">OG</div>
+  <div class="pimage">OG (vintage stamp badge)</div>
+  
+</div>
+<div class="prow " data-pair="oh">
+  <div class="ptag">OH</div>
+  <div class="pimage">Ohio (state)</div>
+  
+</div>
+<div class="prow " data-pair="oi">
+  <div class="ptag">OI</div>
+  <div class="pimage">oil</div>
+  
+</div>
+<div class="prow " data-pair="oj">
+  <div class="ptag">OJ</div>
+  <div class="pimage">Orange juice glass</div>
+  
+</div>
+<div class="prow " data-pair="ok">
+  <div class="ptag">OK</div>
+  <div class="pimage">OK hand gesture</div>
+  
+</div>
+<div class="prow " data-pair="ol">
+  <div class="ptag">OL</div>
+  <div class="pimage">olive</div>
+  
+</div>
+<div class="prow " data-pair="om">
+  <div class="ptag">OM</div>
+  <div class="pimage">omnibus</div>
+  
+</div>
+<div class="prow " data-pair="on">
+  <div class="ptag">ON</div>
+  <div class="pimage">onion</div>
+  
+</div>
+<div class="prow double" data-pair="oo">
+  <div class="ptag">OO</div>
+  <div class="pimage">Goggles</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="op">
+  <div class="ptag">OP</div>
+  <div class="pimage">opening</div>
+  
+</div>
+<div class="prow " data-pair="oq">
+  <div class="ptag">OQ</div>
+  <div class="pimage">O waiting in a queue</div>
+  
+</div>
+<div class="prow " data-pair="or">
+  <div class="ptag">OR</div>
+  <div class="pimage">original</div>
+  
+</div>
+<div class="prow " data-pair="os">
+  <div class="ptag">OS</div>
+  <div class="pimage">ostrich</div>
+  
+</div>
+<div class="prow " data-pair="ot">
+  <div class="ptag">OT</div>
+  <div class="pimage">otter</div>
+  
+</div>
+<div class="prow " data-pair="ou">
+  <div class="ptag">OU</div>
+  <div class="pimage">output</div>
+  
+</div>
+<div class="prow " data-pair="ov">
+  <div class="ptag">OV</div>
+  <div class="pimage">overall</div>
+  
+</div>
+<div class="prow " data-pair="ow">
+  <div class="ptag">OW</div>
+  <div class="pimage">owl</div>
+  
+</div>
+<div class="prow " data-pair="ox">
+  <div class="ptag">OX</div>
+  <div class="pimage">oxygen</div>
+  
+</div>
+<div class="prow " data-pair="pa">
+  <div class="ptag">PA</div>
+  <div class="pimage">part</div>
+  
+</div>
+<div class="prow " data-pair="pb">
+  <div class="ptag">PB</div>
+  <div class="pimage">pub</div>
+  
+</div>
+<div class="prow " data-pair="pc">
+  <div class="ptag">PC</div>
+  <div class="pimage">picture</div>
+  
+</div>
+<div class="prow " data-pair="pd">
+  <div class="ptag">PD</div>
+  <div class="pimage">pad</div>
+  
+</div>
+<div class="prow " data-pair="pe">
+  <div class="ptag">PE</div>
+  <div class="pimage">person</div>
+  
+</div>
+<div class="prow " data-pair="pf">
+  <div class="ptag">PF</div>
+  <div class="pimage">puff</div>
+  
+</div>
+<div class="prow " data-pair="pg">
+  <div class="ptag">PG</div>
+  <div class="pimage">pig</div>
+  
+</div>
+<div class="prow " data-pair="ph">
+  <div class="ptag">PH</div>
+  <div class="pimage">phone</div>
+  
+</div>
+<div class="prow " data-pair="pi">
+  <div class="ptag">PI</div>
+  <div class="pimage">piece</div>
+  
+</div>
+<div class="prow " data-pair="pj">
+  <div class="ptag">PJ</div>
+  <div class="pimage">Pajamas</div>
+  
+</div>
+<div class="prow " data-pair="pk">
+  <div class="ptag">PK</div>
+  <div class="pimage">poker</div>
+  
+</div>
+<div class="prow " data-pair="pl">
+  <div class="ptag">PL</div>
+  <div class="pimage">plant</div>
+  
+</div>
+<div class="prow " data-pair="pm">
+  <div class="ptag">PM</div>
+  <div class="pimage">pump</div>
+  
+</div>
+<div class="prow " data-pair="pn">
+  <div class="ptag">PN</div>
+  <div class="pimage">painting</div>
+  
+</div>
+<div class="prow " data-pair="po">
+  <div class="ptag">PO</div>
+  <div class="pimage">post</div>
+  
+</div>
+<div class="prow double" data-pair="pp">
+  <div class="ptag">PP</div>
+  <div class="pimage">paper</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="pq">
+  <div class="ptag">PQ</div>
+  <div class="pimage">Province of Quebec plate</div>
+  
+</div>
+<div class="prow " data-pair="pr">
+  <div class="ptag">PR</div>
+  <div class="pimage">product</div>
+  
+</div>
+<div class="prow " data-pair="ps">
+  <div class="ptag">PS</div>
+  <div class="pimage">positive</div>
+  
+</div>
+<div class="prow " data-pair="pt">
+  <div class="ptag">PT</div>
+  <div class="pimage">peter</div>
+  
+</div>
+<div class="prow " data-pair="pu">
+  <div class="ptag">PU</div>
+  <div class="pimage">punch</div>
+  
+</div>
+<div class="prow " data-pair="pv">
+  <div class="ptag">PV</div>
+  <div class="pimage">pavilion</div>
+  
+</div>
+<div class="prow " data-pair="pw">
+  <div class="ptag">PW</div>
+  <div class="pimage">powder</div>
+  
+</div>
+<div class="prow " data-pair="px">
+  <div class="ptag">PX</div>
+  <div class="pimage">pixie</div>
+  
+</div>
+<div class="prow " data-pair="qa">
+  <div class="ptag">QA</div>
+  <div class="pimage">quarters</div>
+  
+</div>
+<div class="prow " data-pair="qb">
+  <div class="ptag">QB</div>
+  <div class="pimage">Quarterback</div>
+  
+</div>
+<div class="prow " data-pair="qc">
+  <div class="ptag">QC</div>
+  <div class="pimage">quick</div>
+  
+</div>
+<div class="prow " data-pair="qd">
+  <div class="ptag">QD</div>
+  <div class="pimage">quad</div>
+  
+</div>
+<div class="prow " data-pair="qe">
+  <div class="ptag">QE</div>
+  <div class="pimage">queen</div>
+  
+</div>
+<div class="prow " data-pair="qf">
+  <div class="ptag">QF</div>
+  <div class="pimage">Qantas kangaroo logo</div>
+  
+</div>
+<div class="prow " data-pair="qg">
+  <div class="ptag">QG</div>
+  <div class="pimage">Quagga (extinct zebra)</div>
+  
+</div>
+<div class="prow " data-pair="qh">
+  <div class="ptag">QH</div>
+  <div class="pimage">Quarter Horse</div>
+  
+</div>
+<div class="prow " data-pair="qi">
+  <div class="ptag">QI</div>
+  <div class="pimage">quilt</div>
+  
+</div>
+<div class="prow " data-pair="qj">
+  <div class="ptag">QJ</div>
+  <div class="pimage">Queen & Jack (cards)</div>
+  
+</div>
+<div class="prow " data-pair="qk">
+  <div class="ptag">QK</div>
+  <div class="pimage">Quick! (lightning bolt)</div>
+  
+</div>
+<div class="prow " data-pair="ql">
+  <div class="ptag">QL</div>
+  <div class="pimage">quail</div>
+  
+</div>
+<div class="prow " data-pair="qm">
+  <div class="ptag">QM</div>
+  <div class="pimage">Queen Mary (ocean liner)</div>
+  
+</div>
+<div class="prow " data-pair="qn">
+  <div class="ptag">QN</div>
+  <div class="pimage">Queen Bee</div>
+  
+</div>
+<div class="prow " data-pair="qo">
+  <div class="ptag">QO</div>
+  <div class="pimage">Quote (speech bubble)</div>
+  
+</div>
+<div class="prow " data-pair="qp">
+  <div class="ptag">QP</div>
+  <div class="pimage">Quarter Pounder burger</div>
+  
+</div>
+<div class="prow double" data-pair="qq">
+  <div class="ptag">QQ</div>
+  <div class="pimage">QQ (crying-eyes emoticon)</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="qr">
+  <div class="ptag">QR</div>
+  <div class="pimage">quartz</div>
+  
+</div>
+<div class="prow " data-pair="qs">
+  <div class="ptag">QS</div>
+  <div class="pimage">Queen-size bed</div>
+  
+</div>
+<div class="prow " data-pair="qt">
+  <div class="ptag">QT</div>
+  <div class="pimage">Cutie</div>
+  
+</div>
+<div class="prow " data-pair="qu">
+  <div class="ptag">QU</div>
+  <div class="pimage">quarry</div>
+  
+</div>
+<div class="prow " data-pair="qv">
+  <div class="ptag">QV</div>
+  <div class="pimage">Quiver of arrows</div>
+  
+</div>
+<div class="prow " data-pair="qw">
+  <div class="ptag">QW</div>
+  <div class="pimage">QWERTY keyboard</div>
+  
+</div>
+<div class="prow " data-pair="qx">
+  <div class="ptag">QX</div>
+  <div class="pimage">Q waiting in a queue</div>
+  
+</div>
+<div class="prow " data-pair="ra">
+  <div class="ptag">RA</div>
+  <div class="pimage">radio</div>
+  
+</div>
+<div class="prow " data-pair="rb">
+  <div class="ptag">RB</div>
+  <div class="pimage">robin</div>
+  
+</div>
+<div class="prow " data-pair="rc">
+  <div class="ptag">RC</div>
+  <div class="pimage">record</div>
+  
+</div>
+<div class="prow " data-pair="rd">
+  <div class="ptag">RD</div>
+  <div class="pimage">red</div>
+  
+</div>
+<div class="prow " data-pair="re">
+  <div class="ptag">RE</div>
+  <div class="pimage">release</div>
+  
+</div>
+<div class="prow " data-pair="rf">
+  <div class="ptag">RF</div>
+  <div class="pimage">roof</div>
+  
+</div>
+<div class="prow " data-pair="rg">
+  <div class="ptag">RG</div>
+  <div class="pimage">region</div>
+  
+</div>
+<div class="prow " data-pair="rh">
+  <div class="ptag">RH</div>
+  <div class="pimage">rhino</div>
+  
+</div>
+<div class="prow " data-pair="ri">
+  <div class="ptag">RI</div>
+  <div class="pimage">river</div>
+  
+</div>
+<div class="prow " data-pair="rj">
+  <div class="ptag">RJ</div>
+  <div class="pimage">raja</div>
+  
+</div>
+<div class="prow " data-pair="rk">
+  <div class="ptag">RK</div>
+  <div class="pimage">rook</div>
+  
+</div>
+<div class="prow " data-pair="rl">
+  <div class="ptag">RL</div>
+  <div class="pimage">relative</div>
+  
+</div>
+<div class="prow " data-pair="rm">
+  <div class="ptag">RM</div>
+  <div class="pimage">room</div>
+  
+</div>
+<div class="prow " data-pair="rn">
+  <div class="ptag">RN</div>
+  <div class="pimage">round</div>
+  
+</div>
+<div class="prow " data-pair="ro">
+  <div class="ptag">RO</div>
+  <div class="pimage">road</div>
+  
+</div>
+<div class="prow " data-pair="rp">
+  <div class="ptag">RP</div>
+  <div class="pimage">rapid</div>
+  
+</div>
+<div class="prow " data-pair="rq">
+  <div class="ptag">RQ</div>
+  <div class="pimage">Request form</div>
+  
+</div>
+<div class="prow double" data-pair="rr">
+  <div class="ptag">RR</div>
+  <div class="pimage">Railroad crossing sign</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="rs">
+  <div class="ptag">RS</div>
+  <div class="pimage">rose</div>
+  
+</div>
+<div class="prow " data-pair="rt">
+  <div class="ptag">RT</div>
+  <div class="pimage">route</div>
+  
+</div>
+<div class="prow " data-pair="ru">
+  <div class="ptag">RU</div>
+  <div class="pimage">ruin</div>
+  
+</div>
+<div class="prow " data-pair="rv">
+  <div class="ptag">RV</div>
+  <div class="pimage">reverse</div>
+  
+</div>
+<div class="prow " data-pair="rw">
+  <div class="ptag">RW</div>
+  <div class="pimage">rowan</div>
+  
+</div>
+<div class="prow " data-pair="rx">
+  <div class="ptag">RX</div>
+  <div class="pimage">Rx prescription bottle</div>
+  
+</div>
+<div class="prow " data-pair="sa">
+  <div class="ptag">SA</div>
+  <div class="pimage">saw</div>
+  
+</div>
+<div class="prow " data-pair="sb">
+  <div class="ptag">SB</div>
+  <div class="pimage">subject</div>
+  
+</div>
+<div class="prow " data-pair="sc">
+  <div class="ptag">SC</div>
+  <div class="pimage">school</div>
+  
+</div>
+<div class="prow " data-pair="sd">
+  <div class="ptag">SD</div>
+  <div class="pimage">seed</div>
+  
+</div>
+<div class="prow " data-pair="se">
+  <div class="ptag">SE</div>
+  <div class="pimage">seven</div>
+  
+</div>
+<div class="prow " data-pair="sf">
+  <div class="ptag">SF</div>
+  <div class="pimage">safe</div>
+  
+</div>
+<div class="prow " data-pair="sg">
+  <div class="ptag">SG</div>
+  <div class="pimage">sugar</div>
+  
+</div>
+<div class="prow " data-pair="sh">
+  <div class="ptag">SH</div>
+  <div class="pimage">short</div>
+  
+</div>
+<div class="prow " data-pair="si">
+  <div class="ptag">SI</div>
+  <div class="pimage">six</div>
+  
+</div>
+<div class="prow " data-pair="sj">
+  <div class="ptag">SJ</div>
+  <div class="pimage">San Jose (Sharks logo)</div>
+  
+</div>
+<div class="prow " data-pair="sk">
+  <div class="ptag">SK</div>
+  <div class="pimage">skin</div>
+  
+</div>
+<div class="prow " data-pair="sl">
+  <div class="ptag">SL</div>
+  <div class="pimage">slide</div>
+  
+</div>
+<div class="prow " data-pair="sm">
+  <div class="ptag">SM</div>
+  <div class="pimage">small</div>
+  
+</div>
+<div class="prow " data-pair="sn">
+  <div class="ptag">SN</div>
+  <div class="pimage">snow</div>
+  
+</div>
+<div class="prow " data-pair="so">
+  <div class="ptag">SO</div>
+  <div class="pimage">solution</div>
+  
+</div>
+<div class="prow " data-pair="sp">
+  <div class="ptag">SP</div>
+  <div class="pimage">special</div>
+  
+</div>
+<div class="prow " data-pair="sq">
+  <div class="ptag">SQ</div>
+  <div class="pimage">square</div>
+  
+</div>
+<div class="prow " data-pair="sr">
+  <div class="ptag">SR</div>
+  <div class="pimage">surface</div>
+  
+</div>
+<div class="prow double" data-pair="ss">
+  <div class="ptag">SS</div>
+  <div class="pimage">sausage</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="st">
+  <div class="ptag">ST</div>
+  <div class="pimage">still</div>
+  
+</div>
+<div class="prow " data-pair="su">
+  <div class="ptag">SU</div>
+  <div class="pimage">sun</div>
+  
+</div>
+<div class="prow " data-pair="sv">
+  <div class="ptag">SV</div>
+  <div class="pimage">souvenir</div>
+  
+</div>
+<div class="prow " data-pair="sw">
+  <div class="ptag">SW</div>
+  <div class="pimage">sweet</div>
+  
+</div>
+<div class="prow " data-pair="sx">
+  <div class="ptag">SX</div>
+  <div class="pimage">sax</div>
+  
+</div>
+<div class="prow " data-pair="ta">
+  <div class="ptag">TA</div>
+  <div class="pimage">table</div>
+  
+</div>
+<div class="prow " data-pair="tb">
+  <div class="ptag">TB</div>
+  <div class="pimage">tube</div>
+  
+</div>
+<div class="prow " data-pair="tc">
+  <div class="ptag">TC</div>
+  <div class="pimage">tackle</div>
+  
+</div>
+<div class="prow " data-pair="td">
+  <div class="ptag">TD</div>
+  <div class="pimage">tidy</div>
+  
+</div>
+<div class="prow " data-pair="te">
+  <div class="ptag">TE</div>
+  <div class="pimage">ten</div>
+  
+</div>
+<div class="prow " data-pair="tf">
+  <div class="ptag">TF</div>
+  <div class="pimage">tofu</div>
+  
+</div>
+<div class="prow " data-pair="tg">
+  <div class="ptag">TG</div>
+  <div class="pimage">tiger</div>
+  
+</div>
+<div class="prow " data-pair="th">
+  <div class="ptag">TH</div>
+  <div class="pimage">three</div>
+  
+</div>
+<div class="prow " data-pair="ti">
+  <div class="ptag">TI</div>
+  <div class="pimage">till</div>
+  
+</div>
+<div class="prow " data-pair="tj">
+  <div class="ptag">TJ</div>
+  <div class="pimage">TJ Maxx shopping bag</div>
+  
+</div>
+<div class="prow " data-pair="tk">
+  <div class="ptag">TK</div>
+  <div class="pimage">takin</div>
+  
+</div>
+<div class="prow " data-pair="tl">
+  <div class="ptag">TL</div>
+  <div class="pimage">tool</div>
+  
+</div>
+<div class="prow " data-pair="tm">
+  <div class="ptag">TM</div>
+  <div class="pimage">tom</div>
+  
+</div>
+<div class="prow " data-pair="tn">
+  <div class="ptag">TN</div>
+  <div class="pimage">tank</div>
+  
+</div>
+<div class="prow " data-pair="to">
+  <div class="ptag">TO</div>
+  <div class="pimage">total</div>
+  
+</div>
+<div class="prow " data-pair="tp">
+  <div class="ptag">TP</div>
+  <div class="pimage">tape</div>
+  
+</div>
+<div class="prow " data-pair="tq">
+  <div class="ptag">TQ</div>
+  <div class="pimage">tequila</div>
+  
+</div>
+<div class="prow " data-pair="tr">
+  <div class="ptag">TR</div>
+  <div class="pimage">track</div>
+  
+</div>
+<div class="prow " data-pair="ts">
+  <div class="ptag">TS</div>
+  <div class="pimage">tissue</div>
+  
+</div>
+<div class="prow double" data-pair="tt">
+  <div class="ptag">TT</div>
+  <div class="pimage">teeth</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="tu">
+  <div class="ptag">TU</div>
+  <div class="pimage">turn</div>
+  
+</div>
+<div class="prow " data-pair="tv">
+  <div class="ptag">TV</div>
+  <div class="pimage">tavern</div>
+  
+</div>
+<div class="prow " data-pair="tw">
+  <div class="ptag">TW</div>
+  <div class="pimage">two</div>
+  
+</div>
+<div class="prow " data-pair="tx">
+  <div class="ptag">TX</div>
+  <div class="pimage">taxi</div>
+  
+</div>
+<div class="prow " data-pair="ua">
+  <div class="ptag">UA</div>
+  <div class="pimage">United Airlines plane</div>
+  
+</div>
+<div class="prow " data-pair="ub">
+  <div class="ptag">UB</div>
+  <div class="pimage">Uber car</div>
+  
+</div>
+<div class="prow " data-pair="uc">
+  <div class="ptag">UC</div>
+  <div class="pimage">UC graduation cap</div>
+  
+</div>
+<div class="prow " data-pair="ud">
+  <div class="ptag">UD</div>
+  <div class="pimage">Oud (Arabic lute)</div>
+  
+</div>
+<div class="prow " data-pair="ue">
+  <div class="ptag">UE</div>
+  <div class="pimage">UE Boom speaker</div>
+  
+</div>
+<div class="prow " data-pair="uf">
+  <div class="ptag">UF</div>
+  <div class="pimage">UFO</div>
+  
+</div>
+<div class="prow " data-pair="ug">
+  <div class="ptag">UG</div>
+  <div class="pimage">Ugg boots</div>
+  
+</div>
+<div class="prow " data-pair="uh">
+  <div class="ptag">UH</div>
+  <div class="pimage">Uh... (confused face)</div>
+  
+</div>
+<div class="prow " data-pair="ui">
+  <div class="ptag">UI</div>
+  <div class="pimage">App screen buttons</div>
+  
+</div>
+<div class="prow " data-pair="uj">
+  <div class="ptag">UJ</div>
+  <div class="pimage">Ouija board</div>
+  
+</div>
+<div class="prow " data-pair="uk">
+  <div class="ptag">UK</div>
+  <div class="pimage">ukulele</div>
+  
+</div>
+<div class="prow " data-pair="ul">
+  <div class="ptag">UL</div>
+  <div class="pimage">ulster</div>
+  
+</div>
+<div class="prow " data-pair="um">
+  <div class="ptag">UM</div>
+  <div class="pimage">umbrella</div>
+  
+</div>
+<div class="prow " data-pair="un">
+  <div class="ptag">UN</div>
+  <div class="pimage">universe</div>
+  
+</div>
+<div class="prow " data-pair="uo">
+  <div class="ptag">UO</div>
+  <div class="pimage">Urban Outfitters store</div>
+  
+</div>
+<div class="prow " data-pair="up">
+  <div class="ptag">UP</div>
+  <div class="pimage">upper</div>
+  
+</div>
+<div class="prow " data-pair="uq">
+  <div class="ptag">UQ</div>
+  <div class="pimage">U waiting in a queue</div>
+  
+</div>
+<div class="prow " data-pair="ur">
+  <div class="ptag">UR</div>
+  <div class="pimage">uranium</div>
+  
+</div>
+<div class="prow " data-pair="us">
+  <div class="ptag">US</div>
+  <div class="pimage">US flag</div>
+  
+</div>
+<div class="prow " data-pair="ut">
+  <div class="ptag">UT</div>
+  <div class="pimage">Utah (state)</div>
+  
+</div>
+<div class="prow double" data-pair="uu">
+  <div class="ptag">UU</div>
+  <div class="pimage">Yo-yo</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="uv">
+  <div class="ptag">UV</div>
+  <div class="pimage">UV sunglasses</div>
+  
+</div>
+<div class="prow " data-pair="uw">
+  <div class="ptag">UW</div>
+  <div class="pimage">University of Washington</div>
+  
+</div>
+<div class="prow " data-pair="ux">
+  <div class="ptag">UX</div>
+  <div class="pimage">Smartphone app</div>
+  
+</div>
+<div class="prow " data-pair="va">
+  <div class="ptag">VA</div>
+  <div class="pimage">valley</div>
+  
+</div>
+<div class="prow " data-pair="vb">
+  <div class="ptag">VB</div>
+  <div class="pimage">Volleyball</div>
+  
+</div>
+<div class="prow " data-pair="vc">
+  <div class="ptag">VC</div>
+  <div class="pimage">vacuum</div>
+  
+</div>
+<div class="prow " data-pair="vd">
+  <div class="ptag">VD</div>
+  <div class="pimage">video</div>
+  
+</div>
+<div class="prow " data-pair="ve">
+  <div class="ptag">VE</div>
+  <div class="pimage">vehicle</div>
+  
+</div>
+<div class="prow " data-pair="vf">
+  <div class="ptag">VF</div>
+  <div class="pimage">Funko Pop figure</div>
+  
+</div>
+<div class="prow " data-pair="vg">
+  <div class="ptag">VG</div>
+  <div class="pimage">Video game controller</div>
+  
+</div>
+<div class="prow " data-pair="vh">
+  <div class="ptag">VH</div>
+  <div class="pimage">VH1 / Van Halen guitar</div>
+  
+</div>
+<div class="prow " data-pair="vi">
+  <div class="ptag">VI</div>
+  <div class="pimage">virus</div>
+  
+</div>
+<div class="prow " data-pair="vj">
+  <div class="ptag">VJ</div>
+  <div class="pimage">Music video jockey</div>
+  
+</div>
+<div class="prow " data-pair="vk">
+  <div class="ptag">VK</div>
+  <div class="pimage">VK social app</div>
+  
+</div>
+<div class="prow " data-pair="vl">
+  <div class="ptag">VL</div>
+  <div class="pimage">villa</div>
+  
+</div>
+<div class="prow " data-pair="vm">
+  <div class="ptag">VM</div>
+  <div class="pimage">Voicemail icon</div>
+  
+</div>
+<div class="prow " data-pair="vn">
+  <div class="ptag">VN</div>
+  <div class="pimage">vintage</div>
+  
+</div>
+<div class="prow " data-pair="vo">
+  <div class="ptag">VO</div>
+  <div class="pimage">void</div>
+  
+</div>
+<div class="prow " data-pair="vp">
+  <div class="ptag">VP</div>
+  <div class="pimage">vapor</div>
+  
+</div>
+<div class="prow " data-pair="vq">
+  <div class="ptag">VQ</div>
+  <div class="pimage">Vocal quartet mics</div>
+  
+</div>
+<div class="prow " data-pair="vr">
+  <div class="ptag">VR</div>
+  <div class="pimage">vertical</div>
+  
+</div>
+<div class="prow " data-pair="vs">
+  <div class="ptag">VS</div>
+  <div class="pimage">vessel</div>
+  
+</div>
+<div class="prow " data-pair="vt">
+  <div class="ptag">VT</div>
+  <div class="pimage">vitamin</div>
+  
+</div>
+<div class="prow " data-pair="vu">
+  <div class="ptag">VU</div>
+  <div class="pimage">vulture</div>
+  
+</div>
+<div class="prow double" data-pair="vv">
+  <div class="ptag">VV</div>
+  <div class="pimage">Mountain peaks (zigzag)</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="vw">
+  <div class="ptag">VW</div>
+  <div class="pimage">viewer</div>
+  
+</div>
+<div class="prow " data-pair="vx">
+  <div class="ptag">VX</div>
+  <div class="pimage">Vortex whirlpool</div>
+  
+</div>
+<div class="prow " data-pair="wa">
+  <div class="ptag">WA</div>
+  <div class="pimage">water</div>
+  
+</div>
+<div class="prow " data-pair="wb">
+  <div class="ptag">WB</div>
+  <div class="pimage">web</div>
+  
+</div>
+<div class="prow " data-pair="wc">
+  <div class="ptag">WC</div>
+  <div class="pimage">wicket</div>
+  
+</div>
+<div class="prow " data-pair="wd">
+  <div class="ptag">WD</div>
+  <div class="pimage">wood</div>
+  
+</div>
+<div class="prow " data-pair="we">
+  <div class="ptag">WE</div>
+  <div class="pimage">well</div>
+  
+</div>
+<div class="prow " data-pair="wf">
+  <div class="ptag">WF</div>
+  <div class="pimage">waffle</div>
+  
+</div>
+<div class="prow " data-pair="wg">
+  <div class="ptag">WG</div>
+  <div class="pimage">weight</div>
+  
+</div>
+<div class="prow " data-pair="wh">
+  <div class="ptag">WH</div>
+  <div class="pimage">wheel</div>
+  
+</div>
+<div class="prow " data-pair="wi">
+  <div class="ptag">WI</div>
+  <div class="pimage">window</div>
+  
+</div>
+<div class="prow " data-pair="wj">
+  <div class="ptag">WJ</div>
+  <div class="pimage">Wall Street Journal</div>
+  
+</div>
+<div class="prow " data-pair="wk">
+  <div class="ptag">WK</div>
+  <div class="pimage">Weekend calendar</div>
+  
+</div>
+<div class="prow " data-pair="wl">
+  <div class="ptag">WL</div>
+  <div class="pimage">wall</div>
+  
+</div>
+<div class="prow " data-pair="wm">
+  <div class="ptag">WM</div>
+  <div class="pimage">womb</div>
+  
+</div>
+<div class="prow " data-pair="wn">
+  <div class="ptag">WN</div>
+  <div class="pimage">wine</div>
+  
+</div>
+<div class="prow " data-pair="wo">
+  <div class="ptag">WO</div>
+  <div class="pimage">work</div>
+  
+</div>
+<div class="prow " data-pair="wp">
+  <div class="ptag">WP</div>
+  <div class="pimage">weapon</div>
+  
+</div>
+<div class="prow " data-pair="wq">
+  <div class="ptag">WQ</div>
+  <div class="pimage">W waiting in a queue</div>
+  
+</div>
+<div class="prow " data-pair="wr">
+  <div class="ptag">WR</div>
+  <div class="pimage">wrap</div>
+  
+</div>
+<div class="prow " data-pair="ws">
+  <div class="ptag">WS</div>
+  <div class="pimage">western</div>
+  
+</div>
+<div class="prow " data-pair="wt">
+  <div class="ptag">WT</div>
+  <div class="pimage">watch</div>
+  
+</div>
+<div class="prow " data-pair="wu">
+  <div class="ptag">WU</div>
+  <div class="pimage">Western Union sign</div>
+  
+</div>
+<div class="prow " data-pair="wv">
+  <div class="ptag">WV</div>
+  <div class="pimage">weaver</div>
+  
+</div>
+<div class="prow double" data-pair="ww">
+  <div class="ptag">WW</div>
+  <div class="pimage">Wonder Woman's shield</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+<div class="prow " data-pair="wx">
+  <div class="ptag">WX</div>
+  <div class="pimage">wax</div>
+  
+</div>
+<div class="prow " data-pair="xa">
+  <div class="ptag">XA</div>
+  <div class="pimage">Xanadu palace</div>
+  
+</div>
+<div class="prow " data-pair="xb">
+  <div class="ptag">XB</div>
+  <div class="pimage">Xbox controller</div>
+  
+</div>
+<div class="prow " data-pair="xc">
+  <div class="ptag">XC</div>
+  <div class="pimage">Cross-country runner</div>
+  
+</div>
+<div class="prow " data-pair="xd">
+  <div class="ptag">XD</div>
+  <div class="pimage">XD (laughing emoticon)</div>
+  
+</div>
+<div class="prow " data-pair="xe">
+  <div class="ptag">XE</div>
+  <div class="pimage">Xenon lightbulb</div>
+  
+</div>
+<div class="prow " data-pair="xf">
+  <div class="ptag">XF</div>
+  <div class="pimage">The X-Files</div>
+  
+</div>
+<div class="prow " data-pair="xg">
+  <div class="ptag">XG</div>
+  <div class="pimage">X-Games ramp</div>
+  
+</div>
+<div class="prow " data-pair="xh">
+  <div class="ptag">XH</div>
+  <div class="pimage">Exhaust pipe</div>
+  
+</div>
+<div class="prow " data-pair="xi">
+  <div class="ptag">XI</div>
+  <div class="pimage">Roman numeral XI (clock)</div>
+  
+</div>
+<div class="prow " data-pair="xj">
+  <div class="ptag">XJ</div>
+  <div class="pimage">Jaguar XJ (car)</div>
+  
+</div>
+<div class="prow " data-pair="xk">
+  <div class="ptag">XK</div>
+  <div class="pimage">Jaguar XK (car)</div>
+  
+</div>
+<div class="prow " data-pair="xl">
+  <div class="ptag">XL</div>
+  <div class="pimage">XL clothing tag</div>
+  
+</div>
+<div class="prow " data-pair="xm">
+  <div class="ptag">XM</div>
+  <div class="pimage">XM satellite radio</div>
+  
+</div>
+<div class="prow " data-pair="xn">
+  <div class="ptag">XN</div>
+  <div class="pimage">Exception warning sign</div>
+  
+</div>
+<div class="prow " data-pair="xo">
+  <div class="ptag">XO</div>
+  <div class="pimage">XO (hugs & kisses)</div>
+  
+</div>
+<div class="prow " data-pair="xp">
+  <div class="ptag">XP</div>
+  <div class="pimage">Video game XP star</div>
+  
+</div>
+<div class="prow " data-pair="xq">
+  <div class="ptag">XQ</div>
+  <div class="pimage">X waiting in a queue</div>
+  
+</div>
+<div class="prow " data-pair="xr">
+  <div class="ptag">XR</div>
+  <div class="pimage">iPhone XR</div>
+  
+</div>
+<div class="prow " data-pair="xs">
+  <div class="ptag">XS</div>
+  <div class="pimage">XS clothing tag</div>
+  
+</div>
+<div class="prow " data-pair="xt">
+  <div class="ptag">XT</div>
+  <div class="pimage">Nissan Xterra</div>
+  
+</div>
+<div class="prow " data-pair="xu">
+  <div class="ptag">XU</div>
+  <div class="pimage">Xu (old Vietnamese coin)</div>
+  
+</div>
+<div class="prow " data-pair="xv">
+  <div class="ptag">XV</div>
+  <div class="pimage">Roman numeral XV</div>
+  
+</div>
+<div class="prow " data-pair="xw">
+  <div class="ptag">XW</div>
+  <div class="pimage">X-Wing fighter</div>
+  
+</div>
+<div class="prow double" data-pair="xx">
+  <div class="ptag">XX</div>
+  <div class="pimage">XX (kisses)</div>
+  <div class="note">Same-letter pair — flipped edge / twisted corner in real solves.</div>
+</div>
+
+</div>
+
+
+</div>
