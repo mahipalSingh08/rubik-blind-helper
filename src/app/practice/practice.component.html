@@ -44,6 +44,9 @@
 
   <div class="parity-alert" *ngIf="parity">
     ⚠️ <strong>Parity!</strong> There are an odd number of targets. Don't forget your parity algorithm!
+    <div class="parity-alg" *ngIf="commutator.getSpecialAlg('PARITY') as pAlg" style="margin-top: 10px;">
+      <span style="font-family: 'Fira Code', monospace; font-weight: bold; background: rgba(0,0,0,0.1); padding: 4px 8px; border-radius: 4px;">{{ pAlg.short }}</span>
+    </div>
   </div>
 
   <div class="groups">
@@ -52,7 +55,9 @@
       <div class="pairs">
         <div class="pair" *ngFor="let p of edgePairs">{{ p }}</div>
       </div>
-      <div class="buffer-note">Buffer: {{ memoService.edgeBuffer | uppercase }}</div>
+      <div class="buffer-note" style="display: flex; align-items: center; gap: 6px; margin-top: 14px;">
+        Buffer: <input type="text" [(ngModel)]="memoService.edgeBuffer" (change)="retrace()" maxlength="1" style="width: 32px; background: #10131c; color: var(--text); border: 1px solid #2b3040; border-radius: 4px; text-align: center; text-transform: uppercase; font-family: monospace; font-size: 0.9rem; padding: 2px;">
+      </div>
     </div>
     
     <div class="group corners">
@@ -60,26 +65,57 @@
       <div class="pairs">
         <div class="pair" *ngFor="let p of cornerPairs">{{ p }}</div>
       </div>
-      <div class="buffer-note">Buffer: {{ memoService.cornerBuffer | uppercase }}</div>
+      <div class="buffer-note" style="display: flex; align-items: center; gap: 6px; margin-top: 14px;">
+        Buffer: <input type="text" [(ngModel)]="memoService.cornerBuffer" (change)="retrace()" maxlength="1" style="width: 32px; background: #10131c; color: var(--text); border: 1px solid #2b3040; border-radius: 4px; text-align: center; text-transform: uppercase; font-family: monospace; font-size: 0.9rem; padding: 2px;">
+      </div>
     </div>
   </div>
 
   <div class="words-section">
-    <button class="toggle-btn" (click)="toggleWords()">
-      {{ showWords ? '🙈 Hide Words' : '👀 Show Words' }}
-    </button>
+    <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
+      <button class="toggle-btn" (click)="toggleWords()">
+        {{ showWords ? '🙈 Hide Words' : '👀 Show Words' }}
+      </button>
+      <button class="toggle-btn" (click)="toggleCommutators()">
+        {{ showCommutators ? '🙈 Hide 3-Style' : '✨ Show 3-Style' }}
+      </button>
+    </div>
     
-    <div class="words-list" *ngIf="showWords">
-      <div class="word-group">
-        <h3 class="edges-color">Edges Words</h3>
-        <div class="word-item" *ngFor="let p of edgePairs">
-          <span class="pair-tag">{{ p }}</span> <span class="word-name">{{ getWord(p) }}</span>
+    <div class="words-list" *ngIf="showWords || showCommutators">
+      <div class="word-group group-edges">
+        <h3 class="edges-color">Edges Memo</h3>
+        <div class="word-item edge-card" *ngFor="let p of edgePairs">
+          <div class="word-header">
+            <span class="pair-tag">{{ p }}</span> 
+            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+          </div>
+          <div class="alg-section" *ngIf="showCommutators">
+            <div class="alg-container" *ngIf="commutator.getEdgeAlg(p) as alg">
+              <span class="alg-short">{{ alg.short }}</span>
+              <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
+            </div>
+            <div class="alg-container no-alg" *ngIf="!commutator.getEdgeAlg(p)">
+              No alg set
+            </div>
+          </div>
         </div>
       </div>
-      <div class="word-group">
-        <h3 class="corners-color">Corners Words</h3>
-        <div class="word-item" *ngFor="let p of cornerPairs">
-          <span class="pair-tag">{{ p }}</span> <span class="word-name">{{ getWord(p) }}</span>
+      <div class="word-group group-corners">
+        <h3 class="corners-color">Corners Memo</h3>
+        <div class="word-item corner-card" *ngFor="let p of cornerPairs">
+          <div class="word-header">
+            <span class="pair-tag">{{ p }}</span> 
+            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+          </div>
+          <div class="alg-section" *ngIf="showCommutators">
+            <div class="alg-container" *ngIf="commutator.getCornerAlg(p) as alg">
+              <span class="alg-short">{{ alg.short }}</span>
+              <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
+            </div>
+            <div class="alg-container no-alg" *ngIf="!commutator.getCornerAlg(p)">
+              No alg set
+            </div>
+          </div>
         </div>
       </div>
     </div>

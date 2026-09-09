@@ -1,0 +1,76 @@
+<div class="tab-container">
+  <h1>🔀 3-Style Commutator Database</h1>
+  <p class="subtitle">Buffers: <strong>Edges (UF)</strong> &bull; <strong>Corners (UFR)</strong></p>
+
+  <div class="card" style="text-align: center;">
+    <div class="toggle-group" style="margin-bottom: 20px;">
+      <button 
+        [class.active]="pieceType === 'edges'" 
+        (click)="pieceType = 'edges'; searchPair = ''; onSearch()"
+        class="btn btn-outline">
+        Edges (UF)
+      </button>
+      <button 
+        [class.active]="pieceType === 'corners'" 
+        (click)="pieceType = 'corners'; searchPair = ''; onSearch()"
+        class="btn btn-outline">
+        Corners (UFR)
+      </button>
+      <button 
+        [class.active]="pieceType === 'special'" 
+        (click)="pieceType = 'special'; searchPair = ''; onSearch()"
+        class="btn btn-outline">
+        Special Cases
+      </button>
+    </div>
+
+    <div class="special-buttons" *ngIf="pieceType === 'special'" style="display: flex; gap: 10px; justify-content: center; margin-bottom: 20px;">
+      <button class="btn btn-outline" [class.active]="searchPair === 'PARITY'" (click)="selectSpecial('PARITY')">Parity</button>
+      <button class="btn btn-outline" [class.active]="searchPair === 'EDGE_FLIPS'" (click)="selectSpecial('EDGE_FLIPS')">Edge Flips</button>
+      <button class="btn btn-outline" [class.active]="searchPair === 'CORNER_TWISTS'" (click)="selectSpecial('CORNER_TWISTS')">Corner Twists</button>
+    </div>
+
+    <div class="search-container" *ngIf="pieceType !== 'special'">
+      <input 
+        type="text" 
+        class="search-input"
+        [(ngModel)]="searchPair" 
+        (input)="onSearch()" 
+        placeholder="e.g. CD" 
+        maxlength="2"
+        autocomplete="off">
+    </div>
+
+    <div class="result-container" *ngIf="(pieceType !== 'special' && searchPair.length === 2) || (pieceType === 'special' && searchPair.length > 2)">
+      <h2 class="pair-title">{{ displayPairTitle | uppercase }}</h2>
+      
+      <div class="alg-display" *ngIf="!isEditing">
+        <p class="alg-short">{{ currentAlgShort || 'No algorithm set' }}</p>
+        <p class="alg-long" *ngIf="currentAlgLong">{{ currentAlgLong }}</p>
+        <button class="btn btn-edit" (click)="startEdit()">Edit Algorithm</button>
+      </div>
+
+      <div class="alg-edit" *ngIf="isEditing">
+        <div class="input-group">
+          <label>Commutator (Short Form)</label>
+          <input type="text" class="edit-input" [(ngModel)]="editAlgShort" placeholder="e.g. [U, R D' R']">
+        </div>
+        <div class="input-group">
+          <label>Full Algorithm (Long Form)</label>
+          <input type="text" class="edit-input" [(ngModel)]="editAlgLong" placeholder="e.g. U R D' R' U' R D R'">
+        </div>
+        <div class="action-buttons">
+          <button class="btn btn-save" (click)="saveEdit()">Save</button>
+          <button class="btn btn-outline" (click)="cancelEdit()">Cancel</button>
+        </div>
+      </div>
+    </div>
+    
+    <div *ngIf="pieceType !== 'special' && searchPair.length !== 2" style="color: var(--muted); margin-top: 20px;">
+      Type a letter pair to view or edit its commutator.
+    </div>
+    <div *ngIf="pieceType === 'special' && searchPair.length === 0" style="color: var(--muted); margin-top: 20px;">
+      Select a special case to view or edit its algorithm.
+    </div>
+  </div>
+</div>

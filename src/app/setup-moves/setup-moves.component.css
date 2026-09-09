@@ -1,9 +1,0 @@
-.tab-container { display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto; padding-bottom: 40px; }
-.card { background: var(--panel); border: 1px solid #262b3a; border-radius: 12px; padding: 24px; margin-bottom: 20px; width: 100%; box-shadow: 0 4px 18px rgba(0,0,0,0.35); overflow-x: auto;}
-.moves-table { width: 100%; border-collapse: collapse; text-align: left; }
-.moves-table th, .moves-table td { padding: 12px; border-bottom: 1px solid #2b3040; }
-.moves-table th { color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
-.moves-table.edges th { color: var(--accent2); }
-.moves-table tr:hover { background: rgba(255,255,255,0.02); }
-.moves-table td:nth-child(1) { font-weight: 800; font-size: 1.1rem; }
-.moves-table td:nth-child(3), .moves-table td:nth-child(4) { font-family: monospace; font-size: 1.05rem; }

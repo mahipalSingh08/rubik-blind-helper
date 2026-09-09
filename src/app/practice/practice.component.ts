@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MemoService } from '../memo-generator/memo.service';
-import { WORD_DICTIONARY } from '../shared/word-dictionary';
+import { DictionaryService } from '../shared/dictionary.service';
+import { CommutatorService } from '../shared/commutator.service';
 import { CubeEngine } from '../shared/cube-engine';
 import { BldTracer } from '../shared/bld-tracer';
 
@@ -18,6 +19,7 @@ export class PracticeComponent implements OnInit {
   edgePairs: string[] = [];
   cornerPairs: string[] = [];
   showWords: boolean = true;
+  showCommutators: boolean = false;
   parity: boolean = false;
   
   engine!: CubeEngine;
@@ -36,7 +38,11 @@ export class PracticeComponent implements OnInit {
     U: '#ffeb3b', V: '#ffeb3b', W: '#ffeb3b', X: '#ffeb3b', // D
   };
 
-  constructor(public memoService: MemoService) {}
+  constructor(
+    public memoService: MemoService, 
+    public dictionary: DictionaryService,
+    public commutator: CommutatorService
+  ) {}
 
   ngOnInit() {
     const saved = localStorage.getItem('practiceScramble');
@@ -107,6 +113,13 @@ export class PracticeComponent implements OnInit {
     this.loadScramble(newScramble);
   }
 
+  retrace() {
+    // Save updated buffer choices
+    this.memoService.saveState();
+    // Reload the current scramble to re-trace solutions
+    this.loadScramble(this.scramble);
+  }
+
   loadScramble(scrambleStr: string) {
     this.scramble = scrambleStr;
     
@@ -116,8 +129,8 @@ export class PracticeComponent implements OnInit {
     this.updateFaces();
     
     const tracer = new BldTracer();
-    const edges = tracer.traceEdges(this.engine.edges, this.memoService.edgeBuffer || 'A');
-    const corners = tracer.traceCorners(this.engine.corners, this.memoService.cornerBuffer || 'A');
+    const edges = tracer.traceEdges(this.engine.edges, (this.memoService.edgeBuffer || 'C').toUpperCase());
+    const corners = tracer.traceCorners(this.engine.corners, (this.memoService.cornerBuffer || 'C').toUpperCase());
     
     this.edgePairs = this.toPairs(edges);
     this.cornerPairs = this.toPairs(corners);
@@ -126,10 +139,14 @@ export class PracticeComponent implements OnInit {
   }
 
   getWord(pair: string): string {
-    return WORD_DICTIONARY[pair.toUpperCase()] || '???';
+    return this.dictionary.getWord(pair);
   }
 
   toggleWords() {
     this.showWords = !this.showWords;
+  }
+  
+  toggleCommutators() {
+    this.showCommutators = !this.showCommutators;
   }
 }

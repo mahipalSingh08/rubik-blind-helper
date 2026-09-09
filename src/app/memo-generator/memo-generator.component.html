@@ -36,21 +36,50 @@
   </div>
 
   <div class="words-section">
-    <button class="toggle-btn" (click)="toggleWords()">
-      {{ showWords ? '🙈 Hide Words' : '👀 Show Words' }}
-    </button>
+    <div style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
+      <button class="toggle-btn" (click)="toggleWords()">
+        {{ showWords ? '🙈 Hide Words' : '👀 Show Words' }}
+      </button>
+      <button class="toggle-btn" (click)="toggleCommutators()">
+        {{ showCommutators ? '🙈 Hide 3-Style' : '✨ Show 3-Style' }}
+      </button>
+    </div>
     
-    <div class="words-list" *ngIf="showWords">
+    <div class="words-list" *ngIf="showWords || showCommutators">
       <div class="word-group">
-        <h3 class="edges-color">Edges Words</h3>
-        <div class="word-item" *ngFor="let p of memoService.edgePairs">
-          <span class="pair-tag">{{ p }}</span> <span class="word-name">{{ getWord(p) }}</span>
+        <h3 class="edges-color">Edges Memo</h3>
+        <div class="word-item" *ngFor="let p of memoService.edgePairs" style="display: flex; flex-direction: column;">
+          <div>
+            <span class="pair-tag">{{ p }}</span> 
+            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+          </div>
+          <div *ngIf="showCommutators">
+            <div class="alg-container" *ngIf="commutator.getEdgeAlg(p) as alg">
+              <span class="alg-short">{{ alg.short }}</span>
+              <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
+            </div>
+            <div class="alg-container no-alg" *ngIf="!commutator.getEdgeAlg(p)">
+              No alg set
+            </div>
+          </div>
         </div>
       </div>
       <div class="word-group">
-        <h3 class="corners-color">Corners Words</h3>
-        <div class="word-item" *ngFor="let p of memoService.cornerPairs">
-          <span class="pair-tag">{{ p }}</span> <span class="word-name">{{ getWord(p) }}</span>
+        <h3 class="corners-color">Corners Memo</h3>
+        <div class="word-item" *ngFor="let p of memoService.cornerPairs" style="display: flex; flex-direction: column;">
+          <div>
+            <span class="pair-tag">{{ p }}</span> 
+            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+          </div>
+          <div *ngIf="showCommutators">
+            <div class="alg-container" *ngIf="commutator.getCornerAlg(p) as alg">
+              <span class="alg-short">{{ alg.short }}</span>
+              <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
+            </div>
+            <div class="alg-container no-alg" *ngIf="!commutator.getCornerAlg(p)">
+              No alg set
+            </div>
+          </div>
         </div>
       </div>
     </div>

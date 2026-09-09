@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MemoService } from './memo.service';
-import { WORD_DICTIONARY } from '../shared/word-dictionary';
+import { DictionaryService } from '../shared/dictionary.service';
+import { CommutatorService } from '../shared/commutator.service';
 
 @Component({
   selector: 'app-memo-generator',
@@ -13,8 +14,13 @@ import { WORD_DICTIONARY } from '../shared/word-dictionary';
 })
 export class MemoGeneratorComponent implements OnInit {
   showWords = true;
+  showCommutators = false;
 
-  constructor(public memoService: MemoService) {}
+  constructor(
+    public memoService: MemoService, 
+    public dictionary: DictionaryService,
+    public commutator: CommutatorService
+  ) {}
 
   ngOnInit() {
     if (!this.memoService.hasGenerated) {
@@ -28,10 +34,14 @@ export class MemoGeneratorComponent implements OnInit {
   }
 
   getWord(pair: string): string {
-    return WORD_DICTIONARY[pair.toUpperCase()] || '???';
+    return this.dictionary.getWord(pair);
   }
 
   toggleWords() {
     this.showWords = !this.showWords;
+  }
+  
+  toggleCommutators() {
+    this.showCommutators = !this.showCommutators;
   }
 }

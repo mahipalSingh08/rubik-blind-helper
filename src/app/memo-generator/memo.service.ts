@@ -10,8 +10,8 @@ export interface CubePairs {
 })
 export class MemoService {
   pairCount: number = 6;
-  cornerBuffer: string = 'A';
-  edgeBuffer: string = 'A';
+  cornerBuffer: string = 'C';
+  edgeBuffer: string = 'C';
 
   cornerPairs: string[] = [];
   edgePairs: string[] = [];
@@ -36,8 +36,8 @@ export class MemoService {
       try {
         const state = JSON.parse(saved);
         this.pairCount = state.pairCount || 6;
-        this.cornerBuffer = state.cornerBuffer || 'A';
-        this.edgeBuffer = state.edgeBuffer || 'A';
+        this.cornerBuffer = (state.cornerBuffer || 'C').toUpperCase().trim() || 'C';
+        this.edgeBuffer = (state.edgeBuffer || 'C').toUpperCase().trim() || 'C';
         this.cornerPairs = state.cornerPairs || [];
         this.edgePairs = state.edgePairs || [];
         this.hasGenerated = state.hasGenerated || false;
@@ -52,7 +52,7 @@ export class MemoService {
     }
   }
 
-  private saveState() {
+  saveState() {
     const state = {
       pairCount: this.pairCount,
       cornerBuffer: this.cornerBuffer,
@@ -99,8 +99,8 @@ export class MemoService {
 
   generate() {
     const count = Math.min(11, Math.max(1, this.pairCount || 6));
-    const cornerBuffer = this.cornerBuffer || "A";
-    const edgeBuffer = this.edgeBuffer || "A";
+    const cornerBuffer = this.cornerBuffer || "C";
+    const edgeBuffer = this.edgeBuffer || "C";
 
     this.cornerPairs = this.makePairs(cornerBuffer, count);
     this.edgePairs = this.makePairs(edgeBuffer, count);
@@ -113,8 +113,8 @@ export class MemoService {
   generateMulti() {
     const count = Math.min(11, Math.max(1, this.multiPairsEach || 6));
     const cubes = Math.min(20, Math.max(2, this.multiCubeCount || 2));
-    const cornerBuffer = this.cornerBuffer || "A";
-    const edgeBuffer = this.edgeBuffer || "A";
+    const cornerBuffer = this.cornerBuffer || "C";
+    const edgeBuffer = this.edgeBuffer || "C";
 
     this.multiCubes = [];
     for (let i = 0; i < cubes; i++) {

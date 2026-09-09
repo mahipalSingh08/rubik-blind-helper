@@ -1,38 +1,54 @@
-import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { DictionaryService } from '../shared/dictionary.service';
 
 @Component({
   selector: 'app-word-association',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './word-association.component.html',
   styleUrls: ['./word-association.component.css']
 })
-export class WordAssociationComponent implements AfterViewInit {
-  @ViewChild('searchBox') searchBox!: ElementRef<HTMLInputElement>;
-  @ViewChild('pairContainer') pairContainer!: ElementRef<HTMLDivElement>;
+export class WordAssociationComponent {
+  letters = 'ABCDEFGHIJKLMNOPQRSTUVWX'.split('');
+  selectedLetter: string | null = null;
+  activePair: string | null = null;
   
-  visibleCount = 576;
-  totalCount = 576;
-  
-  ngAfterViewInit() {
-    this.totalCount = this.pairContainer.nativeElement.querySelectorAll('.prow').length;
-    this.visibleCount = this.totalCount;
+  customInput: string = '';
+
+  constructor(public dictionary: DictionaryService) {}
+
+  selectLetter(letter: string) {
+    if (this.selectedLetter === letter) {
+      this.selectedLetter = null;
+      this.activePair = null;
+    } else {
+      this.selectedLetter = letter;
+      this.activePair = null;
+    }
   }
 
-  onSearch(event: Event) {
-    const q = (event.target as HTMLInputElement).value.trim().toLowerCase();
-    let visible = 0;
-    const rows = this.pairContainer.nativeElement.querySelectorAll('.prow');
-    rows.forEach((row: Element) => {
-      const pair = row.getAttribute('data-pair');
-      if (q === '' || (pair && pair.includes(q))) { 
-        row.classList.remove('hidden'); 
-        visible++; 
-      } else { 
-        row.classList.add('hidden'); 
-      }
-    });
-    this.visibleCount = visible;
+  selectPair(pair: string) {
+    this.activePair = pair;
+    this.customInput = this.dictionary.getCustomWord(pair);
+  }
+
+  saveCustomWord() {
+    if (this.activePair) {
+      this.dictionary.setCustomWord(this.activePair, this.customInput);
+    }
+  }
+  
+  clearCustomWord() {
+    if (this.activePair) {
+      this.dictionary.setCustomWord(this.activePair, '');
+      this.customInput = '';
+    }
+  }
+
+  useSuggestion(word: string) {
+    this.customInput = word;
+    this.saveCustomWord();
   }
 }

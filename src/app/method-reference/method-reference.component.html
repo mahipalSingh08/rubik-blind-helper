@@ -1,34 +1,53 @@
 <div class="tab-container">
-  <h1>📖 OP & M2 Methods Reference</h1>
-  <p class="subtitle">Core algorithms and logic for solving blindfolded</p>
+  <h1>📖 3-Style Methods Reference</h1>
+  <p class="subtitle">Understanding commutators for both Corners (UFR) and Edges (UF)</p>
 
   <div class="card">
-    <h2 class="op">Old Pochmann (OP) for Corners</h2>
-    <p><b>Buffer:</b> UBL (Up-Back-Left)</p>
-    <p><b>Target:</b> RFD (Right-Front-Down)</p>
-    <p><b>Core Algorithm (Y-Perm):</b> <code>R U' R' U' R U R' F' R U R' U' R' F R</code></p>
-    <p><b>How it works:</b> The Y-Perm swaps the UBL and RFD corners (while also swapping the UB and UL edges, which is why parity matters). For any target letter, you execute a <b>setup move</b> to place that sticker at RFD, do the Y-Perm, and then undo the setup move.</p>
+    <h2 style="color: var(--accent)">3-Style Overview</h2>
+    <p><b>What is 3-Style?</b> Instead of solving one piece at a time using long setups and standard permutations (like Old Pochmann or M2), 3-Style solves <b>two pieces at once</b> using short sequences called <i>commutators</i>.</p>
+    <p>A commutator cycles 3 pieces: the Buffer, Target 1, and Target 2. By solving two targets at once, you drastically reduce your move count and eliminate long setup moves.</p>
   </div>
 
   <div class="card">
-    <h2 class="m2">M2 for Edges</h2>
-    <p><b>Buffer:</b> DF (Down-Front)</p>
-    <p><b>Target:</b> UB (Up-Back)</p>
-    <p><b>Core Algorithm:</b> <code>M2</code></p>
-    <p><b>How it works:</b> M2 swaps DF and UB. Similar to OP, you setup the target sticker to UB, do M2, and undo the setup. Because M2 is a slice move, doing it an odd number of times leaves the M-slice centers off by 180°. This means the rules for M-slice targets (UF, UB, DF, DB) change depending on whether it's an odd or even target.</p>
-    
-    <h3>Special M-Slice Algorithms (Odd Targets)</h3>
+    <h2 style="color: var(--accent2)">How Commutators Work</h2>
+    <p>Commutators follow a very specific structure written as <code>[A, B]</code>.</p>
     <ul>
-      <li><b>UB (C):</b> <code>U2 M' U2 M'</code></li>
-      <li><b>UF (I):</b> <code>U2 M' U2 M'</code> (if C was already done) or <code>D M' U R2 U' M U R2 U' D' M2</code></li>
-      <li><b>BD (W):</b> <code>M U2 M U2</code></li>
-      <li><b>DF (A):</b> Buffer (Should never be a target, break into a new cycle)</li>
+      <li><code>[A, B]</code> expands to: <code>A B A' B'</code></li>
+      <li><b>A</b> is an insertion move (usually 3 moves, e.g., <code>R U R'</code>)</li>
+      <li><b>B</b> is an interchange move (usually 1 move on a parallel slice, e.g., <code>D'</code>)</li>
     </ul>
+    <p>For example, the corner commutator <code>[R U R', D']</code> becomes: <code>R U R' D' R U' R' D</code>.</p>
   </div>
 
   <div class="card">
-    <h2 class="parity">Parity</h2>
-    <p>If you have an odd number of edge targets, your M-slice will be off, and your OP corners will have swapped UB/UL. You fix this <i>between</i> edges and corners.</p>
-    <p><b>Parity Algorithm (Ra-Perm variant):</b> <code>D' L2 D M2 D' L2 D</code> (assuming you solve Edges then Corners with M2/OP)</p>
+    <h2 style="color: var(--accent)">Setup Moves with Commutators</h2>
+    <p>Sometimes you cannot build a pure <code>[A, B]</code> commutator directly. In these cases, you use a setup move (or moves), denoted as <code>S [A, B] S'</code>.</p>
+    <p>You apply the setup <code>S</code>, perform the commutator <code>[A, B]</code>, and then undo the setup with <code>S'</code>.</p>
+    <p>For example: <code>[U: [R D R', U2]]</code> expands to: <code>U (R D R' U2 R D' R' U2) U'</code>.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="color: var(--accent2)">Buffers</h2>
+    <table class="moves-table">
+      <thead>
+        <tr>
+          <th>Piece Type</th>
+          <th>Buffer Location</th>
+          <th>Letter (Speffz)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Corners</b></td>
+          <td>UFR (Up-Front-Right)</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td><b>Edges</b></td>
+          <td>UF (Up-Front)</td>
+          <td>C</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

@@ -4,7 +4,7 @@ import { MemoGeneratorComponent } from './memo-generator/memo-generator.componen
 import { MultiBlindComponent } from './multi-blind/multi-blind.component';
 import { PracticeComponent } from './practice/practice.component';
 import { MethodReferenceComponent } from './method-reference/method-reference.component';
-import { SetupMovesComponent } from './setup-moves/setup-moves.component';
+import { AlgorithmsComponent } from './algorithms/algorithms.component';
 import { CubeVisualizerComponent } from './cube-visualizer/cube-visualizer.component';
 import { MemoHelperComponent } from './memo-helper/memo-helper.component';
 
@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'multi-blind', component: MultiBlindComponent },
   { path: 'practice', component: PracticeComponent },
   { path: 'method-reference', component: MethodReferenceComponent },
-  { path: 'setup-moves', component: SetupMovesComponent },
+  { path: 'algorithms', component: AlgorithmsComponent },
   { path: 'cube-visualizer', component: CubeVisualizerComponent },
   { path: 'memo-helper', component: MemoHelperComponent },
   { path: '', redirectTo: '/word-association', pathMatch: 'full' }

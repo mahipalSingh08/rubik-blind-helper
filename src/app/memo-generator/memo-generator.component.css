@@ -159,22 +159,41 @@ footer {
 .edges-color { color: var(--accent2); }
 .corners-color { color: var(--accent); }
 
-.word-item {
+.word-item { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; padding: 8px 12px; background: #10131c; border-radius: 6px; }
+.pair-tag { font-weight: 800; letter-spacing: 1px; color: var(--muted); font-family: monospace; }
+.word-name { font-weight: 600; color: var(--text); }
+
+.alg-container {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
-  padding: 8px 12px;
-  background: #10131c;
+  flex-direction: column;
+  margin-top: 8px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  border-left: 3px solid var(--accent2);
 }
-.pair-tag {
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: var(--muted);
-  font-family: monospace;
+
+.corner-card .alg-container {
+  border-left-color: var(--accent);
 }
-.word-name {
+
+.alg-short {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.alg-long {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.no-alg {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.85rem;
+  border-left-color: var(--muted);
 }
