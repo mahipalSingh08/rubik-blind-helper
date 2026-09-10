@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CommutatorService } from '../shared/commutator.service';
@@ -10,7 +10,7 @@ import { CommutatorService } from '../shared/commutator.service';
   templateUrl: './algorithms.component.html',
   styleUrl: './algorithms.component.css'
 })
-export class AlgorithmsComponent {
+export class AlgorithmsComponent implements OnInit {
   searchPair: string = '';
   pieceType: 'edges' | 'corners' | 'special' = 'edges';
   currentAlgShort: string = '';
@@ -20,6 +20,27 @@ export class AlgorithmsComponent {
   editAlgLong: string = '';
 
   constructor(private commutatorService: CommutatorService) {}
+
+  ngOnInit() {
+    const savedState = localStorage.getItem('alg-search-state');
+    if (savedState) {
+      try {
+        const state = JSON.parse(savedState);
+        this.pieceType = state.pieceType || 'edges';
+        this.searchPair = state.searchPair || '';
+        if (this.searchPair) {
+          this.onSearch();
+        }
+      } catch (e) {}
+    }
+  }
+
+  saveState() {
+    localStorage.setItem('alg-search-state', JSON.stringify({
+      pieceType: this.pieceType,
+      searchPair: this.searchPair
+    }));
+  }
 
   get isEdges() {
     return this.pieceType === 'edges';
@@ -41,6 +62,7 @@ export class AlgorithmsComponent {
         this.currentAlgLong = '';
       }
       this.isEditing = false;
+      this.saveState();
       return;
     }
 
@@ -61,6 +83,7 @@ export class AlgorithmsComponent {
       this.currentAlgShort = '';
       this.currentAlgLong = '';
     }
+    this.saveState();
   }
 
   selectSpecial(type: string) {

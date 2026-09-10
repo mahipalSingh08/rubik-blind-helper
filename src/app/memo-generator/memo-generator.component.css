@@ -146,31 +146,75 @@ footer {
   border: 1px solid #262b3a;
   box-shadow: 0 4px 18px rgba(0,0,0,0.35);
 }
-.word-group {
-  flex: 1;
-  max-width: 300px;
-}
-.word-group h3 {
-  margin-top: 0;
-  font-size: 1.1rem;
-  border-bottom: 1px solid #2b3040;
-  padding-bottom: 8px;
-}
+
+.word-group { flex: 1; max-width: 380px; }
+.word-group h3 { margin-top: 0; font-size: 1.1rem; border-bottom: 1px solid #2b3040; padding-bottom: 8px; margin-bottom: 16px; }
 .edges-color { color: var(--accent2); }
 .corners-color { color: var(--accent); }
 
-.word-item { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; padding: 8px 12px; background: #10131c; border-radius: 6px; }
-.pair-tag { font-weight: 800; letter-spacing: 1px; color: var(--muted); font-family: monospace; }
-.word-name { font-weight: 600; color: var(--text); }
+.word-item { 
+  display: flex; 
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px; 
+  padding: 16px; 
+  background: #171a23; 
+  border: 1px solid #2b3040; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.word-item:hover {
+  transform: translateY(-2px);
+  border-color: #3f4455;
+}
+
+.word-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pair-tag { 
+  font-weight: 800; 
+  letter-spacing: 1px; 
+  color: #fff; 
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  background: rgba(255,255,255,0.08);
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.group-edges .pair-tag {
+  color: var(--accent2);
+  background: rgba(77,208,225,0.12);
+}
+
+.group-corners .pair-tag {
+  color: var(--accent);
+  background: rgba(255,138,61,0.12);
+}
+
+.word-name { 
+  font-weight: 600; 
+  color: #e2e8f0; 
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.alg-section {
+  width: 100%;
+}
 
 .alg-container {
   display: flex;
   flex-direction: column;
-  margin-top: 8px;
-  padding: 8px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  border-left: 3px solid var(--accent2);
+  padding: 12px 14px;
+  background: #10131c;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent2);
 }
 
 .corner-card .alg-container {
@@ -179,21 +223,28 @@ footer {
 
 .alg-short {
   font-family: 'Fira Code', monospace;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-light);
-  margin-bottom: 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
 }
 
 .alg-long {
   font-family: 'Fira Code', monospace;
-  font-size: 0.8rem;
-  color: var(--text-muted);
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .no-alg {
-  color: var(--text-muted);
+  color: var(--muted);
   font-style: italic;
-  font-size: 0.85rem;
-  border-left-color: var(--muted);
+  font-size: 0.9rem;
+  border-left-color: #3f4455;
+  background: rgba(16, 19, 28, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }

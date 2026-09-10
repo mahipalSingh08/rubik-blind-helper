@@ -46,14 +46,14 @@
     </div>
     
     <div class="words-list" *ngIf="showWords || showCommutators">
-      <div class="word-group">
+      <div class="word-group group-edges">
         <h3 class="edges-color">Edges Memo</h3>
-        <div class="word-item" *ngFor="let p of memoService.edgePairs" style="display: flex; flex-direction: column;">
-          <div>
+        <div class="word-item edge-card" *ngFor="let p of memoService.edgePairs">
+          <div class="word-header">
             <span class="pair-tag">{{ p }}</span> 
             <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
           </div>
-          <div *ngIf="showCommutators">
+          <div class="alg-section" *ngIf="showCommutators">
             <div class="alg-container" *ngIf="commutator.getEdgeAlg(p) as alg">
               <span class="alg-short">{{ alg.short }}</span>
               <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
@@ -64,14 +64,14 @@
           </div>
         </div>
       </div>
-      <div class="word-group">
+      <div class="word-group group-corners">
         <h3 class="corners-color">Corners Memo</h3>
-        <div class="word-item" *ngFor="let p of memoService.cornerPairs" style="display: flex; flex-direction: column;">
-          <div>
+        <div class="word-item corner-card" *ngFor="let p of memoService.cornerPairs">
+          <div class="word-header">
             <span class="pair-tag">{{ p }}</span> 
             <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
           </div>
-          <div *ngIf="showCommutators">
+          <div class="alg-section" *ngIf="showCommutators">
             <div class="alg-container" *ngIf="commutator.getCornerAlg(p) as alg">
               <span class="alg-short">{{ alg.short }}</span>
               <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
