@@ -1,0 +1,93 @@
+<div class="learn-container">
+  <h1>📚 Learn Algorithms</h1>
+  <p class="subtitle">Search, calculate cycles, and save algorithms to practice later</p>
+
+  <div class="search-box">
+    <div class="type-toggles">
+      <button [class.active]="searchType === 'edges'" (click)="searchType = 'edges'; searchPair = ''">Edges (UF)</button>
+      <button [class.active]="searchType === 'corners'" (click)="searchType = 'corners'; searchPair = ''">Corners (UFR)</button>
+    </div>
+
+    <div class="search-input-wrapper">
+      <input 
+        type="text" 
+        [(ngModel)]="searchPair" 
+        maxlength="2" 
+        placeholder="Pair (e.g. AU)"
+        style="text-transform: uppercase;">
+    </div>
+
+    <div class="search-result" *ngIf="currentSearchResult as res">
+      <div class="result-details">
+        <span class="pair-tag" [ngClass]="searchType === 'edges' ? 'edge-tag' : 'corner-tag'">{{ res.pair }}</span>
+        <span class="cycle-text">{{ res.cycle }}</span>
+      </div>
+      <div class="alg-container">
+        <div class="alg-text">{{ res.algorithm }}</div>
+        <div class="alg-long-text" *ngIf="res.longAlgorithm">{{ res.longAlgorithm }}</div>
+      </div>
+      <button class="add-btn" (click)="addAlg()">➕ Add to Learned List</button>
+    </div>
+    <div class="no-result" *ngIf="searchPair.length === 2 && !currentSearchResult">
+      No algorithm found in database for {{ searchPair | uppercase }}
+    </div>
+  </div>
+
+  <div class="list-section">
+    <div class="list-filters">
+      <button [class.active]="filterType === 'all'" (click)="filterType = 'all'">All</button>
+      <button [class.active]="filterType === 'edges'" (click)="filterType = 'edges'">Edges</button>
+      <button [class.active]="filterType === 'corners'" (click)="filterType = 'corners'">Corners</button>
+    </div>
+
+    <div class="algs-list">
+      <table class="algs-table" *ngIf="augmentedFilteredAlgs.length > 0">
+        <thead>
+          <tr>
+            <th>Pair</th>
+            <th>Cycle</th>
+            <th>Algorithm</th>
+            <th>Full Algorithm</th>
+            <th class="opposite-col">Opp. Pair</th>
+            <th class="opposite-col">Opp. Cycle</th>
+            <th class="opposite-col">Opp. Algorithm</th>
+            <th class="opposite-col">Opp. Full Alg</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let alg of augmentedFilteredAlgs">
+            <td>
+              <span class="pair-tag" [ngClass]="alg.type === 'edges' ? 'edge-tag' : 'corner-tag'">{{ alg.pair }}</span>
+            </td>
+            <td class="cycle-td">{{ alg.cycle }}</td>
+            <td>
+              <div class="alg-text">{{ alg.algorithm }}</div>
+            </td>
+            <td>
+              <div class="alg-long-text" *ngIf="alg.longAlgorithm">{{ alg.longAlgorithm }}</div>
+            </td>
+            <td class="opposite-col">
+              <span class="pair-tag opp-tag" [ngClass]="alg.type === 'edges' ? 'edge-tag' : 'corner-tag'">{{ alg.oppositePair }}</span>
+            </td>
+            <td class="cycle-td opposite-col">{{ alg.oppositeCycle }}</td>
+            <td class="opposite-col">
+              <div class="alg-text" *ngIf="alg.oppositeShort">{{ alg.oppositeShort }}</div>
+              <div class="no-alg" *ngIf="!alg.oppositeShort">No alg set</div>
+            </td>
+            <td class="opposite-col">
+              <div class="alg-long-text" *ngIf="alg.oppositeLong">{{ alg.oppositeLong }}</div>
+            </td>
+            <td class="action-td">
+              <button class="remove-btn" (click)="removeAlg(alg.id)" title="Remove">✖</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="empty-state" *ngIf="augmentedFilteredAlgs.length === 0">
+        No algorithms saved yet. Search for a pair above to add one!
+      </div>
+    </div>
+  </div>
+</div>

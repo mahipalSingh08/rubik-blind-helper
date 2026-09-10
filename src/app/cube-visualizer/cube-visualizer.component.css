@@ -70,3 +70,49 @@
 .d-face .sticker { background: #ffeb3b; }
 
 .c.center { background: #333 !important; color: #fff; opacity: 0.8; }
+
+.notation-guide {
+  margin-top: 50px;
+  text-align: center;
+  background: var(--panel);
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #262b3a;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+  width: 100%;
+  max-width: 900px;
+}
+
+.notation-guide h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.notation-guide p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.notation-guide img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+  padding: 15px;
+}
+
+.memory-tricks {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #2b3040;
+  text-align: center;
+}
+
+.memory-tricks p {
+  color: #e2e8f0;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}

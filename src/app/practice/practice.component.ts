@@ -22,6 +22,10 @@ export class PracticeComponent implements OnInit {
   showCommutators: boolean = false;
   parity: boolean = false;
   
+  practiceMode: 'both' | 'edges' | 'corners' = 'both';
+  moveSet: 'standard' | 'mu' | 'ru' | 'ruf' = 'standard';
+  grayOutUnused: boolean = true;
+
   engine!: CubeEngine;
   
   // Array of colors for 9 stickers of each face
@@ -45,12 +49,29 @@ export class PracticeComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.loadSettings();
     const saved = localStorage.getItem('practiceScramble');
     if (saved) {
       this.loadScramble(saved);
     } else {
       this.generate();
     }
+  }
+
+  loadSettings() {
+    const savedMode = localStorage.getItem('practiceMode');
+    if (savedMode) this.practiceMode = savedMode as any;
+    const savedMoves = localStorage.getItem('practiceMoveSet');
+    if (savedMoves) this.moveSet = savedMoves as any;
+    const savedGray = localStorage.getItem('practiceGrayOut');
+    if (savedGray !== null) this.grayOutUnused = savedGray === 'true';
+  }
+
+  saveSettings() {
+    localStorage.setItem('practiceMode', this.practiceMode);
+    localStorage.setItem('practiceMoveSet', this.moveSet);
+    localStorage.setItem('practiceGrayOut', this.grayOutUnused.toString());
+    this.retrace(); // retrace updates UI immediately
   }
 
   private toPairs(letters: string[]): string[] {
@@ -70,6 +91,10 @@ export class PracticeComponent implements OnInit {
   }
   
   private getColor(type: 'edge' | 'corner', pos: string): string {
+    if (this.grayOutUnused) {
+      if (this.practiceMode === 'edges' && type === 'corner') return '#3a4156'; // muted gray
+      if (this.practiceMode === 'corners' && type === 'edge') return '#3a4156';
+    }
     const currentPiece = type === 'edge' ? this.engine.edges[this.l(pos)] : this.engine.corners[this.l(pos)];
     return this.colorMap[currentPiece];
   }
@@ -108,7 +133,7 @@ export class PracticeComponent implements OnInit {
   }
 
   generate() {
-    const newScramble = CubeEngine.generateScramble();
+    const newScramble = CubeEngine.generateScramble(this.moveSet);
     localStorage.setItem('practiceScramble', newScramble);
     this.loadScramble(newScramble);
   }
@@ -129,13 +154,21 @@ export class PracticeComponent implements OnInit {
     this.updateFaces();
     
     const tracer = new BldTracer();
-    const edges = tracer.traceEdges(this.engine.edges, (this.memoService.edgeBuffer || 'C').toUpperCase());
-    const corners = tracer.traceCorners(this.engine.corners, (this.memoService.cornerBuffer || 'C').toUpperCase());
+    let edges: string[] = [];
+    let corners: string[] = [];
+
+    if (this.practiceMode === 'both' || this.practiceMode === 'edges') {
+      edges = tracer.traceEdges(this.engine.edges, (this.memoService.edgeBuffer || 'C').toUpperCase());
+    }
+    
+    if (this.practiceMode === 'both' || this.practiceMode === 'corners') {
+      corners = tracer.traceCorners(this.engine.corners, (this.memoService.cornerBuffer || 'C').toUpperCase());
+    }
     
     this.edgePairs = this.toPairs(edges);
     this.cornerPairs = this.toPairs(corners);
     
-    this.parity = edges.length % 2 !== 0;
+    this.parity = edges.length % 2 !== 0 && corners.length % 2 !== 0;
   }
 
   getWord(pair: string): string {

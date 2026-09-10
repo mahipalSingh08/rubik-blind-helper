@@ -2,6 +2,32 @@
   <h1>🎲 True Scramble Practice</h1>
   <p class="subtitle">Generate a valid 3x3 scramble and compute its exact blindfolded solution</p>
 
+  <div class="settings-panel">
+    <div class="setting-item">
+      <label>Target Pieces:</label>
+      <select [(ngModel)]="practiceMode" (change)="saveSettings()">
+        <option value="both">Both Edges & Corners</option>
+        <option value="edges">Edges Only</option>
+        <option value="corners">Corners Only</option>
+      </select>
+    </div>
+    <div class="setting-item">
+      <label>Allowed Moves:</label>
+      <select [(ngModel)]="moveSet" (change)="saveSettings()">
+        <option value="standard">Standard (All Faces)</option>
+        <option value="mu">&lt;M, U&gt; (M-Slice Only)</option>
+        <option value="ru">&lt;R, U&gt; (2-Gen)</option>
+        <option value="ruf">&lt;R, U, F&gt; (3-Gen)</option>
+      </select>
+    </div>
+    <div class="setting-item checkbox-item">
+      <label>
+        <input type="checkbox" [(ngModel)]="grayOutUnused" (change)="saveSettings()">
+        Gray out unused pieces on 2D Cube
+      </label>
+    </div>
+  </div>
+
   <div class="scramble-box">
     <h2>Scramble</h2>
     <div class="scramble-text">{{ scramble }}</div>
@@ -50,7 +76,7 @@
   </div>
 
   <div class="groups">
-    <div class="group edges">
+    <div class="group edges" *ngIf="practiceMode === 'both' || practiceMode === 'edges'">
       <h2><span class="dot"></span>Edges Solution</h2>
       <div class="pairs">
         <div class="pair" *ngFor="let p of edgePairs">{{ p }}</div>
@@ -60,7 +86,7 @@
       </div>
     </div>
     
-    <div class="group corners">
+    <div class="group corners" *ngIf="practiceMode === 'both' || practiceMode === 'corners'">
       <h2><span class="dot"></span>Corners Solution</h2>
       <div class="pairs">
         <div class="pair" *ngFor="let p of cornerPairs">{{ p }}</div>
@@ -82,7 +108,7 @@
     </div>
     
     <div class="words-list" *ngIf="showWords || showCommutators">
-      <div class="word-group group-edges">
+      <div class="word-group group-edges" *ngIf="practiceMode === 'both' || practiceMode === 'edges'">
         <h3 class="edges-color">Edges Memo</h3>
         <div class="word-item edge-card" *ngFor="let p of edgePairs">
           <div class="word-header">
@@ -100,7 +126,7 @@
           </div>
         </div>
       </div>
-      <div class="word-group group-corners">
+      <div class="word-group group-corners" *ngIf="practiceMode === 'both' || practiceMode === 'corners'">
         <h3 class="corners-color">Corners Memo</h3>
         <div class="word-item corner-card" *ngFor="let p of cornerPairs">
           <div class="word-header">

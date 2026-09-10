@@ -77,6 +77,13 @@ export class CubeEngine {
     );
   }
 
+  M() {
+    this.applyMoveCycles(
+      [['C', 'K', 'W', 'Q'], ['I', 'U', 'S', 'A']],
+      []
+    );
+  }
+
   // Apply move multiple times (e.g., U2, U')
   private doMove(moveFn: () => void, suffix: string) {
     if (suffix === "'") {
@@ -104,12 +111,18 @@ export class CubeEngine {
         case 'B': this.doMove(this.B, suffix); break;
         case 'L': this.doMove(this.L, suffix); break;
         case 'R': this.doMove(this.R, suffix); break;
+        case 'M': this.doMove(this.M, suffix); break;
       }
     }
   }
 
-  static generateScramble(): string {
-    const moves = ['U', 'D', 'F', 'B', 'L', 'R'];
+  static generateScramble(moveSet: string = 'standard'): string {
+    let moves = ['U', 'D', 'F', 'B', 'L', 'R'];
+    
+    if (moveSet === 'mu') moves = ['M', 'U'];
+    else if (moveSet === 'ru') moves = ['R', 'U'];
+    else if (moveSet === 'ruf') moves = ['R', 'U', 'F'];
+
     const suffixes = ['', "'", '2'];
     let scramble = [];
     let lastMove = '';
