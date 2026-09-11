@@ -127,6 +127,9 @@ export class CubeEngine {
     let scramble = [];
     let lastMove = '';
     
+    let mNetRotation = 0; // track M slice net rotation
+    let uNetRotation = 0; // track U face net rotation
+    
     for (let i = 0; i < 20; i++) {
       let nextMove = moves[Math.floor(Math.random() * moves.length)];
       while (nextMove === lastMove) {
@@ -135,7 +138,83 @@ export class CubeEngine {
       lastMove = nextMove;
       const suffix = suffixes[Math.floor(Math.random() * suffixes.length)];
       scramble.push(nextMove + suffix);
+      
+      if (nextMove === 'M') {
+        if (suffix === '') mNetRotation += 1;
+        else if (suffix === "'") mNetRotation += 3;
+        else if (suffix === '2') mNetRotation += 2;
+      }
+      if (nextMove === 'U') {
+        if (suffix === '') uNetRotation += 1;
+        else if (suffix === "'") uNetRotation += 3;
+        else if (suffix === '2') uNetRotation += 2;
+      }
     }
+    
+    // Fix M-slice misalignment for <M, U> scrambles
+    if (moveSet === 'mu') {
+      mNetRotation = mNetRotation % 4;
+      if (mNetRotation !== 0) {
+        let fixAmount = 4 - mNetRotation;
+        let fixSuffix = '';
+        if (fixAmount === 1) fixSuffix = '';
+        else if (fixAmount === 2) fixSuffix = '2';
+        else if (fixAmount === 3) fixSuffix = "'";
+        
+        const last = scramble[scramble.length - 1];
+        if (last.startsWith('M')) {
+          let lastAmount = 0;
+          if (last.endsWith("'")) lastAmount = 3;
+          else if (last.endsWith("2")) lastAmount = 2;
+          else lastAmount = 1;
+          
+          let combinedAmount = (lastAmount + fixAmount) % 4;
+          if (combinedAmount === 0) {
+             scramble.pop();
+          } else {
+             let combinedSuffix = '';
+             if (combinedAmount === 1) combinedSuffix = '';
+             else if (combinedAmount === 2) combinedSuffix = '2';
+             else if (combinedAmount === 3) combinedSuffix = "'";
+             scramble[scramble.length - 1] = 'M' + combinedSuffix;
+          }
+        } else {
+          scramble.push('M' + fixSuffix);
+        }
+      }
+      
+      // Fix U-face misalignment to keep corners perfectly solved
+      uNetRotation = uNetRotation % 4;
+      if (uNetRotation !== 0) {
+        let fixAmount = 4 - uNetRotation;
+        let fixSuffix = '';
+        if (fixAmount === 1) fixSuffix = '';
+        else if (fixAmount === 2) fixSuffix = '2';
+        else if (fixAmount === 3) fixSuffix = "'";
+        
+        const last = scramble[scramble.length - 1];
+        if (last && last.startsWith('U')) {
+          let lastAmount = 0;
+          if (last.endsWith("'")) lastAmount = 3;
+          else if (last.endsWith("2")) lastAmount = 2;
+          else lastAmount = 1;
+          
+          let combinedAmount = (lastAmount + fixAmount) % 4;
+          if (combinedAmount === 0) {
+             scramble.pop();
+          } else {
+             let combinedSuffix = '';
+             if (combinedAmount === 1) combinedSuffix = '';
+             else if (combinedAmount === 2) combinedSuffix = '2';
+             else if (combinedAmount === 3) combinedSuffix = "'";
+             scramble[scramble.length - 1] = 'U' + combinedSuffix;
+          }
+        } else {
+          scramble.push('U' + fixSuffix);
+        }
+      }
+    }
+    
     return scramble.join(' ');
   }
 }
