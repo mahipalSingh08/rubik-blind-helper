@@ -20,7 +20,7 @@
         <option value="ruf">&lt;R, U, F&gt; (3-Gen)</option>
       </select>
     </div>
-    <div class="setting-item checkbox-item">
+    <div class="setting-item checkbox-item" *ngIf="practiceMode !== 'both'">
       <label>
         <input type="checkbox" [(ngModel)]="grayOutUnused" (change)="saveSettings()">
         Gray out unused pieces on 2D Cube
