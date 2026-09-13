@@ -48,8 +48,8 @@
   max-width: 300px;
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
-  background: var(--surface);
-  border: 2px solid var(--border);
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   color: var(--text-light);
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -245,3 +245,35 @@
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* Dictionary-style Letter Picker & Grid */
+.letter-picker {
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+  background: var(--surface); padding: 20px; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+.letter-btn {
+  width: 46px; height: 46px; display: flex; justify-content: center; align-items: center;
+  background: var(--surface-light); border: 1px solid var(--border); border-radius: 8px;
+  font-size: 1.2rem; font-weight: 700; cursor: pointer; transition: all 0.2s ease;
+  color: var(--text);
+}
+.letter-btn:hover { background: var(--border); border-color: var(--primary); }
+.letter-btn.active { background: var(--primary); color: var(--white); border-color: var(--primary); box-shadow: 0 0 12px rgba(99,102,241,0.4); }
+
+.pair-grid-container {
+  background: var(--surface); padding: 24px; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+.pair-grid-container h2 { margin-top: 0; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 12px; margin-bottom: 20px; }
+
+.pair-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
+.pair-card {
+  background: var(--surface-light); border: 1px solid var(--border); border-radius: 8px; padding: 12px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; transition: all 0.2s ease;
+}
+.pair-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+.pair-letters { font-size: 1.2rem; font-weight: 800; color: var(--text-muted); letter-spacing: 2px; }
+.pair-word { font-size: 1rem; font-weight: 600; color: var(--text); text-align: center; word-break: break-word; }
+.pair-word.no-alg { color: var(--muted); font-style: italic; font-weight: normal; }
+.empty-state { text-align: center; color: var(--text-muted); font-style: italic; margin-top: 20px; }

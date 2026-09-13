@@ -38,6 +38,10 @@
       <button [class.active]="filterType === 'all'" (click)="filterType = 'all'">All</button>
       <button [class.active]="filterType === 'edges'" (click)="filterType = 'edges'">Edges</button>
       <button [class.active]="filterType === 'corners'" (click)="filterType = 'corners'">Corners</button>
+      <div style="flex-grow: 1;"></div>
+      <button [class.active]="showOpposites" (click)="toggleOpposites()">
+        {{ showOpposites ? 'Hide Opposite Algos' : 'Show Opposite Algos' }}
+      </button>
     </div>
 
     <div class="algs-list">
@@ -48,10 +52,10 @@
             <th>Cycle</th>
             <th>Algorithm</th>
             <th>Full Algorithm</th>
-            <th class="opposite-col">Opp. Pair</th>
-            <th class="opposite-col">Opp. Cycle</th>
-            <th class="opposite-col">Opp. Algorithm</th>
-            <th class="opposite-col">Opp. Full Alg</th>
+            <th class="opposite-col" *ngIf="showOpposites">Opp. Pair</th>
+            <th class="opposite-col" *ngIf="showOpposites">Opp. Cycle</th>
+            <th class="opposite-col" *ngIf="showOpposites">Opp. Algorithm</th>
+            <th class="opposite-col" *ngIf="showOpposites">Opp. Full Alg</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -67,15 +71,15 @@
             <td>
               <div class="alg-long-text" *ngIf="alg.longAlgorithm">{{ alg.longAlgorithm }}</div>
             </td>
-            <td class="opposite-col">
+            <td class="opposite-col" *ngIf="showOpposites">
               <span class="pair-tag opp-tag" [ngClass]="alg.type === 'edges' ? 'edge-tag' : 'corner-tag'">{{ alg.oppositePair }}</span>
             </td>
-            <td class="cycle-td opposite-col">{{ alg.oppositeCycle }}</td>
-            <td class="opposite-col">
+            <td class="cycle-td opposite-col" *ngIf="showOpposites">{{ alg.oppositeCycle }}</td>
+            <td class="opposite-col" *ngIf="showOpposites">
               <div class="alg-text" *ngIf="alg.oppositeShort">{{ alg.oppositeShort }}</div>
               <div class="no-alg" *ngIf="!alg.oppositeShort">No alg set</div>
             </td>
-            <td class="opposite-col">
+            <td class="opposite-col" *ngIf="showOpposites">
               <div class="alg-long-text" *ngIf="alg.oppositeLong">{{ alg.oppositeLong }}</div>
             </td>
             <td class="action-td">

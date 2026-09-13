@@ -19,6 +19,10 @@ export class AlgorithmsComponent implements OnInit {
   editAlgShort: string = '';
   editAlgLong: string = '';
 
+  letters = 'ABCDEFGHIJKLMNOPQRSTUVWX'.split('');
+  selectedLetter: string | null = null;
+  filteredPairs: { pair: string, short: string, long: string }[] = [];
+
   constructor(private commutatorService: CommutatorService) {}
 
   ngOnInit() {
@@ -28,6 +32,11 @@ export class AlgorithmsComponent implements OnInit {
         const state = JSON.parse(savedState);
         this.pieceType = state.pieceType || 'edges';
         this.searchPair = state.searchPair || '';
+        this.selectedLetter = state.selectedLetter || null;
+        
+        if (this.selectedLetter) {
+          this.updateFilteredPairs();
+        }
         if (this.searchPair) {
           this.onSearch();
         }
@@ -38,7 +47,8 @@ export class AlgorithmsComponent implements OnInit {
   saveState() {
     localStorage.setItem('alg-search-state', JSON.stringify({
       pieceType: this.pieceType,
-      searchPair: this.searchPair
+      searchPair: this.searchPair,
+      selectedLetter: this.selectedLetter
     }));
   }
 
@@ -51,7 +61,12 @@ export class AlgorithmsComponent implements OnInit {
     return this.searchPair;
   }
 
-  onSearch() {
+  onSearch(isManualSearch = false) {
+    if (isManualSearch) {
+      this.selectedLetter = null; // Clear letter selection when manually searching
+      this.filteredPairs = [];
+    }
+    
     if (this.pieceType === 'special') {
       const alg = this.commutatorService.getSpecialAlg(this.searchPair);
       if (alg) {
@@ -83,6 +98,72 @@ export class AlgorithmsComponent implements OnInit {
       this.currentAlgShort = '';
       this.currentAlgLong = '';
     }
+    this.saveState();
+  }
+
+  selectLetter(letter: string) {
+    if (this.selectedLetter === letter) {
+      this.selectedLetter = null;
+      this.filteredPairs = [];
+    } else {
+      this.selectedLetter = letter;
+      this.searchPair = ''; // Clear manual search
+      this.currentAlgShort = '';
+      this.currentAlgLong = '';
+      this.isEditing = false;
+      this.updateFilteredPairs();
+    }
+    this.saveState();
+  }
+
+  updateFilteredPairs() {
+    if (!this.selectedLetter || this.pieceType === 'special') {
+      this.filteredPairs = [];
+      return;
+    }
+    
+    let allPairs: string[] = [];
+    if (this.isEdges) {
+      allPairs = this.commutatorService.getAllEdgePairs();
+    } else {
+      allPairs = this.commutatorService.getAllCornerPairs();
+    }
+
+    this.filteredPairs = allPairs
+      .filter(p => p.includes(this.selectedLetter!))
+      .sort()
+      .map(p => {
+        const alg = this.isEdges ? this.commutatorService.getEdgeAlg(p) : this.commutatorService.getCornerAlg(p);
+        return { pair: p, short: alg?.short || '', long: alg?.long || '' };
+      });
+  }
+
+  selectPairFromList(pair: string) {
+    this.searchPair = pair;
+    this.onSearch();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  changePieceType(type: 'edges' | 'corners') {
+    this.pieceType = type;
+    this.searchPair = '';
+    this.currentAlgShort = '';
+    this.currentAlgLong = '';
+    this.isEditing = false;
+    
+    if (this.selectedLetter) {
+      this.updateFilteredPairs();
+    }
+    
+    this.saveState();
+  }
+
+  selectSpecialCategory() {
+    this.pieceType = 'special';
+    this.searchPair = '';
+    this.currentAlgShort = '';
+    this.currentAlgLong = '';
+    this.isEditing = false;
     this.saveState();
   }
 

@@ -98,4 +98,12 @@ export class CommutatorService {
     this.specialCommutators[pair.toUpperCase()] = { short: shortAlg, long: longAlg };
     this.saveData();
   }
+
+  getAllEdgePairs(): string[] {
+    return Object.keys(this.edgeCommutators);
+  }
+
+  getAllCornerPairs(): string[] {
+    return Object.keys(this.cornerCommutators);
+  }
 }

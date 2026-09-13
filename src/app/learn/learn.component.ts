@@ -16,6 +16,7 @@ export class LearnComponent implements OnInit {
   searchPair: string = '';
   
   filterType: 'all' | 'edges' | 'corners' = 'all';
+  showOpposites: boolean = true;
 
   private cornerPositions = [
     'UBL', 'UBR', 'UFR', 'UFL',
@@ -40,7 +41,17 @@ export class LearnComponent implements OnInit {
     private commutatorService: CommutatorService
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    const savedShowOpposites = localStorage.getItem('bld-learn-show-opposites');
+    if (savedShowOpposites !== null) {
+      this.showOpposites = savedShowOpposites === 'true';
+    }
+  }
+
+  toggleOpposites() {
+    this.showOpposites = !this.showOpposites;
+    localStorage.setItem('bld-learn-show-opposites', String(this.showOpposites));
+  }
 
   get currentSearchResult() {
     if (this.searchPair.length !== 2) return null;
