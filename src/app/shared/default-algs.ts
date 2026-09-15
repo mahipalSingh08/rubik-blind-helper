@@ -9,3280 +9,3281 @@ export const DEFAULT_SPECIAL: Record<string, AlgDef> = {
   "CORNER_TWISTS": { short: "(R' D R D') x2 U (D R' D' R) x2 U'", long: "" }
 };
 
-export const DEFAULT_CORNERS: Record<string, AlgDef> = {
-  "DA": {
-    "short": "R' U' D':[R' D R,U']",
-    "long": "R' U' D' R' D R U' R' D' R D U2 R"
-  },
-  "DE": {
-    "short": "U' R:[R D R',U2]",
-    "long": "U' R2 D R' U2 R D' R' U2 R' U"
-  },
-  "DR": {
-    "short": "U' R':[U',R' D' R]",
-    "long": "U' R' U' R' D' R U R' D R2 U"
-  },
-  "DB": {
-    "short": "R F' R':[U,R' D R]",
-    "long": "R F' R' U R' D R U' R' D' R2 F R'"
-  },
-  "DQ": {
-    "short": "R' D':[U',R' D R]",
-    "long": "R' U' D' R' D R U R' D' R D R"
-  },
-  "DN": {
-    "short": "U' R':[U2,R' D' R]",
-    "long": "U' R' U2 R' D' R U2 R' D R2 U"
-  },
-  "DU": {
-    "short": "R2 F R U:[R' D' R,U2]",
-    "long": "R2 F R U R' D' R U2 R' D R U R' F' R2"
-  },
-  "DG": {
-    "short": "[R' D R,U']",
-    "long": "R' D R U' R' D' R U"
-  },
-  "DL": {
-    "short": "D:[R' D' R,U']",
-    "long": "D R' D' R U' R' D R D' U"
-  },
-  "DX": {
-    "short": "R' B:[D',R U' R']",
-    "long": "R' B D' R U' R' D R U R' B' R"
-  },
-  "DS": {
-    "short": "U' D':[R D R',U']",
-    "long": "U' D' R D R' U' R D' R' D U2"
-  },
-  "DH": {
-    "short": "U':[R D' R',U']",
-    "long": "U' R D' R' U' R D R' U2"
-  },
-  "DW": {
-    "short": "R D' R':[R' D R,U']",
-    "long": "R D' R2 D R U' R' D' R U R D R'"
-  },
-  "DO": {
-    "short": "U':[R D R',U']",
-    "long": "U' R D R' U' R D' R' U2"
-  },
-  "DT": {
-    "short": "U' D:[R D' R',U']",
-    "long": "U' D R D' R' U' R D R' D' U2"
-  },
-  "DV": {
-    "short": "[R' D R U' R D' R',U']",
-    "long": "R' D R U' R D' R' U' R D R' U R' D' R U"
-  },
-  "DK": {
-    "short": "D':[R' D R,U']",
-    "long": "D' R' D R U' R' D' R D U"
-  },
-  "DP": {
-    "short": "[R' D' R,U']",
-    "long": "R' D' R U' R' D R U"
-  },
-  "IA": {
-    "short": "R' F R U D:[R' D' R,U]",
-    "long": "R' F R U D R' D' R U R' D R D' U2 R' F' R"
-  },
-  "IE": {
-    "short": "R2 D R' U:[U,R D' R']",
-    "long": "R2 D R' U2 R D' R' U' R D R' U' R D' R2"
-  },
-  "IR": {
-    "short": "R2 U' R U:[R' D' R,U2]",
-    "long": "R2 U' R U R' D' R U2 R' D R U R' U R2"
-  },
-  "IB": {
-    "short": "R:[R D R',U2]",
-    "long": "R2 D R' U2 R D' R' U2 R'"
-  },
-  "IQ": {
-    "short": "R D:[R D' R',U2]",
-    "long": "R D R D' R' U2 R D R' D' U2 R'"
-  },
-  "IN": {
-    "short": "R':[U',R' D R U' R D' R']",
-    "long": "R' U' R' D R U' R D' R' U R D R' U R' D' R2"
-  },
-  "IU": {
-    "short": "R U D:[R' D' R,U2]",
-    "long": "R U D R' D' R U2 R' D R D' U R'"
-  },
-  "IG": {
-    "short": "R' D:[F2,D' R D R']",
-    "long": "R' D F2 D' R D R' F2 R D'"
-  },
-  "IL": {
-    "short": "R U:[R' D R,U2]",
-    "long": "R U R' D R U2 R' D' R U R'"
-  },
-  "IX": {
-    "short": "R:[R D' R',U2]",
-    "long": "R2 D' R' U2 R D R' U2 R'"
-  },
-  "IS": {
-    "short": "U':[D' R D R',U R' F R]",
-    "long": "U' D' R D R' U R' F R2 D' R' D R' F' R"
-  },
-  "IH": {
-    "short": "R D':[R D R',U2]",
-    "long": "R D' R D R' U2 R D' R' D U2 R'"
-  },
-  "IW": {
-    "short": "D R:[R D' R',U2]",
-    "long": "D R2 D' R' U2 R D R' U2 R' D'"
-  },
-  "IO": {
-    "short": "R U D':[R' D R,U2]",
-    "long": "R U D' R' D R U2 R' D' R D U R'"
-  },
-  "IT": {
-    "short": "R U:[R' D' R,U2]",
-    "long": "R U R' D' R U2 R' D R U R'"
-  },
-  "IV": {
-    "short": "D' R U D:[R' D' R,U2]",
-    "long": "D' R U D R' D' R U2 R' D R D' U R' D"
-  },
-  "IK": {
-    "short": "R':[R D' R' D,F2]",
-    "long": "D' R' D F2 D' R D R' F2 R"
-  },
-  "IP": {
-    "short": "D R U:[R' D' R,U2]",
-    "long": "D R U R' D' R U2 R' D R U R' D'"
-  },
-  "FA": {
-    "short": "U' R D:[R D' R',U2]",
-    "long": "U' R D R D' R' U2 R D R' D' U2 R' U"
-  },
-  "FE": {
-    "short": "R U' R' U':[R' D' R,U']",
-    "long": "R U' R' U' R' D' R U' R' D R U2 R U R'"
-  },
-  "FR": {
-    "short": "R' U':[R' D' R,U']",
-    "long": "R' U' R' D' R U' R' D R U2 R"
-  },
-  "FB": {
-    "short": "R':[U',R' D' R]",
-    "long": "R' U' R' D' R U R' D R2"
-  },
-  "FQ": {
-    "short": "R' F:[R U R',D]",
-    "long": "R' F R U R' D R U' R' D' F' R"
-  },
-  "FN": {
-    "short": "R' D' R U' D:[R' D' R,U2]",
-    "long": "R' D' R U' D R' D' R U2 R' D R D' U' R' D R"
-  },
-  "FU": {
-    "short": "U' R' U:[R U' R',D]",
-    "long": "U' R' U R U' R' D R U R' D' U' R U"
-  },
-  "FG": {
-    "short": "R' U':[D,R U R']",
-    "long": "R' U' D R U R' D' R U' R' U R"
-  },
-  "FL": {
-    "short": "D R' U':[D',R U R']",
-    "long": "D R' U' D' R U R' D R U' R' U R D'"
-  },
-  "FX": {
-    "short": "R2:[D',R2 U' R U R2]",
-    "long": "R2 D' R2 U' R U R2 D R2 U' R' U"
-  },
-  "FS": {
-    "short": "U2 R U:[R' U' R,D']",
-    "long": "U2 R U R' U' R D' R' U R D U' R' U2"
-  },
-  "FH": {
-    "short": "U' R U':[D',R' U R]",
-    "long": "U' R U' D' R' U R D R' U' R U R' U"
-  },
-  "FW": {
-    "short": "U2 R U:[R' U' R,D]",
-    "long": "U2 R U R' U' R D R' U R D' U' R' U2"
-  },
-  "FO": {
-    "short": "R' U':[R' D' R,U2]",
-    "long": "R' U' R' D' R U2 R' D R U' R"
-  },
-  "FT": {
-    "short": "R2 U' R':[R' D' R,U]",
-    "long": "R2 U' R2 D' R U R' D R U' R U R2"
-  },
-  "FV": {
-    "short": "R U' R':[R' D' R,U2]",
-    "long": "R U' R2 D' R U2 R' D R U2 R U R'"
-  },
-  "FK": {
-    "short": "D' R' U':[D,R U R']",
-    "long": "D' R' U' D R U R' D' R U' R' U R D"
-  },
-  "FP": {
-    "short": "R' U':[D',R U R']",
-    "long": "R' U' D' R U R' D R U' R' U R"
-  },
-  "AD": {
-    "short": "R' U2 D':[R' D R,U]",
-    "long": "R' U2 D' R' D R U R' D' R D U R"
-  },
-  "AI": {
-    "short": "R' F R U2 D:[R' D' R,U']",
-    "long": "R' F R U2 D R' D' R U' R' D R D' U' R' F' R"
-  },
-  "AF": {
-    "short": "U' R D:[U2,R D' R']",
-    "long": "U' R U2 D R D' R' U2 R D R' D' R' U"
-  },
-  "AB": {
-    "short": "R' B' R:[R D R',U']",
-    "long": "R' B' R2 D R' U' R D' R' U R' B R"
-  },
-  "AQ": {
-    "short": "R' D':[U2,R' D R]",
-    "long": "R' U2 D' R' D R U2 R' D' R D R"
-  },
-  "AN": {
-    "short": "R D R' U' D':[R D R',U2]",
-    "long": "R D R' U' D' R D R' U2 R D' R' D U' R D' R'"
-  },
-  "AU": {
-    "short": "R F' R' U':[R D R',U2]",
-    "long": "R F' R' U' R D R' U2 R D' R' U' R F R'"
-  },
-  "AG": {
-    "short": "[R' D R,U2]",
-    "long": "R' D R U2 R' D' R U2"
-  },
-  "AL": {
-    "short": "D:[R' D' R,U2]",
-    "long": "D R' D' R U2 R' D R D' U2"
-  },
-  "AX": {
-    "short": "R' U' D' R:[R U' R',D]",
-    "long": "R' U' D' R2 U' R' D R U R' D' R' D U R"
-  },
-  "AS": {
-    "short": "U' D':[R D R',U2]",
-    "long": "U' D' R D R' U2 R D' R' D U'"
-  },
-  "AH": {
-    "short": "U':[R D' R',U2]",
-    "long": "U' R D' R' U2 R D R' U'"
-  },
-  "AW": {
-    "short": "R D' R':[R' D R,U2]",
-    "long": "R D' R2 D R U2 R' D' R U2 R D R'"
-  },
-  "AO": {
-    "short": "U':[R D R',U2]",
-    "long": "U' R D R' U2 R D' R' U'"
-  },
-  "AT": {
-    "short": "U' D:[R D' R',U2]",
-    "long": "U' D R D' R' U2 R D R' D' U'"
-  },
-  "AV": {
-    "short": "U R' D R:[U2,R D' R']",
-    "long": "U R' D R U2 R D' R' U2 R D R2 D' R U'"
-  },
-  "AK": {
-    "short": "D':[R' D R,U2]",
-    "long": "D' R' D R U2 R' D' R D U2"
-  },
-  "AP": {
-    "short": "[R' D' R,U2]",
-    "long": "R' D' R U2 R' D R U2"
-  },
-  "ED": {
-    "short": "U' R:[U2,R D R']",
-    "long": "U' R U2 R D R' U2 R D' R2 U"
-  },
-  "EI": {
-    "short": "R2 D R' U:[R D' R',U]",
-    "long": "R2 D R' U R D' R' U R D R' U2 R D' R2"
-  },
-  "EF": {
-    "short": "R U' R' U':[U',R' D' R]",
-    "long": "R U' R' U2 R' D' R U R' D R U R U R'"
-  },
-  "EB": {
-    "short": "R:[R D R',U]",
-    "long": "R2 D R' U R D' R' U' R'"
-  },
-  "EQ": {
-    "short": "R D:[R D' R',U]",
-    "long": "R D R D' R' U R D R' D' U' R'"
-  },
-  "EN": {
-    "short": "R:[R D' R' U R' D R,U]",
-    "long": "R2 D' R' U R' D R U R' D' R U' R D R' U' R'"
-  },
-  "EU": {
-    "short": "R U D:[R' D' R,U]",
-    "long": "R U D R' D' R U R' D R D' U2 R'"
-  },
-  "EG": {
-    "short": "U R':[U',R' D R]",
-    "long": "U R' U' R' D R U R' D' R2 U'"
-  },
-  "EL": {
-    "short": "R U:[R' D R,U]",
-    "long": "R U R' D R U R' D' R U2 R'"
-  },
-  "EX": {
-    "short": "R:[R D' R',U]",
-    "long": "R2 D' R' U R D R' U' R'"
-  },
-  "ES": {
-    "short": "U R' U2 D':[R D R',U]",
-    "long": "U R' U2 D' R D R' U R D' R' D U R U'"
-  },
-  "EH": {
-    "short": "R D':[R D R',U]",
-    "long": "R D' R D R' U R D' R' D U' R'"
-  },
-  "EW": {
-    "short": "D R:[R D' R',U]",
-    "long": "D R2 D' R' U R D R' U' R' D'"
-  },
-  "EO": {
-    "short": "R U D':[R' D R,U]",
-    "long": "R U D' R' D R U R' D' R D U2 R'"
-  },
-  "ET": {
-    "short": "R U:[R' D' R,U]",
-    "long": "R U R' D' R U R' D R U2 R'"
-  },
-  "EV": {
-    "short": "D' R U D:[R' D' R,U]",
-    "long": "D' R U D R' D' R U R' D R D' U2 R' D"
-  },
-  "EK": {
-    "short": "R U R':[R' D' R,U']",
-    "long": "R U R2 D' R U' R' D R U R U' R'"
-  },
-  "EP": {
-    "short": "D R U:[R' D' R,U]",
-    "long": "D R U R' D' R U R' D R U2 R' D'"
-  },
-  "RD": {
-    "short": "U' R':[R' D' R,U']",
-    "long": "U' R2 D' R U' R' D R U R U"
-  },
-  "RI": {
-    "short": "R2 U' R U':[R' D' R,U2]",
-    "long": "R2 U' R U' R' D' R U2 R' D R U' R' U R2"
-  },
-  "RF": {
-    "short": "R' U':[U',R' D' R]",
-    "long": "R' U2 R' D' R U R' D R U R"
-  },
-  "RB": {
-    "short": "R':[U2,R' D' R]",
-    "long": "R' U2 R' D' R U2 R' D R2"
-  },
-  "RQ": {
-    "short": "R B':[D',R' U' R]",
-    "long": "R B' D' R' U' R D R' U R B R'"
-  },
-  "RN": {
-    "short": "U R:[R D R',U2]",
-    "long": "U R2 D R' U2 R D' R' U2 R' U'"
-  },
-  "RU": {
-    "short": "U' R':[R' D R,U']",
-    "long": "U' R2 D R U' R' D' R U R U"
-  },
-  "RG": {
-    "short": "R B' R':[U,R' D R]",
-    "long": "R B' R' U R' D R U' R' D' R2 B R'"
-  },
-  "RL": {
-    "short": "R:[R' D R' D' R2,B']",
-    "long": "D R' D' R2 B' R2 D R D' R B R'"
-  },
-  "RX": {
-    "short": "R B:[D',R' U R]",
-    "long": "R B D' R' U R D R' U' R B' R'"
-  },
-  "RS": {
-    "short": "U' R' U':[R D' R',U']",
-    "long": "U' R' U' R D' R' U' R D R' U2 R U"
-  },
-  "RH": {
-    "short": "R D' R U:[D,R' U' R]",
-    "long": "R D' R U D R' U' R D' R' U R U' R' D R'"
-  },
-  "RW": {
-    "short": "U R' F R:[R D R',U']",
-    "long": "U R' F R2 D R' U' R D' R' U R' F' R U'"
-  },
-  "RO": {
-    "short": "R' U:[U,R' D' R]",
-    "long": "R' U2 R' D' R U' R' D R U' R"
-  },
-  "RT": {
-    "short": "U' R' U' R:[R D R',U]",
-    "long": "U' R' U' R2 D R' U R D' R' U' R' U R U"
-  },
-  "RV": {
-    "short": "U' D' R':[R' D R,U']",
-    "long": "U' D' R2 D R U' R' D' R U R D U"
-  },
-  "RK": {
-    "short": "U' R' U':[R D R',U']",
-    "long": "U' R' U' R D R' U' R D' R' U2 R U"
-  },
-  "RP": {
-    "short": "R B' R':[U,R' D' R]",
-    "long": "R B' R' U R' D' R U' R' D R2 B R'"
-  },
-  "BD": {
-    "short": "R F' R':[R' D R,U]",
-    "long": "R F' R2 D R U R' D' R U' R F R'"
-  },
-  "BI": {
-    "short": "R:[U2,R D R']",
-    "long": "R U2 R D R' U2 R D' R2"
-  },
-  "BF": {
-    "short": "R':[R' D' R,U']",
-    "long": "R2 D' R U' R' D R U R"
-  },
-  "BA": {
-    "short": "R' B' R:[U',R D R']",
-    "long": "R' B' R U' R D R' U R D' R2 B R"
-  },
-  "BE": {
-    "short": "R:[U,R D R']",
-    "long": "R U R D R' U' R D' R2"
-  },
-  "BR": {
-    "short": "R':[R' D' R,U2]",
-    "long": "R2 D' R U2 R' D R U2 R"
-  },
-  "BU": {
-    "short": "R F':[R' U' R,D]",
-    "long": "R F' R' U' R D R' U R D' F R'"
-  },
-  "BG": {
-    "short": "[R' D R,U]",
-    "long": "R' D R U R' D' R U'"
-  },
-  "BL": {
-    "short": "D:[R' D' R,U]",
-    "long": "D R' D' R U R' D R D' U'"
-  },
-  "BX": {
-    "short": "R' B:[D',R U R']",
-    "long": "R' B D' R U R' D R U' R' B' R"
-  },
-  "BS": {
-    "short": "D':[U',R D R']",
-    "long": "U' D' R D R' U R D' R' D"
-  },
-  "BH": {
-    "short": "[U',R D' R']",
-    "long": "U' R D' R' U R D R'"
-  },
-  "BW": {
-    "short": "[U',R D' R' U R' D R]",
-    "long": "U' R D' R' U R' D R U R' D' R U' R D R'"
-  },
-  "BO": {
-    "short": "[U',R D R']",
-    "long": "U' R D R' U R D' R'"
-  },
-  "BT": {
-    "short": "D:[U',R D' R']",
-    "long": "U' D R D' R' U R D R' D'"
-  },
-  "BV": {
-    "short": "[R' D R U' R D' R',U]",
-    "long": "R' D R U' R D' R' U R D R' U R' D' R U'"
-  },
-  "BK": {
-    "short": "D':[R' D R,U]",
-    "long": "D' R' D R U R' D' R D U'"
-  },
-  "BP": {
-    "short": "[R' D' R,U]",
-    "long": "R' D' R U R' D R U'"
-  },
-  "QD": {
-    "short": "R' D':[R' D R,U']",
-    "long": "R' D' R' D R U' R' D' R D U R"
-  },
-  "QI": {
-    "short": "R D:[U2,R D' R']",
-    "long": "R U2 D R D' R' U2 R D R' D' R'"
-  },
-  "QF": {
-    "short": "R' F:[D,R U R']",
-    "long": "R' F D R U R' D' R U' R' F' R"
-  },
-  "QA": {
-    "short": "R' D':[R' D R,U2]",
-    "long": "R' D' R' D R U2 R' D' R D U2 R"
-  },
-  "QE": {
-    "short": "R D:[U,R D' R']",
-    "long": "R U D R D' R' U' R D R' D' R'"
-  },
-  "QR": {
-    "short": "R B':[R' U' R,D']",
-    "long": "R B' R' U' R D' R' U R D B R'"
-  },
-  "QU": {
-    "short": "[U' R2 D R2 U,R']",
-    "long": "U' R2 D R2 U R' U' R2 D' R2 U R"
-  },
-  "QG": {
-    "short": "R' U:[D,R U' R']",
-    "long": "R' U D R U' R' D' R U R' U' R"
-  },
-  "QL": {
-    "short": "R' F:[D,R U' R']",
-    "long": "R' F D R U' R' D' R U R' F' R"
-  },
-  "QX": {
-    "short": "R U':[R' U R,D']",
-    "long": "R U' R' U R D' R' U' R D U R'"
-  },
-  "QS": {
-    "short": "[R,U R2 D' R2 U']",
-    "long": "R U R2 D' R2 U' R' U R2 D R2 U'"
-  },
-  "QH": {
-    "short": "R B':[R' U R,D']",
-    "long": "R B' R' U R D' R' U' R D B R'"
-  },
-  "QW": {
-    "short": "D R U':[R' U R,D']",
-    "long": "D R U' R' U R D' R' U' R D U R' D'"
-  },
-  "QO": {
-    "short": "U' R U:[D,R' U' R]",
-    "long": "U' R U D R' U' R D' R' U R U' R' U"
-  },
-  "QT": {
-    "short": "R U':[R' U R,D]",
-    "long": "R U' R' U R D R' U' R D' U R'"
-  },
-  "QV": {
-    "short": "U R' U':[R U R',D']",
-    "long": "U R' U' R U R' D' R U' R' D U R U'"
-  },
-  "QK": {
-    "short": "D' R' U:[D,R U' R']",
-    "long": "D' R' U D R U' R' D' R U R' U' R D"
-  },
-  "QP": {
-    "short": "R' U:[D',R U' R']",
-    "long": "R' U D' R U' R' D R U R' U' R"
-  },
-  "ND": {
-    "short": "U' R':[R' D' R,U2]",
-    "long": "U' R2 D' R U2 R' D R U2 R U"
-  },
-  "NI": {
-    "short": "R':[R' D R U' R D' R',U']",
-    "long": "R2 D R U' R D' R' U' R D R' U R' D' R U R"
-  },
-  "NF": {
-    "short": "R' D' R U D:[R' D' R,U2]",
-    "long": "R' D' R U D R' D' R U2 R' D R D' U R' D R"
-  },
-  "NA": {
-    "short": "R D R' U D':[R D R',U2]",
-    "long": "R D R' U D' R D R' U2 R D' R' D U R D' R'"
-  },
-  "NE": {
-    "short": "R:[U,R D' R' U R' D R]",
-    "long": "R U R D' R' U R' D R U' R' D' R U' R D R2"
-  },
-  "NR": {
-    "short": "U R:[U2,R D R']",
-    "long": "U R U2 R D R' U2 R D' R2 U'"
-  },
-  "NU": {
-    "short": "U' R':[R' D R,U2]",
-    "long": "U' R2 D R U2 R' D' R U2 R U"
-  },
-  "NG": {
-    "short": "U R U':[R' D R,U2]",
-    "long": "U R U' R' D R U2 R' D' R U' R' U'"
-  },
-  "NL": {
-    "short": "[D R' D' R,U' R B' R']",
-    "long": "D R' D' R U' R B' R2 D R D' R B R' U"
-  },
-  "NX": {
-    "short": "[U R' F R,D' R D R']",
-    "long": "U R' F R D' R D R2 F' R U' R D' R' D"
-  },
-  "NS": {
-    "short": "U' R' U':[R D' R',U2]",
-    "long": "U' R' U' R D' R' U2 R D R' U' R U"
-  },
-  "NH": {
-    "short": "U R:[U2,R D' R']",
-    "long": "U R U2 R D' R' U2 R D R2 U'"
-  },
-  "NW": {
-    "short": "D:[U R' F R,D' R D R']",
-    "long": "D U R' F R D' R D R2 F' R U' R D' R'"
-  },
-  "NO": {
-    "short": "U R U':[R' D' R,U2]",
-    "long": "U R U' R' D' R U2 R' D R U' R' U'"
-  },
-  "NT": {
-    "short": "U D R:[U2,R D' R']",
-    "long": "U D R U2 R D' R' U2 R D R2 D' U'"
-  },
-  "NV": {
-    "short": "U' D' R':[R' D R,U2]",
-    "long": "U' D' R2 D R U2 R' D' R U2 R D U"
-  },
-  "NK": {
-    "short": "U' R' U':[R D R',U2]",
-    "long": "U' R' U' R D R' U2 R D' R' U' R U"
-  },
-  "NP": {
-    "short": "D':[D R' D' R,U' R B' R']",
-    "long": "R' D' R U' R B' R2 D R D' R B R' U D"
-  },
-  "UD": {
-    "short": "R2 F R U':[R' D' R,U2]",
-    "long": "R2 F R U' R' D' R U2 R' D R U' R' F' R2"
-  },
-  "UI": {
-    "short": "R U' D:[R' D' R,U2]",
-    "long": "R U' D R' D' R U2 R' D R D' U' R'"
-  },
-  "UF": {
-    "short": "U' R' U:[D,R U' R']",
-    "long": "U' R' U D R U' R' D' R U R' U' R U"
-  },
-  "UA": {
-    "short": "R F' R' U:[R D R',U2]",
-    "long": "R F' R' U R D R' U2 R D' R' U R F R'"
-  },
-  "UE": {
-    "short": "R U2 D:[R' D' R,U']",
-    "long": "R U2 D R' D' R U' R' D R D' U' R'"
-  },
-  "UR": {
-    "short": "U' R':[U',R' D R]",
-    "long": "U' R' U' R' D R U R' D' R2 U"
-  },
-  "UB": {
-    "short": "R F':[D,R' U' R]",
-    "long": "R F' D R' U' R D' R' U R F R'"
-  },
-  "UQ": {
-    "short": "[R',U' R2 D R2 U]",
-    "long": "R' U' R2 D R2 U R U' R2 D' R2 U"
-  },
-  "UN": {
-    "short": "U' R':[U2,R' D R]",
-    "long": "U' R' U2 R' D R U2 R' D' R2 U"
-  },
-  "UX": {
-    "short": "R B R' U:[R' D R,U]",
-    "long": "R B R' U R' D R U R' D' R U2 R B' R'"
-  },
-  "US": {
-    "short": "U R' F R:[R D' R',U2]",
-    "long": "U R' F R2 D' R' U2 R D R' U2 R' F' R U'"
-  },
-  "UH": {
-    "short": "R:[D' R D R',R' F' R U']",
-    "long": "R D' R D R2 F' R U' R D' R' D U R' F"
-  },
-  "UW": {
-    "short": "U R' F R:[R D R',U2]",
-    "long": "U R' F R2 D R' U2 R D' R' U2 R' F' R U'"
-  },
-  "UO": {
-    "short": "U' R':[U,R' D R]",
-    "long": "U' R' U R' D R U' R' D' R2 U"
-  },
-  "UT": {
-    "short": "U' R2 U:[R U' R',D]",
-    "long": "U' R2 U R U' R' D R U R' D' U' R2 U"
-  },
-  "UV": {
-    "short": "R U' R' D:[R' D' R,U2]",
-    "long": "R U' R' D R' D' R U2 R' D R D' U2 R U R'"
-  },
-  "UK": {
-    "short": "[R,U' R2 D R2 U]",
-    "long": "R U' R2 D R2 U R' U' R2 D' R2 U"
-  },
-  "UP": {
-    "short": "R D:[R' D' R,U]",
-    "long": "R D R' D' R U R' D R D' U' R'"
-  },
-  "GD": {
-    "short": "[U',R' D R]",
-    "long": "U' R' D R U R' D' R"
-  },
-  "GI": {
-    "short": "D R':[F2,R D' R' D]",
-    "long": "D R' F2 R D' R' D F2 D' R"
-  },
-  "GF": {
-    "short": "R' U':[R U R',D]",
-    "long": "R' U' R U R' D R U' R' D' U R"
-  },
-  "GA": {
-    "short": "[U2,R' D R]",
-    "long": "U2 R' D R U2 R' D' R"
-  },
-  "GE": {
-    "short": "U R':[R' D R,U']",
-    "long": "U R2 D R U' R' D' R U R U'"
-  },
-  "GR": {
-    "short": "R B' R':[R' D R,U]",
-    "long": "R B' R2 D R U R' D' R U' R B R'"
-  },
-  "GB": {
-    "short": "[U,R' D R]",
-    "long": "U R' D R U' R' D' R"
-  },
-  "GQ": {
-    "short": "R' U:[R U' R',D]",
-    "long": "R' U R U' R' D R U R' D' U' R"
-  },
-  "GN": {
-    "short": "U R U:[R' D R,U2]",
-    "long": "U R U R' D R U2 R' D' R U R' U'"
-  },
-  "GX": {
-    "short": "R B R' U D:[R' D' R,U]",
-    "long": "R B R' U D R' D' R U R' D R D' U2 R B' R'"
-  },
-  "GS": {
-    "short": "U' R B R':[U,R' D R]",
-    "long": "U' R B R' U R' D R U' R' D' R2 B' R' U"
-  },
-  "GH": {
-    "short": "D R':[F',R D' R' D]",
-    "long": "D R' F' R D' R' D F D' R"
-  },
-  "GW": {
-    "short": "D R2 U':[D',R' U R]",
-    "long": "D R2 U' D' R' U R D R' U' R U R2 D'"
-  },
-  "GO": {
-    "short": "R' U:[R U R',D]",
-    "long": "R' U R U R' D R U' R' D' U' R"
-  },
-  "GT": {
-    "short": "R F R':[R' D R,U']",
-    "long": "R F R2 D R U' R' D' R U R F' R'"
-  },
-  "GV": {
-    "short": "U' R' D R:[R D' R',U']",
-    "long": "U' R' D R2 D' R' U' R D R' U R' D' R U"
-  },
-  "GK": {
-    "short": "U:[D,R U' R']",
-    "long": "U D R U' R' D' R U R' U'"
-  },
-  "GP": {
-    "short": "U' R U' R':[R' D R,U]",
-    "long": "U' R U' R2 D R U R' D' R U' R U R' U"
-  },
-  "LD": {
-    "short": "D:[U',R' D' R]",
-    "long": "U' D R' D' R U R' D R D'"
-  },
-  "LI": {
-    "short": "R U':[R' D R,U2]",
-    "long": "R U' R' D R U2 R' D' R U' R'"
-  },
-  "LF": {
-    "short": "D R' U':[R U R',D']",
-    "long": "D R' U' R U R' D' R U' R' D U R D'"
-  },
-  "LA": {
-    "short": "D:[U2,R' D' R]",
-    "long": "U2 D R' D' R U2 R' D R D'"
-  },
-  "LE": {
-    "short": "R U:[U,R' D R]",
-    "long": "R U2 R' D R U' R' D' R U' R'"
-  },
-  "LR": {
-    "short": "R:[B',R' D R' D' R2]",
-    "long": "R B' R' D R' D' R2 B R2 D R D'"
-  },
-  "LB": {
-    "short": "D:[U,R' D' R]",
-    "long": "U D R' D' R U' R' D R D'"
-  },
-  "LQ": {
-    "short": "R' F:[R U' R',D]",
-    "long": "R' F R U' R' D R U R' D' F' R"
-  },
-  "LN": {
-    "short": "[U' R B' R',D R' D' R]",
-    "long": "U' R B' R' D R' D' R2 B R' U R' D R D'"
-  },
-  "LX": {
-    "short": "R' D:[R D' R' D,F']",
-    "long": "R' D R D' R' D F' D' R D R' F D' R"
-  },
-  "LS": {
-    "short": "R' F' R D':[R D R',U']",
-    "long": "R' F' R D' R D R' U' R D' R' U D R' F R"
-  },
-  "LH": {
-    "short": "R' F' R:[R D' R',U']",
-    "long": "R' F' R2 D' R' U' R D R' U R' F R"
-  },
-  "LW": {
-    "short": "D R:[R D' R',U']",
-    "long": "D R2 D' R' U' R D R' U R' D'"
-  },
-  "LO": {
-    "short": "R' F' R:[R D R',U']",
-    "long": "R' F' R2 D R' U' R D' R' U R' F R"
-  },
-  "LT": {
-    "short": "R' F' R D:[R D' R',U']",
-    "long": "R' F' R D R D' R' U' R D R' U D' R' F R"
-  },
-  "LV": {
-    "short": "R U' R':[R' D R,U2]",
-    "long": "R U' R2 D R U2 R' D' R U2 R U R'"
-  },
-  "LK": {
-    "short": "R':[R D' R' D,F']",
-    "long": "D' R' D F' D' R D R' F R"
-  },
-  "LP": {
-    "short": "[D,R U R']",
-    "long": "D R U R' D' R U' R'"
-  },
-  "XD": {
-    "short": "R' B:[R U' R',D']",
-    "long": "R' B R U' R' D' R U R' D B' R"
-  },
-  "XI": {
-    "short": "R:[U2,R D' R']",
-    "long": "R U2 R D' R' U2 R D R2"
-  },
-  "XF": {
-    "short": "U':[R,U R2 D' R2 U']",
-    "long": "U' R U R2 D' R2 U' R' U R2 D R2"
-  },
-  "XA": {
-    "short": "R' U' D' R:[D,R U' R']",
-    "long": "R' U' D' R D R U' R' D' R U R2 D U R"
-  },
-  "XE": {
-    "short": "R:[U,R D' R']",
-    "long": "R U R D' R' U' R D R2"
-  },
-  "XR": {
-    "short": "R B:[R' U R,D']",
-    "long": "R B R' U R D' R' U' R D B' R'"
-  },
-  "XB": {
-    "short": "R' B:[R U R',D']",
-    "long": "R' B R U R' D' R U' R' D B' R"
-  },
-  "XQ": {
-    "short": "R U':[D',R' U R]",
-    "long": "R U' D' R' U R D R' U' R U R'"
-  },
-  "XN": {
-    "short": "[D' R D R',U R' F R]",
-    "long": "D' R D R' U R' F R2 D' R' D R' F' R U'"
-  },
-  "XU": {
-    "short": "R B R' U:[U,R' D R]",
-    "long": "R B R' U2 R' D R U' R' D' R U' R B' R'"
-  },
-  "XG": {
-    "short": "R B R' U2 D:[R' D' R,U']",
-    "long": "R B R' U2 D R' D' R U' R' D R D' U' R B' R'"
-  },
-  "XL": {
-    "short": "R' D:[F',R D' R' D]",
-    "long": "R' D F' R D' R' D F D' R D R' D' R"
-  },
-  "XW": {
-    "short": "R B:[R' U R,D]",
-    "long": "R B R' U R D R' U' R D' B' R'"
-  },
-  "XO": {
-    "short": "R' B:[R U2 R',D']",
-    "long": "R' B R U2 R' D' R U2 R' D B' R"
-  },
-  "XT": {
-    "short": "U':[R',U R2 D' R2 U']",
-    "long": "U' R' U R2 D' R2 U' R U R2 D R2"
-  },
-  "XV": {
-    "short": "R U' R' U':[R D' R',U2]",
-    "long": "R U' R' U' R D' R' U2 R D R' U' R U R'"
-  },
-  "XK": {
-    "short": "R2 U':[R' U R,D']",
-    "long": "R2 U' R' U R D' R' U' R D U R2"
-  },
-  "XP": {
-    "short": "R:[U',R D' R']",
-    "long": "R U' R D' R' U R D R2"
-  },
-  "SD": {
-    "short": "U2 D':[R D R',U]",
-    "long": "U2 D' R D R' U R D' R' D U"
-  },
-  "SI": {
-    "short": "U':[U R' F R,D' R D R']",
-    "long": "R' F R D' R D R2 F' R U' R D' R' D U"
-  },
-  "SF": {
-    "short": "U2 R U:[D',R' U' R]",
-    "long": "U2 R U D' R' U' R D R' U R U' R' U2"
-  },
-  "SA": {
-    "short": "U D':[R D R',U2]",
-    "long": "U D' R D R' U2 R D' R' D U"
-  },
-  "SE": {
-    "short": "U R' U' D':[R D R',U']",
-    "long": "U R' U' D' R D R' U' R D' R' D U2 R U'"
-  },
-  "SR": {
-    "short": "U' R' U':[U',R D' R']",
-    "long": "U' R' U2 R D' R' U R D R' U R U"
-  },
-  "SB": {
-    "short": "D':[R D R',U']",
-    "long": "D' R D R' U' R D' R' D U"
-  },
-  "SQ": {
-    "short": "[U R2 D' R2 U',R]",
-    "long": "U R2 D' R2 U' R U R2 D R2 U' R'"
-  },
-  "SN": {
-    "short": "U' R' U:[R D' R',U2]",
-    "long": "U' R' U R D' R' U2 R D R' U R U"
-  },
-  "SU": {
-    "short": "U R' F R:[U2,R D' R']",
-    "long": "U R' F R U2 R D' R' U2 R D R2 F' R U'"
-  },
-  "SG": {
-    "short": "U' R B R':[R' D R,U]",
-    "long": "U' R B R2 D R U R' D' R U' R B' R' U"
-  },
-  "SL": {
-    "short": "R' F' R D':[U',R D R']",
-    "long": "R' F' R D' U' R D R' U R D' R' D R' F R"
-  },
-  "SW": {
-    "short": "U' R' U R:[R D' R',U2]",
-    "long": "U' R' U R2 D' R' U2 R D R' U2 R' U' R U"
-  },
-  "SO": {
-    "short": "U':[D',R' U' R]",
-    "long": "U' D' R' U' R D R' U R U"
-  },
-  "ST": {
-    "short": "U R' D':[R D R',U2]",
-    "long": "U R' D' R D R' U2 R D' R' D U2 R U'"
-  },
-  "SV": {
-    "short": "U' D' R':[R' D R,U]",
-    "long": "U' D' R2 D R U R' D' R U' R D U"
-  },
-  "SK": {
-    "short": "D' R' U:[D,R U R']",
-    "long": "D' R' U D R U R' D' R U' R' U' R D"
-  },
-  "SP": {
-    "short": "U' R B R':[R' D' R,U]",
-    "long": "U' R B R2 D' R U R' D R U' R B' R' U"
-  },
-  "HD": {
-    "short": "U':[U',R D' R']",
-    "long": "U2 R D' R' U R D R' U"
-  },
-  "HI": {
-    "short": "R D':[U2,R D R']",
-    "long": "R U2 D' R D R' U2 R D' R' D R'"
-  },
-  "HF": {
-    "short": "U' R U':[R' U R,D']",
-    "long": "U' R U' R' U R D' R' U' R D U R' U"
-  },
-  "HA": {
-    "short": "U:[R D' R',U2]",
-    "long": "U R D' R' U2 R D R' U"
-  },
-  "HE": {
-    "short": "R D':[U,R D R']",
-    "long": "R U D' R D R' U' R D' R' D R'"
-  },
-  "HR": {
-    "short": "R D' R U:[R' U' R,D]",
-    "long": "R D' R U R' U' R D R' U R D' U' R' D R'"
-  },
-  "HB": {
-    "short": "[R D' R',U']",
-    "long": "R D' R' U' R D R' U"
-  },
-  "HQ": {
-    "short": "R B':[D',R' U R]",
-    "long": "R B' D' R' U R D R' U' R B R'"
-  },
-  "HN": {
-    "short": "U R:[R D' R',U2]",
-    "long": "U R2 D' R' U2 R D R' U2 R' U'"
-  },
-  "HU": {
-    "short": "R:[R' F' R U',D' R D R']",
-    "long": "F' R U' D' R D R' U R' F R2 D' R' D R'"
-  },
-  "HG": {
-    "short": "R' D:[F',D' R D R']",
-    "long": "R' D F' D' R D R' F R D'"
-  },
-  "HL": {
-    "short": "R' F' R:[U',R D' R']",
-    "long": "R' F' R U' R D' R' U R D R2 F R"
-  },
-  "HW": {
-    "short": "R D' R':[R' D R,U]",
-    "long": "R D' R2 D R U R' D' R U' R D R'"
-  },
-  "HO": {
-    "short": "R' U R:[R D' R',U']",
-    "long": "R' U R2 D' R' U' R D R' U R' U' R"
-  },
-  "HT": {
-    "short": "U:[D',R' U2 R]",
-    "long": "U D' R' U2 R D R' U2 R U'"
-  },
-  "HV": {
-    "short": "R U' R' U' D':[R D R',U2]",
-    "long": "R U' R' U' D' R D R' U2 R D' R' D U' R U R'"
-  },
-  "HK": {
-    "short": "U R U':[R D' R',U']",
-    "long": "U R U' R D' R' U' R D R' U2 R' U'"
-  },
-  "HP": {
-    "short": "R D':[U',R D R']",
-    "long": "R U' D' R D R' U R D' R' D R'"
-  },
-  "WD": {
-    "short": "R D' R':[U',R' D R]",
-    "long": "R D' R' U' R' D R U R' D' R2 D R'"
-  },
-  "WI": {
-    "short": "D R:[U2,R D' R']",
-    "long": "D R U2 R D' R' U2 R D R2 D'"
-  },
-  "WF": {
-    "short": "U2 R U:[D,R' U' R]",
-    "long": "U2 R U D R' U' R D' R' U R U' R' U2"
-  },
-  "WA": {
-    "short": "R D' R':[U2,R' D R]",
-    "long": "R D' R' U2 R' D R U2 R' D' R2 D R'"
-  },
-  "WE": {
-    "short": "D R:[U,R D' R']",
-    "long": "D R U R D' R' U' R D R2 D'"
-  },
-  "WR": {
-    "short": "U R' F R:[U',R D R']",
-    "long": "U R' F R U' R D R' U R D' R2 F' R U'"
-  },
-  "WB": {
-    "short": "[R D' R' U R' D R,U']",
-    "long": "R D' R' U R' D R U' R' D' R U' R D R' U"
-  },
-  "WQ": {
-    "short": "D R U':[D',R' U R]",
-    "long": "D R U' D' R' U R D R' U' R U R' D'"
-  },
-  "WN": {
-    "short": "D:[D' R D R',U R' F R]",
-    "long": "R D R' U R' F R2 D' R' D R' F' R U' D'"
-  },
-  "WU": {
-    "short": "U R' F R:[U2,R D R']",
-    "long": "U R' F R U2 R D R' U2 R D' R2 F' R U'"
-  },
-  "WG": {
-    "short": "D R2 U':[R' U R,D']",
-    "long": "D R2 U' R' U R D' R' U' R D U R2 D'"
-  },
-  "WL": {
-    "short": "D R:[U',R D' R']",
-    "long": "D R U' R D' R' U R D R2 D'"
-  },
-  "WX": {
-    "short": "R B:[D,R' U R]",
-    "long": "R B D R' U R D' R' U' R B' R'"
-  },
-  "WS": {
-    "short": "U' R' U R:[U2,R D' R']",
-    "long": "U' R' U R U2 R D' R' U2 R D R2 U' R U"
-  },
-  "WH": {
-    "short": "R D' R':[U,R' D R]",
-    "long": "R D' R' U R' D R U' R' D' R2 D R'"
-  },
-  "WV": {
-    "short": "R U' R' U' D:[R D' R',U2]",
-    "long": "R U' R' U' D R D' R' U2 R D R' D' U' R U R'"
-  },
-  "WK": {
-    "short": "U R D':[R' D R,U']",
-    "long": "U R D' R' D R U' R' D' R D U R' U'"
-  },
-  "WP": {
-    "short": "R:[R' D R U' R D' R',U]",
-    "long": "D R U' R D' R' U R D R' U R' D' R U' R'"
-  },
-  "OD": {
-    "short": "U':[U',R D R']",
-    "long": "U2 R D R' U R D' R' U"
-  },
-  "OI": {
-    "short": "R U' D':[R' D R,U2]",
-    "long": "R U' D' R' D R U2 R' D' R D U' R'"
-  },
-  "OF": {
-    "short": "R' U:[R' D' R,U2]",
-    "long": "R' U R' D' R U2 R' D R U R"
-  },
-  "OA": {
-    "short": "U:[R D R',U2]",
-    "long": "U R D R' U2 R D' R' U"
-  },
-  "OE": {
-    "short": "R U2 D':[R' D R,U']",
-    "long": "R U2 D' R' D R U' R' D' R D U' R'"
-  },
-  "OR": {
-    "short": "R' U:[R' D' R,U]",
-    "long": "R' U R' D' R U R' D R U2 R"
-  },
-  "OB": {
-    "short": "[R D R',U']",
-    "long": "R D R' U' R D' R' U"
-  },
-  "OQ": {
-    "short": "U' R U:[R' U' R,D]",
-    "long": "U' R U R' U' R D R' U R D' U' R' U"
-  },
-  "ON": {
-    "short": "U R U:[R' D' R,U2]",
-    "long": "U R U R' D' R U2 R' D R U R' U'"
-  },
-  "OU": {
-    "short": "U' R':[R' D R,U]",
-    "long": "U' R2 D R U R' D' R U' R U"
-  },
-  "OG": {
-    "short": "R' U:[D,R U R']",
-    "long": "R' U D R U R' D' R U' R' U' R"
-  },
-  "OL": {
-    "short": "R' F' R:[U',R D R']",
-    "long": "R' F' R U' R D R' U R D' R2 F R"
-  },
-  "OX": {
-    "short": "R' B:[D',R U2 R']",
-    "long": "R' B D' R U2 R' D R U2 R' B' R"
-  },
-  "OS": {
-    "short": "U':[R' U' R,D']",
-    "long": "U' R' U' R D' R' U R D U"
-  },
-  "OH": {
-    "short": "R' U R:[U',R D' R']",
-    "long": "R' U R U' R D' R' U R D R2 U' R"
-  },
-  "OV": {
-    "short": "R U' D' R':[R' D R,U2]",
-    "long": "R U' D' R2 D R U2 R' D' R U2 R D U R'"
-  },
-  "OK": {
-    "short": "U:[D',R U' R']",
-    "long": "U D' R U' R' D R U R' U'"
-  },
-  "OP": {
-    "short": "R D':[R' D R,U]",
-    "long": "R D' R' D R U R' D' R D U' R'"
-  },
-  "TD": {
-    "short": "U2 D:[R D' R',U]",
-    "long": "U2 D R D' R' U R D R' D' U"
-  },
-  "TI": {
-    "short": "R U':[R' D' R,U2]",
-    "long": "R U' R' D' R U2 R' D R U' R'"
-  },
-  "TF": {
-    "short": "R2 U' R':[U,R' D' R]",
-    "long": "R2 U' R' U R' D' R U' R' D R2 U R2"
-  },
-  "TA": {
-    "short": "U D:[R D' R',U2]",
-    "long": "U D R D' R' U2 R D R' D' U"
-  },
-  "TE": {
-    "short": "R U:[U,R' D' R]",
-    "long": "R U2 R' D' R U' R' D R U' R'"
-  },
-  "TR": {
-    "short": "U' R' U' R:[U,R D R']",
-    "long": "U' R' U' R U R D R' U' R D' R2 U R U"
-  },
-  "TB": {
-    "short": "D:[R D' R',U']",
-    "long": "D R D' R' U' R D R' D' U"
-  },
-  "TQ": {
-    "short": "R U':[D,R' U R]",
-    "long": "R U' D R' U R D' R' U' R U R'"
-  },
-  "TN": {
-    "short": "U D R:[R D' R',U2]",
-    "long": "U D R2 D' R' U2 R D R' U2 R' D' U'"
-  },
-  "TU": {
-    "short": "U' R2 U:[D,R U' R']",
-    "long": "U' R2 U D R U' R' D' R U R' U' R2 U"
-  },
-  "TG": {
-    "short": "R F R':[U',R' D R]",
-    "long": "R F R' U' R' D R U R' D' R2 F' R'"
-  },
-  "TL": {
-    "short": "R' F' R D:[U',R D' R']",
-    "long": "R' F' R D U' R D' R' U R D R' D' R' F R"
-  },
-  "TX": {
-    "short": "R2:[D',R2 U' R' U R2]",
-    "long": "R2 D' R2 U' R' U R2 D R2 U' R U"
-  },
-  "TS": {
-    "short": "U R' D':[U2,R D R']",
-    "long": "U R' U2 D' R D R' U2 R D' R' D R U'"
-  },
-  "TH": {
-    "short": "U:[R' U2 R,D']",
-    "long": "U R' U2 R D' R' U2 R D U'"
-  },
-  "TV": {
-    "short": "R U' R' U':[R D R',U2]",
-    "long": "R U' R' U' R D R' U2 R D' R' U' R U R'"
-  },
-  "TK": {
-    "short": "D R' U R:[R D' R',U']",
-    "long": "D R' U R2 D' R' U' R D R' U R' U' R D'"
-  },
-  "TP": {
-    "short": "[D',R U R']",
-    "long": "D' R U R' D R U' R'"
-  },
-  "VD": {
-    "short": "[U',R' D R U' R D' R']",
-    "long": "U' R' D R U' R D' R' U R D R' U R' D' R"
-  },
-  "VI": {
-    "short": "D' R U' D:[R' D' R,U2]",
-    "long": "D' R U' D R' D' R U2 R' D R D' U' R' D"
-  },
-  "VF": {
-    "short": "R U' R':[U2,R' D' R]",
-    "long": "R U' R' U2 R' D' R U2 R' D R2 U R'"
-  },
-  "VA": {
-    "short": "U R' D R:[R D' R',U2]",
-    "long": "U R' D R2 D' R' U2 R D R' U2 R' D' R U'"
-  },
-  "VE": {
-    "short": "D' R U2 D:[R' D' R,U']",
-    "long": "D' R U2 D R' D' R U' R' D R D' U' R' D"
-  },
-  "VR": {
-    "short": "U' D' R':[U',R' D R]",
-    "long": "U' D' R' U' R' D R U R' D' R2 D U"
-  },
-  "VB": {
-    "short": "[U,R' D R U' R D' R']",
-    "long": "U R' D R U' R D' R' U' R D R' U R' D' R"
-  },
-  "VQ": {
-    "short": "U R' U':[D',R U R']",
-    "long": "U R' U' D' R U R' D R U' R' U R U'"
-  },
-  "VN": {
-    "short": "U' D' R':[U2,R' D R]",
-    "long": "U' D' R' U2 R' D R U2 R' D' R2 D U"
-  },
-  "VU": {
-    "short": "R U' R' D:[U2,R' D' R]",
-    "long": "R U' R' U2 D R' D' R U2 R' D R D' R U R'"
-  },
-  "VG": {
-    "short": "U' R' D R:[U',R D' R']",
-    "long": "U' R' D R U' R D' R' U R D R2 D' R U"
-  },
-  "VL": {
-    "short": "R U' R':[U2,R' D R]",
-    "long": "R U' R' U2 R' D R U2 R' D' R2 U R'"
-  },
-  "VX": {
-    "short": "R U' R' U:[R D' R',U2]",
-    "long": "R U' R' U R D' R' U2 R D R' U R U R'"
-  },
-  "VS": {
-    "short": "U' D' R':[U,R' D R]",
-    "long": "U' D' R' U R' D R U' R' D' R2 D U"
-  },
-  "VH": {
-    "short": "R U' R' U D':[R D R',U2]",
-    "long": "R U' R' U D' R D R' U2 R D' R' D U R U R'"
-  },
-  "VW": {
-    "short": "R U' R' U D:[R D' R',U2]",
-    "long": "R U' R' U D R D' R' U2 R D R' D' U R U R'"
-  },
-  "VO": {
-    "short": "R U' D' R':[U2,R' D R]",
-    "long": "R U' D' R' U2 R' D R U2 R' D' R2 D U R'"
-  },
-  "VT": {
-    "short": "R U' R' U:[R D R',U2]",
-    "long": "R U' R' U R D R' U2 R D' R' U R U R'"
-  },
-  "KD": {
-    "short": "D':[U',R' D R]",
-    "long": "U' D' R' D R U R' D' R D"
-  },
-  "KI": {
-    "short": "R':[F2,R D' R' D]",
-    "long": "R' F2 R D' R' D F2 D' R D"
-  },
-  "KF": {
-    "short": "D' R' U':[R U R',D]",
-    "long": "D' R' U' R U R' D R U' R' D' U R D"
-  },
-  "KA": {
-    "short": "D':[U2,R' D R]",
-    "long": "U2 D' R' D R U2 R' D' R D"
-  },
-  "KE": {
-    "short": "R U R':[U',R' D' R]",
-    "long": "R U R' U' R' D' R U R' D R2 U' R'"
-  },
-  "KR": {
-    "short": "U' R' U':[U',R D R']",
-    "long": "U' R' U2 R D R' U R D' R' U R U"
-  },
-  "KB": {
-    "short": "D':[U,R' D R]",
-    "long": "U D' R' D R U' R' D' R D"
-  },
-  "KQ": {
-    "short": "D' R' U:[R U' R',D]",
-    "long": "D' R' U R U' R' D R U R' D' U' R D"
-  },
-  "KN": {
-    "short": "U' R' U:[R D R',U2]",
-    "long": "U' R' U R D R' U2 R D' R' U R U"
-  },
-  "KU": {
-    "short": "[U' R2 D R2 U,R]",
-    "long": "U' R2 D R2 U R U' R2 D' R2 U R'"
-  },
-  "KG": {
-    "short": "U:[R U' R',D]",
-    "long": "U R U' R' D R U R' D' U'"
-  },
-  "KL": {
-    "short": "R':[F',R D' R' D]",
-    "long": "R' F' R D' R' D F D' R D"
-  },
-  "KX": {
-    "short": "R2 U':[D',R' U R]",
-    "long": "R2 U' D' R' U R D R' U' R U R2"
-  },
-  "KS": {
-    "short": "D' R' U:[R U R',D]",
-    "long": "D' R' U R U R' D R U' R' D' U' R D"
-  },
-  "KH": {
-    "short": "U R U':[U',R D' R']",
-    "long": "U R U2 R D' R' U R D R' U R' U'"
-  },
-  "KW": {
-    "short": "U R D':[U',R' D R]",
-    "long": "U R U' D' R' D R U R' D' R D R' U'"
-  },
-  "KO": {
-    "short": "U:[R U' R',D']",
-    "long": "U R U' R' D' R U R' D U'"
-  },
-  "KT": {
-    "short": "D R' U R:[U',R D' R']",
-    "long": "D R' U R U' R D' R' U R D R2 U' R D'"
-  },
-  "PD": {
-    "short": "[U',R' D' R]",
-    "long": "U' R' D' R U R' D R"
-  },
-  "PI": {
-    "short": "D R U':[R' D' R,U2]",
-    "long": "D R U' R' D' R U2 R' D R U' R' D'"
-  },
-  "PF": {
-    "short": "R' U':[R U R',D']",
-    "long": "R' U' R U R' D' R U' R' D U R"
-  },
-  "PA": {
-    "short": "[U2,R' D' R]",
-    "long": "U2 R' D' R U2 R' D R"
-  },
-  "PE": {
-    "short": "D R U:[U,R' D' R]",
-    "long": "D R U2 R' D' R U' R' D R U' R' D'"
-  },
-  "PR": {
-    "short": "R B' R':[R' D' R,U]",
-    "long": "R B' R2 D' R U R' D R U' R B R'"
-  },
-  "PB": {
-    "short": "[U,R' D' R]",
-    "long": "U R' D' R U' R' D R"
-  },
-  "PQ": {
-    "short": "R' U:[R U' R',D']",
-    "long": "R' U R U' R' D' R U R' D U' R"
-  },
-  "PN": {
-    "short": "D':[U' R B' R',D R' D' R]",
-    "long": "D' U' R B' R' D R' D' R2 B R' U R' D R"
-  },
-  "PU": {
-    "short": "R D:[U,R' D' R]",
-    "long": "R U D R' D' R U' R' D R D' R'"
-  },
-  "PG": {
-    "short": "U' R U' R':[U,R' D R]",
-    "long": "U' R U' R' U R' D R U' R' D' R2 U R' U"
-  },
-  "PL": {
-    "short": "[R U R',D]",
-    "long": "R U R' D R U' R' D'"
-  },
-  "PX": {
-    "short": "R:[R D' R',U']",
-    "long": "R2 D' R' U' R D R' U R'"
-  },
-  "PS": {
-    "short": "U' R B R':[U,R' D' R]",
-    "long": "U' R B R' U R' D' R U' R' D R2 B' R' U"
-  },
-  "PH": {
-    "short": "R D':[R D R',U']",
-    "long": "R D' R D R' U' R D' R' D U R'"
-  },
-  "PW": {
-    "short": "R:[U,R' D R U' R D' R']",
-    "long": "R U R' D R U' R D' R' U' R D R' U R' D'"
-  },
-  "PO": {
-    "short": "R D':[U,R' D R]",
-    "long": "R U D' R' D R U' R' D' R D R'"
-  },
-  "PT": {
-    "short": "[R U R',D']",
-    "long": "R U R' D' R U' R' D"
-  }
-};
-
 export const DEFAULT_EDGES: Record<string, AlgDef> = {
-  "DA": {
-    "short": "R' F R:[S',R U' R']",
-    "long": "R' F R S' R U' R' S R U R2 F' R"
-  },
-  "DQ": {
-    "short": "U:[S',R U' R']",
-    "long": "U S' R U' R' S R U R' U'"
-  },
-  "DB": {
-    "short": "R' E R U':[R' E' R,U']",
-    "long": "R' E R U' R' E' R U' R' E R U2 R' E' R"
-  },
-  "DM": {
-    "short": "[S,R' F R]",
-    "long": "S R' F R S' R' F' R"
-  },
-  "DU": {
-    "short": "R' F':[R S R',F2]",
-    "long": "R' F' R S R' F2 R S' R' F' R"
-  },
-  "DK": {
-    "short": "U' R:[U' R' U,M']",
-    "long": "U' R U' R' U M' U' R U r' U"
-  },
-  "DX": {
-    "short": "[U,R' S' R2 S' R']",
-    "long": "U R' S' R2 S' R' U' R S R2 S R"
-  },
-  "DG": {
-    "short": "[U,R S R']",
-    "long": "U R S R' U' R S' R'"
-  },
-  "DW": {
-    "short": "R B R':[S,R' F R]",
-    "long": "R B R' S R' F R S' R' F' R2 B' R'"
-  },
-  "DS": {
-    "short": "[U',M]+M U:[U,M']",
-    "long": "U' M U' M' U' M U' M'"
-  },
-  "DV": {
-    "short": "S R F R:[S',R2]",
-    "long": "S R F R S' R2 S R F' R' S'"
-  },
-  "DO": {
-    "short": "U':[R' E' R,U']",
-    "long": "U' R' E' R U' R' E R U2"
-  },
-  "DJ": {
-    "short": "[U,R' S2 R]",
-    "long": "U R' S2 R U' R' S2 R"
-  },
-  "DP": {
-    "short": "[U,R S' R']",
-    "long": "U R S' R' U' R S R'"
-  },
-  "DL": {
-    "short": "E:[U,R S' R']",
-    "long": "U E R S' R' U' R S R' E'"
-  },
-  "DF": {
-    "short": "U':[R' E R,U']",
-    "long": "U' R' E R U' R' E' R U2"
-  },
-  "DR": {
-    "short": "E':[U,R' S' R]",
-    "long": "u R' S' R U' R' S R E"
-  },
-  "DH": {
-    "short": "U':[R E' R',U']",
-    "long": "U' R E' R' U' R E R' U2"
-  },
-  "DT": {
-    "short": "[U,R S2 R']",
-    "long": "U R S2 R' U' R S2 R'"
-  },
-  "DN": {
-    "short": "[U,R' S' R]",
-    "long": "U R' S' R U' R' S R"
-  },
-  "EA": {
-    "short": "S' U':[S',U2 R2]",
-    "long": "S' U' S' U2 R2 S R2 U' S"
-  },
-  "EQ": {
-    "short": "U':[S,R' F R]",
-    "long": "U' S R' F R S' R' F' R U"
-  },
-  "EB": {
-    "short": "S:[U',R' E' R]",
-    "long": "S U' R' E' R U R' E R S'"
-  },
-  "EM": {
-    "short": "R F R:[S,R2]",
-    "long": "R F R S R2 S' R F' R'"
-  },
-  "EU": {
-    "short": "U D R B' R:[S,R2]",
-    "long": "U D R B' R S R2 S' R B R' D' U'"
-  },
-  "EK": {
-    "short": "U' R F:[E,R2]",
-    "long": "U' R F E R2 E' R2 F' R' U"
-  },
-  "EX": {
-    "short": "U' R F R':[S',R2]",
-    "long": "U' R F R' S' R2 S R' F' R' U"
-  },
-  "EG": {
-    "short": "U' R':[R' S' R,F]",
-    "long": "U' R2 S' R F R' S R F' R U"
-  },
-  "EW": {
-    "short": "U D' R B' R:[S,R2]",
-    "long": "U D' R B' R S R2 S' R B R' D U'"
-  },
-  "ES": {
-    "short": "D' R' F R:[S,R2]",
-    "long": "D' R' F R S R2 S' R F' R D"
-  },
-  "EV": {
-    "short": "U R B' R:[S,R2]",
-    "long": "U R B' R S R2 S' R B R' U'"
-  },
-  "EO": {
-    "short": "R' F R:[S,R2]",
-    "long": "R' F R S R2 S' R F' R"
-  },
-  "EJ": {
-    "short": "R S:[U',R' E' R]",
-    "long": "R S U' R' E' R U R' E R S' R'"
-  },
-  "EP": {
-    "short": "R2 F R:[S,R2]",
-    "long": "R2 F R S R2 S' R F' R2"
-  },
-  "EL": {
-    "short": "S:[U',R E R2 E' R]",
-    "long": "S U' R E R2 E' R U R' E R2 E' R' S'"
-  },
-  "EF": {
-    "short": "S:[U',R' E R]",
-    "long": "S U' R' E R U R' E' R S'"
-  },
-  "ER": {
-    "short": "U' R F:[R2,E']",
-    "long": "U' R F R2 E' R2 E F' R' U"
-  },
-  "EH": {
-    "short": "S:[U',R E' R']",
-    "long": "S U' R E' R' U R E R' S'"
-  },
-  "ET": {
-    "short": "R' S:[U',R' E' R]",
-    "long": "R' S U' R' E' R U R' E R S' R"
-  },
-  "EN": {
-    "short": "F R:[S,R2]",
-    "long": "F R S R2 S' R F'"
+  "AB": {
+    "short": "[R2 U' : [S, R2]]",
+    "long": "R2 U' S R2 S' R2 U R2"
   },
   "AD": {
-    "short": "R' F R:[R U' R',S']",
-    "long": "R' F R2 U' R' S' R U R' S R' F' R"
+    "short": "[L2' U : [S', L2]]",
+    "long": "L2' U S' L2 S L2 U' L2"
   },
   "AE": {
-    "short": "S' U:[S',U2 R2]",
-    "long": "S' U S' U2 R2 S R2 U S"
-  },
-  "AB": {
-    "short": "R' E R U':[R' E' R,U2]",
-    "long": "R' E R U' R' E' R U2 R' E R U' R' E' R"
-  },
-  "AM": {
-    "short": "S U':[S,R2]",
-    "long": "S U' S R2 S' R2 U S'"
-  },
-  "AU": {
-    "short": "[U2,M']",
-    "long": "U2 M' U2 M"
-  },
-  "AK": {
-    "short": "U' R F' R':[S,R2]",
-    "long": "U' R F' R' S R2 S' R' F R' U"
-  },
-  "AX": {
-    "short": "U:[S',U2 R2]",
-    "long": "U S' U2 R2 S R2 U"
-  },
-  "AG": {
-    "short": "U:[R S R',U2]",
-    "long": "U R S R' U2 R S' R' U"
-  },
-  "AW": {
-    "short": "[M,U2]",
-    "long": "M U2 M' U2"
-  },
-  "AS": {
-    "short": "U' R' B R:[S,R2]",
-    "long": "U' R' B R S R2 S' R B' R U"
-  },
-  "AV": {
-    "short": "U':[S,R2]",
-    "long": "U' S R2 S' R2 U"
-  },
-  "AO": {
-    "short": "U':[R' E' R,U2]",
-    "long": "U' R' E' R U2 R' E R U'"
-  },
-  "AJ": {
-    "short": "R' U':[S,R2]",
-    "long": "R' U' S R2 S' R2 U R"
-  },
-  "AP": {
-    "short": "U:[R S' R',U2]",
-    "long": "U R S' R' U2 R S R' U"
-  },
-  "AL": {
-    "short": "U' S:[R2,S' R' E]",
-    "long": "U' S R2 S' R' E R2 E' R U"
+    "short": "[S' U : [S', L2]]",
+    "long": "S' U S' L2 S L2 U' S"
   },
   "AF": {
-    "short": "U':[R' E R,U2]",
-    "long": "U' R' E R U2 R' E' R U'"
+    "short": "[U' : [R' E R, U2]]",
+    "long": "U' R' E R U2 R' E' R U2 U"
   },
-  "AR": {
-    "short": "U' S:[R2,S' R E']",
-    "long": "U' S R2 S' R E' R2 E R' U"
+  "AG": {
+    "short": "[U : [L' E' L, U2]]",
+    "long": "U L' E' L U2 L' E L U2 U'"
   },
   "AH": {
-    "short": "U':[R E' R',U2]",
-    "long": "U' R E' R' U2 R E R' U'"
+    "short": "[U' : [R E' R', U2]]",
+    "long": "U' R E' R' U2 R E R' U2 U"
   },
-  "AT": {
-    "short": "R U':[S,R2]",
-    "long": "R U' S R2 S' R2 U R'"
+  "AJ": {
+    "short": "[R' U' : [S, R2]]",
+    "long": "R' U' S R2 S' R2 U R"
+  },
+  "AK": {
+    "short": "[U' M U : [M, U2]]",
+    "long": "U' M U M U2 M' U2 U' M' U"
+  },
+  "AL": {
+    "short": "[L U : [S', L2]]",
+    "long": "L U S' L2 S L2 U' L'"
+  },
+  "AM": {
+    "short": "[S U' : [S, R2]]",
+    "long": "S U' S R2 S' R2 U S'"
   },
   "AN": {
-    "short": "U:[R' S' R,U2]",
-    "long": "U R' S' R U2 R' S R U"
+    "short": "[U : [L' E L, U2]]",
+    "long": "U L' E L U2 L' E' L U2 U'"
   },
-  "QD": {
-    "short": "U:[R U' R',S']",
-    "long": "U R U' R' S' R U R' S U'"
+  "AO": {
+    "short": "[U' : [R E R', U2]]",
+    "long": "U' R E R' U2 R E' R' U2 U"
   },
-  "QE": {
-    "short": "U':[R' F R,S]",
-    "long": "U' R' F R S R' F' R S' U"
+  "AP": {
+    "short": "[U : [L E' L', U2]]",
+    "long": "U L E' L' U2 L E L' U2 U'"
   },
-  "QB": {
-    "short": "R':[U' R U,M]",
-    "long": "R' U' R U M U' R' U r"
+  "AR": {
+    "short": "[L' U : [S', L2]]",
+    "long": "L' U S' L2 S L2 U' L"
   },
-  "QM": {
-    "short": "R:[M',U R' U']",
-    "long": "r U R' U' M U R U' R'"
+  "AS": {
+    "short": "[U M' U : [M', U2]]",
+    "long": "U M' U M' U2 M U2 U' M U'"
   },
-  "QU": {
-    "short": "U:[S,R' F' R]",
-    "long": "U S R' F' R S' R' F R U'"
+  "AT": {
+    "short": "[R U' : [S, R2]]",
+    "long": "R U' S R2 S' R2 U R'"
   },
-  "QK": {
-    "short": "U':[R' F' R,S]",
-    "long": "U' R' F' R S R' F R S' U"
+  "AU": {
+    "short": "[U2, M']",
+    "long": "U2 M' U2 M"
   },
-  "QX": {
-    "short": "U D:[S,R' F' R]",
-    "long": "U D S R' F' R S' R' F R D' U'"
+  "AV": {
+    "short": "[U' : [S, R2]]",
+    "long": "U' S R2 S' R2 U"
   },
-  "QG": {
-    "short": "U' D:[R' F' R,S]",
-    "long": "U' D R' F' R S R' F R S' D' U"
+  "AW": {
+    "short": "[M, U2]",
+    "long": "M U2 M' U2"
   },
-  "QW": {
-    "short": "U:[S,R B R']",
-    "long": "U S R B R' S' R B' R' U'"
-  },
-  "QS": {
-    "short": "U':[R B R',S]",
-    "long": "U' R B R' S R B' R' S' U"
-  },
-  "QV": {
-    "short": "U D':[S,R' F' R]",
-    "long": "U D' S R' F' R S' R' F R D U'"
-  },
-  "QO": {
-    "short": "U' D':[R' F' R,S]",
-    "long": "U' D' R' F' R S R' F R S' D U"
-  },
-  "QJ": {
-    "short": "[U' R U,M]",
-    "long": "U' R U M U' R' U M'"
-  },
-  "QP": {
-    "short": "U:[R',E' R S]",
-    "long": "U R' E' R S R S' R' u'"
-  },
-  "QL": {
-    "short": "U':[R' F2 R,S]",
-    "long": "U' R' F2 R S R' F2 R S' U"
-  },
-  "QF": {
-    "short": "u':[E' R S,R']",
-    "long": "U' R S R' S' R' E R u"
-  },
-  "QR": {
-    "short": "u:[R,E R' S]",
-    "long": "u R E R' S R' S' R U'"
-  },
-  "QH": {
-    "short": "U:[S,R B2 R']",
-    "long": "U S R B2 R' S' R B2 R' U'"
-  },
-  "QT": {
-    "short": "U':[E R' S,R]",
-    "long": "u' R' S R S' R E' R' U"
-  },
-  "QN": {
-    "short": "[M',U R' U']",
-    "long": "M' U R' U' M U R U'"
-  },
-  "BD": {
-    "short": "R' E R U':[U',R' E' R]",
-    "long": "R' E R U2 R' E' R U R' E R U R' E' R"
-  },
-  "BE": {
-    "short": "S:[R' E' R,U']",
-    "long": "S R' E' R U' R' E R U S'"
+  "AX": {
+    "short": "[U : [S', L2]]",
+    "long": "U S' L2 S L2 U'"
   },
   "BA": {
-    "short": "R' E R U:[R' E' R,U2]",
-    "long": "R' E R U R' E' R U2 R' E R U R' E' R"
+    "short": "[R2 U' : [R2, S]]",
+    "long": "R2 U' R2 S R2 S' U R2"
   },
-  "BQ": {
-    "short": "R':[M,U' R U]",
-    "long": "r' U' R U M' U' R' U R"
+  "BD": {
+    "short": "[M2 U : [M, U2]]",
+    "long": "M2 U M U2 M' U2 U' M2"
   },
-  "BU": {
-    "short": "S R' F:[R2,E]",
-    "long": "S R' F R2 E R2 E' F' R S'"
-  },
-  "BK": {
-    "short": "R:[M',U' R' U]",
-    "long": "r U' R' U M U' R U R'"
-  },
-  "BX": {
-    "short": "S' R' F R:[S,R2]",
-    "long": "S' R' F R S R2 S' R F' R S"
-  },
-  "BG": {
-    "short": "U:[R S R',U]",
-    "long": "U R S R' U R S' R' U2"
-  },
-  "BW": {
-    "short": "R' B:[R U' R',E']",
-    "long": "R' B R U' R' E' R U R' E B' R"
-  },
-  "BS": {
-    "short": "[U,M]+M U':[U',M']",
-    "long": "U M U M' U M U M'"
-  },
-  "BV": {
-    "short": "[U',R' E R2 E' R']",
-    "long": "U' R' E R2 E' R' U R E R2 E' R"
-  },
-  "BO": {
-    "short": "[U',R' E' R]",
-    "long": "U' R' E' R U R' E R"
-  },
-  "BJ": {
-    "short": "E':[U',R' E R]",
-    "long": "U' E' R' E R U R' E' R E"
-  },
-  "BP": {
-    "short": "U:[R S' R',U]",
-    "long": "U R S' R' U R S R' U2"
-  },
-  "BL": {
-    "short": "[U',R E R2 E' R]",
-    "long": "U' R E R2 E' R U R' E R2 E' R'"
+  "BE": {
+    "short": "[S', L F' L']",
+    "long": "S' L F' L' S L F L'"
   },
   "BF": {
-    "short": "[U',R' E R]",
+    "short": "[U', R' E R]",
     "long": "U' R' E R U R' E' R"
   },
-  "BR": {
-    "short": "[U',R' E' R2 E R']",
-    "long": "U' R' E' R2 E R' U R E' R2 E R"
+  "BG": {
+    "short": "[U : [L' E' L, U]]",
+    "long": "U L' E' L U L' E L U' U'"
   },
   "BH": {
-    "short": "[U',R E' R']",
+    "short": "[U', R E' R']",
     "long": "U' R E' R' U R E R'"
   },
-  "BT": {
-    "short": "E:[U',R E' R']",
-    "long": "u' R E' R' U R E R' E'"
+  "BJ": {
+    "short": "[E' : [U', R' E R]]",
+    "long": "E' U' R' E R U R' E' R E"
+  },
+  "BK": {
+    "short": "[M', R U' R' U]",
+    "long": "M' R U' R' U M U' R U R'"
+  },
+  "BL": {
+    "short": "[U', R E2 R']",
+    "long": "U' R E2 R' U R E2 R'"
   },
   "BN": {
-    "short": "U:[R' S' R,U]",
-    "long": "U R' S' R U R' S R U2"
-  },
-  "MD": {
-    "short": "[R' F R,S]",
-    "long": "R' F R S R' F' R S'"
-  },
-  "ME": {
-    "short": "R F R':[S,R2]",
-    "long": "R F R' S R2 S' R' F' R'"
-  },
-  "MA": {
-    "short": "S U':[R2,S]",
-    "long": "S U' R2 S R2 S' U S'"
-  },
-  "MQ": {
-    "short": "R:[U R' U',M']",
-    "long": "R U R' U' M' U R U' r'"
-  },
-  "MU": {
-    "short": "R F:[R2,E]",
-    "long": "R F R2 E R2 E' F' R'"
-  },
-  "MK": {
-    "short": "R' F':[R U' R',E]",
-    "long": "R' F' R U' R' E R U R' E' F R"
-  },
-  "MX": {
-    "short": "R':[F,R' S' R]",
-    "long": "R' F R' S' R F' R' S R2"
-  },
-  "MG": {
-    "short": "R F R:[S',R2]",
-    "long": "R F R S' R2 S R F' R'"
-  },
-  "MW": {
-    "short": "R U:[R' S R,B]",
-    "long": "R U R' S R B R' S' R B' U' R'"
-  },
-  "MS": {
-    "short": "U' R' B':[E',R2]",
-    "long": "U' R' B' E' R2 E R2 B R U"
-  },
-  "MV": {
-    "short": "[R' F R,S']",
-    "long": "R' F R S' R' F' R S"
-  },
-  "MO": {
-    "short": "U':[S',R B' R']",
-    "long": "U' S' R B' R' S R B R' U"
-  },
-  "MJ": {
-    "short": "R' U' E' R':[E,R2]",
-    "long": "R' U' E' R' E R2 E' R' E U R"
-  },
-  "MP": {
-    "short": "S':[U,R S' R']",
-    "long": "S' U R S' R' U' R S R' S"
-  },
-  "ML": {
-    "short": "S U' R:[E,R2]",
-    "long": "S U' R E R2 E' R U S'"
-  },
-  "MF": {
-    "short": "S R' F:[F,R S' R']",
-    "long": "S R' F2 R S' R' F' R S R' F' R S'"
-  },
-  "MR": {
-    "short": "S U' R':[E',R2]",
-    "long": "S U' R' E' R2 E R' U S'"
-  },
-  "MH": {
-    "short": "R F:[E',R2]",
-    "long": "R F E' R2 E R2 F' R'"
-  },
-  "MT": {
-    "short": "R u' R:[E',R2]",
-    "long": "R u' R E' R2 E R u R'"
-  },
-  "MN": {
-    "short": "S':[U,R' S' R]",
-    "long": "S' U R' S' R U' R' S R S"
-  },
-  "UD": {
-    "short": "R' F:[R S R',F2]",
-    "long": "R' F R S R' F2 R S' R' F R"
-  },
-  "UE": {
-    "short": "U D R B' R':[S,R2]",
-    "long": "U D R B' R' S R2 S' R' B R' D' U'"
-  },
-  "UA": {
-    "short": "[M',U2]",
-    "long": "M' U2 M U2"
-  },
-  "UQ": {
-    "short": "U:[R' F' R,S]",
-    "long": "U R' F' R S R' F R S' U'"
-  },
-  "UB": {
-    "short": "S R' F:[E,R2]",
-    "long": "S R' F E R2 E' R2 F' R S'"
-  },
-  "UM": {
-    "short": "R F:[E,R2]",
-    "long": "R F E R2 E' R2 F' R'"
-  },
-  "UX": {
-    "short": "S' R' F:[E,R2]",
-    "long": "S' R' F E R2 E' R2 F' R S"
-  },
-  "UG": {
-    "short": "U D R' F' R:[S,R2]",
-    "long": "U D R' F' R S R2 S' R F R D' U'"
-  },
-  "UW": {
-    "short": "[u2 y2,M]",
-    "long": "u2 M' u2 M'"
-  },
-  "US": {
-    "short": "D':[S',R F R']",
-    "long": "D' S' R F R' S R F' R' D"
-  },
-  "UV": {
-    "short": "R' F:[R S' R',F2]",
-    "long": "R' F R S' R' F2 R S R' F R"
-  },
-  "UO": {
-    "short": "R' F:[E,R2]",
-    "long": "R' F E R2 E' R2 F' R"
-  },
-  "UJ": {
-    "short": "U' D:[D' R' D R,U R U' R']",
-    "long": "U' R' D R U R U' R2 D' R D R U R' D'"
-  },
-  "UP": {
-    "short": "R2 F:[E,R2]",
-    "long": "R2 F E R2 E' R2 F' R2"
-  },
-  "UL": {
-    "short": "U' D R:[E,R2]",
-    "long": "U' D R E R2 E' R D' U"
-  },
-  "UF": {
-    "short": "U R' F':[R S R',F']",
-    "long": "U R' F' R S R' F' R S' R' F2 R U'"
-  },
-  "UR": {
-    "short": "U' D R':[E',R2]",
-    "long": "U' D R' E' R2 E R' D' U"
-  },
-  "UH": {
-    "short": "U' S R' F':[R2,E']",
-    "long": "U' S R' F' R2 E' R2 E F R S' U"
-  },
-  "UT": {
-    "short": "[R D R' D',R' U' R U]",
-    "long": "R D R' D' R' U' R U D R D' R' U' R' U R"
-  },
-  "UN": {
-    "short": "F:[E,R2]",
-    "long": "F E R2 E' R2 F'"
-  },
-  "KD": {
-    "short": "U' R:[M',U' R' U]",
-    "long": "U' r U' R' U M U' R U R' U"
-  },
-  "KE": {
-    "short": "U' R F:[R2,E]",
-    "long": "U' R F R2 E R2 E' F' R' U"
-  },
-  "KA": {
-    "short": "U' R F' R:[S,R2]",
-    "long": "U' R F' R S R2 S' R F R' U"
-  },
-  "KQ": {
-    "short": "U':[S,R' F' R]",
-    "long": "U' S R' F' R S' R' F R U"
-  },
-  "KB": {
-    "short": "R:[U' R' U,M']",
-    "long": "R U' R' U M' U' R U r'"
-  },
-  "KM": {
-    "short": "R' F':[E,R U' R']",
-    "long": "R' F' E R U' R' E' R U R' F R"
-  },
-  "KX": {
-    "short": "U' R F' R':[S',R2]",
-    "long": "U' R F' R' S' R2 S R' F R' U"
-  },
-  "KG": {
-    "short": "U:[R' D' R,S']",
-    "long": "U R' D' R S' R' D R S U'"
-  },
-  "KW": {
-    "short": "D:[R F R',S']",
-    "long": "D R F R' S' R F' R' S D'"
-  },
-  "KS": {
-    "short": "D' R' F R':[S',R2]",
-    "long": "D' R' F R' S' R2 S R' F' R D"
-  },
-  "KV": {
-    "short": "U R' F' R':[S,R2]",
-    "long": "U R' F' R' S R2 S' R' F R U'"
-  },
-  "KO": {
-    "short": "U':[S',R' F' R]",
-    "long": "U' S' R' F' R S R' F R U"
-  },
-  "KJ": {
-    "short": "[U' R U,M']",
-    "long": "U' R U M' U' R' U M"
-  },
-  "KP": {
-    "short": "R' U':[S',R' F' R]",
-    "long": "R' U' S' R' F' R S R' F R U R"
-  },
-  "KL": {
-    "short": "R' F:[R U' R',E]",
-    "long": "R' F R U' R' E R U R' E' F' R"
-  },
-  "KF": {
-    "short": "U' R' E:[F',R S' R']",
-    "long": "U' R' E F' R S' R' F R S R' E' R U"
-  },
-  "KR": {
-    "short": "U' R F':[R2,E']",
-    "long": "U' R F' R2 E' R2 E F R' U"
-  },
-  "KH": {
-    "short": "U' R E' R':[R' F' R,S']",
-    "long": "U' R E' R2 F' R S' R' F R S R E R' U"
-  },
-  "KT": {
-    "short": "[U' R' U,M']",
-    "long": "U' R' U M' U' R U M"
-  },
-  "KN": {
-    "short": "R U':[S',R' F' R]",
-    "long": "R U' S' R' F' R S R' F R U R'"
-  },
-  "XD": {
-    "short": "[R' S' R2 S' R',U]",
-    "long": "R' S' R2 S' R' U R S R2 S R U'"
-  },
-  "XE": {
-    "short": "U' R F R:[S',R2]",
-    "long": "U' R F R S' R2 S R F' R' U"
-  },
-  "XA": {
-    "short": "U':[S',U2 R2]",
-    "long": "U' S' U2 R2 S R2 U'"
-  },
-  "XQ": {
-    "short": "U D:[R' F' R,S]",
-    "long": "U D R' F' R S R' F R S' D' U'"
-  },
-  "XB": {
-    "short": "S' R' F R':[S,R2]",
-    "long": "S' R' F R' S R2 S' R' F' R S"
-  },
-  "XM": {
-    "short": "R':[R' S' R,F]",
-    "long": "R2 S' R F R' S R F' R"
-  },
-  "XU": {
-    "short": "S' R' F:[R2,E]",
-    "long": "S' R' F R2 E R2 E' F' R S"
-  },
-  "XK": {
-    "short": "U' R F' R:[S',R2]",
-    "long": "U' R F' R S' R2 S R F R' U"
-  },
-  "XW": {
-    "short": "R F:[R' S R,D]",
-    "long": "R F R' S R D R' S' R D' F' R'"
-  },
-  "XS": {
-    "short": "U' R' B R':[S',R2]",
-    "long": "U' R' B R' S' R2 S R' B' R U"
-  },
-  "XV": {
-    "short": "U':[R2,S']",
-    "long": "U' R2 S' R2 S U"
-  },
-  "XO": {
-    "short": "[S',R F R']",
-    "long": "S' R F R' S R F' R'"
-  },
-  "XJ": {
-    "short": "U R S:[S,R2]",
-    "long": "U R S2 R2 S' R2 S' R' U'"
-  },
-  "XP": {
-    "short": "[R' S' R,F]",
-    "long": "R' S' R F R' S R F'"
-  },
-  "XL": {
-    "short": "U' R2 S':[R2,S R E]",
-    "long": "U' R2 S' R2 S R E R2 E' R U"
-  },
-  "XF": {
-    "short": "R' F:[F,R' S' R]",
-    "long": "R' F2 R' S' R F' R' S R F' R"
-  },
-  "XR": {
-    "short": "U' R2 S':[R2,S R' E']",
-    "long": "U' R2 S' R2 S R' E' R2 E R' U"
-  },
-  "XH": {
-    "short": "S' R' F:[E',R2]",
-    "long": "S' R' F E' R2 E R2 F' R S"
-  },
-  "XT": {
-    "short": "U R S':[R2,S']",
-    "long": "U R S' R2 S' R2 S2 R' U'"
-  },
-  "XN": {
-    "short": "R:[S',R F R']",
-    "long": "R S' R F R' S R F' R2"
-  },
-  "GD": {
-    "short": "[R S R',U]",
-    "long": "R S R' U R S' R' U'"
-  },
-  "GE": {
-    "short": "U' R':[F,R' S' R]",
-    "long": "U' R' F R' S' R F' R' S R2 U"
+    "short": "[U : [L' E L, U]]",
+    "long": "U L' E L U L' E' L U' U'"
+  },
+  "BO": {
+    "short": "[U', R E R']",
+    "long": "U' R E R' U R E' R'"
+  },
+  "BP": {
+    "short": "[U : [L E' L', U]]",
+    "long": "U L E' L' U L E L' U' U'"
+  },
+  "BQ": {
+    "short": "[M, R' U' R U]",
+    "long": "M R' U' R U M' U' R' U R"
+  },
+  "BR": {
+    "short": "[U', R' E2 R]",
+    "long": "U' R' E2 R U R' E2 R"
+  },
+  "BS": {
+    "short": "(U M U M')2",
+    "long": "U M U M' U M U M'"
+  },
+  "BT": {
+    "short": "[E : [U', R E' R']]",
+    "long": "E U' R E' R' U R E R' E'"
+  },
+  "BU": {
+    "short": "[M U2 M, U]",
+    "long": "M U2 M U M' U2 M' U'"
+  },
+  "BV": {
+    "short": "[R' U R' : [S, R2]]",
+    "long": "R' U R' S R2 S' R2 R U' R"
+  },
+  "BW": {
+    "short": "[M2, R U' R' U]",
+    "long": "M2 R U' R' U M2 U' R U R'"
+  },
+  "BX": {
+    "short": "U' L' U' L U L U L U' L'",
+    "long": "U' L' U' L U L U L U' L'"
+  },
+  "DA": {
+    "short": "[U' M2 U' : [M, U2]]",
+    "long": "U' M2 U' M U2 M' U2 U M2 U"
+  },
+  "DB": {
+    "short": "[M2 U' : [M, U2]]",
+    "long": "M2 U' M U2 M' U2 U M2"
+  },
+  "DF": {
+    "short": "[U' : [R' E R, U']]",
+    "long": "U' R' E R U' R' E' R U U"
+  },
+  "DG": {
+    "short": "[U, L' E' L]",
+    "long": "U L' E' L U' L' E L"
+  },
+  "DH": {
+    "short": "[U' : [R E' R', U']]",
+    "long": "U' R E' R' U' R E R' U U"
+  },
+  "DJ": {
+    "short": "[U, R' S2 R]",
+    "long": "U R' S2 R U' R' S2 R"
+  },
+  "DK": {
+    "short": "[M', L' U L U']",
+    "long": "M' L' U L U' M U L' U' L"
+  },
+  "DL": {
+    "short": "[E : [U, L E' L']]",
+    "long": "E U L E' L' U' L E L' E'"
+  },
+  "DM": {
+    "short": "[S, R' F R]",
+    "long": "S R' F R S' R' F' R"
+  },
+  "DN": {
+    "short": "[U, L' E L]",
+    "long": "U L' E L U' L' E' L"
+  },
+  "DO": {
+    "short": "[U' : [R E R', U']]",
+    "long": "U' R E R' U' R E' R' U U"
+  },
+  "DP": {
+    "short": "[U, L E' L']",
+    "long": "U L E' L' U' L E L'"
+  },
+  "DQ": {
+    "short": "[M, L U L' U']",
+    "long": "M L U L' U' M' U L U' L'"
+  },
+  "DR": {
+    "short": "[E' : [U, L' E L]]",
+    "long": "E' U L' E L U' L' E' L E"
+  },
+  "DS": {
+    "short": "(U' M U' M')2",
+    "long": "U' M U' M' U' M U' M'"
+  },
+  "DT": {
+    "short": "[U, R S2 R']",
+    "long": "U R S2 R' U' R S2 R'"
+  },
+  "DU": {
+    "short": "[R' F' : [R S R', F2]]",
+    "long": "R' F' R S R' F2 R S' R' F2 F R"
+  },
+  "DV": {
+    "short": "U R U R' U' R' U' R' U R",
+    "long": "U R U R' U' R' U' R' U R"
+  },
+  "DW": {
+    "short": "D' U R U R' U' R' U' R' U R D",
+    "long": "D' U R U R' U' R' U' R' U R D"
+  },
+  "DX": {
+    "short": "[L U' L : [S', L2]]",
+    "long": "L U' L S' L2 S L2 L' U L'"
+  },
+  "EA": {
+    "short": "[U' M U : [M', U2]]",
+    "long": "U' M U M' U2 M U2 U' M' U"
+  },
+  "EB": {
+    "short": "[L F' L', S']",
+    "long": "L F' L' S' L F L' S"
+  },
+  "EF": {
+    "short": "[S : [U', R' E R]]",
+    "long": "S U' R' E R U R' E' R S'"
+  },
+  "EG": {
+    "short": "[F L' : [E', L2]]",
+    "long": "F L' E' L2 E L2 L F'"
+  },
+  "EH": {
+    "short": "[S : [U', R E' R']]",
+    "long": "S U' R E' R' U R E R' S'"
+  },
+  "EJ": {
+    "short": "[S' U L' : [E', L2]]",
+    "long": "S' U L' E' L2 E L2 L U' S"
+  },
+  "EK": {
+    "short": "[L F : [L' U L, E']]",
+    "long": "L F L' U L E' L' U' L E F' L'"
+  },
+  "EL": {
+    "short": "[r' F' : [F', r S r']]",
+    "long": "r' F' F' r S r' F r S' r' F r"
+  },
+  "EM": {
+    "short": "[M U : [M', U2]]",
+    "long": "M U M' U2 M U2 U' M'"
+  },
+  "EN": {
+    "short": "[r' U : [M', U2]]",
+    "long": "r' U M' U2 M U2 U' r"
+  },
+  "EO": {
+    "short": "[R' F R : [S, R2]]",
+    "long": "R' F R S R2 S' R2 R' F' R"
+  },
+  "EP": {
+    "short": "[M R U : [M', U2]]",
+    "long": "M R U M' U2 M U2 U' R' M'"
+  },
+  "EQ": {
+    "short": "[L' U' L U, M']",
+    "long": "L' U' L U M' U' L' U L M"
+  },
+  "ER": {
+    "short": "[L' u L' : [E, L2]]",
+    "long": "L' u L' E L2 E' L2 L u' L"
+  },
+  "ES": {
+    "short": "[M' : (U M' U M)2]",
+    "long": "M' U M' U M U M' U M M"
+  },
+  "ET": {
+    "short": "[S' U L : [E, L2]]",
+    "long": "S' U L E L2 E' L2 L' U' S"
+  },
+  "EU": {
+    "short": "[L' F : [E', L2]]",
+    "long": "L' F E' L2 E L2 F' L"
+  },
+  "EV": {
+    "short": "[r : [U', L E' L']]",
+    "long": "r U' L E' L' U L E L' r'"
+  },
+  "EW": {
+    "short": "[D : [L F' L', S]]",
+    "long": "D L F' L' S L F L' S' D'"
+  },
+  "EX": {
+    "short": "[L F' L', S]",
+    "long": "L F' L' S L F L' S'"
+  },
+  "FA": {
+    "short": "[U : [R' E R, U2]]",
+    "long": "U R' E R U2 R' E' R U2 U'"
+  },
+  "FB": {
+    "short": "[R' E R, U']",
+    "long": "R' E R U' R' E' R U"
+  },
+  "FD": {
+    "short": "[U' : [U', R' E R]]",
+    "long": "U' U' R' E R U R' E' R U"
+  },
+  "FE": {
+    "short": "[S' : [R' E R, U']]",
+    "long": "S' R' E R U' R' E' R U S"
+  },
+  "FG": {
+    "short": "[L, D M D']",
+    "long": "L D M D' L' D M' D'"
+  },
+  "FH": {
+    "short": "[r U L : [S', L2]]",
+    "long": "r U L S' L2 S L2 L' U' r'"
+  },
+  "FJ": {
+    "short": "[E, R U' R']",
+    "long": "E R U' R' E' R U R'"
+  },
+  "FK": {
+    "short": "[D' L D, M]",
+    "long": "D' L D M D' L' D M'"
+  },
+  "FM": {
+    "short": "[M L' U : [M', U2]]",
+    "long": "M L' U M' U2 M U2 U' L M'"
+  },
+  "FN": {
+    "short": "[r U R' : [E, R2]]",
+    "long": "r U R' E R2 E' R2 R U' r'"
+  },
+  "FO": {
+    "short": "[S' : [R' E R, U']]",
+    "long": "S' R' E R U' R' E' R U S"
+  },
+  "FP": {
+    "short": "[UE R' : [S, R2]]",
+    "long": "UE R' S R2 S' R2 R UE'"
+  },
+  "FQ": {
+    "short": "[U' L' U, M']",
+    "long": "U' L' U M' U' L U M"
+  },
+  "FR": {
+    "short": "[E', L U L']",
+    "long": "E' L U L' E L U' L'"
+  },
+  "FS": {
+    "short": "[U' M : [U, R' E R]]",
+    "long": "U' M U R' E R U' R' E' R M' U"
+  },
+  "FT": {
+    "short": "[R' : [R' E R, U']]",
+    "long": "R' R' E R U' R' E' R U R"
+  },
+  "FU": {
+    "short": "[U R' F' : [F', R S R']]",
+    "long": "U R' F' F' R S R' F R S' R' F R U'"
+  },
+  "FV": {
+    "short": "[R' F : [R S' R', F]]",
+    "long": "R' F R S' R' F R S R' F' F' R"
+  },
+  "FW": {
+    "short": "[D' R' F : [R S' R', F]]",
+    "long": "D' R' F R S' R' F R S R' F' F' R D"
+  },
+  "FX": {
+    "short": "[UE L : [E', L2]]",
+    "long": "UE L E' L2 E L2 L' UE'"
   },
   "GA": {
-    "short": "U':[R S R',U2]",
-    "long": "U' R S R' U2 R S' R' U'"
-  },
-  "GQ": {
-    "short": "U' D:[S,R' F' R]",
-    "long": "U' D S R' F' R S' R' F R D' U"
+    "short": "[U' : [L' E' L, U2]]",
+    "long": "U' L' E' L U2 L' E L U2 U"
   },
   "GB": {
-    "short": "U:[U,R S R']",
-    "long": "U2 R S R' U' R S' R' U'"
+    "short": "[U : [U, L' E' L]]",
+    "long": "U U L' E' L U' L' E L U'"
   },
-  "GM": {
-    "short": "R F R':[S',R2]",
-    "long": "R F R' S' R2 S R' F' R'"
+  "GD": {
+    "short": "[L' E' L, U]",
+    "long": "L' E' L U L' E L U'"
   },
-  "GU": {
-    "short": "U D R' F' R':[S,R2]",
-    "long": "U D R' F' R' S R2 S' R' F R D' U'"
-  },
-  "GK": {
-    "short": "U:[S',R' D' R]",
-    "long": "U S' R' D' R S R' D R U'"
-  },
-  "GW": {
-    "short": "U D' R B R:[S,R2]",
-    "long": "U D' R B R S R2 S' R B' R' D U'"
-  },
-  "GS": {
-    "short": "U:[S',R' D R]",
-    "long": "U S' R' D R S R' D' R U'"
-  },
-  "GV": {
-    "short": "S:[U,R S R']",
-    "long": "S U R S R' U' R S' R' S'"
-  },
-  "GO": {
-    "short": "R' F R':[S',R2]",
-    "long": "R' F R' S' R2 S R' F' R"
-  },
-  "GJ": {
-    "short": "R' S:[R U R',S]",
-    "long": "R' S R U R' S R U' R' S2 R"
-  },
-  "GP": {
-    "short": "S:[U,R S' R']",
-    "long": "S U R S' R' U' R S R' S'"
-  },
-  "GL": {
-    "short": "S' U' R:[E,R2]",
-    "long": "S' U' R E R2 E' R U S"
+  "GE": {
+    "short": "[F L : [E', L2]]",
+    "long": "F L E' L2 E L2 L' F'"
   },
   "GF": {
-    "short": "u':[E' R' S',R']",
-    "long": "U' R' S' R' S R E R u"
-  },
-  "GR": {
-    "short": "S' U' R':[E',R2]",
-    "long": "S' U' R' E' R2 E R' U S"
+    "short": "[D M D', L]",
+    "long": "D M D' L D M' D' L'"
   },
   "GH": {
-    "short": "S' u' R:[E,R2]",
-    "long": "S' u' R E R2 E' R u S"
+    "short": "[U S' U', L']",
+    "long": "U S' U' L' U S U' L"
   },
-  "GT": {
-    "short": "R S:[R' U R,S]",
-    "long": "R S R' U R S R' U' R S2 R'"
+  "GJ": {
+    "short": "[L' E' : [L U L', E']]",
+    "long": "L' E' L U L' E' L U' L' E E L"
+  },
+  "GK": {
+    "short": "[U : [S', R' D' R]]",
+    "long": "U S' R' D' R S R' D R U'"
+  },
+  "GL": {
+    "short": "[S' U' R : [E, R2]]",
+    "long": "S' U' R E R2 E' R2 R' U S"
+  },
+  "GM": {
+    "short": "[L F' L : [S', L2]]",
+    "long": "L F' L S' L2 S L2 L' F L'"
   },
   "GN": {
-    "short": "S:[U,R' S' R]",
-    "long": "S U R' S' R U' R' S R S'"
-  },
-  "WD": {
-    "short": "R B R':[R' F R,S]",
-    "long": "R B R2 F R S R' F' R S' R B' R'"
-  },
-  "WE": {
-    "short": "U D' R B' R':[S,R2]",
-    "long": "U D' R B' R' S R2 S' R' B R' D U'"
-  },
-  "WA": {
-    "short": "[U2,M]",
-    "long": "U2 M U2 M'"
-  },
-  "WQ": {
-    "short": "U:[R B R',S]",
-    "long": "U R B R' S R B' R' S' U'"
-  },
-  "WB": {
-    "short": "R' B:[E',R U' R']",
-    "long": "R' B E' R U' R' E R U R' B' R"
-  },
-  "WM": {
-    "short": "R U:[B,R' S R]",
-    "long": "R U B R' S R B' R' S' R U' R'"
-  },
-  "WU": {
-    "short": "[M,u2 y2]",
-    "long": "M u2 M u2"
-  },
-  "WK": {
-    "short": "D:[S',R F R']",
-    "long": "D S' R F R' S R F' R' D'"
-  },
-  "WX": {
-    "short": "R F:[D,R' S R]",
-    "long": "R F D R' S R D' R' S' R F' R'"
-  },
-  "WG": {
-    "short": "U D' R B R':[S,R2]",
-    "long": "U D' R B R' S R2 S' R' B' R' D U'"
-  },
-  "WV": {
-    "short": "R B R':[R' F R,S']",
-    "long": "R B R2 F R S' R' F' R S R B' R'"
-  },
-  "WO": {
-    "short": "U':[R' B R,S]",
-    "long": "U' R' B R S R' B' R S' U"
-  },
-  "WJ": {
-    "short": "U':[R' D' R D,U R U' R']",
-    "long": "U' R' D' R D U R U' R' D' R' D R2 U R'"
-  },
-  "WP": {
-    "short": "R' U':[R' B R,S]",
-    "long": "R' U' R' B R S R' B' R S' U R"
-  },
-  "WL": {
-    "short": "U' D' R:[E,R2]",
-    "long": "U' D' R E R2 E' R D U"
-  },
-  "WF": {
-    "short": "U' S R B:[R2,E]",
-    "long": "U' S R B R2 E R2 E' B' R' S' U"
-  },
-  "WR": {
-    "short": "U' D' R':[E',R2]",
-    "long": "U' D' R' E' R2 E R' D U"
-  },
-  "WH": {
-    "short": "U R B:[R' S R,B]",
-    "long": "U R B R' S R B R' S' R B2 R' U'"
-  },
-  "WT": {
-    "short": "R D' R':[R' U' R U,R D R' D']",
-    "long": "R D' R2 U' R U R D R' D' U' R' U R D"
-  },
-  "WN": {
-    "short": "R U':[R' B R,S]",
-    "long": "R U' R' B R S R' B' R S' U R'"
-  },
-  "SD": {
-    "short": "[M,U]+U':[U',M]",
-    "long": "M U M' U M U M' U"
-  },
-  "SE": {
-    "short": "D' R' F R':[S,R2]",
-    "long": "D' R' F R' S R2 S' R' F' R D"
-  },
-  "SA": {
-    "short": "U' R' B R':[S,R2]",
-    "long": "U' R' B R' S R2 S' R' B' R U"
-  },
-  "SQ": {
-    "short": "U':[S,R B R']",
-    "long": "U' S R B R' S' R B' R' U"
-  },
-  "SB": {
-    "short": "[M,U']+U:[U,M]",
-    "long": "M U' M' U' M U' M' U'"
-  },
-  "SM": {
-    "short": "U' R' B':[R2,E']",
-    "long": "U' R' B' R2 E' R2 E B R U"
-  },
-  "SU": {
-    "short": "D':[R F R',S']",
-    "long": "D' R F R' S' R F' R' S D"
-  },
-  "SK": {
-    "short": "D' R' F R:[S',R2]",
-    "long": "D' R' F R S' R2 S R F' R D"
-  },
-  "SX": {
-    "short": "U' R' B R:[S',R2]",
-    "long": "U' R' B R S' R2 S R B' R U"
-  },
-  "SG": {
-    "short": "U:[R' D R,S']",
-    "long": "U R' D R S' R' D' R S U'"
-  },
-  "SV": {
-    "short": "U R B R:[S,R2]",
-    "long": "U R B R S R2 S' R B' R' U'"
-  },
-  "SO": {
-    "short": "U':[S',R B R']",
-    "long": "U' S' R B R' S R B' R' U"
-  },
-  "SJ": {
-    "short": "U':[R,U' M U]",
-    "long": "U' R U' M U R' U' M' U2"
-  },
-  "SP": {
-    "short": "R' U':[S',R B R']",
-    "long": "R' U' S' R B R' S R B' R' U R"
-  },
-  "SL": {
-    "short": "U' R' B:[R2,E]",
-    "long": "U' R' B R2 E R2 E' B' R U"
-  },
-  "SF": {
-    "short": "U' R' E R:[R B R',S']",
-    "long": "U' R' E R2 B R' S' R B' R' S R' E' R U"
-  },
-  "SR": {
-    "short": "U' D':[R B2 R',S']",
-    "long": "U' D' R B2 R' S' R B2 R' S D U"
-  },
-  "SH": {
-    "short": "U' R E':[B,R' S' R]",
-    "long": "U' R E' B R' S' R B' R' S R E R' U"
-  },
-  "ST": {
-    "short": "U':[R',U' M U]",
-    "long": "U' R' U' M U R U' M' U2"
-  },
-  "SN": {
-    "short": "R U':[S',R B R']",
-    "long": "R U' S' R B R' S R B' R' U R'"
-  },
-  "VD": {
-    "short": "S R F R':[S',R2]",
-    "long": "S R F R' S' R2 S R' F' R' S'"
-  },
-  "VE": {
-    "short": "U R B' R':[S,R2]",
-    "long": "U R B' R' S R2 S' R' B R' U'"
-  },
-  "VA": {
-    "short": "U:[S,R2]",
-    "long": "U S R2 S' R2 U'"
-  },
-  "VQ": {
-    "short": "U D':[R' F' R,S]",
-    "long": "U D' R' F' R S R' F R S' D U'"
-  },
-  "VB": {
-    "short": "[R' E R2 E' R',U']",
-    "long": "R' E R2 E' R' U' R E R2 E' R U"
-  },
-  "VM": {
-    "short": "[S',R' F R]",
-    "long": "S' R' F R S R' F' R"
-  },
-  "VU": {
-    "short": "R' F':[R S' R',F2]",
-    "long": "R' F' R S' R' F2 R S R' F' R"
-  },
-  "VK": {
-    "short": "U R' F' R:[S,R2]",
-    "long": "U R' F' R S R2 S' R F R U'"
-  },
-  "VX": {
-    "short": "U':[S',R2]",
-    "long": "U' S' R2 S R2 U"
-  },
-  "VG": {
-    "short": "S:[R S R',U]",
-    "long": "S R S R' U R S' R' U' S'"
-  },
-  "VW": {
-    "short": "R B R':[S',R' F R]",
-    "long": "R B R' S' R' F R S R' F' R2 B' R'"
-  },
-  "VS": {
-    "short": "U R B R':[S,R2]",
-    "long": "U R B R' S R2 S' R' B' R' U'"
-  },
-  "VJ": {
-    "short": "U':[D' R' D R,U R U' R']",
-    "long": "U' D' R' D R U R U' R2 D' R D R U R'"
-  },
-  "VP": {
-    "short": "U' E' R:[E,R2]",
-    "long": "U' E' R E R2 E' R E U"
-  },
-  "VL": {
-    "short": "U' R:[E,R2]",
-    "long": "U' R E R2 E' R U"
-  },
-  "VF": {
-    "short": "R' F:[F,R S' R']",
-    "long": "R' F2 R S' R' F' R S R' F' R"
-  },
-  "VR": {
-    "short": "U' R':[E',R2]",
-    "long": "U' R' E' R2 E R' U"
-  },
-  "VH": {
-    "short": "u' R:[E,R2]",
-    "long": "u' R E R2 E' R u"
-  },
-  "VT": {
-    "short": "[D R D' R',R' U' R U]",
-    "long": "D R D' R2 U' R U R D R' D' U' R' U R"
-  },
-  "VN": {
-    "short": "u' R':[E',R2]",
-    "long": "u' R' E' R2 E R' u"
-  },
-  "OD": {
-    "short": "U':[U',R' E' R]",
-    "long": "U2 R' E' R U R' E R U"
-  },
-  "OE": {
-    "short": "R' F R':[S,R2]",
-    "long": "R' F R' S R2 S' R' F' R"
-  },
-  "OA": {
-    "short": "U:[R' E' R,U2]",
-    "long": "U R' E' R U2 R' E R U"
-  },
-  "OQ": {
-    "short": "U' D':[S,R' F' R]",
-    "long": "U' D' S R' F' R S' R' F R D U"
-  },
-  "OB": {
-    "short": "[R' E' R,U']",
-    "long": "R' E' R U' R' E R U"
-  },
-  "OM": {
-    "short": "U':[R B' R',S']",
-    "long": "U' R B' R' S' R B R' S U"
-  },
-  "OU": {
-    "short": "R' F:[R2,E]",
-    "long": "R' F R2 E R2 E' F' R"
-  },
-  "OK": {
-    "short": "U':[R' F' R,S']",
-    "long": "U' R' F' R S' R' F R S U"
-  },
-  "OX": {
-    "short": "[R F R',S']",
-    "long": "R F R' S' R F' R' S"
-  },
-  "OG": {
-    "short": "R' F R:[S',R2]",
-    "long": "R' F R S' R2 S R F' R"
-  },
-  "OW": {
-    "short": "U':[S,R' B R]",
-    "long": "U' S R' B R S' R' B' R U"
-  },
-  "OS": {
-    "short": "U':[R B R',S']",
-    "long": "U' R B R' S' R B' R' S U"
-  },
-  "OJ": {
-    "short": "R' u' R:[E',R2]",
-    "long": "R' u' R E' R2 E R u R"
-  },
-  "OP": {
-    "short": "R S':[R S' R',U]",
-    "long": "R S' R S' R' U R S R' U' S R'"
-  },
-  "OL": {
-    "short": "R E:[R' U' R,E]",
-    "long": "R E R' U' R E R' U R E2 R'"
-  },
-  "OF": {
-    "short": "S':[U',R' E R]",
-    "long": "S' U' R' E R U R' E' R S"
-  },
-  "OR": {
-    "short": "R' E':[R U' R',E']",
-    "long": "R' E' R U' R' E' R U R' E2 R"
-  },
-  "OH": {
-    "short": "R' F:[E',R2]",
-    "long": "R' F E' R2 E R2 F' R"
-  },
-  "OT": {
-    "short": "R U' E' R':[E,R2]",
-    "long": "R U' E' R' E R2 E' R' E U R'"
-  },
-  "ON": {
-    "short": "R' S':[R' S' R,U]",
-    "long": "R' S' R' S' R U R' S R U' S R"
+    "short": "[L F' : [E, L2]]",
+    "long": "L F' E L2 E' L2 F L'"
+  },
+  "GO": {
+    "short": "[R' F R' : [S', R2]]",
+    "long": "R' F R' S' R2 S R2 R F' R"
+  },
+  "GP": {
+    "short": "[S : [U, L E' L']]",
+    "long": "S U L E' L' U' L E L' S'"
+  },
+  "GQ": {
+    "short": "[U'D : [S, R' F' R]]",
+    "long": "U'D S R' F' R S' R' F R U'D'"
+  },
+  "GR": {
+    "short": "[S' U' R' : [E', R2]]",
+    "long": "S' U' R' E' R2 E R2 R U S"
+  },
+  "GS": {
+    "short": "(M D M' D)2",
+    "long": "M D M' D M D M' D"
+  },
+  "GT": {
+    "short": "[D : [U' R' U, M']]",
+    "long": "D U' R' U M' U' R U M D'"
+  },
+  "GU": {
+    "short": "[L F' : [L2, E']]",
+    "long": "L F' L2 E' L2 E F L'"
+  },
+  "GV": {
+    "short": "[L' F' L, S]",
+    "long": "L' F' L S L' F L S'"
+  },
+  "GW": {
+    "short": "[U : [S', L B' L']]",
+    "long": "U S' L B' L' S L B L' U'"
+  },
+  "HA": {
+    "short": "[U : [R E' R', U2]]",
+    "long": "U R E' R' U2 R E R' U2 U'"
+  },
+  "HB": {
+    "short": "[R E' R', U']",
+    "long": "R E' R' U' R E R' U"
+  },
+  "HD": {
+    "short": "[U' : [U', R E' R']]",
+    "long": "U' U' R E' R' U R E R' U"
+  },
+  "HE": {
+    "short": "[S : [R E' R', U']]",
+    "long": "S R E' R' U' R E R' U S'"
+  },
+  "HF": {
+    "short": "[r U L' : [S', L2]]",
+    "long": "r U L' S' L2 S L2 L U' r'"
+  },
+  "HG": {
+    "short": "[L', U S' U']",
+    "long": "L' U S' U' L U S U'"
+  },
+  "HJ": {
+    "short": "[R : [R E' R', U']]",
+    "long": "R R E' R' U' R E R' U R'"
+  },
+  "HK": {
+    "short": "[D' L' D, M]",
+    "long": "D' L' D M D' L D M'"
+  },
+  "HL": {
+    "short": "[E, L' U L]",
+    "long": "E L' U L E' L' U' L"
+  },
+  "HM": {
+    "short": "[l U : [M', U2]]",
+    "long": "l U M' U2 M U2 U' l'"
+  },
+  "HN": {
+    "short": "[u R : [S, R2]]",
+    "long": "u R S R2 S' R2 R' u'"
+  },
+  "HO": {
+    "short": "[R' F : [R2, E']]",
+    "long": "R' F R2 E' R2 E F' R"
+  },
+  "HP": {
+    "short": "[E R U' R' : [E, R2]]",
+    "long": "E R U' R' E R2 E' R2 R U R' E'"
+  },
+  "HQ": {
+    "short": "[U' L U, M']",
+    "long": "U' L U M' U' L' U M"
+  },
+  "HS": {
+    "short": "[L' : (M D M' D)2]",
+    "long": "L' M D M' D M D M' D L"
+  },
+  "HT": {
+    "short": "[E', R' U' R]",
+    "long": "E' R' U' R E R' U R"
+  },
+  "HU": {
+    "short": "[F' : [L2, E']]",
+    "long": "F' L2 E' L2 E F"
+  },
+  "HV": {
+    "short": "[u' R' : [E, R2]]",
+    "long": "u' R' E R2 E' R2 R u"
+  },
+  "HW": {
+    "short": "[M : [U' L U, M2]]",
+    "long": "M U' L U M2 U' L' U M2 M'"
+  },
+  "HX": {
+    "short": "[u L' : [E, L2]]",
+    "long": "u L' E L2 E' L2 L u'"
+  },
+  "JA": {
+    "short": "[R' U' : [R2, S]]",
+    "long": "R' U' R2 S R2 S' U R"
+  },
+  "JB": {
+    "short": "[E' : [R' E R, U']]",
+    "long": "E' R' E R U' R' E' R U E"
   },
   "JD": {
-    "short": "[R' S2 R,U]",
+    "short": "[R' S2 R, U]",
     "long": "R' S2 R U R' S2 R U'"
   },
   "JE": {
-    "short": "R S:[R' E' R,U']",
-    "long": "R S R' E' R U' R' E R U S' R'"
-  },
-  "JA": {
-    "short": "R' U:[S,R2]",
-    "long": "R' U S R2 S' R2 U' R"
-  },
-  "JQ": {
-    "short": "[M,U' R U]",
-    "long": "M U' R U M' U' R' U"
-  },
-  "JB": {
-    "short": "E':[R' E R,U']",
-    "long": "E' R' E R U' R' E' R E U"
-  },
-  "JM": {
-    "short": "R' U' E' R:[E,R2]",
-    "long": "R' U' E' R E R2 E' R E U R"
-  },
-  "JU": {
-    "short": "U' D:[U R U' R',D' R' D R]",
-    "long": "D R U' R' D' R' D R2 U R' U' R' D' R U"
-  },
-  "JK": {
-    "short": "[M',U' R U]",
-    "long": "M' U' R U M U' R' U"
-  },
-  "JX": {
-    "short": "U R S:[R2,S]",
-    "long": "U R S R2 S R2 S2 R' U'"
-  },
-  "JG": {
-    "short": "R' S:[S,R U R']",
-    "long": "R' S2 R U R' S' R U' R' S' R"
-  },
-  "JW": {
-    "short": "R U' R':[R' D' R D,R U R' U']",
-    "long": "R U' R2 D' R D R U R' U' D' R' D R U"
-  },
-  "JS": {
-    "short": "U':[U' M U,R]",
-    "long": "U2 M U R U' M' U R' U"
-  },
-  "JV": {
-    "short": "U':[U R U' R',D' R' D R]",
-    "long": "R U' R' D' R' D R2 U R' U' R' D' R D U"
-  },
-  "JO": {
-    "short": "R' u' R':[E',R2]",
-    "long": "R' u' R' E' R2 E R' u R"
-  },
-  "JL": {
-    "short": "R' U' R:[E,R2]",
-    "long": "R' U' R E R2 E' R U R"
+    "short": "[S' U L : [E', L2]]",
+    "long": "S' U L E' L2 E L2 L' U' S"
   },
   "JF": {
-    "short": "[R U' R',E]",
+    "short": "[R U' R', E]",
     "long": "R U' R' E R U R' E'"
   },
-  "JR": {
-    "short": "R' U' R':[E',R2]",
-    "long": "R' U' R' E' R2 E R' U R"
+  "JG": {
+    "short": "[L' E' : [E', L U L']]",
+    "long": "L' E' E' L U L' E L U' L' E L"
   },
   "JH": {
-    "short": "R:[U',R E' R']",
-    "long": "R U' R E' R' U R E R2"
+    "short": "[R : [U', R E' R']]",
+    "long": "R U' R E' R' U R E R' R'"
   },
-  "JT": {
-    "short": "U R':[S,R2]",
-    "long": "U R' S R2 S' R' U'"
+  "JK": {
+    "short": "[M', U' R U]",
+    "long": "M' U' R U M U' R' U"
+  },
+  "JL": {
+    "short": "[R' U' R : [E, R2]]",
+    "long": "R' U' R E R2 E' R2 R' U R"
+  },
+  "JM": {
+    "short": "[l F : [l' S' l, F]]",
+    "long": "l F l' S' l F l' S l F' F' l'"
   },
   "JN": {
-    "short": "[R U' R',E']",
+    "short": "[R U' R', E']",
     "long": "R U' R' E' R U R' E"
   },
-  "PD": {
-    "short": "[R S' R',U]",
-    "long": "R S' R' U R S R' U'"
+  "JO": {
+    "short": "[R' f R' : [S', R2]]",
+    "long": "R' f R' S' R2 S R2 R f' R"
   },
-  "PE": {
-    "short": "R2 F R':[S,R2]",
-    "long": "R2 F R' S R2 S' R' F' R2"
+  "JQ": {
+    "short": "[M, U' R U]",
+    "long": "M U' R U M' U' R' U"
   },
-  "PA": {
-    "short": "U':[R S' R',U2]",
-    "long": "U' R S' R' U2 R S R' U'"
+  "JR": {
+    "short": "[R' U' R' : [E', R2]]",
+    "long": "R' U' R' E' R2 E R2 R U R"
   },
-  "PQ": {
-    "short": "U:[E' R S,R']",
-    "long": "u R S R' S' R' E R U'"
+  "JS": {
+    "short": "[U' : [U' M U, R]]",
+    "long": "U' U' M U R U' M' U R' U"
   },
-  "PB": {
-    "short": "U:[U,R S' R']",
-    "long": "U2 R S' R' U' R S R' U'"
+  "JT": {
+    "short": "[U R' : [S, R2]]",
+    "long": "U R' S R2 S' R2 R U'"
   },
-  "PM": {
-    "short": "S':[R S' R',U]",
-    "long": "S' R S' R' U R S R' U' S"
+  "JU": {
+    "short": "[D'U L : [E', L2]]",
+    "long": "D'U L E' L2 E L2 L' D'U'"
   },
-  "PU": {
-    "short": "R2 F:[R2,E]",
-    "long": "R2 F R2 E R2 E' F' R2"
+  "JV": {
+    "short": "U R' U' R' U R U R U R' U2",
+    "long": "U R' U' R' U R U R U R' U2"
   },
-  "PK": {
-    "short": "R' U':[R' F' R,S']",
-    "long": "R' U' R' F' R S' R' F R S U R"
+  "JW": {
+    "short": "[UD L : [E', L2]]",
+    "long": "UD L E' L2 E L2 L' UD'"
   },
-  "PX": {
-    "short": "[F,R' S' R]",
-    "long": "F R' S' R F' R' S R"
+  "JX": {
+    "short": "[U L : [E', L2]]",
+    "long": "U L E' L2 E L2 L' U'"
   },
-  "PG": {
-    "short": "S:[R S' R',U]",
-    "long": "S R S' R' U R S R' U' S'"
+  "KA": {
+    "short": "[U M U : [M, U2]]",
+    "long": "U M U M U2 M' U2 U' M' U'"
   },
-  "PW": {
-    "short": "R' U':[S,R' B R]",
-    "long": "R' U' S R' B R S' R' B' R U R"
+  "KB": {
+    "short": "[R U' R' U, M']",
+    "long": "R U' R' U M' U' R U R' M"
   },
-  "PS": {
-    "short": "R' U':[R B R',S']",
-    "long": "R' U' R B R' S' R B' R' S U R"
+  "KD": {
+    "short": "[L' U L U', M']",
+    "long": "L' U L U' M' U L' U' L M"
   },
-  "PV": {
-    "short": "U' E' R':[E,R2]",
-    "long": "U' E' R' E R2 E' R' E U"
+  "KE": {
+    "short": "[l' : [U' L U, M']]",
+    "long": "l' U' L U M' U' L' U M l"
   },
-  "PO": {
-    "short": "R S':[U,R S' R']",
-    "long": "R S' U R S' R' U' R S R' S R'"
+  "KF": {
+    "short": "[M, D' L D]",
+    "long": "M D' L D M' D' L' D"
   },
-  "PL": {
-    "short": "R S U' R:[E,R2]",
-    "long": "R S U' R E R2 E' R U S' R'"
+  "KG": {
+    "short": "[U : [R' D' R, S']]",
+    "long": "U R' D' R S' R' D R S U'"
   },
-  "PF": {
-    "short": "F R2 F:[R2,E]",
-    "long": "F R2 F R2 E R2 E' F' R2 F'"
+  "KH": {
+    "short": "[M' : [M', U' L U]]",
+    "long": "M' M' U' L U M U' L' U M"
   },
-  "PR": {
-    "short": "R S U' R':[E',R2]",
-    "long": "R S U' R' E' R2 E R' U S' R'"
+  "KJ": {
+    "short": "[U' R U, M']",
+    "long": "U' R U M' U' R' U M"
   },
-  "PH": {
-    "short": "E' R U' R':[E,R2]",
-    "long": "E' R U' R' E R2 E' R' U R' E"
+  "KL": {
+    "short": "[U L' U', M']",
+    "long": "U L' U' M' U L U' M"
   },
-  "PT": {
-    "short": "[E,R' U' R]",
-    "long": "E R' U' R E' R' U R"
+  "KM": {
+    "short": "[r : [U R' U', M']]",
+    "long": "r U R' U' M' U R U' M r'"
   },
-  "PN": {
-    "short": "R S' R':[U,R S R2 S' R]",
-    "long": "R S' R' U R S R2 S' R U' R' S R"
+  "KN": {
+    "short": "[M, D R D']",
+    "long": "M D R D' M' D R' D'"
   },
-  "LD": {
-    "short": "E:[R S' R',U]",
-    "long": "E R S' R' U R S R' E' U'"
+  "KO": {
+    "short": "[U' : [S', R' F' R]]",
+    "long": "U' S' R' F' R S R' F R U"
   },
-  "LE": {
-    "short": "S:[R E R2 E' R,U']",
-    "long": "S R E R2 E' R U' R' E R2 E' R' U S'"
+  "KP": {
+    "short": "[M, D R' D']",
+    "long": "M D R' D' M' D R D'"
+  },
+  "KQ": {
+    "short": "[U' : [S, R' F' R]]",
+    "long": "U' S R' F' R S' R' F R U"
+  },
+  "KR": {
+    "short": "[U L U', M']",
+    "long": "U L U' M' U L' U' M"
+  },
+  "KS": {
+    "short": "U M' U' M U2 M U M' U",
+    "long": "U M' U' M U2 M U M' U"
+  },
+  "KT": {
+    "short": "[U' R' U, M']",
+    "long": "U' R' U M' U' R U M"
+  },
+  "KV": {
+    "short": "[U R' F' R' : [S, R2]]",
+    "long": "U R' F' R' S R2 S' R2 R F R U'"
+  },
+  "KW": {
+    "short": "[D : [R F R', S']]",
+    "long": "D R F R' S' R F' R' S D'"
+  },
+  "KX": {
+    "short": "[U' L F L : [S', L2]]",
+    "long": "U' L F L S' L2 S L2 L' F' L' U"
   },
   "LA": {
-    "short": "U S:[R2,S' R' E]",
-    "long": "U S R2 S' R' E R2 E' R U'"
-  },
-  "LQ": {
-    "short": "U':[S,R' F2 R]",
-    "long": "U' S R' F2 R S' R' F2 R U"
+    "short": "[U : [R E2 R', U2]]",
+    "long": "U R E2 R' U2 R E2 R' U2 U'"
   },
   "LB": {
-    "short": "[R E R2 E' R,U']",
-    "long": "R E R2 E' R U' R' E R2 E' R' U"
+    "short": "[R E2 R', U']",
+    "long": "R E2 R' U' R E2 R' U"
   },
-  "LM": {
-    "short": "S U' R':[E,R2]",
-    "long": "S U' R' E R2 E' R' U S'"
+  "LD": {
+    "short": "[E : [L E' L', U]]",
+    "long": "E L E' L' U L E L' U' E'"
   },
-  "LU": {
-    "short": "U' D R':[E,R2]",
-    "long": "U' D R' E R2 E' R' D' U"
-  },
-  "LK": {
-    "short": "R' F:[E,R U' R']",
-    "long": "R' F E R U' R' E' R U R' F' R"
-  },
-  "LX": {
-    "short": "U' R' E:[R2,E' R' S']",
-    "long": "U' R' E R2 E' R' S' R2 S R2 U"
+  "LE": {
+    "short": "[r' F' : [r S r', F']]",
+    "long": "r' F' r S r' F' r S' r' F F r"
   },
   "LG": {
-    "short": "S' U' R':[E,R2]",
-    "long": "S' U' R' E R2 E' R' U S"
-  },
-  "LW": {
-    "short": "U' D' R':[E,R2]",
-    "long": "U' D' R' E R2 E' R' D U"
-  },
-  "LS": {
-    "short": "U' R' B:[E,R2]",
-    "long": "U' R' B E R2 E' R2 B' R U"
-  },
-  "LV": {
-    "short": "U' R':[E,R2]",
-    "long": "U' R' E R2 E' R' U"
-  },
-  "LO": {
-    "short": "R E:[E,R' U' R]",
-    "long": "R E2 R' U' R E' R' U R E' R'"
-  },
-  "LJ": {
-    "short": "R' U' R':[E,R2]",
-    "long": "R' U' R' E R2 E' R' U R"
-  },
-  "LP": {
-    "short": "R S U' R':[E,R2]",
-    "long": "R S U' R' E R2 E' R' U S' R'"
-  },
-  "LR": {
-    "short": "U' R':[E,R2 E' R2]",
-    "long": "U' R' E R2 E' R2 E' R2 E R' U"
+    "short": "[S' U' R' : [E, R2]]",
+    "long": "S' U' R' E R2 E' R2 R U S"
   },
   "LH": {
-    "short": "R E':[E',R' U' R]",
-    "long": "R E2 R' U' R E R' U R E R'"
+    "short": "[L' U L, E]",
+    "long": "L' U L E L' U' L E'"
   },
-  "LT": {
-    "short": "R U' R':[E,R2]",
-    "long": "R U' R' E R2 E' R' U R'"
+  "LJ": {
+    "short": "[R' U' R' : [E, R2]]",
+    "long": "R' U' R' E R2 E' R2 R U R"
+  },
+  "LK": {
+    "short": "[M', U L' U']",
+    "long": "M' U L' U' M U L U'"
+  },
+  "LM": {
+    "short": "[S U' R' : [E, R2]]",
+    "long": "S U' R' E R2 E' R2 R U S'"
   },
   "LN": {
-    "short": "R' S U' R':[E,R2]",
-    "long": "R' S U' R' E R2 E' R' U S' R"
-  },
-  "FD": {
-    "short": "U':[U',R' E R]",
-    "long": "U2 R' E R U R' E' R U"
-  },
-  "FE": {
-    "short": "S:[R' E R,U']",
-    "long": "S R' E R U' R' E' R U S'"
-  },
-  "FA": {
-    "short": "U:[R' E R,U2]",
-    "long": "U R' E R U2 R' E' R U"
-  },
-  "FQ": {
-    "short": "u':[R',E' R S]",
-    "long": "u' R' E' R S R S' R' U"
-  },
-  "FB": {
-    "short": "[R' E R,U']",
-    "long": "R' E R U' R' E' R U"
-  },
-  "FM": {
-    "short": "S R' F:[R S' R',F]",
-    "long": "S R' F R S' R' F R S R' F2 R S'"
-  },
-  "FU": {
-    "short": "U R' F':[F',R S R']",
-    "long": "U R' F2 R S R' F R S' R' F R U'"
-  },
-  "FK": {
-    "short": "U' R' E:[R S' R',F']",
-    "long": "U' R' E R S' R' F' R S R' F E' R U"
-  },
-  "FX": {
-    "short": "R' F:[R' S' R,F]",
-    "long": "R' F R' S' R F R' S R F2 R"
-  },
-  "FG": {
-    "short": "u':[R',E' R' S']",
-    "long": "u' R' E' R' S' R S R U"
-  },
-  "FW": {
-    "short": "U' S R B:[E,R2]",
-    "long": "U' S R B E R2 E' R2 B' R' S' U"
-  },
-  "FS": {
-    "short": "U' R' E R:[S',R B R']",
-    "long": "U' R' E R S' R B R' S R B' R2 E' R U"
-  },
-  "FV": {
-    "short": "R' F:[R S' R',F]",
-    "long": "R' F R S' R' F R S R' F2 R"
-  },
-  "FO": {
-    "short": "S':[R' E R,U']",
-    "long": "S' R' E R U' R' E' R U S"
-  },
-  "FJ": {
-    "short": "[E,R U' R']",
-    "long": "E R U' R' E' R U R'"
-  },
-  "FP": {
-    "short": "F R2 F:[E,R2]",
-    "long": "F R2 F E R2 E' R2 F' R2 F'"
-  },
-  "FR": {
-    "short": "R' E:[R U' R',E]",
-    "long": "R' E R U' R' E R U R' E2 R"
-  },
-  "FH": {
-    "short": "R' E R:[U',R' E' R2 E' R']",
-    "long": "R' E R U' R' E' R2 E' R' U R E R'"
-  },
-  "FT": {
-    "short": "R':[R' E R,U']",
-    "long": "R2 E R U' R' E' R U R"
-  },
-  "FN": {
-    "short": "E R' U' R':[E',R2]",
-    "long": "E R' U' R' E' R2 E R' U R E'"
-  },
-  "RD": {
-    "short": "E':[R' S' R,U]",
-    "long": "E' R' S' R U R' S R u'"
-  },
-  "RE": {
-    "short": "U' R F:[E',R2]",
-    "long": "U' R F E' R2 E R2 F' R' U"
-  },
-  "RA": {
-    "short": "U S:[R2,S' R E']",
-    "long": "U S R2 S' R E' R2 E R' U'"
-  },
-  "RQ": {
-    "short": "u:[E R' S,R]",
-    "long": "U R' S R S' R E' R' u'"
-  },
-  "RB": {
-    "short": "[R' E' R2 E R',U']",
-    "long": "R' E' R2 E R' U' R E' R2 E R U"
-  },
-  "RM": {
-    "short": "S U' R:[E',R2]",
-    "long": "S U' R E' R2 E R U S'"
-  },
-  "RU": {
-    "short": "U' D R:[E',R2]",
-    "long": "U' D R E' R2 E R D' U"
-  },
-  "RK": {
-    "short": "U' R F':[E',R2]",
-    "long": "U' R F' E' R2 E R2 F R' U"
-  },
-  "RX": {
-    "short": "U' R E':[R2,E R S']",
-    "long": "U' R E' R2 E R S' R2 S R2 U"
-  },
-  "RG": {
-    "short": "S' U' R:[E',R2]",
-    "long": "S' U' R E' R2 E R U S"
-  },
-  "RW": {
-    "short": "U' D' R:[E',R2]",
-    "long": "U' D' R E' R2 E R D U"
-  },
-  "RS": {
-    "short": "U' D':[S',R B2 R']",
-    "long": "U' D' S' R B2 R' S R B2 R' D U"
-  },
-  "RV": {
-    "short": "U' R:[E',R2]",
-    "long": "U' R E' R2 E R U"
-  },
-  "RO": {
-    "short": "R' E':[E',R U' R']",
-    "long": "R' E2 R U' R' E R U R' E R"
-  },
-  "RJ": {
-    "short": "R' U' R:[E',R2]",
-    "long": "R' U' R E' R2 E R U R"
-  },
-  "RP": {
-    "short": "R S U' R:[E',R2]",
-    "long": "R S U' R E' R2 E R U S' R'"
-  },
-  "RL": {
-    "short": "U' R:[E',R2 E R2]",
-    "long": "U' R E' R2 E R2 E R2 E' R U"
-  },
-  "RF": {
-    "short": "R' E:[E,R U' R']",
-    "long": "R' E2 R U' R' E' R U R' E' R"
-  },
-  "RT": {
-    "short": "R U' R:[E',R2]",
-    "long": "R U' R E' R2 E R U R'"
-  },
-  "RN": {
-    "short": "R' S U' R:[E',R2]",
-    "long": "R' S U' R E' R2 E R U S' R"
-  },
-  "HD": {
-    "short": "U':[U',R E' R']",
-    "long": "U2 R E' R' U R E R' U"
-  },
-  "HE": {
-    "short": "S:[R E' R',U']",
-    "long": "S R E' R' U' R E R' U S'"
-  },
-  "HA": {
-    "short": "U:[R E' R',U2]",
-    "long": "U R E' R' U2 R E R' U"
-  },
-  "HQ": {
-    "short": "U:[R B2 R',S]",
-    "long": "U R B2 R' S R B2 R' S' U'"
-  },
-  "HB": {
-    "short": "[R E' R',U']",
-    "long": "R E' R' U' R E R' U"
-  },
-  "HM": {
-    "short": "R F:[R2,E']",
-    "long": "R F R2 E' R2 E F' R'"
-  },
-  "HU": {
-    "short": "U' S R' F':[E',R2]",
-    "long": "U' S R' F' E' R2 E R2 F R S' U"
-  },
-  "HK": {
-    "short": "U' R E' R':[S',R' F' R]",
-    "long": "U' R E' R' S' R' F' R S R' F R2 E R' U"
-  },
-  "HX": {
-    "short": "S' R' F:[R2,E']",
-    "long": "S' R' F R2 E' R2 E F' R S"
-  },
-  "HG": {
-    "short": "S' u' R':[E,R2]",
-    "long": "S' u' R' E R2 E' R' u S"
-  },
-  "HW": {
-    "short": "U R B:[B,R' S R]",
-    "long": "U R B2 R' S R B' R' S' R B' R' U'"
-  },
-  "HS": {
-    "short": "U' R E':[R' S' R,B]",
-    "long": "U' R E' R' S' R B R' S R B' E R' U"
-  },
-  "HV": {
-    "short": "u' R':[E,R2]",
-    "long": "u' R' E R2 E' R' u"
-  },
-  "HO": {
-    "short": "R' F:[R2,E']",
-    "long": "R' F R2 E' R2 E F' R"
-  },
-  "HJ": {
-    "short": "R:[R E' R',U']",
-    "long": "R2 E' R' U' R E R' U R'"
-  },
-  "HP": {
-    "short": "E' R U' R:[E,R2]",
-    "long": "E' R U' R E R2 E' R U R' E"
-  },
-  "HL": {
-    "short": "R E':[R' U' R,E']",
-    "long": "R E' R' U' R E' R' U R E2 R'"
-  },
-  "HF": {
-    "short": "R E' R':[U',R E R2 E R]",
-    "long": "R E' R' U' R E R2 E R U R' E' R"
-  },
-  "HT": {
-    "short": "[E',R' U' R]",
-    "long": "E' R' U' R E R' U R"
-  },
-  "HN": {
-    "short": "F:[R2,E']",
-    "long": "F R2 E' R2 E F'"
-  },
-  "TD": {
-    "short": "[R S2 R',U]",
-    "long": "R S2 R' U R S2 R' U'"
-  },
-  "TE": {
-    "short": "R' S:[R' E' R,U']",
-    "long": "R' S R' E' R U' R' E R U S' R"
-  },
-  "TA": {
-    "short": "R U:[S,R2]",
-    "long": "R U S R2 S' R2 U' R'"
-  },
-  "TQ": {
-    "short": "U':[R,E R' S]",
-    "long": "U' R E R' S R' S' R u"
-  },
-  "TB": {
-    "short": "E:[R E' R',U']",
-    "long": "E R E' R' U' R E R' u"
-  },
-  "TM": {
-    "short": "R u' R':[E',R2]",
-    "long": "R u' R' E' R2 E R' u R'"
-  },
-  "TU": {
-    "short": "[R' U' R U,R D R' D']",
-    "long": "R' U' R U R D R' D' U' R' U R D R D' R'"
-  },
-  "TK": {
-    "short": "[M',U' R' U]",
-    "long": "M' U' R' U M U' R U"
-  },
-  "TX": {
-    "short": "U R S':[S',R2]",
-    "long": "U R S2 R2 S R2 S R' U'"
-  },
-  "TG": {
-    "short": "R S:[S,R' U R]",
-    "long": "R S2 R' U R S' R' U' R S' R'"
-  },
-  "TW": {
-    "short": "D':[R' U' R U,D R D' R']",
-    "long": "D' R' U' R U D R D' R' U' R' U R2 D R'"
-  },
-  "TS": {
-    "short": "U':[U' M U,R']",
-    "long": "U2 M U R' U' M' U R U"
-  },
-  "TV": {
-    "short": "[R' U' R U,D R D' R']",
-    "long": "R' U' R U D R D' R' U' R' U R2 D R' D'"
-  },
-  "TO": {
-    "short": "R U' E' R:[E,R2]",
-    "long": "R U' E' R E R2 E' R E U R'"
-  },
-  "TJ": {
-    "short": "U R:[S,R2]",
-    "long": "U R S R2 S' R U'"
-  },
-  "TP": {
-    "short": "[R' U' R,E]",
-    "long": "R' U' R E R' U R E'"
-  },
-  "TL": {
-    "short": "R U' R:[E,R2]",
-    "long": "R U' R E R2 E' R U R'"
-  },
-  "TF": {
-    "short": "R':[U',R' E R]",
-    "long": "R' U' R' E R U R' E' R2"
-  },
-  "TR": {
-    "short": "R U' R':[E',R2]",
-    "long": "R U' R' E' R2 E R' U R'"
-  },
-  "TH": {
-    "short": "[R' U' R,E']",
-    "long": "R' U' R E' R' U R E"
-  },
-  "ND": {
-    "short": "[R' S' R,U]",
-    "long": "R' S' R U R' S R U'"
-  },
-  "NE": {
-    "short": "F R':[S,R2]",
-    "long": "F R' S R2 S' R' F'"
+    "short": "[L' : [U, L' E L]]",
+    "long": "L' U L' E L U' L' E' L L"
+  },
+  "LO": {
+    "short": "[R E : [E, R' U' R]]",
+    "long": "R E E R' U' R E' R' U R E' R'"
+  },
+  "LP": {
+    "short": "[L' U L, E']",
+    "long": "L' U L E' L' U' L E"
+  },
+  "LQ": {
+    "short": "[U' : [S, R' F2 R]]",
+    "long": "U' S R' F2 R S' R' F2 R U"
+  },
+  "LR": {
+    "short": "[U' L : [S', L2]]",
+    "long": "U' L S' L2 S L2 L' U"
+  },
+  "LS": {
+    "short": "[U : [U M U', L']]",
+    "long": "U U M U' L' U M' U' L U'"
+  },
+  "LT": {
+    "short": "[R U' R' : [E, R2]]",
+    "long": "R U' R' E R2 E' R2 R U R'"
+  },
+  "LU": {
+    "short": "[U'D R' : [E, R2]]",
+    "long": "U'D R' E R2 E' R2 R U'D'"
+  },
+  "LV": {
+    "short": "[U' R' : [E, R2]]",
+    "long": "U' R' E R2 E' R2 R U"
+  },
+  "LW": {
+    "short": "[U'D' R' : [E, R2]]",
+    "long": "U'D' R' E R2 E' R2 R U'D"
+  },
+  "LX": {
+    "short": "U' L U L U' L' U' L' U' L U2",
+    "long": "U' L U L U' L' U' L' U' L U2"
+  },
+  "MA": {
+    "short": "[S U' : [R2, S]]",
+    "long": "S U' R2 S R2 S' U S'"
+  },
+  "MD": {
+    "short": "[R' F R, S]",
+    "long": "R' F R S R' F' R S'"
+  },
+  "ME": {
+    "short": "[M U' : [M', U2]]",
+    "long": "M U' M' U2 M U2 U M'"
+  },
+  "MF": {
+    "short": "[U' M : [R' E R, U']]",
+    "long": "U' M R' E R U' R' E' R U M' U"
+  },
+  "MG": {
+    "short": "[L F' L' : [S', L2]]",
+    "long": "L F' L' S' L2 S L2 L F L'"
+  },
+  "MH": {
+    "short": "[l U' : [M', U2]]",
+    "long": "l U' M' U2 M U2 U l'"
+  },
+  "MJ": {
+    "short": "[l F : [F, l' S' l]]",
+    "long": "l F F l' S' l F' l' S l F' l'"
+  },
+  "MK": {
+    "short": "[R' F' : [R U' R', E]]",
+    "long": "R' F' R U' R' E R U R' E' F R"
+  },
+  "ML": {
+    "short": "[S U' R : [E, R2]]",
+    "long": "S U' R E R2 E' R2 R' U S'"
+  },
+  "MN": {
+    "short": "[S' : [U, L' E L]]",
+    "long": "S' U L' E L U' L' E' L S"
+  },
+  "MO": {
+    "short": "[F' R : [E, R2]]",
+    "long": "F' R E R2 E' R2 R' F"
+  },
+  "MP": {
+    "short": "[S' : [U, L E' L']]",
+    "long": "S' U L E' L' U' L E L' S"
+  },
+  "MQ": {
+    "short": "[R U R' U', M']",
+    "long": "R U R' U' M' U R U' R' M"
+  },
+  "MR": {
+    "short": "[S U' R' : [E', R2]]",
+    "long": "S U' R' E' R2 E R2 R U S'"
+  },
+  "MS": {
+    "short": "[M' : (U' M' U' M)2]",
+    "long": "M' U' M' U' M U' M' U' M M"
+  },
+  "MT": {
+    "short": "[R u' R : [E', R2]]",
+    "long": "R u' R E' R2 E R2 R' u R'"
+  },
+  "MU": {
+    "short": "[M : u M u2 M u]",
+    "long": "M u M u2 M u M'"
+  },
+  "MV": {
+    "short": "[R' F R, S']",
+    "long": "R' F R S' R' F' R S"
+  },
+  "MW": {
+    "short": "[D' : [R' F R, S']]",
+    "long": "D' R' F R S' R' F' R S D"
+  },
+  "MX": {
+    "short": "[R' : [F, R' S' R]]",
+    "long": "R' F R' S' R F' R' S R R"
   },
   "NA": {
-    "short": "U':[R' S' R,U2]",
-    "long": "U' R' S' R U2 R' S R U'"
-  },
-  "NQ": {
-    "short": "[U R' U',M']",
-    "long": "U R' U' M' U R U' M"
+    "short": "[U' : [L' E L, U2]]",
+    "long": "U' L' E L U2 L' E' L U2 U"
   },
   "NB": {
-    "short": "U:[U,R' S' R]",
-    "long": "U2 R' S' R U' R' S R U'"
+    "short": "[U : [U, L' E L]]",
+    "long": "U U L' E L U' L' E' L U'"
   },
-  "NM": {
-    "short": "S':[R' S' R,U]",
-    "long": "S' R' S' R U R' S R U' S"
+  "ND": {
+    "short": "[L' E L, U]",
+    "long": "L' E L U L' E' L U'"
   },
-  "NU": {
-    "short": "F:[R2,E]",
-    "long": "F R2 E R2 E' F'"
-  },
-  "NK": {
-    "short": "R U':[R' F' R,S']",
-    "long": "R U' R' F' R S' R' F R S U R'"
-  },
-  "NX": {
-    "short": "R:[R F R',S']",
-    "long": "R2 F R' S' R F' R' S R'"
-  },
-  "NG": {
-    "short": "S:[R' S' R,U]",
-    "long": "S R' S' R U R' S R U' S'"
-  },
-  "NW": {
-    "short": "R U':[S,R' B R]",
-    "long": "R U' S R' B R S' R' B' R U R'"
-  },
-  "NS": {
-    "short": "R U':[R B R',S']",
-    "long": "R U' R B R' S' R B' R' S U R'"
-  },
-  "NV": {
-    "short": "u' R:[E',R2]",
-    "long": "u' R E' R2 E R u"
-  },
-  "NO": {
-    "short": "R' S':[U,R' S' R]",
-    "long": "R' S' U R' S' R U' R' S R S R"
-  },
-  "NJ": {
-    "short": "[E',R U' R']",
-    "long": "E' R U' R' E R U R'"
-  },
-  "NP": {
-    "short": "R' S' R:[U,R' S R2 S' R']",
-    "long": "R' S' R U R' S R2 S' R' U' R S R'"
-  },
-  "NL": {
-    "short": "R' S U' R:[E,R2]",
-    "long": "R' S U' R E R2 E' R U S' R"
+  "NE": {
+    "short": "[r' U' : [M', U2]]",
+    "long": "r' U' M' U2 M U2 U r"
   },
   "NF": {
-    "short": "E R' U' R:[E',R2]",
-    "long": "E R' U' R E' R2 E R U R E'"
+    "short": "[r U R : [E, R2]]",
+    "long": "r U R E R2 E' R2 R' U' r'"
   },
-  "NR": {
-    "short": "R' S U' R':[E',R2]",
-    "long": "R' S U' R' E' R2 E R' U S' R"
+  "NG": {
+    "short": "[L F' : [L2, E]]",
+    "long": "L F' L2 E L2 E' F L'"
   },
   "NH": {
-    "short": "F:[E',R2]",
-    "long": "F E' R2 E R2 F'"
+    "short": "[u R' : [S, R2]]",
+    "long": "u R' S R2 S' R2 R u'"
+  },
+  "NJ": {
+    "short": "[E', R U' R']",
+    "long": "E' R U' R' E R U R'"
+  },
+  "NK": {
+    "short": "[D R D', M]",
+    "long": "D R D' M D R' D' M'"
+  },
+  "NL": {
+    "short": "[L' : [L' E L, U]]",
+    "long": "L' L' E L U L' E' L U' L"
+  },
+  "NM": {
+    "short": "[S' : [L' E L, U]]",
+    "long": "S' L' E L U L' E' L U' S"
+  },
+  "NO": {
+    "short": "[R, U' S U]",
+    "long": "R U' S U R' U' S' U"
+  },
+  "NP": {
+    "short": "[M' U' R : [S, R2]]",
+    "long": "M' U' R S R2 S' R2 R' U M"
+  },
+  "NQ": {
+    "short": "[U R' U', M']",
+    "long": "U R' U' M' U R U' M"
+  },
+  "NR": {
+    "short": "[E, L U L']",
+    "long": "E L U L' E' L U' L'"
+  },
+  "NS": {
+    "short": "[R : (M D' M' D')2]",
+    "long": "R M D' M' D' M D' M' D' R'"
+  },
+  "NU": {
+    "short": "[F : [R2, E]]",
+    "long": "F R2 E R2 E' F'"
+  },
+  "NV": {
+    "short": "[u' R : [E', R2]]",
+    "long": "u' R E' R2 E R2 R' u"
+  },
+  "NW": {
+    "short": "[M : [U R' U', M2]]",
+    "long": "M U R' U' M2 U R U' M2 M'"
+  },
+  "NX": {
+    "short": "[u L : [E', L2]]",
+    "long": "u L E' L2 E L2 L' u'"
+  },
+  "OA": {
+    "short": "[U : [R E R', U2]]",
+    "long": "U R E R' U2 R E' R' U2 U'"
+  },
+  "OB": {
+    "short": "[R E R', U']",
+    "long": "R E R' U' R E' R' U"
+  },
+  "OD": {
+    "short": "[U' : [U', R E R']]",
+    "long": "U' U' R E R' U R E' R' U"
+  },
+  "OE": {
+    "short": "[R' F R' : [S, R2]]",
+    "long": "R' F R' S R2 S' R2 R F' R"
+  },
+  "OF": {
+    "short": "[S' : [U', R' E R]]",
+    "long": "S' U' R' E R U R' E' R S"
+  },
+  "OG": {
+    "short": "[R' F R : [S', R2]]",
+    "long": "R' F R S' R2 S R2 R' F' R"
+  },
+  "OH": {
+    "short": "[R' F : [E', R2]]",
+    "long": "R' F E' R2 E R2 F' R"
+  },
+  "OJ": {
+    "short": "[D' : [U' R U, M']]",
+    "long": "D' U' R U M' U' R' U M D"
+  },
+  "OK": {
+    "short": "[U' : [R' F' R, S']]",
+    "long": "U' R' F' R S' R' F R S U"
+  },
+  "OL": {
+    "short": "[R E : [R' U' R, E]]",
+    "long": "R E R' U' R E R' U R E' E' R'"
+  },
+  "OM": {
+    "short": "[F' R' : [E, R2]]",
+    "long": "F' R' E R2 E' R2 R F"
+  },
+  "ON": {
+    "short": "[U' S U, R]",
+    "long": "U' S U R U' S' U R'"
+  },
+  "OP": {
+    "short": "[D' M D, R']",
+    "long": "D' M D R' D' M' D R"
+  },
+  "OQ": {
+    "short": "[R : [U R U', M']]",
+    "long": "R U R U' M' U R' U' M R'"
+  },
+  "OR": {
+    "short": "[R' E' : [R U' R', E']]",
+    "long": "R' E' R U' R' E' R U R' E E R"
+  },
+  "OS": {
+    "short": "(M D' M' D')2",
+    "long": "M D' M' D' M D' M' D'"
+  },
+  "OT": {
+    "short": "[D' : [U' R' U, M']]",
+    "long": "D' U' R' U M' U' R U M D"
+  },
+  "OU": {
+    "short": "[R' F : [R2, E]]",
+    "long": "R' F R2 E R2 E' F' R"
+  },
+  "OW": {
+    "short": "[U' : [S, R' B R]]",
+    "long": "U' S R' B R S' R' B' R U"
+  },
+  "OX": {
+    "short": "[R F R', S']",
+    "long": "R F R' S' R F' R' S"
+  },
+  "PA": {
+    "short": "[U' : [L E' L', U2]]",
+    "long": "U' L E' L' U2 L E L' U2 U"
+  },
+  "PB": {
+    "short": "[U : [U, L E' L']]",
+    "long": "U U L E' L' U' L E L' U'"
+  },
+  "PD": {
+    "short": "[L E' L', U]",
+    "long": "L E' L' U L E L' U'"
+  },
+  "PE": {
+    "short": "[M R U' : [M', U2]]",
+    "long": "M R U' M' U2 M U2 U R' M'"
+  },
+  "PF": {
+    "short": "[U'E' L : [S', L2]]",
+    "long": "U'E' L S' L2 S L2 L' U'E"
+  },
+  "PG": {
+    "short": "[S : [L E' L', U]]",
+    "long": "S L E' L' U L E L' U' S'"
+  },
+  "PH": {
+    "short": "[E R U' R : [E, R2]]",
+    "long": "E R U' R E R2 E' R2 R' U R' E'"
+  },
+  "PK": {
+    "short": "[D R' D', M]",
+    "long": "D R' D' M D R D' M'"
+  },
+  "PL": {
+    "short": "[E', L' U L]",
+    "long": "E' L' U L E L' U' L"
+  },
+  "PM": {
+    "short": "[S' : [L E' L', U]]",
+    "long": "S' L E' L' U L E L' U' S"
+  },
+  "PN": {
+    "short": "[M' U' R' : [S, R2]]",
+    "long": "M' U' R' S R2 S' R2 R U M"
+  },
+  "PO": {
+    "short": "[R', D' M D]",
+    "long": "R' D' M D R D' M' D"
+  },
+  "PQ": {
+    "short": "[U R U', M']",
+    "long": "U R U' M' U R' U' M"
+  },
+  "PR": {
+    "short": "[L : [L E' L', U]]",
+    "long": "L L E' L' U L E L' U' L'"
+  },
+  "PS": {
+    "short": "[R' : (M D' M' D')2]",
+    "long": "R' M D' M' D' M D' M' D' R"
+  },
+  "PT": {
+    "short": "[E, R' U' R]",
+    "long": "E R' U' R E' R' U R"
+  },
+  "PU": {
+    "short": "[R2' F : [R2, E]]",
+    "long": "R2' F R2 E R2 E' F' R2"
+  },
+  "PV": {
+    "short": "[U'E' R' : [E, R2]]",
+    "long": "U'E' R' E R2 E' R2 R U'E"
+  },
+  "PW": {
+    "short": "[M : [U R U', M2]]",
+    "long": "M U R U' M2 U R' U' M2 M'"
+  },
+  "PX": {
+    "short": "[UE L' : [E, L2]]",
+    "long": "UE L' E L2 E' L2 L UE'"
+  },
+  "QB": {
+    "short": "[R' U' R U, M]",
+    "long": "R' U' R U M U' R' U R M'"
+  },
+  "QD": {
+    "short": "[L U L' U', M]",
+    "long": "L U L' U' M U L U' L' M'"
+  },
+  "QE": {
+    "short": "[M', L' U' L U]",
+    "long": "M' L' U' L U M U' L' U L"
+  },
+  "QF": {
+    "short": "[M', U' L' U]",
+    "long": "M' U' L' U M U' L U"
+  },
+  "QG": {
+    "short": "[U'D : [R' F' R, S]]",
+    "long": "U'D R' F' R S R' F R S' U'D'"
+  },
+  "QH": {
+    "short": "[M', U' L U]",
+    "long": "M' U' L U M U' L' U"
+  },
+  "QJ": {
+    "short": "[U' R U, M]",
+    "long": "U' R U M U' R' U M'"
+  },
+  "QK": {
+    "short": "[U' : [R' F' R, S]]",
+    "long": "U' R' F' R S R' F R S' U"
+  },
+  "QL": {
+    "short": "[U L' U', M]",
+    "long": "U L' U' M U L U' M'"
+  },
+  "QM": {
+    "short": "[M', R U R' U']",
+    "long": "M' R U R' U' M U R U' R'"
+  },
+  "QN": {
+    "short": "[M', U R' U']",
+    "long": "M' U R' U' M U R U'"
+  },
+  "QO": {
+    "short": "[U'D' : [R' F' R, S]]",
+    "long": "U'D' R' F' R S R' F R S' U'D"
+  },
+  "QP": {
+    "short": "[M', U R U']",
+    "long": "M' U R U' M U R' U'"
+  },
+  "QR": {
+    "short": "[U L U', M]",
+    "long": "U L U' M U L' U' M'"
+  },
+  "QS": {
+    "short": "[U' : [R B R', S]]",
+    "long": "U' R B R' S R B' R' S' U"
+  },
+  "QT": {
+    "short": "[U' R' U, M]",
+    "long": "U' R' U M U' R U M'"
+  },
+  "QU": {
+    "short": "[U : [S, R' F' R]]",
+    "long": "U S R' F' R S' R' F R U'"
+  },
+  "QV": {
+    "short": "[R' : [U' R' U, M]]",
+    "long": "R' U' R' U M U' R U M' R"
+  },
+  "QW": {
+    "short": "[U : [S, R B R']]",
+    "long": "U S R B R' S' R B' R' U'"
+  },
+  "QX": {
+    "short": "[UD : [R' F' R, S]]",
+    "long": "UD R' F' R S R' F R S' UD'"
+  },
+  "RA": {
+    "short": "[U : [R' E2 R, U2]]",
+    "long": "U R' E2 R U2 R' E2 R U2 U'"
+  },
+  "RB": {
+    "short": "[R' E2 R, U']",
+    "long": "R' E2 R U' R' E2 R U"
+  },
+  "RD": {
+    "short": "[E' : [L' E L, U]]",
+    "long": "E' L' E L U L' E' L U' E"
+  },
+  "RE": {
+    "short": "[L' u L : [E, L2]]",
+    "long": "L' u L E L2 E' L2 L' u' L"
+  },
+  "RF": {
+    "short": "[L U L', E']",
+    "long": "L U L' E' L U' L' E"
+  },
+  "RG": {
+    "short": "[S' U' R : [E', R2]]",
+    "long": "S' U' R E' R2 E R2 R' U S"
+  },
+  "RJ": {
+    "short": "[R' U' R : [E', R2]]",
+    "long": "R' U' R E' R2 E R2 R' U R"
+  },
+  "RK": {
+    "short": "[M', U L U']",
+    "long": "M' U L U' M U L' U'"
+  },
+  "RL": {
+    "short": "[U' L' : [S', L2]]",
+    "long": "U' L' S' L2 S L2 L U"
+  },
+  "RM": {
+    "short": "[S U' R : [E', R2]]",
+    "long": "S U' R E' R2 E R2 R' U S'"
+  },
+  "RN": {
+    "short": "[L U L', E]",
+    "long": "L U L' E L U' L' E'"
+  },
+  "RO": {
+    "short": "[R' E' : [E', R U' R']]",
+    "long": "R' E' E' R U' R' E R U R' E R"
+  },
+  "RP": {
+    "short": "[L : [U, L E' L']]",
+    "long": "L U L E' L' U' L E L' L'"
+  },
+  "RQ": {
+    "short": "[M, U L U']",
+    "long": "M U L U' M' U L' U'"
+  },
+  "RS": {
+    "short": "[U : [U M U', L]]",
+    "long": "U U M U' L U M' U' L' U'"
+  },
+  "RT": {
+    "short": "[R U' R : [E', R2]]",
+    "long": "R U' R E' R2 E R2 R' U R'"
+  },
+  "RU": {
+    "short": "[U'D R : [E', R2]]",
+    "long": "U'D R E' R2 E R2 R' U'D'"
+  },
+  "RV": {
+    "short": "[U' R : [E', R2]]",
+    "long": "U' R E' R2 E R2 R' U"
+  },
+  "RW": {
+    "short": "[U'D' R : [E', R2]]",
+    "long": "U'D' R E' R2 E R2 R' U'D"
+  },
+  "RX": {
+    "short": "U' L' U' L' U L U L U L'",
+    "long": "U' L' U' L' U L U L U L'"
+  },
+  "SA": {
+    "short": "[U' M' U : [M', U2]]",
+    "long": "U' M' U M' U2 M U2 U' M U"
+  },
+  "SB": {
+    "short": "(M U' M' U')2",
+    "long": "M U' M' U' M U' M' U'"
+  },
+  "SD": {
+    "short": "(M U M' U)2",
+    "long": "M U M' U M U M' U"
+  },
+  "SE": {
+    "short": "[U'D' : [R' D R, S']]",
+    "long": "U'D' R' D R S' R' D' R S U'D"
+  },
+  "SF": {
+    "short": "[U' M : [R' E R, U]]",
+    "long": "U' M R' E R U R' E' R U' M' U"
+  },
+  "SG": {
+    "short": "(D' M D' M')2",
+    "long": "D' M D' M' D' M D' M'"
+  },
+  "SH": {
+    "short": "[L' : (D' M D' M')2]",
+    "long": "L' D' M D' M' D' M D' M' L"
+  },
+  "SJ": {
+    "short": "[U' : [R, U' M U]]",
+    "long": "U' R U' M U R' U' M' U U"
+  },
+  "SK": {
+    "short": "U M U M' U2 M' U' M U",
+    "long": "U M U M' U2 M' U' M U"
+  },
+  "SL": {
+    "short": "[U : [L', U M U']]",
+    "long": "U L' U M U' L U M' U' U'"
+  },
+  "SM": {
+    "short": "[M' : (M' U M U)2]",
+    "long": "M' M' U M U M' U M U M"
+  },
+  "SN": {
+    "short": "[R : (D M D M')2]",
+    "long": "R D M D M' D M D M' R'"
+  },
+  "SO": {
+    "short": "(D M D M')2",
+    "long": "D M D M' D M D M'"
+  },
+  "SP": {
+    "short": "[r : (M' U M U)2]",
+    "long": "r M' U M U M' U M U r'"
+  },
+  "SQ": {
+    "short": "[U' : [S, R B R']]",
+    "long": "U' S R B R' S' R B' R' U"
+  },
+  "SR": {
+    "short": "[L : (M U M' U)2]",
+    "long": "L M U M' U M U M' U L'"
+  },
+  "ST": {
+    "short": "[U' : [R', U' M U]]",
+    "long": "U' R' U' M U R U' M' U U"
+  },
+  "SU": {
+    "short": "[D' : [R F R', S']]",
+    "long": "D' R F R' S' R F' R' S D"
+  },
+  "SV": {
+    "short": "[D' R' F : [R2, E]]",
+    "long": "D' R' F R2 E R2 E' F' R D"
+  },
+  "SX": {
+    "short": "[D L F' : [L2, E']]",
+    "long": "D L F' L2 E' L2 E F L' D'"
+  },
+  "TA": {
+    "short": "[R U' : [R2, S]]",
+    "long": "R U' R2 S R2 S' U R'"
+  },
+  "TB": {
+    "short": "[E : [R E' R', U']]",
+    "long": "E R E' R' U' R E R' U E'"
+  },
+  "TD": {
+    "short": "[L E2 L', U]",
+    "long": "L E2 L' U L E2 L' U'"
+  },
+  "TE": {
+    "short": "[S' U L' : [E, L2]]",
+    "long": "S' U L' E L2 E' L2 L U' S"
+  },
+  "TF": {
+    "short": "[R' : [U', R' E R]]",
+    "long": "R' U' R' E R U R' E' R R"
+  },
+  "TG": {
+    "short": "[L E : [E, L' U L]]",
+    "long": "L E E L' U L E' L' U' L E' L'"
+  },
+  "TH": {
+    "short": "[R' U' R, E']",
+    "long": "R' U' R E' R' U R E"
+  },
+  "TJ": {
+    "short": "[U R : [S, R2]]",
+    "long": "U R S R2 S' R2 R' U'"
+  },
+  "TK": {
+    "short": "[M', U' R' U]",
+    "long": "M' U' R' U M U' R U"
+  },
+  "TL": {
+    "short": "[R U' R : [E, R2]]",
+    "long": "R U' R E R2 E' R2 R' U R'"
+  },
+  "TM": {
+    "short": "[R u' R' : [E', R2]]",
+    "long": "R u' R' E' R2 E R2 R u R'"
+  },
+  "TO": {
+    "short": "[D' : [M', U' R' U]]",
+    "long": "D' M' U' R' U M U' R U D"
+  },
+  "TP": {
+    "short": "[R' U' R, E]",
+    "long": "R' U' R E R' U R E'"
+  },
+  "TQ": {
+    "short": "[M, U' R' U]",
+    "long": "M U' R' U M' U' R U"
+  },
+  "TR": {
+    "short": "[R U' R' : [E', R2]]",
+    "long": "R U' R' E' R2 E R2 R U R'"
+  },
+  "TS": {
+    "short": "[U' : [U' M U, R']]",
+    "long": "U' U' M U R' U' M' U R U"
+  },
+  "TU": {
+    "short": "[UD' L' : [E, L2]]",
+    "long": "UD' L' E L2 E' L2 L UD"
+  },
+  "TV": {
+    "short": "U R U R U' R' U' R' U' R",
+    "long": "U R U R U' R' U' R' U' R"
+  },
+  "TW": {
+    "short": "[UD L' : [E, L2]]",
+    "long": "UD L' E L2 E' L2 L UD'"
+  },
+  "TX": {
+    "short": "[U L' : [E, L2]]",
+    "long": "U L' E L2 E' L2 L U'"
+  },
+  "UA": {
+    "short": "[M', U2]",
+    "long": "M' U2 M U2"
+  },
+  "UB": {
+    "short": "[U, M U2 M]",
+    "long": "U M U2 M U' M' U2 M'"
+  },
+  "UD": {
+    "short": "[R' F : [R S R', F2]]",
+    "long": "R' F R S R' F2 R S' R' F2 F' R"
+  },
+  "UE": {
+    "short": "[M : u M' u2 M' u]",
+    "long": "M u M' u2 M' u M'"
+  },
+  "UF": {
+    "short": "[L2 F' : [E', L2]]",
+    "long": "L2 F' E' L2 E L2 F L2"
+  },
+  "UG": {
+    "short": "[L F' : [E', L2]]",
+    "long": "L F' E' L2 E L2 F L'"
+  },
+  "UH": {
+    "short": "[F' : [E', L2]]",
+    "long": "F' E' L2 E L2 F"
+  },
+  "UJ": {
+    "short": "[UD' L' : [E', L2]]",
+    "long": "UD' L' E' L2 E L2 L UD"
+  },
+  "UL": {
+    "short": "[U'D R : [E, R2]]",
+    "long": "U'D R E R2 E' R2 R' U'D'"
+  },
+  "UM": {
+    "short": "[M : u' M' u2 M' u']",
+    "long": "M u' M' u2 M' u' M'"
+  },
+  "UN": {
+    "short": "[F : [E, R2]]",
+    "long": "F E R2 E' R2 F'"
+  },
+  "UO": {
+    "short": "[R' F : [E, R2]]",
+    "long": "R' F E R2 E' R2 F' R"
+  },
+  "UP": {
+    "short": "[R2' F : [E, R2]]",
+    "long": "R2' F E R2 E' R2 F' R2"
+  },
+  "UQ": {
+    "short": "[U : [R' F' R, S]]",
+    "long": "U R' F' R S R' F R S' U'"
+  },
+  "UR": {
+    "short": "[U'D R' : [E', R2]]",
+    "long": "U'D R' E' R2 E R2 R U'D'"
+  },
+  "US": {
+    "short": "[D' : [S', R F R']]",
+    "long": "D' S' R F R' S R F' R' D"
+  },
+  "UT": {
+    "short": "[UD' L : [E, L2]]",
+    "long": "UD' L E L2 E' L2 L' UD"
+  },
+  "UV": {
+    "short": "[R' F : [R S' R', F2]]",
+    "long": "R' F R S' R' F2 R S R' F2 F' R"
+  },
+  "UW": {
+    "short": "u2 M' u2 M'",
+    "long": "u2 M' u2 M'"
+  },
+  "UX": {
+    "short": "[R' F : [R' S' R, F2]]",
+    "long": "R' F R' S' R F2 R' S R F2 F' R"
+  },
+  "VA": {
+    "short": "[U' : [R2, S]]",
+    "long": "U' R2 S R2 S' U"
+  },
+  "VB": {
+    "short": "[R U R' : [S, R2]]",
+    "long": "R U R' S R2 S' R2 R U' R'"
+  },
+  "VD": {
+    "short": "R' U' R U R U R U' R' U'",
+    "long": "R' U' R U R U R U' R' U'"
+  },
+  "VE": {
+    "short": "[r : [L E L', U]]",
+    "long": "r L E L' U L E' L' U' r'"
+  },
+  "VF": {
+    "short": "[U'E' R' : [E, R2]]",
+    "long": "U'E' R' E R2 E' R2 R U'E"
+  },
+  "VG": {
+    "short": "[S, L' F' L]",
+    "long": "S L' F' L S' L' F L"
+  },
+  "VH": {
+    "short": "[u' R : [E, R2]]",
+    "long": "u' R E R2 E' R2 R' u"
+  },
+  "VJ": {
+    "short": "U2 R U' R' U' R' U' R U R U'",
+    "long": "U2 R U' R' U' R' U' R U R U'"
+  },
+  "VK": {
+    "short": "[U R' F' R : [S, R2]]",
+    "long": "U R' F' R S R2 S' R2 R' F R U'"
+  },
+  "VL": {
+    "short": "[U' R : [E, R2]]",
+    "long": "U' R E R2 E' R2 R' U"
+  },
+  "VM": {
+    "short": "[S', R' F R]",
+    "long": "S' R' F R S R' F' R"
+  },
+  "VN": {
+    "short": "[u' R' : [E', R2]]",
+    "long": "u' R' E' R2 E R2 R u"
+  },
+  "VP": {
+    "short": "[U'E' R : [E, R2]]",
+    "long": "U'E' R E R2 E' R2 R' U'E"
+  },
+  "VQ": {
+    "short": "[r' : [U' R' U, M']]",
+    "long": "r' U' R' U M' U' R U M r"
+  },
+  "VR": {
+    "short": "[U' R' : [E', R2]]",
+    "long": "U' R' E' R2 E R2 R U"
+  },
+  "VS": {
+    "short": "[D' R' F : [E, R2]]",
+    "long": "D' R' F E R2 E' R2 F' R D"
+  },
+  "VT": {
+    "short": "R' U R U R U R' U' R' U'",
+    "long": "R' U R U R U R' U' R' U'"
+  },
+  "VU": {
+    "short": "[R' F' : [R S' R', F2]]",
+    "long": "R' F' R S' R' F2 R S R' F2 F R"
+  },
+  "VW": {
+    "short": "[D' R' F : [R S' R', F2]]",
+    "long": "D' R' F R S' R' F2 R S R' F2 F' R D"
+  },
+  "VX": {
+    "short": "[U' : [S', R2]]",
+    "long": "U' S' R2 S R2 U"
+  },
+  "WA": {
+    "short": "[U2, M]",
+    "long": "U2 M U2 M'"
+  },
+  "WB": {
+    "short": "[R U' R' U, M2]",
+    "long": "R U' R' U M2 U' R U R' M2"
+  },
+  "WD": {
+    "short": "D' R' U' R U R U R U' R' U' D",
+    "long": "D' R' U' R U R U R U' R' U' D"
+  },
+  "WE": {
+    "short": "[l' : [U' L U, M2]]",
+    "long": "l' U' L U M2 U' L' U M2 l"
+  },
+  "WF": {
+    "short": "[M' : [U' L' U, M2]]",
+    "long": "M' U' L' U M2 U' L U M2 M"
+  },
+  "WG": {
+    "short": "[U : [L B' L', S']]",
+    "long": "U L B' L' S' L B L' S U'"
+  },
+  "WH": {
+    "short": "[M' : [U' L U, M2]]",
+    "long": "M' U' L U M2 U' L' U M2 M"
+  },
+  "WJ": {
+    "short": "[DU L' : [E', L2]]",
+    "long": "DU L' E' L2 E L2 L DU'"
+  },
+  "WK": {
+    "short": "[D : [S', R F R']]",
+    "long": "D S' R F R' S R F' R' D'"
+  },
+  "WL": {
+    "short": "[D'U' R : [E, R2]]",
+    "long": "D'U' R E R2 E' R2 R' D'U"
+  },
+  "WM": {
+    "short": "[r : [U R' U', M2]]",
+    "long": "r U R' U' M2 U R U' M2 r'"
+  },
+  "WN": {
+    "short": "[M' : [U R' U', M2]]",
+    "long": "M' U R' U' M2 U R U' M2 M"
+  },
+  "WO": {
+    "short": "[U' : [R' B R, S]]",
+    "long": "U' R' B R S R' B' R S' U"
+  },
+  "WP": {
+    "short": "[M' : [U R U', M2]]",
+    "long": "M' U R U' M2 U R' U' M2 M"
+  },
+  "WQ": {
+    "short": "[D' r' : [U' R' U, M']]",
+    "long": "D' r' U' R' U M' U' R U M r D"
+  },
+  "WR": {
+    "short": "[U'D' R' : [E', R2]]",
+    "long": "U'D' R' E' R2 E R2 R U'D"
+  },
+  "WT": {
+    "short": "[UD L : [E, L2]]",
+    "long": "UD L E L2 E' L2 L' UD'"
+  },
+  "WU": {
+    "short": "M u2 M u2",
+    "long": "M u2 M u2"
+  },
+  "WV": {
+    "short": "[S' r : [U R' U', M2]]",
+    "long": "S' r U R' U' M2 U R U' M2 r' S"
+  },
+  "WX": {
+    "short": "[S l' : [U' L U, M2]]",
+    "long": "S l' U' L U M2 U' L' U M2 l S'"
+  },
+  "XA": {
+    "short": "[U : [L2, S']]",
+    "long": "U L2 S' L2 S U'"
+  },
+  "XB": {
+    "short": "L U L' U' L' U' L' U L U",
+    "long": "L U L' U' L' U' L' U L U"
+  },
+  "XD": {
+    "short": "[L' U' L : [S', L2]]",
+    "long": "L' U' L S' L2 S L2 L' U L"
+  },
+  "XE": {
+    "short": "[S, L F' L']",
+    "long": "S L F' L' S' L F L'"
+  },
+  "XF": {
+    "short": "[UE L' : [E', L2]]",
+    "long": "UE L' E' L2 E L2 L UE'"
+  },
+  "XH": {
+    "short": "[u L : [E, L2]]",
+    "long": "u L E L2 E' L2 L' u'"
+  },
+  "XJ": {
+    "short": "[U L' : [E', L2]]",
+    "long": "U L' E' L2 E L2 L U'"
+  },
+  "XK": {
+    "short": "[U' L F L' : [S', L2]]",
+    "long": "U' L F L' S' L2 S L2 L F' L' U"
+  },
+  "XL": {
+    "short": "U2' L' U L U L U L' U' L' U",
+    "long": "U2' L' U L U L U L' U' L' U"
+  },
+  "XM": {
+    "short": "[R' : [R' S' R, F]]",
+    "long": "R' R' S' R F R' S R F' R"
+  },
+  "XN": {
+    "short": "[u L' : [E', L2]]",
+    "long": "u L' E' L2 E L2 L u'"
+  },
+  "XO": {
+    "short": "[S', R F R']",
+    "long": "S' R F R' S R F' R'"
+  },
+  "XP": {
+    "short": "[UE L : [E, L2]]",
+    "long": "UE L E L2 E' L2 L' UE'"
+  },
+  "XQ": {
+    "short": "[UD : [R' F' R, S]]",
+    "long": "UD R' F' R S R' F R S' UD'"
+  },
+  "XR": {
+    "short": "L U' L' U' L' U' L U L U",
+    "long": "L U' L' U' L' U' L U L U"
+  },
+  "XS": {
+    "short": "[D L F' : [E', L2]]",
+    "long": "D L F' E' L2 E L2 F L' D'"
+  },
+  "XT": {
+    "short": "[U L : [E, L2]]",
+    "long": "U L E L2 E' L2 L' U'"
+  },
+  "XU": {
+    "short": "[R' F' : [R' S' R, F2]]",
+    "long": "R' F' R' S' R F2 R' S R F2 F R"
+  },
+  "XV": {
+    "short": "[U' : [R2, S']]",
+    "long": "U' R2 S' R2 S U"
+  },
+  "XW": {
+    "short": "U' R' D' R D R D R D' R' UD'",
+    "long": "U' R' D' R D R D R D' R' UD'"
   }
 };
+
+export const DEFAULT_CORNERS: Record<string, AlgDef> = {
+  "AB": {
+    "short": "AA",
+    "long": "R' F R' B2 R F' R' B2 R2"
+  },
+  "AD": {
+    "short": "[U2: [AB]]",
+    "long": "U2 R2 B2 R F R' B2 R F' R U2"
+  },
+  "AF": {
+    "short": "[F : [U2, R' D' R]]",
+    "long": "F U2 R' D' R U2 R' D R F'"
+  },
+  "AG": {
+    "short": "[R' D R, U2]",
+    "long": "R' D R U2 R' D' R U2"
+  },
+  "AH": {
+    "short": "[U' : [R D' R', U2]]",
+    "long": "U' R D' R' U2 R D R' U2 U"
+  },
+  "AI": {
+    "short": "[l' UD' : [R D R', U2]]",
+    "long": "l' UD' R D R' U2 R D' R' U2 UD l"
+  },
+  "AK": {
+    "short": "[U'D : [R D R', U2]]",
+    "long": "U'D R D R' U2 R D' R' U2 U'D'"
+  },
+  "AL": {
+    "short": "[U'D' : [R D' R', U2]]",
+    "long": "U'D' R D' R' U2 R D R' U2 U'D"
+  },
+  "AN": {
+    "short": "[R' U'D' R' : [U', R' D R]]",
+    "long": "R' U'D' R' U' R' D R U R' D' R R U'D R"
+  },
+  "AO": {
+    "short": "[U' : [R D R', U2]]",
+    "long": "U' R D R' U2 R D' R' U2 U"
+  },
+  "AP": {
+    "short": "[R' D' R, U2]",
+    "long": "R' D' R U2 R' D R U2"
+  },
+  "AQ": {
+    "short": "[R' UD : [R D R', U2]]",
+    "long": "R' UD R D R' U2 R D' R' U2 UD' R"
+  },
+  "AS": {
+    "short": "[U'D' : [R D R', U2]]",
+    "long": "U'D' R D R' U2 R D' R' U2 U'D"
+  },
+  "AT": {
+    "short": "[U'D : [R D' R', U2]]",
+    "long": "U'D R D' R' U2 R D R' U2 U'D'"
+  },
+  "AU": {
+    "short": "[R F' R' U' : [R D R', U2]]",
+    "long": "R F' R' U' R D R' U2 R D' R' U2 U R F R'"
+  },
+  "AV": {
+    "short": "[R2 : [U, R2' D R2 D' R2']]",
+    "long": "R2 U R2' D R2 D' R2' U' R2 D R2 D' R2 R2"
+  },
+  "AW": {
+    "short": "[R D' R' : [R' D R, U2]]",
+    "long": "R D' R' R' D R U2 R' D' R U2 R D R'"
+  },
+  "AX": {
+    "short": "[R' U'D' R : [R U' R', D]]",
+    "long": "R' U'D' R R U' R' D R U R' D' R' U'D R"
+  },
+  "BA": {
+    "short": "AB",
+    "long": "R2 B2 R F R' B2 R F' R"
+  },
+  "BD": {
+    "short": "[U': [AB]]",
+    "long": "U' R2 B2 R F R' B2 R F' R U"
+  },
+  "BE": {
+    "short": "[R : [U, R D R']]",
+    "long": "R U R D R' U' R D' R' R'"
+  },
+  "BF": {
+    "short": "[R' : [R' D' R, U']]",
+    "long": "R' R' D' R U' R' D R U R"
+  },
+  "BG": {
+    "short": "[R' D R, U]",
+    "long": "R' D R U R' D' R U'"
+  },
+  "BH": {
+    "short": "[U', R D' R']",
+    "long": "U' R D' R' U R D R'"
+  },
+  "BI": {
+    "short": "[R : [U2, R D R']]",
+    "long": "R U2 R D R' U2 R D' R' R'"
+  },
+  "BK": {
+    "short": "[D' : [R' D R, U]]",
+    "long": "D' R' D R U R' D' R U' D"
+  },
+  "BL": {
+    "short": "[D : [R' D' R, U]]",
+    "long": "D R' D' R U R' D R U' D'"
+  },
+  "BO": {
+    "short": "[U', R D R']",
+    "long": "U' R D R' U R D' R'"
+  },
+  "BP": {
+    "short": "[R' D' R, U]",
+    "long": "R' D' R U R' D R U'"
+  },
+  "BR": {
+    "short": "[R' : [R' D' R, U2]]",
+    "long": "R' R' D' R U2 R' D R U2 R"
+  },
+  "BS": {
+    "short": "[D' : [U', R D R']]",
+    "long": "D' U' R D R' U R D' R' D"
+  },
+  "BT": {
+    "short": "[D : [U', R D' R']]",
+    "long": "D U' R D' R' U R D R' D'"
+  },
+  "BU": {
+    "short": "[R F' : [R' U' R, D]]",
+    "long": "R F' R' U' R D R' U R D' F R'"
+  },
+  "BV": {
+    "short": "[U' R' D R : [R D' R', U]]",
+    "long": "U' R' D R R D' R' U R D R' U' R' D' R U"
+  },
+  "BW": {
+    "short": "[U R D' R' : [U', R' D R]]",
+    "long": "U R D' R' U' R' D R U R' D' R R D R' U'"
+  },
+  "BX": {
+    "short": "[R' B : [D', R U R']]",
+    "long": "R' B D' R U R' D R U' R' B' R"
+  },
+  "DA": {
+    "short": "[U2: [AA]]",
+    "long": "U2 R' F R' B2 R F' R' B2 R2 U2"
+  },
+  "DB": {
+    "short": "[U': [AA]]",
+    "long": "U' R' F R' B2 R F' R' B2 R2 U"
+  },
+  "DE": {
+    "short": "[U' R : [R D R', U2]]",
+    "long": "U' R R D R' U2 R D' R' U2 R' U"
+  },
+  "DG": {
+    "short": "[R' D R, U']",
+    "long": "R' D R U' R' D' R U"
+  },
+  "DH": {
+    "short": "[U' : [R D' R', U']]",
+    "long": "U' R D' R' U' R D R' U U"
+  },
+  "DK": {
+    "short": "[D' : [R' D R, U']]",
+    "long": "D' R' D R U' R' D' R U D"
+  },
+  "DL": {
+    "short": "[D : [R' D' R, U']]",
+    "long": "D R' D' R U' R' D R U D'"
+  },
+  "DN": {
+    "short": "[U' R' : [U2, R' D' R]]",
+    "long": "U' R' U2 R' D' R U2 R' D R R U"
+  },
+  "DO": {
+    "short": "[U' : [R D R', U']]",
+    "long": "U' R D R' U' R D' R' U U"
+  },
+  "DP": {
+    "short": "[R' D' R, U']",
+    "long": "R' D' R U' R' D R U"
+  },
+  "DQ": {
+    "short": "[R' D' : [U', R' D R]]",
+    "long": "R' D' U' R' D R U R' D' R D R"
+  },
+  "DR": {
+    "short": "[U' R' : [U', R' D' R]]",
+    "long": "U' R' U' R' D' R U R' D R R U"
+  },
+  "DS": {
+    "short": "[D : [R' D R, U']]",
+    "long": "D R' D R U' R' D' R U D'"
+  },
+  "DT": {
+    "short": "[D' : [R' D' R, U']]",
+    "long": "D' R' D' R U' R' D R U D"
+  },
+  "DU": {
+    "short": "[U' R F' : [D, R' U' R]]",
+    "long": "U' R F' D R' U' R D' R' U R F R' U"
+  },
+  "DV": {
+    "short": "[D R D' R' : [R' D R, U']]",
+    "long": "D R D' R' R' D R U' R' D' R U R D R' D'"
+  },
+  "DW": {
+    "short": "[R D' R' : [R' D R, U']]",
+    "long": "R D' R' R' D R U' R' D' R U R D R'"
+  },
+  "DX": {
+    "short": "[R' D' R : [R U' R', D]]",
+    "long": "R' D' R R U' R' D R U R' D' R' D R"
+  },
+  "EB": {
+    "short": "[R : [R D R', U]]",
+    "long": "R R D R' U R D' R' U' R'"
+  },
+  "ED": {
+    "short": "[U' R : [U2, R D R']]",
+    "long": "U' R U2 R D R' U2 R D' R' R' U"
+  },
+  "EF": {
+    "short": "[L, U' R' U]",
+    "long": "L U' R' U L' U' R U"
+  },
+  "EG": {
+    "short": "[U R' : [U', R' D R]]",
+    "long": "U R' U' R' D R U R' D' R R U'"
+  },
+  "EH": {
+    "short": "[R D' : [R D R', U]]",
+    "long": "R D' R D R' U R D' R' U' D R'"
+  },
+  "EI": {
+    "short": "[l' U : [R D' R', U2]]",
+    "long": "l' U R D' R' U2 R D R' U2 U' l"
+  },
+  "EK": {
+    "short": "[R U R' : [R' D' R, U']]",
+    "long": "R U R' R' D' R U' R' D R U R U' R'"
+  },
+  "EL": {
+    "short": "[R U : [R' D R, U]]",
+    "long": "R U R' D R U R' D' R U' U' R'"
+  },
+  "EN": {
+    "short": "[R : [R2' D R2 D' R2, U]]",
+    "long": "R R2' D R2 D' R2 U R2 D R2 D' R2 U' R'"
+  },
+  "EO": {
+    "short": "[R D : [R D R', U]]",
+    "long": "R D R D R' U R D' R' U' D' R'"
+  },
+  "EP": {
+    "short": "[D' R U : [R' D R, U]]",
+    "long": "D' R U R' D R U R' D' R U' U' R' D"
+  },
+  "EQ": {
+    "short": "R' F' r U R U' r' F",
+    "long": "R' F' r U R U' r' F"
+  },
+  "ES": {
+    "short": "[UD R' : [U', R' D R]]",
+    "long": "UD R' U' R' D R U R' D' R R UD'"
+  },
+  "ET": {
+    "short": "[R U : [R' D' R, U]]",
+    "long": "R U R' D' R U R' D R U' U' R'"
+  },
+  "EU": {
+    "short": "[R : [R D2 R', U]]",
+    "long": "R R D2 R' U R D2 R' U' R'"
+  },
+  "EV": {
+    "short": "[D' R : [R D2 R', U]]",
+    "long": "D' R R D2 R' U R D2 R' U' R' D"
+  },
+  "EW": {
+    "short": "[D R : [R D' R', U]]",
+    "long": "D R R D' R' U R D R' U' R' D'"
+  },
+  "EX": {
+    "short": "[R : [R D' R', U]]",
+    "long": "R R D' R' U R D R' U' R'"
+  },
+  "FA": {
+    "short": "[F : [R' D' R, U2]]",
+    "long": "F R' D' R U2 R' D R U2 F'"
+  },
+  "FB": {
+    "short": "[R' : [U', R' D' R]]",
+    "long": "R' U' R' D' R U R' D R R"
+  },
+  "FE": {
+    "short": "[U' R' U, L]",
+    "long": "U' R' U L U' R U L'"
+  },
+  "FG": {
+    "short": "[R' U' : [D, R U R']]",
+    "long": "R' U' D R U R' D' R U' R' U R"
+  },
+  "FH": {
+    "short": "U' R' U r2 D' R D r2'",
+    "long": "U' R' U r2 D' R D r2'"
+  },
+  "FK": {
+    "short": "[F : [D, R U R']]",
+    "long": "F D R U R' D' R U' R' F'"
+  },
+  "FL": {
+    "short": "[D R' U' : [D', R U R']]",
+    "long": "D R' U' D' R U R' D R U' R' U R D'"
+  },
+  "FN": {
+    "short": "[R U'D' R' : [D, R' U R]]",
+    "long": "R U'D' R' D R' U R D' R' U' R R U'D R'"
+  },
+  "FO": {
+    "short": "[R' U' : [R' D' R, U2]]",
+    "long": "R' U' R' D' R U2 R' D R U2 U R"
+  },
+  "FP": {
+    "short": "[R' U' : [D', R U R']]",
+    "long": "R' U' D' R U R' D R U' R' U R"
+  },
+  "FQ": {
+    "short": "[R' F : [R U R', D]]",
+    "long": "R' F R U R' D R U' R' D' F' R"
+  },
+  "FR": {
+    "short": "[R B' R', F]",
+    "long": "R B' R' F R B R' F'"
+  },
+  "FS": {
+    "short": "[R B2 R', F]",
+    "long": "R B2 R' F R B2 R' F'"
+  },
+  "FT": {
+    "short": "[F : [D', R U R']]",
+    "long": "F D' R U R' D R U' R' F'"
+  },
+  "FU": {
+    "short": "[U' R' U : [R U' R', D]]",
+    "long": "U' R' U R U' R' D R U R' D' U' R U"
+  },
+  "FV": {
+    "short": "[R' F2 : [R U' R', D']]",
+    "long": "R' F2 R U' R' D' R U R' D F2 R"
+  },
+  "FW": {
+    "short": "[R U' R' : [D, R' U R]]",
+    "long": "R U' R' D R' U R D' R' U' R R U R'"
+  },
+  "FX": {
+    "short": "[F R : [U', R D' R']]",
+    "long": "F R U' R D' R' U R D R' R' F'"
+  },
+  "GA": {
+    "short": "[U2, R' D R]",
+    "long": "U2 R' D R U2 R' D' R"
+  },
+  "GB": {
+    "short": "[U, R' D R]",
+    "long": "U R' D R U' R' D' R"
+  },
+  "GD": {
+    "short": "[U', R' D R]",
+    "long": "U' R' D R U R' D' R"
+  },
+  "GE": {
+    "short": "[U R' : [R' D R, U']]",
+    "long": "U R' R' D R U' R' D' R U R U'"
+  },
+  "GF": {
+    "short": "[R' U' : [R U R', D]]",
+    "long": "R' U' R U R' D R U' R' D' U R"
+  },
+  "GH": {
+    "short": "[D R' : [F', R D' R' D]]",
+    "long": "D R' F' R D' R' D F D' R D R' R D'"
+  },
+  "GI": {
+    "short": "[D R' : [F2, R D' R' D]]",
+    "long": "D R' F2 R D' R' D F2 D' R D R' R D'"
+  },
+  "GK": {
+    "short": "[U : [D, R U' R']]",
+    "long": "U D R U' R' D' R U R' U'"
+  },
+  "GN": {
+    "short": "[U R U : [R' D R, U2]]",
+    "long": "U R U R' D R U2 R' D' R U2 U' R' U'"
+  },
+  "GO": {
+    "short": "[UD : [R U' R', D2]]",
+    "long": "UD R U' R' D2 R U R' D2 UD'"
+  },
+  "GP": {
+    "short": "[U' R' D : [R U R', D2]]",
+    "long": "U' R' D R U R' D2 R U' R' D2 D' R U"
+  },
+  "GQ": {
+    "short": "[R' U : [R U' R', D]]",
+    "long": "R' U R U' R' D R U R' D' U' R"
+  },
+  "GR": {
+    "short": "[R B' R' : [R' D R, U]]",
+    "long": "R B' R' R' D R U R' D' R U' R B R'"
+  },
+  "GS": {
+    "short": "[UD : [R U' R', D]]",
+    "long": "UD R U' R' D R U R' D' UD'"
+  },
+  "GT": {
+    "short": "[R' U' : [R U2 R', D]]",
+    "long": "R' U' R U2 R' D R U2 R' D' U R"
+  },
+  "GV": {
+    "short": "[UD R D' : [U', R' D R]]",
+    "long": "UD R D' U' R' D R U R' D' R D R' UD'"
+  },
+  "GW": {
+    "short": "[U R : [D, R U' R']]",
+    "long": "U R D R U' R' D' R U R' R' U'"
+  },
+  "GX": {
+    "short": "[D R : [R' U R U', F2]]",
+    "long": "D R R' U R U' F2 U R' U' R F2 R' D'"
+  },
+  "HA": {
+    "short": "[U : [R D' R', U2]]",
+    "long": "U R D' R' U2 R D R' U2 U'"
+  },
+  "HB": {
+    "short": "[R D' R', U']",
+    "long": "R D' R' U' R D R' U"
+  },
+  "HD": {
+    "short": "[U' : [U', R D' R']]",
+    "long": "U' U' R D' R' U R D R' U"
+  },
+  "HE": {
+    "short": "[R D' : [U, R D R']]",
+    "long": "R D' U R D R' U' R D' R' D R'"
+  },
+  "HF": {
+    "short": "[U' R U' : [R' U R, D']]",
+    "long": "U' R U' R' U R D' R' U' R D U R' U"
+  },
+  "HG": {
+    "short": "[D R' : [R D' R' D, F']]",
+    "long": "D R' R D' R' D F' D' R D R' F R D'"
+  },
+  "HI": {
+    "short": "[R DU' : [R' D R, U2]]",
+    "long": "R DU' R' D R U2 R' D' R U2 DU R'"
+  },
+  "HK": {
+    "short": "[U R U' : [R D' R', U']]",
+    "long": "U R U' R D' R' U' R D R' U U R' U'"
+  },
+  "HL": {
+    "short": "[D, L' U L]",
+    "long": "D L' U L D' L' U' L"
+  },
+  "HN": {
+    "short": "[U R : [R D' R', U2]]",
+    "long": "U R R D' R' U2 R D R' U2 R' U'"
+  },
+  "HO": {
+    "short": "[R D' : [R' U' R, D2]]",
+    "long": "R D' R' U' R D2 R' U R D2 D R'"
+  },
+  "HP": {
+    "short": "[D2, R U R']",
+    "long": "D2 R U R' D2 R U' R'"
+  },
+  "HQ": {
+    "short": "[U' L U, R]",
+    "long": "U' L U R U' L' U R'"
+  },
+  "HR": {
+    "short": "[U2 R : [R D' R', U]]",
+    "long": "U2 R R D' R' U R D R' U' R' U2"
+  },
+  "HT": {
+    "short": "[D' : [D', R U R']]",
+    "long": "D' D' R U R' D R U' R' D"
+  },
+  "HU": {
+    "short": "[D' R DU' : [R' U R, D2]]",
+    "long": "D' R DU' R' U R D2 R' U' R D2 DU R' D"
+  },
+  "HV": {
+    "short": "[D2 R : [R D' R', U']]",
+    "long": "D2 R R D' R' U' R D R' U R' D2"
+  },
+  "HW": {
+    "short": "[R D' R' : [R' D R, U]]",
+    "long": "R D' R' R' D R U R' D' R U' R D R'"
+  },
+  "IA": {
+    "short": "[l' U'D' : [R D R', U2]]",
+    "long": "l' U'D' R D R' U2 R D' R' U2 U'D l"
+  },
+  "IB": {
+    "short": "[R : [R D R', U2]]",
+    "long": "R R D R' U2 R D' R' U2 R'"
+  },
+  "IE": {
+    "short": "[l' U' : [R D' R', U2]]",
+    "long": "l' U' R D' R' U2 R D R' U2 U l"
+  },
+  "IG": {
+    "short": "[D R' : [R D' R' D, F2]]",
+    "long": "D R' R D' R' D F2 D' R D R' F2 R D'"
+  },
+  "IH": {
+    "short": "[R DU : [R' D R, U2]]",
+    "long": "R DU R' D R U2 R' D' R U2 DU' R'"
+  },
+  "IK": {
+    "short": "[R' : [R D' R' D, F2]]",
+    "long": "R' R D' R' D F2 D' R D R' F2 R"
+  },
+  "IL": {
+    "short": "[R U : [R' D R, U2]]",
+    "long": "R U R' D R U2 R' D' R U2 U' R'"
+  },
+  "IN": {
+    "short": "[R' : [U', R2 D' R2 D R2]]",
+    "long": "R' U' R2 D' R2 D R2 U R2 D' R2 D R2 R"
+  },
+  "IO": {
+    "short": "[R D'U : [R' D R, U2]]",
+    "long": "R D'U R' D R U2 R' D' R U2 D'U' R'"
+  },
+  "IP": {
+    "short": "[l' : [R' D' R, U2]]",
+    "long": "l' R' D' R U2 R' D R U2 l"
+  },
+  "IQ": {
+    "short": "[R UD' : [R' D' R, U2]]",
+    "long": "R UD' R' D' R U2 R' D R U2 UD R'"
+  },
+  "IR": {
+    "short": "[R U R' UD : [R D R', U2]]",
+    "long": "R U R' UD R D R' U2 R D' R' U2 UD' R U' R'"
+  },
+  "IS": {
+    "short": "[D2 R' : [R D' R' D, F2]]",
+    "long": "D2 R' R D' R' D F2 D' R D R' F2 R D2"
+  },
+  "IT": {
+    "short": "[R U : [R' D' R, U2]]",
+    "long": "R U R' D' R U2 R' D R U2 U' R'"
+  },
+  "IU": {
+    "short": "[R UD : [R' D' R, U2]]",
+    "long": "R UD R' D' R U2 R' D R U2 UD' R'"
+  },
+  "IV": {
+    "short": "[D' R UD : [R' D' R, U2]]",
+    "long": "D' R UD R' D' R U2 R' D R U2 UD' R' D"
+  },
+  "IW": {
+    "short": "[D R : [R D' R', U2]]",
+    "long": "D R R D' R' U2 R D R' U2 R' D'"
+  },
+  "IX": {
+    "short": "[R : [R D' R', U2]]",
+    "long": "R R D' R' U2 R D R' U2 R'"
+  },
+  "KA": {
+    "short": "[UD : [R D R', U2]]",
+    "long": "UD R D R' U2 R D' R' U2 UD'"
+  },
+  "KB": {
+    "short": "[D' : [U, R' D R]]",
+    "long": "D' U R' D R U' R' D' R D"
+  },
+  "KD": {
+    "short": "[D' : [U', R' D R]]",
+    "long": "D' U' R' D R U R' D' R D"
+  },
+  "KE": {
+    "short": "[R U R' : [U', R' D' R]]",
+    "long": "R U R' U' R' D' R U R' D R R U' R'"
+  },
+  "KF": {
+    "short": "[F : [R U R', D]]",
+    "long": "F R U R' D R U' R' D' F'"
+  },
+  "KG": {
+    "short": "[U : [R U' R', D]]",
+    "long": "U R U' R' D R U R' D' U'"
+  },
+  "KH": {
+    "short": "[U R U' : [U', R D' R']]",
+    "long": "U R U' U' R D' R' U R D R' U R' U'"
+  },
+  "KI": {
+    "short": "[R' : [F2, R D' R' D]]",
+    "long": "R' F2 R D' R' D F2 D' R D R' R"
+  },
+  "KL": {
+    "short": "[R' : [F', R D' R' D]]",
+    "long": "R' F' R D' R' D F D' R D R' R"
+  },
+  "KN": {
+    "short": "[U' R' U : [R D R', U2]]",
+    "long": "U' R' U R D R' U2 R D' R' U2 U' R U"
+  },
+  "KO": {
+    "short": "[U : [R U' R', D']]",
+    "long": "U R U' R' D' R U R' D U'"
+  },
+  "KQ": {
+    "short": "[D' R' U : [R U' R', D]]",
+    "long": "D' R' U R U' R' D R U R' D' U' R D"
+  },
+  "KR": {
+    "short": "[l D' : [U', R' D R]]",
+    "long": "l D' U' R' D R U R' D' R D l'"
+  },
+  "KS": {
+    "short": "[U'D : [R' U' R, D2]]",
+    "long": "U'D R' U' R D2 R' U R D2 U'D'"
+  },
+  "KT": {
+    "short": "[D R D : [R' U' R, D2]]",
+    "long": "D R D R' U' R D2 R' U R D2 D' R' D'"
+  },
+  "KU": {
+    "short": "[R : [R' U R U', F2]]",
+    "long": "R R' U R U' F2 U R' U' R F2 R'"
+  },
+  "KW": {
+    "short": "[U R D' : [U', R' D R]]",
+    "long": "U R D' U' R' D R U R' D' R D R' U'"
+  },
+  "KX": {
+    "short": "U r2' D' R D r2 U' R'",
+    "long": "U r2' D' R D r2 U' R'"
+  },
+  "LA": {
+    "short": "[D: [R' D' R, U2]]",
+    "long": "D R' D' R U2 R' D R U2 D'"
+  },
+  "LB": {
+    "short": "[D : [U, R' D' R]]",
+    "long": "D U R' D' R U' R' D R D'"
+  },
+  "LD": {
+    "short": "[D : [U', R' D' R]]",
+    "long": "D U' R' D' R U R' D R D'"
+  },
+  "LE": {
+    "short": "[R U : [U, R' D R]]",
+    "long": "R U U R' D R U' R' D' R U' R'"
+  },
+  "LF": {
+    "short": "[D R' U' : [R U R', D']]",
+    "long": "D R' U' R U R' D' R U' R' D U R D'"
+  },
+  "LH": {
+    "short": "[D : [R U R', D]]",
+    "long": "D R U R' D R U' R' D' D'"
+  },
+  "LI": {
+    "short": "[R U' : [R' D R, U2]]",
+    "long": "R U' R' D R U2 R' D' R U2 U R'"
+  },
+  "LK": {
+    "short": "[R' : [R D' R' D, F']]",
+    "long": "R' R D' R' D F' D' R D R' F R"
+  },
+  "LN": {
+    "short": "[F' U : [R' D' R, U2]]",
+    "long": "F' U R' D' R U2 R' D R U2 U' F"
+  },
+  "LO": {
+    "short": "[R D : [D, R' U' R]]",
+    "long": "R D D R' U' R D' R' U R D' R'"
+  },
+  "LP": {
+    "short": "[D, R U R']",
+    "long": "D R U R' D' R U' R'"
+  },
+  "LQ": {
+    "short": "[R' F : [R U' R', D]]",
+    "long": "R' F R U' R' D R U R' D' F' R"
+  },
+  "LR": {
+    "short": "[D R' : [D, R' U R]]",
+    "long": "D R' D R' U R D' R' U' R R D'"
+  },
+  "LS": {
+    "short": "[D' R D' : [R' U' R, D2]]",
+    "long": "D' R D' R' U' R D2 R' U R D2 D R' D"
+  },
+  "LT": {
+    "short": "[D : [R U R', D2]]",
+    "long": "D R U R' D2 R U' R' D2 D'"
+  },
+  "LV": {
+    "short": "[R U' R' : [R' D R, U2]]",
+    "long": "R U' R' R' D R U2 R' D' R U2 R U R'"
+  },
+  "LW": {
+    "short": "[D R : [R D' R', U']]",
+    "long": "D R R D' R' U' R D R' U R' D'"
+  },
+  "LX": {
+    "short": "[D R D : [U, R' D' R]]",
+    "long": "D R D U R' D' R U' R' D R D' R' D'"
+  },
+  "NA": {
+    "short": "[R' U'D' R' : [R' D R, U']]",
+    "long": "R' U'D' R' R' D R U' R' D' R U R U'D R"
+  },
+  "ND": {
+    "short": "[U' R' : [R' D' R, U2]]",
+    "long": "U' R' R' D' R U2 R' D R U2 R U"
+  },
+  "NE": {
+    "short": "[R : [U, R2' D R2 D' R2]]",
+    "long": "R U R2' D R2 D' R2 U' R2 D R2 D' R2 R'"
+  },
+  "NF": {
+    "short": "[R U'D' R' : [R' U R, D]]",
+    "long": "R U'D' R' R' U R D R' U' R D' R U'D R'"
+  },
+  "NG": {
+    "short": "[U R U' : [R' D R, U2]]",
+    "long": "U R U' R' D R U2 R' D' R U2 U R' U'"
+  },
+  "NH": {
+    "short": "[U R : [U2, R D' R']]",
+    "long": "U R U2 R D' R' U2 R D R' R' U'"
+  },
+  "NI": {
+    "short": "[R' : [R2 D' R2 D R2, U']]",
+    "long": "R' R2 D' R2 D R2 U' R2 D' R2 D R2 U R"
+  },
+  "NK": {
+    "short": "[U' R' U' : [R D R', U2]]",
+    "long": "U' R' U' R D R' U2 R D' R' U2 U R U"
+  },
+  "NL": {
+    "short": "[F' U' : [R' D' R, U2]]",
+    "long": "F' U' R' D' R U2 R' D R U2 U F"
+  },
+  "NO": {
+    "short": "[U R U' : [R' D' R, U2]]",
+    "long": "U R U' R' D' R U2 R' D R U2 U R' U'"
+  },
+  "NP": {
+    "short": "[R' : [D', R2 U R2' U' R2]]",
+    "long": "R' D' R2 U R2' U' R2 D R2 U R2 U' R2 R"
+  },
+  "NR": {
+    "short": "[U R : [U2, R D R']]",
+    "long": "U R U2 R D R' U2 R D' R' R' U'"
+  },
+  "NS": {
+    "short": "[U' R' U' : [R D' R', U2]]",
+    "long": "U' R' U' R D' R' U2 R D R' U2 U R U"
+  },
+  "NT": {
+    "short": "[UD R : [U2, R D' R']]",
+    "long": "UD R U2 R D' R' U2 R D R' R' UD'"
+  },
+  "NU": {
+    "short": "[U' R' : [R' D R, U2]]",
+    "long": "U' R' R' D R U2 R' D' R U2 R U"
+  },
+  "NV": {
+    "short": "[U R' : [F2, R D' R' D]]",
+    "long": "U R' F2 R D' R' D F2 D' R D R' R U'"
+  },
+  "NW": {
+    "short": "[R' : [R2 D' R2' D R2, U]]",
+    "long": "R' R2 D' R2' D R2 U R2 D' R2 D R2 U' R"
+  },
+  "NX": {
+    "short": "[U'D R' : [R' D R, U2]]",
+    "long": "U'D R' R' D R U2 R' D' R U2 R U'D'"
+  },
+  "OA": {
+    "short": "[U : [R D R', U2]]",
+    "long": "U R D R' U2 R D' R' U2 U'"
+  },
+  "OB": {
+    "short": "[R D R', U']",
+    "long": "R D R' U' R D' R' U"
+  },
+  "OD": {
+    "short": "[U' : [U', R D R']]",
+    "long": "U' U' R D R' U R D' R' U"
+  },
+  "OE": {
+    "short": "[R D : [U, R D R']]",
+    "long": "R D U R D R' U' R D' R' D' R'"
+  },
+  "OF": {
+    "short": "[R' U : [R' D' R, U2]]",
+    "long": "R' U R' D' R U2 R' D R U2 U' R"
+  },
+  "OG": {
+    "short": "[UD' : [R U' R', D2]]",
+    "long": "UD' R U' R' D2 R U R' D2 UD"
+  },
+  "OH": {
+    "short": "[R D : [R' U' R, D2]]",
+    "long": "R D R' U' R D2 R' U R D2 D' R'"
+  },
+  "OI": {
+    "short": "[R D'U' : [R' D R, U2]]",
+    "long": "R D'U' R' D R U2 R' D' R U2 D'U R'"
+  },
+  "OK": {
+    "short": "[U : [D', R U' R']]",
+    "long": "U D' R U' R' D R U R' U'"
+  },
+  "OL": {
+    "short": "[R D : [R' U' R, D]]",
+    "long": "R D R' U' R D R' U R D' D' R'"
+  },
+  "ON": {
+    "short": "[U R U : [R' D' R, U2]]",
+    "long": "U R U R' D' R U2 R' D R U2 U' R' U'"
+  },
+  "OP": {
+    "short": "[R D' : [R' D R, U]]",
+    "long": "R D' R' D R U R' D' R U' D R'"
+  },
+  "OQ": {
+    "short": "[U' R U : [R' U' R, D]]",
+    "long": "U' R U R' U' R D R' U R D' U' R' U"
+  },
+  "OR": {
+    "short": "[R' U : [R' D' R, U]]",
+    "long": "R' U R' D' R U R' D R U' U' R"
+  },
+  "OS": {
+    "short": "[U' : [R' U' R, D']]",
+    "long": "U' R' U' R D' R' U R D U"
+  },
+  "OU": {
+    "short": "[U' R' : [R' D R, U]]",
+    "long": "U' R' R' D R U R' D' R U' R U"
+  },
+  "OV": {
+    "short": "[R U'D' R' : [R' D R, U2]]",
+    "long": "R U'D' R' R' D R U2 R' D' R U2 R U'D R'"
+  },
+  "OX": {
+    "short": "UD' R' D r2 U' R U r2' U'",
+    "long": "UD' R' D r2 U' R U r2' U'"
+  },
+  "PA": {
+    "short": "[U2, R' D' R]",
+    "long": "U2 R' D' R U2 R' D R"
+  },
+  "PB": {
+    "short": "[U, R' D' R]",
+    "long": "U R' D' R U' R' D R"
+  },
+  "PD": {
+    "short": "[U', R' D' R]",
+    "long": "U' R' D' R U R' D R"
+  },
+  "PE": {
+    "short": "[D' R U : [U, R' D R]]",
+    "long": "D' R U U R' D R U' R' D' R U' R' D"
+  },
+  "PF": {
+    "short": "[R' U' : [R U R', D']]",
+    "long": "R' U' R U R' D' R U' R' D U R"
+  },
+  "PG": {
+    "short": "[U' R' D' : [R U R', D2]]",
+    "long": "U' R' D' R U R' D2 R U' R' D2 D R U"
+  },
+  "PH": {
+    "short": "[R U R', D2]",
+    "long": "R U R' D2 R U' R' D2"
+  },
+  "PI": {
+    "short": "[l' : [U2, R' D' R]]",
+    "long": "l' U2 R' D' R U2 R' D R l"
+  },
+  "PL": {
+    "short": "[R U R', D]",
+    "long": "R U R' D R U' R' D'"
+  },
+  "PN": {
+    "short": "[R' : [R2 U R2' U' R2, D']]",
+    "long": "R' R2 U R2' U' R2 D' R2 U R2 U' R2 D R"
+  },
+  "PO": {
+    "short": "[R D' : [U, R' D R]]",
+    "long": "R D' U R' D R U' R' D' R D R'"
+  },
+  "PQ": {
+    "short": "[R' U : [R U' R', D']]",
+    "long": "R' U R U' R' D' R U R' D U' R"
+  },
+  "PR": {
+    "short": "[R' : [D, R' U R]]",
+    "long": "R' D R' U R D' R' U' R R"
+  },
+  "PS": {
+    "short": "[R B2 R', F']",
+    "long": "R B2 R' F' R B2 R' F"
+  },
+  "PT": {
+    "short": "[R U R', D']",
+    "long": "R U R' D' R U' R' D"
+  },
+  "PU": {
+    "short": "[R D : [U, R' D' R]]",
+    "long": "R D U R' D' R U' R' D R D' R'"
+  },
+  "PW": {
+    "short": "[D R U'D : [R' U R, D2]]",
+    "long": "D R U'D R' U R D2 R' U' R D2 U'D' R' D'"
+  },
+  "PX": {
+    "short": "[R : [R D' R', U']]",
+    "long": "R R D' R' U' R D R' U R'"
+  },
+  "QA": {
+    "short": "[R' U'D : [R D R', U2]]",
+    "long": "R' U'D R D R' U2 R D' R' U2 U'D' R"
+  },
+  "QD": {
+    "short": "[R' D' : [R' D R, U']]",
+    "long": "R' D' R' D R U' R' D' R U D R"
+  },
+  "QE": {
+    "short": "F' r U R' U' r' F R",
+    "long": "F' r U R' U' r' F R"
+  },
+  "QF": {
+    "short": "[R' F : [D, R U R']]",
+    "long": "R' F D R U R' D' R U' R' F' R"
+  },
+  "QG": {
+    "short": "[R' U : [D, R U' R']]",
+    "long": "R' U D R U' R' D' R U R' U' R"
+  },
+  "QH": {
+    "short": "[R, U' L U]",
+    "long": "R U' L U R' U' L' U"
+  },
+  "QI": {
+    "short": "[R U'D' : [R' D' R, U2]]",
+    "long": "R U'D' R' D' R U2 R' D R U2 U'D R'"
+  },
+  "QK": {
+    "short": "[D' R' U : [D, R U' R']]",
+    "long": "D' R' U D R U' R' D' R U R' U' R D"
+  },
+  "QL": {
+    "short": "[R' F : [D, R U' R']]",
+    "long": "R' F D R U' R' D' R U R' F' R"
+  },
+  "QO": {
+    "short": "[U' R U : [D, R' U' R]]",
+    "long": "U' R U D R' U' R D' R' U R U' R' U"
+  },
+  "QP": {
+    "short": "[R' U : [D', R U' R']]",
+    "long": "R' U D' R U' R' D R U R' U' R"
+  },
+  "QR": {
+    "short": "[R, U' L' U]",
+    "long": "R U' L' U R' U' L U"
+  },
+  "QS": {
+    "short": "[D R' U : [D, R U' R']]",
+    "long": "D R' U D R U' R' D' R U R' U' R D'"
+  },
+  "QT": {
+    "short": "[R U' : [R' U R, D]]",
+    "long": "R U' R' U R D R' U' R D' U R'"
+  },
+  "QU": {
+    "short": "[D' R U' : [R' U R, D']]",
+    "long": "D' R U' R' U R D' R' U' R D U R' D"
+  },
+  "QV": {
+    "short": "[U R' U' : [R U R', D']]",
+    "long": "U R' U' R U R' D' R U' R' D U R U'"
+  },
+  "QW": {
+    "short": "[D R U' : [R' U R, D']]",
+    "long": "D R U' R' U R D' R' U' R D U R' D'"
+  },
+  "QX": {
+    "short": "[R U' : [R' U R, D']]",
+    "long": "R U' R' U R D' R' U' R D U R'"
+  },
+  "RB": {
+    "short": "[R' : [U2, R' D' R]]",
+    "long": "R' U2 R' D' R U2 R' D R R"
+  },
+  "RD": {
+    "short": "[U' R' : [R' D' R, U']]",
+    "long": "U' R' R' D' R U' R' D R U R U"
+  },
+  "RF": {
+    "short": "[F, R B' R']",
+    "long": "F R B' R' F' R B R'"
+  },
+  "RG": {
+    "short": "[R B' R' : [U, R' D R]]",
+    "long": "R B' R' U R' D R U' R' D' R R B R'"
+  },
+  "RH": {
+    "short": "[U2 R : [U, R D' R']]",
+    "long": "U2 R U R D' R' U' R D R' R' U2"
+  },
+  "RI": {
+    "short": "[R U R' U'D : [R D R', U2]]",
+    "long": "R U R' U'D R D R' U2 R D' R' U2 U'D' R U' R'"
+  },
+  "RK": {
+    "short": "[l D' : [R' D R, U']]",
+    "long": "l D' R' D R U' R' D' R U D l'"
+  },
+  "RL": {
+    "short": "[D R' : [R' U R, D]]",
+    "long": "D R' R' U R D R' U' R D' R D'"
+  },
+  "RN": {
+    "short": "[U R : [R D R', U2]]",
+    "long": "U R R D R' U2 R D' R' U2 R' U'"
+  },
+  "RO": {
+    "short": "[R' U : [U, R' D' R]]",
+    "long": "R' U U R' D' R U' R' D R U' R"
+  },
+  "RP": {
+    "short": "[R' : [R' U R, D]]",
+    "long": "R' R' U R D R' U' R D' R"
+  },
+  "RQ": {
+    "short": "[U' L' U, R]",
+    "long": "U' L' U R U' L U R'"
+  },
+  "RS": {
+    "short": "[R' D' : [R' U R, D2]]",
+    "long": "R' D' R' U R D2 R' U' R D2 D R"
+  },
+  "RT": {
+    "short": "[R2 U : [R D R', U2]]",
+    "long": "R2 U R D R' U2 R D' R' U2 U' R2"
+  },
+  "RU": {
+    "short": "[U' R' : [R' D R, U']]",
+    "long": "U' R' R' D R U' R' D' R U R U"
+  },
+  "RV": {
+    "short": "[U'D' R' : [R' D R, U']]",
+    "long": "U'D' R' R' D R U' R' D' R U R U'D"
+  },
+  "RW": {
+    "short": "[R' : [U' L' U, R2]]",
+    "long": "R' U' L' U R2 U' L U R2 R"
+  },
+  "RX": {
+    "short": "[U'D R' : [R' D R, U']]",
+    "long": "U'D R' R' D R U' R' D' R U R U'D'"
+  },
+  "SA": {
+    "short": "[UD' : [R D R', U2]]",
+    "long": "UD' R D R' U2 R D' R' U2 UD"
+  },
+  "SB": {
+    "short": "[D' : [R D R', U']]",
+    "long": "D' R D R' U' R D' R' U D"
+  },
+  "SD": {
+    "short": "[D : [U', R' D R]]",
+    "long": "D U' R' D R U R' D' R D'"
+  },
+  "SE": {
+    "short": "[UD R' : [R' D R, U']]",
+    "long": "UD R' R' D R U' R' D' R U R UD'"
+  },
+  "SF": {
+    "short": "[F, R B2 R']",
+    "long": "F R B2 R' F' R B2 R'"
+  },
+  "SG": {
+    "short": "[UD : [D, R U' R']]",
+    "long": "UD D R U' R' D' R U R' UD'"
+  },
+  "SI": {
+    "short": "[D2 R' : [F2, R D' R' D]]",
+    "long": "D2 R' F2 R D' R' D F2 D' R D R' R D2"
+  },
+  "SK": {
+    "short": "[U'D' : [R' U' R, D2]]",
+    "long": "U'D' R' U' R D2 R' U R D2 U'D"
+  },
+  "SL": {
+    "short": "[D' R D : [R' U' R, D2]]",
+    "long": "D' R D R' U' R D2 R' U R D2 D' R' D"
+  },
+  "SN": {
+    "short": "[U' R' U : [R D' R', U2]]",
+    "long": "U' R' U R D' R' U2 R D R' U2 U' R U"
+  },
+  "SO": {
+    "short": "[U' : [D', R' U' R]]",
+    "long": "U' D' R' U' R D R' U R U"
+  },
+  "SP": {
+    "short": "[U' R' D' : [D', R U R']]",
+    "long": "U' R' D' D' R U R' D R U' R' D R U"
+  },
+  "SQ": {
+    "short": "[D R' U : [R U' R', D]]",
+    "long": "D R' U R U' R' D R U R' D' U' R D'"
+  },
+  "SR": {
+    "short": "[R' D : [R' U R, D2]]",
+    "long": "R' D R' U R D2 R' U' R D2 D' R"
+  },
+  "ST": {
+    "short": "[U' : [R', U' L U]]",
+    "long": "U' R' U' L U R U' L' U U"
+  },
+  "SU": {
+    "short": "[l U'D' : [R D R', U2]]",
+    "long": "l U'D' R D R' U2 R D' R' U2 U'D l'"
+  },
+  "SV": {
+    "short": "[U'D' R' : [R' D R, U]]",
+    "long": "U'D' R' R' D R U R' D' R U' R U'D"
+  },
+  "SW": {
+    "short": "[U R : [D2, R U' R']]",
+    "long": "U R D2 R U' R' D2 R U R' R' U'"
+  },
+  "TA": {
+    "short": "[UD : [R D' R', U2]]",
+    "long": "UD R D' R' U2 R D R' U2 UD'"
+  },
+  "TB": {
+    "short": "[D : [R D' R', U']]",
+    "long": "D R D' R' U' R D R' U D'"
+  },
+  "TD": {
+    "short": "[D' : [U', R' D' R]]",
+    "long": "D' U' R' D' R U R' D R D"
+  },
+  "TE": {
+    "short": "[R U : [U, R' D' R]]",
+    "long": "R U U R' D' R U' R' D R U' R'"
+  },
+  "TF": {
+    "short": "[F : [R U R', D']]",
+    "long": "F R U R' D' R U' R' D F'"
+  },
+  "TG": {
+    "short": "[R' U' : [D, R U2 R']]",
+    "long": "R' U' D R U2 R' D' R U2 R' U R"
+  },
+  "TH": {
+    "short": "[D' : [R U R', D']]",
+    "long": "D' R U R' D' R U' R' D D"
+  },
+  "TI": {
+    "short": "[R U' : [R' D' R, U2]]",
+    "long": "R U' R' D' R U2 R' D R U2 U R'"
+  },
+  "TK": {
+    "short": "[D R D' : [R' U' R, D2]]",
+    "long": "D R D' R' U' R D2 R' U R D2 D R' D'"
+  },
+  "TL": {
+    "short": "[D' : [R U R', D2]]",
+    "long": "D' R U R' D2 R U' R' D2 D"
+  },
+  "TN": {
+    "short": "[UD R : [R D' R', U2]]",
+    "long": "UD R R D' R' U2 R D R' U2 R' UD'"
+  },
+  "TP": {
+    "short": "[D', R U R']",
+    "long": "D' R U R' D R U' R'"
+  },
+  "TQ": {
+    "short": "[R U' : [D, R' U R]]",
+    "long": "R U' D R' U R D' R' U' R U R'"
+  },
+  "TR": {
+    "short": "[R2 U' : [R D R', U2]]",
+    "long": "R2 U' R D R' U2 R D' R' U2 U R2"
+  },
+  "TS": {
+    "short": "[U' : [U' L U, R']]",
+    "long": "U' U' L U R' U' L' U R U"
+  },
+  "TU": {
+    "short": "[D' R : [R D' R', U']]",
+    "long": "D' R R D' R' U' R D R' U R' D"
+  },
+  "TV": {
+    "short": "[D' R D : [U, R' D' R]]",
+    "long": "D' R D U R' D' R U' R' D R D' R' D"
+  },
+  "TX": {
+    "short": "[R U'D : [R' U R, D2]]",
+    "long": "R U'D R' U R D2 R' U' R D2 U'D' R'"
+  },
+  "UA": {
+    "short": "[R F' R' U : [R D R', U2]]",
+    "long": "R F' R' U R D R' U2 R D' R' U2 U' R F R'"
+  },
+  "UB": {
+    "short": "[R F' : [D, R' U' R]]",
+    "long": "R F' D R' U' R D' R' U R F R'"
+  },
+  "UD": {
+    "short": "[U' R F' : [R' U' R, D]]",
+    "long": "U' R F' R' U' R D R' U R D' F R' U"
+  },
+  "UE": {
+    "short": "[R : [U, R D2 R']]",
+    "long": "R U R D2 R' U' R D2 R' R'"
+  },
+  "UF": {
+    "short": "[U' R' U : [D, R U' R']]",
+    "long": "U' R' U D R U' R' D' R U R' U' R U"
+  },
+  "UH": {
+    "short": "[D' R D'U' : [R' U R, D2]]",
+    "long": "D' R D'U' R' U R D2 R' U' R D2 D'U R' D"
+  },
+  "UI": {
+    "short": "[R U'D : [R' D' R, U2]]",
+    "long": "R U'D R' D' R U2 R' D R U2 U'D' R'"
+  },
+  "UK": {
+    "short": "[R : [F2, R' U R U']]",
+    "long": "R F2 R' U R U' F2 U R' U' R R'"
+  },
+  "UN": {
+    "short": "[U' R' : [U2, R' D R]]",
+    "long": "U' R' U2 R' D R U2 R' D' R R U"
+  },
+  "UO": {
+    "short": "[U' R' : [U, R' D R]]",
+    "long": "U' R' U R' D R U' R' D' R R U"
+  },
+  "UP": {
+    "short": "[R D : [R' D' R, U]]",
+    "long": "R D R' D' R U R' D R U' D' R'"
+  },
+  "UQ": {
+    "short": "[D' R U' : [D', R' U R]]",
+    "long": "D' R U' D' R' U R D R' U' R U R' D"
+  },
+  "UR": {
+    "short": "[U' R' : [U', R' D R]]",
+    "long": "U' R' U' R' D R U R' D' R R U"
+  },
+  "US": {
+    "short": "[l UD' : [R D R', U2]]",
+    "long": "l UD' R D R' U2 R D' R' U2 UD l'"
+  },
+  "UT": {
+    "short": "[D' R : [U', R D' R']]",
+    "long": "D' R U' R D' R' U R D R' R' D"
+  },
+  "UV": {
+    "short": "[U' R' F' : [R U' R', D']]",
+    "long": "U' R' F' R U' R' D' R U R' D F R U"
+  },
+  "UW": {
+    "short": "[R2, U' R2 D R2 U]",
+    "long": "R2 U' R2 D R2 U R2 U' R2 D' R2 U"
+  },
+  "UX": {
+    "short": "[R U' D' : [D', R' U R]]",
+    "long": "R U' D' D' R' U R D R' U' R D U R'"
+  },
+  "VA": {
+    "short": "[R2 : [R2' D R2 D' R2', U]]",
+    "long": "R2 R2' D R2 D' R2' U R2 D R2 D' R2 U' R2"
+  },
+  "VB": {
+    "short": "[U' R' D R : [U, R D' R']]",
+    "long": "U' R' D R U R D' R' U' R D R' R' D' R U"
+  },
+  "VD": {
+    "short": "[D R D' R' : [U', R' D R]]",
+    "long": "D R D' R' U' R' D R U R' D' R R D R' D'"
+  },
+  "VE": {
+    "short": "[D' R : [U, R D2 R']]",
+    "long": "D' R U R D2 R' U' R D2 R' R' D"
+  },
+  "VF": {
+    "short": "[R' F2 : [D', R U' R']]",
+    "long": "R' F2 D' R U' R' D R U R' F2 R"
+  },
+  "VG": {
+    "short": "[UD R D' : [R' D R, U']]",
+    "long": "UD R D' R' D R U' R' D' R U D R' UD'"
+  },
+  "VH": {
+    "short": "[D2 R : [U', R D' R']]",
+    "long": "D2 R U' R D' R' U R D R' R' D2"
+  },
+  "VI": {
+    "short": "[D' R U'D : [R' D' R, U2]]",
+    "long": "D' R U'D R' D' R U2 R' D R U2 U'D' R' D"
+  },
+  "VL": {
+    "short": "[R U' R' : [U2, R' D R]]",
+    "long": "R U' R' U2 R' D R U2 R' D' R R U R'"
+  },
+  "VN": {
+    "short": "[U R' : [R D' R' D, F2]]",
+    "long": "U R' R D' R' D F2 D' R D R' F2 R U'"
+  },
+  "VO": {
+    "short": "[R U'D' R' : [U2, R' D R]]",
+    "long": "R U'D' R' U2 R' D R U2 R' D' R R U'D R'"
+  },
+  "VQ": {
+    "short": "[U R' U' : [D', R U R']]",
+    "long": "U R' U' D' R U R' D R U' R' U R U'"
+  },
+  "VR": {
+    "short": "[U'D' R' : [U', R' D R]]",
+    "long": "U'D' R' U' R' D R U R' D' R R U'D"
+  },
+  "VS": {
+    "short": "[U'D' R' : [U, R' D R]]",
+    "long": "U'D' R' U R' D R U' R' D' R R U'D"
+  },
+  "VT": {
+    "short": "[D' R D : [R' D' R, U]]",
+    "long": "D' R D R' D' R U R' D R U' D' R' D"
+  },
+  "VU": {
+    "short": "[U' R' F' : [D', R U' R']]",
+    "long": "U' R' F' D' R U' R' D R U R' F R U"
+  },
+  "VW": {
+    "short": "[F' R U' : [R' D' R, U2]]",
+    "long": "F' R U' R' D' R U2 R' D R U2 U R' F"
+  },
+  "VX": {
+    "short": "[R U' R' U : [R D' R', U2]]",
+    "long": "R U' R' U R D' R' U2 R D R' U2 U' R U R'"
+  },
+  "WA": {
+    "short": "[R D' R' : [U2, R' D R]]",
+    "long": "R D' R' U2 R' D R U2 R' D' R R D R'"
+  },
+  "WB": {
+    "short": "[U R D' R' : [R' D R, U']]",
+    "long": "U R D' R' R' D R U' R' D' R U R D R' U'"
+  },
+  "WD": {
+    "short": "[R D' R' : [U', R' D R]]",
+    "long": "R D' R' U' R' D R U R' D' R R D R'"
+  },
+  "WE": {
+    "short": "[D R : [U, R D' R']]",
+    "long": "D R U R D' R' U' R D R' R' D'"
+  },
+  "WF": {
+    "short": "[R U' R' : [R' U R, D]]",
+    "long": "R U' R' R' U R D R' U' R D' R U R'"
+  },
+  "WG": {
+    "short": "[U R : [R U' R', D]]",
+    "long": "U R R U' R' D R U R' D' R' U'"
+  },
+  "WH": {
+    "short": "[R D' R' : [U, R' D R]]",
+    "long": "R D' R' U R' D R U' R' D' R R D R'"
+  },
+  "WI": {
+    "short": "[D R : [U2, R D' R']]",
+    "long": "D R U2 R D' R' U2 R D R' R' D'"
+  },
+  "WK": {
+    "short": "[U R D' : [R' D R, U']]",
+    "long": "U R D' R' D R U' R' D' R U D R' U'"
+  },
+  "WL": {
+    "short": "[D R : [U', R D' R']]",
+    "long": "D R U' R D' R' U R D R' R' D'"
+  },
+  "WN": {
+    "short": "[R' : [U, R2 D' R2' D R2]]",
+    "long": "R' U R2 D' R2' D R2 U' R2 D' R2 D R2 R"
+  },
+  "WP": {
+    "short": "[D' L' U : [U' L U L', F2]]",
+    "long": "D' L' U U' L U L' F2 L U' L' U F2 U' L D"
+  },
+  "WQ": {
+    "short": "[D R U' : [D', R' U R]]",
+    "long": "D R U' D' R' U R D R' U' R U R' D'"
+  },
+  "WR": {
+    "short": "[R : [U' L' U, R2]]",
+    "long": "R U' L' U R2 U' L U R2 R'"
+  },
+  "WS": {
+    "short": "[U R : [R U' R', D2]]",
+    "long": "U R R U' R' D2 R U R' D2 R' U'"
+  },
+  "WU": {
+    "short": "[U' R2 D R2 U, R2]",
+    "long": "U' R2 D R2 U R2 U' R2 D' R2 U R2"
+  },
+  "WV": {
+    "short": "[F' R U : [R' D' R, U2]]",
+    "long": "F' R U R' D' R U2 R' D R U2 U' R' F"
+  },
+  "WX": {
+    "short": "[R U' R' : [R' U R, D']]",
+    "long": "R U' R' R' U R D' R' U' R D R U R'"
+  },
+  "XA": {
+    "short": "[R' U'D' R : [D, R U' R']]",
+    "long": "R' U'D' R D R U' R' D' R U R' R' U'D R"
+  },
+  "XB": {
+    "short": "[R' B : [R U R', D']]",
+    "long": "R' B R U R' D' R U' R' D B' R"
+  },
+  "XD": {
+    "short": "[R' D' R : [D, R U' R']]",
+    "long": "R' D' R D R U' R' D' R U R' R' D R"
+  },
+  "XE": {
+    "short": "[R : [U, R D' R']]",
+    "long": "R U R D' R' U' R D R' R'"
+  },
+  "XF": {
+    "short": "[F R : [R D' R', U']]",
+    "long": "F R R D' R' U' R D R' U R' F'"
+  },
+  "XG": {
+    "short": "[D R : [F2, R' U R U']]",
+    "long": "D R F2 R' U R U' F2 U R' U' R R' D'"
+  },
+  "XI": {
+    "short": "[R : [U2, R D' R']]",
+    "long": "R U2 R D' R' U2 R D R' R'"
+  },
+  "XK": {
+    "short": "R U r2' D' R' D r2 U'",
+    "long": "R U r2' D' R' D r2 U'"
+  },
+  "XL": {
+    "short": "[D R D : [R' D' R, U]]",
+    "long": "D R D R' D' R U R' D R U' D' R' D'"
+  },
+  "XN": {
+    "short": "[U'D R' : [U2, R' D R]]",
+    "long": "U'D R' U2 R' D R U2 R' D' R R U'D'"
+  },
+  "XO": {
+    "short": "U r2 U' R' U r2' D' R DU'",
+    "long": "U r2 U' R' U r2' D' R DU'"
+  },
+  "XP": {
+    "short": "[R : [U', R D' R']]",
+    "long": "R U' R D' R' U R D R' R'"
+  },
+  "XQ": {
+    "short": "[R U' : [D', R' U R]]",
+    "long": "R U' D' R' U R D R' U' R U R'"
+  },
+  "XR": {
+    "short": "[U'D R' : [U', R' D R]]",
+    "long": "U'D R' U' R' D R U R' D' R R U'D'"
+  },
+  "XT": {
+    "short": "[R U'D' : [R' U R, D2]]",
+    "long": "R U'D' R' U R D2 R' U' R D2 U'D R'"
+  },
+  "XU": {
+    "short": "[R U' D' : [R' U R, D']]",
+    "long": "R U' D' R' U R D' R' U' R D D U R'"
+  },
+  "XV": {
+    "short": "[R U' R' U' : [R D' R', U2]]",
+    "long": "R U' R' U' R D' R' U2 R D R' U2 U R U R'"
+  },
+  "XW": {
+    "short": "[R U' R' : [D', R' U R]]",
+    "long": "R U' R' D' R' U R D R' U' R R U R'"
+  }
+};
+
