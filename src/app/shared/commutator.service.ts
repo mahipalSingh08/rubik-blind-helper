@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core';
 import { DEFAULT_EDGES, DEFAULT_CORNERS, DEFAULT_SPECIAL, AlgDef } from './default-algs';
 
+export interface BaseAlg {
+  id: string;
+  type: 'edge' | 'corner';
+  name: string;
+  alg: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -8,6 +15,7 @@ export class CommutatorService {
   private edgeCommutators: Record<string, AlgDef> = {};
   private cornerCommutators: Record<string, AlgDef> = {};
   private specialCommutators: Record<string, AlgDef> = {};
+  private baseAlgs: BaseAlg[] = [];
 
   constructor() {
     this.loadData();
@@ -64,6 +72,26 @@ export class CommutatorService {
         }
       } catch (e) {}
     }
+
+    const baseSaved = localStorage.getItem('baseAlgs');
+    if (baseSaved) {
+      try {
+        this.baseAlgs = JSON.parse(baseSaved);
+      } catch (e) {
+        this.baseAlgs = [];
+      }
+    } else {
+      // Default Base Algos
+      this.baseAlgs = [
+        { id: 'def1', type: 'corner', name: 'AB (anti clock)', alg: "R2 B2 R F R' B2 R F' R" },
+        { id: 'def2', type: 'corner', name: 'AA (clock)', alg: "R' F R' B2 R F' R' B2 R2" },
+        { id: 'def3', type: 'corner', name: 'AP', alg: "R' D' R U2 R' D R U2" },
+        { id: 'def4', type: 'corner', name: 'AG', alg: "R' D R U2 R' D' R U2" },
+        { id: 'def5', type: 'edge', name: 'UA', alg: "R U' R U R U R U' R' U' R2" },
+        { id: 'def6', type: 'edge', name: 'UB', alg: "L' U L' U' L' U' L' U L U L2" }
+      ];
+      this.saveBaseAlgs();
+    }
   }
 
   saveData() {
@@ -105,5 +133,30 @@ export class CommutatorService {
 
   getAllCornerPairs(): string[] {
     return Object.keys(this.cornerCommutators);
+  }
+
+  // --- Base Algos ---
+  getBaseAlgs(): BaseAlg[] {
+    return this.baseAlgs;
+  }
+
+  addBaseAlg(type: 'edge' | 'corner', name: string, alg: string) {
+    const newBase: BaseAlg = {
+      id: Date.now().toString() + Math.random().toString(36).substring(2, 9),
+      type,
+      name,
+      alg
+    };
+    this.baseAlgs.push(newBase);
+    this.saveBaseAlgs();
+  }
+
+  removeBaseAlg(id: string) {
+    this.baseAlgs = this.baseAlgs.filter(b => b.id !== id);
+    this.saveBaseAlgs();
+  }
+
+  private saveBaseAlgs() {
+    localStorage.setItem('baseAlgs', JSON.stringify(this.baseAlgs));
   }
 }

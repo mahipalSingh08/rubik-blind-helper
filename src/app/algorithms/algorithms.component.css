@@ -277,3 +277,116 @@
 .pair-word { font-size: 1rem; font-weight: 600; color: var(--text); text-align: center; word-break: break-word; }
 .pair-word.no-alg { color: var(--muted); font-style: italic; font-weight: normal; }
 .empty-state { text-align: center; color: var(--text-muted); font-style: italic; margin-top: 20px; }
+
+/* Base Algos Styles */
+.base-algos-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.base-alg-form {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+
+.base-alg-form h3 {
+  margin-top: 0;
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.base-input {
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.name-input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.alg-input {
+  flex: 2;
+  font-family: 'Fira Code', monospace;
+  min-width: 200px;
+}
+
+.base-lists-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.base-list {
+  flex: 1;
+  min-width: 300px;
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+.base-list h3 {
+  margin-top: 0;
+  color: var(--accent2);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.base-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.base-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.base-card-content strong {
+  color: var(--primary-light);
+  font-size: 1.1rem;
+}
+
+.base-alg-text {
+  font-family: 'Fira Code', monospace;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  color: #ff5252;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background: rgba(255, 82, 82, 0.1);
+}

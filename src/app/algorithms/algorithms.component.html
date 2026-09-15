@@ -22,15 +22,21 @@
         class="btn btn-outline">
         Special Cases
       </button>
+      <button 
+        [class.active]="pieceType === 'base'" 
+        (click)="selectBaseCategory()"
+        class="btn btn-outline">
+        Base Algos
+      </button>
     </div>
 
-    <div class="special-buttons" *ngIf="pieceType === 'special'" style="display: flex; gap: 10px; justify-content: center; margin-bottom: 20px;">
+    <div class="special-buttons" *ngIf="pieceType === 'special'" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px;">
       <button class="btn btn-outline" [class.active]="searchPair === 'PARITY'" (click)="selectSpecial('PARITY')">Parity</button>
       <button class="btn btn-outline" [class.active]="searchPair === 'EDGE_FLIPS'" (click)="selectSpecial('EDGE_FLIPS')">Edge Flips</button>
       <button class="btn btn-outline" [class.active]="searchPair === 'CORNER_TWISTS'" (click)="selectSpecial('CORNER_TWISTS')">Corner Twists</button>
     </div>
 
-    <div class="search-container" *ngIf="pieceType !== 'special'">
+    <div class="search-container" *ngIf="pieceType !== 'special' && pieceType !== 'base'">
       <input 
         type="text" 
         class="search-input"
@@ -67,15 +73,56 @@
       </div>
     </div>
     
-    <div *ngIf="pieceType !== 'special' && searchPair.length !== 2" style="color: var(--muted); margin-top: 10px; margin-bottom: 20px;">
+    <div *ngIf="pieceType !== 'special' && pieceType !== 'base' && searchPair.length !== 2" style="color: var(--muted); margin-top: 10px; margin-bottom: 20px;">
       Type a letter pair to view or edit its commutator.
     </div>
     <div *ngIf="pieceType === 'special' && searchPair.length === 0" style="color: var(--muted); margin-top: 10px; margin-bottom: 20px;">
       Select a special case to view or edit its algorithm.
     </div>
 
+    <!-- Base Algos Section -->
+    <div class="base-algos-section" *ngIf="pieceType === 'base'">
+      
+      <div class="base-alg-form">
+        <h3>Add New Base Alg</h3>
+        <div class="form-row">
+          <select class="base-input" [(ngModel)]="newBaseType">
+            <option value="corner">Corner</option>
+            <option value="edge">Edge</option>
+          </select>
+          <input type="text" class="base-input name-input" placeholder="Name (e.g. AB anti clock)" [(ngModel)]="newBaseName">
+          <input type="text" class="base-input alg-input" placeholder="Algorithm" [(ngModel)]="newBaseAlgText">
+          <button class="btn btn-save" (click)="submitBaseAlg()">Add</button>
+        </div>
+      </div>
+
+      <div class="base-lists-container">
+        <div class="base-list">
+          <h3>Base Corner Algos</h3>
+          <div class="base-card" *ngFor="let b of baseCornerAlgs">
+            <div class="base-card-content">
+              <strong>{{ b.name }}</strong>
+              <span class="base-alg-text">{{ b.alg }}</span>
+            </div>
+          </div>
+          <div class="empty-state" *ngIf="baseCornerAlgs.length === 0">No corner base algs added.</div>
+        </div>
+        
+        <div class="base-list">
+          <h3>Base Edge Algos</h3>
+          <div class="base-card" *ngFor="let b of baseEdgeAlgs">
+            <div class="base-card-content">
+              <strong>{{ b.name }}</strong>
+              <span class="base-alg-text">{{ b.alg }}</span>
+            </div>
+          </div>
+          <div class="empty-state" *ngIf="baseEdgeAlgs.length === 0">No edge base algs added.</div>
+        </div>
+      </div>
+    </div>
+
     <!-- Letter Picker -->
-    <div class="letter-picker" *ngIf="pieceType !== 'special'">
+    <div class="letter-picker" *ngIf="pieceType !== 'special' && pieceType !== 'base'">
       <div class="letter-btn" 
            *ngFor="let letter of letters" 
            [class.active]="selectedLetter === letter"
@@ -85,7 +132,7 @@
     </div>
 
     <!-- Pair Grid for Selected Letter -->
-    <div class="pair-grid-container" *ngIf="selectedLetter && pieceType !== 'special'">
+    <div class="pair-grid-container" *ngIf="selectedLetter && pieceType !== 'special' && pieceType !== 'base'">
       <h2>Pairs containing '{{ selectedLetter }}'</h2>
       <div class="pair-grid">
         <div class="pair-card" 

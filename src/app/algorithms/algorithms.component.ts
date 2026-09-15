@@ -12,7 +12,7 @@ import { CommutatorService } from '../shared/commutator.service';
 })
 export class AlgorithmsComponent implements OnInit {
   searchPair: string = '';
-  pieceType: 'edges' | 'corners' | 'special' = 'edges';
+  pieceType: 'edges' | 'corners' | 'special' | 'base' = 'edges';
   currentAlgShort: string = '';
   currentAlgLong: string = '';
   isEditing: boolean = false;
@@ -23,7 +23,12 @@ export class AlgorithmsComponent implements OnInit {
   selectedLetter: string | null = null;
   filteredPairs: { pair: string, short: string, long: string }[] = [];
 
-  constructor(private commutatorService: CommutatorService) {}
+  // Base Algos state
+  newBaseType: 'edge' | 'corner' = 'corner';
+  newBaseName: string = '';
+  newBaseAlgText: string = '';
+
+  constructor(public commutatorService: CommutatorService) {}
 
   ngOnInit() {
     const savedState = localStorage.getItem('alg-search-state');
@@ -167,6 +172,15 @@ export class AlgorithmsComponent implements OnInit {
     this.saveState();
   }
 
+  selectBaseCategory() {
+    this.pieceType = 'base';
+    this.searchPair = '';
+    this.currentAlgShort = '';
+    this.currentAlgLong = '';
+    this.isEditing = false;
+    this.saveState();
+  }
+
   selectSpecial(type: string) {
     this.pieceType = 'special';
     this.searchPair = type;
@@ -194,5 +208,25 @@ export class AlgorithmsComponent implements OnInit {
 
   cancelEdit() {
     this.isEditing = false;
+  }
+
+  // --- Base Algos methods ---
+  get baseCornerAlgs() {
+    return this.commutatorService.getBaseAlgs().filter(a => a.type === 'corner');
+  }
+
+  get baseEdgeAlgs() {
+    return this.commutatorService.getBaseAlgs().filter(a => a.type === 'edge');
+  }
+
+  submitBaseAlg() {
+    if (!this.newBaseName.trim() || !this.newBaseAlgText.trim()) return;
+    this.commutatorService.addBaseAlg(this.newBaseType, this.newBaseName.trim(), this.newBaseAlgText.trim());
+    this.newBaseName = '';
+    this.newBaseAlgText = '';
+  }
+
+  deleteBaseAlg(id: string) {
+    this.commutatorService.removeBaseAlg(id);
   }
 }
