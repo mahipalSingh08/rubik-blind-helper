@@ -12,6 +12,7 @@
       <input 
         type="text" 
         [(ngModel)]="searchPair" 
+        (keyup.enter)="addAlg()"
         maxlength="2" 
         placeholder="Pair (e.g. AU)"
         style="text-transform: uppercase;">

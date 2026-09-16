@@ -77,18 +77,45 @@ export class CommutatorService {
     if (baseSaved) {
       try {
         this.baseAlgs = JSON.parse(baseSaved);
+        // Inject any missing defaults
+        const newDefaults = [
+          { id: 'def1', type: 'corner' as const, name: 'AB (anti clock)', alg: "R2 B2 R F R' B2 R F' R" },
+          { id: 'def2', type: 'corner' as const, name: 'AA (clock)', alg: "R' F R' B2 R F' R' B2 R2" },
+          { id: 'def3', type: 'corner' as const, name: 'AP', alg: "R' D' R U2 R' D R U2" },
+          { id: 'def4', type: 'corner' as const, name: 'AG', alg: "R' D R U2 R' D' R U2" },
+          { id: 'def5', type: 'edge' as const, name: 'UA', alg: "M2 U M U2 M' U M2" },
+          { id: 'def6', type: 'edge' as const, name: 'UB', alg: "M2 U' M U2 M' U' M2" },
+          { id: 'def7', type: 'edge' as const, name: 'WU', alg: "M u2 M u2" },
+          { id: 'def8', type: 'edge' as const, name: 'UW', alg: "u2 M u2 M" }
+        ];
+        let changed = false;
+        for (const def of newDefaults) {
+          const existing = this.baseAlgs.find(b => b.name === def.name);
+          if (!existing) {
+            this.baseAlgs.push(def);
+            changed = true;
+          } else if (existing.alg !== def.alg) {
+            existing.alg = def.alg;
+            changed = true;
+          }
+        }
+        if (changed) this.saveBaseAlgs();
       } catch (e) {
         this.baseAlgs = [];
       }
-    } else {
+    }
+    
+    if (!baseSaved || this.baseAlgs.length === 0) {
       // Default Base Algos
       this.baseAlgs = [
         { id: 'def1', type: 'corner', name: 'AB (anti clock)', alg: "R2 B2 R F R' B2 R F' R" },
         { id: 'def2', type: 'corner', name: 'AA (clock)', alg: "R' F R' B2 R F' R' B2 R2" },
         { id: 'def3', type: 'corner', name: 'AP', alg: "R' D' R U2 R' D R U2" },
         { id: 'def4', type: 'corner', name: 'AG', alg: "R' D R U2 R' D' R U2" },
-        { id: 'def5', type: 'edge', name: 'UA', alg: "R U' R U R U R U' R' U' R2" },
-        { id: 'def6', type: 'edge', name: 'UB', alg: "L' U L' U' L' U' L' U L U L2" }
+        { id: 'def5', type: 'edge', name: 'UA', alg: "M2 U M U2 M' U M2" },
+        { id: 'def6', type: 'edge', name: 'UB', alg: "M2 U' M U2 M' U' M2" },
+        { id: 'def7', type: 'edge', name: 'WU', alg: "M u2 M u2" },
+        { id: 'def8', type: 'edge', name: 'UW', alg: "u2 M u2 M" }
       ];
       this.saveBaseAlgs();
     }
