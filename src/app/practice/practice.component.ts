@@ -25,6 +25,7 @@ export class PracticeComponent implements OnInit {
   practiceMode: 'both' | 'edges' | 'corners' = 'both';
   moveSet: 'standard' | 'mu' | 'ru' | 'ruf' = 'standard';
   grayOutUnused: boolean = true;
+  userSolution: string = '';
 
   engine!: CubeEngine;
   
@@ -65,6 +66,8 @@ export class PracticeComponent implements OnInit {
     if (savedMoves) this.moveSet = savedMoves as any;
     const savedGray = localStorage.getItem('practiceGrayOut');
     if (savedGray !== null) this.grayOutUnused = savedGray === 'true';
+    const savedSolution = localStorage.getItem('practiceUserSolution');
+    if (savedSolution !== null) this.userSolution = savedSolution;
   }
 
   saveSettings() {
@@ -72,6 +75,10 @@ export class PracticeComponent implements OnInit {
     localStorage.setItem('practiceMoveSet', this.moveSet);
     localStorage.setItem('practiceGrayOut', this.grayOutUnused.toString());
     this.retrace(); // retrace updates UI immediately
+  }
+  
+  saveUserSolution() {
+    localStorage.setItem('practiceUserSolution', this.userSolution);
   }
 
   private toPairs(letters: string[]): string[] {
@@ -135,6 +142,8 @@ export class PracticeComponent implements OnInit {
   generate() {
     const newScramble = CubeEngine.generateScramble(this.moveSet);
     localStorage.setItem('practiceScramble', newScramble);
+    this.userSolution = '';
+    this.saveUserSolution();
     this.loadScramble(newScramble);
   }
 
