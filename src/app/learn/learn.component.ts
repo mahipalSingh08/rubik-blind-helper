@@ -137,4 +137,8 @@ export class LearnComponent implements OnInit {
   removeAlg(id: string) {
     this.learnService.removeAlg(id);
   }
+
+  moveAlg(id: string, direction: -1 | 1) {
+    this.learnService.moveAlg(id, direction, this.filterType);
+  }
 }

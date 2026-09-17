@@ -94,4 +94,11 @@
 }
 .remove-btn:hover { color: #ff6b6b; background: rgba(255,107,107,0.1); }
 
+.reorder-btn {
+  background: transparent; border: none; font-size: 1.1rem; cursor: pointer; padding: 4px;
+  border-radius: 4px; transition: transform 0.1s ease, background 0.2s ease;
+  filter: grayscale(1);
+}
+.reorder-btn:hover { background: rgba(255,255,255,0.1); filter: grayscale(0); transform: scale(1.1); }
+
 .empty-state { color: var(--muted); font-style: italic; text-align: center; margin-top: 40px; }

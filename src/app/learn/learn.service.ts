@@ -62,4 +62,31 @@ export class LearnService {
     this.algs = this.algs.filter(a => a.id !== id);
     this.saveAlgs();
   }
+
+  moveAlg(id: string, direction: -1 | 1, filterType: 'all' | 'edges' | 'corners' = 'all') {
+    const index = this.algs.findIndex(a => a.id === id);
+    if (index === -1) return;
+
+    let swapIndex = -1;
+    if (filterType === 'all') {
+      swapIndex = index + direction;
+    } else {
+      if (direction === -1) {
+        for (let i = index - 1; i >= 0; i--) {
+          if (this.algs[i].type === filterType) { swapIndex = i; break; }
+        }
+      } else {
+        for (let i = index + 1; i < this.algs.length; i++) {
+          if (this.algs[i].type === filterType) { swapIndex = i; break; }
+        }
+      }
+    }
+
+    if (swapIndex >= 0 && swapIndex < this.algs.length) {
+      const temp = this.algs[index];
+      this.algs[index] = this.algs[swapIndex];
+      this.algs[swapIndex] = temp;
+      this.saveAlgs();
+    }
+  }
 }
