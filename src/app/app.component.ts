@@ -10,4 +10,13 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class AppComponent {
   title = 'bld-tools';
+  isMobileMenuOpen = false;
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+  
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
 }

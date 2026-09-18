@@ -27,3 +27,17 @@ p.subtitle {
   margin-bottom: 24px;
   font-size: 0.95rem;
 }
+
+/* Global Mobile Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  p.subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+  }
+}

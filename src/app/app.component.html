@@ -1,15 +1,20 @@
 <nav class="top-nav">
   <div class="nav-brand">BLD Tools</div>
-  <div class="nav-links">
-    <a routerLink="/word-association" routerLinkActive="active">Word Dictionary</a>
-    <a routerLink="/memo-generator" routerLinkActive="active">Memo Gen</a>
-    <a routerLink="/cube-visualizer" routerLinkActive="active">2D/3D Cube</a>
-    <a routerLink="/practice" routerLinkActive="active">Practice</a>
-    <a routerLink="/algorithms" routerLinkActive="active">3-Style DB</a>
-    <a routerLink="/learn" routerLinkActive="active">Learn</a>
-    <a routerLink="/multi-blind" routerLinkActive="active">Multi-Blind</a>
-       <a routerLink="/method-reference" routerLinkActive="active">Methods</a>
-    <a routerLink="/memo-helper" routerLinkActive="active">Memo Helper</a>
+  <button class="mobile-menu-btn" (click)="toggleMobileMenu()" aria-label="Toggle navigation menu">
+    <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
+    <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
+    <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
+  </button>
+  <div class="nav-links" [class.mobile-open]="isMobileMenuOpen">
+    <a routerLink="/word-association" routerLinkActive="active" (click)="closeMobileMenu()">Word Dictionary</a>
+    <a routerLink="/memo-generator" routerLinkActive="active" (click)="closeMobileMenu()">Memo Gen</a>
+    <a routerLink="/cube-visualizer" routerLinkActive="active" (click)="closeMobileMenu()">2D/3D Cube</a>
+    <a routerLink="/practice" routerLinkActive="active" (click)="closeMobileMenu()">Practice</a>
+    <a routerLink="/algorithms" routerLinkActive="active" (click)="closeMobileMenu()">3-Style DB</a>
+    <a routerLink="/learn" routerLinkActive="active" (click)="closeMobileMenu()">Learn</a>
+    <a routerLink="/multi-blind" routerLinkActive="active" (click)="closeMobileMenu()">Multi-Blind</a>
+    <a routerLink="/method-reference" routerLinkActive="active" (click)="closeMobileMenu()">Methods</a>
+    <a routerLink="/memo-helper" routerLinkActive="active" (click)="closeMobileMenu()">Memo Helper</a>
   </div>
 </nav>
 
