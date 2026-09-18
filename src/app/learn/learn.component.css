@@ -138,11 +138,71 @@
   
   .algs-list {
     -webkit-overflow-scrolling: touch;
+    overflow-x: visible; /* Prevent clipping of card shadows */
   }
   
-  .algs-table th, .algs-table td {
-    padding: 12px 10px;
-    font-size: 0.85rem;
+  /* Card Layout for Tables on Mobile */
+  .algs-table {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  
+  .algs-table thead {
+    display: none; /* Hide headers */
+  }
+  
+  .algs-table tr {
+    display: block;
+    margin-bottom: 16px;
+    background: var(--panel);
+    border-radius: 12px;
+    border: 1px solid #2b3040;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    padding: 8px 16px;
+  }
+  
+  .algs-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding: 12px 0;
+    text-align: right;
+    font-size: 0.95rem;
+  }
+  
+  .algs-table td:last-child {
+    border-bottom: 0;
+  }
+  
+  .algs-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-align: left;
+    margin-right: 16px;
+    flex-shrink: 0;
+  }
+
+  /* Opposite Columns Styling for Cards */
+  .algs-table td.opposite-col {
+    background: rgba(0,0,0,0.15);
+    margin: 0 -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .algs-table td.opposite-col:first-of-type {
+    border-top: 2px dashed #2b3040;
+    border-left: none;
+  }
+
+  .algs-table .action-td {
+    width: auto;
+    text-align: right;
   }
   
   .alg-text {

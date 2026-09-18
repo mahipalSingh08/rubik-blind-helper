@@ -63,34 +63,34 @@
         </thead>
         <tbody>
           <tr *ngFor="let alg of augmentedFilteredAlgs">
-            <td>
+            <td data-label="Pair">
               <span class="pair-tag" [ngClass]="alg.type === 'edges' ? 'edge-tag' : 'corner-tag'">{{ alg.pair }}</span>
             </td>
-            <td class="cycle-td">{{ alg.cycle }}</td>
-            <td>
+            <td class="cycle-td" data-label="Cycle">{{ alg.cycle }}</td>
+            <td data-label="Algorithm">
               <div class="alg-text">{{ alg.algorithm }}</div>
             </td>
-            <td>
+            <td data-label="Full Algorithm">
               <div class="alg-long-text" *ngIf="alg.longAlgorithm">{{ alg.longAlgorithm }}</div>
             </td>
-            <td class="opposite-col" *ngIf="showOpposites">
+            <td class="opposite-col" *ngIf="showOpposites" data-label="Opp. Pair">
               <span class="pair-tag opp-tag" [ngClass]="alg.type === 'edges' ? 'edge-tag' : 'corner-tag'">{{ alg.oppositePair }}</span>
             </td>
-            <td class="cycle-td opposite-col" *ngIf="showOpposites">{{ alg.oppositeCycle }}</td>
-            <td class="opposite-col" *ngIf="showOpposites">
+            <td class="cycle-td opposite-col" *ngIf="showOpposites" data-label="Opp. Cycle">{{ alg.oppositeCycle }}</td>
+            <td class="opposite-col" *ngIf="showOpposites" data-label="Opp. Algorithm">
               <div class="alg-text" *ngIf="alg.oppositeShort">{{ alg.oppositeShort }}</div>
               <div class="no-alg" *ngIf="!alg.oppositeShort">No alg set</div>
             </td>
-            <td class="opposite-col" *ngIf="showOpposites">
+            <td class="opposite-col" *ngIf="showOpposites" data-label="Opp. Full Alg">
               <div class="alg-long-text" *ngIf="alg.oppositeLong">{{ alg.oppositeLong }}</div>
             </td>
-            <td class="action-td">
+            <td class="action-td" data-label="Order">
               <div style="display: flex; gap: 4px; justify-content: center;">
                 <button class="reorder-btn" (click)="moveAlg(alg.id, -1)" title="Move Up">⬆️</button>
                 <button class="reorder-btn" (click)="moveAlg(alg.id, 1)" title="Move Down">⬇️</button>
               </div>
             </td>
-            <td class="action-td">
+            <td class="action-td" data-label="Action">
               <button class="remove-btn" (click)="removeAlg(alg.id)" title="Remove">✖</button>
             </td>
           </tr>
