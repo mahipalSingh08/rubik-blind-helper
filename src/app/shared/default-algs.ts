@@ -2174,8 +2174,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "UD R U' R' D2 R U R' D2 UD'"
   },
   "GP": {
-    "short": "[U' R' D : [R U R', D2]]",
-    "long": "U' R' D R U R' D2 R U' R' D2 D' R U"
+    "short": "[L B': [AP]]",
+    "long": "L B' R' D' R U2 R' D R U2 B L'"
   },
   "GQ": {
     "short": "[R' U : [R U' R', D]]",
@@ -2658,8 +2658,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "R' U' R U R' D' R U' R' D U R"
   },
   "PG": {
-    "short": "[U' R' D' : [R U R', D2]]",
-    "long": "U' R' D' R U R' D2 R U' R' D2 D R U"
+    "short": "[L B': [PA]]",
+    "long": "L B' U2 R' D' R U2 R' D R B L'"
   },
   "PH": {
     "short": "[R U R', D2]",

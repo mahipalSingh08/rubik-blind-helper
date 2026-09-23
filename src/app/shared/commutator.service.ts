@@ -88,7 +88,9 @@ export class CommutatorService {
           { id: 'def7', type: 'edge' as const, name: 'WU', alg: "M u2 M u2" },
           { id: 'def8', type: 'edge' as const, name: 'UW', alg: "u2 M u2 M" },
           { id: 'def9', type: 'edge' as const, name: 'QM', alg: "r U R' U' M U R U' R'" },
-          { id: 'def10', type: 'edge' as const, name: 'MQ', alg: "R U R' U' M' U R U' r'" }
+          { id: 'def10', type: 'edge' as const, name: 'MQ', alg: "R U R' U' M' U R U' r'" },
+          { id: 'def11', type: 'corner' as const, name: 'PA', alg: "U2 R' D' R U2 R' D R" },
+          { id: 'def12', type: 'corner' as const, name: 'GA', alg: "U2 R' D R U2 R' D' R" }
         ];
         let changed = false;
         for (const def of newDefaults) {
@@ -119,7 +121,9 @@ export class CommutatorService {
         { id: 'def7', type: 'edge', name: 'WU', alg: "M u2 M u2" },
         { id: 'def8', type: 'edge', name: 'UW', alg: "u2 M u2 M" },
         { id: 'def9', type: 'edge', name: 'QM', alg: "r U R' U' M U R U' R'" },
-        { id: 'def10', type: 'edge', name: 'MQ', alg: "R U R' U' M' U R U' r'" }
+        { id: 'def10', type: 'edge', name: 'MQ', alg: "R U R' U' M' U R U' r'" },
+        { id: 'def11', type: 'corner', name: 'PA', alg: "U2 R' D' R U2 R' D R" },
+        { id: 'def12', type: 'corner', name: 'GA', alg: "U2 R' D R U2 R' D' R" }
       ];
       this.saveBaseAlgs();
     }
