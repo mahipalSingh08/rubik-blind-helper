@@ -90,7 +90,13 @@ export class CommutatorService {
           { id: 'def9', type: 'edge' as const, name: 'QM', alg: "r U R' U' M U R U' R'" },
           { id: 'def10', type: 'edge' as const, name: 'MQ', alg: "R U R' U' M' U R U' r'" },
           { id: 'def11', type: 'corner' as const, name: 'PA', alg: "U2 R' D' R U2 R' D R" },
-          { id: 'def12', type: 'corner' as const, name: 'GA', alg: "U2 R' D R U2 R' D' R" }
+          { id: 'def12', type: 'corner' as const, name: 'GA', alg: "U2 R' D R U2 R' D' R" },
+          { id: 'def13', type: 'corner' as const, name: 'KA', alg: "D' U2 R' D R U2 R' D' R D" },
+          { id: 'def14', type: 'corner' as const, name: 'AK', alg: "D' R' D R U2 R' D' R U2 D" },
+          { id: 'def15', type: 'corner' as const, name: 'KG', alg: "R' F L F' R F L' F'" },
+          { id: 'def16', type: 'corner' as const, name: 'QR', alg: "R U' L' U R' U' L U" },
+          { id: 'def17', type: 'corner' as const, name: 'RQ', alg: "U' L' U R U' L U R'" },
+          { id: 'def18', type: 'corner' as const, name: 'GK', alg: "F L F' R' F L' F' R" }
         ];
         let changed = false;
         for (const def of newDefaults) {
@@ -123,7 +129,13 @@ export class CommutatorService {
         { id: 'def9', type: 'edge', name: 'QM', alg: "r U R' U' M U R U' R'" },
         { id: 'def10', type: 'edge', name: 'MQ', alg: "R U R' U' M' U R U' r'" },
         { id: 'def11', type: 'corner', name: 'PA', alg: "U2 R' D' R U2 R' D R" },
-        { id: 'def12', type: 'corner', name: 'GA', alg: "U2 R' D R U2 R' D' R" }
+        { id: 'def12', type: 'corner', name: 'GA', alg: "U2 R' D R U2 R' D' R" },
+        { id: 'def13', type: 'corner', name: 'KA', alg: "D' U2 R' D R U2 R' D' R D" },
+        { id: 'def14', type: 'corner', name: 'AK', alg: "D' R' D R U2 R' D' R U2 D" },
+        { id: 'def15', type: 'corner', name: 'KG', alg: "R' F L F' R F L' F'" },
+        { id: 'def16', type: 'corner', name: 'QR', alg: "R U' L' U R' U' L U" },
+        { id: 'def17', type: 'corner', name: 'RQ', alg: "U' L' U R U' L U R'" },
+        { id: 'def18', type: 'corner', name: 'GK', alg: "F L F' R' F L' F' R" }
       ];
       this.saveBaseAlgs();
     }
