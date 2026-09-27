@@ -99,7 +99,9 @@ export class CommutatorService {
           { id: 'def18', type: 'corner' as const, name: 'GK', alg: "F L F' R' F L' F' R" },
           { id: 'def19', type: 'corner' as const, name: 'OLL24', alg: "r U R' U' r' F R F'" },
           { id: 'def20', type: 'corner' as const, name: 'OLL25', alg: "R' F' L' F R F' L F" },
-          { id: 'def21', type: 'corner' as const, name: 'OLL23', alg: "R2 D R' U2 R D' R' U2 R'" }
+          { id: 'def21', type: 'corner' as const, name: 'OLL23', alg: "R2 D R' U2 R D' R' U2 R'" },
+          { id: 'def22', type: 'corner' as const, name: 'BL', alg: "U' R D2 R' U R D2 R'" },
+          { id: 'def23', type: 'corner' as const, name: 'LB', alg: "R D2 R' U' R D2 R' U" }
         ];
         let changed = false;
         for (const def of newDefaults) {
@@ -141,7 +143,9 @@ export class CommutatorService {
         { id: 'def18', type: 'corner', name: 'GK', alg: "F L F' R' F L' F' R" },
         { id: 'def19', type: 'corner', name: 'OLL24', alg: "r U R' U' r' F R F'" },
         { id: 'def20', type: 'corner', name: 'OLL25', alg: "R' F' L' F R F' L F" },
-        { id: 'def21', type: 'corner', name: 'OLL23', alg: "R2 D R' U2 R D' R' U2 R'" }
+        { id: 'def21', type: 'corner', name: 'OLL23', alg: "R2 D R' U2 R D' R' U2 R'" },
+        { id: 'def22', type: 'corner', name: 'BL', alg: "U' R D2 R' U R D2 R'" },
+        { id: 'def23', type: 'corner', name: 'LB', alg: "R D2 R' U' R D2 R' U" }
       ];
       this.saveBaseAlgs();
     }
