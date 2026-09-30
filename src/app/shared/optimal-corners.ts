@@ -720,7 +720,7 @@ export const OPTIMAL_CORNERS: Record<string, any> = {
     "long": "L B R2 B' L' B R2 B'"
   },
   "NA": {
-    "short": "[R, U' L' U]",
+    "short": "[R, U' L' U]", //QR
     "long": "R U' L' U R' U' L U"
   },
   "ND": {
@@ -776,7 +776,7 @@ export const OPTIMAL_CORNERS: Record<string, any> = {
     "long": "U2 L U' R2 U L' U' R2 U'"
   },
   "NU": {
-    "short": "[R, B L2 B']",
+    "short": "[R, B L2 B']", //qo
     "long": "R B L2 B' R' B L2 B'"
   },
   "NV": {
