@@ -6,6 +6,17 @@ import { DictionaryService } from '../shared/dictionary.service';
 import { CommutatorService } from '../shared/commutator.service';
 import { CubeEngine } from '../shared/cube-engine';
 import { BldTracer } from '../shared/bld-tracer';
+import { FiveStyleAlgDef } from '../shared/default5-algo';
+
+export interface GroupedPair {
+  type: '3-style' | '5-style';
+  pairs: string[];
+  display: string;
+  words: string[];
+  algShort?: string;
+  algLong?: string;
+  algExpand?: string;
+}
 
 @Component({
   selector: 'app-practice',
@@ -18,6 +29,8 @@ export class PracticeComponent implements OnInit {
   scramble: string = '';
   edgePairs: string[] = [];
   cornerPairs: string[] = [];
+  edgeGroups: GroupedPair[] = [];
+  cornerGroups: GroupedPair[] = [];
   showWords: boolean = true;
   showCommutators: boolean = false;
   parity: boolean = false;
@@ -177,7 +190,54 @@ export class PracticeComponent implements OnInit {
     this.edgePairs = this.toPairs(edges);
     this.cornerPairs = this.toPairs(corners);
     
+    this.edgeGroups = this.group5Style(this.edgePairs, 'edge');
+    this.cornerGroups = this.group5Style(this.cornerPairs, 'corner');
+    
     this.parity = edges.length % 2 !== 0 && corners.length % 2 !== 0;
+  }
+
+  private group5Style(pairs: string[], type: 'edge' | 'corner'): GroupedPair[] {
+    const groups: GroupedPair[] = [];
+    let i = 0;
+    while (i < pairs.length) {
+      if (i < pairs.length - 1 && pairs[i].length === 2 && pairs[i+1].length === 2) {
+        const combined = (pairs[i] + pairs[i+1]).toUpperCase();
+        let alg5: FiveStyleAlgDef | null = null;
+        if (type === 'edge') alg5 = this.commutator.get5StyleEdgeAlg(combined);
+        if (type === 'corner') alg5 = this.commutator.get5StyleCornerAlg(combined);
+        
+        if (alg5) {
+          groups.push({
+            type: '5-style',
+            pairs: [pairs[i], pairs[i+1]],
+            display: `${pairs[i]} ${pairs[i+1]}`,
+            words: [this.getWord(pairs[i]), this.getWord(pairs[i+1])],
+            algShort: alg5.short,
+            algLong: alg5.algorithm,
+            algExpand: alg5.expand
+          });
+          i += 2;
+          continue;
+        }
+      }
+      // Fallback to 3-style
+      const p = pairs[i];
+      let alg3: any = null;
+      if (p.length === 2) {
+        alg3 = type === 'edge' ? this.commutator.getEdgeAlg(p) : this.commutator.getCornerAlg(p);
+      }
+      
+      groups.push({
+        type: '3-style',
+        pairs: [p],
+        display: p,
+        words: [this.getWord(p)],
+        algShort: alg3?.short,
+        algLong: alg3?.long
+      });
+      i++;
+    }
+    return groups;
   }
 
   getWord(pair: string): string {

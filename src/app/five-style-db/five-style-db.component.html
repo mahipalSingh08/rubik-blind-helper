@@ -1,0 +1,93 @@
+<div class="tab-container">
+  <h1>✨ 5-Style Database</h1>
+  <p class="subtitle">Advanced Method for 4-Piece Commutators</p>
+
+  <div class="card" style="text-align: center;">
+    <div class="toggle-group" style="margin-bottom: 20px;">
+      <button 
+        [class.active]="pieceType === 'edges'" 
+        (click)="changePieceType('edges')"
+        class="btn btn-outline">
+        Edges
+      </button>
+      <button 
+        [class.active]="pieceType === 'corners'" 
+        (click)="changePieceType('corners')"
+        class="btn btn-outline">
+        Corners
+      </button>
+    </div>
+
+    <div class="search-container">
+      <input 
+        type="text" 
+        class="search-input"
+        [(ngModel)]="searchSequence" 
+        (input)="onSearch()" 
+        placeholder="e.g. ABCD" 
+        maxlength="4"
+        autocomplete="off">
+    </div>
+
+    <!-- Result Display -->
+    <div class="result-container" *ngIf="searchSequence.length === 4">
+      <h2 class="pair-title">{{ searchSequence | uppercase }}</h2>
+      
+      <div class="alg-display" *ngIf="!isEditing">
+        <p class="alg-short" *ngIf="currentAlg?.short">{{ currentAlg?.short }}</p>
+        <p class="alg-short" *ngIf="currentAlg?.expand" style="font-size: 1.1rem; color: var(--accent);">{{ currentAlg?.expand }}</p>
+        <p class="alg-long">{{ currentAlg?.algorithm || 'No algorithm found for this 4-letter sequence.' }}</p>
+        <button class="btn btn-edit" *ngIf="currentAlg" (click)="startEdit()">Edit Algorithm</button>
+      </div>
+
+      <div class="alg-edit" *ngIf="isEditing">
+        <div class="input-group">
+          <label>Commutator (Short Form)</label>
+          <input type="text" class="edit-input" [(ngModel)]="editAlgShort" placeholder="e.g. [U, R D' R']">
+        </div>
+        <div class="input-group">
+          <label>Expanded Form</label>
+          <input type="text" class="edit-input" [(ngModel)]="editExpand" placeholder="e.g. A B A B'">
+        </div>
+        <div class="input-group">
+          <label>Full Algorithm (Long Form)</label>
+          <input type="text" class="edit-input" [(ngModel)]="editAlgFull" placeholder="Full move sequence">
+        </div>
+        <div class="action-buttons">
+          <button class="btn btn-save" (click)="saveEdit()">Save</button>
+          <button class="btn btn-outline" (click)="cancelEdit()">Cancel</button>
+        </div>
+      </div>
+    </div>
+    
+    <div *ngIf="searchSequence.length !== 4" style="color: var(--muted); margin-top: 10px; margin-bottom: 20px;">
+      Type a 4-letter sequence to view its 5-style algorithm.
+    </div>
+
+    <!-- Letter Picker -->
+    <div class="letter-picker">
+      <div class="letter-btn" 
+           *ngFor="let letter of letters" 
+           [class.active]="selectedLetter === letter"
+           (click)="selectLetter(letter)">
+        {{ letter }}
+      </div>
+    </div>
+
+    <!-- Grid for Selected Letter -->
+    <div class="pair-grid-container" *ngIf="selectedLetter">
+      <h2>Sequences containing '{{ selectedLetter }}'</h2>
+      <div class="pair-grid">
+        <div class="pair-card" 
+             *ngFor="let item of filteredSequences"
+             (click)="selectSequenceFromList(item.sequence)">
+          <div class="pair-letters" style="font-size: 1.1rem; letter-spacing: 1px;">{{ item.sequence }}</div>
+          <div class="pair-word" [class.no-alg]="!item.short">{{ item.short || (item.algorithm ? 'Full Alg' : 'No alg') }}</div>
+        </div>
+      </div>
+      <div class="empty-state" *ngIf="filteredSequences.length === 0">
+        No sequences found containing this letter.
+      </div>
+    </div>
+  </div>
+</div>

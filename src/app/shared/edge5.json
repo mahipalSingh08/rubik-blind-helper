@@ -1,0 +1,5042 @@
+{
+  "BEWQ": {
+    "algorithm": "M U M' U'",
+    "buffer": "C",
+    "targets": "BEWQ",
+    "htm": 4
+  },
+  "BEXQ": {
+    "algorithm": "U' S U S'",
+    "buffer": "C",
+    "targets": "BEXQ",
+    "htm": 4
+  },
+  "DMVQ": {
+    "algorithm": "U S' U' S",
+    "buffer": "C",
+    "targets": "DMVQ",
+    "htm": 4
+  },
+  "DMWQ": {
+    "algorithm": "M U' M' U",
+    "buffer": "C",
+    "targets": "DMWQ",
+    "htm": 4
+  },
+  "FJNK": {
+    "algorithm": "F' E' F E",
+    "buffer": "C",
+    "targets": "FJNK",
+    "htm": 4
+  },
+  "FJWK": {
+    "algorithm": "M' F M F'",
+    "buffer": "C",
+    "targets": "FJWK",
+    "htm": 4
+  },
+  "GDMQ": {
+    "algorithm": "S U S' U'",
+    "buffer": "C",
+    "targets": "GDMQ",
+    "htm": 4
+  },
+  "GVWK": {
+    "algorithm": "D M D' M'",
+    "buffer": "C",
+    "targets": "GVWK",
+    "htm": 4
+  },
+  "KBEQ": {
+    "algorithm": "U M' U' M",
+    "buffer": "C",
+    "targets": "KBEQ",
+    "htm": 4
+  },
+  "KDMQ": {
+    "algorithm": "U' M' U M",
+    "buffer": "C",
+    "targets": "KDMQ",
+    "htm": 4
+  },
+  "KHLP": {
+    "algorithm": "E F E' F'",
+    "buffer": "C",
+    "targets": "KHLP",
+    "htm": 4
+  },
+  "KJFQ": {
+    "algorithm": "M F M' F'",
+    "buffer": "C",
+    "targets": "KJFQ",
+    "htm": 4
+  },
+  "KJFR": {
+    "algorithm": "F' E F E'",
+    "buffer": "C",
+    "targets": "KJFR",
+    "htm": 4
+  },
+  "KLPQ": {
+    "algorithm": "M F' M' F",
+    "buffer": "C",
+    "targets": "KLPQ",
+    "htm": 4
+  },
+  "KLPT": {
+    "algorithm": "F E' F' E",
+    "buffer": "C",
+    "targets": "KLPT",
+    "htm": 4
+  },
+  "KNJF": {
+    "algorithm": "E' F' E F",
+    "buffer": "C",
+    "targets": "KNJF",
+    "htm": 4
+  },
+  "KWJF": {
+    "algorithm": "F M' F' M",
+    "buffer": "C",
+    "targets": "KWJF",
+    "htm": 4
+  },
+  "KWLP": {
+    "algorithm": "F' M' F M",
+    "buffer": "C",
+    "targets": "KWLP",
+    "htm": 4
+  },
+  "KWVG": {
+    "algorithm": "M D M' D'",
+    "buffer": "C",
+    "targets": "KWVG",
+    "htm": 4
+  },
+  "KWXO": {
+    "algorithm": "M D' M' D",
+    "buffer": "C",
+    "targets": "KWXO",
+    "htm": 4
+  },
+  "OBEQ": {
+    "algorithm": "S' U' S U",
+    "buffer": "C",
+    "targets": "OBEQ",
+    "htm": 4
+  },
+  "OXWK": {
+    "algorithm": "D' M D M'",
+    "buffer": "C",
+    "targets": "OXWK",
+    "htm": 4
+  },
+  "PLHK": {
+    "algorithm": "F E F' E'",
+    "buffer": "C",
+    "targets": "PLHK",
+    "htm": 4
+  },
+  "PLWK": {
+    "algorithm": "M' F' M F",
+    "buffer": "C",
+    "targets": "PLWK",
+    "htm": 4
+  },
+  "QEBK": {
+    "algorithm": "M' U M U'",
+    "buffer": "C",
+    "targets": "QEBK",
+    "htm": 4
+  },
+  "QEBO": {
+    "algorithm": "U' S' U S",
+    "buffer": "C",
+    "targets": "QEBO",
+    "htm": 4
+  },
+  "QFJK": {
+    "algorithm": "F M F' M'",
+    "buffer": "C",
+    "targets": "QFJK",
+    "htm": 4
+  },
+  "QMDG": {
+    "algorithm": "U S U' S'",
+    "buffer": "C",
+    "targets": "QMDG",
+    "htm": 4
+  },
+  "QMDK": {
+    "algorithm": "M' U' M U",
+    "buffer": "C",
+    "targets": "QMDK",
+    "htm": 4
+  },
+  "QPLK": {
+    "algorithm": "F' M F M'",
+    "buffer": "C",
+    "targets": "QPLK",
+    "htm": 4
+  },
+  "QVMD": {
+    "algorithm": "S' U S U'",
+    "buffer": "C",
+    "targets": "QVMD",
+    "htm": 4
+  },
+  "QWEB": {
+    "algorithm": "U M U' M'",
+    "buffer": "C",
+    "targets": "QWEB",
+    "htm": 4
+  },
+  "QWHT": {
+    "algorithm": "M' B M B'",
+    "buffer": "C",
+    "targets": "QWHT",
+    "htm": 4
+  },
+  "QWMD": {
+    "algorithm": "U' M U M'",
+    "buffer": "C",
+    "targets": "QWMD",
+    "htm": 4
+  },
+  "QWNR": {
+    "algorithm": "M' B' M B",
+    "buffer": "C",
+    "targets": "QWNR",
+    "htm": 4
+  },
+  "QXEB": {
+    "algorithm": "S U' S' U",
+    "buffer": "C",
+    "targets": "QXEB",
+    "htm": 4
+  },
+  "RFJK": {
+    "algorithm": "E F' E' F",
+    "buffer": "C",
+    "targets": "RFJK",
+    "htm": 4
+  },
+  "RNWQ": {
+    "algorithm": "B' M' B M",
+    "buffer": "C",
+    "targets": "RNWQ",
+    "htm": 4
+  },
+  "THWQ": {
+    "algorithm": "B M' B' M",
+    "buffer": "C",
+    "targets": "THWQ",
+    "htm": 4
+  },
+  "TPLK": {
+    "algorithm": "E' F E F'",
+    "buffer": "C",
+    "targets": "TPLK",
+    "htm": 4
+  },
+  "BEUQ": {
+    "algorithm": "U2 M' U M U",
+    "buffer": "C",
+    "targets": "BEUQ",
+    "htm": 5
+  },
+  "BEVQ": {
+    "algorithm": "U S' U S U2",
+    "buffer": "C",
+    "targets": "BEVQ",
+    "htm": 5
+  },
+  "DMUQ": {
+    "algorithm": "U2 M' U' M U'",
+    "buffer": "C",
+    "targets": "DMUQ",
+    "htm": 5
+  },
+  "DMXQ": {
+    "algorithm": "U' S U' S' U2",
+    "buffer": "C",
+    "targets": "DMXQ",
+    "htm": 5
+  },
+  "EBWK": {
+    "algorithm": "M2 U M U' M",
+    "buffer": "C",
+    "targets": "EBWK",
+    "htm": 5
+  },
+  "EXOQ": {
+    "algorithm": "S U' S U S2",
+    "buffer": "C",
+    "targets": "EXOQ",
+    "htm": 5
+  },
+  "FJAK": {
+    "algorithm": "F2 M F M' F",
+    "buffer": "C",
+    "targets": "FJAK",
+    "htm": 5
+  },
+  "FJHK": {
+    "algorithm": "F E F E' F2",
+    "buffer": "C",
+    "targets": "FJHK",
+    "htm": 5
+  },
+  "GBEQ": {
+    "algorithm": "U2 S U' S' U'",
+    "buffer": "C",
+    "targets": "GBEQ",
+    "htm": 5
+  },
+  "GVUS": {
+    "algorithm": "D M D M' D2",
+    "buffer": "C",
+    "targets": "GVUS",
+    "htm": 5
+  },
+  "HTPK": {
+    "algorithm": "E2 F E F' E",
+    "buffer": "C",
+    "targets": "HTPK",
+    "htm": 5
+  },
+  "HTWK": {
+    "algorithm": "M B M B' M2",
+    "buffer": "C",
+    "targets": "HTWK",
+    "htm": 5
+  },
+  "JFWQ": {
+    "algorithm": "M2 F M' F' M'",
+    "buffer": "C",
+    "targets": "JFWQ",
+    "htm": 5
+  },
+  "JNRK": {
+    "algorithm": "E' F' E' F E2",
+    "buffer": "C",
+    "targets": "JNRK",
+    "htm": 5
+  },
+  "KAJF": {
+    "algorithm": "F' M F' M' F2",
+    "buffer": "C",
+    "targets": "KAJF",
+    "htm": 5
+  },
+  "KALP": {
+    "algorithm": "F M F M' F2",
+    "buffer": "C",
+    "targets": "KALP",
+    "htm": 5
+  },
+  "KFRN": {
+    "algorithm": "E F' E F E2",
+    "buffer": "C",
+    "targets": "KFRN",
+    "htm": 5
+  },
+  "KHJF": {
+    "algorithm": "F2 E F' E' F'",
+    "buffer": "C",
+    "targets": "KHJF",
+    "htm": 5
+  },
+  "KJFS": {
+    "algorithm": "F2 M' F M F",
+    "buffer": "C",
+    "targets": "KJFS",
+    "htm": 5
+  },
+  "KJFT": {
+    "algorithm": "F E' F E F2",
+    "buffer": "C",
+    "targets": "KJFT",
+    "htm": 5
+  },
+  "KLPR": {
+    "algorithm": "F' E F' E' F2",
+    "buffer": "C",
+    "targets": "KLPR",
+    "htm": 5
+  },
+  "KLPS": {
+    "algorithm": "F2 M' F' M F'",
+    "buffer": "C",
+    "targets": "KLPS",
+    "htm": 5
+  },
+  "KNLP": {
+    "algorithm": "F2 E' F E F",
+    "buffer": "C",
+    "targets": "KNLP",
+    "htm": 5
+  },
+  "KPTH": {
+    "algorithm": "E' F E' F' E2",
+    "buffer": "C",
+    "targets": "KPTH",
+    "htm": 5
+  },
+  "KRNJ": {
+    "algorithm": "E2 F' E F E",
+    "buffer": "C",
+    "targets": "KRNJ",
+    "htm": 5
+  },
+  "KRNQ": {
+    "algorithm": "M' B' M' B M2",
+    "buffer": "C",
+    "targets": "KRNQ",
+    "htm": 5
+  },
+  "KTHL": {
+    "algorithm": "E2 F E' F' E'",
+    "buffer": "C",
+    "targets": "KTHL",
+    "htm": 5
+  },
+  "KTHQ": {
+    "algorithm": "M' B M' B' M2",
+    "buffer": "C",
+    "targets": "KTHQ",
+    "htm": 5
+  },
+  "KVGQ": {
+    "algorithm": "M2 D M' D' M'",
+    "buffer": "C",
+    "targets": "KVGQ",
+    "htm": 5
+  },
+  "KWBE": {
+    "algorithm": "M' U M' U' M2",
+    "buffer": "C",
+    "targets": "KWBE",
+    "htm": 5
+  },
+  "KWDM": {
+    "algorithm": "M' U' M' U M2",
+    "buffer": "C",
+    "targets": "KWDM",
+    "htm": 5
+  },
+  "KWRN": {
+    "algorithm": "M2 B' M' B M'",
+    "buffer": "C",
+    "targets": "KWRN",
+    "htm": 5
+  },
+  "KWTH": {
+    "algorithm": "M2 B M' B' M'",
+    "buffer": "C",
+    "targets": "KWTH",
+    "htm": 5
+  },
+  "KXOQ": {
+    "algorithm": "M2 D' M' D M'",
+    "buffer": "C",
+    "targets": "KXOQ",
+    "htm": 5
+  },
+  "LHTK": {
+    "algorithm": "E F E F' E2",
+    "buffer": "C",
+    "targets": "LHTK",
+    "htm": 5
+  },
+  "LPWQ": {
+    "algorithm": "M2 F' M' F M'",
+    "buffer": "C",
+    "targets": "LPWQ",
+    "htm": 5
+  },
+  "MDWK": {
+    "algorithm": "M2 U' M U M",
+    "buffer": "C",
+    "targets": "MDWK",
+    "htm": 5
+  },
+  "MVGQ": {
+    "algorithm": "S' U S' U' S2",
+    "buffer": "C",
+    "targets": "MVGQ",
+    "htm": 5
+  },
+  "NRFK": {
+    "algorithm": "E2 F' E' F E'",
+    "buffer": "C",
+    "targets": "NRFK",
+    "htm": 5
+  },
+  "NRWK": {
+    "algorithm": "M B' M B M2",
+    "buffer": "C",
+    "targets": "NRWK",
+    "htm": 5
+  },
+  "ODMQ": {
+    "algorithm": "U2 S' U S U",
+    "buffer": "C",
+    "targets": "ODMQ",
+    "htm": 5
+  },
+  "OXUS": {
+    "algorithm": "D' M D' M' D2",
+    "buffer": "C",
+    "targets": "OXUS",
+    "htm": 5
+  },
+  "PLAK": {
+    "algorithm": "F2 M F' M' F'",
+    "buffer": "C",
+    "targets": "PLAK",
+    "htm": 5
+  },
+  "PLNK": {
+    "algorithm": "F' E' F' E F2",
+    "buffer": "C",
+    "targets": "PLNK",
+    "htm": 5
+  },
+  "QBOX": {
+    "algorithm": "S' U' S' U S2",
+    "buffer": "C",
+    "targets": "QBOX",
+    "htm": 5
+  },
+  "QDGV": {
+    "algorithm": "S U S U' S2",
+    "buffer": "C",
+    "targets": "QDGV",
+    "htm": 5
+  },
+  "QEBG": {
+    "algorithm": "U S U S' U2",
+    "buffer": "C",
+    "targets": "QEBG",
+    "htm": 5
+  },
+  "QEBS": {
+    "algorithm": "U2 M U M' U",
+    "buffer": "C",
+    "targets": "QEBS",
+    "htm": 5
+  },
+  "QGVK": {
+    "algorithm": "M D M D' M2",
+    "buffer": "C",
+    "targets": "QGVK",
+    "htm": 5
+  },
+  "QGVM": {
+    "algorithm": "S2 U S U' S",
+    "buffer": "C",
+    "targets": "QGVM",
+    "htm": 5
+  },
+  "QHTK": {
+    "algorithm": "M2 B M B' M",
+    "buffer": "C",
+    "targets": "QHTK",
+    "htm": 5
+  },
+  "QMDO": {
+    "algorithm": "U' S' U' S U2",
+    "buffer": "C",
+    "targets": "QMDO",
+    "htm": 5
+  },
+  "QMDS": {
+    "algorithm": "U2 M U' M' U'",
+    "buffer": "C",
+    "targets": "QMDS",
+    "htm": 5
+  },
+  "QNRK": {
+    "algorithm": "M2 B' M B M",
+    "buffer": "C",
+    "targets": "QNRK",
+    "htm": 5
+  },
+  "QOXE": {
+    "algorithm": "S2 U' S' U S'",
+    "buffer": "C",
+    "targets": "QOXE",
+    "htm": 5
+  },
+  "QOXK": {
+    "algorithm": "M D' M D M2",
+    "buffer": "C",
+    "targets": "QOXK",
+    "htm": 5
+  },
+  "QUEB": {
+    "algorithm": "U' M' U' M U2",
+    "buffer": "C",
+    "targets": "QUEB",
+    "htm": 5
+  },
+  "QUMD": {
+    "algorithm": "U M' U M U2",
+    "buffer": "C",
+    "targets": "QUMD",
+    "htm": 5
+  },
+  "QVEB": {
+    "algorithm": "U2 S' U' S U'",
+    "buffer": "C",
+    "targets": "QVEB",
+    "htm": 5
+  },
+  "QWFJ": {
+    "algorithm": "M F M F' M2",
+    "buffer": "C",
+    "targets": "QWFJ",
+    "htm": 5
+  },
+  "QWGV": {
+    "algorithm": "M2 D M D' M",
+    "buffer": "C",
+    "targets": "QWGV",
+    "htm": 5
+  },
+  "QWOX": {
+    "algorithm": "M2 D' M D M",
+    "buffer": "C",
+    "targets": "QWOX",
+    "htm": 5
+  },
+  "QWPL": {
+    "algorithm": "M F' M F M2",
+    "buffer": "C",
+    "targets": "QWPL",
+    "htm": 5
+  },
+  "QXMD": {
+    "algorithm": "U2 S U S' U",
+    "buffer": "C",
+    "targets": "QXMD",
+    "htm": 5
+  },
+  "RNAS": {
+    "algorithm": "B' M' B' M B2",
+    "buffer": "C",
+    "targets": "RNAS",
+    "htm": 5
+  },
+  "RPLK": {
+    "algorithm": "F2 E F E' F",
+    "buffer": "C",
+    "targets": "RPLK",
+    "htm": 5
+  },
+  "SAHT": {
+    "algorithm": "B2 M' B' M B'",
+    "buffer": "C",
+    "targets": "SAHT",
+    "htm": 5
+  },
+  "SANR": {
+    "algorithm": "B2 M' B M B",
+    "buffer": "C",
+    "targets": "SANR",
+    "htm": 5
+  },
+  "SBEQ": {
+    "algorithm": "U' M U' M' U2",
+    "buffer": "C",
+    "targets": "SBEQ",
+    "htm": 5
+  },
+  "SDMQ": {
+    "algorithm": "U M U M' U2",
+    "buffer": "C",
+    "targets": "SDMQ",
+    "htm": 5
+  },
+  "SFJK": {
+    "algorithm": "F' M' F' M F2",
+    "buffer": "C",
+    "targets": "SFJK",
+    "htm": 5
+  },
+  "SPLK": {
+    "algorithm": "F M' F M F2",
+    "buffer": "C",
+    "targets": "SPLK",
+    "htm": 5
+  },
+  "SUVG": {
+    "algorithm": "D2 M D' M' D'",
+    "buffer": "C",
+    "targets": "SUVG",
+    "htm": 5
+  },
+  "SUXO": {
+    "algorithm": "D2 M D M' D",
+    "buffer": "C",
+    "targets": "SUXO",
+    "htm": 5
+  },
+  "TFJK": {
+    "algorithm": "F2 E' F' E F'",
+    "buffer": "C",
+    "targets": "TFJK",
+    "htm": 5
+  },
+  "THAS": {
+    "algorithm": "B M' B M B2",
+    "buffer": "C",
+    "targets": "THAS",
+    "htm": 5
+  },
+  "VGDQ": {
+    "algorithm": "S2 U S' U' S'",
+    "buffer": "C",
+    "targets": "VGDQ",
+    "htm": 5
+  },
+  "VGWQ": {
+    "algorithm": "M' D M' D' M2",
+    "buffer": "C",
+    "targets": "VGWQ",
+    "htm": 5
+  },
+  "XOBQ": {
+    "algorithm": "S2 U' S U S",
+    "buffer": "C",
+    "targets": "XOBQ",
+    "htm": 5
+  },
+  "XOWQ": {
+    "algorithm": "M' D' M' D M2",
+    "buffer": "C",
+    "targets": "XOWQ",
+    "htm": 5
+  },
+  "AFWP": {
+    "algorithm": "F' M2 F' M F2 M",
+    "buffer": "C",
+    "targets": "AFWP",
+    "htm": 6
+  },
+  "AGUO": {
+    "algorithm": "D2 M D M2 D M",
+    "buffer": "C",
+    "targets": "AGUO",
+    "htm": 6
+  },
+  "AGWO": {
+    "algorithm": "M D' M2 D' M D2",
+    "buffer": "C",
+    "targets": "AGWO",
+    "htm": 6
+  },
+  "AHUN": {
+    "algorithm": "M B2 M B M2 B",
+    "buffer": "C",
+    "targets": "AHUN",
+    "htm": 6
+  },
+  "ANUH": {
+    "algorithm": "M B2 M B' M2 B'",
+    "buffer": "C",
+    "targets": "ANUH",
+    "htm": 6
+  },
+  "AOUG": {
+    "algorithm": "D2 M D' M2 D' M",
+    "buffer": "C",
+    "targets": "AOUG",
+    "htm": 6
+  },
+  "AOWG": {
+    "algorithm": "M D M2 D M D2",
+    "buffer": "C",
+    "targets": "AOWG",
+    "htm": 6
+  },
+  "APWF": {
+    "algorithm": "F M2 F M F2 M",
+    "buffer": "C",
+    "targets": "APWF",
+    "htm": 6
+  },
+  "AUFW": {
+    "algorithm": "M2 F M' F2 M' F",
+    "buffer": "C",
+    "targets": "AUFW",
+    "htm": 6
+  },
+  "AUHW": {
+    "algorithm": "B M' B2 M' B M2",
+    "buffer": "C",
+    "targets": "AUHW",
+    "htm": 6
+  },
+  "AUNW": {
+    "algorithm": "B' M' B2 M' B' M2",
+    "buffer": "C",
+    "targets": "AUNW",
+    "htm": 6
+  },
+  "AUPW": {
+    "algorithm": "M2 F' M' F2 M' F'",
+    "buffer": "C",
+    "targets": "AUPW",
+    "htm": 6
+  },
+  "BAUX": {
+    "algorithm": "D' M S D M S'",
+    "buffer": "C",
+    "targets": "BAUX",
+    "htm": 6
+  },
+  "BAXW": {
+    "algorithm": "M S D M S' D'",
+    "buffer": "C",
+    "targets": "BAXW",
+    "htm": 6
+  },
+  "BEAS": {
+    "algorithm": "B2 M U M' U' B2",
+    "buffer": "C",
+    "targets": "BEAS",
+    "htm": 6
+  },
+  "BEHT": {
+    "algorithm": "B M U M' U' B'",
+    "buffer": "C",
+    "targets": "BEHT",
+    "htm": 6
+  },
+  "BENR": {
+    "algorithm": "B' M U M' U' B",
+    "buffer": "C",
+    "targets": "BENR",
+    "htm": 6
+  },
+  "BEXR": {
+    "algorithm": "B' U' S U B S'",
+    "buffer": "C",
+    "targets": "BEXR",
+    "htm": 6
+  },
+  "BEXS": {
+    "algorithm": "B2 U' S U B2 S'",
+    "buffer": "C",
+    "targets": "BEXS",
+    "htm": 6
+  },
+  "BEXT": {
+    "algorithm": "B U' S U B' S'",
+    "buffer": "C",
+    "targets": "BEXT",
+    "htm": 6
+  },
+  "BFRQ": {
+    "algorithm": "L' U' S U S' L",
+    "buffer": "C",
+    "targets": "BFRQ",
+    "htm": 6
+  },
+  "BFWQ": {
+    "algorithm": "L' M U M' U' L",
+    "buffer": "C",
+    "targets": "BFWQ",
+    "htm": 6
+  },
+  "BGDQ": {
+    "algorithm": "L2 U' S U S' L2",
+    "buffer": "C",
+    "targets": "BGDQ",
+    "htm": 6
+  },
+  "BGWQ": {
+    "algorithm": "L2 M U M' U' L2",
+    "buffer": "C",
+    "targets": "BGWQ",
+    "htm": 6
+  },
+  "BHLQ": {
+    "algorithm": "L U' S U S' L'",
+    "buffer": "C",
+    "targets": "BHLQ",
+    "htm": 6
+  },
+  "BHWQ": {
+    "algorithm": "L M U M' U' L'",
+    "buffer": "C",
+    "targets": "BHWQ",
+    "htm": 6
+  },
+  "BOLK": {
+    "algorithm": "R E' F E F' R'",
+    "buffer": "C",
+    "targets": "BOLK",
+    "htm": 6
+  },
+  "BONK": {
+    "algorithm": "F' R' E R E' F",
+    "buffer": "C",
+    "targets": "BONK",
+    "htm": 6
+  },
+  "BOWK": {
+    "algorithm": "S D' M D M' S'",
+    "buffer": "C",
+    "targets": "BOWK",
+    "htm": 6
+  },
+  "BOXK": {
+    "algorithm": "M S D S' D' M'",
+    "buffer": "C",
+    "targets": "BOXK",
+    "htm": 6
+  },
+  "BUAW": {
+    "algorithm": "M2 U' M' U2 M' U'",
+    "buffer": "C",
+    "targets": "BUAW",
+    "htm": 6
+  },
+  "BUXW": {
+    "algorithm": "D' M S D M' S'",
+    "buffer": "C",
+    "targets": "BUXW",
+    "htm": 6
+  },
+  "BVAX": {
+    "algorithm": "U' S2 U' S' U2 S'",
+    "buffer": "C",
+    "targets": "BVAX",
+    "htm": 6
+  },
+  "BWDU": {
+    "algorithm": "M U2 M U' M2 U'",
+    "buffer": "C",
+    "targets": "BWDU",
+    "htm": 6
+  },
+  "BWVD": {
+    "algorithm": "M S' D M' S' D'",
+    "buffer": "C",
+    "targets": "BWVD",
+    "htm": 6
+  },
+  "BXDV": {
+    "algorithm": "U' S U2 S U' S2",
+    "buffer": "C",
+    "targets": "BXDV",
+    "htm": 6
+  },
+  "BXWD": {
+    "algorithm": "D' M S' D M' S'",
+    "buffer": "C",
+    "targets": "BXWD",
+    "htm": 6
+  },
+  "BXWV": {
+    "algorithm": "M S D M' S' D'",
+    "buffer": "C",
+    "targets": "BXWV",
+    "htm": 6
+  },
+  "DAUV": {
+    "algorithm": "D M S' D' M S",
+    "buffer": "C",
+    "targets": "DAUV",
+    "htm": 6
+  },
+  "DAVW": {
+    "algorithm": "M S' D' M S D",
+    "buffer": "C",
+    "targets": "DAVW",
+    "htm": 6
+  },
+  "DGHK": {
+    "algorithm": "F L E' L' E F'",
+    "buffer": "C",
+    "targets": "DGHK",
+    "htm": 6
+  },
+  "DGJK": {
+    "algorithm": "L' E F' E' F L",
+    "buffer": "C",
+    "targets": "DGJK",
+    "htm": 6
+  },
+  "DGVK": {
+    "algorithm": "M S' D' S D M'",
+    "buffer": "C",
+    "targets": "DGVK",
+    "htm": 6
+  },
+  "DGWK": {
+    "algorithm": "S' D M D' M' S",
+    "buffer": "C",
+    "targets": "DGWK",
+    "htm": 6
+  },
+  "DMAS": {
+    "algorithm": "B2 M U' M' U B2",
+    "buffer": "C",
+    "targets": "DMAS",
+    "htm": 6
+  },
+  "DMHT": {
+    "algorithm": "B M U' M' U B'",
+    "buffer": "C",
+    "targets": "DMHT",
+    "htm": 6
+  },
+  "DMNR": {
+    "algorithm": "B' M U' M' U B",
+    "buffer": "C",
+    "targets": "DMNR",
+    "htm": 6
+  },
+  "DMVR": {
+    "algorithm": "B' U S' U' B S",
+    "buffer": "C",
+    "targets": "DMVR",
+    "htm": 6
+  },
+  "DMVS": {
+    "algorithm": "B2 U S' U' B2 S",
+    "buffer": "C",
+    "targets": "DMVS",
+    "htm": 6
+  },
+  "DMVT": {
+    "algorithm": "B U S' U' B' S",
+    "buffer": "C",
+    "targets": "DMVT",
+    "htm": 6
+  },
+  "DNJQ": {
+    "algorithm": "R' U S' U' S R",
+    "buffer": "C",
+    "targets": "DNJQ",
+    "htm": 6
+  },
+  "DNWQ": {
+    "algorithm": "L' B' M' B L M",
+    "buffer": "C",
+    "targets": "DNWQ",
+    "htm": 6
+  },
+  "DOBQ": {
+    "algorithm": "R2 U S' U' S R2",
+    "buffer": "C",
+    "targets": "DOBQ",
+    "htm": 6
+  },
+  "DOWQ": {
+    "algorithm": "R2 M U' M' U R2",
+    "buffer": "C",
+    "targets": "DOWQ",
+    "htm": 6
+  },
+  "DPTQ": {
+    "algorithm": "R U S' U' S R'",
+    "buffer": "C",
+    "targets": "DPTQ",
+    "htm": 6
+  },
+  "DPWQ": {
+    "algorithm": "R M U' M' U R'",
+    "buffer": "C",
+    "targets": "DPWQ",
+    "htm": 6
+  },
+  "DUAW": {
+    "algorithm": "M2 U M' U2 M' U",
+    "buffer": "C",
+    "targets": "DUAW",
+    "htm": 6
+  },
+  "DUVW": {
+    "algorithm": "D M S' D' M' S",
+    "buffer": "C",
+    "targets": "DUVW",
+    "htm": 6
+  },
+  "DVBX": {
+    "algorithm": "U S' U2 S' U S2",
+    "buffer": "C",
+    "targets": "DVBX",
+    "htm": 6
+  },
+  "DVWB": {
+    "algorithm": "D M S D' M' S",
+    "buffer": "C",
+    "targets": "DVWB",
+    "htm": 6
+  },
+  "DVWX": {
+    "algorithm": "M S' D' M' S D",
+    "buffer": "C",
+    "targets": "DVWX",
+    "htm": 6
+  },
+  "DWBU": {
+    "algorithm": "M U2 M U M2 U",
+    "buffer": "C",
+    "targets": "DWBU",
+    "htm": 6
+  },
+  "DWXB": {
+    "algorithm": "M S D' M' S D",
+    "buffer": "C",
+    "targets": "DWXB",
+    "htm": 6
+  },
+  "DXAV": {
+    "algorithm": "U S2 U S U2 S",
+    "buffer": "C",
+    "targets": "DXAV",
+    "htm": 6
+  },
+  "EAGO": {
+    "algorithm": "U2 S U S2 U S",
+    "buffer": "C",
+    "targets": "EAGO",
+    "htm": 6
+  },
+  "EAOG": {
+    "algorithm": "S' U S2 U S' U2",
+    "buffer": "C",
+    "targets": "EAOG",
+    "htm": 6
+  },
+  "EBAK": {
+    "algorithm": "F2 U' M' U M F2",
+    "buffer": "C",
+    "targets": "EBAK",
+    "htm": 6
+  },
+  "EBOK": {
+    "algorithm": "M' D' M' D M S",
+    "buffer": "C",
+    "targets": "EBOK",
+    "htm": 6
+  },
+  "EJNK": {
+    "algorithm": "L F' E' F E L'",
+    "buffer": "C",
+    "targets": "EJNK",
+    "htm": 6
+  },
+  "EJWK": {
+    "algorithm": "L M' F M F' L'",
+    "buffer": "C",
+    "targets": "EJWK",
+    "htm": 6
+  },
+  "EUAO": {
+    "algorithm": "M' D' M' S' D S",
+    "buffer": "C",
+    "targets": "EUAO",
+    "htm": 6
+  },
+  "EUWM": {
+    "algorithm": "U2 M' U M2 U M'",
+    "buffer": "C",
+    "targets": "EUWM",
+    "htm": 6
+  },
+  "EVWK": {
+    "algorithm": "L2 D M D' L2 M'",
+    "buffer": "C",
+    "targets": "EVWK",
+    "htm": 6
+  },
+  "EWMG": {
+    "algorithm": "M D M' S' D' S'",
+    "buffer": "C",
+    "targets": "EWMG",
+    "htm": 6
+  },
+  "EWUM": {
+    "algorithm": "M U M2 U M U2",
+    "buffer": "C",
+    "targets": "EWUM",
+    "htm": 6
+  },
+  "EXMQ": {
+    "algorithm": "L2 S U S' U' L2",
+    "buffer": "C",
+    "targets": "EXMQ",
+    "htm": 6
+  },
+  "EXNR": {
+    "algorithm": "F' E L E' L' F",
+    "buffer": "C",
+    "targets": "EXNR",
+    "htm": 6
+  },
+  "EXOR": {
+    "algorithm": "F' L' S L F S'",
+    "buffer": "C",
+    "targets": "EXOR",
+    "htm": 6
+  },
+  "EXOS": {
+    "algorithm": "F2 S' D' S D F2",
+    "buffer": "C",
+    "targets": "EXOS",
+    "htm": 6
+  },
+  "EXWQ": {
+    "algorithm": "M S D S' D' S'",
+    "buffer": "C",
+    "targets": "EXWQ",
+    "htm": 6
+  },
+  "FANW": {
+    "algorithm": "B' E' M' B E M",
+    "buffer": "C",
+    "targets": "FANW",
+    "htm": 6
+  },
+  "FAUW": {
+    "algorithm": "M2 F' M F2 M F'",
+    "buffer": "C",
+    "targets": "FAUW",
+    "htm": 6
+  },
+  "FBOK": {
+    "algorithm": "R' F' E' F E R",
+    "buffer": "C",
+    "targets": "FBOK",
+    "htm": 6
+  },
+  "FBWK": {
+    "algorithm": "R' M' F M F' R",
+    "buffer": "C",
+    "targets": "FBWK",
+    "htm": 6
+  },
+  "FHUN": {
+    "algorithm": "F' E2 F' E F2 E",
+    "buffer": "C",
+    "targets": "FHUN",
+    "htm": 6
+  },
+  "FJNG": {
+    "algorithm": "D F' E' F D' E",
+    "buffer": "C",
+    "targets": "FJNG",
+    "htm": 6
+  },
+  "FJNO": {
+    "algorithm": "D' F' E' F D E",
+    "buffer": "C",
+    "targets": "FJNO",
+    "htm": 6
+  },
+  "FJNS": {
+    "algorithm": "D2 F' E' F D2 E",
+    "buffer": "C",
+    "targets": "FJNS",
+    "htm": 6
+  },
+  "FJUS": {
+    "algorithm": "D2 M' F M F' D2",
+    "buffer": "C",
+    "targets": "FJUS",
+    "htm": 6
+  },
+  "FJVG": {
+    "algorithm": "D M' F M F' D'",
+    "buffer": "C",
+    "targets": "FJVG",
+    "htm": 6
+  },
+  "FJXO": {
+    "algorithm": "D' M' F M F' D",
+    "buffer": "C",
+    "targets": "FJXO",
+    "htm": 6
+  },
+  "FNPH": {
+    "algorithm": "F' E' F2 E' F' E2",
+    "buffer": "C",
+    "targets": "FNPH",
+    "htm": 6
+  },
+  "FNWH": {
+    "algorithm": "E' M' B E M B'",
+    "buffer": "C",
+    "targets": "FNWH",
+    "htm": 6
+  },
+  "FNWP": {
+    "algorithm": "B' E M' B E M",
+    "buffer": "C",
+    "targets": "FNWP",
+    "htm": 6
+  },
+  "FRMQ": {
+    "algorithm": "L S U S' U' L'",
+    "buffer": "C",
+    "targets": "FRMQ",
+    "htm": 6
+  },
+  "FRNQ": {
+    "algorithm": "E' M' B E B' M",
+    "buffer": "C",
+    "targets": "FRNQ",
+    "htm": 6
+  },
+  "FRWQ": {
+    "algorithm": "E' B' M' B E M",
+    "buffer": "C",
+    "targets": "FRWQ",
+    "htm": 6
+  },
+  "FRXQ": {
+    "algorithm": "U' L' S' L S U",
+    "buffer": "C",
+    "targets": "FRXQ",
+    "htm": 6
+  },
+  "FTPK": {
+    "algorithm": "R2 F' E' F E R2",
+    "buffer": "C",
+    "targets": "FTPK",
+    "htm": 6
+  },
+  "FTWK": {
+    "algorithm": "R2 M' F M F' R2",
+    "buffer": "C",
+    "targets": "FTWK",
+    "htm": 6
+  },
+  "FUAN": {
+    "algorithm": "B' E' M' B E M'",
+    "buffer": "C",
+    "targets": "FUAN",
+    "htm": 6
+  },
+  "FUNW": {
+    "algorithm": "E' M' B E M' B'",
+    "buffer": "C",
+    "targets": "FUNW",
+    "htm": 6
+  },
+  "FVMK": {
+    "algorithm": "R F' E' F E R'",
+    "buffer": "C",
+    "targets": "FVMK",
+    "htm": 6
+  },
+  "FVWK": {
+    "algorithm": "L D M D' L' M'",
+    "buffer": "C",
+    "targets": "FVWK",
+    "htm": 6
+  },
+  "FWHP": {
+    "algorithm": "E M' B E M B'",
+    "buffer": "C",
+    "targets": "FWHP",
+    "htm": 6
+  },
+  "FWPA": {
+    "algorithm": "M' F2 M' F' M2 F'",
+    "buffer": "C",
+    "targets": "FWPA",
+    "htm": 6
+  },
+  "GAMW": {
+    "algorithm": "M D' M S D S'",
+    "buffer": "C",
+    "targets": "GAMW",
+    "htm": 6
+  },
+  "GAUM": {
+    "algorithm": "S D M S' D' M",
+    "buffer": "C",
+    "targets": "GAUM",
+    "htm": 6
+  },
+  "GBWK": {
+    "algorithm": "R2 D M D' R2 M'",
+    "buffer": "C",
+    "targets": "GBWK",
+    "htm": 6
+  },
+  "GDMR": {
+    "algorithm": "B' S U S' U' B",
+    "buffer": "C",
+    "targets": "GDMR",
+    "htm": 6
+  },
+  "GDMS": {
+    "algorithm": "B2 S U S' U' B2",
+    "buffer": "C",
+    "targets": "GDMS",
+    "htm": 6
+  },
+  "GDMT": {
+    "algorithm": "B S U S' U' B'",
+    "buffer": "C",
+    "targets": "GDMT",
+    "htm": 6
+  },
+  "GDNQ": {
+    "algorithm": "R' S U S' U' R",
+    "buffer": "C",
+    "targets": "GDNQ",
+    "htm": 6
+  },
+  "GDNR": {
+    "algorithm": "F' E L' E' L F",
+    "buffer": "C",
+    "targets": "GDNR",
+    "htm": 6
+  },
+  "GDOQ": {
+    "algorithm": "R2 S U S' U' R2",
+    "buffer": "C",
+    "targets": "GDOQ",
+    "htm": 6
+  },
+  "GDPQ": {
+    "algorithm": "R S U S' U' R'",
+    "buffer": "C",
+    "targets": "GDPQ",
+    "htm": 6
+  },
+  "GDWQ": {
+    "algorithm": "M S D' S D S'",
+    "buffer": "C",
+    "targets": "GDWQ",
+    "htm": 6
+  },
+  "GFRN": {
+    "algorithm": "U L' E L U' E'",
+    "buffer": "C",
+    "targets": "GFRN",
+    "htm": 6
+  },
+  "GFRQ": {
+    "algorithm": "U S' L S L' U'",
+    "buffer": "C",
+    "targets": "GFRQ",
+    "htm": 6
+  },
+  "GHLP": {
+    "algorithm": "D E F E' F' D'",
+    "buffer": "C",
+    "targets": "GHLP",
+    "htm": 6
+  },
+  "GHLQ": {
+    "algorithm": "U S' L' S L U'",
+    "buffer": "C",
+    "targets": "GHLQ",
+    "htm": 6
+  },
+  "GJFQ": {
+    "algorithm": "D M F M' F' D'",
+    "buffer": "C",
+    "targets": "GJFQ",
+    "htm": 6
+  },
+  "GJFR": {
+    "algorithm": "D F' E F D' E'",
+    "buffer": "C",
+    "targets": "GJFR",
+    "htm": 6
+  },
+  "GJNK": {
+    "algorithm": "L' F' E' F E L",
+    "buffer": "C",
+    "targets": "GJNK",
+    "htm": 6
+  },
+  "GJWK": {
+    "algorithm": "L' M' F M F' L",
+    "buffer": "C",
+    "targets": "GJWK",
+    "htm": 6
+  },
+  "GLPQ": {
+    "algorithm": "D M F' M' F D'",
+    "buffer": "C",
+    "targets": "GLPQ",
+    "htm": 6
+  },
+  "GLPT": {
+    "algorithm": "D F E' F' D' E",
+    "buffer": "C",
+    "targets": "GLPT",
+    "htm": 6
+  },
+  "GMWE": {
+    "algorithm": "S D M S D' M'",
+    "buffer": "C",
+    "targets": "GMWE",
+    "htm": 6
+  },
+  "GMWO": {
+    "algorithm": "M D' M' S D S'",
+    "buffer": "C",
+    "targets": "GMWO",
+    "htm": 6
+  },
+  "GNJF": {
+    "algorithm": "D E' F' E F D'",
+    "buffer": "C",
+    "targets": "GNJF",
+    "htm": 6
+  },
+  "GOAE": {
+    "algorithm": "U2 S U' S2 U' S",
+    "buffer": "C",
+    "targets": "GOAE",
+    "htm": 6
+  },
+  "GOAM": {
+    "algorithm": "S U S2 U S U2",
+    "buffer": "C",
+    "targets": "GOAM",
+    "htm": 6
+  },
+  "GTHL": {
+    "algorithm": "U E L E' L' U'",
+    "buffer": "C",
+    "targets": "GTHL",
+    "htm": 6
+  },
+  "GTWK": {
+    "algorithm": "R D M D' R' M'",
+    "buffer": "C",
+    "targets": "GTWK",
+    "htm": 6
+  },
+  "GUMW": {
+    "algorithm": "S D M S' D' M'",
+    "buffer": "C",
+    "targets": "GUMW",
+    "htm": 6
+  },
+  "GUOA": {
+    "algorithm": "M' D M2 D M' D2",
+    "buffer": "C",
+    "targets": "GUOA",
+    "htm": 6
+  },
+  "GVAK": {
+    "algorithm": "B2 D M D' M' B2",
+    "buffer": "C",
+    "targets": "GVAK",
+    "htm": 6
+  },
+  "GVFR": {
+    "algorithm": "U L S L' S' U'",
+    "buffer": "C",
+    "targets": "GVFR",
+    "htm": 6
+  },
+  "GVHK": {
+    "algorithm": "B D M D' M' B'",
+    "buffer": "C",
+    "targets": "GVHK",
+    "htm": 6
+  },
+  "GVHL": {
+    "algorithm": "U L' S L S' U'",
+    "buffer": "C",
+    "targets": "GVHL",
+    "htm": 6
+  },
+  "GVJF": {
+    "algorithm": "D F M' F' M D'",
+    "buffer": "C",
+    "targets": "GVJF",
+    "htm": 6
+  },
+  "GVLP": {
+    "algorithm": "D F' M' F M D'",
+    "buffer": "C",
+    "targets": "GVLP",
+    "htm": 6
+  },
+  "GVMK": {
+    "algorithm": "M D' S D M' S'",
+    "buffer": "C",
+    "targets": "GVMK",
+    "htm": 6
+  },
+  "GVNK": {
+    "algorithm": "B' D M D' M' B",
+    "buffer": "C",
+    "targets": "GVNK",
+    "htm": 6
+  },
+  "GWEO": {
+    "algorithm": "S' D M S D' M'",
+    "buffer": "C",
+    "targets": "GWEO",
+    "htm": 6
+  },
+  "GWOA": {
+    "algorithm": "D2 M' D' M2 D' M'",
+    "buffer": "C",
+    "targets": "GWOA",
+    "htm": 6
+  },
+  "HAUP": {
+    "algorithm": "E M B E' M B'",
+    "buffer": "C",
+    "targets": "HAUP",
+    "htm": 6
+  },
+  "HAUW": {
+    "algorithm": "B' M B2 M B' M2",
+    "buffer": "C",
+    "targets": "HAUW",
+    "htm": 6
+  },
+  "HFUN": {
+    "algorithm": "E' F2 E' F' E2 F'",
+    "buffer": "C",
+    "targets": "HFUN",
+    "htm": 6
+  },
+  "HJNK": {
+    "algorithm": "L2 F' E' F E L2",
+    "buffer": "C",
+    "targets": "HJNK",
+    "htm": 6
+  },
+  "HJWK": {
+    "algorithm": "L2 M' F M F' L2",
+    "buffer": "C",
+    "targets": "HJWK",
+    "htm": 6
+  },
+  "HLMQ": {
+    "algorithm": "L' S U S' U' L",
+    "buffer": "C",
+    "targets": "HLMQ",
+    "htm": 6
+  },
+  "HLPQ": {
+    "algorithm": "E M B M B' M'",
+    "buffer": "C",
+    "targets": "HLPQ",
+    "htm": 6
+  },
+  "HLWQ": {
+    "algorithm": "E' B M' B' E M",
+    "buffer": "C",
+    "targets": "HLWQ",
+    "htm": 6
+  },
+  "HLXQ": {
+    "algorithm": "U' L S' L' S U",
+    "buffer": "C",
+    "targets": "HLXQ",
+    "htm": 6
+  },
+  "HPNF": {
+    "algorithm": "E2 F E F2 E F",
+    "buffer": "C",
+    "targets": "HPNF",
+    "htm": 6
+  },
+  "HTPO": {
+    "algorithm": "U' E' R E R' U",
+    "buffer": "C",
+    "targets": "HTPO",
+    "htm": 6
+  },
+  "HTPS": {
+    "algorithm": "U2 B E B' U2 E'",
+    "buffer": "C",
+    "targets": "HTPS",
+    "htm": 6
+  },
+  "HTUS": {
+    "algorithm": "U2 M B' M' B U2",
+    "buffer": "C",
+    "targets": "HTUS",
+    "htm": 6
+  },
+  "HUNA": {
+    "algorithm": "B M2 B M' B2 M'",
+    "buffer": "C",
+    "targets": "HUNA",
+    "htm": 6
+  },
+  "HUNP": {
+    "algorithm": "E F2 E F' E2 F'",
+    "buffer": "C",
+    "targets": "HUNP",
+    "htm": 6
+  },
+  "HUPN": {
+    "algorithm": "F' E2 F' E' F2 E'",
+    "buffer": "C",
+    "targets": "HUPN",
+    "htm": 6
+  },
+  "HUWN": {
+    "algorithm": "M' B2 M' B M2 B",
+    "buffer": "C",
+    "targets": "HUWN",
+    "htm": 6
+  },
+  "HVWK": {
+    "algorithm": "L' D M D' L M'",
+    "buffer": "C",
+    "targets": "HVWK",
+    "htm": 6
+  },
+  "HWNF": {
+    "algorithm": "B E' M' B' E M",
+    "buffer": "C",
+    "targets": "HWNF",
+    "htm": 6
+  },
+  "HWUN": {
+    "algorithm": "B M2 B M B2 M",
+    "buffer": "C",
+    "targets": "HWUN",
+    "htm": 6
+  },
+  "JAUR": {
+    "algorithm": "M B' E M B E'",
+    "buffer": "C",
+    "targets": "JAUR",
+    "htm": 6
+  },
+  "JAWL": {
+    "algorithm": "F2 M F M2 F M",
+    "buffer": "C",
+    "targets": "JAWL",
+    "htm": 6
+  },
+  "JEWQ": {
+    "algorithm": "R M U M' U' R'",
+    "buffer": "C",
+    "targets": "JEWQ",
+    "htm": 6
+  },
+  "JEXQ": {
+    "algorithm": "R U' S U S' R'",
+    "buffer": "C",
+    "targets": "JEXQ",
+    "htm": 6
+  },
+  "JFRQ": {
+    "algorithm": "M B' M B E' M'",
+    "buffer": "C",
+    "targets": "JFRQ",
+    "htm": 6
+  },
+  "JFUQ": {
+    "algorithm": "U2 F' M F M' U2",
+    "buffer": "C",
+    "targets": "JFUQ",
+    "htm": 6
+  },
+  "JHWQ": {
+    "algorithm": "R2 B M' B' R2 M",
+    "buffer": "C",
+    "targets": "JHWQ",
+    "htm": 6
+  },
+  "JNLK": {
+    "algorithm": "R2 E' F E F' R2",
+    "buffer": "C",
+    "targets": "JNLK",
+    "htm": 6
+  },
+  "JNRO": {
+    "algorithm": "U' R' E' R U E",
+    "buffer": "C",
+    "targets": "JNRO",
+    "htm": 6
+  },
+  "JNRS": {
+    "algorithm": "U2 E B' E' B U2",
+    "buffer": "C",
+    "targets": "JNRS",
+    "htm": 6
+  },
+  "JNWK": {
+    "algorithm": "E' M' B E B' E",
+    "buffer": "C",
+    "targets": "JNWK",
+    "htm": 6
+  },
+  "JNXO": {
+    "algorithm": "U' S' R S R' U",
+    "buffer": "C",
+    "targets": "JNXO",
+    "htm": 6
+  },
+  "JURT": {
+    "algorithm": "E F E2 F E F2",
+    "buffer": "C",
+    "targets": "JURT",
+    "htm": 6
+  },
+  "JUTR": {
+    "algorithm": "F2 E' F E2 F E'",
+    "buffer": "C",
+    "targets": "JUTR",
+    "htm": 6
+  },
+  "JWAL": {
+    "algorithm": "M' F M2 F M' F2",
+    "buffer": "C",
+    "targets": "JWAL",
+    "htm": 6
+  },
+  "JWLT": {
+    "algorithm": "M' B E M B' E",
+    "buffer": "C",
+    "targets": "JWLT",
+    "htm": 6
+  },
+  "KABE": {
+    "algorithm": "F2 M' U' M U F2",
+    "buffer": "C",
+    "targets": "KABE",
+    "htm": 6
+  },
+  "KADM": {
+    "algorithm": "F2 M' U M U' F2",
+    "buffer": "C",
+    "targets": "KADM",
+    "htm": 6
+  },
+  "KAVG": {
+    "algorithm": "B2 M D M' D' B2",
+    "buffer": "C",
+    "targets": "KAVG",
+    "htm": 6
+  },
+  "KAXO": {
+    "algorithm": "B2 M D' M' D B2",
+    "buffer": "C",
+    "targets": "KAXO",
+    "htm": 6
+  },
+  "KBER": {
+    "algorithm": "B' U M' U' M B",
+    "buffer": "C",
+    "targets": "KBER",
+    "htm": 6
+  },
+  "KBES": {
+    "algorithm": "B2 U M' U' M B2",
+    "buffer": "C",
+    "targets": "KBES",
+    "htm": 6
+  },
+  "KBET": {
+    "algorithm": "B U M' U' M B'",
+    "buffer": "C",
+    "targets": "KBET",
+    "htm": 6
+  },
+  "KBEX": {
+    "algorithm": "M' D' M D M S'",
+    "buffer": "C",
+    "targets": "KBEX",
+    "htm": 6
+  },
+  "KBFQ": {
+    "algorithm": "L' U M' U' L M",
+    "buffer": "C",
+    "targets": "KBFQ",
+    "htm": 6
+  },
+  "KBFR": {
+    "algorithm": "R' F' E F E' R",
+    "buffer": "C",
+    "targets": "KBFR",
+    "htm": 6
+  },
+  "KBGQ": {
+    "algorithm": "L2 U M' U' L2 M",
+    "buffer": "C",
+    "targets": "KBGQ",
+    "htm": 6
+  },
+  "KBHQ": {
+    "algorithm": "L U M' U' L' M",
+    "buffer": "C",
+    "targets": "KBHQ",
+    "htm": 6
+  },
+  "KDMR": {
+    "algorithm": "B' U' M' U M B",
+    "buffer": "C",
+    "targets": "KDMR",
+    "htm": 6
+  },
+  "KDMS": {
+    "algorithm": "B2 U' M' U M B2",
+    "buffer": "C",
+    "targets": "KDMS",
+    "htm": 6
+  },
+  "KDMT": {
+    "algorithm": "B U' M' U M B'",
+    "buffer": "C",
+    "targets": "KDMT",
+    "htm": 6
+  },
+  "KDMV": {
+    "algorithm": "M' D M D' M S",
+    "buffer": "C",
+    "targets": "KDMV",
+    "htm": 6
+  },
+  "KDNQ": {
+    "algorithm": "R' U' M' U R M",
+    "buffer": "C",
+    "targets": "KDNQ",
+    "htm": 6
+  },
+  "KDOQ": {
+    "algorithm": "R2 U' M' U R2 M",
+    "buffer": "C",
+    "targets": "KDOQ",
+    "htm": 6
+  },
+  "KDPQ": {
+    "algorithm": "L M F' M' F L'",
+    "buffer": "C",
+    "targets": "KDPQ",
+    "htm": 6
+  },
+  "KDPT": {
+    "algorithm": "L F E' F' E L'",
+    "buffer": "C",
+    "targets": "KDPT",
+    "htm": 6
+  },
+  "KEXO": {
+    "algorithm": "M S' D S D' M'",
+    "buffer": "C",
+    "targets": "KEXO",
+    "htm": 6
+  },
+  "KEXP": {
+    "algorithm": "L' E F E' F' L",
+    "buffer": "C",
+    "targets": "KEXP",
+    "htm": 6
+  },
+  "KEXQ": {
+    "algorithm": "S D S' D' M S'",
+    "buffer": "C",
+    "targets": "KEXQ",
+    "htm": 6
+  },
+  "KEXR": {
+    "algorithm": "F' L E' L' E F",
+    "buffer": "C",
+    "targets": "KEXR",
+    "htm": 6
+  },
+  "KFRP": {
+    "algorithm": "L2 E F E' F' L2",
+    "buffer": "C",
+    "targets": "KFRP",
+    "htm": 6
+  },
+  "KFRQ": {
+    "algorithm": "E M B E' B' E'",
+    "buffer": "C",
+    "targets": "KFRQ",
+    "htm": 6
+  },
+  "KGDM": {
+    "algorithm": "M' S D M D' M",
+    "buffer": "C",
+    "targets": "KGDM",
+    "htm": 6
+  },
+  "KGDP": {
+    "algorithm": "L E F E' F' L'",
+    "buffer": "C",
+    "targets": "KGDP",
+    "htm": 6
+  },
+  "KGDQ": {
+    "algorithm": "S D' S D M S'",
+    "buffer": "C",
+    "targets": "KGDQ",
+    "htm": 6
+  },
+  "KGDR": {
+    "algorithm": "F' L' E' L E F",
+    "buffer": "C",
+    "targets": "KGDR",
+    "htm": 6
+  },
+  "KHEX": {
+    "algorithm": "F E' L' E L F'",
+    "buffer": "C",
+    "targets": "KHEX",
+    "htm": 6
+  },
+  "KHGD": {
+    "algorithm": "F E' L E L' F'",
+    "buffer": "C",
+    "targets": "KHGD",
+    "htm": 6
+  },
+  "KHLM": {
+    "algorithm": "R' E F E' F' R",
+    "buffer": "C",
+    "targets": "KHLM",
+    "htm": 6
+  },
+  "KHLN": {
+    "algorithm": "R2 E F E' F' R2",
+    "buffer": "C",
+    "targets": "KHLN",
+    "htm": 6
+  },
+  "KHLO": {
+    "algorithm": "R E F E' F' R'",
+    "buffer": "C",
+    "targets": "KHLO",
+    "htm": 6
+  },
+  "KHLQ": {
+    "algorithm": "E M B' E B E'",
+    "buffer": "C",
+    "targets": "KHLQ",
+    "htm": 6
+  },
+  "KHVG": {
+    "algorithm": "B M D M' D' B'",
+    "buffer": "C",
+    "targets": "KHVG",
+    "htm": 6
+  },
+  "KHXO": {
+    "algorithm": "B M D' M' D B'",
+    "buffer": "C",
+    "targets": "KHXO",
+    "htm": 6
+  },
+  "KJEQ": {
+    "algorithm": "L M F M' F' L'",
+    "buffer": "C",
+    "targets": "KJEQ",
+    "htm": 6
+  },
+  "KJEX": {
+    "algorithm": "L F' E F E' L'",
+    "buffer": "C",
+    "targets": "KJEX",
+    "htm": 6
+  },
+  "KJGD": {
+    "algorithm": "L' F' E F E' L",
+    "buffer": "C",
+    "targets": "KJGD",
+    "htm": 6
+  },
+  "KJGQ": {
+    "algorithm": "L' M F M' F' L",
+    "buffer": "C",
+    "targets": "KJGQ",
+    "htm": 6
+  },
+  "KJHL": {
+    "algorithm": "L2 F' E F E' L2",
+    "buffer": "C",
+    "targets": "KJHL",
+    "htm": 6
+  },
+  "KJHQ": {
+    "algorithm": "L2 M F M' F' L2",
+    "buffer": "C",
+    "targets": "KJHQ",
+    "htm": 6
+  },
+  "KLMQ": {
+    "algorithm": "L' U' M' U L M",
+    "buffer": "C",
+    "targets": "KLMQ",
+    "htm": 6
+  },
+  "KLMV": {
+    "algorithm": "R' F E' F' E R",
+    "buffer": "C",
+    "targets": "KLMV",
+    "htm": 6
+  },
+  "KLNJ": {
+    "algorithm": "R2 F E' F' E R2",
+    "buffer": "C",
+    "targets": "KLNJ",
+    "htm": 6
+  },
+  "KLNQ": {
+    "algorithm": "R2 M F' M' F R2",
+    "buffer": "C",
+    "targets": "KLNQ",
+    "htm": 6
+  },
+  "KLOB": {
+    "algorithm": "R F E' F' E R'",
+    "buffer": "C",
+    "targets": "KLOB",
+    "htm": 6
+  },
+  "KLOQ": {
+    "algorithm": "R M F' M' F R'",
+    "buffer": "C",
+    "targets": "KLOQ",
+    "htm": 6
+  },
+  "KMVF": {
+    "algorithm": "R E' F' E F R'",
+    "buffer": "C",
+    "targets": "KMVF",
+    "htm": 6
+  },
+  "KMVG": {
+    "algorithm": "M S D' S' D M'",
+    "buffer": "C",
+    "targets": "KMVG",
+    "htm": 6
+  },
+  "KMVQ": {
+    "algorithm": "S' D' S D M S",
+    "buffer": "C",
+    "targets": "KMVQ",
+    "htm": 6
+  },
+  "KMVT": {
+    "algorithm": "F R' E R E' F'",
+    "buffer": "C",
+    "targets": "KMVT",
+    "htm": 6
+  },
+  "KNJE": {
+    "algorithm": "L E' F' E F L'",
+    "buffer": "C",
+    "targets": "KNJE",
+    "htm": 6
+  },
+  "KNJG": {
+    "algorithm": "L' E' F' E F L",
+    "buffer": "C",
+    "targets": "KNJG",
+    "htm": 6
+  },
+  "KNJH": {
+    "algorithm": "L2 E' F' E F L2",
+    "buffer": "C",
+    "targets": "KNJH",
+    "htm": 6
+  },
+  "KNJQ": {
+    "algorithm": "E' M B E' B' E",
+    "buffer": "C",
+    "targets": "KNJQ",
+    "htm": 6
+  },
+  "KNMV": {
+    "algorithm": "F' E R E' R' F",
+    "buffer": "C",
+    "targets": "KNMV",
+    "htm": 6
+  },
+  "KNOB": {
+    "algorithm": "F' E R' E' R F",
+    "buffer": "C",
+    "targets": "KNOB",
+    "htm": 6
+  },
+  "KNVG": {
+    "algorithm": "B' M D M' D' B",
+    "buffer": "C",
+    "targets": "KNVG",
+    "htm": 6
+  },
+  "KNXO": {
+    "algorithm": "B' M D' M' D B",
+    "buffer": "C",
+    "targets": "KNXO",
+    "htm": 6
+  },
+  "KOBE": {
+    "algorithm": "M' S' D' M D M",
+    "buffer": "C",
+    "targets": "KOBE",
+    "htm": 6
+  },
+  "KOBF": {
+    "algorithm": "R' E' F' E F R",
+    "buffer": "C",
+    "targets": "KOBF",
+    "htm": 6
+  },
+  "KOBQ": {
+    "algorithm": "S' D S' D' M S",
+    "buffer": "C",
+    "targets": "KOBQ",
+    "htm": 6
+  },
+  "KOBT": {
+    "algorithm": "F R E R' E' F'",
+    "buffer": "C",
+    "targets": "KOBT",
+    "htm": 6
+  },
+  "KPTF": {
+    "algorithm": "R2 E' F' E F R2",
+    "buffer": "C",
+    "targets": "KPTF",
+    "htm": 6
+  },
+  "KPTQ": {
+    "algorithm": "E' M B' E B E",
+    "buffer": "C",
+    "targets": "KPTQ",
+    "htm": 6
+  },
+  "KRMQ": {
+    "algorithm": "L U' M' U L' M",
+    "buffer": "C",
+    "targets": "KRMQ",
+    "htm": 6
+  },
+  "KRPQ": {
+    "algorithm": "L2 M F' M' F L2",
+    "buffer": "C",
+    "targets": "KRPQ",
+    "htm": 6
+  },
+  "KRPT": {
+    "algorithm": "L2 F E' F' E L2",
+    "buffer": "C",
+    "targets": "KRPT",
+    "htm": 6
+  },
+  "KTEQ": {
+    "algorithm": "R' U M' U' R M",
+    "buffer": "C",
+    "targets": "KTEQ",
+    "htm": 6
+  },
+  "KTFQ": {
+    "algorithm": "R2 M F M' F' R2",
+    "buffer": "C",
+    "targets": "KTFQ",
+    "htm": 6
+  },
+  "KTFR": {
+    "algorithm": "R2 F' E F E' R2",
+    "buffer": "C",
+    "targets": "KTFR",
+    "htm": 6
+  },
+  "KVEQ": {
+    "algorithm": "R2 U M' U' R2 M",
+    "buffer": "C",
+    "targets": "KVEQ",
+    "htm": 6
+  },
+  "KVFQ": {
+    "algorithm": "R M F M' F' R'",
+    "buffer": "C",
+    "targets": "KVFQ",
+    "htm": 6
+  },
+  "KVFR": {
+    "algorithm": "R F' E F E' R'",
+    "buffer": "C",
+    "targets": "KVFR",
+    "htm": 6
+  },
+  "KVGD": {
+    "algorithm": "M D' S' D M' S",
+    "buffer": "C",
+    "targets": "KVGD",
+    "htm": 6
+  },
+  "KVGS": {
+    "algorithm": "F2 D' M D M' F2",
+    "buffer": "C",
+    "targets": "KVGS",
+    "htm": 6
+  },
+  "KWBF": {
+    "algorithm": "R' F M' F' R M",
+    "buffer": "C",
+    "targets": "KWBF",
+    "htm": 6
+  },
+  "KWBG": {
+    "algorithm": "R2 M D M' D' R2",
+    "buffer": "C",
+    "targets": "KWBG",
+    "htm": 6
+  },
+  "KWDO": {
+    "algorithm": "L2 M D' M' D L2",
+    "buffer": "C",
+    "targets": "KWDO",
+    "htm": 6
+  },
+  "KWDP": {
+    "algorithm": "L F' M' F L' M",
+    "buffer": "C",
+    "targets": "KWDP",
+    "htm": 6
+  },
+  "KWEX": {
+    "algorithm": "M S' D' M' D S",
+    "buffer": "C",
+    "targets": "KWEX",
+    "htm": 6
+  },
+  "KWFR": {
+    "algorithm": "E B E' B' E' M",
+    "buffer": "C",
+    "targets": "KWFR",
+    "htm": 6
+  },
+  "KWGD": {
+    "algorithm": "M S' D M' D' S",
+    "buffer": "C",
+    "targets": "KWGD",
+    "htm": 6
+  },
+  "KWHL": {
+    "algorithm": "E B' E B E' M",
+    "buffer": "C",
+    "targets": "KWHL",
+    "htm": 6
+  },
+  "KWJE": {
+    "algorithm": "L F M' F' L' M",
+    "buffer": "C",
+    "targets": "KWJE",
+    "htm": 6
+  },
+  "KWJG": {
+    "algorithm": "L' F M' F' L M",
+    "buffer": "C",
+    "targets": "KWJG",
+    "htm": 6
+  },
+  "KWJH": {
+    "algorithm": "L2 F M' F' L2 M",
+    "buffer": "C",
+    "targets": "KWJH",
+    "htm": 6
+  },
+  "KWLM": {
+    "algorithm": "R' F' M' F R M",
+    "buffer": "C",
+    "targets": "KWLM",
+    "htm": 6
+  },
+  "KWLN": {
+    "algorithm": "R2 F' M' F R2 M",
+    "buffer": "C",
+    "targets": "KWLN",
+    "htm": 6
+  },
+  "KWLO": {
+    "algorithm": "L M D' M' D L'",
+    "buffer": "C",
+    "targets": "KWLO",
+    "htm": 6
+  },
+  "KWMV": {
+    "algorithm": "M S D M' D' S'",
+    "buffer": "C",
+    "targets": "KWMV",
+    "htm": 6
+  },
+  "KWNJ": {
+    "algorithm": "E' B E' B' E M",
+    "buffer": "C",
+    "targets": "KWNJ",
+    "htm": 6
+  },
+  "KWOB": {
+    "algorithm": "M S D' M' D S'",
+    "buffer": "C",
+    "targets": "KWOB",
+    "htm": 6
+  },
+  "KWPT": {
+    "algorithm": "E' B' E B E M",
+    "buffer": "C",
+    "targets": "KWPT",
+    "htm": 6
+  },
+  "KWRO": {
+    "algorithm": "L' M D' M' D L",
+    "buffer": "C",
+    "targets": "KWRO",
+    "htm": 6
+  },
+  "KWRP": {
+    "algorithm": "L2 F' M' F L2 M",
+    "buffer": "C",
+    "targets": "KWRP",
+    "htm": 6
+  },
+  "KWTF": {
+    "algorithm": "R2 F M' F' R2 M",
+    "buffer": "C",
+    "targets": "KWTF",
+    "htm": 6
+  },
+  "KWTG": {
+    "algorithm": "R M D M' D' R'",
+    "buffer": "C",
+    "targets": "KWTG",
+    "htm": 6
+  },
+  "KWVE": {
+    "algorithm": "L2 M D M' D' L2",
+    "buffer": "C",
+    "targets": "KWVE",
+    "htm": 6
+  },
+  "KWVF": {
+    "algorithm": "L M D M' D' L'",
+    "buffer": "C",
+    "targets": "KWVF",
+    "htm": 6
+  },
+  "KWVH": {
+    "algorithm": "L' M D M' D' L",
+    "buffer": "C",
+    "targets": "KWVH",
+    "htm": 6
+  },
+  "KWXM": {
+    "algorithm": "R2 M D' M' D R2",
+    "buffer": "C",
+    "targets": "KWXM",
+    "htm": 6
+  },
+  "KWXN": {
+    "algorithm": "R M D' M' D R'",
+    "buffer": "C",
+    "targets": "KWXN",
+    "htm": 6
+  },
+  "KWXP": {
+    "algorithm": "L' F' M' F L M",
+    "buffer": "C",
+    "targets": "KWXP",
+    "htm": 6
+  },
+  "KXMQ": {
+    "algorithm": "L2 U' M' U L2 M",
+    "buffer": "C",
+    "targets": "KXMQ",
+    "htm": 6
+  },
+  "KXOB": {
+    "algorithm": "M D S D' M' S'",
+    "buffer": "C",
+    "targets": "KXOB",
+    "htm": 6
+  },
+  "KXOS": {
+    "algorithm": "F2 D M D' M' F2",
+    "buffer": "C",
+    "targets": "KXOS",
+    "htm": 6
+  },
+  "KXPQ": {
+    "algorithm": "L' M F' M' F L",
+    "buffer": "C",
+    "targets": "KXPQ",
+    "htm": 6
+  },
+  "KXPT": {
+    "algorithm": "L' F E' F' E L",
+    "buffer": "C",
+    "targets": "KXPT",
+    "htm": 6
+  },
+  "LAUT": {
+    "algorithm": "M B E' M B' E",
+    "buffer": "C",
+    "targets": "LAUT",
+    "htm": 6
+  },
+  "LAWJ": {
+    "algorithm": "F2 M F' M2 F' M",
+    "buffer": "C",
+    "targets": "LAWJ",
+    "htm": 6
+  },
+  "LHJK": {
+    "algorithm": "L2 E F' E' F L2",
+    "buffer": "C",
+    "targets": "LHJK",
+    "htm": 6
+  },
+  "LHTG": {
+    "algorithm": "U L E L' U' E'",
+    "buffer": "C",
+    "targets": "LHTG",
+    "htm": 6
+  },
+  "LHTS": {
+    "algorithm": "U2 E' B E B' U2",
+    "buffer": "C",
+    "targets": "LHTS",
+    "htm": 6
+  },
+  "LHVG": {
+    "algorithm": "U S L' S' L U'",
+    "buffer": "C",
+    "targets": "LHVG",
+    "htm": 6
+  },
+  "LHWK": {
+    "algorithm": "E M' B' E' B E'",
+    "buffer": "C",
+    "targets": "LHWK",
+    "htm": 6
+  },
+  "LMVQ": {
+    "algorithm": "L' U S' U' S L",
+    "buffer": "C",
+    "targets": "LMVQ",
+    "htm": 6
+  },
+  "LMWQ": {
+    "algorithm": "L' M U' M' U L",
+    "buffer": "C",
+    "targets": "LMWQ",
+    "htm": 6
+  },
+  "LNWQ": {
+    "algorithm": "L2 B' M' B L2 M",
+    "buffer": "C",
+    "targets": "LNWQ",
+    "htm": 6
+  },
+  "LPTQ": {
+    "algorithm": "M B M B' E M'",
+    "buffer": "C",
+    "targets": "LPTQ",
+    "htm": 6
+  },
+  "LPUQ": {
+    "algorithm": "U2 F M F' M' U2",
+    "buffer": "C",
+    "targets": "LPUQ",
+    "htm": 6
+  },
+  "LURT": {
+    "algorithm": "F2 E F' E2 F' E",
+    "buffer": "C",
+    "targets": "LURT",
+    "htm": 6
+  },
+  "LUTR": {
+    "algorithm": "E' F' E2 F' E' F2",
+    "buffer": "C",
+    "targets": "LUTR",
+    "htm": 6
+  },
+  "LWAJ": {
+    "algorithm": "M' F' M2 F' M' F2",
+    "buffer": "C",
+    "targets": "LWAJ",
+    "htm": 6
+  },
+  "LWJR": {
+    "algorithm": "M' B' E' M B E'",
+    "buffer": "C",
+    "targets": "LWJR",
+    "htm": 6
+  },
+  "MAGO": {
+    "algorithm": "S U' S2 U' S U2",
+    "buffer": "C",
+    "targets": "MAGO",
+    "htm": 6
+  },
+  "MAOG": {
+    "algorithm": "U2 S' U' S2 U' S'",
+    "buffer": "C",
+    "targets": "MAOG",
+    "htm": 6
+  },
+  "MDAK": {
+    "algorithm": "F2 U M' U' M F2",
+    "buffer": "C",
+    "targets": "MDAK",
+    "htm": 6
+  },
+  "MDGK": {
+    "algorithm": "M' D M' D' M S'",
+    "buffer": "C",
+    "targets": "MDGK",
+    "htm": 6
+  },
+  "MLHK": {
+    "algorithm": "R' F E F' E' R",
+    "buffer": "C",
+    "targets": "MLHK",
+    "htm": 6
+  },
+  "MLWK": {
+    "algorithm": "R' M' F' M F R",
+    "buffer": "C",
+    "targets": "MLWK",
+    "htm": 6
+  },
+  "MUAG": {
+    "algorithm": "M' D M' S D' S'",
+    "buffer": "C",
+    "targets": "MUAG",
+    "htm": 6
+  },
+  "MUWE": {
+    "algorithm": "U2 M' U' M2 U' M'",
+    "buffer": "C",
+    "targets": "MUWE",
+    "htm": 6
+  },
+  "MVEQ": {
+    "algorithm": "R2 S' U' S U R2",
+    "buffer": "C",
+    "targets": "MVEQ",
+    "htm": 6
+  },
+  "MVGS": {
+    "algorithm": "F2 S D S' D' F2",
+    "buffer": "C",
+    "targets": "MVGS",
+    "htm": 6
+  },
+  "MVGT": {
+    "algorithm": "F R S' R' F' S",
+    "buffer": "C",
+    "targets": "MVGT",
+    "htm": 6
+  },
+  "MVHT": {
+    "algorithm": "F E' R' E R F'",
+    "buffer": "C",
+    "targets": "MVHT",
+    "htm": 6
+  },
+  "MVWQ": {
+    "algorithm": "M S' D' S D S",
+    "buffer": "C",
+    "targets": "MVWQ",
+    "htm": 6
+  },
+  "MWEO": {
+    "algorithm": "M D' M' S D S",
+    "buffer": "C",
+    "targets": "MWEO",
+    "htm": 6
+  },
+  "MWUE": {
+    "algorithm": "M U' M2 U' M U2",
+    "buffer": "C",
+    "targets": "MWUE",
+    "htm": 6
+  },
+  "MXWK": {
+    "algorithm": "R2 D' M D R2 M'",
+    "buffer": "C",
+    "targets": "MXWK",
+    "htm": 6
+  },
+  "NAUF": {
+    "algorithm": "E' M B' E M B",
+    "buffer": "C",
+    "targets": "NAUF",
+    "htm": 6
+  },
+  "NAUW": {
+    "algorithm": "B M B2 M B M2",
+    "buffer": "C",
+    "targets": "NAUW",
+    "htm": 6
+  },
+  "NFHP": {
+    "algorithm": "E2 F' E' F2 E' F'",
+    "buffer": "C",
+    "targets": "NFHP",
+    "htm": 6
+  },
+  "NJEQ": {
+    "algorithm": "R S' U' S U R'",
+    "buffer": "C",
+    "targets": "NJEQ",
+    "htm": 6
+  },
+  "NJFQ": {
+    "algorithm": "E' M B' M B M'",
+    "buffer": "C",
+    "targets": "NJFQ",
+    "htm": 6
+  },
+  "NJVQ": {
+    "algorithm": "U R' S R S' U'",
+    "buffer": "C",
+    "targets": "NJVQ",
+    "htm": 6
+  },
+  "NJWQ": {
+    "algorithm": "E B' M' B E' M",
+    "buffer": "C",
+    "targets": "NJWQ",
+    "htm": 6
+  },
+  "NLHK": {
+    "algorithm": "R2 F E F' E' R2",
+    "buffer": "C",
+    "targets": "NLHK",
+    "htm": 6
+  },
+  "NLWK": {
+    "algorithm": "R2 M' F' M F R2",
+    "buffer": "C",
+    "targets": "NLWK",
+    "htm": 6
+  },
+  "NPUH": {
+    "algorithm": "E F2 E F E2 F",
+    "buffer": "C",
+    "targets": "NPUH",
+    "htm": 6
+  },
+  "NRFG": {
+    "algorithm": "U E L' E' L U'",
+    "buffer": "C",
+    "targets": "NRFG",
+    "htm": 6
+  },
+  "NRFS": {
+    "algorithm": "U2 B' E' B U2 E",
+    "buffer": "C",
+    "targets": "NRFS",
+    "htm": 6
+  },
+  "NRUS": {
+    "algorithm": "U2 M B M' B' U2",
+    "buffer": "C",
+    "targets": "NRUS",
+    "htm": 6
+  },
+  "NUFH": {
+    "algorithm": "F E2 F E F2 E",
+    "buffer": "C",
+    "targets": "NUFH",
+    "htm": 6
+  },
+  "NUHA": {
+    "algorithm": "B' M2 B' M' B2 M'",
+    "buffer": "C",
+    "targets": "NUHA",
+    "htm": 6
+  },
+  "NUHF": {
+    "algorithm": "E' F2 E' F E2 F",
+    "buffer": "C",
+    "targets": "NUHF",
+    "htm": 6
+  },
+  "NUWH": {
+    "algorithm": "M' B2 M' B' M2 B'",
+    "buffer": "C",
+    "targets": "NUWH",
+    "htm": 6
+  },
+  "NWHP": {
+    "algorithm": "B' E M' B E' M",
+    "buffer": "C",
+    "targets": "NWHP",
+    "htm": 6
+  },
+  "NWUH": {
+    "algorithm": "B' M2 B' M B2 M",
+    "buffer": "C",
+    "targets": "NWUH",
+    "htm": 6
+  },
+  "NXWK": {
+    "algorithm": "R D' M D R' M'",
+    "buffer": "C",
+    "targets": "NXWK",
+    "htm": 6
+  },
+  "OAEW": {
+    "algorithm": "M D M S' D' S",
+    "buffer": "C",
+    "targets": "OAEW",
+    "htm": 6
+  },
+  "OAUE": {
+    "algorithm": "S' D' M S D M",
+    "buffer": "C",
+    "targets": "OAUE",
+    "htm": 6
+  },
+  "OBER": {
+    "algorithm": "B' S' U' S U B",
+    "buffer": "C",
+    "targets": "OBER",
+    "htm": 6
+  },
+  "OBES": {
+    "algorithm": "B2 S' U' S U B2",
+    "buffer": "C",
+    "targets": "OBES",
+    "htm": 6
+  },
+  "OBET": {
+    "algorithm": "B S' U' S U B'",
+    "buffer": "C",
+    "targets": "OBET",
+    "htm": 6
+  },
+  "OBFQ": {
+    "algorithm": "L' S' U' S U L",
+    "buffer": "C",
+    "targets": "OBFQ",
+    "htm": 6
+  },
+  "OBGQ": {
+    "algorithm": "L2 S' U' S U L2",
+    "buffer": "C",
+    "targets": "OBGQ",
+    "htm": 6
+  },
+  "OBHQ": {
+    "algorithm": "L S' U' S U L'",
+    "buffer": "C",
+    "targets": "OBHQ",
+    "htm": 6
+  },
+  "OBHT": {
+    "algorithm": "F E' R E R' F'",
+    "buffer": "C",
+    "targets": "OBHT",
+    "htm": 6
+  },
+  "OBWQ": {
+    "algorithm": "M S' D S' D' S",
+    "buffer": "C",
+    "targets": "OBWQ",
+    "htm": 6
+  },
+  "ODWK": {
+    "algorithm": "L2 D' M D L2 M'",
+    "buffer": "C",
+    "targets": "ODWK",
+    "htm": 6
+  },
+  "OEWG": {
+    "algorithm": "M D M' S' D' S",
+    "buffer": "C",
+    "targets": "OEWG",
+    "htm": 6
+  },
+  "OEWM": {
+    "algorithm": "S' D' M S' D M'",
+    "buffer": "C",
+    "targets": "OEWM",
+    "htm": 6
+  },
+  "OGAE": {
+    "algorithm": "S' U' S2 U' S' U2",
+    "buffer": "C",
+    "targets": "OGAE",
+    "htm": 6
+  },
+  "OGAM": {
+    "algorithm": "U2 S' U S2 U S'",
+    "buffer": "C",
+    "targets": "OGAM",
+    "htm": 6
+  },
+  "OHLP": {
+    "algorithm": "D' E F E' F' D",
+    "buffer": "C",
+    "targets": "OHLP",
+    "htm": 6
+  },
+  "OJFQ": {
+    "algorithm": "D' M F M' F' D",
+    "buffer": "C",
+    "targets": "OJFQ",
+    "htm": 6
+  },
+  "OJFR": {
+    "algorithm": "D' F' E F D E'",
+    "buffer": "C",
+    "targets": "OJFR",
+    "htm": 6
+  },
+  "OLHK": {
+    "algorithm": "R F E F' E' R'",
+    "buffer": "C",
+    "targets": "OLHK",
+    "htm": 6
+  },
+  "OLPQ": {
+    "algorithm": "D' M F' M' F D",
+    "buffer": "C",
+    "targets": "OLPQ",
+    "htm": 6
+  },
+  "OLPT": {
+    "algorithm": "D' F E' F' D E",
+    "buffer": "C",
+    "targets": "OLPT",
+    "htm": 6
+  },
+  "OLWK": {
+    "algorithm": "L D' M D L' M'",
+    "buffer": "C",
+    "targets": "OLWK",
+    "htm": 6
+  },
+  "ONJF": {
+    "algorithm": "D' E' F' E F D",
+    "buffer": "C",
+    "targets": "ONJF",
+    "htm": 6
+  },
+  "ONJQ": {
+    "algorithm": "U' S R S' R' U",
+    "buffer": "C",
+    "targets": "ONJQ",
+    "htm": 6
+  },
+  "OPTH": {
+    "algorithm": "U' R E' R' U E",
+    "buffer": "C",
+    "targets": "OPTH",
+    "htm": 6
+  },
+  "OPTQ": {
+    "algorithm": "U' S R' S' R U",
+    "buffer": "C",
+    "targets": "OPTQ",
+    "htm": 6
+  },
+  "ORNJ": {
+    "algorithm": "U' E' R' E R U",
+    "buffer": "C",
+    "targets": "ORNJ",
+    "htm": 6
+  },
+  "ORWK": {
+    "algorithm": "L' D' M D L M'",
+    "buffer": "C",
+    "targets": "ORWK",
+    "htm": 6
+  },
+  "OUEW": {
+    "algorithm": "S' D' M S D M'",
+    "buffer": "C",
+    "targets": "OUEW",
+    "htm": 6
+  },
+  "OUGA": {
+    "algorithm": "M' D' M2 D' M' D2",
+    "buffer": "C",
+    "targets": "OUGA",
+    "htm": 6
+  },
+  "OWGA": {
+    "algorithm": "D2 M' D M2 D M'",
+    "buffer": "C",
+    "targets": "OWGA",
+    "htm": 6
+  },
+  "OWMG": {
+    "algorithm": "S D' M S' D M'",
+    "buffer": "C",
+    "targets": "OWMG",
+    "htm": 6
+  },
+  "OXAK": {
+    "algorithm": "B2 D' M D M' B2",
+    "buffer": "C",
+    "targets": "OXAK",
+    "htm": 6
+  },
+  "OXEK": {
+    "algorithm": "M D S' D' M' S",
+    "buffer": "C",
+    "targets": "OXEK",
+    "htm": 6
+  },
+  "OXHK": {
+    "algorithm": "B D' M D M' B'",
+    "buffer": "C",
+    "targets": "OXHK",
+    "htm": 6
+  },
+  "OXJF": {
+    "algorithm": "D' F M' F' M D",
+    "buffer": "C",
+    "targets": "OXJF",
+    "htm": 6
+  },
+  "OXLP": {
+    "algorithm": "D' F' M' F M D",
+    "buffer": "C",
+    "targets": "OXLP",
+    "htm": 6
+  },
+  "OXNJ": {
+    "algorithm": "U' R S' R' S U",
+    "buffer": "C",
+    "targets": "OXNJ",
+    "htm": 6
+  },
+  "OXNK": {
+    "algorithm": "B' D' M D M' B",
+    "buffer": "C",
+    "targets": "OXNK",
+    "htm": 6
+  },
+  "OXPT": {
+    "algorithm": "U' R' S' R S U",
+    "buffer": "C",
+    "targets": "OXPT",
+    "htm": 6
+  },
+  "PAHW": {
+    "algorithm": "B E M' B' E' M",
+    "buffer": "C",
+    "targets": "PAHW",
+    "htm": 6
+  },
+  "PAUW": {
+    "algorithm": "M2 F M F2 M F",
+    "buffer": "C",
+    "targets": "PAUW",
+    "htm": 6
+  },
+  "PDGK": {
+    "algorithm": "L F E F' E' L'",
+    "buffer": "C",
+    "targets": "PDGK",
+    "htm": 6
+  },
+  "PDWK": {
+    "algorithm": "L M' F' M F L'",
+    "buffer": "C",
+    "targets": "PDWK",
+    "htm": 6
+  },
+  "PHFN": {
+    "algorithm": "F E F2 E F E2",
+    "buffer": "C",
+    "targets": "PHFN",
+    "htm": 6
+  },
+  "PHWF": {
+    "algorithm": "B E' M' B' E' M",
+    "buffer": "C",
+    "targets": "PHWF",
+    "htm": 6
+  },
+  "PHWN": {
+    "algorithm": "E M' B' E' M B",
+    "buffer": "C",
+    "targets": "PHWN",
+    "htm": 6
+  },
+  "PLHG": {
+    "algorithm": "D F E F' D' E'",
+    "buffer": "C",
+    "targets": "PLHG",
+    "htm": 6
+  },
+  "PLHO": {
+    "algorithm": "D' F E F' D E'",
+    "buffer": "C",
+    "targets": "PLHO",
+    "htm": 6
+  },
+  "PLHS": {
+    "algorithm": "D2 F E F' D2 E'",
+    "buffer": "C",
+    "targets": "PLHS",
+    "htm": 6
+  },
+  "PLUS": {
+    "algorithm": "D2 M' F' M F D2",
+    "buffer": "C",
+    "targets": "PLUS",
+    "htm": 6
+  },
+  "PLVG": {
+    "algorithm": "D M' F' M F D'",
+    "buffer": "C",
+    "targets": "PLVG",
+    "htm": 6
+  },
+  "PLXO": {
+    "algorithm": "D' M' F' M F D",
+    "buffer": "C",
+    "targets": "PLXO",
+    "htm": 6
+  },
+  "PNUH": {
+    "algorithm": "F E2 F E' F2 E'",
+    "buffer": "C",
+    "targets": "PNUH",
+    "htm": 6
+  },
+  "PRFK": {
+    "algorithm": "L2 F E F' E' L2",
+    "buffer": "C",
+    "targets": "PRFK",
+    "htm": 6
+  },
+  "PRWK": {
+    "algorithm": "L2 M' F' M F L2",
+    "buffer": "C",
+    "targets": "PRWK",
+    "htm": 6
+  },
+  "PTEQ": {
+    "algorithm": "R' S' U' S U R",
+    "buffer": "C",
+    "targets": "PTEQ",
+    "htm": 6
+  },
+  "PTHQ": {
+    "algorithm": "E M' B' E' B M",
+    "buffer": "C",
+    "targets": "PTHQ",
+    "htm": 6
+  },
+  "PTVQ": {
+    "algorithm": "U R S R' S' U'",
+    "buffer": "C",
+    "targets": "PTVQ",
+    "htm": 6
+  },
+  "PTWQ": {
+    "algorithm": "E B M' B' E' M",
+    "buffer": "C",
+    "targets": "PTWQ",
+    "htm": 6
+  },
+  "PUAH": {
+    "algorithm": "B E M' B' E' M'",
+    "buffer": "C",
+    "targets": "PUAH",
+    "htm": 6
+  },
+  "PUHW": {
+    "algorithm": "E M' B' E' M' B",
+    "buffer": "C",
+    "targets": "PUHW",
+    "htm": 6
+  },
+  "PWFA": {
+    "algorithm": "M' F2 M' F M2 F",
+    "buffer": "C",
+    "targets": "PWFA",
+    "htm": 6
+  },
+  "PWNF": {
+    "algorithm": "E' M' B' E' M B",
+    "buffer": "C",
+    "targets": "PWNF",
+    "htm": 6
+  },
+  "PXEK": {
+    "algorithm": "L' F E F' E' L",
+    "buffer": "C",
+    "targets": "PXEK",
+    "htm": 6
+  },
+  "PXWK": {
+    "algorithm": "L' M' F' M F L",
+    "buffer": "C",
+    "targets": "PXWK",
+    "htm": 6
+  },
+  "QBOD": {
+    "algorithm": "R2 S' U S U' R2",
+    "buffer": "C",
+    "targets": "QBOD",
+    "htm": 6
+  },
+  "QBOK": {
+    "algorithm": "M' S' D S D' S",
+    "buffer": "C",
+    "targets": "QBOK",
+    "htm": 6
+  },
+  "QDGB": {
+    "algorithm": "L2 S U' S' U L2",
+    "buffer": "C",
+    "targets": "QDGB",
+    "htm": 6
+  },
+  "QDGK": {
+    "algorithm": "M' S D' S' D S'",
+    "buffer": "C",
+    "targets": "QDGK",
+    "htm": 6
+  },
+  "QEJK": {
+    "algorithm": "L F M F' L' M'",
+    "buffer": "C",
+    "targets": "QEJK",
+    "htm": 6
+  },
+  "QEJN": {
+    "algorithm": "R U' S' U S R'",
+    "buffer": "C",
+    "targets": "QEJN",
+    "htm": 6
+  },
+  "QETK": {
+    "algorithm": "R' M' U M U' R",
+    "buffer": "C",
+    "targets": "QETK",
+    "htm": 6
+  },
+  "QETP": {
+    "algorithm": "R' U' S' U S R",
+    "buffer": "C",
+    "targets": "QETP",
+    "htm": 6
+  },
+  "QEVK": {
+    "algorithm": "R2 M' U M U' R2",
+    "buffer": "C",
+    "targets": "QEVK",
+    "htm": 6
+  },
+  "QEVM": {
+    "algorithm": "R2 U' S' U S R2",
+    "buffer": "C",
+    "targets": "QEVM",
+    "htm": 6
+  },
+  "QFBK": {
+    "algorithm": "L' M' U M U' L",
+    "buffer": "C",
+    "targets": "QFBK",
+    "htm": 6
+  },
+  "QFBO": {
+    "algorithm": "L' U' S' U S L",
+    "buffer": "C",
+    "targets": "QFBO",
+    "htm": 6
+  },
+  "QFJG": {
+    "algorithm": "D F M F' M' D'",
+    "buffer": "C",
+    "targets": "QFJG",
+    "htm": 6
+  },
+  "QFJN": {
+    "algorithm": "M B' M' B E M'",
+    "buffer": "C",
+    "targets": "QFJN",
+    "htm": 6
+  },
+  "QFJO": {
+    "algorithm": "D' F M F' M' D",
+    "buffer": "C",
+    "targets": "QFJO",
+    "htm": 6
+  },
+  "QFJS": {
+    "algorithm": "D2 F M F' M' D2",
+    "buffer": "C",
+    "targets": "QFJS",
+    "htm": 6
+  },
+  "QFTK": {
+    "algorithm": "R2 F M F' R2 M'",
+    "buffer": "C",
+    "targets": "QFTK",
+    "htm": 6
+  },
+  "QFVK": {
+    "algorithm": "R F M F' R' M'",
+    "buffer": "C",
+    "targets": "QFVK",
+    "htm": 6
+  },
+  "QGBK": {
+    "algorithm": "L2 M' U M U' L2",
+    "buffer": "C",
+    "targets": "QGBK",
+    "htm": 6
+  },
+  "QGBO": {
+    "algorithm": "L2 U' S' U S L2",
+    "buffer": "C",
+    "targets": "QGBO",
+    "htm": 6
+  },
+  "QGJK": {
+    "algorithm": "L' F M F' L M'",
+    "buffer": "C",
+    "targets": "QGJK",
+    "htm": 6
+  },
+  "QHBK": {
+    "algorithm": "L M' U M U' L'",
+    "buffer": "C",
+    "targets": "QHBK",
+    "htm": 6
+  },
+  "QHBO": {
+    "algorithm": "L U' S' U S L'",
+    "buffer": "C",
+    "targets": "QHBO",
+    "htm": 6
+  },
+  "QHJK": {
+    "algorithm": "L2 F M F' L2 M'",
+    "buffer": "C",
+    "targets": "QHJK",
+    "htm": 6
+  },
+  "QHTP": {
+    "algorithm": "M' B' E B E' M",
+    "buffer": "C",
+    "targets": "QHTP",
+    "htm": 6
+  },
+  "QHTS": {
+    "algorithm": "U2 B' M' B M U2",
+    "buffer": "C",
+    "targets": "QHTS",
+    "htm": 6
+  },
+  "QJND": {
+    "algorithm": "R' S' U S U' R",
+    "buffer": "C",
+    "targets": "QJND",
+    "htm": 6
+  },
+  "QJNK": {
+    "algorithm": "E' B E B' E M'",
+    "buffer": "C",
+    "targets": "QJNK",
+    "htm": 6
+  },
+  "QJNO": {
+    "algorithm": "U' R S R' S' U",
+    "buffer": "C",
+    "targets": "QJNO",
+    "htm": 6
+  },
+  "QJNR": {
+    "algorithm": "E M' B E' B' M",
+    "buffer": "C",
+    "targets": "QJNR",
+    "htm": 6
+  },
+  "QLHB": {
+    "algorithm": "L S U' S' U L'",
+    "buffer": "C",
+    "targets": "QLHB",
+    "htm": 6
+  },
+  "QLHG": {
+    "algorithm": "U L' S' L S U'",
+    "buffer": "C",
+    "targets": "QLHG",
+    "htm": 6
+  },
+  "QLHK": {
+    "algorithm": "E B' E' B E' M'",
+    "buffer": "C",
+    "targets": "QLHK",
+    "htm": 6
+  },
+  "QLHT": {
+    "algorithm": "E' M' B' E B M",
+    "buffer": "C",
+    "targets": "QLHT",
+    "htm": 6
+  },
+  "QMLH": {
+    "algorithm": "L' U S U' S' L",
+    "buffer": "C",
+    "targets": "QMLH",
+    "htm": 6
+  },
+  "QMLK": {
+    "algorithm": "L' M' U' M U L",
+    "buffer": "C",
+    "targets": "QMLK",
+    "htm": 6
+  },
+  "QMRF": {
+    "algorithm": "L U S U' S' L'",
+    "buffer": "C",
+    "targets": "QMRF",
+    "htm": 6
+  },
+  "QMRK": {
+    "algorithm": "L M' U' M U L'",
+    "buffer": "C",
+    "targets": "QMRK",
+    "htm": 6
+  },
+  "QMXE": {
+    "algorithm": "L2 U S U' S' L2",
+    "buffer": "C",
+    "targets": "QMXE",
+    "htm": 6
+  },
+  "QMXK": {
+    "algorithm": "L2 M' U' M U L2",
+    "buffer": "C",
+    "targets": "QMXK",
+    "htm": 6
+  },
+  "QNDG": {
+    "algorithm": "R' U S U' S' R",
+    "buffer": "C",
+    "targets": "QNDG",
+    "htm": 6
+  },
+  "QNDK": {
+    "algorithm": "R' M' U' M U R",
+    "buffer": "C",
+    "targets": "QNDK",
+    "htm": 6
+  },
+  "QNLK": {
+    "algorithm": "R2 F' M F R2 M'",
+    "buffer": "C",
+    "targets": "QNLK",
+    "htm": 6
+  },
+  "QNRF": {
+    "algorithm": "M' B E' B' E M",
+    "buffer": "C",
+    "targets": "QNRF",
+    "htm": 6
+  },
+  "QNRS": {
+    "algorithm": "U2 B M' B' M U2",
+    "buffer": "C",
+    "targets": "QNRS",
+    "htm": 6
+  },
+  "QODG": {
+    "algorithm": "R2 U S U' S' R2",
+    "buffer": "C",
+    "targets": "QODG",
+    "htm": 6
+  },
+  "QODK": {
+    "algorithm": "R2 M' U' M U R2",
+    "buffer": "C",
+    "targets": "QODK",
+    "htm": 6
+  },
+  "QOLK": {
+    "algorithm": "R F' M F R' M'",
+    "buffer": "C",
+    "targets": "QOLK",
+    "htm": 6
+  },
+  "QPDG": {
+    "algorithm": "R U S U' S' R'",
+    "buffer": "C",
+    "targets": "QPDG",
+    "htm": 6
+  },
+  "QPDK": {
+    "algorithm": "L F' M F L' M'",
+    "buffer": "C",
+    "targets": "QPDK",
+    "htm": 6
+  },
+  "QPLG": {
+    "algorithm": "D F' M F M' D'",
+    "buffer": "C",
+    "targets": "QPLG",
+    "htm": 6
+  },
+  "QPLH": {
+    "algorithm": "M B M' B' E' M'",
+    "buffer": "C",
+    "targets": "QPLH",
+    "htm": 6
+  },
+  "QPLO": {
+    "algorithm": "D' F' M F M' D",
+    "buffer": "C",
+    "targets": "QPLO",
+    "htm": 6
+  },
+  "QPLS": {
+    "algorithm": "D2 F' M F M' D2",
+    "buffer": "C",
+    "targets": "QPLS",
+    "htm": 6
+  },
+  "QPRK": {
+    "algorithm": "L2 F' M F L2 M'",
+    "buffer": "C",
+    "targets": "QPRK",
+    "htm": 6
+  },
+  "QPXK": {
+    "algorithm": "L' F' M F L M'",
+    "buffer": "C",
+    "targets": "QPXK",
+    "htm": 6
+  },
+  "QRFB": {
+    "algorithm": "L' S U' S' U L",
+    "buffer": "C",
+    "targets": "QRFB",
+    "htm": 6
+  },
+  "QRFG": {
+    "algorithm": "U L S' L' S U'",
+    "buffer": "C",
+    "targets": "QRFG",
+    "htm": 6
+  },
+  "QRFJ": {
+    "algorithm": "E M B' M' B M'",
+    "buffer": "C",
+    "targets": "QRFJ",
+    "htm": 6
+  },
+  "QRFK": {
+    "algorithm": "E B E B' E' M'",
+    "buffer": "C",
+    "targets": "QRFK",
+    "htm": 6
+  },
+  "QTPD": {
+    "algorithm": "R S' U S U' R'",
+    "buffer": "C",
+    "targets": "QTPD",
+    "htm": 6
+  },
+  "QTPK": {
+    "algorithm": "E' B' E' B E M'",
+    "buffer": "C",
+    "targets": "QTPK",
+    "htm": 6
+  },
+  "QTPL": {
+    "algorithm": "E' M B M' B' M'",
+    "buffer": "C",
+    "targets": "QTPL",
+    "htm": 6
+  },
+  "QTPO": {
+    "algorithm": "U' R' S R S' U",
+    "buffer": "C",
+    "targets": "QTPO",
+    "htm": 6
+  },
+  "QUFJ": {
+    "algorithm": "U2 M F' M' F U2",
+    "buffer": "C",
+    "targets": "QUFJ",
+    "htm": 6
+  },
+  "QUHT": {
+    "algorithm": "D2 M' B M B' D2",
+    "buffer": "C",
+    "targets": "QUHT",
+    "htm": 6
+  },
+  "QUNR": {
+    "algorithm": "D2 M' B' M B D2",
+    "buffer": "C",
+    "targets": "QUNR",
+    "htm": 6
+  },
+  "QUPL": {
+    "algorithm": "U2 M F M' F' U2",
+    "buffer": "C",
+    "targets": "QUPL",
+    "htm": 6
+  },
+  "QVHT": {
+    "algorithm": "D M' B M B' D'",
+    "buffer": "C",
+    "targets": "QVHT",
+    "htm": 6
+  },
+  "QVJN": {
+    "algorithm": "U S R' S' R U'",
+    "buffer": "C",
+    "targets": "QVJN",
+    "htm": 6
+  },
+  "QVMK": {
+    "algorithm": "M' S' D' S' D S",
+    "buffer": "C",
+    "targets": "QVMK",
+    "htm": 6
+  },
+  "QVML": {
+    "algorithm": "L' S' U S U' L",
+    "buffer": "C",
+    "targets": "QVML",
+    "htm": 6
+  },
+  "QVMR": {
+    "algorithm": "L S' U S U' L'",
+    "buffer": "C",
+    "targets": "QVMR",
+    "htm": 6
+  },
+  "QVMX": {
+    "algorithm": "L2 S' U S U' L2",
+    "buffer": "C",
+    "targets": "QVMX",
+    "htm": 6
+  },
+  "QVNR": {
+    "algorithm": "D M' B' M B D'",
+    "buffer": "C",
+    "targets": "QVNR",
+    "htm": 6
+  },
+  "QVTP": {
+    "algorithm": "U S R S' R' U'",
+    "buffer": "C",
+    "targets": "QVTP",
+    "htm": 6
+  },
+  "QWBO": {
+    "algorithm": "S' D S D' M' S",
+    "buffer": "C",
+    "targets": "QWBO",
+    "htm": 6
+  },
+  "QWDG": {
+    "algorithm": "S D' S' D M' S'",
+    "buffer": "C",
+    "targets": "QWDG",
+    "htm": 6
+  },
+  "QWEJ": {
+    "algorithm": "R U M U' R' M'",
+    "buffer": "C",
+    "targets": "QWEJ",
+    "htm": 6
+  },
+  "QWET": {
+    "algorithm": "L' M' B M B' L",
+    "buffer": "C",
+    "targets": "QWET",
+    "htm": 6
+  },
+  "QWEV": {
+    "algorithm": "R2 U M U' R2 M'",
+    "buffer": "C",
+    "targets": "QWEV",
+    "htm": 6
+  },
+  "QWFB": {
+    "algorithm": "L' U M U' L M'",
+    "buffer": "C",
+    "targets": "QWFB",
+    "htm": 6
+  },
+  "QWFT": {
+    "algorithm": "L2 M' B M B' L2",
+    "buffer": "C",
+    "targets": "QWFT",
+    "htm": 6
+  },
+  "QWGB": {
+    "algorithm": "L2 U M U' L2 M'",
+    "buffer": "C",
+    "targets": "QWGB",
+    "htm": 6
+  },
+  "QWGT": {
+    "algorithm": "L M' B M B' L'",
+    "buffer": "C",
+    "targets": "QWGT",
+    "htm": 6
+  },
+  "QWHB": {
+    "algorithm": "L U M U' L' M'",
+    "buffer": "C",
+    "targets": "QWHB",
+    "htm": 6
+  },
+  "QWHJ": {
+    "algorithm": "R2 M' B M B' R2",
+    "buffer": "C",
+    "targets": "QWHJ",
+    "htm": 6
+  },
+  "QWHV": {
+    "algorithm": "R' M' B M B' R",
+    "buffer": "C",
+    "targets": "QWHV",
+    "htm": 6
+  },
+  "QWJN": {
+    "algorithm": "E M' B' M B E'",
+    "buffer": "C",
+    "targets": "QWJN",
+    "htm": 6
+  },
+  "QWLH": {
+    "algorithm": "E' M' B M B' E",
+    "buffer": "C",
+    "targets": "QWLH",
+    "htm": 6
+  },
+  "QWML": {
+    "algorithm": "L' U' M U L M'",
+    "buffer": "C",
+    "targets": "QWML",
+    "htm": 6
+  },
+  "QWMR": {
+    "algorithm": "L U' M U L' M'",
+    "buffer": "C",
+    "targets": "QWMR",
+    "htm": 6
+  },
+  "QWMX": {
+    "algorithm": "L2 U' M U L2 M'",
+    "buffer": "C",
+    "targets": "QWMX",
+    "htm": 6
+  },
+  "QWND": {
+    "algorithm": "L' M' B' M B L",
+    "buffer": "C",
+    "targets": "QWND",
+    "htm": 6
+  },
+  "QWNL": {
+    "algorithm": "L2 M' B' M B L2",
+    "buffer": "C",
+    "targets": "QWNL",
+    "htm": 6
+  },
+  "QWNX": {
+    "algorithm": "L M' B' M B L'",
+    "buffer": "C",
+    "targets": "QWNX",
+    "htm": 6
+  },
+  "QWOD": {
+    "algorithm": "R2 U' M U R2 M'",
+    "buffer": "C",
+    "targets": "QWOD",
+    "htm": 6
+  },
+  "QWOR": {
+    "algorithm": "R' M' B' M B R",
+    "buffer": "C",
+    "targets": "QWOR",
+    "htm": 6
+  },
+  "QWPD": {
+    "algorithm": "R U' M U R' M'",
+    "buffer": "C",
+    "targets": "QWPD",
+    "htm": 6
+  },
+  "QWPR": {
+    "algorithm": "R2 M' B' M B R2",
+    "buffer": "C",
+    "targets": "QWPR",
+    "htm": 6
+  },
+  "QWRF": {
+    "algorithm": "E' M' B' M B E",
+    "buffer": "C",
+    "targets": "QWRF",
+    "htm": 6
+  },
+  "QWTP": {
+    "algorithm": "E M' B M B' E'",
+    "buffer": "C",
+    "targets": "QWTP",
+    "htm": 6
+  },
+  "QWVM": {
+    "algorithm": "S' D' S' D M' S",
+    "buffer": "C",
+    "targets": "QWVM",
+    "htm": 6
+  },
+  "QWXE": {
+    "algorithm": "S D S D' M' S'",
+    "buffer": "C",
+    "targets": "QWXE",
+    "htm": 6
+  },
+  "QXEJ": {
+    "algorithm": "R S U' S' U R'",
+    "buffer": "C",
+    "targets": "QXEJ",
+    "htm": 6
+  },
+  "QXEK": {
+    "algorithm": "M' S D S D' S'",
+    "buffer": "C",
+    "targets": "QXEK",
+    "htm": 6
+  },
+  "QXET": {
+    "algorithm": "R' S U' S' U R",
+    "buffer": "C",
+    "targets": "QXET",
+    "htm": 6
+  },
+  "QXEV": {
+    "algorithm": "R2 S U' S' U R2",
+    "buffer": "C",
+    "targets": "QXEV",
+    "htm": 6
+  },
+  "QXHT": {
+    "algorithm": "D' M' B M B' D",
+    "buffer": "C",
+    "targets": "QXHT",
+    "htm": 6
+  },
+  "QXLH": {
+    "algorithm": "U' S' L S L' U",
+    "buffer": "C",
+    "targets": "QXLH",
+    "htm": 6
+  },
+  "QXNR": {
+    "algorithm": "D' M' B' M B D",
+    "buffer": "C",
+    "targets": "QXNR",
+    "htm": 6
+  },
+  "QXRF": {
+    "algorithm": "U' S' L' S L U",
+    "buffer": "C",
+    "targets": "QXRF",
+    "htm": 6
+  },
+  "RAJW": {
+    "algorithm": "E B' E' M' B M",
+    "buffer": "C",
+    "targets": "RAJW",
+    "htm": 6
+  },
+  "RATU": {
+    "algorithm": "M B' M2 B' M B2",
+    "buffer": "C",
+    "targets": "RATU",
+    "htm": 6
+  },
+  "RDGK": {
+    "algorithm": "F' E' L' E L F",
+    "buffer": "C",
+    "targets": "RDGK",
+    "htm": 6
+  },
+  "RDGV": {
+    "algorithm": "F' L S L' F S'",
+    "buffer": "C",
+    "targets": "RDGV",
+    "htm": 6
+  },
+  "REBK": {
+    "algorithm": "B' M' U M U' B",
+    "buffer": "C",
+    "targets": "REBK",
+    "htm": 6
+  },
+  "REBO": {
+    "algorithm": "B' U' S' U B S",
+    "buffer": "C",
+    "targets": "REBO",
+    "htm": 6
+  },
+  "RFBK": {
+    "algorithm": "R' E F' E' F R",
+    "buffer": "C",
+    "targets": "RFBK",
+    "htm": 6
+  },
+  "RFJG": {
+    "algorithm": "D E F' E' F D'",
+    "buffer": "C",
+    "targets": "RFJG",
+    "htm": 6
+  },
+  "RFJO": {
+    "algorithm": "D' E F' E' F D",
+    "buffer": "C",
+    "targets": "RFJO",
+    "htm": 6
+  },
+  "RFJS": {
+    "algorithm": "D2 E F' E' F D2",
+    "buffer": "C",
+    "targets": "RFJS",
+    "htm": 6
+  },
+  "RFTK": {
+    "algorithm": "R2 E F' E' F R2",
+    "buffer": "C",
+    "targets": "RFTK",
+    "htm": 6
+  },
+  "RFVG": {
+    "algorithm": "U S L S' L' U'",
+    "buffer": "C",
+    "targets": "RFVG",
+    "htm": 6
+  },
+  "RFVK": {
+    "algorithm": "R E F' E' F R'",
+    "buffer": "C",
+    "targets": "RFVK",
+    "htm": 6
+  },
+  "RFWK": {
+    "algorithm": "E M' B E B' E'",
+    "buffer": "C",
+    "targets": "RFWK",
+    "htm": 6
+  },
+  "RJWL": {
+    "algorithm": "E B' E M' B M",
+    "buffer": "C",
+    "targets": "RJWL",
+    "htm": 6
+  },
+  "RJWT": {
+    "algorithm": "M' B E M B' E'",
+    "buffer": "C",
+    "targets": "RJWT",
+    "htm": 6
+  },
+  "RMDG": {
+    "algorithm": "B' U S U' B S'",
+    "buffer": "C",
+    "targets": "RMDG",
+    "htm": 6
+  },
+  "RMDK": {
+    "algorithm": "B' M' U' M U B",
+    "buffer": "C",
+    "targets": "RMDK",
+    "htm": 6
+  },
+  "RMVQ": {
+    "algorithm": "L U S' U' S L'",
+    "buffer": "C",
+    "targets": "RMVQ",
+    "htm": 6
+  },
+  "RMWQ": {
+    "algorithm": "L M U' M' U L'",
+    "buffer": "C",
+    "targets": "RMWQ",
+    "htm": 6
+  },
+  "RNDG": {
+    "algorithm": "F' L' E L E' F",
+    "buffer": "C",
+    "targets": "RNDG",
+    "htm": 6
+  },
+  "RNEB": {
+    "algorithm": "B' U M U' M' B",
+    "buffer": "C",
+    "targets": "RNEB",
+    "htm": 6
+  },
+  "RNJQ": {
+    "algorithm": "M' B E B' E' M",
+    "buffer": "C",
+    "targets": "RNJQ",
+    "htm": 6
+  },
+  "RNMD": {
+    "algorithm": "B' U' M U M' B",
+    "buffer": "C",
+    "targets": "RNMD",
+    "htm": 6
+  },
+  "RNUQ": {
+    "algorithm": "D2 B' M' B M D2",
+    "buffer": "C",
+    "targets": "RNUQ",
+    "htm": 6
+  },
+  "RNVQ": {
+    "algorithm": "D B' M' B M D'",
+    "buffer": "C",
+    "targets": "RNVQ",
+    "htm": 6
+  },
+  "RNXE": {
+    "algorithm": "F' L E L' E' F",
+    "buffer": "C",
+    "targets": "RNXE",
+    "htm": 6
+  },
+  "RNXQ": {
+    "algorithm": "D' B' M' B M D",
+    "buffer": "C",
+    "targets": "RNXQ",
+    "htm": 6
+  },
+  "ROWQ": {
+    "algorithm": "R' B' M' B R M",
+    "buffer": "C",
+    "targets": "ROWQ",
+    "htm": 6
+  },
+  "ROXE": {
+    "algorithm": "F' S L' S' L F",
+    "buffer": "C",
+    "targets": "ROXE",
+    "htm": 6
+  },
+  "RPWQ": {
+    "algorithm": "R2 B' M' B R2 M",
+    "buffer": "C",
+    "targets": "RPWQ",
+    "htm": 6
+  },
+  "RTUJ": {
+    "algorithm": "E F' E2 F' E F2",
+    "buffer": "C",
+    "targets": "RTUJ",
+    "htm": 6
+  },
+  "RTUL": {
+    "algorithm": "F2 E F E2 F E",
+    "buffer": "C",
+    "targets": "RTUL",
+    "htm": 6
+  },
+  "RUAJ": {
+    "algorithm": "E B' E' M' B M'",
+    "buffer": "C",
+    "targets": "RUAJ",
+    "htm": 6
+  },
+  "RUJW": {
+    "algorithm": "M' B E M' B' E'",
+    "buffer": "C",
+    "targets": "RUJW",
+    "htm": 6
+  },
+  "RVMD": {
+    "algorithm": "B' S' U S U' B",
+    "buffer": "C",
+    "targets": "RVMD",
+    "htm": 6
+  },
+  "RWLT": {
+    "algorithm": "E' B' E M' B M",
+    "buffer": "C",
+    "targets": "RWLT",
+    "htm": 6
+  },
+  "RWTU": {
+    "algorithm": "B2 M B M2 B M",
+    "buffer": "C",
+    "targets": "RWTU",
+    "htm": 6
+  },
+  "RXEB": {
+    "algorithm": "B' S U' S' U B",
+    "buffer": "C",
+    "targets": "RXEB",
+    "htm": 6
+  },
+  "RXEK": {
+    "algorithm": "F' E' L E L' F",
+    "buffer": "C",
+    "targets": "RXEK",
+    "htm": 6
+  },
+  "SAEB": {
+    "algorithm": "B2 U M U' M' B2",
+    "buffer": "C",
+    "targets": "SAEB",
+    "htm": 6
+  },
+  "SAGV": {
+    "algorithm": "F2 D' M' D M F2",
+    "buffer": "C",
+    "targets": "SAGV",
+    "htm": 6
+  },
+  "SAMD": {
+    "algorithm": "B2 U' M U M' B2",
+    "buffer": "C",
+    "targets": "SAMD",
+    "htm": 6
+  },
+  "SAOX": {
+    "algorithm": "F2 D M' D' M F2",
+    "buffer": "C",
+    "targets": "SAOX",
+    "htm": 6
+  },
+  "SBOX": {
+    "algorithm": "F2 S D' S' D F2",
+    "buffer": "C",
+    "targets": "SBOX",
+    "htm": 6
+  },
+  "SDGV": {
+    "algorithm": "F2 S' D S D' F2",
+    "buffer": "C",
+    "targets": "SDGV",
+    "htm": 6
+  },
+  "SEBK": {
+    "algorithm": "B2 M' U M U' B2",
+    "buffer": "C",
+    "targets": "SEBK",
+    "htm": 6
+  },
+  "SEBO": {
+    "algorithm": "B2 U' S' U B2 S",
+    "buffer": "C",
+    "targets": "SEBO",
+    "htm": 6
+  },
+  "SFRN": {
+    "algorithm": "U2 E' B' E B U2",
+    "buffer": "C",
+    "targets": "SFRN",
+    "htm": 6
+  },
+  "SGVK": {
+    "algorithm": "F2 M D' M' D F2",
+    "buffer": "C",
+    "targets": "SGVK",
+    "htm": 6
+  },
+  "SGVM": {
+    "algorithm": "F2 D S D' F2 S'",
+    "buffer": "C",
+    "targets": "SGVM",
+    "htm": 6
+  },
+  "SHLP": {
+    "algorithm": "D2 E F E' F' D2",
+    "buffer": "C",
+    "targets": "SHLP",
+    "htm": 6
+  },
+  "SJFQ": {
+    "algorithm": "D2 M F M' F' D2",
+    "buffer": "C",
+    "targets": "SJFQ",
+    "htm": 6
+  },
+  "SJFR": {
+    "algorithm": "D2 F' E F D2 E'",
+    "buffer": "C",
+    "targets": "SJFR",
+    "htm": 6
+  },
+  "SLPQ": {
+    "algorithm": "D2 M F' M' F D2",
+    "buffer": "C",
+    "targets": "SLPQ",
+    "htm": 6
+  },
+  "SLPT": {
+    "algorithm": "D2 F E' F' D2 E",
+    "buffer": "C",
+    "targets": "SLPT",
+    "htm": 6
+  },
+  "SMDG": {
+    "algorithm": "B2 U S U' B2 S'",
+    "buffer": "C",
+    "targets": "SMDG",
+    "htm": 6
+  },
+  "SMDK": {
+    "algorithm": "B2 M' U' M U B2",
+    "buffer": "C",
+    "targets": "SMDK",
+    "htm": 6
+  },
+  "SNJF": {
+    "algorithm": "D2 E' F' E F D2",
+    "buffer": "C",
+    "targets": "SNJF",
+    "htm": 6
+  },
+  "SOXE": {
+    "algorithm": "F2 D' S' D F2 S",
+    "buffer": "C",
+    "targets": "SOXE",
+    "htm": 6
+  },
+  "SOXK": {
+    "algorithm": "F2 M D M' D' F2",
+    "buffer": "C",
+    "targets": "SOXK",
+    "htm": 6
+  },
+  "SPTH": {
+    "algorithm": "U2 E B E' B' U2",
+    "buffer": "C",
+    "targets": "SPTH",
+    "htm": 6
+  },
+  "SRNJ": {
+    "algorithm": "U2 B' E B U2 E'",
+    "buffer": "C",
+    "targets": "SRNJ",
+    "htm": 6
+  },
+  "SRNQ": {
+    "algorithm": "U2 M' B M B' U2",
+    "buffer": "C",
+    "targets": "SRNQ",
+    "htm": 6
+  },
+  "STHL": {
+    "algorithm": "U2 B E' B' U2 E",
+    "buffer": "C",
+    "targets": "STHL",
+    "htm": 6
+  },
+  "STHQ": {
+    "algorithm": "U2 M' B' M B U2",
+    "buffer": "C",
+    "targets": "STHQ",
+    "htm": 6
+  },
+  "SUJF": {
+    "algorithm": "D2 F M' F' M D2",
+    "buffer": "C",
+    "targets": "SUJF",
+    "htm": 6
+  },
+  "SULP": {
+    "algorithm": "D2 F' M' F M D2",
+    "buffer": "C",
+    "targets": "SULP",
+    "htm": 6
+  },
+  "SURN": {
+    "algorithm": "U2 B M B' M' U2",
+    "buffer": "C",
+    "targets": "SURN",
+    "htm": 6
+  },
+  "SUTH": {
+    "algorithm": "U2 B' M B M' U2",
+    "buffer": "C",
+    "targets": "SUTH",
+    "htm": 6
+  },
+  "SVMD": {
+    "algorithm": "B2 S' U S U' B2",
+    "buffer": "C",
+    "targets": "SVMD",
+    "htm": 6
+  },
+  "SXEB": {
+    "algorithm": "B2 S U' S' U B2",
+    "buffer": "C",
+    "targets": "SXEB",
+    "htm": 6
+  },
+  "TALW": {
+    "algorithm": "E' B E M' B' M",
+    "buffer": "C",
+    "targets": "TALW",
+    "htm": 6
+  },
+  "TARU": {
+    "algorithm": "M B M2 B M B2",
+    "buffer": "C",
+    "targets": "TARU",
+    "htm": 6
+  },
+  "TBOK": {
+    "algorithm": "F E R E' R' F'",
+    "buffer": "C",
+    "targets": "TBOK",
+    "htm": 6
+  },
+  "TBOX": {
+    "algorithm": "F R' S' R F' S",
+    "buffer": "C",
+    "targets": "TBOX",
+    "htm": 6
+  },
+  "TEBK": {
+    "algorithm": "B M' U M U' B'",
+    "buffer": "C",
+    "targets": "TEBK",
+    "htm": 6
+  },
+  "TEBO": {
+    "algorithm": "B U' S' U B' S",
+    "buffer": "C",
+    "targets": "TEBO",
+    "htm": 6
+  },
+  "TEWQ": {
+    "algorithm": "L' B M' B' L M",
+    "buffer": "C",
+    "targets": "TEWQ",
+    "htm": 6
+  },
+  "TEXQ": {
+    "algorithm": "R' U' S U S' R",
+    "buffer": "C",
+    "targets": "TEXQ",
+    "htm": 6
+  },
+  "TFWQ": {
+    "algorithm": "L2 B M' B' L2 M",
+    "buffer": "C",
+    "targets": "TFWQ",
+    "htm": 6
+  },
+  "TGVM": {
+    "algorithm": "F S' R S R' F'",
+    "buffer": "C",
+    "targets": "TGVM",
+    "htm": 6
+  },
+  "TGWQ": {
+    "algorithm": "L B M' B' L' M",
+    "buffer": "C",
+    "targets": "TGWQ",
+    "htm": 6
+  },
+  "THBO": {
+    "algorithm": "F R E' R' E F'",
+    "buffer": "C",
+    "targets": "THBO",
+    "htm": 6
+  },
+  "THEB": {
+    "algorithm": "B U M U' M' B'",
+    "buffer": "C",
+    "targets": "THEB",
+    "htm": 6
+  },
+  "THLQ": {
+    "algorithm": "M' B' E' B E M",
+    "buffer": "C",
+    "targets": "THLQ",
+    "htm": 6
+  },
+  "THMD": {
+    "algorithm": "B U' M U M' B'",
+    "buffer": "C",
+    "targets": "THMD",
+    "htm": 6
+  },
+  "THUQ": {
+    "algorithm": "D2 B M' B' M D2",
+    "buffer": "C",
+    "targets": "THUQ",
+    "htm": 6
+  },
+  "THVM": {
+    "algorithm": "F R' E' R E F'",
+    "buffer": "C",
+    "targets": "THVM",
+    "htm": 6
+  },
+  "THVQ": {
+    "algorithm": "D B M' B' M D'",
+    "buffer": "C",
+    "targets": "THVQ",
+    "htm": 6
+  },
+  "THXQ": {
+    "algorithm": "D' B M' B' M D",
+    "buffer": "C",
+    "targets": "THXQ",
+    "htm": 6
+  },
+  "TLWJ": {
+    "algorithm": "E' B E' M' B' M",
+    "buffer": "C",
+    "targets": "TLWJ",
+    "htm": 6
+  },
+  "TLWR": {
+    "algorithm": "M' B' E' M B E",
+    "buffer": "C",
+    "targets": "TLWR",
+    "htm": 6
+  },
+  "TMDG": {
+    "algorithm": "B U S U' B' S'",
+    "buffer": "C",
+    "targets": "TMDG",
+    "htm": 6
+  },
+  "TMDK": {
+    "algorithm": "B M' U' M U B'",
+    "buffer": "C",
+    "targets": "TMDK",
+    "htm": 6
+  },
+  "TPDK": {
+    "algorithm": "L E' F E F' L'",
+    "buffer": "C",
+    "targets": "TPDK",
+    "htm": 6
+  },
+  "TPLG": {
+    "algorithm": "D E' F E F' D'",
+    "buffer": "C",
+    "targets": "TPLG",
+    "htm": 6
+  },
+  "TPLO": {
+    "algorithm": "D' E' F E F' D",
+    "buffer": "C",
+    "targets": "TPLO",
+    "htm": 6
+  },
+  "TPLS": {
+    "algorithm": "D2 E' F E F' D2",
+    "buffer": "C",
+    "targets": "TPLS",
+    "htm": 6
+  },
+  "TPRK": {
+    "algorithm": "L2 E' F E F' L2",
+    "buffer": "C",
+    "targets": "TPRK",
+    "htm": 6
+  },
+  "TPWK": {
+    "algorithm": "E' M' B' E' B E",
+    "buffer": "C",
+    "targets": "TPWK",
+    "htm": 6
+  },
+  "TPXK": {
+    "algorithm": "L' E' F E F' L",
+    "buffer": "C",
+    "targets": "TPXK",
+    "htm": 6
+  },
+  "TPXO": {
+    "algorithm": "U' S' R' S R U",
+    "buffer": "C",
+    "targets": "TPXO",
+    "htm": 6
+  },
+  "TRUJ": {
+    "algorithm": "F2 E' F' E2 F' E'",
+    "buffer": "C",
+    "targets": "TRUJ",
+    "htm": 6
+  },
+  "TRUL": {
+    "algorithm": "E' F E2 F E' F2",
+    "buffer": "C",
+    "targets": "TRUL",
+    "htm": 6
+  },
+  "TUAL": {
+    "algorithm": "E' B E M' B' M'",
+    "buffer": "C",
+    "targets": "TUAL",
+    "htm": 6
+  },
+  "TULW": {
+    "algorithm": "M' B' E' M' B E",
+    "buffer": "C",
+    "targets": "TULW",
+    "htm": 6
+  },
+  "TVMD": {
+    "algorithm": "B S' U S U' B'",
+    "buffer": "C",
+    "targets": "TVMD",
+    "htm": 6
+  },
+  "TVMK": {
+    "algorithm": "F E R' E' R F'",
+    "buffer": "C",
+    "targets": "TVMK",
+    "htm": 6
+  },
+  "TWJR": {
+    "algorithm": "E B E' M' B' M",
+    "buffer": "C",
+    "targets": "TWJR",
+    "htm": 6
+  },
+  "TWRU": {
+    "algorithm": "B2 M B' M2 B' M",
+    "buffer": "C",
+    "targets": "TWRU",
+    "htm": 6
+  },
+  "TXEB": {
+    "algorithm": "B S U' S' U B'",
+    "buffer": "C",
+    "targets": "TXEB",
+    "htm": 6
+  },
+  "UABW": {
+    "algorithm": "M2 U M U2 M U",
+    "buffer": "C",
+    "targets": "UABW",
+    "htm": 6
+  },
+  "UADW": {
+    "algorithm": "M2 U' M U2 M U'",
+    "buffer": "C",
+    "targets": "UADW",
+    "htm": 6
+  },
+  "UAVW": {
+    "algorithm": "D M D2 M D M2",
+    "buffer": "C",
+    "targets": "UAVW",
+    "htm": 6
+  },
+  "UAXW": {
+    "algorithm": "D' M D2 M D' M2",
+    "buffer": "C",
+    "targets": "UAXW",
+    "htm": 6
+  },
+  "UBWD": {
+    "algorithm": "U' M2 U' M' U2 M'",
+    "buffer": "C",
+    "targets": "UBWD",
+    "htm": 6
+  },
+  "UDWB": {
+    "algorithm": "U M2 U M' U2 M'",
+    "buffer": "C",
+    "targets": "UDWB",
+    "htm": 6
+  },
+  "URAT": {
+    "algorithm": "B2 M' B' M2 B' M'",
+    "buffer": "C",
+    "targets": "URAT",
+    "htm": 6
+  },
+  "URWT": {
+    "algorithm": "M' B M2 B M' B2",
+    "buffer": "C",
+    "targets": "URWT",
+    "htm": 6
+  },
+  "UTAR": {
+    "algorithm": "B2 M' B M2 B M'",
+    "buffer": "C",
+    "targets": "UTAR",
+    "htm": 6
+  },
+  "UTWR": {
+    "algorithm": "M' B' M2 B' M' B2",
+    "buffer": "C",
+    "targets": "UTWR",
+    "htm": 6
+  },
+  "UVAX": {
+    "algorithm": "M' D2 M' D M2 D",
+    "buffer": "C",
+    "targets": "UVAX",
+    "htm": 6
+  },
+  "UXAV": {
+    "algorithm": "M' D2 M' D' M2 D'",
+    "buffer": "C",
+    "targets": "UXAV",
+    "htm": 6
+  },
+  "VADX": {
+    "algorithm": "U' S2 U' S U2 S",
+    "buffer": "C",
+    "targets": "VADX",
+    "htm": 6
+  },
+  "VAWX": {
+    "algorithm": "M D2 M D M2 D",
+    "buffer": "C",
+    "targets": "VAWX",
+    "htm": 6
+  },
+  "VAXD": {
+    "algorithm": "S' U2 S' U' S2 U'",
+    "buffer": "C",
+    "targets": "VAXD",
+    "htm": 6
+  },
+  "VAXU": {
+    "algorithm": "D M2 D M D2 M",
+    "buffer": "C",
+    "targets": "VAXU",
+    "htm": 6
+  },
+  "VBAX": {
+    "algorithm": "S U2 S U' S2 U'",
+    "buffer": "C",
+    "targets": "VBAX",
+    "htm": 6
+  },
+  "VDXB": {
+    "algorithm": "S2 U S' U2 S' U",
+    "buffer": "C",
+    "targets": "VDXB",
+    "htm": 6
+  },
+  "VEWQ": {
+    "algorithm": "R2 M U M' U' R2",
+    "buffer": "C",
+    "targets": "VEWQ",
+    "htm": 6
+  },
+  "VEXQ": {
+    "algorithm": "R2 U' S U S' R2",
+    "buffer": "C",
+    "targets": "VEXQ",
+    "htm": 6
+  },
+  "VGAS": {
+    "algorithm": "F2 M' D' M D F2",
+    "buffer": "C",
+    "targets": "VGAS",
+    "htm": 6
+  },
+  "VGDR": {
+    "algorithm": "F' S L S' L' F",
+    "buffer": "C",
+    "targets": "VGDR",
+    "htm": 6
+  },
+  "VGDS": {
+    "algorithm": "F2 D S' D' F2 S",
+    "buffer": "C",
+    "targets": "VGDS",
+    "htm": 6
+  },
+  "VHWQ": {
+    "algorithm": "R' B M' B' R M",
+    "buffer": "C",
+    "targets": "VHWQ",
+    "htm": 6
+  },
+  "VMDK": {
+    "algorithm": "M' S' D M' D' M",
+    "buffer": "C",
+    "targets": "VMDK",
+    "htm": 6
+  },
+  "VMLK": {
+    "algorithm": "R' E' F E F' R",
+    "buffer": "C",
+    "targets": "VMLK",
+    "htm": 6
+  },
+  "VMNK": {
+    "algorithm": "F' R E R' E' F",
+    "buffer": "C",
+    "targets": "VMNK",
+    "htm": 6
+  },
+  "VMWK": {
+    "algorithm": "S D M D' M' S'",
+    "buffer": "C",
+    "targets": "VMWK",
+    "htm": 6
+  },
+  "VUAD": {
+    "algorithm": "M' S' D M' S D'",
+    "buffer": "C",
+    "targets": "VUAD",
+    "htm": 6
+  },
+  "VUAW": {
+    "algorithm": "D' M' D2 M' D' M2",
+    "buffer": "C",
+    "targets": "VUAW",
+    "htm": 6
+  },
+  "VWAX": {
+    "algorithm": "D M2 D M' D2 M'",
+    "buffer": "C",
+    "targets": "VWAX",
+    "htm": 6
+  },
+  "VWXB": {
+    "algorithm": "D M S D' M' S'",
+    "buffer": "C",
+    "targets": "VWXB",
+    "htm": 6
+  },
+  "WAUB": {
+    "algorithm": "U M U2 M U M2",
+    "buffer": "C",
+    "targets": "WAUB",
+    "htm": 6
+  },
+  "WAUD": {
+    "algorithm": "U' M U2 M U' M2",
+    "buffer": "C",
+    "targets": "WAUD",
+    "htm": 6
+  },
+  "WAUV": {
+    "algorithm": "M2 D M D2 M D",
+    "buffer": "C",
+    "targets": "WAUV",
+    "htm": 6
+  },
+  "WAUX": {
+    "algorithm": "M2 D' M D2 M D'",
+    "buffer": "C",
+    "targets": "WAUX",
+    "htm": 6
+  },
+  "WBAU": {
+    "algorithm": "U' M' U2 M' U' M2",
+    "buffer": "C",
+    "targets": "WBAU",
+    "htm": 6
+  },
+  "WDAU": {
+    "algorithm": "U M' U2 M' U M2",
+    "buffer": "C",
+    "targets": "WDAU",
+    "htm": 6
+  },
+  "WEAO": {
+    "algorithm": "S' D M' S D' M'",
+    "buffer": "C",
+    "targets": "WEAO",
+    "htm": 6
+  },
+  "WEUO": {
+    "algorithm": "M D' M' S' D S",
+    "buffer": "C",
+    "targets": "WEUO",
+    "htm": 6
+  },
+  "WFUA": {
+    "algorithm": "F' M F2 M F' M2",
+    "buffer": "C",
+    "targets": "WFUA",
+    "htm": 6
+  },
+  "WHAP": {
+    "algorithm": "E M' B E' M B'",
+    "buffer": "C",
+    "targets": "WHAP",
+    "htm": 6
+  },
+  "WHUA": {
+    "algorithm": "M2 B' M B2 M B'",
+    "buffer": "C",
+    "targets": "WHUA",
+    "htm": 6
+  },
+  "WHUP": {
+    "algorithm": "B' E M B E' M",
+    "buffer": "C",
+    "targets": "WHUP",
+    "htm": 6
+  },
+  "WJAR": {
+    "algorithm": "M' B' E M B E'",
+    "buffer": "C",
+    "targets": "WJAR",
+    "htm": 6
+  },
+  "WJUR": {
+    "algorithm": "E B E' M B' M",
+    "buffer": "C",
+    "targets": "WJUR",
+    "htm": 6
+  },
+  "WLAT": {
+    "algorithm": "M' B E' M B' E",
+    "buffer": "C",
+    "targets": "WLAT",
+    "htm": 6
+  },
+  "WLUT": {
+    "algorithm": "E' B' E M B M",
+    "buffer": "C",
+    "targets": "WLUT",
+    "htm": 6
+  },
+  "WMAG": {
+    "algorithm": "S D' M' S' D M'",
+    "buffer": "C",
+    "targets": "WMAG",
+    "htm": 6
+  },
+  "WMUG": {
+    "algorithm": "M D M' S D' S'",
+    "buffer": "C",
+    "targets": "WMUG",
+    "htm": 6
+  },
+  "WNAF": {
+    "algorithm": "E' M' B' E M B",
+    "buffer": "C",
+    "targets": "WNAF",
+    "htm": 6
+  },
+  "WNUA": {
+    "algorithm": "M2 B M B2 M B",
+    "buffer": "C",
+    "targets": "WNUA",
+    "htm": 6
+  },
+  "WNUF": {
+    "algorithm": "B E' M B' E M",
+    "buffer": "C",
+    "targets": "WNUF",
+    "htm": 6
+  },
+  "WPUA": {
+    "algorithm": "F M F2 M F M2",
+    "buffer": "C",
+    "targets": "WPUA",
+    "htm": 6
+  },
+  "WUAF": {
+    "algorithm": "F M' F2 M' F M2",
+    "buffer": "C",
+    "targets": "WUAF",
+    "htm": 6
+  },
+  "WUAH": {
+    "algorithm": "M2 B M' B2 M' B",
+    "buffer": "C",
+    "targets": "WUAH",
+    "htm": 6
+  },
+  "WUAN": {
+    "algorithm": "M2 B' M' B2 M' B'",
+    "buffer": "C",
+    "targets": "WUAN",
+    "htm": 6
+  },
+  "WUAP": {
+    "algorithm": "F' M' F2 M' F' M2",
+    "buffer": "C",
+    "targets": "WUAP",
+    "htm": 6
+  },
+  "WVAD": {
+    "algorithm": "D' M' S' D M' S",
+    "buffer": "C",
+    "targets": "WVAD",
+    "htm": 6
+  },
+  "WVAU": {
+    "algorithm": "M2 D' M' D2 M' D'",
+    "buffer": "C",
+    "targets": "WVAU",
+    "htm": 6
+  },
+  "WVUD": {
+    "algorithm": "M S' D M' S D'",
+    "buffer": "C",
+    "targets": "WVUD",
+    "htm": 6
+  },
+  "WXAB": {
+    "algorithm": "D M' S D' M' S'",
+    "buffer": "C",
+    "targets": "WXAB",
+    "htm": 6
+  },
+  "WXAU": {
+    "algorithm": "M2 D M' D2 M' D",
+    "buffer": "C",
+    "targets": "WXAU",
+    "htm": 6
+  },
+  "WXUB": {
+    "algorithm": "M S D' M' S' D",
+    "buffer": "C",
+    "targets": "WXUB",
+    "htm": 6
+  },
+  "XABV": {
+    "algorithm": "U S2 U S' U2 S'",
+    "buffer": "C",
+    "targets": "XABV",
+    "htm": 6
+  },
+  "XAVB": {
+    "algorithm": "S U2 S U S2 U",
+    "buffer": "C",
+    "targets": "XAVB",
+    "htm": 6
+  },
+  "XAVU": {
+    "algorithm": "D' M2 D' M D2 M",
+    "buffer": "C",
+    "targets": "XAVU",
+    "htm": 6
+  },
+  "XAWV": {
+    "algorithm": "M D2 M D' M2 D'",
+    "buffer": "C",
+    "targets": "XAWV",
+    "htm": 6
+  },
+  "XBVD": {
+    "algorithm": "S2 U' S U2 S U'",
+    "buffer": "C",
+    "targets": "XBVD",
+    "htm": 6
+  },
+  "XDAV": {
+    "algorithm": "S' U2 S' U S2 U",
+    "buffer": "C",
+    "targets": "XDAV",
+    "htm": 6
+  },
+  "XEBK": {
+    "algorithm": "M' S D' M' D M",
+    "buffer": "C",
+    "targets": "XEBK",
+    "htm": 6
+  },
+  "XEHK": {
+    "algorithm": "F L' E' L E F'",
+    "buffer": "C",
+    "targets": "XEHK",
+    "htm": 6
+  },
+  "XEJK": {
+    "algorithm": "L E F' E' F L'",
+    "buffer": "C",
+    "targets": "XEJK",
+    "htm": 6
+  },
+  "XEWK": {
+    "algorithm": "S' D' M D M' S",
+    "buffer": "C",
+    "targets": "XEWK",
+    "htm": 6
+  },
+  "XMVQ": {
+    "algorithm": "L2 U S' U' S L2",
+    "buffer": "C",
+    "targets": "XMVQ",
+    "htm": 6
+  },
+  "XMWQ": {
+    "algorithm": "L2 M U' M' U L2",
+    "buffer": "C",
+    "targets": "XMWQ",
+    "htm": 6
+  },
+  "XNWQ": {
+    "algorithm": "L B' M' B L' M",
+    "buffer": "C",
+    "targets": "XNWQ",
+    "htm": 6
+  },
+  "XOAS": {
+    "algorithm": "F2 M' D M D' F2",
+    "buffer": "C",
+    "targets": "XOAS",
+    "htm": 6
+  },
+  "XOBS": {
+    "algorithm": "F2 D' S D F2 S'",
+    "buffer": "C",
+    "targets": "XOBS",
+    "htm": 6
+  },
+  "XOBT": {
+    "algorithm": "F S' R' S R F'",
+    "buffer": "C",
+    "targets": "XOBT",
+    "htm": 6
+  },
+  "XUAB": {
+    "algorithm": "M' S D' M' S' D",
+    "buffer": "C",
+    "targets": "XUAB",
+    "htm": 6
+  },
+  "XUAW": {
+    "algorithm": "D M' D2 M' D M2",
+    "buffer": "C",
+    "targets": "XUAW",
+    "htm": 6
+  },
+  "XWAV": {
+    "algorithm": "D' M2 D' M' D2 M'",
+    "buffer": "C",
+    "targets": "XWAV",
+    "htm": 6
+  },
+  "XWVD": {
+    "algorithm": "D' M S' D M' S",
+    "buffer": "C",
+    "targets": "XWVD",
+    "htm": 6
+  }
+}

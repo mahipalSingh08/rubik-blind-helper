@@ -120,17 +120,23 @@
     <div class="words-list" *ngIf="showWords || showCommutators">
       <div class="word-group group-edges" *ngIf="practiceMode === 'both' || practiceMode === 'edges'">
         <h3 class="edges-color">Edges Memo</h3>
-        <div class="word-item edge-card" *ngFor="let p of edgePairs">
+        <div class="word-item edge-card" *ngFor="let g of edgeGroups" [ngClass]="{'five-style-card': g.type === '5-style'}">
           <div class="word-header">
-            <span class="pair-tag">{{ p }}</span> 
-            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+            <span class="pair-tag" [ngStyle]="{'background': g.type === '5-style' ? 'rgba(0, 255, 136, 0.2)' : ''}">{{ g.display }}</span> 
+            <span class="word-name" *ngIf="showWords">
+              {{ g.words.join(' + ') }}
+            </span>
           </div>
           <div class="alg-section" *ngIf="showCommutators">
-            <div class="alg-container" *ngIf="commutator.getEdgeAlg(p) as alg">
-              <span class="alg-short">{{ alg.short }}</span>
-              <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
+            <div class="alg-container" *ngIf="g.algShort || g.algLong">
+              <span class="alg-short" [ngStyle]="{'color': g.type === '5-style' ? 'var(--accent)' : ''}">
+                {{ g.algShort || g.algLong }}
+                <span *ngIf="g.type === '5-style'" class="badge">5-Style</span>
+              </span>
+              <span class="alg-long" *ngIf="g.type === '5-style' && g.algExpand" style="color: var(--accent); opacity: 0.8; font-size: 0.9em; margin-bottom: 4px; display: block;">{{ g.algExpand }}</span>
+              <span class="alg-long" *ngIf="g.algShort && g.algLong && g.type === '3-style'">{{ g.algLong }}</span>
             </div>
-            <div class="alg-container no-alg" *ngIf="!commutator.getEdgeAlg(p)">
+            <div class="alg-container no-alg" *ngIf="!g.algShort && !g.algLong">
               No alg set
             </div>
           </div>
@@ -138,17 +144,23 @@
       </div>
       <div class="word-group group-corners" *ngIf="practiceMode === 'both' || practiceMode === 'corners'">
         <h3 class="corners-color">Corners Memo</h3>
-        <div class="word-item corner-card" *ngFor="let p of cornerPairs">
+        <div class="word-item corner-card" *ngFor="let g of cornerGroups" [ngClass]="{'five-style-card': g.type === '5-style'}">
           <div class="word-header">
-            <span class="pair-tag">{{ p }}</span> 
-            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+            <span class="pair-tag" [ngStyle]="{'background': g.type === '5-style' ? 'rgba(0, 255, 136, 0.2)' : ''}">{{ g.display }}</span> 
+            <span class="word-name" *ngIf="showWords">
+              {{ g.words.join(' + ') }}
+            </span>
           </div>
           <div class="alg-section" *ngIf="showCommutators">
-            <div class="alg-container" *ngIf="commutator.getCornerAlg(p) as alg">
-              <span class="alg-short">{{ alg.short }}</span>
-              <span class="alg-long" *ngIf="alg.long">{{ alg.long }}</span>
+            <div class="alg-container" *ngIf="g.algShort || g.algLong">
+              <span class="alg-short" [ngStyle]="{'color': g.type === '5-style' ? 'var(--accent)' : ''}">
+                {{ g.algShort || g.algLong }}
+                <span *ngIf="g.type === '5-style'" class="badge">5-Style</span>
+              </span>
+              <span class="alg-long" *ngIf="g.type === '5-style' && g.algExpand" style="color: var(--accent); opacity: 0.8; font-size: 0.9em; margin-bottom: 4px; display: block;">{{ g.algExpand }}</span>
+              <span class="alg-long" *ngIf="g.algShort && g.algLong && g.type === '3-style'">{{ g.algLong }}</span>
             </div>
-            <div class="alg-container no-alg" *ngIf="!commutator.getCornerAlg(p)">
+            <div class="alg-container no-alg" *ngIf="!g.algShort && !g.algLong">
               No alg set
             </div>
           </div>

@@ -1,0 +1,6062 @@
+{
+  "AIUQ": {
+    "short": "[S' U2 S, L']",
+    "expand": "A B A B'",
+    "algorithm": "S' U2 S L' S' U2 S L",
+    "buffer": "C",
+    "targets": "AIUQ",
+    "htm": 8
+  },
+  "AIWQ": {
+    "short": "[R', S U2 S']",
+    "expand": "A B A' B",
+    "algorithm": "R' S U2 S' R S U2 S'",
+    "buffer": "C",
+    "targets": "AIWQ",
+    "htm": 8
+  },
+  "ANUF": {
+    "short": "[F, M U2 M']",
+    "expand": "A B A' B",
+    "algorithm": "F M U2 M' F' M U2 M'",
+    "buffer": "C",
+    "targets": "ANUF",
+    "htm": 8
+  },
+  "ANWF": {
+    "short": "[M' U2 M, B]",
+    "expand": "A B A B'",
+    "algorithm": "M' U2 M B M' U2 M B'",
+    "buffer": "C",
+    "targets": "ANWF",
+    "htm": 8
+  },
+  "BAVW": {
+    "short": "[R2, S U S']",
+    "expand": "A B A B'",
+    "algorithm": "R2 S U S' R2 S U' S'",
+    "buffer": "C",
+    "targets": "BAVW",
+    "htm": 8
+  },
+  "BAWX": {
+    "short": "[M' U' M, B2]",
+    "expand": "A B A' B",
+    "algorithm": "M' U' M B2 M' U M B2",
+    "buffer": "C",
+    "targets": "BAWX",
+    "htm": 8
+  },
+  "BUVD": {
+    "short": "[F2, M U M']",
+    "expand": "A B A B'",
+    "algorithm": "F2 M U M' F2 M U' M'",
+    "buffer": "C",
+    "targets": "BUVD",
+    "htm": 8
+  },
+  "BUVW": {
+    "short": "[D, S R2 S']",
+    "expand": "A B A' B",
+    "algorithm": "D S R2 S' D' S R2 S'",
+    "buffer": "C",
+    "targets": "BUVW",
+    "htm": 8
+  },
+  "BVWD": {
+    "short": "[S U' S', R2]",
+    "expand": "A B A' B",
+    "algorithm": "S U' S' R2 S U S' R2",
+    "buffer": "C",
+    "targets": "BVWD",
+    "htm": 8
+  },
+  "BVWX": {
+    "short": "[R2, S' D' S]",
+    "expand": "A B A B'",
+    "algorithm": "R2 S' D' S R2 S' D S",
+    "buffer": "C",
+    "targets": "BVWX",
+    "htm": 8
+  },
+  "DAUX": {
+    "short": "[S' U S, L2]",
+    "expand": "A B A' B",
+    "algorithm": "S' U S L2 S' U' S L2",
+    "buffer": "C",
+    "targets": "DAUX",
+    "htm": 8
+  },
+  "DAVU": {
+    "short": "[F2, M U' M']",
+    "expand": "A B A B'",
+    "algorithm": "F2 M U' M' F2 M U M'",
+    "buffer": "C",
+    "targets": "DAVU",
+    "htm": 8
+  },
+  "DVUB": {
+    "short": "[M U M', F2]",
+    "expand": "A B A' B",
+    "algorithm": "M U M' F2 M U' M' F2",
+    "buffer": "C",
+    "targets": "DVUB",
+    "htm": 8
+  },
+  "DVUX": {
+    "short": "[F2, M' D M]",
+    "expand": "A B A B'",
+    "algorithm": "F2 M' D M F2 M' D' M",
+    "buffer": "C",
+    "targets": "DVUX",
+    "htm": 8
+  },
+  "DWVB": {
+    "short": "[R2, S U' S']",
+    "expand": "A B A B'",
+    "algorithm": "R2 S U' S' R2 S U S'",
+    "buffer": "C",
+    "targets": "DWVB",
+    "htm": 8
+  },
+  "DWVU": {
+    "short": "[D', M F2 M']",
+    "expand": "A B A' B",
+    "algorithm": "D' M F2 M' D M F2 M'",
+    "buffer": "C",
+    "targets": "DWVU",
+    "htm": 8
+  },
+  "FNAH": {
+    "short": "[M' U2 M, B']",
+    "expand": "A B A B'",
+    "algorithm": "M' U2 M B' M' U2 M B",
+    "buffer": "C",
+    "targets": "FNAH",
+    "htm": 8
+  },
+  "FNAP": {
+    "short": "[F', M U2 M']",
+    "expand": "A B A' B",
+    "algorithm": "F' M U2 M' F M U2 M'",
+    "buffer": "C",
+    "targets": "FNAP",
+    "htm": 8
+  },
+  "FUAH": {
+    "short": "[E' F' E, L2]",
+    "expand": "A B A' B",
+    "algorithm": "E' F' E L2 E' F E L2",
+    "buffer": "C",
+    "targets": "FUAH",
+    "htm": 8
+  },
+  "FUNA": {
+    "short": "[M U2 M', F]",
+    "expand": "A B A B'",
+    "algorithm": "M U2 M' F M U2 M' F'",
+    "buffer": "C",
+    "targets": "FUNA",
+    "htm": 8
+  },
+  "FWNA": {
+    "short": "[B, M' U2 M]",
+    "expand": "A B A' B",
+    "algorithm": "B M' U2 M B' M' U2 M",
+    "buffer": "C",
+    "targets": "FWNA",
+    "htm": 8
+  },
+  "FWNP": {
+    "short": "[E' R2 E, F]",
+    "expand": "A B A B'",
+    "algorithm": "E' R2 E F E' R2 E F'",
+    "buffer": "C",
+    "targets": "FWNP",
+    "htm": 8
+  },
+  "HANF": {
+    "short": "[B', M' U2 M]",
+    "expand": "A B A' B",
+    "algorithm": "B' M' U2 M B M' U2 M",
+    "buffer": "C",
+    "targets": "HANF",
+    "htm": 8
+  },
+  "HAUF": {
+    "short": "[E L2 E', F']",
+    "expand": "A B A B'",
+    "algorithm": "E L2 E' F' E L2 E' F",
+    "buffer": "C",
+    "targets": "HAUF",
+    "htm": 8
+  },
+  "HWNP": {
+    "short": "[B, E R2 E']",
+    "expand": "A B A' B",
+    "algorithm": "B E R2 E' B' E R2 E'",
+    "buffer": "C",
+    "targets": "HWNP",
+    "htm": 8
+  },
+  "HWUP": {
+    "short": "[D2, M F M']",
+    "expand": "A B A B'",
+    "algorithm": "D2 M F M' D2 M F' M'",
+    "buffer": "C",
+    "targets": "HWUP",
+    "htm": 8
+  },
+  "KAIQ": {
+    "short": "[S U2 S', R]",
+    "expand": "A B A B'",
+    "algorithm": "S U2 S' R S U2 S' R'",
+    "buffer": "C",
+    "targets": "KAIQ",
+    "htm": 8
+  },
+  "KAIU": {
+    "short": "[E L E', F2]",
+    "expand": "A B A' B",
+    "algorithm": "E L E' F2 E L' E' F2",
+    "buffer": "C",
+    "targets": "KAIU",
+    "htm": 8
+  },
+  "KIUQ": {
+    "short": "[E' R' E, F2]",
+    "expand": "A B A' B",
+    "algorithm": "E' R' E F2 E' R E F2",
+    "buffer": "C",
+    "targets": "KIUQ",
+    "htm": 8
+  },
+  "KIUS": {
+    "short": "[E' F2 E, L']",
+    "expand": "A B A B'",
+    "algorithm": "E' F2 E L' E' F2 E L",
+    "buffer": "C",
+    "targets": "KIUS",
+    "htm": 8
+  },
+  "KWIU": {
+    "short": "[E F2 E', R]",
+    "expand": "A B A B'",
+    "algorithm": "E F2 E' R E F2 E' R'",
+    "buffer": "C",
+    "targets": "KWIU",
+    "htm": 8
+  },
+  "KWUS": {
+    "short": "[R', S' D2 S]",
+    "expand": "A B A' B",
+    "algorithm": "R' S' D2 S R S' D2 S",
+    "buffer": "C",
+    "targets": "KWUS",
+    "htm": 8
+  },
+  "PANF": {
+    "short": "[M U2 M', F']",
+    "expand": "A B A B'",
+    "algorithm": "M U2 M' F' M U2 M' F",
+    "buffer": "C",
+    "targets": "PANF",
+    "htm": 8
+  },
+  "PANW": {
+    "short": "[B', E R2 E']",
+    "expand": "A B A' B",
+    "algorithm": "B' E R2 E' B E R2 E'",
+    "buffer": "C",
+    "targets": "PANW",
+    "htm": 8
+  },
+  "PNWF": {
+    "short": "[E F E', R2]",
+    "expand": "A B A' B",
+    "algorithm": "E F E' R2 E F' E' R2",
+    "buffer": "C",
+    "targets": "PNWF",
+    "htm": 8
+  },
+  "PNWH": {
+    "short": "[E R2 E', B]",
+    "expand": "A B A B'",
+    "algorithm": "E R2 E' B E R2 E' B'",
+    "buffer": "C",
+    "targets": "PNWH",
+    "htm": 8
+  },
+  "PUNW": {
+    "short": "[E' R2 E, F']",
+    "expand": "A B A B'",
+    "algorithm": "E' R2 E F' E' R2 E F",
+    "buffer": "C",
+    "targets": "PUNW",
+    "htm": 8
+  },
+  "PUWH": {
+    "short": "[F, M' D2 M]",
+    "expand": "A B A' B",
+    "algorithm": "F M' D2 M F' M' D2 M",
+    "buffer": "C",
+    "targets": "PUWH",
+    "htm": 8
+  },
+  "QIAK": {
+    "short": "[R, S U2 S']",
+    "expand": "A B A' B",
+    "algorithm": "R S U2 S' R' S U2 S'",
+    "buffer": "C",
+    "targets": "QIAK",
+    "htm": 8
+  },
+  "QIAS": {
+    "short": "[S' U2 S, L]",
+    "expand": "A B A B'",
+    "algorithm": "S' U2 S L S' U2 S L'",
+    "buffer": "C",
+    "targets": "QIAS",
+    "htm": 8
+  },
+  "QUIA": {
+    "short": "[L', S' U2 S]",
+    "expand": "A B A' B",
+    "algorithm": "L' S' U2 S L S' U2 S",
+    "buffer": "C",
+    "targets": "QUIA",
+    "htm": 8
+  },
+  "QUIK": {
+    "short": "[E F2 E', R']",
+    "expand": "A B A B'",
+    "algorithm": "E F2 E' R' E F2 E' R",
+    "buffer": "C",
+    "targets": "QUIK",
+    "htm": 8
+  },
+  "QWAS": {
+    "short": "[E R E', B2]",
+    "expand": "A B A' B",
+    "algorithm": "E R E' B2 E R' E' B2",
+    "buffer": "C",
+    "targets": "QWAS",
+    "htm": 8
+  },
+  "QWIA": {
+    "short": "[S U2 S', R']",
+    "expand": "A B A B'",
+    "algorithm": "S U2 S' R' S U2 S' R",
+    "buffer": "C",
+    "targets": "QWIA",
+    "htm": 8
+  },
+  "SAIQ": {
+    "short": "[L, S' U2 S]",
+    "expand": "A B A' B",
+    "algorithm": "L S' U2 S L' S' U2 S",
+    "buffer": "C",
+    "targets": "SAIQ",
+    "htm": 8
+  },
+  "SAWQ": {
+    "short": "[B2, E R E']",
+    "expand": "A B A B'",
+    "algorithm": "B2 E R E' B2 E R' E'",
+    "buffer": "C",
+    "targets": "SAWQ",
+    "htm": 8
+  },
+  "SUIK": {
+    "short": "[E L' E', F2]",
+    "expand": "A B A' B",
+    "algorithm": "E L' E' F2 E L E' F2",
+    "buffer": "C",
+    "targets": "SUIK",
+    "htm": 8
+  },
+  "SUWK": {
+    "short": "[D2, S R' S']",
+    "expand": "A B A B'",
+    "algorithm": "D2 S R' S' D2 S R S'",
+    "buffer": "C",
+    "targets": "SUWK",
+    "htm": 8
+  },
+  "UIAK": {
+    "short": "[E' F2 E, L]",
+    "expand": "A B A B'",
+    "algorithm": "E' F2 E L E' F2 E L'",
+    "buffer": "C",
+    "targets": "UIAK",
+    "htm": 8
+  },
+  "UIWK": {
+    "short": "[E' R E, F2]",
+    "expand": "A B A' B",
+    "algorithm": "E' R E F2 E' R' E F2",
+    "buffer": "C",
+    "targets": "UIWK",
+    "htm": 8
+  },
+  "UVAD": {
+    "short": "[M U' M', F2]",
+    "expand": "A B A' B",
+    "algorithm": "M U' M' F2 M U M' F2",
+    "buffer": "C",
+    "targets": "UVAD",
+    "htm": 8
+  },
+  "UVWD": {
+    "short": "[F2, M' D' M]",
+    "expand": "A B A B'",
+    "algorithm": "F2 M' D' M F2 M' D M",
+    "buffer": "C",
+    "targets": "UVWD",
+    "htm": 8
+  },
+  "WNAP": {
+    "short": "[E R2 E', B']",
+    "expand": "A B A B'",
+    "algorithm": "E R2 E' B' E R2 E' B",
+    "buffer": "C",
+    "targets": "WNAP",
+    "htm": 8
+  },
+  "WNUP": {
+    "short": "[E F' E', R2]",
+    "expand": "A B A' B",
+    "algorithm": "E F' E' R2 E F E' R2",
+    "buffer": "C",
+    "targets": "WNUP",
+    "htm": 8
+  },
+  "WVAB": {
+    "short": "[S U S', R2]",
+    "expand": "A B A' B",
+    "algorithm": "S U S' R2 S U' S' R2",
+    "buffer": "C",
+    "targets": "WVAB",
+    "htm": 8
+  },
+  "WVUB": {
+    "short": "[R2, S' D S]",
+    "expand": "A B A B'",
+    "algorithm": "R2 S' D S R2 S' D' S",
+    "buffer": "C",
+    "targets": "WVUB",
+    "htm": 8
+  },
+  "XUAD": {
+    "short": "[L2, S' U S]",
+    "expand": "A B A B'",
+    "algorithm": "L2 S' U S L2 S' U' S",
+    "buffer": "C",
+    "targets": "XUAD",
+    "htm": 8
+  },
+  "XUVD": {
+    "short": "[D, M F2 M']",
+    "expand": "A B A' B",
+    "algorithm": "D M F2 M' D' M F2 M'",
+    "buffer": "C",
+    "targets": "XUVD",
+    "htm": 8
+  },
+  "XWAB": {
+    "short": "[B2, M' U' M]",
+    "expand": "A B A B'",
+    "algorithm": "B2 M' U' M B2 M' U M",
+    "buffer": "C",
+    "targets": "XWAB",
+    "htm": 8
+  },
+  "XWVB": {
+    "short": "[D', S R2 S']",
+    "expand": "A B A' B",
+    "algorithm": "D' S R2 S' D S R2 S'",
+    "buffer": "C",
+    "targets": "XWVB",
+    "htm": 8
+  },
+  "AHUP": {
+    "algorithm": "E' F E L2 E' F L2 E' F2",
+    "buffer": "C",
+    "targets": "AHUP",
+    "htm": 9
+  },
+  "AHWP": {
+    "algorithm": "B2 E R2 B' E R2 E' B' E",
+    "buffer": "C",
+    "targets": "AHWP",
+    "htm": 9
+  },
+  "AIVQ": {
+    "algorithm": "U M' F' M U2 M' F M U",
+    "buffer": "C",
+    "targets": "AIVQ",
+    "htm": 9
+  },
+  "AIXQ": {
+    "algorithm": "U' M B' M' U2 M B M' U'",
+    "buffer": "C",
+    "targets": "AIXQ",
+    "htm": 9
+  },
+  "ANVF": {
+    "algorithm": "U' S' R S U2 S' R' S U'",
+    "buffer": "C",
+    "targets": "ANVF",
+    "htm": 9
+  },
+  "ANXF": {
+    "algorithm": "U S L S' U2 S L' S' U",
+    "buffer": "C",
+    "targets": "ANXF",
+    "htm": 9
+  },
+  "ASUK": {
+    "algorithm": "L2 E' F2 E L E' F2 E L",
+    "buffer": "C",
+    "targets": "ASUK",
+    "htm": 9
+  },
+  "ASWK": {
+    "algorithm": "E R' E' B2 E R' B2 E R2",
+    "buffer": "C",
+    "targets": "ASWK",
+    "htm": 9
+  },
+  "BAUV": {
+    "algorithm": "M U M' F2 M U F2 M U2",
+    "buffer": "C",
+    "targets": "BAUV",
+    "htm": 9
+  },
+  "BAXU": {
+    "algorithm": "U2 S L2 S' U S L2 S' U",
+    "buffer": "C",
+    "targets": "BAXU",
+    "htm": 9
+  },
+  "BIVW": {
+    "algorithm": "R E F E' R2 E F' E' R",
+    "buffer": "C",
+    "targets": "BIVW",
+    "htm": 9
+  },
+  "BSVW": {
+    "algorithm": "R' E' B E R2 E' B' E R'",
+    "buffer": "C",
+    "targets": "BSVW",
+    "htm": 9
+  },
+  "BVWL": {
+    "algorithm": "R' E F' E' R2 E F E' R'",
+    "buffer": "C",
+    "targets": "BVWL",
+    "htm": 9
+  },
+  "BVWR": {
+    "algorithm": "R E' B' E R2 E' B E R",
+    "buffer": "C",
+    "targets": "BVWR",
+    "htm": 9
+  },
+  "BWXD": {
+    "algorithm": "U2 M B2 M' U M B2 M' U",
+    "buffer": "C",
+    "targets": "BWXD",
+    "htm": 9
+  },
+  "BWXU": {
+    "algorithm": "D' S R2 S' D' R2 S' D2 S'",
+    "buffer": "C",
+    "targets": "BWXU",
+    "htm": 9
+  },
+  "BXUD": {
+    "algorithm": "S' U S L2 S' U L2 S' U2",
+    "buffer": "C",
+    "targets": "BXUD",
+    "htm": 9
+  },
+  "BXUV": {
+    "algorithm": "D2 S R2 D' S R2 S' D' S",
+    "buffer": "C",
+    "targets": "BXUV",
+    "htm": 9
+  },
+  "DAWV": {
+    "algorithm": "S U' S' R2 S U' R2 S U2",
+    "buffer": "C",
+    "targets": "DAWV",
+    "htm": 9
+  },
+  "DAXW": {
+    "algorithm": "U2 M B2 M' U' M B2 M' U'",
+    "buffer": "C",
+    "targets": "DAXW",
+    "htm": 9
+  },
+  "DHVU": {
+    "algorithm": "F E L' E' F2 E L E' F",
+    "buffer": "C",
+    "targets": "DHVU",
+    "htm": 9
+  },
+  "DNVU": {
+    "algorithm": "F' E' R' E F2 E' R E F'",
+    "buffer": "C",
+    "targets": "DNVU",
+    "htm": 9
+  },
+  "DUXB": {
+    "algorithm": "U2 S L2 S' U' S L2 S' U'",
+    "buffer": "C",
+    "targets": "DUXB",
+    "htm": 9
+  },
+  "DUXW": {
+    "algorithm": "D M F2 M' D F2 M' D2 M'",
+    "buffer": "C",
+    "targets": "DUXW",
+    "htm": 9
+  },
+  "DVUE": {
+    "algorithm": "F' E L E' F2 E L' E' F'",
+    "buffer": "C",
+    "targets": "DVUE",
+    "htm": 9
+  },
+  "DVUO": {
+    "algorithm": "F E' R E F2 E' R' E F",
+    "buffer": "C",
+    "targets": "DVUO",
+    "htm": 9
+  },
+  "DXWB": {
+    "algorithm": "M' U' M B2 M' U' B2 M' U2",
+    "buffer": "C",
+    "targets": "DXWB",
+    "htm": 9
+  },
+  "DXWV": {
+    "algorithm": "D2 M F2 D M F2 M' D M",
+    "buffer": "C",
+    "targets": "DXWV",
+    "htm": 9
+  },
+  "EHNO": {
+    "algorithm": "B' M' U' M B2 M' U M B'",
+    "buffer": "C",
+    "targets": "EHNO",
+    "htm": 9
+  },
+  "EISG": {
+    "algorithm": "L E' F' E L2 E' F E L",
+    "buffer": "C",
+    "targets": "EISG",
+    "htm": 9
+  },
+  "EUVD": {
+    "algorithm": "F E L E' F2 E L' E' F",
+    "buffer": "C",
+    "targets": "EUVD",
+    "htm": 9
+  },
+  "EWNP": {
+    "algorithm": "R' S U S' R2 S U' S' R'",
+    "buffer": "C",
+    "targets": "EWNP",
+    "htm": 9
+  },
+  "FAHP": {
+    "algorithm": "F2 E L2 E' F E L2 E' F",
+    "buffer": "C",
+    "targets": "FAHP",
+    "htm": 9
+  },
+  "FAHW": {
+    "algorithm": "B' M' U2 M B' U2 M B2 M",
+    "buffer": "C",
+    "targets": "FAHW",
+    "htm": 9
+  },
+  "FHWN": {
+    "algorithm": "B2 M' U2 B' M' U2 M B' M'",
+    "buffer": "C",
+    "targets": "FHWN",
+    "htm": 9
+  },
+  "FHWP": {
+    "algorithm": "F M' D2 M F D2 M F2 M",
+    "buffer": "C",
+    "targets": "FHWP",
+    "htm": 9
+  },
+  "FNAL": {
+    "algorithm": "U S L' S' U2 S L S' U",
+    "buffer": "C",
+    "targets": "FNAL",
+    "htm": 9
+  },
+  "FNAT": {
+    "algorithm": "U' S' R' S U2 S' R S U'",
+    "buffer": "C",
+    "targets": "FNAT",
+    "htm": 9
+  },
+  "FUHW": {
+    "algorithm": "F2 M' D2 F M' D2 M F M'",
+    "buffer": "C",
+    "targets": "FUHW",
+    "htm": 9
+  },
+  "FUWN": {
+    "algorithm": "E F E' R2 E F R2 E F2",
+    "buffer": "C",
+    "targets": "FUWN",
+    "htm": 9
+  },
+  "FVNA": {
+    "algorithm": "U S' R S U2 S' R' S U",
+    "buffer": "C",
+    "targets": "FVNA",
+    "htm": 9
+  },
+  "FXNA": {
+    "algorithm": "U' S L S' U2 S L' S' U'",
+    "buffer": "C",
+    "targets": "FXNA",
+    "htm": 9
+  },
+  "GAIQ": {
+    "algorithm": "U' M' F M U2 M' F' M U'",
+    "buffer": "C",
+    "targets": "GAIQ",
+    "htm": 9
+  },
+  "GSIE": {
+    "algorithm": "L' E' F' E L2 E' F E L'",
+    "buffer": "C",
+    "targets": "GSIE",
+    "htm": 9
+  },
+  "GVXO": {
+    "algorithm": "D S R' S' D2 S R S' D",
+    "buffer": "C",
+    "targets": "GVXO",
+    "htm": 9
+  },
+  "GWNP": {
+    "algorithm": "R S' D S R2 S' D' S R",
+    "buffer": "C",
+    "targets": "GWNP",
+    "htm": 9
+  },
+  "IASK": {
+    "algorithm": "E L E' F2 E L F2 E L2",
+    "buffer": "C",
+    "targets": "IASK",
+    "htm": 9
+  },
+  "IAWK": {
+    "algorithm": "R2 S U2 R' S U2 S' R' S",
+    "buffer": "C",
+    "targets": "IAWK",
+    "htm": 9
+  },
+  "IUSQ": {
+    "algorithm": "L' S' U2 S L' U2 S L2 S",
+    "buffer": "C",
+    "targets": "IUSQ",
+    "htm": 9
+  },
+  "IUWQ": {
+    "algorithm": "R2 E F2 E' R E F2 E' R",
+    "buffer": "C",
+    "targets": "IUWQ",
+    "htm": 9
+  },
+  "KHIU": {
+    "algorithm": "F' M' D M F2 M' D' M F'",
+    "buffer": "C",
+    "targets": "KHIU",
+    "htm": 9
+  },
+  "KIUR": {
+    "algorithm": "F' M U' M' F2 M U M' F'",
+    "buffer": "C",
+    "targets": "KIUR",
+    "htm": 9
+  },
+  "KIUT": {
+    "algorithm": "F M' D' M F2 M' D M F",
+    "buffer": "C",
+    "targets": "KIUT",
+    "htm": 9
+  },
+  "KNIU": {
+    "algorithm": "F M U M' F2 M U' M' F",
+    "buffer": "C",
+    "targets": "KNIU",
+    "htm": 9
+  },
+  "KSAI": {
+    "algorithm": "L2 E' F2 E L' E' F2 E L'",
+    "buffer": "C",
+    "targets": "KSAI",
+    "htm": 9
+  },
+  "KSAQ": {
+    "algorithm": "E R E' B2 E R B2 E R2",
+    "buffer": "C",
+    "targets": "KSAQ",
+    "htm": 9
+  },
+  "KUSA": {
+    "algorithm": "E L' E' F2 E L' F2 E L2",
+    "buffer": "C",
+    "targets": "KUSA",
+    "htm": 9
+  },
+  "KUSQ": {
+    "algorithm": "R2 S' D2 R S' D2 S R S'",
+    "buffer": "C",
+    "targets": "KUSQ",
+    "htm": 9
+  },
+  "KWAI": {
+    "algorithm": "R S U2 S' R U2 S' R2 S'",
+    "buffer": "C",
+    "targets": "KWAI",
+    "htm": 9
+  },
+  "KWSA": {
+    "algorithm": "R2 E' B2 E R E' B2 E R",
+    "buffer": "C",
+    "targets": "KWSA",
+    "htm": 9
+  },
+  "LANF": {
+    "algorithm": "U' S L' S' U2 S L S' U'",
+    "buffer": "C",
+    "targets": "LANF",
+    "htm": 9
+  },
+  "LISR": {
+    "algorithm": "L' S' U S L2 S' U' S L'",
+    "buffer": "C",
+    "targets": "LISR",
+    "htm": 9
+  },
+  "LWVB": {
+    "algorithm": "R E F' E' R2 E F E' R",
+    "buffer": "C",
+    "targets": "LWVB",
+    "htm": 9
+  },
+  "LXVT": {
+    "algorithm": "D M F M' D2 M F' M' D",
+    "buffer": "C",
+    "targets": "LXVT",
+    "htm": 9
+  },
+  "NAHP": {
+    "algorithm": "B' E R2 E' B' R2 E' B2 E'",
+    "buffer": "C",
+    "targets": "NAHP",
+    "htm": 9
+  },
+  "NAUP": {
+    "algorithm": "F2 M U2 F M U2 M' F M",
+    "buffer": "C",
+    "targets": "NAUP",
+    "htm": 9
+  },
+  "NWHF": {
+    "algorithm": "B M' U2 M B U2 M B2 M",
+    "buffer": "C",
+    "targets": "NWHF",
+    "htm": 9
+  },
+  "NWUF": {
+    "algorithm": "F2 E' R2 E F' E' R2 E F'",
+    "buffer": "C",
+    "targets": "NWUF",
+    "htm": 9
+  },
+  "OAIQ": {
+    "algorithm": "U M B M' U2 M B' M' U",
+    "buffer": "C",
+    "targets": "OAIQ",
+    "htm": 9
+  },
+  "ONHE": {
+    "algorithm": "B M' U' M B2 M' U M B",
+    "buffer": "C",
+    "targets": "ONHE",
+    "htm": 9
+  },
+  "OUVD": {
+    "algorithm": "F' E' R E F2 E' R' E F'",
+    "buffer": "C",
+    "targets": "OUVD",
+    "htm": 9
+  },
+  "OXVG": {
+    "algorithm": "D' S R' S' D2 S R S' D'",
+    "buffer": "C",
+    "targets": "OXVG",
+    "htm": 9
+  },
+  "PHAF": {
+    "algorithm": "E' F' E L2 E' F' L2 E' F2",
+    "buffer": "C",
+    "targets": "PHAF",
+    "htm": 9
+  },
+  "PHAN": {
+    "algorithm": "B2 E R2 B E R2 E' B E",
+    "buffer": "C",
+    "targets": "PHAN",
+    "htm": 9
+  },
+  "PINW": {
+    "algorithm": "R' S U' S' R2 S U S' R'",
+    "buffer": "C",
+    "targets": "PINW",
+    "htm": 9
+  },
+  "PNWE": {
+    "algorithm": "R S U S' R2 S U' S' R",
+    "buffer": "C",
+    "targets": "PNWE",
+    "htm": 9
+  },
+  "PNWG": {
+    "algorithm": "R' S' D S R2 S' D' S R'",
+    "buffer": "C",
+    "targets": "PNWG",
+    "htm": 9
+  },
+  "PSNW": {
+    "algorithm": "R S' D' S R2 S' D S R",
+    "buffer": "C",
+    "targets": "PSNW",
+    "htm": 9
+  },
+  "PUAN": {
+    "algorithm": "F' M U2 M' F' U2 M' F2 M'",
+    "buffer": "C",
+    "targets": "PUAN",
+    "htm": 9
+  },
+  "PUHA": {
+    "algorithm": "F2 E L2 E' F' E L2 E' F'",
+    "buffer": "C",
+    "targets": "PUHA",
+    "htm": 9
+  },
+  "PWHA": {
+    "algorithm": "B E R2 E' B R2 E' B2 E'",
+    "buffer": "C",
+    "targets": "PWHA",
+    "htm": 9
+  },
+  "PWHF": {
+    "algorithm": "F2 M' D2 F' M' D2 M F' M'",
+    "buffer": "C",
+    "targets": "PWHF",
+    "htm": 9
+  },
+  "QASK": {
+    "algorithm": "R2 E' B2 E R' E' B2 E R'",
+    "buffer": "C",
+    "targets": "QASK",
+    "htm": 9
+  },
+  "QASU": {
+    "algorithm": "L S' U2 S L U2 S L2 S",
+    "buffer": "C",
+    "targets": "QASU",
+    "htm": 9
+  },
+  "QIAG": {
+    "algorithm": "U M' F M U2 M' F' M U",
+    "buffer": "C",
+    "targets": "QIAG",
+    "htm": 9
+  },
+  "QIAO": {
+    "algorithm": "U' M B M' U2 M B' M' U'",
+    "buffer": "C",
+    "targets": "QIAO",
+    "htm": 9
+  },
+  "QSUI": {
+    "algorithm": "L2 S' U2 L S' U2 S L S'",
+    "buffer": "C",
+    "targets": "QSUI",
+    "htm": 9
+  },
+  "QSUK": {
+    "algorithm": "R' S' D2 S R' D2 S R2 S",
+    "buffer": "C",
+    "targets": "QSUK",
+    "htm": 9
+  },
+  "QVIA": {
+    "algorithm": "U' M' F' M U2 M' F M U'",
+    "buffer": "C",
+    "targets": "QVIA",
+    "htm": 9
+  },
+  "QWSU": {
+    "algorithm": "R2 S' D2 R' S' D2 S R' S'",
+    "buffer": "C",
+    "targets": "QWSU",
+    "htm": 9
+  },
+  "QWUI": {
+    "algorithm": "E' R' E F2 E' R' F2 E' R2",
+    "buffer": "C",
+    "targets": "QWUI",
+    "htm": 9
+  },
+  "QXIA": {
+    "algorithm": "U M B' M' U2 M B M' U",
+    "buffer": "C",
+    "targets": "QXIA",
+    "htm": 9
+  },
+  "RNHT": {
+    "algorithm": "B' E R E' B2 E R' E' B'",
+    "buffer": "C",
+    "targets": "RNHT",
+    "htm": 9
+  },
+  "RSIL": {
+    "algorithm": "L S' U S L2 S' U' S L",
+    "buffer": "C",
+    "targets": "RSIL",
+    "htm": 9
+  },
+  "RUIK": {
+    "algorithm": "F M U' M' F2 M U M' F",
+    "buffer": "C",
+    "targets": "RUIK",
+    "htm": 9
+  },
+  "RWVB": {
+    "algorithm": "R' E' B' E R2 E' B E R'",
+    "buffer": "C",
+    "targets": "RWVB",
+    "htm": 9
+  },
+  "TANF": {
+    "algorithm": "U S' R' S U2 S' R S U",
+    "buffer": "C",
+    "targets": "TANF",
+    "htm": 9
+  },
+  "THNR": {
+    "algorithm": "B E R E' B2 E R' E' B",
+    "buffer": "C",
+    "targets": "THNR",
+    "htm": 9
+  },
+  "TUIK": {
+    "algorithm": "F' M' D' M F2 M' D M F'",
+    "buffer": "C",
+    "targets": "TUIK",
+    "htm": 9
+  },
+  "TVXL": {
+    "algorithm": "D' M F M' D2 M F' M' D'",
+    "buffer": "C",
+    "targets": "TVXL",
+    "htm": 9
+  },
+  "UIHK": {
+    "algorithm": "F M' D M F2 M' D' M F",
+    "buffer": "C",
+    "targets": "UIHK",
+    "htm": 9
+  },
+  "UINK": {
+    "algorithm": "F' M U M' F2 M U' M' F'",
+    "buffer": "C",
+    "targets": "UINK",
+    "htm": 9
+  },
+  "USAQ": {
+    "algorithm": "L2 S' U2 L' S' U2 S L' S'",
+    "buffer": "C",
+    "targets": "USAQ",
+    "htm": 9
+  },
+  "USWQ": {
+    "algorithm": "R S' D2 S R D2 S R2 S",
+    "buffer": "C",
+    "targets": "USWQ",
+    "htm": 9
+  },
+  "UVHD": {
+    "algorithm": "F' E L' E' F2 E L E' F'",
+    "buffer": "C",
+    "targets": "UVHD",
+    "htm": 9
+  },
+  "UVND": {
+    "algorithm": "F E' R' E F2 E' R E F",
+    "buffer": "C",
+    "targets": "UVND",
+    "htm": 9
+  },
+  "UXAB": {
+    "algorithm": "S' U' S L2 S' U' L2 S' U2",
+    "buffer": "C",
+    "targets": "UXAB",
+    "htm": 9
+  },
+  "UXWB": {
+    "algorithm": "D2 S R2 D S R2 S' D S",
+    "buffer": "C",
+    "targets": "UXWB",
+    "htm": 9
+  },
+  "VUAB": {
+    "algorithm": "U2 M' F2 M U' M' F2 M U'",
+    "buffer": "C",
+    "targets": "VUAB",
+    "htm": 9
+  },
+  "VUXB": {
+    "algorithm": "D S R2 S' D R2 S' D2 S'",
+    "buffer": "C",
+    "targets": "VUXB",
+    "htm": 9
+  },
+  "VWAD": {
+    "algorithm": "U2 S' R2 S U S' R2 S U",
+    "buffer": "C",
+    "targets": "VWAD",
+    "htm": 9
+  },
+  "VWXD": {
+    "algorithm": "D' M F2 M' D' F2 M' D2 M'",
+    "buffer": "C",
+    "targets": "VWXD",
+    "htm": 9
+  },
+  "WHAF": {
+    "algorithm": "B2 M' U2 B M' U2 M B M'",
+    "buffer": "C",
+    "targets": "WHAF",
+    "htm": 9
+  },
+  "WHUF": {
+    "algorithm": "F' M' D2 M F' D2 M F2 M",
+    "buffer": "C",
+    "targets": "WHUF",
+    "htm": 9
+  },
+  "WNIP": {
+    "algorithm": "R S U' S' R2 S U S' R",
+    "buffer": "C",
+    "targets": "WNIP",
+    "htm": 9
+  },
+  "WNSP": {
+    "algorithm": "R' S' D' S R2 S' D S R'",
+    "buffer": "C",
+    "targets": "WNSP",
+    "htm": 9
+  },
+  "WVIB": {
+    "algorithm": "R' E F E' R2 E F' E' R'",
+    "buffer": "C",
+    "targets": "WVIB",
+    "htm": 9
+  },
+  "WVSB": {
+    "algorithm": "R E' B E R2 E' B' E R",
+    "buffer": "C",
+    "targets": "WVSB",
+    "htm": 9
+  },
+  "WXAD": {
+    "algorithm": "M' U M B2 M' U B2 M' U2",
+    "buffer": "C",
+    "targets": "WXAD",
+    "htm": 9
+  },
+  "WXUD": {
+    "algorithm": "D2 M F2 D' M F2 M' D' M",
+    "buffer": "C",
+    "targets": "WXUD",
+    "htm": 9
+  },
+  "AFHN": {
+    "algorithm": "B' R2 U2 B' R2 B U2 R2 B U2",
+    "buffer": "C",
+    "targets": "AFHN",
+    "htm": 10
+  },
+  "AFHU": {
+    "algorithm": "L2 F' D2 L2 F' D2 F L2 D2 F",
+    "buffer": "C",
+    "targets": "AFHU",
+    "htm": 10
+  },
+  "AFPN": {
+    "algorithm": "R2 U2 F R2 F' U2 R2 F' U2 F",
+    "buffer": "C",
+    "targets": "AFPN",
+    "htm": 10
+  },
+  "AFPW": {
+    "algorithm": "R2 B U2 B' R2 U2 B' R2 B U2",
+    "buffer": "C",
+    "targets": "AFPW",
+    "htm": 10
+  },
+  "AGWF": {
+    "algorithm": "U2 B U2 L' U2 L B' L' U2 L",
+    "buffer": "C",
+    "targets": "AGWF",
+    "htm": 10
+  },
+  "AIUT": {
+    "algorithm": "U2 B U2 B' L' B U2 B' U2 L",
+    "buffer": "C",
+    "targets": "AIUT",
+    "htm": 10
+  },
+  "AIWL": {
+    "algorithm": "F U2 F' R' F U2 F' U2 R U2",
+    "buffer": "C",
+    "targets": "AIWL",
+    "htm": 10
+  },
+  "ALWQ": {
+    "algorithm": "R' U2 F U2 F' R F U2 F' U2",
+    "buffer": "C",
+    "targets": "ALWQ",
+    "htm": 10
+  },
+  "ANUO": {
+    "algorithm": "R' U2 R F R' U2 R U2 F' U2",
+    "buffer": "C",
+    "targets": "ANUO",
+    "htm": 10
+  },
+  "ANWG": {
+    "algorithm": "U2 L' U2 L B L' U2 L U2 B'",
+    "buffer": "C",
+    "targets": "ANWG",
+    "htm": 10
+  },
+  "AOUF": {
+    "algorithm": "F U2 R' U2 R F' R' U2 R U2",
+    "buffer": "C",
+    "targets": "AOUF",
+    "htm": 10
+  },
+  "AQKI": {
+    "algorithm": "F2 U2 R' F2 R U2 F2 R U2 R'",
+    "buffer": "C",
+    "targets": "AQKI",
+    "htm": 10
+  },
+  "AQKU": {
+    "algorithm": "F2 L' U2 L F2 U2 L F2 L' U2",
+    "buffer": "C",
+    "targets": "AQKU",
+    "htm": 10
+  },
+  "AQSI": {
+    "algorithm": "L F2 U2 L F2 L' U2 F2 L' U2",
+    "buffer": "C",
+    "targets": "AQSI",
+    "htm": 10
+  },
+  "AQSW": {
+    "algorithm": "B2 R D2 B2 R D2 R' B2 D2 R'",
+    "buffer": "C",
+    "targets": "AQSW",
+    "htm": 10
+  },
+  "ATUQ": {
+    "algorithm": "U2 L' U2 B U2 B' L B U2 B'",
+    "buffer": "C",
+    "targets": "ATUQ",
+    "htm": 10
+  },
+  "AUDV": {
+    "algorithm": "F2 U' R2 F2 U' R2 U F2 R2 U",
+    "buffer": "C",
+    "targets": "AUDV",
+    "htm": 10
+  },
+  "AUHN": {
+    "algorithm": "U2 F' L2 F U2 L2 F U2 F' L2",
+    "buffer": "C",
+    "targets": "AUHN",
+    "htm": 10
+  },
+  "AUKI": {
+    "algorithm": "L D2 F2 L D2 L' F2 D2 L' F2",
+    "buffer": "C",
+    "targets": "AUKI",
+    "htm": 10
+  },
+  "AVUX": {
+    "algorithm": "B2 R2 D R2 B2 L2 F2 U F2 L2",
+    "buffer": "C",
+    "targets": "AVUX",
+    "htm": 10
+  },
+  "AVWX": {
+    "algorithm": "B2 S U S' R2 S U' S' R2 B2",
+    "buffer": "C",
+    "targets": "AVWX",
+    "htm": 10
+  },
+  "AWBV": {
+    "algorithm": "B2 R2 U' B2 U R2 B2 U R2 U'",
+    "buffer": "C",
+    "targets": "AWBV",
+    "htm": 10
+  },
+  "AWPN": {
+    "algorithm": "B' D2 R2 B' D2 B R2 D2 B R2",
+    "buffer": "C",
+    "targets": "AWPN",
+    "htm": 10
+  },
+  "AWSI": {
+    "algorithm": "U2 R B2 R' U2 B2 R' U2 R B2",
+    "buffer": "C",
+    "targets": "AWSI",
+    "htm": 10
+  },
+  "AXBV": {
+    "algorithm": "B2 D' R2 D B2 R2 D B2 D' R2",
+    "buffer": "C",
+    "targets": "AXBV",
+    "htm": 10
+  },
+  "AXBW": {
+    "algorithm": "U' B2 U R2 B2 U R2 U' B2 R2",
+    "buffer": "C",
+    "targets": "AXBW",
+    "htm": 10
+  },
+  "AXDU": {
+    "algorithm": "U B2 L2 U B2 U' L2 B2 U' L2",
+    "buffer": "C",
+    "targets": "AXDU",
+    "htm": 10
+  },
+  "AXDV": {
+    "algorithm": "L2 D F2 D' L2 F2 D' L2 D F2",
+    "buffer": "C",
+    "targets": "AXDV",
+    "htm": 10
+  },
+  "BAGW": {
+    "algorithm": "R2 F' R2 F U F' R2 F R2 U'",
+    "buffer": "C",
+    "targets": "BAGW",
+    "htm": 10
+  },
+  "BAKX": {
+    "algorithm": "U' B2 R' B2 R U R' B2 R B2",
+    "buffer": "C",
+    "targets": "BAKX",
+    "htm": 10
+  },
+  "BAOP": {
+    "algorithm": "B R2 B' R2 U R2 B R2 B' U'",
+    "buffer": "C",
+    "targets": "BAOP",
+    "htm": 10
+  },
+  "BAST": {
+    "algorithm": "U' L B2 L' B2 U B2 L B2 L'",
+    "buffer": "C",
+    "targets": "BAST",
+    "htm": 10
+  },
+  "BAVH": {
+    "algorithm": "R2 B R2 B' U B R2 B' R2 U'",
+    "buffer": "C",
+    "targets": "BAVH",
+    "htm": 10
+  },
+  "BAVX": {
+    "algorithm": "B2 D' S R2 S' D S R2 B2 S'",
+    "buffer": "C",
+    "targets": "BAVX",
+    "htm": 10
+  },
+  "BAWL": {
+    "algorithm": "U' B2 L B2 L' U L B2 L' B2",
+    "buffer": "C",
+    "targets": "BAWL",
+    "htm": 10
+  },
+  "BEFG": {
+    "algorithm": "B U2 B' U2 L' U2 B U2 B' L",
+    "buffer": "C",
+    "targets": "BEFG",
+    "htm": 10
+  },
+  "BEWX": {
+    "algorithm": "R2 D' R2 B' R2 B D B' R2 B",
+    "buffer": "C",
+    "targets": "BEWX",
+    "htm": 10
+  },
+  "BGWD": {
+    "algorithm": "U' R2 F' R2 F U F' R2 F R2",
+    "buffer": "C",
+    "targets": "BGWD",
+    "htm": 10
+  },
+  "BHEF": {
+    "algorithm": "L B U2 B' U2 L' U2 B U2 B'",
+    "buffer": "C",
+    "targets": "BHEF",
+    "htm": 10
+  },
+  "BHVT": {
+    "algorithm": "U' R' U B2 U' B2 R B2 U B2",
+    "buffer": "C",
+    "targets": "BHVT",
+    "htm": 10
+  },
+  "BIAK": {
+    "algorithm": "F2 L F2 U F2 U' L' U F2 U'",
+    "buffer": "C",
+    "targets": "BIAK",
+    "htm": 10
+  },
+  "BIAO": {
+    "algorithm": "U' R2 F R2 U R2 U' F' U R2",
+    "buffer": "C",
+    "targets": "BIAO",
+    "htm": 10
+  },
+  "BIAT": {
+    "algorithm": "L' U' L B2 L' B2 U B2 L B2",
+    "buffer": "C",
+    "targets": "BIAT",
+    "htm": 10
+  },
+  "BIVR": {
+    "algorithm": "L F2 M U M' F2 R L' B' R'",
+    "buffer": "C",
+    "targets": "BIVR",
+    "htm": 10
+  },
+  "BIWR": {
+    "algorithm": "L' U' M B2 M' U M B2 L M'",
+    "buffer": "C",
+    "targets": "BIWR",
+    "htm": 10
+  },
+  "BKDR": {
+    "algorithm": "F2 L F2 U F2 L' F2 L U' L'",
+    "buffer": "C",
+    "targets": "BKDR",
+    "htm": 10
+  },
+  "BKLD": {
+    "algorithm": "L' F2 L F2 U F2 L' F2 L U'",
+    "buffer": "C",
+    "targets": "BKLD",
+    "htm": 10
+  },
+  "BKWG": {
+    "algorithm": "F2 U F2 R F2 U' F2 U R' U'",
+    "buffer": "C",
+    "targets": "BKWG",
+    "htm": 10
+  },
+  "BKWL": {
+    "algorithm": "D2 R B' R' D2 R D2 B D2 R'",
+    "buffer": "C",
+    "targets": "BKWL",
+    "htm": 10
+  },
+  "BKWX": {
+    "algorithm": "R' B2 R U' R' B2 R B2 U B2",
+    "buffer": "C",
+    "targets": "BKWX",
+    "htm": 10
+  },
+  "BKXL": {
+    "algorithm": "D2 R' D2 F D2 R D2 R' F' R",
+    "buffer": "C",
+    "targets": "BKXL",
+    "htm": 10
+  },
+  "BOPD": {
+    "algorithm": "U' B R2 B' R2 U R2 B R2 B'",
+    "buffer": "C",
+    "targets": "BOPD",
+    "htm": 10
+  },
+  "BOXK": {
+    "algorithm": "D R2 D' R2 B R2 D R2 D' B'",
+    "buffer": "C",
+    "targets": "BOXK",
+    "htm": 10
+  },
+  "BPDR": {
+    "algorithm": "R2 U B' U' R2 U R2 B R2 U'",
+    "buffer": "C",
+    "targets": "BPDR",
+    "htm": 10
+  },
+  "BPXL": {
+    "algorithm": "D F' D' R2 D R2 F R2 D' R2",
+    "buffer": "C",
+    "targets": "BPXL",
+    "htm": 10
+  },
+  "BSUO": {
+    "algorithm": "R2 D' R2 B R2 D R2 D' B' D",
+    "buffer": "C",
+    "targets": "BSUO",
+    "htm": 10
+  },
+  "BSUT": {
+    "algorithm": "R B' R' D2 R D2 B D2 R' D2",
+    "buffer": "C",
+    "targets": "BSUT",
+    "htm": 10
+  },
+  "BSVD": {
+    "algorithm": "F2 L' F2 L U L' F2 L F2 U'",
+    "buffer": "C",
+    "targets": "BSVD",
+    "htm": 10
+  },
+  "BSVL": {
+    "algorithm": "L' F2 M U M' F2 M U' L M'",
+    "buffer": "C",
+    "targets": "BSVL",
+    "htm": 10
+  },
+  "BSVT": {
+    "algorithm": "R' D2 F D2 R D2 R' F' R D2",
+    "buffer": "C",
+    "targets": "BSVT",
+    "htm": 10
+  },
+  "BSWL": {
+    "algorithm": "L M' U' M B2 M' U M B2 L'",
+    "buffer": "C",
+    "targets": "BSWL",
+    "htm": 10
+  },
+  "BTDR": {
+    "algorithm": "U' B2 U L' U' B2 U B2 L B2",
+    "buffer": "C",
+    "targets": "BTDR",
+    "htm": 10
+  },
+  "BTUP": {
+    "algorithm": "F' D' R2 D R2 F R2 D' R2 D",
+    "buffer": "C",
+    "targets": "BTUP",
+    "htm": 10
+  },
+  "BUEW": {
+    "algorithm": "B' R2 B D B' R2 B R2 D' R2",
+    "buffer": "C",
+    "targets": "BUEW",
+    "htm": 10
+  },
+  "BUTD": {
+    "algorithm": "F2 R F2 R' U R F2 R' F2 U'",
+    "buffer": "C",
+    "targets": "BUTD",
+    "htm": 10
+  },
+  "BUVF": {
+    "algorithm": "F R2 F' D F R2 F' R2 D' R2",
+    "buffer": "C",
+    "targets": "BUVF",
+    "htm": 10
+  },
+  "BUVT": {
+    "algorithm": "F2 U F2 R F2 R' U' R F2 R'",
+    "buffer": "C",
+    "targets": "BUVT",
+    "htm": 10
+  },
+  "BUWD": {
+    "algorithm": "B2 L2 S' U S L2 S' U' B2 S",
+    "buffer": "C",
+    "targets": "BUWD",
+    "htm": 10
+  },
+  "BVFX": {
+    "algorithm": "R2 D' R2 F R2 F' D F R2 F'",
+    "buffer": "C",
+    "targets": "BVFX",
+    "htm": 10
+  },
+  "BVHD": {
+    "algorithm": "U' R2 B R2 B' U B R2 B' R2",
+    "buffer": "C",
+    "targets": "BVHD",
+    "htm": 10
+  },
+  "DAHG": {
+    "algorithm": "U B' L2 B L2 U' L2 B' L2 B",
+    "buffer": "C",
+    "targets": "DAHG",
+    "htm": 10
+  },
+  "DALK": {
+    "algorithm": "L' F2 L F2 U' F2 L' F2 L U",
+    "buffer": "C",
+    "targets": "DALK",
+    "htm": 10
+  },
+  "DAPX": {
+    "algorithm": "U L2 F L2 F' U' F L2 F' L2",
+    "buffer": "C",
+    "targets": "DAPX",
+    "htm": 10
+  },
+  "DATU": {
+    "algorithm": "F2 R F2 R' U' R F2 R' F2 U",
+    "buffer": "C",
+    "targets": "DATU",
+    "htm": 10
+  },
+  "DAUO": {
+    "algorithm": "U L2 B' L2 B U' B' L2 B L2",
+    "buffer": "C",
+    "targets": "DAUO",
+    "htm": 10
+  },
+  "DAVS": {
+    "algorithm": "F2 L' F2 L U' L' F2 L F2 U",
+    "buffer": "C",
+    "targets": "DAVS",
+    "htm": 10
+  },
+  "DAVX": {
+    "algorithm": "B2 R2 S U' S' R2 S U B2 S'",
+    "buffer": "C",
+    "targets": "DAVX",
+    "htm": 10
+  },
+  "DGBE": {
+    "algorithm": "U L2 U' B U L2 U' L2 B' L2",
+    "buffer": "C",
+    "targets": "DGBE",
+    "htm": 10
+  },
+  "DGWK": {
+    "algorithm": "R D F2 D' F2 R' F2 D F2 D'",
+    "buffer": "C",
+    "targets": "DGWK",
+    "htm": 10
+  },
+  "DHUO": {
+    "algorithm": "B' S' U S L2 S' U' S L2 B",
+    "buffer": "C",
+    "targets": "DHUO",
+    "htm": 10
+  },
+  "DHVB": {
+    "algorithm": "R2 B R2 B' U' B R2 B' R2 U",
+    "buffer": "C",
+    "targets": "DHVB",
+    "htm": 10
+  },
+  "DHVG": {
+    "algorithm": "F D2 R' D2 F' D2 F R F' D2",
+    "buffer": "C",
+    "targets": "DHVG",
+    "htm": 10
+  },
+  "DHVO": {
+    "algorithm": "B R2 S U' S' R2 S U B' S'",
+    "buffer": "C",
+    "targets": "DHVO",
+    "htm": 10
+  },
+  "DHWG": {
+    "algorithm": "F' L F D2 F' D2 L' D2 F D2",
+    "buffer": "C",
+    "targets": "DHWG",
+    "htm": 10
+  },
+  "DHWL": {
+    "algorithm": "F2 D F2 L' F2 D' F2 D L D'",
+    "buffer": "C",
+    "targets": "DHWL",
+    "htm": 10
+  },
+  "DKBE": {
+    "algorithm": "F2 U' L U F2 U' F2 L' F2 U",
+    "buffer": "C",
+    "targets": "DKBE",
+    "htm": 10
+  },
+  "DKXO": {
+    "algorithm": "D' R D F2 D' F2 R' F2 D F2",
+    "buffer": "C",
+    "targets": "DKXO",
+    "htm": 10
+  },
+  "DLKB": {
+    "algorithm": "U L' F2 L F2 U' F2 L' F2 L",
+    "buffer": "C",
+    "targets": "DLKB",
+    "htm": 10
+  },
+  "DLXP": {
+    "algorithm": "D' F2 D F2 L' F2 D' F2 D L",
+    "buffer": "C",
+    "targets": "DLXP",
+    "htm": 10
+  },
+  "DNAG": {
+    "algorithm": "B U B' L2 B L2 U' L2 B' L2",
+    "buffer": "C",
+    "targets": "DNAG",
+    "htm": 10
+  },
+  "DNAL": {
+    "algorithm": "U F2 R' F2 U' F2 U R U' F2",
+    "buffer": "C",
+    "targets": "DNAL",
+    "htm": 10
+  },
+  "DNAP": {
+    "algorithm": "R2 B' R2 U' R2 U B U' R2 U",
+    "buffer": "C",
+    "targets": "DNAP",
+    "htm": 10
+  },
+  "DNUE": {
+    "algorithm": "B U S L2 S' U' S L2 B' S'",
+    "buffer": "C",
+    "targets": "DNUE",
+    "htm": 10
+  },
+  "DNVE": {
+    "algorithm": "B' R2 S U' S' R2 F' B L F",
+    "buffer": "C",
+    "targets": "DNVE",
+    "htm": 10
+  },
+  "DPBE": {
+    "algorithm": "R2 B' R2 U' R2 B R2 B' U B",
+    "buffer": "C",
+    "targets": "DPBE",
+    "htm": 10
+  },
+  "DPOB": {
+    "algorithm": "B R2 B' R2 U' R2 B R2 B' U",
+    "buffer": "C",
+    "targets": "DPOB",
+    "htm": 10
+  },
+  "DPUO": {
+    "algorithm": "D2 F' L F D2 F' D2 L' D2 F",
+    "buffer": "C",
+    "targets": "DPUO",
+    "htm": 10
+  },
+  "DPUT": {
+    "algorithm": "R2 U' R2 F' R2 U R2 U' F U",
+    "buffer": "C",
+    "targets": "DPUT",
+    "htm": 10
+  },
+  "DPUX": {
+    "algorithm": "F L2 F' U F L2 F' L2 U' L2",
+    "buffer": "C",
+    "targets": "DPUX",
+    "htm": 10
+  },
+  "DPXO": {
+    "algorithm": "D2 F D2 R' D2 F' D2 F R F'",
+    "buffer": "C",
+    "targets": "DPXO",
+    "htm": 10
+  },
+  "DRQT": {
+    "algorithm": "L' U2 L U2 B U2 L' U2 L B'",
+    "buffer": "C",
+    "targets": "DRQT",
+    "htm": 10
+  },
+  "DRUX": {
+    "algorithm": "F2 D F2 L F2 L' D' L F2 L'",
+    "buffer": "C",
+    "targets": "DRUX",
+    "htm": 10
+  },
+  "DSRQ": {
+    "algorithm": "B' L' U2 L U2 B U2 L' U2 L",
+    "buffer": "C",
+    "targets": "DSRQ",
+    "htm": 10
+  },
+  "DSVG": {
+    "algorithm": "U F U' L2 U L2 F' L2 U' L2",
+    "buffer": "C",
+    "targets": "DSVG",
+    "htm": 10
+  },
+  "DTUB": {
+    "algorithm": "U F2 R F2 R' U' R F2 R' F2",
+    "buffer": "C",
+    "targets": "DTUB",
+    "htm": 10
+  },
+  "DVQX": {
+    "algorithm": "F2 D F2 R' F2 R D' R' F2 R",
+    "buffer": "C",
+    "targets": "DVQX",
+    "htm": 10
+  },
+  "DVSB": {
+    "algorithm": "U F2 L' F2 L U' L' F2 L F2",
+    "buffer": "C",
+    "targets": "DVSB",
+    "htm": 10
+  },
+  "DWGB": {
+    "algorithm": "R2 F' R2 F U' F' R2 F R2 U",
+    "buffer": "C",
+    "targets": "DWGB",
+    "htm": 10
+  },
+  "DWRU": {
+    "algorithm": "L F2 L' D' L F2 L' F2 D F2",
+    "buffer": "C",
+    "targets": "DWRU",
+    "htm": 10
+  },
+  "DWUB": {
+    "algorithm": "B2 S' U S L2 S' U' S L2 B2",
+    "buffer": "C",
+    "targets": "DWUB",
+    "htm": 10
+  },
+  "DWVG": {
+    "algorithm": "R2 U' R2 F' R2 F U F' R2 F",
+    "buffer": "C",
+    "targets": "DWVG",
+    "htm": 10
+  },
+  "DWVQ": {
+    "algorithm": "R' F2 R D' R' F2 R F2 D F2",
+    "buffer": "C",
+    "targets": "DWVQ",
+    "htm": 10
+  },
+  "EBGD": {
+    "algorithm": "L2 B L2 U L2 U' B' U L2 U'",
+    "buffer": "C",
+    "targets": "EBGD",
+    "htm": 10
+  },
+  "EBKD": {
+    "algorithm": "U' F2 L F2 U F2 U' L' U F2",
+    "buffer": "C",
+    "targets": "EBKD",
+    "htm": 10
+  },
+  "EBKG": {
+    "algorithm": "U R' U' F2 U F2 R F2 U' F2",
+    "buffer": "C",
+    "targets": "EBKG",
+    "htm": 10
+  },
+  "EBOK": {
+    "algorithm": "B' D R2 D' R2 B R2 D R2 D'",
+    "buffer": "C",
+    "targets": "EBOK",
+    "htm": 10
+  },
+  "EBPD": {
+    "algorithm": "B' U' B R2 B' R2 U R2 B R2",
+    "buffer": "C",
+    "targets": "EBPD",
+    "htm": 10
+  },
+  "EBSO": {
+    "algorithm": "D' B' D R2 D' R2 B R2 D R2",
+    "buffer": "C",
+    "targets": "EBSO",
+    "htm": 10
+  },
+  "EFKO": {
+    "algorithm": "U2 R U2 F' U2 R' U2 R F R'",
+    "buffer": "C",
+    "targets": "EFKO",
+    "htm": 10
+  },
+  "EFSG": {
+    "algorithm": "L U2 B' U2 L' U2 L B L' U2",
+    "buffer": "C",
+    "targets": "EFSG",
+    "htm": 10
+  },
+  "EGDO": {
+    "algorithm": "U L2 U' B' U L2 U' L2 B L2",
+    "buffer": "C",
+    "targets": "EGDO",
+    "htm": 10
+  },
+  "EHBO": {
+    "algorithm": "R2 B D' B' R2 B R2 D R2 B'",
+    "buffer": "C",
+    "targets": "EHBO",
+    "htm": 10
+  },
+  "EHBP": {
+    "algorithm": "R2 B' R2 U R2 B R2 B' U' B",
+    "buffer": "C",
+    "targets": "EHBP",
+    "htm": 10
+  },
+  "EHGO": {
+    "algorithm": "L' D2 F D2 F' L F D2 F' D2",
+    "buffer": "C",
+    "targets": "EHGO",
+    "htm": 10
+  },
+  "EHQP": {
+    "algorithm": "R U' R' B2 R B2 U B2 R' B2",
+    "buffer": "C",
+    "targets": "EHQP",
+    "htm": 10
+  },
+  "EHVN": {
+    "algorithm": "B' R2 S U S' R2 F' B L' F",
+    "buffer": "C",
+    "targets": "EHVN",
+    "htm": 10
+  },
+  "EHVO": {
+    "algorithm": "B D' S R2 S' D S R2 B' S'",
+    "buffer": "C",
+    "targets": "EHVO",
+    "htm": 10
+  },
+  "EIHQ": {
+    "algorithm": "B2 R B2 U B2 R' B2 R U' R'",
+    "buffer": "C",
+    "targets": "EIHQ",
+    "htm": 10
+  },
+  "EING": {
+    "algorithm": "L' B' M' U2 M B R' L F2 R",
+    "buffer": "C",
+    "targets": "EING",
+    "htm": 10
+  },
+  "EINS": {
+    "algorithm": "L U2 M' F M U2 M' F' L' M",
+    "buffer": "C",
+    "targets": "EINS",
+    "htm": 10
+  },
+  "EIUQ": {
+    "algorithm": "U' F2 U R' U' F2 U F2 R F2",
+    "buffer": "C",
+    "targets": "EIUQ",
+    "htm": 10
+  },
+  "EIXQ": {
+    "algorithm": "L2 U F' U' L2 U L2 F L2 U'",
+    "buffer": "C",
+    "targets": "EIXQ",
+    "htm": 10
+  },
+  "EKDS": {
+    "algorithm": "F2 U' L' U F2 U' F2 L F2 U",
+    "buffer": "C",
+    "targets": "EKDS",
+    "htm": 10
+  },
+  "EKNG": {
+    "algorithm": "F2 R' U' R F2 R' F2 U F2 R",
+    "buffer": "C",
+    "targets": "EKNG",
+    "htm": 10
+  },
+  "EKOS": {
+    "algorithm": "D B2 R B2 R' D' R B2 R' B2",
+    "buffer": "C",
+    "targets": "EKOS",
+    "htm": 10
+  },
+  "ELNS": {
+    "algorithm": "L S U2 S' L' U' S' L2 S U",
+    "buffer": "C",
+    "targets": "ELNS",
+    "htm": 10
+  },
+  "ENSG": {
+    "algorithm": "L M' U2 M B' M' U2 M B L'",
+    "buffer": "C",
+    "targets": "ENSG",
+    "htm": 10
+  },
+  "ENSP": {
+    "algorithm": "L F' M U2 M' F R L' B2 R'",
+    "buffer": "C",
+    "targets": "ENSP",
+    "htm": 10
+  },
+  "EOSG": {
+    "algorithm": "B2 R B2 R' D' R B2 R' B2 D",
+    "buffer": "C",
+    "targets": "EOSG",
+    "htm": 10
+  },
+  "EPOG": {
+    "algorithm": "D2 L' D2 F D2 F' L F D2 F'",
+    "buffer": "C",
+    "targets": "EPOG",
+    "htm": 10
+  },
+  "EUFK": {
+    "algorithm": "R F R' U2 R U2 F' U2 R' U2",
+    "buffer": "C",
+    "targets": "EUFK",
+    "htm": 10
+  },
+  "EUND": {
+    "algorithm": "B L2 S' U S L2 F B' R' F'",
+    "buffer": "C",
+    "targets": "EUND",
+    "htm": 10
+  },
+  "EUNX": {
+    "algorithm": "B L2 U L2 B' L2 B U' B' L2",
+    "buffer": "C",
+    "targets": "EUNX",
+    "htm": 10
+  },
+  "EUVF": {
+    "algorithm": "U2 F' R F U2 F' U2 R' U2 F",
+    "buffer": "C",
+    "targets": "EUVF",
+    "htm": 10
+  },
+  "EUVN": {
+    "algorithm": "B' D S R2 S' D' F' B U2 F",
+    "buffer": "C",
+    "targets": "EUVN",
+    "htm": 10
+  },
+  "EUVW": {
+    "algorithm": "D R2 B' R2 B D' B' R2 B R2",
+    "buffer": "C",
+    "targets": "EUVW",
+    "htm": 10
+  },
+  "EUWH": {
+    "algorithm": "L' D2 L F L' D2 L D2 F' D2",
+    "buffer": "C",
+    "targets": "EUWH",
+    "htm": 10
+  },
+  "EUXQ": {
+    "algorithm": "L2 U' L2 B L2 U L2 U' B' U",
+    "buffer": "C",
+    "targets": "EUXQ",
+    "htm": 10
+  },
+  "EVFO": {
+    "algorithm": "F' U2 R' U2 F U2 F' R F U2",
+    "buffer": "C",
+    "targets": "EVFO",
+    "htm": 10
+  },
+  "EVIX": {
+    "algorithm": "U L2 F L2 U' L2 U F' U' L2",
+    "buffer": "C",
+    "targets": "EVIX",
+    "htm": 10
+  },
+  "EVND": {
+    "algorithm": "B' U' S' R2 S U S' R2 B S",
+    "buffer": "C",
+    "targets": "EVND",
+    "htm": 10
+  },
+  "EVNL": {
+    "algorithm": "U M F2 M' U' F' M' U2 M F",
+    "buffer": "C",
+    "targets": "EVNL",
+    "htm": 10
+  },
+  "EVNO": {
+    "algorithm": "B' R2 S' D' S R2 S' D B S",
+    "buffer": "C",
+    "targets": "EVNO",
+    "htm": 10
+  },
+  "EVNS": {
+    "algorithm": "B' E' R2 E B R E B2 E' R'",
+    "buffer": "C",
+    "targets": "EVNS",
+    "htm": 10
+  },
+  "EVWX": {
+    "algorithm": "R2 B' R2 B D' B' R2 B R2 D",
+    "buffer": "C",
+    "targets": "EVWX",
+    "htm": 10
+  },
+  "EWFS": {
+    "algorithm": "U2 L B L' U2 L U2 B' U2 L'",
+    "buffer": "C",
+    "targets": "EWFS",
+    "htm": 10
+  },
+  "EWIU": {
+    "algorithm": "F2 R F2 U' F2 U R' U' F2 U",
+    "buffer": "C",
+    "targets": "EWIU",
+    "htm": 10
+  },
+  "EWNS": {
+    "algorithm": "L B M' U2 M B' M' U2 L' M",
+    "buffer": "C",
+    "targets": "EWNS",
+    "htm": 10
+  },
+  "EWQP": {
+    "algorithm": "R' B2 D B2 R B2 R' D' R B2",
+    "buffer": "C",
+    "targets": "EWQP",
+    "htm": 10
+  },
+  "EWSP": {
+    "algorithm": "L' D2 M F M' D2 M F' L M'",
+    "buffer": "C",
+    "targets": "EWSP",
+    "htm": 10
+  },
+  "EWUP": {
+    "algorithm": "D2 L' D2 L F L' D2 L D2 F'",
+    "buffer": "C",
+    "targets": "EWUP",
+    "htm": 10
+  },
+  "EWVQ": {
+    "algorithm": "B2 D B2 R B2 D' B2 D R' D'",
+    "buffer": "C",
+    "targets": "EWVQ",
+    "htm": 10
+  },
+  "EWXF": {
+    "algorithm": "B' L B U2 B' U2 L' U2 B U2",
+    "buffer": "C",
+    "targets": "EWXF",
+    "htm": 10
+  },
+  "EXFG": {
+    "algorithm": "U2 B' U2 L' U2 B U2 B' L B",
+    "buffer": "C",
+    "targets": "EXFG",
+    "htm": 10
+  },
+  "EXWQ": {
+    "algorithm": "D' B2 D B2 R B2 D' B2 D R'",
+    "buffer": "C",
+    "targets": "EXWQ",
+    "htm": 10
+  },
+  "FBAH": {
+    "algorithm": "U' L2 U F' U' L2 U L2 F L2",
+    "buffer": "C",
+    "targets": "FBAH",
+    "htm": 10
+  },
+  "FBAO": {
+    "algorithm": "R2 F R2 U R2 F' R2 F U' F'",
+    "buffer": "C",
+    "targets": "FBAO",
+    "htm": 10
+  },
+  "FBAT": {
+    "algorithm": "B2 U L' U' B2 U B2 L B2 U'",
+    "buffer": "C",
+    "targets": "FBAT",
+    "htm": 10
+  },
+  "FBHT": {
+    "algorithm": "B2 U' B2 R B2 U B2 U' R' U",
+    "buffer": "C",
+    "targets": "FBHT",
+    "htm": 10
+  },
+  "FBPL": {
+    "algorithm": "R2 D R2 F R2 D' R2 D F' D'",
+    "buffer": "C",
+    "targets": "FBPL",
+    "htm": 10
+  },
+  "FBTP": {
+    "algorithm": "D' R2 D R2 F R2 D' R2 D F'",
+    "buffer": "C",
+    "targets": "FBTP",
+    "htm": 10
+  },
+  "FEHB": {
+    "algorithm": "B U2 B' U2 L U2 B U2 B' L'",
+    "buffer": "C",
+    "targets": "FEHB",
+    "htm": 10
+  },
+  "FEQP": {
+    "algorithm": "F' L U2 L' U2 F U2 L U2 L'",
+    "buffer": "C",
+    "targets": "FEQP",
+    "htm": 10
+  },
+  "FGAH": {
+    "algorithm": "U2 B' U2 L' U2 L B L' U2 L",
+    "buffer": "C",
+    "targets": "FGAH",
+    "htm": 10
+  },
+  "FGKO": {
+    "algorithm": "L F2 L' F2 D' F2 L F2 L' D",
+    "buffer": "C",
+    "targets": "FGKO",
+    "htm": 10
+  },
+  "FNKH": {
+    "algorithm": "U2 B' U2 R U2 R' B R U2 R'",
+    "buffer": "C",
+    "targets": "FNKH",
+    "htm": 10
+  },
+  "FNSP": {
+    "algorithm": "F' U2 L U2 L' F L U2 L' U2",
+    "buffer": "C",
+    "targets": "FNSP",
+    "htm": 10
+  },
+  "FOAP": {
+    "algorithm": "F' U2 R' U2 R F R' U2 R U2",
+    "buffer": "C",
+    "targets": "FOAP",
+    "htm": 10
+  },
+  "FQHT": {
+    "algorithm": "B R' B' U2 B U2 R U2 B' U2",
+    "buffer": "C",
+    "targets": "FQHT",
+    "htm": 10
+  },
+  "FQPL": {
+    "algorithm": "U2 F L' F' U2 F U2 L U2 F'",
+    "buffer": "C",
+    "targets": "FQPL",
+    "htm": 10
+  },
+  "FRPL": {
+    "algorithm": "F' L2 F D' F' L2 F L2 D L2",
+    "buffer": "C",
+    "targets": "FRPL",
+    "htm": 10
+  },
+  "FRWQ": {
+    "algorithm": "R' B' U2 B U2 R U2 B' U2 B",
+    "buffer": "C",
+    "targets": "FRWQ",
+    "htm": 10
+  },
+  "FSGK": {
+    "algorithm": "D L F2 L' F2 D' F2 L F2 L'",
+    "buffer": "C",
+    "targets": "FSGK",
+    "htm": 10
+  },
+  "FSNR": {
+    "algorithm": "F' U' F L2 F' L2 U L2 F L2",
+    "buffer": "C",
+    "targets": "FSNR",
+    "htm": 10
+  },
+  "FUAT": {
+    "algorithm": "F' L2 D L2 D' F D L2 D' L2",
+    "buffer": "C",
+    "targets": "FUAT",
+    "htm": 10
+  },
+  "FUBH": {
+    "algorithm": "F' L2 U' L2 U F U' L2 U L2",
+    "buffer": "C",
+    "targets": "FUBH",
+    "htm": 10
+  },
+  "FUEQ": {
+    "algorithm": "L U2 L' U2 F U2 L U2 L' F'",
+    "buffer": "C",
+    "targets": "FUEQ",
+    "htm": 10
+  },
+  "FUNH": {
+    "algorithm": "D2 E' R2 E F E' R2 E F' D2",
+    "buffer": "C",
+    "targets": "FUNH",
+    "htm": 10
+  },
+  "FUNS": {
+    "algorithm": "U2 L U2 L' F L U2 L' U2 F'",
+    "buffer": "C",
+    "targets": "FUNS",
+    "htm": 10
+  },
+  "FUOA": {
+    "algorithm": "U2 R' U2 R F R' U2 R U2 F'",
+    "buffer": "C",
+    "targets": "FUOA",
+    "htm": 10
+  },
+  "FUXR": {
+    "algorithm": "F' D L2 D' L2 F L2 D L2 D'",
+    "buffer": "C",
+    "targets": "FUXR",
+    "htm": 10
+  },
+  "FVAL": {
+    "algorithm": "D' F' E L2 E' F E L2 D E'",
+    "buffer": "C",
+    "targets": "FVAL",
+    "htm": 10
+  },
+  "FVNL": {
+    "algorithm": "D E' R2 E F E' R2 E F' D'",
+    "buffer": "C",
+    "targets": "FVNL",
+    "htm": 10
+  },
+  "FVUB": {
+    "algorithm": "R2 D R2 F R2 F' D' F R2 F'",
+    "buffer": "C",
+    "targets": "FVUB",
+    "htm": 10
+  },
+  "FVUE": {
+    "algorithm": "F' U2 R U2 F U2 F' R' F U2",
+    "buffer": "C",
+    "targets": "FVUE",
+    "htm": 10
+  },
+  "FVUR": {
+    "algorithm": "D' F' D L2 D' L2 F L2 D L2",
+    "buffer": "C",
+    "targets": "FVUR",
+    "htm": 10
+  },
+  "FWAP": {
+    "algorithm": "D2 E' F' E L2 E' F E L2 D2",
+    "buffer": "C",
+    "targets": "FWAP",
+    "htm": 10
+  },
+  "FWGA": {
+    "algorithm": "L' U2 L B L' U2 L U2 B' U2",
+    "buffer": "C",
+    "targets": "FWGA",
+    "htm": 10
+  },
+  "FWNK": {
+    "algorithm": "R U2 R' B R U2 R' U2 B' U2",
+    "buffer": "C",
+    "targets": "FWNK",
+    "htm": 10
+  },
+  "FWNR": {
+    "algorithm": "R2 F R2 U R2 U' F' U R2 U'",
+    "buffer": "C",
+    "targets": "FWNR",
+    "htm": 10
+  },
+  "FWRP": {
+    "algorithm": "R2 U R2 U' F U R2 U' R2 F'",
+    "buffer": "C",
+    "targets": "FWRP",
+    "htm": 10
+  },
+  "FXAT": {
+    "algorithm": "D E' F' E L2 E' F E L2 D'",
+    "buffer": "C",
+    "targets": "FXAT",
+    "htm": 10
+  },
+  "FXNP": {
+    "algorithm": "R2 D' R2 D F D' R2 D R2 F'",
+    "buffer": "C",
+    "targets": "FXNP",
+    "htm": 10
+  },
+  "FXNR": {
+    "algorithm": "U' B2 R B2 U B2 U' R' U B2",
+    "buffer": "C",
+    "targets": "FXNR",
+    "htm": 10
+  },
+  "FXNT": {
+    "algorithm": "D' R2 E F E' R2 E F' D E'",
+    "buffer": "C",
+    "targets": "FXNT",
+    "htm": 10
+  },
+  "FXWE": {
+    "algorithm": "U2 B' U2 L U2 B U2 B' L' B",
+    "buffer": "C",
+    "targets": "FXWE",
+    "htm": 10
+  },
+  "FXWR": {
+    "algorithm": "U L' U' B2 U B2 L B2 U' B2",
+    "buffer": "C",
+    "targets": "FXWR",
+    "htm": 10
+  },
+  "GADQ": {
+    "algorithm": "U' L2 B L2 U L2 U' B' U L2",
+    "buffer": "C",
+    "targets": "GADQ",
+    "htm": 10
+  },
+  "GAHK": {
+    "algorithm": "L' D L F2 L' F2 D' F2 L F2",
+    "buffer": "C",
+    "targets": "GAHK",
+    "htm": 10
+  },
+  "GAIX": {
+    "algorithm": "D L E' F2 E L' E' F2 D' E",
+    "buffer": "C",
+    "targets": "GAIX",
+    "htm": 10
+  },
+  "GAKX": {
+    "algorithm": "F2 D L D' F2 D F2 L' F2 D'",
+    "buffer": "C",
+    "targets": "GAKX",
+    "htm": 10
+  },
+  "GAND": {
+    "algorithm": "L2 B L2 U L2 B' L2 B U' B'",
+    "buffer": "C",
+    "targets": "GAND",
+    "htm": 10
+  },
+  "GAVW": {
+    "algorithm": "R2 U R2 F' R2 F U' F' R2 F",
+    "buffer": "C",
+    "targets": "GAVW",
+    "htm": 10
+  },
+  "GAWQ": {
+    "algorithm": "B2 D' B2 D R D' B2 D B2 R'",
+    "buffer": "C",
+    "targets": "GAWQ",
+    "htm": 10
+  },
+  "GAXQ": {
+    "algorithm": "D' B2 E R E' B2 E R' D E'",
+    "buffer": "C",
+    "targets": "GAXQ",
+    "htm": 10
+  },
+  "GBEX": {
+    "algorithm": "B L2 U L2 U' B' U L2 U' L2",
+    "buffer": "C",
+    "targets": "GBEX",
+    "htm": 10
+  },
+  "GBIO": {
+    "algorithm": "R2 U' F' U R2 U' R2 F R2 U",
+    "buffer": "C",
+    "targets": "GBIO",
+    "htm": 10
+  },
+  "GBPX": {
+    "algorithm": "R2 F' D' F R2 F' R2 D R2 F",
+    "buffer": "C",
+    "targets": "GBPX",
+    "htm": 10
+  },
+  "GEXO": {
+    "algorithm": "L2 U L2 U' B' U L2 U' L2 B",
+    "buffer": "C",
+    "targets": "GEXO",
+    "htm": 10
+  },
+  "GFBO": {
+    "algorithm": "F U' F' R2 F R2 U R2 F' R2",
+    "buffer": "C",
+    "targets": "GFBO",
+    "htm": 10
+  },
+  "GFBP": {
+    "algorithm": "F' R2 D R2 F R2 F' D' F R2",
+    "buffer": "C",
+    "targets": "GFBP",
+    "htm": 10
+  },
+  "GFEB": {
+    "algorithm": "L' B U2 B' U2 L U2 B U2 B'",
+    "buffer": "C",
+    "targets": "GFEB",
+    "htm": 10
+  },
+  "GFOP": {
+    "algorithm": "D2 L D2 F D2 F' L' F D2 F'",
+    "buffer": "C",
+    "targets": "GFOP",
+    "htm": 10
+  },
+  "GFQP": {
+    "algorithm": "L' F' L U2 L' U2 F U2 L U2",
+    "buffer": "C",
+    "targets": "GFQP",
+    "htm": 10
+  },
+  "GFXE": {
+    "algorithm": "B' L' B U2 B' U2 L U2 B U2",
+    "buffer": "C",
+    "targets": "GFXE",
+    "htm": 10
+  },
+  "GHAD": {
+    "algorithm": "B' L2 B L2 U L2 B' L2 B U'",
+    "buffer": "C",
+    "targets": "GHAD",
+    "htm": 10
+  },
+  "GHKO": {
+    "algorithm": "F2 L' F2 D' F2 L F2 L' D L",
+    "buffer": "C",
+    "targets": "GHKO",
+    "htm": 10
+  },
+  "GIXO": {
+    "algorithm": "D E' F2 E L' E' F2 E L D'",
+    "buffer": "C",
+    "targets": "GIXO",
+    "htm": 10
+  },
+  "GIXQ": {
+    "algorithm": "D E' R' E F2 E' R E F2 D'",
+    "buffer": "C",
+    "targets": "GIXQ",
+    "htm": 10
+  },
+  "GKBE": {
+    "algorithm": "F2 U F2 R' F2 U' F2 U R U'",
+    "buffer": "C",
+    "targets": "GKBE",
+    "htm": 10
+  },
+  "GKXO": {
+    "algorithm": "D F2 L' F2 D' F2 D L D' F2",
+    "buffer": "C",
+    "targets": "GKXO",
+    "htm": 10
+  },
+  "GNAH": {
+    "algorithm": "U2 L' U2 L B' L' U2 L U2 B",
+    "buffer": "C",
+    "targets": "GNAH",
+    "htm": 10
+  },
+  "GNIE": {
+    "algorithm": "L' U2 M B' M' U2 M B L M'",
+    "buffer": "C",
+    "targets": "GNIE",
+    "htm": 10
+  },
+  "GNIP": {
+    "algorithm": "L' F' M U2 M' F M U2 L M'",
+    "buffer": "C",
+    "targets": "GNIP",
+    "htm": 10
+  },
+  "GNIT": {
+    "algorithm": "F E R2 E' F' R' E' F2 E R",
+    "buffer": "C",
+    "targets": "GNIT",
+    "htm": 10
+  },
+  "GNIX": {
+    "algorithm": "L' S U2 S' L U S' L2 S U'",
+    "buffer": "C",
+    "targets": "GNIX",
+    "htm": 10
+  },
+  "GNKE": {
+    "algorithm": "R' F2 U' F2 R F2 R' U R F2",
+    "buffer": "C",
+    "targets": "GNKE",
+    "htm": 10
+  },
+  "GNVH": {
+    "algorithm": "F D2 R D2 F' D2 F R' F' D2",
+    "buffer": "C",
+    "targets": "GNVH",
+    "htm": 10
+  },
+  "GOPE": {
+    "algorithm": "F D2 F' L' F D2 F' D2 L D2",
+    "buffer": "C",
+    "targets": "GOPE",
+    "htm": 10
+  },
+  "GQEO": {
+    "algorithm": "B2 D' B2 R B2 R' D R B2 R'",
+    "buffer": "C",
+    "targets": "GQEO",
+    "htm": 10
+  },
+  "GSDQ": {
+    "algorithm": "U F' U' L2 U L2 F L2 U' L2",
+    "buffer": "C",
+    "targets": "GSDQ",
+    "htm": 10
+  },
+  "GSFE": {
+    "algorithm": "U2 L B' L' U2 L U2 B U2 L'",
+    "buffer": "C",
+    "targets": "GSFE",
+    "htm": 10
+  },
+  "GSFQ": {
+    "algorithm": "U2 L' U2 F U2 L U2 L' F' L",
+    "buffer": "C",
+    "targets": "GSFQ",
+    "htm": 10
+  },
+  "GSNE": {
+    "algorithm": "L B' M' U2 M B M' U2 L' M",
+    "buffer": "C",
+    "targets": "GSNE",
+    "htm": 10
+  },
+  "GSNI": {
+    "algorithm": "L' M U2 M' F M U2 M' F' L",
+    "buffer": "C",
+    "targets": "GSNI",
+    "htm": 10
+  },
+  "GSOE": {
+    "algorithm": "D' B2 R B2 R' D R B2 R' B2",
+    "buffer": "C",
+    "targets": "GSOE",
+    "htm": 10
+  },
+  "GTIX": {
+    "algorithm": "D M' F2 M D' F' M D2 M' F",
+    "buffer": "C",
+    "targets": "GTIX",
+    "htm": 10
+  },
+  "GVHD": {
+    "algorithm": "D2 F R' F' D2 F D2 R D2 F'",
+    "buffer": "C",
+    "targets": "GVHD",
+    "htm": 10
+  },
+  "GVIO": {
+    "algorithm": "D' E L' E' F2 E L E' F2 D",
+    "buffer": "C",
+    "targets": "GVIO",
+    "htm": 10
+  },
+  "GVIX": {
+    "algorithm": "D F2 E' R E F2 E' R' D' E",
+    "buffer": "C",
+    "targets": "GVIX",
+    "htm": 10
+  },
+  "GVSD": {
+    "algorithm": "L2 U L2 F L2 U' L2 U F' U'",
+    "buffer": "C",
+    "targets": "GVSD",
+    "htm": 10
+  },
+  "GVWD": {
+    "algorithm": "F' R2 F U' F' R2 F R2 U R2",
+    "buffer": "C",
+    "targets": "GVWD",
+    "htm": 10
+  },
+  "GWAS": {
+    "algorithm": "D' B2 D R D' B2 D B2 R' B2",
+    "buffer": "C",
+    "targets": "GWAS",
+    "htm": 10
+  },
+  "GWHD": {
+    "algorithm": "D2 F' D2 L D2 F D2 F' L' F",
+    "buffer": "C",
+    "targets": "GWHD",
+    "htm": 10
+  },
+  "GWIH": {
+    "algorithm": "L D2 F D2 L' D2 L F' L' D2",
+    "buffer": "C",
+    "targets": "GWIH",
+    "htm": 10
+  },
+  "GWIP": {
+    "algorithm": "L D2 M F M' D2 R L' U' R'",
+    "buffer": "C",
+    "targets": "GWIP",
+    "htm": 10
+  },
+  "GWKB": {
+    "algorithm": "U R U' F2 U F2 R' F2 U' F2",
+    "buffer": "C",
+    "targets": "GWKB",
+    "htm": 10
+  },
+  "GWNA": {
+    "algorithm": "B U2 L' U2 L B' L' U2 L U2",
+    "buffer": "C",
+    "targets": "GWNA",
+    "htm": 10
+  },
+  "GWNI": {
+    "algorithm": "L' B M' U2 M B' R' L F2 R",
+    "buffer": "C",
+    "targets": "GWNI",
+    "htm": 10
+  },
+  "GWNK": {
+    "algorithm": "F2 R' U R F2 R' F2 U' F2 R",
+    "buffer": "C",
+    "targets": "GWNK",
+    "htm": 10
+  },
+  "HABF": {
+    "algorithm": "L2 F' L2 U' L2 U F U' L2 U",
+    "buffer": "C",
+    "targets": "HABF",
+    "htm": 10
+  },
+  "HAGF": {
+    "algorithm": "L' U2 L B' L' U2 L U2 B U2",
+    "buffer": "C",
+    "targets": "HAGF",
+    "htm": 10
+  },
+  "HANG": {
+    "algorithm": "B' U2 L' U2 L B L' U2 L U2",
+    "buffer": "C",
+    "targets": "HANG",
+    "htm": 10
+  },
+  "HANU": {
+    "algorithm": "D2 B' E R2 E' B E R2 D2 E'",
+    "buffer": "C",
+    "targets": "HANU",
+    "htm": 10
+  },
+  "HAUT": {
+    "algorithm": "L2 F' L2 D L2 D' F D L2 D'",
+    "buffer": "C",
+    "targets": "HAUT",
+    "htm": 10
+  },
+  "HBPR": {
+    "algorithm": "U R2 B R2 U' R2 U B' U' R2",
+    "buffer": "C",
+    "targets": "HBPR",
+    "htm": 10
+  },
+  "HBUF": {
+    "algorithm": "L2 U' L2 U F' U' L2 U L2 F",
+    "buffer": "C",
+    "targets": "HBUF",
+    "htm": 10
+  },
+  "HBUO": {
+    "algorithm": "B R2 D R2 B' R2 B D' B' R2",
+    "buffer": "C",
+    "targets": "HBUO",
+    "htm": 10
+  },
+  "HDNP": {
+    "algorithm": "U' R2 U B U' R2 U R2 B' R2",
+    "buffer": "C",
+    "targets": "HDNP",
+    "htm": 10
+  },
+  "HGFO": {
+    "algorithm": "D2 F D2 F' L F D2 F' D2 L'",
+    "buffer": "C",
+    "targets": "HGFO",
+    "htm": 10
+  },
+  "HINL": {
+    "algorithm": "L2 F' U' F L2 F' L2 U L2 F",
+    "buffer": "C",
+    "targets": "HINL",
+    "htm": 10
+  },
+  "HINR": {
+    "algorithm": "B' R' S U2 S' R F' B L2 F",
+    "buffer": "C",
+    "targets": "HINR",
+    "htm": 10
+  },
+  "HIOR": {
+    "algorithm": "U M' B2 M U' B' M U2 M' B",
+    "buffer": "C",
+    "targets": "HIOR",
+    "htm": 10
+  },
+  "HIUR": {
+    "algorithm": "B' S' U2 S L' S' U2 S L B",
+    "buffer": "C",
+    "targets": "HIUR",
+    "htm": 10
+  },
+  "HIVR": {
+    "algorithm": "F' E' L2 E F L E F2 E' L'",
+    "buffer": "C",
+    "targets": "HIVR",
+    "htm": 10
+  },
+  "HIWG": {
+    "algorithm": "D2 L F L' D2 L D2 F' D2 L'",
+    "buffer": "C",
+    "targets": "HIWG",
+    "htm": 10
+  },
+  "HIWQ": {
+    "algorithm": "R' U2 B' U2 B R B' U2 B U2",
+    "buffer": "C",
+    "targets": "HIWQ",
+    "htm": 10
+  },
+  "HKNF": {
+    "algorithm": "R U2 R' B' R U2 R' U2 B U2",
+    "buffer": "C",
+    "targets": "HKNF",
+    "htm": 10
+  },
+  "HLPR": {
+    "algorithm": "L2 F' L2 F D' F' L2 F L2 D",
+    "buffer": "C",
+    "targets": "HLPR",
+    "htm": 10
+  },
+  "HNUF": {
+    "algorithm": "D2 E F E' R2 E F' E' R2 D2",
+    "buffer": "C",
+    "targets": "HNUF",
+    "htm": 10
+  },
+  "HNUP": {
+    "algorithm": "D2 E R2 E' B E R2 E' B' D2",
+    "buffer": "C",
+    "targets": "HNUP",
+    "htm": 10
+  },
+  "HQFO": {
+    "algorithm": "R' U2 B' U2 R U2 R' B R U2",
+    "buffer": "C",
+    "targets": "HQFO",
+    "htm": 10
+  },
+  "HQUP": {
+    "algorithm": "D2 R D2 R' F R D2 R' D2 F'",
+    "buffer": "C",
+    "targets": "HQUP",
+    "htm": 10
+  },
+  "HQUR": {
+    "algorithm": "B' U2 L' U2 B U2 B' L B U2",
+    "buffer": "C",
+    "targets": "HQUR",
+    "htm": 10
+  },
+  "HVAB": {
+    "algorithm": "U R2 B R2 B' U' B R2 B' R2",
+    "buffer": "C",
+    "targets": "HVAB",
+    "htm": 10
+  },
+  "HVAL": {
+    "algorithm": "L2 D' F' D L2 D' L2 F L2 D",
+    "buffer": "C",
+    "targets": "HVAL",
+    "htm": 10
+  },
+  "HVIO": {
+    "algorithm": "F M D2 M' F' D' M' F2 M D",
+    "buffer": "C",
+    "targets": "HVIO",
+    "htm": 10
+  },
+  "HVNG": {
+    "algorithm": "D2 F R F' D2 F D2 R' D2 F'",
+    "buffer": "C",
+    "targets": "HVNG",
+    "htm": 10
+  },
+  "HVNO": {
+    "algorithm": "B S U S' R2 S U' S' R2 B'",
+    "buffer": "C",
+    "targets": "HVNO",
+    "htm": 10
+  },
+  "HVRO": {
+    "algorithm": "R' E B2 E' R B E' R2 E B'",
+    "buffer": "C",
+    "targets": "HVRO",
+    "htm": 10
+  },
+  "HVUO": {
+    "algorithm": "B R2 S' D S R2 F B' L' F'",
+    "buffer": "C",
+    "targets": "HVUO",
+    "htm": 10
+  },
+  "HWLP": {
+    "algorithm": "D R2 D' B D R2 D' R2 B' R2",
+    "buffer": "C",
+    "targets": "HWLP",
+    "htm": 10
+  },
+  "HWNL": {
+    "algorithm": "B R2 D R2 D' B' D R2 D' R2",
+    "buffer": "C",
+    "targets": "HWNL",
+    "htm": 10
+  },
+  "HWNU": {
+    "algorithm": "D2 E' R2 E F' E' R2 E F D2",
+    "buffer": "C",
+    "targets": "HWNU",
+    "htm": 10
+  },
+  "HWQP": {
+    "algorithm": "D2 F D2 R D2 R' F' R D2 R'",
+    "buffer": "C",
+    "targets": "HWQP",
+    "htm": 10
+  },
+  "HWUE": {
+    "algorithm": "D2 F D2 L' D2 L F' L' D2 L",
+    "buffer": "C",
+    "targets": "HWUE",
+    "htm": 10
+  },
+  "IKQA": {
+    "algorithm": "R B2 U2 R B2 R' U2 B2 R' U2",
+    "buffer": "C",
+    "targets": "IKQA",
+    "htm": 10
+  },
+  "IKSW": {
+    "algorithm": "F2 L D2 L' F2 D2 L' F2 L D2",
+    "buffer": "C",
+    "targets": "IKSW",
+    "htm": 10
+  },
+  "IKUA": {
+    "algorithm": "F2 L D2 F2 L D2 L' F2 D2 L'",
+    "buffer": "C",
+    "targets": "IKUA",
+    "htm": 10
+  },
+  "IKUW": {
+    "algorithm": "R F2 R' D2 F2 R' D2 R F2 D2",
+    "buffer": "C",
+    "targets": "IKUW",
+    "htm": 10
+  },
+  "INSG": {
+    "algorithm": "L' F M U2 M' F' M U2 L M'",
+    "buffer": "C",
+    "targets": "INSG",
+    "htm": 10
+  },
+  "INWG": {
+    "algorithm": "L' U2 M B M' U2 M B' L M'",
+    "buffer": "C",
+    "targets": "INWG",
+    "htm": 10
+  },
+  "IQAU": {
+    "algorithm": "F2 U2 L F2 L' U2 F2 L' U2 L",
+    "buffer": "C",
+    "targets": "IQAU",
+    "htm": 10
+  },
+  "IQAW": {
+    "algorithm": "R' F2 U2 R' F2 R U2 F2 R U2",
+    "buffer": "C",
+    "targets": "IQAW",
+    "htm": 10
+  },
+  "IQKU": {
+    "algorithm": "R' D2 F2 R' D2 R F2 D2 R F2",
+    "buffer": "C",
+    "targets": "IQKU",
+    "htm": 10
+  },
+  "IQSW": {
+    "algorithm": "U2 L' B2 L U2 B2 L U2 L' B2",
+    "buffer": "C",
+    "targets": "IQSW",
+    "htm": 10
+  },
+  "ISKU": {
+    "algorithm": "D2 F2 L D2 L' F2 D2 L' F2 L",
+    "buffer": "C",
+    "targets": "ISKU",
+    "htm": 10
+  },
+  "ISQA": {
+    "algorithm": "B2 U2 L' B2 L U2 B2 L U2 L'",
+    "buffer": "C",
+    "targets": "ISQA",
+    "htm": 10
+  },
+  "ISWA": {
+    "algorithm": "B2 R' U2 R B2 U2 R B2 R' U2",
+    "buffer": "C",
+    "targets": "ISWA",
+    "htm": 10
+  },
+  "ISWU": {
+    "algorithm": "D2 R F2 R' D2 F2 R' D2 R F2",
+    "buffer": "C",
+    "targets": "ISWU",
+    "htm": 10
+  },
+  "IVSR": {
+    "algorithm": "L U' M' F2 M U M' F2 L' M",
+    "buffer": "C",
+    "targets": "IVSR",
+    "htm": 10
+  },
+  "IVWR": {
+    "algorithm": "L F2 M' D' M F2 M' D L' M",
+    "buffer": "C",
+    "targets": "IVWR",
+    "htm": 10
+  },
+  "KAIB": {
+    "algorithm": "U F2 U' L U F2 U' F2 L' F2",
+    "buffer": "C",
+    "targets": "KAIB",
+    "htm": 10
+  },
+  "KAIL": {
+    "algorithm": "U2 R U2 F U2 F' R' F U2 F'",
+    "buffer": "C",
+    "targets": "KAIL",
+    "htm": 10
+  },
+  "KALQ": {
+    "algorithm": "U2 F U2 F' R F U2 F' U2 R'",
+    "buffer": "C",
+    "targets": "KALQ",
+    "htm": 10
+  },
+  "KAOU": {
+    "algorithm": "D' F2 D L D' F2 D F2 L' F2",
+    "buffer": "C",
+    "targets": "KAOU",
+    "htm": 10
+  },
+  "KAUQ": {
+    "algorithm": "B2 R' S' D2 S R S' D2 B2 S",
+    "buffer": "C",
+    "targets": "KAUQ",
+    "htm": 10
+  },
+  "KDQT": {
+    "algorithm": "F2 R D' R' F2 R F2 D F2 R'",
+    "buffer": "C",
+    "targets": "KDQT",
+    "htm": 10
+  },
+  "KDSR": {
+    "algorithm": "L U' L' F2 L F2 U F2 L' F2",
+    "buffer": "C",
+    "targets": "KDSR",
+    "htm": 10
+  },
+  "KEUQ": {
+    "algorithm": "R' F2 U' F2 U R U' F2 U F2",
+    "buffer": "C",
+    "targets": "KEUQ",
+    "htm": 10
+  },
+  "KFQT": {
+    "algorithm": "U2 B U2 R U2 B' U2 B R' B'",
+    "buffer": "C",
+    "targets": "KFQT",
+    "htm": 10
+  },
+  "KFRQ": {
+    "algorithm": "B' U2 B U2 R U2 B' U2 B R'",
+    "buffer": "C",
+    "targets": "KFRQ",
+    "htm": 10
+  },
+  "KFSR": {
+    "algorithm": "L2 F' L2 U L2 F L2 F' U' F",
+    "buffer": "C",
+    "targets": "KFSR",
+    "htm": 10
+  },
+  "KFUE": {
+    "algorithm": "U2 R U2 F U2 R' U2 R F' R'",
+    "buffer": "C",
+    "targets": "KFUE",
+    "htm": 10
+  },
+  "KFUR": {
+    "algorithm": "L2 F D' F' L2 F L2 D L2 F'",
+    "buffer": "C",
+    "targets": "KFUR",
+    "htm": 10
+  },
+  "KFUS": {
+    "algorithm": "F' D2 F R' F' D2 F D2 R D2",
+    "buffer": "C",
+    "targets": "KFUS",
+    "htm": 10
+  },
+  "KGDQ": {
+    "algorithm": "R' D F2 D' F2 R F2 D F2 D'",
+    "buffer": "C",
+    "targets": "KGDQ",
+    "htm": 10
+  },
+  "KGSF": {
+    "algorithm": "L F2 L' F2 D F2 L F2 L' D'",
+    "buffer": "C",
+    "targets": "KGSF",
+    "htm": 10
+  },
+  "KHAG": {
+    "algorithm": "F2 L' F2 D F2 L F2 L' D' L",
+    "buffer": "C",
+    "targets": "KHAG",
+    "htm": 10
+  },
+  "KHAL": {
+    "algorithm": "F D' F' L2 F L2 D L2 F' L2",
+    "buffer": "C",
+    "targets": "KHAL",
+    "htm": 10
+  },
+  "KHIL": {
+    "algorithm": "F' L2 U L2 F L2 F' U' F L2",
+    "buffer": "C",
+    "targets": "KHIL",
+    "htm": 10
+  },
+  "KHIQ": {
+    "algorithm": "U2 B' U2 B R B' U2 B U2 R'",
+    "buffer": "C",
+    "targets": "KHIQ",
+    "htm": 10
+  },
+  "KHIR": {
+    "algorithm": "B' U2 S' R S U2 S' R' B S",
+    "buffer": "C",
+    "targets": "KHIR",
+    "htm": 10
+  },
+  "KHUR": {
+    "algorithm": "B R' S' D2 S R F B' L2 F'",
+    "buffer": "C",
+    "targets": "KHUR",
+    "htm": 10
+  },
+  "KIBS": {
+    "algorithm": "F2 L' F2 U F2 U' L U F2 U'",
+    "buffer": "C",
+    "targets": "KIBS",
+    "htm": 10
+  },
+  "KIXQ": {
+    "algorithm": "R' F2 D F2 D' R D F2 D' F2",
+    "buffer": "C",
+    "targets": "KIXQ",
+    "htm": 10
+  },
+  "KLAD": {
+    "algorithm": "U' L' F2 L F2 U F2 L' F2 L",
+    "buffer": "C",
+    "targets": "KLAD",
+    "htm": 10
+  },
+  "KLQT": {
+    "algorithm": "R' D2 R B' R' D2 R D2 B D2",
+    "buffer": "C",
+    "targets": "KLQT",
+    "htm": 10
+  },
+  "KNIT": {
+    "algorithm": "B S U2 S' R S U2 S' R' B'",
+    "buffer": "C",
+    "targets": "KNIT",
+    "htm": 10
+  },
+  "KNUT": {
+    "algorithm": "B' R' S' D2 S R S' D2 B S",
+    "buffer": "C",
+    "targets": "KNUT",
+    "htm": 10
+  },
+  "KNWF": {
+    "algorithm": "U2 B U2 R U2 R' B' R U2 R'",
+    "buffer": "C",
+    "targets": "KNWF",
+    "htm": 10
+  },
+  "KNWG": {
+    "algorithm": "R' F2 U F2 R F2 R' U' R F2",
+    "buffer": "C",
+    "targets": "KNWG",
+    "htm": 10
+  },
+  "KNWL": {
+    "algorithm": "B' R' B D2 B' D2 R D2 B D2",
+    "buffer": "C",
+    "targets": "KNWL",
+    "htm": 10
+  },
+  "KOBE": {
+    "algorithm": "D R2 D' R2 B' R2 D R2 D' B",
+    "buffer": "C",
+    "targets": "KOBE",
+    "htm": 10
+  },
+  "KOUS": {
+    "algorithm": "F2 L' F2 D' F2 D L D' F2 D",
+    "buffer": "C",
+    "targets": "KOUS",
+    "htm": 10
+  },
+  "KWEU": {
+    "algorithm": "F2 U' F2 U R U' F2 U F2 R'",
+    "buffer": "C",
+    "targets": "KWEU",
+    "htm": 10
+  },
+  "KWFS": {
+    "algorithm": "R' D2 F' D2 F R F' D2 F D2",
+    "buffer": "C",
+    "targets": "KWFS",
+    "htm": 10
+  },
+  "KWGD": {
+    "algorithm": "D F2 D' F2 R F2 D F2 D' R'",
+    "buffer": "C",
+    "targets": "KWGD",
+    "htm": 10
+  },
+  "KWHL": {
+    "algorithm": "R' B D2 B' D2 R D2 B D2 B'",
+    "buffer": "C",
+    "targets": "KWHL",
+    "htm": 10
+  },
+  "KWIS": {
+    "algorithm": "B2 S U2 S' R S U2 S' R' B2",
+    "buffer": "C",
+    "targets": "KWIS",
+    "htm": 10
+  },
+  "KWIX": {
+    "algorithm": "F2 D F2 D' R D F2 D' F2 R'",
+    "buffer": "C",
+    "targets": "KWIX",
+    "htm": 10
+  },
+  "KWUR": {
+    "algorithm": "R' D2 B D2 B' R B D2 B' D2",
+    "buffer": "C",
+    "targets": "KWUR",
+    "htm": 10
+  },
+  "KXIL": {
+    "algorithm": "R' F' R D2 R' D2 F D2 R D2",
+    "buffer": "C",
+    "targets": "KXIL",
+    "htm": 10
+  },
+  "KXOB": {
+    "algorithm": "B D R2 D' R2 B' R2 D R2 D'",
+    "buffer": "C",
+    "targets": "KXOB",
+    "htm": 10
+  },
+  "LADQ": {
+    "algorithm": "R' U' R F2 R' F2 U F2 R F2",
+    "buffer": "C",
+    "targets": "LADQ",
+    "htm": 10
+  },
+  "LAHK": {
+    "algorithm": "L2 F L2 D' L2 F' L2 F D F'",
+    "buffer": "C",
+    "targets": "LAHK",
+    "htm": 10
+  },
+  "LAND": {
+    "algorithm": "F2 U R' U' F2 U F2 R F2 U'",
+    "buffer": "C",
+    "targets": "LAND",
+    "htm": 10
+  },
+  "LANV": {
+    "algorithm": "D B' E R2 E' B U D' F2 U'",
+    "buffer": "C",
+    "targets": "LANV",
+    "htm": 10
+  },
+  "LANW": {
+    "algorithm": "B' R2 D R2 D' B D R2 D' R2",
+    "buffer": "C",
+    "targets": "LANW",
+    "htm": 10
+  },
+  "LAVF": {
+    "algorithm": "D' E L2 E' F' E L2 E' F D",
+    "buffer": "C",
+    "targets": "LAVF",
+    "htm": 10
+  },
+  "LAVH": {
+    "algorithm": "D' L2 F' L2 D L2 D' F D L2",
+    "buffer": "C",
+    "targets": "LAVH",
+    "htm": 10
+  },
+  "LAWX": {
+    "algorithm": "L B2 L' U' L B2 L' B2 U B2",
+    "buffer": "C",
+    "targets": "LAWX",
+    "htm": 10
+  },
+  "LBTR": {
+    "algorithm": "B2 L B2 U' B2 U L' U' B2 U",
+    "buffer": "C",
+    "targets": "LBTR",
+    "htm": 10
+  },
+  "LDQT": {
+    "algorithm": "F2 R' F2 U F2 R F2 R' U' R",
+    "buffer": "C",
+    "targets": "LDQT",
+    "htm": 10
+  },
+  "LDSR": {
+    "algorithm": "L' F2 D F2 L F2 L' D' L F2",
+    "buffer": "C",
+    "targets": "LDSR",
+    "htm": 10
+  },
+  "LEVS": {
+    "algorithm": "L' E F2 E' L F E' L2 E F'",
+    "buffer": "C",
+    "targets": "LEVS",
+    "htm": 10
+  },
+  "LHDR": {
+    "algorithm": "F2 D F2 L F2 D' F2 D L' D'",
+    "buffer": "C",
+    "targets": "LHDR",
+    "htm": 10
+  },
+  "LHWK": {
+    "algorithm": "B D2 B' D2 R' D2 B D2 B' R",
+    "buffer": "C",
+    "targets": "LHWK",
+    "htm": 10
+  },
+  "LIAK": {
+    "algorithm": "F U2 F' R F U2 F' U2 R' U2",
+    "buffer": "C",
+    "targets": "LIAK",
+    "htm": 10
+  },
+  "LIHK": {
+    "algorithm": "L2 F' U F L2 F' L2 U' L2 F",
+    "buffer": "C",
+    "targets": "LIHK",
+    "htm": 10
+  },
+  "LIVR": {
+    "algorithm": "L D M F2 M' D' R L' U2 R'",
+    "buffer": "C",
+    "targets": "LIVR",
+    "htm": 10
+  },
+  "LIVS": {
+    "algorithm": "L' F2 M U' M' F2 M U L M'",
+    "buffer": "C",
+    "targets": "LIVS",
+    "htm": 10
+  },
+  "LIXK": {
+    "algorithm": "D2 R' D2 F' D2 R D2 R' F R",
+    "buffer": "C",
+    "targets": "LIXK",
+    "htm": 10
+  },
+  "LNDT": {
+    "algorithm": "U F2 R F2 U' F2 U R' U' F2",
+    "buffer": "C",
+    "targets": "LNDT",
+    "htm": 10
+  },
+  "LNIH": {
+    "algorithm": "F' L2 U' L2 F L2 F' U F L2",
+    "buffer": "C",
+    "targets": "LNIH",
+    "htm": 10
+  },
+  "LNVE": {
+    "algorithm": "F' M' U2 M F U M F2 M' U'",
+    "buffer": "C",
+    "targets": "LNVE",
+    "htm": 10
+  },
+  "LNVF": {
+    "algorithm": "D F E' R2 E F' E' R2 D' E",
+    "buffer": "C",
+    "targets": "LNVF",
+    "htm": 10
+  },
+  "LNVS": {
+    "algorithm": "D S' R2 S D' R' S D2 S' R",
+    "buffer": "C",
+    "targets": "LNVS",
+    "htm": 10
+  },
+  "LNVT": {
+    "algorithm": "D R2 E' B E R2 E' B' D' E",
+    "buffer": "C",
+    "targets": "LNVT",
+    "htm": 10
+  },
+  "LNWH": {
+    "algorithm": "R2 D R2 D' B D R2 D' R2 B'",
+    "buffer": "C",
+    "targets": "LNWH",
+    "htm": 10
+  },
+  "LPBF": {
+    "algorithm": "D F D' R2 D R2 F' R2 D' R2",
+    "buffer": "C",
+    "targets": "LPBF",
+    "htm": 10
+  },
+  "LPQF": {
+    "algorithm": "F U2 L' U2 F' U2 F L F' U2",
+    "buffer": "C",
+    "targets": "LPQF",
+    "htm": 10
+  },
+  "LPQR": {
+    "algorithm": "F' R F U2 F' U2 R' U2 F U2",
+    "buffer": "C",
+    "targets": "LPQR",
+    "htm": 10
+  },
+  "LPRF": {
+    "algorithm": "L2 D' L2 F' L2 F D F' L2 F",
+    "buffer": "C",
+    "targets": "LPRF",
+    "htm": 10
+  },
+  "LPST": {
+    "algorithm": "B D B' R2 B R2 D' R2 B' R2",
+    "buffer": "C",
+    "targets": "LPST",
+    "htm": 10
+  },
+  "LPTQ": {
+    "algorithm": "D B' R2 B R2 D' R2 B' R2 B",
+    "buffer": "C",
+    "targets": "LPTQ",
+    "htm": 10
+  },
+  "LQFS": {
+    "algorithm": "U2 F L F' U2 F U2 L' U2 F'",
+    "buffer": "C",
+    "targets": "LQFS",
+    "htm": 10
+  },
+  "LQTS": {
+    "algorithm": "B' D2 R' D2 R B R' D2 R D2",
+    "buffer": "C",
+    "targets": "LQTS",
+    "htm": 10
+  },
+  "LQVR": {
+    "algorithm": "U2 R F R' U2 R U2 F' U2 R'",
+    "buffer": "C",
+    "targets": "LQVR",
+    "htm": 10
+  },
+  "LRFT": {
+    "algorithm": "F' L2 F D F' L2 F L2 D' L2",
+    "buffer": "C",
+    "targets": "LRFT",
+    "htm": 10
+  },
+  "LTSR": {
+    "algorithm": "D2 R' D2 R B R' D2 R D2 B'",
+    "buffer": "C",
+    "targets": "LTSR",
+    "htm": 10
+  },
+  "LVSB": {
+    "algorithm": "L' M U M' F2 M U' M' F2 L",
+    "buffer": "C",
+    "targets": "LVSB",
+    "htm": 10
+  },
+  "LVSR": {
+    "algorithm": "L' F2 M' D M F2 R' L B' R",
+    "buffer": "C",
+    "targets": "LVSR",
+    "htm": 10
+  },
+  "LWAB": {
+    "algorithm": "B2 L B2 L' U' L B2 L' B2 U",
+    "buffer": "C",
+    "targets": "LWAB",
+    "htm": 10
+  },
+  "LWDS": {
+    "algorithm": "F2 L' D' L F2 L' F2 D F2 L",
+    "buffer": "C",
+    "targets": "LWDS",
+    "htm": 10
+  },
+  "LWHD": {
+    "algorithm": "D L' D' F2 D F2 L F2 D' F2",
+    "buffer": "C",
+    "targets": "LWHD",
+    "htm": 10
+  },
+  "LWIA": {
+    "algorithm": "U2 R' U2 F U2 F' R F U2 F'",
+    "buffer": "C",
+    "targets": "LWIA",
+    "htm": 10
+  },
+  "LWKB": {
+    "algorithm": "R D2 B' D2 R' D2 R B R' D2",
+    "buffer": "C",
+    "targets": "LWKB",
+    "htm": 10
+  },
+  "LWNK": {
+    "algorithm": "D2 B' D2 R' D2 B D2 B' R B",
+    "buffer": "C",
+    "targets": "LWNK",
+    "htm": 10
+  },
+  "LWSB": {
+    "algorithm": "L B2 M' U' M B2 M' U L' M",
+    "buffer": "C",
+    "targets": "LWSB",
+    "htm": 10
+  },
+  "LWVS": {
+    "algorithm": "L' D' M F2 M' D M F2 L M'",
+    "buffer": "C",
+    "targets": "LWVS",
+    "htm": 10
+  },
+  "LXKB": {
+    "algorithm": "R' F R D2 R' D2 F' D2 R D2",
+    "buffer": "C",
+    "targets": "LXKB",
+    "htm": 10
+  },
+  "LXNT": {
+    "algorithm": "D' B E R2 E' B' E R2 D E'",
+    "buffer": "C",
+    "targets": "LXNT",
+    "htm": 10
+  },
+  "LXNV": {
+    "algorithm": "D E' R2 E F' E' R2 E F D'",
+    "buffer": "C",
+    "targets": "LXNV",
+    "htm": 10
+  },
+  "LXPB": {
+    "algorithm": "R2 D R2 F' R2 D' R2 D F D'",
+    "buffer": "C",
+    "targets": "LXPB",
+    "htm": 10
+  },
+  "LXPT": {
+    "algorithm": "R2 D' B D R2 D' R2 B' R2 D",
+    "buffer": "C",
+    "targets": "LXPT",
+    "htm": 10
+  },
+  "LXRT": {
+    "algorithm": "L B2 U' B2 U L' U' B2 U B2",
+    "buffer": "C",
+    "targets": "LXRT",
+    "htm": 10
+  },
+  "NFAU": {
+    "algorithm": "F R2 U2 F R2 F' U2 R2 F' U2",
+    "buffer": "C",
+    "targets": "NFAU",
+    "htm": 10
+  },
+  "NFAW": {
+    "algorithm": "R2 U2 B' R2 B U2 R2 B U2 B'",
+    "buffer": "C",
+    "targets": "NFAW",
+    "htm": 10
+  },
+  "NFHU": {
+    "algorithm": "U2 B L2 B' U2 L2 B' U2 B L2",
+    "buffer": "C",
+    "targets": "NFHU",
+    "htm": 10
+  },
+  "NFPW": {
+    "algorithm": "F D2 R2 F D2 F' R2 D2 F' R2",
+    "buffer": "C",
+    "targets": "NFPW",
+    "htm": 10
+  },
+  "NHFA": {
+    "algorithm": "L2 U2 B L2 B' U2 L2 B' U2 B",
+    "buffer": "C",
+    "targets": "NHFA",
+    "htm": 10
+  },
+  "NHPW": {
+    "algorithm": "D2 R2 B' D2 B R2 D2 B R2 B'",
+    "buffer": "C",
+    "targets": "NHPW",
+    "htm": 10
+  },
+  "NHUA": {
+    "algorithm": "L2 F U2 F' L2 U2 F' L2 F U2",
+    "buffer": "C",
+    "targets": "NHUA",
+    "htm": 10
+  },
+  "NHUW": {
+    "algorithm": "D2 F' R2 F D2 R2 F D2 F' R2",
+    "buffer": "C",
+    "targets": "NHUW",
+    "htm": 10
+  },
+  "NIHT": {
+    "algorithm": "B R' S U2 S' R S U2 B' S'",
+    "buffer": "C",
+    "targets": "NIHT",
+    "htm": 10
+  },
+  "NIUT": {
+    "algorithm": "B U2 S L' S' U2 S L B' S'",
+    "buffer": "C",
+    "targets": "NIUT",
+    "htm": 10
+  },
+  "NPFA": {
+    "algorithm": "F' L2 U2 F' L2 F U2 L2 F U2",
+    "buffer": "C",
+    "targets": "NPFA",
+    "htm": 10
+  },
+  "NPHU": {
+    "algorithm": "R2 B' D2 B R2 D2 B R2 B' D2",
+    "buffer": "C",
+    "targets": "NPHU",
+    "htm": 10
+  },
+  "NPWA": {
+    "algorithm": "R2 B' D2 R2 B' D2 B R2 D2 B",
+    "buffer": "C",
+    "targets": "NPWA",
+    "htm": 10
+  },
+  "NPWU": {
+    "algorithm": "F' R2 F D2 R2 F D2 F' R2 D2",
+    "buffer": "C",
+    "targets": "NPWU",
+    "htm": 10
+  },
+  "NVHE": {
+    "algorithm": "B' U S' R2 S U' S' R2 B S",
+    "buffer": "C",
+    "targets": "NVHE",
+    "htm": 10
+  },
+  "NVUE": {
+    "algorithm": "B' R2 S' D S R2 S' D' B S",
+    "buffer": "C",
+    "targets": "NVUE",
+    "htm": 10
+  },
+  "OABF": {
+    "algorithm": "F U F' R2 F R2 U' R2 F' R2",
+    "buffer": "C",
+    "targets": "OABF",
+    "htm": 10
+  },
+  "OAIB": {
+    "algorithm": "R2 U' F U R2 U' R2 F' R2 U",
+    "buffer": "C",
+    "targets": "OAIB",
+    "htm": 10
+  },
+  "OAIU": {
+    "algorithm": "L F2 D' F2 D L' D' F2 D F2",
+    "buffer": "C",
+    "targets": "OAIU",
+    "htm": 10
+  },
+  "OAIV": {
+    "algorithm": "D' E L E' F2 E L' E' F2 D",
+    "buffer": "C",
+    "targets": "OAIV",
+    "htm": 10
+  },
+  "OASP": {
+    "algorithm": "B2 R' B2 D B2 R B2 R' D' R",
+    "buffer": "C",
+    "targets": "OASP",
+    "htm": 10
+  },
+  "OAUX": {
+    "algorithm": "B' L2 B U B' L2 B L2 U' L2",
+    "buffer": "C",
+    "targets": "OAUX",
+    "htm": 10
+  },
+  "OAVQ": {
+    "algorithm": "D B2 E R E' B2 U D' F' U'",
+    "buffer": "C",
+    "targets": "OAVQ",
+    "htm": 10
+  },
+  "OAVS": {
+    "algorithm": "D B2 R B2 D' B2 D R' D' B2",
+    "buffer": "C",
+    "targets": "OAVS",
+    "htm": 10
+  },
+  "OBFG": {
+    "algorithm": "R2 F R2 U' R2 F' R2 F U F'",
+    "buffer": "C",
+    "targets": "OBFG",
+    "htm": 10
+  },
+  "OBHE": {
+    "algorithm": "B R2 D' R2 B' R2 B D B' R2",
+    "buffer": "C",
+    "targets": "OBHE",
+    "htm": 10
+  },
+  "ODGE": {
+    "algorithm": "L2 B' L2 U L2 U' B U L2 U'",
+    "buffer": "C",
+    "targets": "ODGE",
+    "htm": 10
+  },
+  "OEQG": {
+    "algorithm": "R B2 R' D' R B2 R' B2 D B2",
+    "buffer": "C",
+    "targets": "OEQG",
+    "htm": 10
+  },
+  "OFGH": {
+    "algorithm": "L D2 F D2 F' L' F D2 F' D2",
+    "buffer": "C",
+    "targets": "OFGH",
+    "htm": 10
+  },
+  "OFQH": {
+    "algorithm": "U2 R' B' R U2 R' U2 B U2 R",
+    "buffer": "C",
+    "targets": "OFQH",
+    "htm": 10
+  },
+  "OFVE": {
+    "algorithm": "U2 F' R' F U2 F' U2 R U2 F",
+    "buffer": "C",
+    "targets": "OFVE",
+    "htm": 10
+  },
+  "OGHE": {
+    "algorithm": "D2 F D2 F' L' F D2 F' D2 L",
+    "buffer": "C",
+    "targets": "OGHE",
+    "htm": 10
+  },
+  "OIBG": {
+    "algorithm": "U' R2 F' R2 U R2 U' F U R2",
+    "buffer": "C",
+    "targets": "OIBG",
+    "htm": 10
+  },
+  "OINS": {
+    "algorithm": "R B2 U B2 R' B2 R U' R' B2",
+    "buffer": "C",
+    "targets": "OINS",
+    "htm": 10
+  },
+  "OIUS": {
+    "algorithm": "F2 D' F2 D L' D' F2 D F2 L",
+    "buffer": "C",
+    "targets": "OIUS",
+    "htm": 10
+  },
+  "OIVG": {
+    "algorithm": "D' F2 E L' E' F2 E L D E'",
+    "buffer": "C",
+    "targets": "OIVG",
+    "htm": 10
+  },
+  "OIVH": {
+    "algorithm": "D' M' F2 M D F M D2 M' F'",
+    "buffer": "C",
+    "targets": "OIVH",
+    "htm": 10
+  },
+  "OIVQ": {
+    "algorithm": "D' R' E F2 E' R E F2 D E'",
+    "buffer": "C",
+    "targets": "OIVQ",
+    "htm": 10
+  },
+  "OIVR": {
+    "algorithm": "R S' U2 S R' U' S R2 S' U",
+    "buffer": "C",
+    "targets": "OIVR",
+    "htm": 10
+  },
+  "OKDQ": {
+    "algorithm": "D' R' D F2 D' F2 R F2 D F2",
+    "buffer": "C",
+    "targets": "OKDQ",
+    "htm": 10
+  },
+  "OKEQ": {
+    "algorithm": "B2 D B2 R B2 R' D' R B2 R'",
+    "buffer": "C",
+    "targets": "OKEQ",
+    "htm": 10
+  },
+  "OKFE": {
+    "algorithm": "R F' R' U2 R U2 F U2 R' U2",
+    "buffer": "C",
+    "targets": "OKFE",
+    "htm": 10
+  },
+  "OKFQ": {
+    "algorithm": "R' U2 B U2 R U2 R' B' R U2",
+    "buffer": "C",
+    "targets": "OKFQ",
+    "htm": 10
+  },
+  "OKGF": {
+    "algorithm": "D' L F2 L' F2 D F2 L F2 L'",
+    "buffer": "C",
+    "targets": "OKGF",
+    "htm": 10
+  },
+  "OKHG": {
+    "algorithm": "L' D' L F2 L' F2 D F2 L F2",
+    "buffer": "C",
+    "targets": "OKHG",
+    "htm": 10
+  },
+  "ONAP": {
+    "algorithm": "R' U2 R F' R' U2 R U2 F U2",
+    "buffer": "C",
+    "targets": "ONAP",
+    "htm": 10
+  },
+  "ONSP": {
+    "algorithm": "B2 R U' R' B2 R B2 U B2 R'",
+    "buffer": "C",
+    "targets": "ONSP",
+    "htm": 10
+  },
+  "ONVE": {
+    "algorithm": "B' D' S R2 S' D F' B U2 F",
+    "buffer": "C",
+    "targets": "ONVE",
+    "htm": 10
+  },
+  "ONVH": {
+    "algorithm": "B R2 S U S' R2 S U' B' S'",
+    "buffer": "C",
+    "targets": "ONVH",
+    "htm": 10
+  },
+  "ONXP": {
+    "algorithm": "D2 F D2 R D2 F' D2 F R' F'",
+    "buffer": "C",
+    "targets": "ONXP",
+    "htm": 10
+  },
+  "ORVH": {
+    "algorithm": "B E' R2 E B' R' E B2 E' R",
+    "buffer": "C",
+    "targets": "ORVH",
+    "htm": 10
+  },
+  "OSBE": {
+    "algorithm": "R2 D' R2 B' R2 D R2 D' B D",
+    "buffer": "C",
+    "targets": "OSBE",
+    "htm": 10
+  },
+  "OSUP": {
+    "algorithm": "L' D2 L D2 F D2 L' D2 L F'",
+    "buffer": "C",
+    "targets": "OSUP",
+    "htm": 10
+  },
+  "OUAD": {
+    "algorithm": "L2 B' L2 B U B' L2 B L2 U'",
+    "buffer": "C",
+    "targets": "OUAD",
+    "htm": 10
+  },
+  "OUBH": {
+    "algorithm": "R2 B D B' R2 B R2 D' R2 B'",
+    "buffer": "C",
+    "targets": "OUBH",
+    "htm": 10
+  },
+  "OUHD": {
+    "algorithm": "B' L2 S' U S L2 S' U' B S",
+    "buffer": "C",
+    "targets": "OUHD",
+    "htm": 10
+  },
+  "OUIP": {
+    "algorithm": "D2 L D2 F D2 L' D2 L F' L'",
+    "buffer": "C",
+    "targets": "OUIP",
+    "htm": 10
+  },
+  "OUNA": {
+    "algorithm": "U2 F U2 R' U2 R F' R' U2 R",
+    "buffer": "C",
+    "targets": "OUNA",
+    "htm": 10
+  },
+  "OUPD": {
+    "algorithm": "F' D2 L D2 F D2 F' L' F D2",
+    "buffer": "C",
+    "targets": "OUPD",
+    "htm": 10
+  },
+  "OUSB": {
+    "algorithm": "D' B D R2 D' R2 B' R2 D R2",
+    "buffer": "C",
+    "targets": "OUSB",
+    "htm": 10
+  },
+  "OUVH": {
+    "algorithm": "B D S R2 S' D' S R2 B' S'",
+    "buffer": "C",
+    "targets": "OUVH",
+    "htm": 10
+  },
+  "OVHD": {
+    "algorithm": "B S U' S' R2 S U S' R2 B'",
+    "buffer": "C",
+    "targets": "OVHD",
+    "htm": 10
+  },
+  "OVHE": {
+    "algorithm": "B R2 S' D' S R2 F B' L F'",
+    "buffer": "C",
+    "targets": "OVHE",
+    "htm": 10
+  },
+  "OXEG": {
+    "algorithm": "B' L2 U L2 U' B U L2 U' L2",
+    "buffer": "C",
+    "targets": "OXEG",
+    "htm": 10
+  },
+  "OXIG": {
+    "algorithm": "D L' E' F2 E L E' F2 D' E",
+    "buffer": "C",
+    "targets": "OXIG",
+    "htm": 10
+  },
+  "OXIV": {
+    "algorithm": "D' E F2 E' R E F2 E' R' D",
+    "buffer": "C",
+    "targets": "OXIV",
+    "htm": 10
+  },
+  "OXKD": {
+    "algorithm": "F2 D' F2 R F2 D F2 D' R' D",
+    "buffer": "C",
+    "targets": "OXKD",
+    "htm": 10
+  },
+  "OXKG": {
+    "algorithm": "F2 D L' D' F2 D F2 L F2 D'",
+    "buffer": "C",
+    "targets": "OXKG",
+    "htm": 10
+  },
+  "OXPD": {
+    "algorithm": "F R' F' D2 F D2 R D2 F' D2",
+    "buffer": "C",
+    "targets": "OXPD",
+    "htm": 10
+  },
+  "PALW": {
+    "algorithm": "D R2 D' B' D R2 D' R2 B R2",
+    "buffer": "C",
+    "targets": "PALW",
+    "htm": 10
+  },
+  "PAND": {
+    "algorithm": "U' R2 U B' U' R2 U R2 B R2",
+    "buffer": "C",
+    "targets": "PAND",
+    "htm": 10
+  },
+  "PANO": {
+    "algorithm": "U2 F' U2 R' U2 R F R' U2 R",
+    "buffer": "C",
+    "targets": "PANO",
+    "htm": 10
+  },
+  "PAOF": {
+    "algorithm": "U2 R' U2 R F' R' U2 R U2 F",
+    "buffer": "C",
+    "targets": "PAOF",
+    "htm": 10
+  },
+  "PAWF": {
+    "algorithm": "D2 E L2 E' F' E L2 E' F D2",
+    "buffer": "C",
+    "targets": "PAWF",
+    "htm": 10
+  },
+  "PBFG": {
+    "algorithm": "R2 F' D F R2 F' R2 D' R2 F",
+    "buffer": "C",
+    "targets": "PBFG",
+    "htm": 10
+  },
+  "PBHE": {
+    "algorithm": "B' U B R2 B' R2 U' R2 B R2",
+    "buffer": "C",
+    "targets": "PBHE",
+    "htm": 10
+  },
+  "PING": {
+    "algorithm": "L' M U2 M' F' M U2 M' F L",
+    "buffer": "C",
+    "targets": "PING",
+    "htm": 10
+  },
+  "PIUO": {
+    "algorithm": "L F L' D2 L D2 F' D2 L' D2",
+    "buffer": "C",
+    "targets": "PIUO",
+    "htm": 10
+  },
+  "PIUQ": {
+    "algorithm": "U2 L' U2 F' U2 F L F' U2 F",
+    "buffer": "C",
+    "targets": "PIUQ",
+    "htm": 10
+  },
+  "PIUT": {
+    "algorithm": "F R2 U' R2 F' R2 F U F' R2",
+    "buffer": "C",
+    "targets": "PIUT",
+    "htm": 10
+  },
+  "PIWG": {
+    "algorithm": "L F M' D2 M F' M' D2 L' M",
+    "buffer": "C",
+    "targets": "PIWG",
+    "htm": 10
+  },
+  "PLDR": {
+    "algorithm": "D' F2 D F2 L F2 D' F2 D L'",
+    "buffer": "C",
+    "targets": "PLDR",
+    "htm": 10
+  },
+  "PLWH": {
+    "algorithm": "R2 B R2 D R2 D' B' D R2 D'",
+    "buffer": "C",
+    "targets": "PLWH",
+    "htm": 10
+  },
+  "PNDH": {
+    "algorithm": "R2 B R2 U' R2 U B' U' R2 U",
+    "buffer": "C",
+    "targets": "PNDH",
+    "htm": 10
+  },
+  "PNXF": {
+    "algorithm": "F R2 D' R2 D F' D' R2 D R2",
+    "buffer": "C",
+    "targets": "PNXF",
+    "htm": 10
+  },
+  "POAB": {
+    "algorithm": "U B R2 B' R2 U' R2 B R2 B'",
+    "buffer": "C",
+    "targets": "POAB",
+    "htm": 10
+  },
+  "POFG": {
+    "algorithm": "F D2 F' L F D2 F' D2 L' D2",
+    "buffer": "C",
+    "targets": "POFG",
+    "htm": 10
+  },
+  "PQEF": {
+    "algorithm": "L U2 L' U2 F' U2 L U2 L' F",
+    "buffer": "C",
+    "targets": "PQEF",
+    "htm": 10
+  },
+  "PQFG": {
+    "algorithm": "U2 L' U2 F' U2 L U2 L' F L",
+    "buffer": "C",
+    "targets": "PQFG",
+    "htm": 10
+  },
+  "PQHE": {
+    "algorithm": "B2 R B2 U' B2 R' B2 R U R'",
+    "buffer": "C",
+    "targets": "PQHE",
+    "htm": 10
+  },
+  "PQWE": {
+    "algorithm": "B2 R' D R B2 R' B2 D' B2 R",
+    "buffer": "C",
+    "targets": "PQWE",
+    "htm": 10
+  },
+  "PQWH": {
+    "algorithm": "R D2 R' F R D2 R' D2 F' D2",
+    "buffer": "C",
+    "targets": "PQWH",
+    "htm": 10
+  },
+  "PQWR": {
+    "algorithm": "U2 F' U2 R' U2 F U2 F' R F",
+    "buffer": "C",
+    "targets": "PQWR",
+    "htm": 10
+  },
+  "PRWF": {
+    "algorithm": "F R2 U R2 U' F' U R2 U' R2",
+    "buffer": "C",
+    "targets": "PRWF",
+    "htm": 10
+  },
+  "PSAO": {
+    "algorithm": "R' D R B2 R' B2 D' B2 R B2",
+    "buffer": "C",
+    "targets": "PSAO",
+    "htm": 10
+  },
+  "PSAT": {
+    "algorithm": "R2 B R2 D' R2 B' R2 B D B'",
+    "buffer": "C",
+    "targets": "PSAT",
+    "htm": 10
+  },
+  "PSNE": {
+    "algorithm": "L U2 M' F' M U2 M' F L' M",
+    "buffer": "C",
+    "targets": "PSNE",
+    "htm": 10
+  },
+  "PSNF": {
+    "algorithm": "U2 L U2 L' F' L U2 L' U2 F",
+    "buffer": "C",
+    "targets": "PSNF",
+    "htm": 10
+  },
+  "PSNO": {
+    "algorithm": "R B2 U' B2 R' B2 R U R' B2",
+    "buffer": "C",
+    "targets": "PSNO",
+    "htm": 10
+  },
+  "PSWE": {
+    "algorithm": "L' F M' D2 M F' R' L B2 R",
+    "buffer": "C",
+    "targets": "PSWE",
+    "htm": 10
+  },
+  "PTBF": {
+    "algorithm": "F D' R2 D R2 F' R2 D' R2 D",
+    "buffer": "C",
+    "targets": "PTBF",
+    "htm": 10
+  },
+  "PTHQ": {
+    "algorithm": "B' R2 B R2 D' R2 B' R2 B D",
+    "buffer": "C",
+    "targets": "PTHQ",
+    "htm": 10
+  },
+  "PUNH": {
+    "algorithm": "D2 B E R2 E' B' E R2 D2 E'",
+    "buffer": "C",
+    "targets": "PUNH",
+    "htm": 10
+  },
+  "PUNX": {
+    "algorithm": "R2 D' R2 D F' D' R2 D R2 F",
+    "buffer": "C",
+    "targets": "PUNX",
+    "htm": 10
+  },
+  "PUQH": {
+    "algorithm": "F D2 R D2 R' F' R D2 R' D2",
+    "buffer": "C",
+    "targets": "PUQH",
+    "htm": 10
+  },
+  "PURW": {
+    "algorithm": "R2 U R2 U' F' U R2 U' R2 F",
+    "buffer": "C",
+    "targets": "PURW",
+    "htm": 10
+  },
+  "PUSO": {
+    "algorithm": "F L' D2 L D2 F' D2 L' D2 L",
+    "buffer": "C",
+    "targets": "PUSO",
+    "htm": 10
+  },
+  "PUTB": {
+    "algorithm": "D' R2 D R2 F' R2 D' R2 D F",
+    "buffer": "C",
+    "targets": "PUTB",
+    "htm": 10
+  },
+  "PUWE": {
+    "algorithm": "F D2 L' D2 L F' L' D2 L D2",
+    "buffer": "C",
+    "targets": "PUWE",
+    "htm": 10
+  },
+  "PXLD": {
+    "algorithm": "L' D' F2 D F2 L F2 D' F2 D",
+    "buffer": "C",
+    "targets": "PXLD",
+    "htm": 10
+  },
+  "PXNO": {
+    "algorithm": "F R F' D2 F D2 R' D2 F' D2",
+    "buffer": "C",
+    "targets": "PXNO",
+    "htm": 10
+  },
+  "QDAG": {
+    "algorithm": "L2 U' B U L2 U' L2 B' L2 U",
+    "buffer": "C",
+    "targets": "QDAG",
+    "htm": 10
+  },
+  "QDAL": {
+    "algorithm": "F2 R' F2 U' F2 R F2 R' U R",
+    "buffer": "C",
+    "targets": "QDAL",
+    "htm": 10
+  },
+  "QDAS": {
+    "algorithm": "U B2 U' R U B2 U' B2 R' B2",
+    "buffer": "C",
+    "targets": "QDAS",
+    "htm": 10
+  },
+  "QDGK": {
+    "algorithm": "D F2 D' F2 R' F2 D F2 D' R",
+    "buffer": "C",
+    "targets": "QDGK",
+    "htm": 10
+  },
+  "QDKO": {
+    "algorithm": "F2 D' F2 R' F2 D F2 D' R D",
+    "buffer": "C",
+    "targets": "QDKO",
+    "htm": 10
+  },
+  "QDSG": {
+    "algorithm": "L2 U L2 F' L2 U' L2 U F U'",
+    "buffer": "C",
+    "targets": "QDSG",
+    "htm": 10
+  },
+  "QEKO": {
+    "algorithm": "R B2 R' D R B2 R' B2 D' B2",
+    "buffer": "C",
+    "targets": "QEKO",
+    "htm": 10
+  },
+  "QEUF": {
+    "algorithm": "F L U2 L' U2 F' U2 L U2 L'",
+    "buffer": "C",
+    "targets": "QEUF",
+    "htm": 10
+  },
+  "QFKO": {
+    "algorithm": "U2 R' B R U2 R' U2 B' U2 R",
+    "buffer": "C",
+    "targets": "QFKO",
+    "htm": 10
+  },
+  "QFSG": {
+    "algorithm": "L' F L U2 L' U2 F' U2 L U2",
+    "buffer": "C",
+    "targets": "QFSG",
+    "htm": 10
+  },
+  "QHIE": {
+    "algorithm": "R U R' B2 R B2 U' B2 R' B2",
+    "buffer": "C",
+    "targets": "QHIE",
+    "htm": 10
+  },
+  "QHTP": {
+    "algorithm": "D' B' R2 B R2 D R2 B' R2 B",
+    "buffer": "C",
+    "targets": "QHTP",
+    "htm": 10
+  },
+  "QIHK": {
+    "algorithm": "R U2 B' U2 B R' B' U2 B U2",
+    "buffer": "C",
+    "targets": "QIHK",
+    "htm": 10
+  },
+  "QIPS": {
+    "algorithm": "U2 L U2 F' U2 F L' F' U2 F",
+    "buffer": "C",
+    "targets": "QIPS",
+    "htm": 10
+  },
+  "QLAK": {
+    "algorithm": "R U2 F U2 F' R' F U2 F' U2",
+    "buffer": "C",
+    "targets": "QLAK",
+    "htm": 10
+  },
+  "QRFK": {
+    "algorithm": "R B' U2 B U2 R' U2 B' U2 B",
+    "buffer": "C",
+    "targets": "QRFK",
+    "htm": 10
+  },
+  "QRSD": {
+    "algorithm": "L' U2 L U2 B' U2 L' U2 L B",
+    "buffer": "C",
+    "targets": "QRSD",
+    "htm": 10
+  },
+  "QTAS": {
+    "algorithm": "U2 L U2 B U2 B' L' B U2 B'",
+    "buffer": "C",
+    "targets": "QTAS",
+    "htm": 10
+  },
+  "QTPL": {
+    "algorithm": "B' R2 B R2 D R2 B' R2 B D'",
+    "buffer": "C",
+    "targets": "QTPL",
+    "htm": 10
+  },
+  "QUAK": {
+    "algorithm": "B2 D2 R' D2 B2 U2 F2 L' F2 U2",
+    "buffer": "C",
+    "targets": "QUAK",
+    "htm": 10
+  },
+  "QUEK": {
+    "algorithm": "F2 U' F2 U R' U' F2 U F2 R",
+    "buffer": "C",
+    "targets": "QUEK",
+    "htm": 10
+  },
+  "QUIE": {
+    "algorithm": "F2 R' F2 U' F2 U R U' F2 U",
+    "buffer": "C",
+    "targets": "QUIE",
+    "htm": 10
+  },
+  "QUIP": {
+    "algorithm": "F' U2 F L' F' U2 F U2 L U2",
+    "buffer": "C",
+    "targets": "QUIP",
+    "htm": 10
+  },
+  "QUTA": {
+    "algorithm": "B U2 B' L' B U2 B' U2 L U2",
+    "buffer": "C",
+    "targets": "QUTA",
+    "htm": 10
+  },
+  "QVAO": {
+    "algorithm": "D R E' B2 E R' E' B2 D' E",
+    "buffer": "C",
+    "targets": "QVAO",
+    "htm": 10
+  },
+  "QVIO": {
+    "algorithm": "D' E F2 E' R' E F2 E' R D",
+    "buffer": "C",
+    "targets": "QVIO",
+    "htm": 10
+  },
+  "QVWD": {
+    "algorithm": "F2 D' F2 R' F2 R D R' F2 R",
+    "buffer": "C",
+    "targets": "QVWD",
+    "htm": 10
+  },
+  "QVWE": {
+    "algorithm": "D R D' B2 D B2 R' B2 D' B2",
+    "buffer": "C",
+    "targets": "QVWE",
+    "htm": 10
+  },
+  "QVWR": {
+    "algorithm": "R U2 F' U2 R' U2 R F R' U2",
+    "buffer": "C",
+    "targets": "QVWR",
+    "htm": 10
+  },
+  "QWAG": {
+    "algorithm": "R B2 D' B2 D R' D' B2 D B2",
+    "buffer": "C",
+    "targets": "QWAG",
+    "htm": 10
+  },
+  "QWDS": {
+    "algorithm": "R B2 U B2 U' R' U B2 U' B2",
+    "buffer": "C",
+    "targets": "QWDS",
+    "htm": 10
+  },
+  "QWIH": {
+    "algorithm": "U2 B' U2 B R' B' U2 B U2 R",
+    "buffer": "C",
+    "targets": "QWIH",
+    "htm": 10
+  },
+  "QWIS": {
+    "algorithm": "B2 L S' U2 S L' S' U2 B2 S",
+    "buffer": "C",
+    "targets": "QWIS",
+    "htm": 10
+  },
+  "QWLA": {
+    "algorithm": "U2 F U2 F' R' F U2 F' U2 R",
+    "buffer": "C",
+    "targets": "QWLA",
+    "htm": 10
+  },
+  "QWRF": {
+    "algorithm": "B' U2 B U2 R' U2 B' U2 B R",
+    "buffer": "C",
+    "targets": "QWRF",
+    "htm": 10
+  },
+  "QWXE": {
+    "algorithm": "R D' B2 D B2 R' B2 D' B2 D",
+    "buffer": "C",
+    "targets": "QWXE",
+    "htm": 10
+  },
+  "QXAG": {
+    "algorithm": "D' E R E' B2 E R' E' B2 D",
+    "buffer": "C",
+    "targets": "QXAG",
+    "htm": 10
+  },
+  "QXIE": {
+    "algorithm": "U L2 F' L2 U' L2 U F U' L2",
+    "buffer": "C",
+    "targets": "QXIE",
+    "htm": 10
+  },
+  "QXIG": {
+    "algorithm": "D F2 E' R' E F2 E' R D' E",
+    "buffer": "C",
+    "targets": "QXIG",
+    "htm": 10
+  },
+  "QXIK": {
+    "algorithm": "F2 D F2 D' R' D F2 D' F2 R",
+    "buffer": "C",
+    "targets": "QXIK",
+    "htm": 10
+  },
+  "QXUE": {
+    "algorithm": "U' B U L2 U' L2 B' L2 U L2",
+    "buffer": "C",
+    "targets": "QXUE",
+    "htm": 10
+  },
+  "QXUR": {
+    "algorithm": "U2 L U2 B' U2 L' U2 L B L'",
+    "buffer": "C",
+    "targets": "QXUR",
+    "htm": 10
+  },
+  "RDHL": {
+    "algorithm": "D L D' F2 D F2 L' F2 D' F2",
+    "buffer": "C",
+    "targets": "RDHL",
+    "htm": 10
+  },
+  "RDKB": {
+    "algorithm": "L U L' F2 L F2 U' F2 L' F2",
+    "buffer": "C",
+    "targets": "RDKB",
+    "htm": 10
+  },
+  "RDLP": {
+    "algorithm": "L D' F2 D F2 L' F2 D' F2 D",
+    "buffer": "C",
+    "targets": "RDLP",
+    "htm": 10
+  },
+  "RDPB": {
+    "algorithm": "U R2 B' R2 U' R2 U B U' R2",
+    "buffer": "C",
+    "targets": "RDPB",
+    "htm": 10
+  },
+  "RDPT": {
+    "algorithm": "U' F U R2 U' R2 F' R2 U R2",
+    "buffer": "C",
+    "targets": "RDPT",
+    "htm": 10
+  },
+  "RDTB": {
+    "algorithm": "B2 L' B2 U' B2 U L U' B2 U",
+    "buffer": "C",
+    "targets": "RDTB",
+    "htm": 10
+  },
+  "RIHK": {
+    "algorithm": "B' R S U2 S' R' F' B L2 F",
+    "buffer": "C",
+    "targets": "RIHK",
+    "htm": 10
+  },
+  "RIHT": {
+    "algorithm": "B' S' U2 S L S' U2 S L' B",
+    "buffer": "C",
+    "targets": "RIHT",
+    "htm": 10
+  },
+  "RKLT": {
+    "algorithm": "D2 B D2 R' D2 R B' R' D2 R",
+    "buffer": "C",
+    "targets": "RKLT",
+    "htm": 10
+  },
+  "RLHT": {
+    "algorithm": "L2 F' L2 F D F' L2 F L2 D'",
+    "buffer": "C",
+    "targets": "RLHT",
+    "htm": 10
+  },
+  "RNIH": {
+    "algorithm": "B' U2 S' R' S U2 S' R B S",
+    "buffer": "C",
+    "targets": "RNIH",
+    "htm": 10
+  },
+  "RNIT": {
+    "algorithm": "B L S' U2 S L' F B' R2 F'",
+    "buffer": "C",
+    "targets": "RNIT",
+    "htm": 10
+  },
+  "RNSF": {
+    "algorithm": "L2 F' L2 U' L2 F L2 F' U F",
+    "buffer": "C",
+    "targets": "RNSF",
+    "htm": 10
+  },
+  "RNWF": {
+    "algorithm": "U R2 U' F U R2 U' R2 F' R2",
+    "buffer": "C",
+    "targets": "RNWF",
+    "htm": 10
+  },
+  "RNXF": {
+    "algorithm": "B2 U' R U B2 U' B2 R' B2 U",
+    "buffer": "C",
+    "targets": "RNXF",
+    "htm": 10
+  },
+  "ROIH": {
+    "algorithm": "B' M U2 M' B U M' B2 M U'",
+    "buffer": "C",
+    "targets": "ROIH",
+    "htm": 10
+  },
+  "RPBH": {
+    "algorithm": "R2 U B U' R2 U R2 B' R2 U'",
+    "buffer": "C",
+    "targets": "RPBH",
+    "htm": 10
+  },
+  "RPIT": {
+    "algorithm": "R2 F U F' R2 F R2 U' R2 F'",
+    "buffer": "C",
+    "targets": "RPIT",
+    "htm": 10
+  },
+  "RPLH": {
+    "algorithm": "D' L2 F' L2 F D F' L2 F L2",
+    "buffer": "C",
+    "targets": "RPLH",
+    "htm": 10
+  },
+  "RQHT": {
+    "algorithm": "B' U2 L U2 B U2 B' L' B U2",
+    "buffer": "C",
+    "targets": "RQHT",
+    "htm": 10
+  },
+  "RQPL": {
+    "algorithm": "U2 F' U2 R U2 F U2 F' R' F",
+    "buffer": "C",
+    "targets": "RQPL",
+    "htm": 10
+  },
+  "RSDK": {
+    "algorithm": "F2 L F2 U' F2 L' F2 L U L'",
+    "buffer": "C",
+    "targets": "RSDK",
+    "htm": 10
+  },
+  "RSDL": {
+    "algorithm": "F2 L' D L F2 L' F2 D' F2 L",
+    "buffer": "C",
+    "targets": "RSDL",
+    "htm": 10
+  },
+  "RSFK": {
+    "algorithm": "F' U F L2 F' L2 U' L2 F L2",
+    "buffer": "C",
+    "targets": "RSFK",
+    "htm": 10
+  },
+  "RSTL": {
+    "algorithm": "B D2 R' D2 R B' R' D2 R D2",
+    "buffer": "C",
+    "targets": "RSTL",
+    "htm": 10
+  },
+  "RSVI": {
+    "algorithm": "L F2 M U' M' F2 R L' B R'",
+    "buffer": "C",
+    "targets": "RSVI",
+    "htm": 10
+  },
+  "RSVL": {
+    "algorithm": "L' D M F2 M' D' M F2 L M'",
+    "buffer": "C",
+    "targets": "RSVL",
+    "htm": 10
+  },
+  "RTBL": {
+    "algorithm": "U' B2 U L U' B2 U B2 L' B2",
+    "buffer": "C",
+    "targets": "RTBL",
+    "htm": 10
+  },
+  "RUFK": {
+    "algorithm": "F L2 D' L2 F' L2 F D F' L2",
+    "buffer": "C",
+    "targets": "RUFK",
+    "htm": 10
+  },
+  "RUHK": {
+    "algorithm": "B D2 S R' S' D2 S R B' S'",
+    "buffer": "C",
+    "targets": "RUHK",
+    "htm": 10
+  },
+  "RUIH": {
+    "algorithm": "B' L' S' U2 S L S' U2 B S",
+    "buffer": "C",
+    "targets": "RUIH",
+    "htm": 10
+  },
+  "RUNW": {
+    "algorithm": "R2 F' R2 U R2 U' F U R2 U'",
+    "buffer": "C",
+    "targets": "RUNW",
+    "htm": 10
+  },
+  "RUQH": {
+    "algorithm": "U2 B' L' B U2 B' U2 L U2 B",
+    "buffer": "C",
+    "targets": "RUQH",
+    "htm": 10
+  },
+  "RUVF": {
+    "algorithm": "L2 D' L2 F' L2 D L2 D' F D",
+    "buffer": "C",
+    "targets": "RUVF",
+    "htm": 10
+  },
+  "RUWK": {
+    "algorithm": "D2 B D2 B' R' B D2 B' D2 R",
+    "buffer": "C",
+    "targets": "RUWK",
+    "htm": 10
+  },
+  "RUXQ": {
+    "algorithm": "L B' L' U2 L U2 B U2 L' U2",
+    "buffer": "C",
+    "targets": "RUXQ",
+    "htm": 10
+  },
+  "RVIB": {
+    "algorithm": "L U M' F2 M U' M' F2 L' M",
+    "buffer": "C",
+    "targets": "RVIB",
+    "htm": 10
+  },
+  "RVIH": {
+    "algorithm": "L E F2 E' L' F' E' L2 E F",
+    "buffer": "C",
+    "targets": "RVIH",
+    "htm": 10
+  },
+  "RVIL": {
+    "algorithm": "L F2 M' D M F2 M' D' L' M",
+    "buffer": "C",
+    "targets": "RVIL",
+    "htm": 10
+  },
+  "RVIO": {
+    "algorithm": "U' S R2 S' U R S' U2 S R'",
+    "buffer": "C",
+    "targets": "RVIO",
+    "htm": 10
+  },
+  "RVNX": {
+    "algorithm": "U' B2 R' B2 U B2 U' R U B2",
+    "buffer": "C",
+    "targets": "RVNX",
+    "htm": 10
+  },
+  "RVQL": {
+    "algorithm": "R U2 F U2 R' U2 R F' R' U2",
+    "buffer": "C",
+    "targets": "RVQL",
+    "htm": 10
+  },
+  "RVUX": {
+    "algorithm": "F2 L F2 L' D L F2 L' F2 D'",
+    "buffer": "C",
+    "targets": "RVUX",
+    "htm": 10
+  },
+  "RWIB": {
+    "algorithm": "L' B2 M' U' M B2 R' L F R",
+    "buffer": "C",
+    "targets": "RWIB",
+    "htm": 10
+  },
+  "RWIX": {
+    "algorithm": "L' B2 U' B2 L B2 L' U L B2",
+    "buffer": "C",
+    "targets": "RWIX",
+    "htm": 10
+  },
+  "RWQP": {
+    "algorithm": "F' R' F U2 F' U2 R U2 F U2",
+    "buffer": "C",
+    "targets": "RWQP",
+    "htm": 10
+  },
+  "RWUS": {
+    "algorithm": "B D2 B' R' B D2 B' D2 R D2",
+    "buffer": "C",
+    "targets": "RWUS",
+    "htm": 10
+  },
+  "RWVI": {
+    "algorithm": "L D' M F2 M' D R L' U2 R'",
+    "buffer": "C",
+    "targets": "RWVI",
+    "htm": 10
+  },
+  "RWVQ": {
+    "algorithm": "U2 R F' R' U2 R U2 F U2 R'",
+    "buffer": "C",
+    "targets": "RWVQ",
+    "htm": 10
+  },
+  "RWVU": {
+    "algorithm": "D' F2 L F2 L' D L F2 L' F2",
+    "buffer": "C",
+    "targets": "RWVU",
+    "htm": 10
+  },
+  "RWXF": {
+    "algorithm": "B2 U B2 L' B2 U' B2 U L U'",
+    "buffer": "C",
+    "targets": "RWXF",
+    "htm": 10
+  },
+  "RXQT": {
+    "algorithm": "U2 L U2 B U2 L' U2 L B' L'",
+    "buffer": "C",
+    "targets": "RXQT",
+    "htm": 10
+  },
+  "RXUF": {
+    "algorithm": "D L2 D' L2 F' L2 D L2 D' F",
+    "buffer": "C",
+    "targets": "RXUF",
+    "htm": 10
+  },
+  "SADQ": {
+    "algorithm": "B2 R B2 U B2 U' R' U B2 U'",
+    "buffer": "C",
+    "targets": "SADQ",
+    "htm": 10
+  },
+  "SAIT": {
+    "algorithm": "L U2 B U2 B' L' B U2 B' U2",
+    "buffer": "C",
+    "targets": "SAIT",
+    "htm": 10
+  },
+  "SAIW": {
+    "algorithm": "B2 S U2 S' R' S U2 S' R B2",
+    "buffer": "C",
+    "targets": "SAIW",
+    "htm": 10
+  },
+  "SATQ": {
+    "algorithm": "B U2 B' L B U2 B' U2 L' U2",
+    "buffer": "C",
+    "targets": "SATQ",
+    "htm": 10
+  },
+  "SAWG": {
+    "algorithm": "B2 R B2 D' B2 D R' D' B2 D",
+    "buffer": "C",
+    "targets": "SAWG",
+    "htm": 10
+  },
+  "SBIK": {
+    "algorithm": "U F2 U' L' U F2 U' F2 L F2",
+    "buffer": "C",
+    "targets": "SBIK",
+    "htm": 10
+  },
+  "SDKE": {
+    "algorithm": "U' F2 L' F2 U F2 U' L U F2",
+    "buffer": "C",
+    "targets": "SDKE",
+    "htm": 10
+  },
+  "SDWL": {
+    "algorithm": "L' F2 D' F2 L F2 L' D L F2",
+    "buffer": "C",
+    "targets": "SDWL",
+    "htm": 10
+  },
+  "SDWQ": {
+    "algorithm": "B2 U B2 U' R U B2 U' B2 R'",
+    "buffer": "C",
+    "targets": "SDWQ",
+    "htm": 10
+  },
+  "SFQL": {
+    "algorithm": "F U2 L U2 F' U2 F L' F' U2",
+    "buffer": "C",
+    "targets": "SFQL",
+    "htm": 10
+  },
+  "SFWE": {
+    "algorithm": "L U2 B U2 L' U2 L B' L' U2",
+    "buffer": "C",
+    "targets": "SFWE",
+    "htm": 10
+  },
+  "SFWK": {
+    "algorithm": "D2 F' D2 F R' F' D2 F D2 R",
+    "buffer": "C",
+    "targets": "SFWK",
+    "htm": 10
+  },
+  "SIWK": {
+    "algorithm": "B2 R S U2 S' R' S U2 B2 S'",
+    "buffer": "C",
+    "targets": "SIWK",
+    "htm": 10
+  },
+  "SIWQ": {
+    "algorithm": "B2 S' U2 S L S' U2 S L' B2",
+    "buffer": "C",
+    "targets": "SIWQ",
+    "htm": 10
+  },
+  "SNIE": {
+    "algorithm": "L F M U2 M' F' R L' B2 R'",
+    "buffer": "C",
+    "targets": "SNIE",
+    "htm": 10
+  },
+  "SNIO": {
+    "algorithm": "B2 R U R' B2 R B2 U' B2 R'",
+    "buffer": "C",
+    "targets": "SNIO",
+    "htm": 10
+  },
+  "SNLE": {
+    "algorithm": "U' S' L2 S U L S U2 S' L'",
+    "buffer": "C",
+    "targets": "SNLE",
+    "htm": 10
+  },
+  "SNUF": {
+    "algorithm": "F U2 L U2 L' F' L U2 L' U2",
+    "buffer": "C",
+    "targets": "SNUF",
+    "htm": 10
+  },
+  "SNUT": {
+    "algorithm": "D2 B' R' B D2 B' D2 R D2 B",
+    "buffer": "C",
+    "targets": "SNUT",
+    "htm": 10
+  },
+  "SNVE": {
+    "algorithm": "R E B2 E' R' B' E' R2 E B",
+    "buffer": "C",
+    "targets": "SNVE",
+    "htm": 10
+  },
+  "SNWE": {
+    "algorithm": "L M' U2 M B M' U2 M B' L'",
+    "buffer": "C",
+    "targets": "SNWE",
+    "htm": 10
+  },
+  "SOKE": {
+    "algorithm": "B2 R B2 R' D R B2 R' B2 D'",
+    "buffer": "C",
+    "targets": "SOKE",
+    "htm": 10
+  },
+  "SPIQ": {
+    "algorithm": "F' U2 F L F' U2 F U2 L' U2",
+    "buffer": "C",
+    "targets": "SPIQ",
+    "htm": 10
+  },
+  "STQL": {
+    "algorithm": "D2 R' D2 R B' R' D2 R D2 B",
+    "buffer": "C",
+    "targets": "STQL",
+    "htm": 10
+  },
+  "SUFK": {
+    "algorithm": "D2 R' D2 F' D2 F R F' D2 F",
+    "buffer": "C",
+    "targets": "SUFK",
+    "htm": 10
+  },
+  "SUIO": {
+    "algorithm": "L' F2 D' F2 D L D' F2 D F2",
+    "buffer": "C",
+    "targets": "SUIO",
+    "htm": 10
+  },
+  "SUIW": {
+    "algorithm": "B2 L' S' U2 S L S' U2 B2 S",
+    "buffer": "C",
+    "targets": "SUIW",
+    "htm": 10
+  },
+  "SUOK": {
+    "algorithm": "D' F2 D L' D' F2 D F2 L F2",
+    "buffer": "C",
+    "targets": "SUOK",
+    "htm": 10
+  },
+  "SUWR": {
+    "algorithm": "D2 R' D2 B D2 B' R B D2 B'",
+    "buffer": "C",
+    "targets": "SUWR",
+    "htm": 10
+  },
+  "SVAD": {
+    "algorithm": "U' F2 L' F2 L U L' F2 L F2",
+    "buffer": "C",
+    "targets": "SVAD",
+    "htm": 10
+  },
+  "SVAO": {
+    "algorithm": "B2 D R D' B2 D B2 R' B2 D'",
+    "buffer": "C",
+    "targets": "SVAO",
+    "htm": 10
+  },
+  "SVEL": {
+    "algorithm": "F E' L2 E F' L' E F2 E' L",
+    "buffer": "C",
+    "targets": "SVEL",
+    "htm": 10
+  },
+  "SVIL": {
+    "algorithm": "L' M U' M' F2 M U M' F2 L",
+    "buffer": "C",
+    "targets": "SVIL",
+    "htm": 10
+  },
+  "SVIT": {
+    "algorithm": "D2 R' F' R D2 R' D2 F D2 R",
+    "buffer": "C",
+    "targets": "SVIT",
+    "htm": 10
+  },
+  "SVNL": {
+    "algorithm": "R' S D2 S' R D S' R2 S D'",
+    "buffer": "C",
+    "targets": "SVNL",
+    "htm": 10
+  },
+  "SVWL": {
+    "algorithm": "L' F2 M' D' M F2 R' L B R",
+    "buffer": "C",
+    "targets": "SVWL",
+    "htm": 10
+  },
+  "TABF": {
+    "algorithm": "U B2 L' B2 U' B2 U L U' B2",
+    "buffer": "C",
+    "targets": "TABF",
+    "htm": 10
+  },
+  "TAIB": {
+    "algorithm": "B2 L' B2 U' B2 L B2 L' U L",
+    "buffer": "C",
+    "targets": "TAIB",
+    "htm": 10
+  },
+  "TANX": {
+    "algorithm": "D' B' E R2 E' B E R2 D E'",
+    "buffer": "C",
+    "targets": "TANX",
+    "htm": 10
+  },
+  "TAPX": {
+    "algorithm": "R2 D' B' D R2 D' R2 B R2 D",
+    "buffer": "C",
+    "targets": "TAPX",
+    "htm": 10
+  },
+  "TASP": {
+    "algorithm": "B D' B' R2 B R2 D R2 B' R2",
+    "buffer": "C",
+    "targets": "TASP",
+    "htm": 10
+  },
+  "TAUF": {
+    "algorithm": "L2 D L2 D' F' D L2 D' L2 F",
+    "buffer": "C",
+    "targets": "TAUF",
+    "htm": 10
+  },
+  "TAVU": {
+    "algorithm": "F2 U' F2 R F2 R' U R F2 R'",
+    "buffer": "C",
+    "targets": "TAVU",
+    "htm": 10
+  },
+  "TAXF": {
+    "algorithm": "D L2 E' F' E L2 E' F D' E",
+    "buffer": "C",
+    "targets": "TAXF",
+    "htm": 10
+  },
+  "TDKX": {
+    "algorithm": "F2 R D R' F2 R F2 D' F2 R'",
+    "buffer": "C",
+    "targets": "TDKX",
+    "htm": 10
+  },
+  "TDNL": {
+    "algorithm": "F2 U R U' F2 U F2 R' F2 U'",
+    "buffer": "C",
+    "targets": "TDNL",
+    "htm": 10
+  },
+  "TDRX": {
+    "algorithm": "L' B2 U' B2 U L U' B2 U B2",
+    "buffer": "C",
+    "targets": "TDRX",
+    "htm": 10
+  },
+  "TFRL": {
+    "algorithm": "L2 D L2 F' L2 F D' F' L2 F",
+    "buffer": "C",
+    "targets": "TFRL",
+    "htm": 10
+  },
+  "TGNX": {
+    "algorithm": "D' S' R2 S D R S D2 S' R'",
+    "buffer": "C",
+    "targets": "TGNX",
+    "htm": 10
+  },
+  "THBF": {
+    "algorithm": "U' R U B2 U' B2 R' B2 U B2",
+    "buffer": "C",
+    "targets": "THBF",
+    "htm": 10
+  },
+  "THIN": {
+    "algorithm": "B S U2 S' R' S U2 S' R B'",
+    "buffer": "C",
+    "targets": "THIN",
+    "htm": 10
+  },
+  "THIR": {
+    "algorithm": "B' L S' U2 S L' S' U2 B S",
+    "buffer": "C",
+    "targets": "THIR",
+    "htm": 10
+  },
+  "THLR": {
+    "algorithm": "D L2 F' L2 F D' F' L2 F L2",
+    "buffer": "C",
+    "targets": "THLR",
+    "htm": 10
+  },
+  "THQF": {
+    "algorithm": "U2 B U2 R' U2 B' U2 B R B'",
+    "buffer": "C",
+    "targets": "THQF",
+    "htm": 10
+  },
+  "THQR": {
+    "algorithm": "U2 B' L B U2 B' U2 L' U2 B",
+    "buffer": "C",
+    "targets": "THQR",
+    "htm": 10
+  },
+  "TIAS": {
+    "algorithm": "U2 B U2 B' L B U2 B' U2 L'",
+    "buffer": "C",
+    "targets": "TIAS",
+    "htm": 10
+  },
+  "TING": {
+    "algorithm": "R' E' F2 E R F E R2 E' F'",
+    "buffer": "C",
+    "targets": "TING",
+    "htm": 10
+  },
+  "TINK": {
+    "algorithm": "B R S U2 S' R' S U2 B' S'",
+    "buffer": "C",
+    "targets": "TINK",
+    "htm": 10
+  },
+  "TINR": {
+    "algorithm": "B U2 S L S' U2 S L' B' S'",
+    "buffer": "C",
+    "targets": "TINR",
+    "htm": 10
+  },
+  "TINX": {
+    "algorithm": "B M U2 M' B' U' M' B2 M U",
+    "buffer": "C",
+    "targets": "TINX",
+    "htm": 10
+  },
+  "TIPR": {
+    "algorithm": "F R2 U R2 F' R2 F U' F' R2",
+    "buffer": "C",
+    "targets": "TIPR",
+    "htm": 10
+  },
+  "TIVS": {
+    "algorithm": "R' D2 F' D2 R D2 R' F R D2",
+    "buffer": "C",
+    "targets": "TIVS",
+    "htm": 10
+  },
+  "TLKR": {
+    "algorithm": "R' D2 R B R' D2 R D2 B' D2",
+    "buffer": "C",
+    "targets": "TLKR",
+    "htm": 10
+  },
+  "TNXF": {
+    "algorithm": "D' E F E' R2 E F' E' R2 D",
+    "buffer": "C",
+    "targets": "TNXF",
+    "htm": 10
+  },
+  "TNXL": {
+    "algorithm": "D' E R2 E' B E R2 E' B' D",
+    "buffer": "C",
+    "targets": "TNXL",
+    "htm": 10
+  },
+  "TPDR": {
+    "algorithm": "R2 U' R2 F R2 U R2 U' F' U",
+    "buffer": "C",
+    "targets": "TPDR",
+    "htm": 10
+  },
+  "TPXL": {
+    "algorithm": "D' R2 B R2 D R2 D' B' D R2",
+    "buffer": "C",
+    "targets": "TPXL",
+    "htm": 10
+  },
+  "TQDK": {
+    "algorithm": "R F2 D' F2 R' F2 R D R' F2",
+    "buffer": "C",
+    "targets": "TQDK",
+    "htm": 10
+  },
+  "TQDL": {
+    "algorithm": "R' U R F2 R' F2 U' F2 R F2",
+    "buffer": "C",
+    "targets": "TQDL",
+    "htm": 10
+  },
+  "TQFK": {
+    "algorithm": "B R B' U2 B U2 R' U2 B' U2",
+    "buffer": "C",
+    "targets": "TQFK",
+    "htm": 10
+  },
+  "TQLK": {
+    "algorithm": "D2 B' D2 R' D2 R B R' D2 R",
+    "buffer": "C",
+    "targets": "TQLK",
+    "htm": 10
+  },
+  "TQRD": {
+    "algorithm": "B L' U2 L U2 B' U2 L' U2 L",
+    "buffer": "C",
+    "targets": "TQRD",
+    "htm": 10
+  },
+  "TQXR": {
+    "algorithm": "L B L' U2 L U2 B' U2 L' U2",
+    "buffer": "C",
+    "targets": "TQXR",
+    "htm": 10
+  },
+  "TRXL": {
+    "algorithm": "B2 U' B2 U L U' B2 U B2 L'",
+    "buffer": "C",
+    "targets": "TRXL",
+    "htm": 10
+  },
+  "TSAB": {
+    "algorithm": "L B2 L' B2 U' B2 L B2 L' U",
+    "buffer": "C",
+    "targets": "TSAB",
+    "htm": 10
+  },
+  "TSPL": {
+    "algorithm": "R2 B R2 D R2 B' R2 B D' B'",
+    "buffer": "C",
+    "targets": "TSPL",
+    "htm": 10
+  },
+  "TUAH": {
+    "algorithm": "D L2 D' F' D L2 D' L2 F L2",
+    "buffer": "C",
+    "targets": "TUAH",
+    "htm": 10
+  },
+  "TUIA": {
+    "algorithm": "L' U2 B U2 B' L B U2 B' U2",
+    "buffer": "C",
+    "targets": "TUIA",
+    "htm": 10
+  },
+  "TUIN": {
+    "algorithm": "B L' S' U2 S L F B' R2 F'",
+    "buffer": "C",
+    "targets": "TUIN",
+    "htm": 10
+  },
+  "TUIP": {
+    "algorithm": "R2 F U' F' R2 F R2 U R2 F'",
+    "buffer": "C",
+    "targets": "TUIP",
+    "htm": 10
+  },
+  "TUNK": {
+    "algorithm": "B' D2 S R' S' D2 F' B U F",
+    "buffer": "C",
+    "targets": "TUNK",
+    "htm": 10
+  },
+  "TUNS": {
+    "algorithm": "B' D2 R' D2 B D2 B' R B D2",
+    "buffer": "C",
+    "targets": "TUNS",
+    "htm": 10
+  },
+  "TUPD": {
+    "algorithm": "U' F' U R2 U' R2 F R2 U R2",
+    "buffer": "C",
+    "targets": "TUPD",
+    "htm": 10
+  },
+  "TUSB": {
+    "algorithm": "D2 R D2 B' D2 R' D2 R B R'",
+    "buffer": "C",
+    "targets": "TUSB",
+    "htm": 10
+  },
+  "TVHB": {
+    "algorithm": "B2 U' B2 R' B2 U B2 U' R U",
+    "buffer": "C",
+    "targets": "TVHB",
+    "htm": 10
+  },
+  "TVNL": {
+    "algorithm": "D B E R2 E' B' U D' F2 U'",
+    "buffer": "C",
+    "targets": "TVNL",
+    "htm": 10
+  },
+  "TVNX": {
+    "algorithm": "D' R2 E F' E' R2 E F D E'",
+    "buffer": "C",
+    "targets": "TVNX",
+    "htm": 10
+  },
+  "TVSB": {
+    "algorithm": "D2 R' F R D2 R' D2 F' D2 R",
+    "buffer": "C",
+    "targets": "TVSB",
+    "htm": 10
+  },
+  "TVUB": {
+    "algorithm": "R F2 R' U R F2 R' F2 U' F2",
+    "buffer": "C",
+    "targets": "TVUB",
+    "htm": 10
+  },
+  "UAFN": {
+    "algorithm": "L2 U2 F' L2 F U2 L2 F U2 F'",
+    "buffer": "C",
+    "targets": "UAFN",
+    "htm": 10
+  },
+  "UAQI": {
+    "algorithm": "L' B2 U2 L' B2 L U2 B2 L U2",
+    "buffer": "C",
+    "targets": "UAQI",
+    "htm": 10
+  },
+  "UAXV": {
+    "algorithm": "F2 U L2 U' F2 L2 U' F2 U L2",
+    "buffer": "C",
+    "targets": "UAXV",
+    "htm": 10
+  },
+  "UDBV": {
+    "algorithm": "F2 U L2 F2 U L2 U' F2 L2 U'",
+    "buffer": "C",
+    "targets": "UDBV",
+    "htm": 10
+  },
+  "UDBW": {
+    "algorithm": "R2 D' F2 D R2 F2 D R2 D' F2",
+    "buffer": "C",
+    "targets": "UDBW",
+    "htm": 10
+  },
+  "UDXA": {
+    "algorithm": "F2 L2 U' F2 U L2 F2 U L2 U'",
+    "buffer": "C",
+    "targets": "UDXA",
+    "htm": 10
+  },
+  "UDXV": {
+    "algorithm": "D F2 D' L2 F2 D' L2 D F2 L2",
+    "buffer": "C",
+    "targets": "UDXV",
+    "htm": 10
+  },
+  "UEWK": {
+    "algorithm": "R F2 U' F2 U R' U' F2 U F2",
+    "buffer": "C",
+    "targets": "UEWK",
+    "htm": 10
+  },
+  "UHFA": {
+    "algorithm": "F' D2 L2 F' D2 F L2 D2 F L2",
+    "buffer": "C",
+    "targets": "UHFA",
+    "htm": 10
+  },
+  "UHFN": {
+    "algorithm": "L2 B' U2 B L2 U2 B L2 B' U2",
+    "buffer": "C",
+    "targets": "UHFN",
+    "htm": 10
+  },
+  "UHPN": {
+    "algorithm": "D2 B R2 B' D2 R2 B' D2 B R2",
+    "buffer": "C",
+    "targets": "UHPN",
+    "htm": 10
+  },
+  "UHPW": {
+    "algorithm": "F D2 F' R2 D2 F' R2 F D2 R2",
+    "buffer": "C",
+    "targets": "UHPW",
+    "htm": 10
+  },
+  "UIAO": {
+    "algorithm": "F2 D' F2 D L D' F2 D F2 L'",
+    "buffer": "C",
+    "targets": "UIAO",
+    "htm": 10
+  },
+  "UIWE": {
+    "algorithm": "U' F2 U R U' F2 U F2 R' F2",
+    "buffer": "C",
+    "targets": "UIWE",
+    "htm": 10
+  },
+  "UKQA": {
+    "algorithm": "U2 L F2 L' U2 F2 L' U2 L F2",
+    "buffer": "C",
+    "targets": "UKQA",
+    "htm": 10
+  },
+  "UKQI": {
+    "algorithm": "F2 R' D2 F2 R' D2 R F2 D2 R",
+    "buffer": "C",
+    "targets": "UKQI",
+    "htm": 10
+  },
+  "UKSI": {
+    "algorithm": "L' F2 L D2 F2 L D2 L' F2 D2",
+    "buffer": "C",
+    "targets": "UKSI",
+    "htm": 10
+  },
+  "UKSW": {
+    "algorithm": "D2 R' B2 D2 R' B2 R D2 B2 R",
+    "buffer": "C",
+    "targets": "UKSW",
+    "htm": 10
+  },
+  "UNAH": {
+    "algorithm": "D2 E R2 E' B' E R2 E' B D2",
+    "buffer": "C",
+    "targets": "UNAH",
+    "htm": 10
+  },
+  "UNWH": {
+    "algorithm": "D2 E F' E' R2 E F E' R2 D2",
+    "buffer": "C",
+    "targets": "UNWH",
+    "htm": 10
+  },
+  "UOAK": {
+    "algorithm": "F2 L F2 D' F2 D L' D' F2 D",
+    "buffer": "C",
+    "targets": "UOAK",
+    "htm": 10
+  },
+  "URWD": {
+    "algorithm": "F2 D' F2 L F2 L' D L F2 L'",
+    "buffer": "C",
+    "targets": "URWD",
+    "htm": 10
+  },
+  "UTAD": {
+    "algorithm": "U' F2 R F2 R' U R F2 R' F2",
+    "buffer": "C",
+    "targets": "UTAD",
+    "htm": 10
+  },
+  "UVAT": {
+    "algorithm": "R F2 R' U' R F2 R' F2 U F2",
+    "buffer": "C",
+    "targets": "UVAT",
+    "htm": 10
+  },
+  "UVWR": {
+    "algorithm": "F2 L F2 L' D' L F2 L' F2 D",
+    "buffer": "C",
+    "targets": "UVWR",
+    "htm": 10
+  },
+  "UWBV": {
+    "algorithm": "D B2 R2 D B2 D' R2 B2 D' R2",
+    "buffer": "C",
+    "targets": "UWBV",
+    "htm": 10
+  },
+  "UWPN": {
+    "algorithm": "D2 R2 F D2 F' R2 D2 F' R2 F",
+    "buffer": "C",
+    "targets": "UWPN",
+    "htm": 10
+  },
+  "UWSI": {
+    "algorithm": "F2 R' D2 R F2 D2 R F2 R' D2",
+    "buffer": "C",
+    "targets": "UWSI",
+    "htm": 10
+  },
+  "VBDU": {
+    "algorithm": "U F2 U' R2 F2 U' R2 U F2 R2",
+    "buffer": "C",
+    "targets": "VBDU",
+    "htm": 10
+  },
+  "VBWA": {
+    "algorithm": "U F2 R2 U F2 U' R2 F2 U' R2",
+    "buffer": "C",
+    "targets": "VBWA",
+    "htm": 10
+  },
+  "VBWU": {
+    "algorithm": "F2 R2 D' F2 D R2 F2 D R2 D'",
+    "buffer": "C",
+    "targets": "VBWU",
+    "htm": 10
+  },
+  "VBXA": {
+    "algorithm": "R2 D B2 D' R2 B2 D' R2 D B2",
+    "buffer": "C",
+    "targets": "VBXA",
+    "htm": 10
+  },
+  "VDBW": {
+    "algorithm": "U' B2 R2 U' B2 U R2 B2 U R2",
+    "buffer": "C",
+    "targets": "VDBW",
+    "htm": 10
+  },
+  "VDUA": {
+    "algorithm": "U' F2 U L2 F2 U L2 U' F2 L2",
+    "buffer": "C",
+    "targets": "VDUA",
+    "htm": 10
+  },
+  "VDUW": {
+    "algorithm": "F2 D' L2 F2 D' L2 D F2 L2 D",
+    "buffer": "C",
+    "targets": "VDUW",
+    "htm": 10
+  },
+  "VDXA": {
+    "algorithm": "F2 D' L2 D F2 L2 D F2 D' L2",
+    "buffer": "C",
+    "targets": "VDXA",
+    "htm": 10
+  },
+  "VIAO": {
+    "algorithm": "D' F2 E L E' F2 E L' D E'",
+    "buffer": "C",
+    "targets": "VIAO",
+    "htm": 10
+  },
+  "VIXO": {
+    "algorithm": "D' R E F2 E' R' E F2 D E'",
+    "buffer": "C",
+    "targets": "VIXO",
+    "htm": 10
+  },
+  "VNAL": {
+    "algorithm": "D R2 E' B' E R2 E' B D' E",
+    "buffer": "C",
+    "targets": "VNAL",
+    "htm": 10
+  },
+  "VNXL": {
+    "algorithm": "D F' E' R2 E F E' R2 D' E",
+    "buffer": "C",
+    "targets": "VNXL",
+    "htm": 10
+  },
+  "VXAU": {
+    "algorithm": "L2 U' F2 U L2 F2 U L2 U' F2",
+    "buffer": "C",
+    "targets": "VXAU",
+    "htm": 10
+  },
+  "VXAW": {
+    "algorithm": "B2 U R2 U' B2 R2 U' B2 U R2",
+    "buffer": "C",
+    "targets": "VXAW",
+    "htm": 10
+  },
+  "VXBW": {
+    "algorithm": "B2 R2 D B2 D' R2 B2 D' R2 D",
+    "buffer": "C",
+    "targets": "VXBW",
+    "htm": 10
+  },
+  "VXDU": {
+    "algorithm": "F2 D R2 F2 D R2 D' F2 R2 D'",
+    "buffer": "C",
+    "targets": "VXDU",
+    "htm": 10
+  },
+  "WAFN": {
+    "algorithm": "B L2 U2 B L2 B' U2 L2 B' U2",
+    "buffer": "C",
+    "targets": "WAFN",
+    "htm": 10
+  },
+  "WAQI": {
+    "algorithm": "B2 U2 R B2 R' U2 B2 R' U2 R",
+    "buffer": "C",
+    "targets": "WAQI",
+    "htm": 10
+  },
+  "WAXV": {
+    "algorithm": "R2 U' B2 U R2 B2 U R2 U' B2",
+    "buffer": "C",
+    "targets": "WAXV",
+    "htm": 10
+  },
+  "WBDU": {
+    "algorithm": "F2 D R2 D' F2 R2 D' F2 D R2",
+    "buffer": "C",
+    "targets": "WBDU",
+    "htm": 10
+  },
+  "WBDV": {
+    "algorithm": "F2 R2 U F2 U' R2 F2 U' R2 U",
+    "buffer": "C",
+    "targets": "WBDV",
+    "htm": 10
+  },
+  "WBXA": {
+    "algorithm": "B2 U' L2 B2 U' L2 U B2 L2 U",
+    "buffer": "C",
+    "targets": "WBXA",
+    "htm": 10
+  },
+  "WBXV": {
+    "algorithm": "D' F2 R2 D' F2 D R2 F2 D R2",
+    "buffer": "C",
+    "targets": "WBXV",
+    "htm": 10
+  },
+  "WEUB": {
+    "algorithm": "R2 D R2 B' R2 B D' B' R2 B",
+    "buffer": "C",
+    "targets": "WEUB",
+    "htm": 10
+  },
+  "WGAB": {
+    "algorithm": "U R2 F' R2 F U' F' R2 F R2",
+    "buffer": "C",
+    "targets": "WGAB",
+    "htm": 10
+  },
+  "WIAS": {
+    "algorithm": "B2 R' S U2 S' R S U2 B2 S'",
+    "buffer": "C",
+    "targets": "WIAS",
+    "htm": 10
+  },
+  "WIUS": {
+    "algorithm": "B2 S' U2 S L' S' U2 S L B2",
+    "buffer": "C",
+    "targets": "WIUS",
+    "htm": 10
+  },
+  "WLAP": {
+    "algorithm": "R2 B' R2 D R2 D' B D R2 D'",
+    "buffer": "C",
+    "targets": "WLAP",
+    "htm": 10
+  },
+  "WNAL": {
+    "algorithm": "R2 D R2 D' B' D R2 D' R2 B",
+    "buffer": "C",
+    "targets": "WNAL",
+    "htm": 10
+  },
+  "WNUR": {
+    "algorithm": "U R2 U' F' U R2 U' R2 F R2",
+    "buffer": "C",
+    "targets": "WNUR",
+    "htm": 10
+  },
+  "WPFA": {
+    "algorithm": "U2 B' R2 B U2 R2 B U2 B' R2",
+    "buffer": "C",
+    "targets": "WPFA",
+    "htm": 10
+  },
+  "WPFN": {
+    "algorithm": "R2 F D2 R2 F D2 F' R2 D2 F'",
+    "buffer": "C",
+    "targets": "WPFN",
+    "htm": 10
+  },
+  "WPHN": {
+    "algorithm": "B R2 B' D2 R2 B' D2 B R2 D2",
+    "buffer": "C",
+    "targets": "WPHN",
+    "htm": 10
+  },
+  "WPHU": {
+    "algorithm": "D2 F L2 D2 F L2 F' D2 L2 F'",
+    "buffer": "C",
+    "targets": "WPHU",
+    "htm": 10
+  },
+  "WRUP": {
+    "algorithm": "F' R2 U R2 U' F U R2 U' R2",
+    "buffer": "C",
+    "targets": "WRUP",
+    "htm": 10
+  },
+  "WSKI": {
+    "algorithm": "D2 L' F2 L D2 F2 L D2 L' F2",
+    "buffer": "C",
+    "targets": "WSKI",
+    "htm": 10
+  },
+  "WSKU": {
+    "algorithm": "R' B2 D2 R' B2 R D2 B2 R D2",
+    "buffer": "C",
+    "targets": "WSKU",
+    "htm": 10
+  },
+  "WSQA": {
+    "algorithm": "R B2 R' U2 B2 R' U2 R B2 U2",
+    "buffer": "C",
+    "targets": "WSQA",
+    "htm": 10
+  },
+  "WSQI": {
+    "algorithm": "B2 L U2 L' B2 U2 L' B2 L U2",
+    "buffer": "C",
+    "targets": "WSQI",
+    "htm": 10
+  },
+  "WUDV": {
+    "algorithm": "D' F2 D R2 F2 D R2 D' F2 R2",
+    "buffer": "C",
+    "targets": "WUDV",
+    "htm": 10
+  },
+  "WUHN": {
+    "algorithm": "R2 F D2 F' R2 D2 F' R2 F D2",
+    "buffer": "C",
+    "targets": "WUHN",
+    "htm": 10
+  },
+  "WUKI": {
+    "algorithm": "D2 F2 R' D2 R F2 D2 R F2 R'",
+    "buffer": "C",
+    "targets": "WUKI",
+    "htm": 10
+  },
+  "WVAG": {
+    "algorithm": "F' R2 F U F' R2 F R2 U' R2",
+    "buffer": "C",
+    "targets": "WVAG",
+    "htm": 10
+  },
+  "WVUE": {
+    "algorithm": "R2 B' R2 B D B' R2 B R2 D'",
+    "buffer": "C",
+    "targets": "WVUE",
+    "htm": 10
+  },
+  "XEBG": {
+    "algorithm": "L2 U L2 U' B U L2 U' L2 B'",
+    "buffer": "C",
+    "targets": "XEBG",
+    "htm": 10
+  },
+  "XFVB": {
+    "algorithm": "F R2 F' D' F R2 F' R2 D R2",
+    "buffer": "C",
+    "targets": "XFVB",
+    "htm": 10
+  },
+  "XIAG": {
+    "algorithm": "D E' F2 E L E' F2 E L' D'",
+    "buffer": "C",
+    "targets": "XIAG",
+    "htm": 10
+  },
+  "XING": {
+    "algorithm": "U S' L2 S U' L' S U2 S' L",
+    "buffer": "C",
+    "targets": "XING",
+    "htm": 10
+  },
+  "XITG": {
+    "algorithm": "F' M D2 M' F D M' F2 M D'",
+    "buffer": "C",
+    "targets": "XITG",
+    "htm": 10
+  },
+  "XIVE": {
+    "algorithm": "L2 U F U' L2 U L2 F' L2 U'",
+    "buffer": "C",
+    "targets": "XIVE",
+    "htm": 10
+  },
+  "XIVG": {
+    "algorithm": "D E' R E F2 E' R' E F2 D'",
+    "buffer": "C",
+    "targets": "XIVG",
+    "htm": 10
+  },
+  "XIWK": {
+    "algorithm": "R F2 D F2 D' R' D F2 D' F2",
+    "buffer": "C",
+    "targets": "XIWK",
+    "htm": 10
+  },
+  "XIWR": {
+    "algorithm": "B2 L' U' L B2 L' B2 U B2 L",
+    "buffer": "C",
+    "targets": "XIWR",
+    "htm": 10
+  },
+  "XKAB": {
+    "algorithm": "B2 R' B2 R U' R' B2 R B2 U",
+    "buffer": "C",
+    "targets": "XKAB",
+    "htm": 10
+  },
+  "XKAG": {
+    "algorithm": "D F2 L F2 D' F2 D L' D' F2",
+    "buffer": "C",
+    "targets": "XKAG",
+    "htm": 10
+  },
+  "XKDT": {
+    "algorithm": "R F2 D F2 R' F2 R D' R' F2",
+    "buffer": "C",
+    "targets": "XKDT",
+    "htm": 10
+  },
+  "XNAT": {
+    "algorithm": "D' E R2 E' B' E R2 E' B D",
+    "buffer": "C",
+    "targets": "XNAT",
+    "htm": 10
+  },
+  "XNGT": {
+    "algorithm": "R S D2 S' R' D' S' R2 S D",
+    "buffer": "C",
+    "targets": "XNGT",
+    "htm": 10
+  },
+  "XNIT": {
+    "algorithm": "U' M' B2 M U B M U2 M' B'",
+    "buffer": "C",
+    "targets": "XNIT",
+    "htm": 10
+  },
+  "XNUE": {
+    "algorithm": "L2 B U B' L2 B L2 U' L2 B'",
+    "buffer": "C",
+    "targets": "XNUE",
+    "htm": 10
+  },
+  "XNUP": {
+    "algorithm": "F' R2 D' R2 D F D' R2 D R2",
+    "buffer": "C",
+    "targets": "XNUP",
+    "htm": 10
+  },
+  "XNVR": {
+    "algorithm": "B2 U' R' U B2 U' B2 R B2 U",
+    "buffer": "C",
+    "targets": "XNVR",
+    "htm": 10
+  },
+  "XNVT": {
+    "algorithm": "D' E F' E' R2 E F E' R2 D",
+    "buffer": "C",
+    "targets": "XNVT",
+    "htm": 10
+  },
+  "XPAD": {
+    "algorithm": "L2 F L2 F' U F L2 F' L2 U'",
+    "buffer": "C",
+    "targets": "XPAD",
+    "htm": 10
+  },
+  "XPAT": {
+    "algorithm": "D' R2 B' R2 D R2 D' B D R2",
+    "buffer": "C",
+    "targets": "XPAT",
+    "htm": 10
+  },
+  "XPBG": {
+    "algorithm": "F' R2 D' R2 F R2 F' D F R2",
+    "buffer": "C",
+    "targets": "XPBG",
+    "htm": 10
+  },
+  "XQVD": {
+    "algorithm": "R' F2 R D R' F2 R F2 D' F2",
+    "buffer": "C",
+    "targets": "XQVD",
+    "htm": 10
+  },
+  "XRDT": {
+    "algorithm": "B2 U' B2 U L' U' B2 U B2 L",
+    "buffer": "C",
+    "targets": "XRDT",
+    "htm": 10
+  },
+  "XUAO": {
+    "algorithm": "L2 U L2 B' L2 B U' B' L2 B",
+    "buffer": "C",
+    "targets": "XUAO",
+    "htm": 10
+  },
+  "XUPD": {
+    "algorithm": "L2 U L2 F L2 F' U' F L2 F'",
+    "buffer": "C",
+    "targets": "XUPD",
+    "htm": 10
+  },
+  "XURD": {
+    "algorithm": "L F2 L' D L F2 L' F2 D' F2",
+    "buffer": "C",
+    "targets": "XURD",
+    "htm": 10
+  },
+  "XUVA": {
+    "algorithm": "B2 D S R2 S' D' S R2 B2 S'",
+    "buffer": "C",
+    "targets": "XUVA",
+    "htm": 10
+  },
+  "XUVR": {
+    "algorithm": "D F2 L F2 L' D' L F2 L' F2",
+    "buffer": "C",
+    "targets": "XUVR",
+    "htm": 10
+  },
+  "XVAB": {
+    "algorithm": "B2 R2 D' R2 B2 L2 F2 U' F2 L2",
+    "buffer": "C",
+    "targets": "XVAB",
+    "htm": 10
+  },
+  "XVAD": {
+    "algorithm": "B2 S U' S' R2 S U S' R2 B2",
+    "buffer": "C",
+    "targets": "XVAD",
+    "htm": 10
+  },
+  "XWAL": {
+    "algorithm": "B2 U' B2 L B2 L' U L B2 L'",
+    "buffer": "C",
+    "targets": "XWAL",
+    "htm": 10
+  },
+  "XWEB": {
+    "algorithm": "B' R2 B D' B' R2 B R2 D R2",
+    "buffer": "C",
+    "targets": "XWEB",
+    "htm": 10
+  },
+  "XWKB": {
+    "algorithm": "B2 U' B2 R' B2 R U R' B2 R",
+    "buffer": "C",
+    "targets": "XWKB",
+    "htm": 10
+  },
+  "XWVA": {
+    "algorithm": "B2 R2 S U S' R2 S U' B2 S'",
+    "buffer": "C",
+    "targets": "XWVA",
+    "htm": 10
+  },
+  "XWVE": {
+    "algorithm": "D' R2 B' R2 B D B' R2 B R2",
+    "buffer": "C",
+    "targets": "XWVE",
+    "htm": 10
+  }
+}

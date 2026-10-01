@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { DEFAULT_EDGES, DEFAULT_CORNERS, DEFAULT_SPECIAL, AlgDef } from './default-algs';
+import { DEFAULT_5STYLE_EDGES, DEFAULT_5STYLE_CORNERS, FiveStyleAlgDef } from './default5-algo';
 
 export interface BaseAlg {
   id: string;
@@ -17,6 +18,9 @@ export class CommutatorService {
   private specialCommutators: Record<string, AlgDef> = {};
   private baseAlgs: BaseAlg[] = [];
 
+  private fiveStyleEdges: Record<string, FiveStyleAlgDef> = {};
+  private fiveStyleCorners: Record<string, FiveStyleAlgDef> = {};
+
   constructor() {
     this.loadData();
   }
@@ -26,6 +30,9 @@ export class CommutatorService {
     this.edgeCommutators = { ...DEFAULT_EDGES };
     this.cornerCommutators = { ...DEFAULT_CORNERS };
     this.specialCommutators = { ...DEFAULT_SPECIAL };
+
+    this.fiveStyleEdges = { ...DEFAULT_5STYLE_EDGES };
+    this.fiveStyleCorners = { ...DEFAULT_5STYLE_CORNERS };
 
     // Override with any user-saved ones
     const edges = localStorage.getItem('edgeCommutators');
@@ -71,6 +78,15 @@ export class CommutatorService {
           }
         }
       } catch (e) {}
+    }
+
+    const fiveStyleEdgesSaved = localStorage.getItem('fiveStyleEdges');
+    if (fiveStyleEdgesSaved) {
+      try { this.fiveStyleEdges = { ...this.fiveStyleEdges, ...JSON.parse(fiveStyleEdgesSaved) }; } catch (e) {}
+    }
+    const fiveStyleCornersSaved = localStorage.getItem('fiveStyleCorners');
+    if (fiveStyleCornersSaved) {
+      try { this.fiveStyleCorners = { ...this.fiveStyleCorners, ...JSON.parse(fiveStyleCornersSaved) }; } catch (e) {}
     }
 
     const baseSaved = localStorage.getItem('baseAlgs');
@@ -215,5 +231,32 @@ export class CommutatorService {
 
   private saveBaseAlgs() {
     localStorage.setItem('baseAlgs', JSON.stringify(this.baseAlgs));
+  }
+
+  // --- 5-Style Algos ---
+  get5StyleEdgeAlg(sequence: string): FiveStyleAlgDef | null {
+    return this.fiveStyleEdges[sequence.toUpperCase()] || null;
+  }
+
+  get5StyleCornerAlg(sequence: string): FiveStyleAlgDef | null {
+    return this.fiveStyleCorners[sequence.toUpperCase()] || null;
+  }
+
+  set5StyleEdgeAlg(sequence: string, alg: FiveStyleAlgDef) {
+    this.fiveStyleEdges[sequence.toUpperCase()] = alg;
+    localStorage.setItem('fiveStyleEdges', JSON.stringify(this.fiveStyleEdges));
+  }
+
+  set5StyleCornerAlg(sequence: string, alg: FiveStyleAlgDef) {
+    this.fiveStyleCorners[sequence.toUpperCase()] = alg;
+    localStorage.setItem('fiveStyleCorners', JSON.stringify(this.fiveStyleCorners));
+  }
+
+  getAll5StyleEdgePairs(): string[] {
+    return Object.keys(this.fiveStyleEdges);
+  }
+
+  getAll5StyleCornerPairs(): string[] {
+    return Object.keys(this.fiveStyleCorners);
   }
 }
