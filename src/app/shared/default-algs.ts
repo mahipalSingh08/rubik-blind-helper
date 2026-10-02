@@ -2234,8 +2234,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "L' U2 R' D R U2 R' D' R L"
   },
   "HK": {
-    "short": "[L' U : [D, R U' R']]",
-    "long": "L' U D R U' R' D' R U R' U' L"
+    "short": "[R, F' L2 F]",
+    "long": "R F' L2 F R' F' L2 F"
   },
   "HL": {
     "short": "[D, L' U L]",
@@ -2246,8 +2246,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "U R R D' R' U2 R D R' U2 R' U'"
   },
   "HO": {
-    "short": "[R D' : [R' U' R, D2]]",
-    "long": "R D' R' U' R D2 R' U R D' R'"
+    "short": "[L: [L F' L', B2]]",
+    "long": "L2 F' L' B2 L F L' B2 L'"
   },
   "HP": {
     "short": "[D2, R U R']",
@@ -2258,24 +2258,24 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "U' L U R U' L' U R'"
   },
   "HR": {
-    "short": "[U2 R : [R D' R', U]]",
-    "long": "U2 R R D' R' U R D R' U' R' U2"
+    "short": "[D': [D' F D, B2]]",
+    "long": "D2 F D B2 D' F' D B2 D"
   },
   "HT": {
-    "short": "[D' : [D', R U R']]",
-    "long": "D2 R U R' D R U' R' D"
+    "short": "[B' U2 B, D]",
+    "long": "B' U2 B D B' U2 B D'"
   },
   "HU": {
-    "short": "[D' R D U' : [R' U R, D2]]",
-    "long": "D' R D U' R' U R D2 R' U' R D U R' D"
+    "short": "[D2 B2: [B D2 B', U2]]",
+    "long": "D2 B' D2 B' U2 B D2 B' U2 B2 D2"
   },
   "HV": {
-    "short": "[D2 R : [R D' R', U']]",
-    "long": "D2 R R D' R' U' R D R' U R' D2"
+    "short": "[D: [R2, U L' U']]",
+    "long": "D R2 U L' U' R2 U L U' D'"
   },
   "HW": {
-    "short": "[R D' R' : [R' D R, U]]",
-    "long": "R D' R' R' D R U R' D' R U' R D R'"
+    "short": "[D L D', R2]",
+    "long": "D L D' R2 D L' D' R2"
   },
   "IA": {
     "short": "[L2 : [F2, R B2 R']]",
@@ -2298,56 +2298,56 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "L' R' D R U2 R' D' R U2 L"
   },
   "IK": {
-    "short": "[L' D' : [R' D R, U2]]",
-    "long": "L' D' R' D R U2 R' D' R U2 D L"
+    "short": "[L2: [L U2 L', D2]]",
+    "long": "L' U2 L' D2 L U2 L' D2 L2"
   },
   "IL": {
-    "short": "[D L' : [R' D' R, U2]]",
-    "long": "D L' R' D' R U2 R' D R U2 L D'"
+    "short": "[L2: [L' F2 L, B]]",
+    "long": "L F2 L B L' F2 L B' L2"
   },
   "IN": {
-    "short": "[R' : [U', R2 D' R2 D R2]]",
-    "long": "R' U' R2 D' R2 D R2 U R2 D' R2 D R2 R"
+    "short": "[L2 B2: [F' L2 F, R']]",
+    "long": "L2 B2 F' L2 F R' F' L2 F R B2 L2"
   },
   "IO": {
-    "short": "[L' D2 : [R' D R, U2]]",
-    "long": "L' D2 R' D R U2 R' D' R U2 D2 L"
+    "short": "[L2: [L U2 L', D]]",
+    "long": "L' U2 L' D L U2 L' D' L2"
   },
   "IP": {
     "short": "[L' : [R' D' R, U2]]",
     "long": "L' R' D' R U2 R' D R U2 L"
   },
   "IQ": {
-    "short": "[R U D' : [R' D' R, U2]]",
-    "long": "R U D' R' D' R U2 R' D R D U R'"
+    "short": "[L2: [L' F2 L, B2]]",
+    "long": "L F2 L B2 L' F2 L B2 L2"
   },
   "IR": {
-    "short": "[B2 D' L' : [R' D' R, U2]]",
-    "long": "B2 D' L' R' D' R U2 R' D R U2 L D B2"
+    "short": "[L D': [D' R2 D, L2]]",
+    "long": "L D2 R2 D L2 D' R2 D L2 D L'"
   },
   "IS": {
-    "short": "[D2 R' : [R D' R' D, F2]]",
-    "long": "D R' D F2 D' R D R' F2 R D2"
+    "short": "[D2 L2: [L U2 L', D2]]",
+    "long": "D2 L' U2 L' D2 L U2 L' D2 L2 D2"
   },
   "IT": {
-    "short": "[R U : [R' D' R, U2]]",
-    "long": "R U R' D' R U2 R' D R U2 U' R'"
+    "short": "[L: [F2, L B' L']]",
+    "long": "L F2 L B' L' F2 L B L2"
   },
   "IU": {
-    "short": "[R UD : [R' D' R, U2]]",
-    "long": "R UD R' D' R U2 R' D R U2 UD' R'"
+    "short": "[L: [R B2 R', F2]]",
+    "long": "L R B2 R' F2 R B2 R' F2 L'"
   },
   "IV": {
-    "short": "[D' R U D : [R' D' R, U2]]",
-    "long": "D' R U D R' D' R U2 R' D R U D' R' D"
+    "short": "[D2 L2: [U', R' D2 R]]",
+    "long": "D2 L2 U' R' D2 R U R' D2 R L2 D2"
   },
   "IW": {
-    "short": "[D R : [R D' R', U2]]",
-    "long": "D R2 D' R' U2 R D R' U2 R' D'"
+    "short": "[D L2: [U', R' D2 R]]",
+    "long": "D L2 U' R' D2 R U R' D2 R L2 D'"
   },
   "IX": {
-    "short": "[R : [R D' R', U2]]",
-    "long": "R2 D' R' U2 R D R' U2 R'"
+    "short": "[L2: [U', R' D2 R]]",
+    "long": "L2 U' R' D2 R U R' D2 R L2"
   },
   "KA": {
     "short": "[L' D2 L, U2]",
@@ -2374,44 +2374,44 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "R' F L F' R F L' F'"
   },
   "KH": {
-    "short": "[L' U : [R U' R', D]]",
-    "long": "L' U R U' R' D R U R' D' U' L"
+    "short": "[F' L2 F, R]",
+    "long": "F' L2 F R F' L2 F R'"
   },
   "KI": {
-    "short": "[L' D' : [U2, R' D R]]",
-    "long": "L' D' U2 R' D R U2 R' D' R D L"
+    "short": "[L2: [D2, L U2 L']]",
+    "long": "L2 D2 L U2 L' D2 L U2 L"
   },
   "KL": {
-    "short": "[F : [R U' R', D]]",
-    "long": "F R U' R' D R U R' D' F'"
+    "short": "[U L' U', R]",
+    "long": "U L' U' R U L U' R'"
   },
   "KN": {
-    "short": "[B' D' : [U2, R' D R]]",
-    "long": "B' D' U2 R' D R U2 R' D' R D B"
+    "short": "[B: [L' D2 L, U2]]",
+    "long": "B L' D2 L U2 L' D2 L U2 B'"
   },
   "KO": {
     "short": "[U : [R U' R', D']]",
     "long": "U R U' R' D' R U R' D U'"
   },
   "KQ": {
-    "short": "[U' B' : [R' U' R, D]]",
-    "long": "U' B' R' U' R D R' U R D' B U"
+    "short": "[D2: [B2, U F U']]",
+    "long": "D2 B2 U F U' B2 U F' U' D2"
   },
   "KR": {
-    "short": "[R : [U' L' U, R]]",
-    "long": "R U' L' U R U' L U R2"
+    "short": "[R', F L2 F']",
+    "long": "R' F L2 F' R F L2 F'"
   },
   "KS": {
-    "short": "[U' D : [R' U' R, D2]]",
-    "long": "U' D R' U' R D2 R' U R D U"
+    "short": "[D2, L U2 L']",
+    "long": "D2 L U2 L' D2 L U2 L'"
   },
   "KT": {
-    "short": "[B2 R : [U' L' U, R]]",
-    "long": "B2 R U' L' U R U' L U R2 B2"
+    "short": "[B2: [R', F L2 F']]",
+    "long": "B2 R' F L2 F' R F L2 F' B2"
   },
   "KU": {
-    "short": "[R : [R' U R U', F2]]",
-    "long": "U R U' F2 U R' U' R F2 R'"
+    "short": "[L2: [L' D2 L, U2]]",
+    "long": "L D2 L U2 L' D2 L U2 L2"
   },
   "KW": {
     "short": "[U R D' : [U', R' D R]]",
@@ -2446,12 +2446,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "D R U R' D R U' R' D' D'"
   },
   "LI": {
-    "short": "[D L' : [U2, R' D' R]]",
-    "long": "D L' U2 R' D' R U2 R' D R L D'"
+    "short": "[L2: [B, L' F2 L]]",
+    "long": "L2 B L' F2 L B' L' F2 L'"
   },
   "LK": {
-    "short": "[F : [D, R U' R']]",
-    "long": "F D R U' R' D' R U R' F'"
+    "short": "[R, U L' U']",
+    "long": "R U L' U' R' U L U'"
   },
   "LN": {
     "short": "[B2 : [D', B' U2 B]]",
@@ -2518,12 +2518,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "U R U2 R D' R' U2 R D R' R' U'"
   },
   "NI": {
-    "short": "[R' : [R2 D' R2 D R2, U']]",
-    "long": "R' R2 D' R2 D R2 U' R2 D' R2 D R2 U R"
+    "short": "[L2 B2: [R', F' L2 F]]",
+    "long": "L2 B2 R' F' L2 F R F' L2 F B2 L2"
   },
   "NK": {
-    "short": "[B' D' : [R' D R, U2]]",
-    "long": "B' D' R' D R U2 R' D' R U2 D B"
+    "short": "[B: [U2, L' D2 L]]",
+    "long": "B U2 L' D2 L U2 L' D2 L B'"
   },
   "NL": {
     "short": "[B2 : [B' U2 B, D']]",
@@ -2590,12 +2590,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "B U' B' D2 B U B' D2"
   },
   "OH": {
-    "short": "[R D : [R' U' R, D2]]",
-    "long": "R D R' U' R D2 R' U R D R'"
+    "short": "[L: [B2, L F' L']]",
+    "long": "L B2 L F' L' B2 L F L2"
   },
   "OI": {
-    "short": "[L' D2 : [U2, R' D R]]",
-    "long": "L' D2 U2 R' D R U2 R' D' R D2 L"
+    "short": "[L2: [D, L U2 L']]",
+    "long": "L2 D L U2 L' D' L U2 L"
   },
   "OK": {
     "short": "[U : [D', R U' R']]",
@@ -2734,12 +2734,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "R U' L U R' U' L' U"
   },
   "QI": {
-    "short": "[R U' D' : [R' D' R, U2]]",
-    "long": "R U' D' R' D' R U2 R' D R D U' R'"
+    "short": "[L2: [B2, L' F2 L]]",
+    "long": "L2 B2 L' F2 L B2 L' F2 L'"
   },
   "QK": {
-    "short": "[U' B' : [D, R' U' R]]",
-    "long": "U' B' D R' U' R D' R' U R B U"
+    "short": "[D2: [U F U', B2]]",
+    "long": "D2 U F U' B2 U F' U' B2 D2"
   },
   "QL": {
     "short": "[R, B L2 B']",
@@ -2798,16 +2798,16 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "D F L2 F' R' F L2 F' R D'"
   },
   "RH": {
-    "short": "[U2 R : [U, R D' R']]",
-    "long": "U2 R U R D' R' U' R D R' R' U2"
+    "short": "[D': [B2, D' F D]]",
+    "long": "D' B2 D' F D B2 D' F' D2"
   },
   "RI": {
-    "short": "[B2 D' L' : [U2, R' D' R]]",
-    "long": "B2 D' L' U2 R' D' R U2 R' D R L D B2"
+    "short": "[L D': [L2, D' R2 D]]",
+    "long": "L D' L2 D' R2 D L2 D' R2 D2 L'"
   },
   "RK": {
-    "short": "[R : [R, U' L' U]]",
-    "long": "R2 U' L' U R' U' L U R'"
+    "short": "[F L2 F', R']",
+    "long": "F L2 F' R' F L2 F' R"
   },
   "RL": {
     "short": "[B' R B, L2]",
@@ -2878,12 +2878,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "L U2 L' D' L U2 L' D"
   },
   "SI": {
-    "short": "[D2 R' : [F2, R D' R' D]]",
-    "long": "D2 R' F2 R D' R' D F2 D' R D'"
+    "short": "[D2 L2: [D2, L U2 L']]",
+    "long": "D2 L2 D2 L U2 L' D2 L U2 L D2"
   },
   "SK": {
-    "short": "[U' D' : [R' U' R, D2]]",
-    "long": "U' D' R' U' R D2 R' U R D' U"
+    "short": "[L U2 L', D2]",
+    "long": "L U2 L' D2 L U2 L' D2"
   },
   "SL": {
     "short": "[B2 : [R, B L2 B']]",
@@ -2950,16 +2950,16 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "D R F' L2 F R' F' L2 F D'"
   },
   "TH": {
-    "short": "[D' : [R U R', D']]",
-    "long": "D' R U R' D' R U' R' D2"
+    "short": "[D, B' U2 B]",
+    "long": "D B' U2 B D' B' U2 B"
   },
   "TI": {
-    "short": "[R U' : [R' D' R, U2]]",
-    "long": "R U' R' D' R U2 R' D R U2 U R'"
+    "short": "[L: [L B' L', F2]]",
+    "long": "L2 B' L' F2 L B L' F2 L'"
   },
   "TK": {
-    "short": "[B2 R : [R, U' L' U]]",
-    "long": "B2 R2 U' L' U R' U' L U R' B2"
+    "short": "[B2: [F L2 F', R']]",
+    "long": "B2 F L2 F' R' F L2 F' R B2"
   },
   "TL": {
     "short": "[D2, L' U L]",
@@ -3018,16 +3018,16 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "L2 U2 L' D' L U2 L' D L'"
   },
   "UH": {
-    "short": "[D' R D' U' : [R' U R, D2]]",
-    "long": "D' R D' U' R' U R D2 R' U' R D' U R' D"
+    "short": "[D2 B2: [U2, B D2 B']]",
+    "long": "D2 B2 U2 B D2 B' U2 B D2 B D2"
   },
   "UI": {
-    "short": "[R U'D : [R' D' R, U2]]",
-    "long": "R U'D R' D' R U2 R' D R U2 U'D' R'"
+    "short": "[L: [F2, R B2 R']]",
+    "long": "L F2 R B2 R' F2 R B2 R' L'"
   },
   "UK": {
-    "short": "[R : [F2, R' U R U']]",
-    "long": "R F2 R' U R U' F2 U R' U'"
+    "short": "[L2: [U2, L' D2 L]]",
+    "long": "L2 U2 L' D2 L U2 L' D2 L'"
   },
   "UN": {
     "short": "[U' R' : [U2, R' D R]]",
@@ -3094,12 +3094,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "D' F2 D' B' D F2 D' B D2"
   },
   "VH": {
-    "short": "[D2 R : [U', R D' R']]",
-    "long": "D2 R U' R D' R' U R D R' R' D2"
+    "short": "[D: [U L' U', R2]]",
+    "long": "D U L' U' R2 U L U' R2 D'"
   },
   "VI": {
-    "short": "[D' R U D : [U2, R' D' R]]",
-    "long": "D' R U' D R' D' R U2 R' D R D' U' R' D"
+    "short": "[D2 L2: [R' D2 R, U']]",
+    "long": "D2 L2 R' D2 R U' R' D2 R U L2 D2"
   },
   "VL": {
     "short": "[R U' R' : [U2, R' D R]]",
@@ -3166,12 +3166,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "R2 B' L B R2 B' L' B"
   },
   "WH": {
-    "short": "[R D' R' : [U, R' D R]]",
-    "long": "R D' R' U R' D R U' R' D' R R D R'"
+    "short": "[R2, D L D']",
+    "long": "R2 D L D' R2 D L' D'"
   },
   "WI": {
-    "short": "[D R : [U2, R D' R']]",
-    "long": "D R U2 R D' R' U2 R D R2 D'"
+    "short": "[D L2: [R' D2 R, U']]",
+    "long": "D L2 R' D2 R U' R' D2 R U L2 D'"
   },
   "WK": {
     "short": "[U R D' : [R' D R, U']]",
@@ -3238,8 +3238,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "B2 U' B' D2 B U B' D2 B'"
   },
   "XI": {
-    "short": "[R : [U2, R D' R']]",
-    "long": "R U2 R D' R' U2 R D R2"
+    "short": "[L2: [R' D2 R, U']]",
+    "long": "L2 R' D2 R U' R' D2 R U L2"
   },
   "XK": {
     "short": "R U r2' D' R' D r2 U'",
