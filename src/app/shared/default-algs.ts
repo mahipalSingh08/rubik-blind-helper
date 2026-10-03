@@ -2414,12 +2414,12 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "L D2 L U2 L' D2 L U2 L2"
   },
   "KW": {
-    "short": "[U R D' : [U', R' D R]]",
-    "long": "U R D' U' R' D R U R' D' R D R' U'"
+    "short": "[u : [R', D L2 D']]",
+    "long": "u R' D L2 D' R D L2 D' u'"
   },
   "KX": {
-    "short": "U r2' D' R D r2 U' R'",
-    "long": "U r2' D' R D r2 U' R'"
+    "short": "[U L2 U', R]",
+    "long": "U L2 U' R U L2 U' R'"
   },
   "LA": {
     "short": "[B D' B', U2]",
@@ -3174,8 +3174,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "D L2 R' D2 R U' R' D2 R U L2 D'"
   },
   "WK": {
-    "short": "[U R D' : [R' D R, U']]",
-    "long": "U R D' R' D R U' R' D' R U D R' U'"
+    "short": "[u : [D L2 D', R']]",
+    "long": "u D L2 D' R' D L2 D' R u'"
   },
   "WL": {
     "short": "[D R : [U', R D' R']]",
@@ -3242,8 +3242,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "L2 R' D2 R U' R' D2 R U L2"
   },
   "XK": {
-    "short": "R U r2' D' R' D r2 U'",
-    "long": "R U r2' D' R' D r2 U'"
+    "short": "[R, U L2 U']",
+    "long": "R U L2 U' R' U L2 U'"
   },
   "XL": {
     "short": "[D R D : [R' D' R, U]]",
