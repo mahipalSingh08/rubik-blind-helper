@@ -9,6 +9,7 @@ import { CubeVisualizerComponent } from './cube-visualizer/cube-visualizer.compo
 import { MemoHelperComponent } from './memo-helper/memo-helper.component';
 import { LearnComponent } from './learn/learn.component';
 import { FiveStyleDbComponent } from './five-style-db/five-style-db.component';
+import { UniqueCasesComponent } from './unique-cases/unique-cases.component';
 
 export const routes: Routes = [
   { path: 'word-association', component: WordAssociationComponent },
@@ -18,6 +19,7 @@ export const routes: Routes = [
   { path: 'method-reference', component: MethodReferenceComponent },
   { path: 'algorithms', component: AlgorithmsComponent },
   { path: '5-style-db', component: FiveStyleDbComponent },
+  { path: '3-style-unique', component: UniqueCasesComponent },
   { path: 'learn', component: LearnComponent },
   { path: 'cube-visualizer', component: CubeVisualizerComponent },
   { path: 'memo-helper', component: MemoHelperComponent },

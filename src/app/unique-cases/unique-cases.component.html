@@ -1,0 +1,64 @@
+<div class="unique-cases-container">
+  <div class="header">
+    <h1>3-Style Unique Cases</h1>
+    <div class="toggle-group">
+      <button class="btn btn-outline" 
+              [class.active]="currentType === 'edge'" 
+              (click)="setType('edge')">Edges</button>
+      <button class="btn btn-outline" 
+              [class.active]="currentType === 'corner'" 
+              (click)="setType('corner')">Corners</button>
+    </div>
+  </div>
+
+  <table class="unique-table">
+    <thead>
+      <tr>
+        <th>Case</th>
+        <th>Inverse</th>
+        <th>Mirror</th>
+        <th>Mirror-Inverse</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of currentCases">
+      <!-- Variants Row -->
+      <tr class="variants-row">
+        <td 
+          class="clickable-cell" 
+          [class.active]="item.selectedVariant === item.base"
+          (click)="selectVariant(item, item.base)">
+          {{ item.base }}
+        </td>
+        <td 
+          class="clickable-cell" 
+          [class.active]="item.selectedVariant === item.inverse"
+          [class.disabled]="!item.inverse"
+          (click)="selectVariant(item, item.inverse)">
+          {{ item.inverse || '-' }}
+        </td>
+        <td 
+          class="clickable-cell" 
+          [class.active]="item.selectedVariant === item.mirror"
+          [class.disabled]="!item.mirror"
+          (click)="selectVariant(item, item.mirror)">
+          {{ item.mirror || '-' }}
+        </td>
+        <td 
+          class="clickable-cell" 
+          [class.active]="item.selectedVariant === item.mirrorInverse"
+          [class.disabled]="!item.mirrorInverse"
+          (click)="selectVariant(item, item.mirrorInverse)">
+          {{ item.mirrorInverse || '-' }}
+        </td>
+      </tr>
+      <!-- Algorithm Row -->
+      <tr class="algorithm-row">
+        <td colspan="4">
+          <div class="alg-content">
+            <span class="alg-text">{{ item.selectedAlgorithm }}</span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

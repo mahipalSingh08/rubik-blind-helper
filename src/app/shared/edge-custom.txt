@@ -29,3 +29,13 @@ just replace short and long algo but not its respective place
 7 when i say optimize some pair (say XY) then you have to optimzi its long algo and then copy XY's 
 long algo and generate opposite pair (YX) using rule 2 and edit YX as well
 
+--------------------------------------------------------------------------------
+
+ok great, in both unique files algos are there but i dont want those algos, i want whatever algo we have in our default-algos.ts file 
+
+so your first task is to read cases from unique files and find algo from that case in default and copy default case algo/commutator to unique files, and of course you have to keep edge cases to edge unique and corner cases to corner unique
+
+becuase in default i have reviewed every case .
+
+if you got my task then give me some example of edge and corner in this chat only then i will ask to edit all the cases
+

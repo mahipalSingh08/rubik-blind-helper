@@ -1163,8 +1163,7 @@
     "algorithm": "U' S' R2 S R2 U",
     "htm": 6,
     "derive": {
-      "inverse": "XV",
-      "mirror": "XV"
+      "inverse": "XV"
     }
   }
 }
