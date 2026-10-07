@@ -1,7 +1,7 @@
 {
   "AB": {
-    "commutator": "B:[B R2 B',L']",
-    "algorithm": "B2 R2 B' L' B R2 B' L B'",
+    "commutator": "AA",
+    "algorithm": "R' F R' B2 R F' R' B2 R2",
     "htm": 9,
     "derive": {
       "inverse": "BA",
@@ -10,9 +10,9 @@
     }
   },
   "AF": {
-    "commutator": "B:[B R2 B',L2]",
-    "algorithm": "B2 R2 B' L2 B R2 B' L2 B'",
-    "htm": 9,
+    "commutator": "[F : [U2, R' D' R]]",
+    "algorithm": "F U2 R' D' R U2 R' D R F'",
+    "htm": 10,
     "derive": {
       "inverse": "FA",
       "mirror": "AQ",
@@ -20,7 +20,7 @@
     }
   },
   "AG": {
-    "commutator": "[R' D R,U2]",
+    "commutator": "[R' D R, U2]",
     "algorithm": "R' D R U2 R' D' R U2",
     "htm": 8,
     "derive": {
@@ -30,8 +30,8 @@
     }
   },
   "AH": {
-    "commutator": "[F D2 F',U2]",
-    "algorithm": "F D2 F' U2 F D2 F' U2",
+    "commutator": "[U2, L' D' L]",
+    "algorithm": "U2 L' D' L U2 L' D L",
     "htm": 8,
     "derive": {
       "inverse": "HA",
@@ -40,7 +40,7 @@
     }
   },
   "AI": {
-    "commutator": "L2:[R B2 R',F2]",
+    "commutator": "[L2 : [R B2 R', F2]]",
     "algorithm": "L2 R B2 R' F2 R B2 R' F2 L2",
     "htm": 10,
     "derive": {
@@ -50,8 +50,8 @@
     }
   },
   "AK": {
-    "commutator": "[F D F',U2]",
-    "algorithm": "F D F' U2 F D' F' U2",
+    "commutator": "[U2, L' D2 L]",
+    "algorithm": "U2 L' D2 L U2 L' D2 L",
     "htm": 8,
     "derive": {
       "inverse": "KA",
@@ -60,7 +60,7 @@
     }
   },
   "AL": {
-    "commutator": "B:[B' U2 B,D']",
+    "commutator": "[U2, B D' B']",
     "algorithm": "U2 B D' B' U2 B D B'",
     "htm": 8,
     "derive": {
@@ -70,8 +70,8 @@
     }
   },
   "AU": {
-    "commutator": "D' L2 D':[D' R2 D,L2]",
-    "algorithm": "D' L2 D2 R2 D L2 D' R2 D L2 D L2 D",
+    "commutator": "[L D' L' : [U2, L' D L]]",
+    "algorithm": "L D' L' U2 L' D L U2 L' D' L2 D L'",
     "htm": 13,
     "derive": {
       "inverse": "UA",
@@ -80,7 +80,7 @@
     }
   },
   "AV": {
-    "commutator": "L2 D2:[U L2 U',R2]",
+    "commutator": "[L2 D2 : [U L2 U', R2]]",
     "algorithm": "L2 D2 U L2 U' R2 U L2 U' R2 D2 L2",
     "htm": 12,
     "derive": {
@@ -88,15 +88,15 @@
     }
   },
   "AX": {
-    "commutator": "L2 D':[D' R2 D,L2]",
-    "algorithm": "L2 D2 R2 D L2 D' R2 D L2 D L2",
-    "htm": 11,
+    "commutator": "[D2 L2 D2 : [U L2 U', R2]]",
+    "algorithm": "D2 L2 D2 U L2 U' R2 U L2 U' R2 D2 L2 D2",
+    "htm": 14,
     "derive": {
       "inverse": "XA"
     }
   },
   "BD": {
-    "commutator": "L2:[R' F' R,B2]",
+    "commutator": "[L2 : [R' F' R, B2]]",
     "algorithm": "L2 R' F' R B2 R' F R B2 L2",
     "htm": 10,
     "derive": {
@@ -105,9 +105,9 @@
     }
   },
   "BE": {
-    "commutator": "[R' F' R,B']",
-    "algorithm": "R' F' R B' R' F R B",
-    "htm": 8,
+    "commutator": "[R : [U, R D R']]",
+    "algorithm": "R U R D R' U' R D' R2",
+    "htm": 9,
     "derive": {
       "inverse": "EB",
       "mirror": "DR",
@@ -115,8 +115,8 @@
     }
   },
   "BF": {
-    "commutator": "[L' B L,F']",
-    "algorithm": "L' B L F' L' B' L F",
+    "commutator": "[F, R B R']",
+    "algorithm": "F R B R' F' R B' R'",
     "htm": 8,
     "derive": {
       "inverse": "FB",
@@ -125,7 +125,7 @@
     }
   },
   "BG": {
-    "commutator": "[R' D R,U]",
+    "commutator": "[R' D R, U]",
     "algorithm": "R' D R U R' D' R U'",
     "htm": 8,
     "derive": {
@@ -135,8 +135,8 @@
     }
   },
   "BH": {
-    "commutator": "[F D2 F',U]",
-    "algorithm": "F D2 F' U F D2 F' U'",
+    "commutator": "[U', R D' R']",
+    "algorithm": "U' R D' R' U R D R'",
     "htm": 8,
     "derive": {
       "inverse": "HB",
@@ -145,9 +145,9 @@
     }
   },
   "BI": {
-    "commutator": "L:[D' B2 D,F2]",
-    "algorithm": "L D' B2 D F2 D' B2 D F2 L'",
-    "htm": 10,
+    "commutator": "[R : [U2, R D R']]",
+    "algorithm": "R U2 R D R' U2 R D' R2",
+    "htm": 9,
     "derive": {
       "inverse": "IB",
       "mirror": "DN",
@@ -155,8 +155,8 @@
     }
   },
   "BK": {
-    "commutator": "[F D F',U]",
-    "algorithm": "F D F' U F D' F' U'",
+    "commutator": "[U', B' D B]",
+    "algorithm": "U' B' D B U B' D' B",
     "htm": 8,
     "derive": {
       "inverse": "KB",
@@ -165,7 +165,7 @@
     }
   },
   "BL": {
-    "commutator": "D:[R' D' R,U]",
+    "commutator": "[D : [R' D' R, U]]",
     "algorithm": "D R' D' R U R' D R U' D'",
     "htm": 10,
     "derive": {
@@ -175,8 +175,8 @@
     }
   },
   "BO": {
-    "commutator": "[R' F' R,B]",
-    "algorithm": "R' F' R B R' F R B'",
+    "commutator": "[U', R D R']",
+    "algorithm": "U' R D R' U R D' R'",
     "htm": 8,
     "derive": {
       "inverse": "OB",
@@ -185,7 +185,7 @@
     }
   },
   "BP": {
-    "commutator": "[R' D' R,U]",
+    "commutator": "[R' D' R, U]",
     "algorithm": "R' D' R U R' D R U'",
     "htm": 8,
     "derive": {
@@ -195,9 +195,9 @@
     }
   },
   "BR": {
-    "commutator": "L':[R' F' R,B2]",
-    "algorithm": "L' R' F' R B2 R' F R B2 L",
-    "htm": 10,
+    "commutator": "[R' : [R' D' R, U2]]",
+    "algorithm": "R2 D' R U2 R' D R U2 R",
+    "htm": 9,
     "derive": {
       "inverse": "RB",
       "mirror": "DE",
@@ -205,7 +205,7 @@
     }
   },
   "BS": {
-    "commutator": "[R' D2 R,U]",
+    "commutator": "[R' D2 R, U]",
     "algorithm": "R' D2 R U R' D2 R U'",
     "htm": 8,
     "derive": {
@@ -215,7 +215,7 @@
     }
   },
   "BT": {
-    "commutator": "[F D' F',U]",
+    "commutator": "[F D' F', U]",
     "algorithm": "F D' F' U F D F' U'",
     "htm": 8,
     "derive": {
@@ -225,8 +225,8 @@
     }
   },
   "BU": {
-    "commutator": "[D' B2 D,F2]",
-    "algorithm": "D' B2 D F2 D' B2 D F2",
+    "commutator": "[F2, R B R']",
+    "algorithm": "F2 R B R' F2 R B' R'",
     "htm": 8,
     "derive": {
       "inverse": "UB",
@@ -235,9 +235,9 @@
     }
   },
   "BV": {
-    "commutator": "D':[D' B2 D,F2]",
-    "algorithm": "D2 B2 D F2 D' B2 D F2 D",
-    "htm": 9,
+    "commutator": "[D' : [F2, R B R']]",
+    "algorithm": "D' F2 R B R' F2 R B' R' D",
+    "htm": 10,
     "derive": {
       "inverse": "VB",
       "mirror": "DV",
@@ -245,9 +245,9 @@
     }
   },
   "BW": {
-    "commutator": "D2:[D' B2 D,F2]",
-    "algorithm": "D B2 D F2 D' B2 D F2 D2",
-    "htm": 9,
+    "commutator": "[D2 : [F2, R B R']]",
+    "algorithm": "D2 F2 R B R' F2 R B' R' D2",
+    "htm": 10,
     "derive": {
       "inverse": "WB",
       "mirror": "DU",
@@ -255,7 +255,7 @@
     }
   },
   "BX": {
-    "commutator": "[R' F' R,B2]",
+    "commutator": "[R' F' R, B2]",
     "algorithm": "R' F' R B2 R' F R B2",
     "htm": 8,
     "derive": {
@@ -265,8 +265,8 @@
     }
   },
   "EF": {
-    "commutator": "[U B U',F']",
-    "algorithm": "U B U' F' U B' U' F",
+    "commutator": "[L, U' R' U]",
+    "algorithm": "L U' R' U L' U' R U",
     "htm": 8,
     "derive": {
       "inverse": "FE",
@@ -275,7 +275,7 @@
     }
   },
   "EG": {
-    "commutator": "D:[D' L2 D,R']",
+    "commutator": "[L2, D R' D']",
     "algorithm": "L2 D R' D' L2 D R D'",
     "htm": 8,
     "derive": {
@@ -285,7 +285,7 @@
     }
   },
   "EH": {
-    "commutator": "L':[B R2 B',L]",
+    "commutator": "[L', B R2 B']",
     "algorithm": "L' B R2 B' L B R2 B'",
     "htm": 8,
     "derive": {
@@ -295,7 +295,7 @@
     }
   },
   "EI": {
-    "commutator": "L':[L' D' L,U2]",
+    "commutator": "[L' : [L' D' L, U2]]",
     "algorithm": "L2 D' L U2 L' D L U2 L",
     "htm": 9,
     "derive": {
@@ -305,7 +305,7 @@
     }
   },
   "EK": {
-    "commutator": "[D' L2 D,R']",
+    "commutator": "[D' L2 D, R']",
     "algorithm": "D' L2 D R' D' L2 D R",
     "htm": 8,
     "derive": {
@@ -315,7 +315,7 @@
     }
   },
   "EL": {
-    "commutator": "D:[R' B2 R,F]",
+    "commutator": "[D : [R' B2 R, F]]",
     "algorithm": "D R' B2 R F R' B2 R F' D'",
     "htm": 10,
     "derive": {
@@ -325,7 +325,7 @@
     }
   },
   "EN": {
-    "commutator": "L B':[B' L2 B,R2]",
+    "commutator": "[L B' : [B' L2 B, R2]]",
     "algorithm": "L B2 L2 B R2 B' L2 B R2 B L'",
     "htm": 11,
     "derive": {
@@ -335,7 +335,7 @@
     }
   },
   "EO": {
-    "commutator": "[L F' L',B2]",
+    "commutator": "[L F' L', B2]",
     "algorithm": "L F' L' B2 L F L' B2",
     "htm": 8,
     "derive": {
@@ -345,7 +345,7 @@
     }
   },
   "EP": {
-    "commutator": "[R' B2 R,F]",
+    "commutator": "[R' B2 R, F]",
     "algorithm": "R' B2 R F R' B2 R F'",
     "htm": 8,
     "derive": {
@@ -355,8 +355,8 @@
     }
   },
   "EQ": {
-    "commutator": "[B L B',R]",
-    "algorithm": "B L B' R B L' B' R'",
+    "commutator": "[R', F' L F]",
+    "algorithm": "R' F' L F R F' L' F",
     "htm": 8,
     "derive": {
       "inverse": "QE",
@@ -365,7 +365,7 @@
     }
   },
   "ES": {
-    "commutator": "D2:[D' L2 D,R']",
+    "commutator": "[D2 : [D' L2 D, R']]",
     "algorithm": "D L2 D R' D' L2 D R D2",
     "htm": 9,
     "derive": {
@@ -375,7 +375,7 @@
     }
   },
   "ET": {
-    "commutator": "D':[R' B2 R,F]",
+    "commutator": "[D' : [R' B2 R, F]]",
     "algorithm": "D' R' B2 R F R' B2 R F' D",
     "htm": 10,
     "derive": {
@@ -385,7 +385,7 @@
     }
   },
   "EU": {
-    "commutator": "[D' B D,F2]",
+    "commutator": "[D' B D, F2]",
     "algorithm": "D' B D F2 D' B' D F2",
     "htm": 8,
     "derive": {
@@ -395,9 +395,9 @@
     }
   },
   "EV": {
-    "commutator": "D':[D' B D,F2]",
-    "algorithm": "D2 B D F2 D' B' D F2 D",
-    "htm": 9,
+    "commutator": "[u' : [D' L D, R2]]",
+    "algorithm": "u' D' L D R2 D' L' D R2 u",
+    "htm": 10,
     "derive": {
       "inverse": "VE",
       "mirror": "RV",
@@ -405,9 +405,9 @@
     }
   },
   "EW": {
-    "commutator": "D2:[D' B D,F2]",
-    "algorithm": "D B D F2 D' B' D F2 D2",
-    "htm": 9,
+    "commutator": "[R2, F' L F]",
+    "algorithm": "R2 F' L F R2 F' L' F",
+    "htm": 8,
     "derive": {
       "inverse": "WE",
       "mirror": "RU",
@@ -415,7 +415,7 @@
     }
   },
   "EX": {
-    "commutator": "[L F' L',B']",
+    "commutator": "[L F' L', B']",
     "algorithm": "L F' L' B' L F L' B",
     "htm": 8,
     "derive": {
@@ -425,7 +425,7 @@
     }
   },
   "FG": {
-    "commutator": "[U' R' U,L']",
+    "commutator": "[U' R' U, L']",
     "algorithm": "U' R' U L' U' R U L",
     "htm": 8,
     "derive": {
@@ -435,7 +435,7 @@
     }
   },
   "FH": {
-    "commutator": "[U' R' U,L2]",
+    "commutator": "[U' R' U, L2]",
     "algorithm": "U' R' U L2 U' R U L2",
     "htm": 8,
     "derive": {
@@ -445,8 +445,8 @@
     }
   },
   "FK": {
-    "commutator": "[D' L D,R']",
-    "algorithm": "D' L D R' D' L' D R",
+    "commutator": "[R, U L U']",
+    "algorithm": "R U L U' R' U L' U'",
     "htm": 8,
     "derive": {
       "inverse": "KF",
@@ -455,7 +455,7 @@
     }
   },
   "FL": {
-    "commutator": "D':[U' R' U,L2]",
+    "commutator": "[D' : [U' R' U, L2]]",
     "algorithm": "D' U' R' U L2 U' R U L2 D",
     "htm": 10,
     "derive": {
@@ -465,7 +465,7 @@
     }
   },
   "FN": {
-    "commutator": "B':[B' L2 B,R2]",
+    "commutator": "[B' : [B' L2 B, R2]]",
     "algorithm": "B2 L2 B R2 B' L2 B R2 B",
     "htm": 9,
     "derive": {
@@ -475,8 +475,8 @@
     }
   },
   "FO": {
-    "commutator": "[U' B U,F]",
-    "algorithm": "U' B U F U' B' U F'",
+    "commutator": "[F', L' B2 L]",
+    "algorithm": "F' L' B2 L F L' B2 L",
     "htm": 8,
     "derive": {
       "inverse": "OF",
@@ -485,8 +485,8 @@
     }
   },
   "FP": {
-    "commutator": "D2:[U' R' U,L2]",
-    "algorithm": "D2 U' R' U L2 U' R U L2 D2",
+    "commutator": "[u : [L', U R2 U']]",
+    "algorithm": "u L' U R2 U' L U R2 U' u'",
     "htm": 10,
     "derive": {
       "inverse": "PF",
@@ -495,8 +495,8 @@
     }
   },
   "FQ": {
-    "commutator": "[U' B' U,F]",
-    "algorithm": "U' B' U F U' B U F'",
+    "commutator": "[R', U L U']",
+    "algorithm": "R' U L U' R U L' U'",
     "htm": 8,
     "derive": {
       "inverse": "QF",
@@ -504,7 +504,7 @@
     }
   },
   "FS": {
-    "commutator": "[R B2 R',F]",
+    "commutator": "[R B2 R', F]",
     "algorithm": "R B2 R' F R B2 R' F'",
     "htm": 8,
     "derive": {
@@ -514,9 +514,9 @@
     }
   },
   "FT": {
-    "commutator": "D:[U' R' U,L2]",
-    "algorithm": "D U' R' U L2 U' R U L2 D'",
-    "htm": 10,
+    "commutator": "[F', U B2 U']",
+    "algorithm": "F' U B2 U' F U B2 U'",
+    "htm": 8,
     "derive": {
       "inverse": "TF",
       "mirror": "QG",
@@ -524,7 +524,7 @@
     }
   },
   "FU": {
-    "commutator": "L2:[L' D' L,U2]",
+    "commutator": "[L2 : [L' D' L, U2]]",
     "algorithm": "L D' L U2 L' D L U2 L2",
     "htm": 9,
     "derive": {
@@ -534,8 +534,8 @@
     }
   },
   "FV": {
-    "commutator": "D:[B' L2 B,R2]",
-    "algorithm": "D B' L2 B R2 B' L2 B R2 D'",
+    "commutator": "[D : [R2, U L U']]",
+    "algorithm": "D R2 U L U' R2 U L' U' D'",
     "htm": 10,
     "derive": {
       "inverse": "VF",
@@ -544,8 +544,8 @@
     }
   },
   "FW": {
-    "commutator": "[B' L2 B,R2]",
-    "algorithm": "B' L2 B R2 B' L2 B R2",
+    "commutator": "[R2, U L U']",
+    "algorithm": "R2 U L U' R2 U L' U'",
     "htm": 8,
     "derive": {
       "inverse": "WF",
@@ -554,7 +554,7 @@
     }
   },
   "FX": {
-    "commutator": "[U' B2 U,F]",
+    "commutator": "[U' B2 U, F]",
     "algorithm": "U' B2 U F U' B2 U F'",
     "htm": 8,
     "derive": {
@@ -564,7 +564,7 @@
     }
   },
   "GH": {
-    "commutator": "[D R' D',L']",
+    "commutator": "[D R' D', L']",
     "algorithm": "D R' D' L' D R D' L",
     "htm": 8,
     "derive": {
@@ -574,7 +574,7 @@
     }
   },
   "GI": {
-    "commutator": "D L':[L' D2 L,U2]",
+    "commutator": "[D L': [L' D2 L, U2]]",
     "algorithm": "D L2 D2 L U2 L' D2 L U2 L D'",
     "htm": 11,
     "derive": {
@@ -584,7 +584,7 @@
     }
   },
   "GK": {
-    "commutator": "[F L F',R']",
+    "commutator": "[F L F', R']",
     "algorithm": "F L F' R' F L' F' R",
     "htm": 8,
     "derive": {
@@ -594,7 +594,7 @@
     }
   },
   "GN": {
-    "commutator": "B':[B' L B,R2]",
+    "commutator": "[B': [B' L B, R2]]",
     "algorithm": "B2 L B R2 B' L' B R2 B",
     "htm": 9,
     "derive": {
@@ -604,7 +604,7 @@
     }
   },
   "GO": {
-    "commutator": "D2:[B U' B',D2]",
+    "commutator": "[D2, B U' B']",
     "algorithm": "D2 B U' B' D2 B U B'",
     "htm": 8,
     "derive": {
@@ -614,8 +614,8 @@
     }
   },
   "GP": {
-    "commutator": "L:[B' U2 B,D2]",
-    "algorithm": "L B' U2 B D2 B' U2 B D2 L'",
+    "commutator": "[L: [D2, R U R']]",
+    "algorithm": "L D2 R U R' D2 R U' R' L'",
     "htm": 10,
     "derive": {
       "inverse": "PG",
@@ -624,7 +624,7 @@
     }
   },
   "GS": {
-    "commutator": "D':[L U2 L',D]",
+    "commutator": "[D', L U2 L']",
     "algorithm": "D' L U2 L' D L U2 L'",
     "htm": 8,
     "derive": {
@@ -634,7 +634,7 @@
     }
   },
   "GT": {
-    "commutator": "D:[F' L2 F,R]",
+    "commutator": "[D: [F' L2 F, R]]",
     "algorithm": "D F' L2 F R F' L2 F R' D'",
     "htm": 10,
     "derive": {
@@ -643,9 +643,9 @@
     }
   },
   "GV": {
-    "commutator": "D':[D' B' D,F2]",
-    "algorithm": "D2 B' D F2 D' B D F2 D",
-    "htm": 9,
+    "commutator": "[u' : [D' L' D, R2]]",
+    "algorithm": "u' D' L' D R2 D' L D R2 u",
+    "htm": 10,
     "derive": {
       "inverse": "VG",
       "mirror": "TV",
@@ -653,7 +653,7 @@
     }
   },
   "GW": {
-    "commutator": "[B' L B,R2]",
+    "commutator": "[B' L B, R2]",
     "algorithm": "B' L B R2 B' L' B R2",
     "htm": 8,
     "derive": {
@@ -663,7 +663,7 @@
     }
   },
   "GX": {
-    "commutator": "B2:[B' D2 B,U']",
+    "commutator": "[B2: [B' D2 B, U']]",
     "algorithm": "B D2 B U' B' D2 B U B2",
     "htm": 9,
     "derive": {
@@ -673,8 +673,8 @@
     }
   },
   "HI": {
-    "commutator": "L:[D' B D,F2]",
-    "algorithm": "L D' B D F2 D' B' D F2 L'",
+    "commutator": "[L' : [U2, R' D R]]",
+    "algorithm": "L' U2 R' D R U2 R' D' R L",
     "htm": 10,
     "derive": {
       "inverse": "IH",
@@ -683,9 +683,9 @@
     }
   },
   "HK": {
-    "commutator": "D2:[R B2 R',F']",
-    "algorithm": "D2 R B2 R' F' R B2 R' F D2",
-    "htm": 10,
+    "commutator": "[R, F' L2 F]",
+    "algorithm": "R F' L2 F R' F' L2 F",
+    "htm": 8,
     "derive": {
       "inverse": "KH",
       "mirror": "SP",
@@ -693,8 +693,8 @@
     }
   },
   "HL": {
-    "commutator": "[B' U2 B,D']",
-    "algorithm": "B' U2 B D' B' U2 B D",
+    "commutator": "[D, L' U L]",
+    "algorithm": "D L' U L D' L' U' L",
     "htm": 8,
     "derive": {
       "inverse": "LH",
@@ -703,9 +703,9 @@
     }
   },
   "HN": {
-    "commutator": "D B:[B D' B',U2]",
-    "algorithm": "D B2 D' B' U2 B D B' U2 B' D'",
-    "htm": 11,
+    "commutator": "[U R : [R D' R', U2]]",
+    "algorithm": "U R R D' R' U2 R D R' U2 R' U'",
+    "htm": 12,
     "derive": {
       "inverse": "NH",
       "mirror": "SI",
@@ -713,7 +713,7 @@
     }
   },
   "HO": {
-    "commutator": "L:[L F' L',B2]",
+    "commutator": "[L: [L F' L', B2]]",
     "algorithm": "L2 F' L' B2 L F L' B2 L'",
     "htm": 9,
     "derive": {
@@ -723,8 +723,8 @@
     }
   },
   "HP": {
-    "commutator": "[B' U2 B,D2]",
-    "algorithm": "B' U2 B D2 B' U2 B D2",
+    "commutator": "[D2, R U R']",
+    "algorithm": "D2 R U R' D2 R U' R'",
     "htm": 8,
     "derive": {
       "inverse": "PH",
@@ -733,7 +733,7 @@
     }
   },
   "HU": {
-    "commutator": "D2 B2:[B D2 B',U2]",
+    "commutator": "[D2 B2: [B D2 B', U2]]",
     "algorithm": "D2 B' D2 B' U2 B D2 B' U2 B2 D2",
     "htm": 11,
     "derive": {
@@ -743,8 +743,8 @@
     }
   },
   "HV": {
-    "commutator": "D2:[U' B2 U,F']",
-    "algorithm": "D2 U' B2 U F' U' B2 U F D2",
+    "commutator": "[D: [R2, U L' U']]",
+    "algorithm": "D R2 U L' U' R2 U L U' D'",
     "htm": 10,
     "derive": {
       "inverse": "VH",
@@ -753,7 +753,7 @@
     }
   },
   "HW": {
-    "commutator": "[D L D',R2]",
+    "commutator": "[D L D', R2]",
     "algorithm": "D L D' R2 D L' D' R2",
     "htm": 8,
     "derive": {
@@ -763,7 +763,7 @@
     }
   },
   "IK": {
-    "commutator": "L2:[L U2 L',D2]",
+    "commutator": "[L2: [L U2 L', D2]]",
     "algorithm": "L' U2 L' D2 L U2 L' D2 L2",
     "htm": 9,
     "derive": {
@@ -773,7 +773,7 @@
     }
   },
   "IL": {
-    "commutator": "L2:[L' F2 L,B]",
+    "commutator": "[L2: [L' F2 L, B]]",
     "algorithm": "L F2 L B L' F2 L B' L2",
     "htm": 9,
     "derive": {
@@ -783,7 +783,7 @@
     }
   },
   "IN": {
-    "commutator": "L2 B2:[F' L2 F,R']",
+    "commutator": "[L2 B2: [F' L2 F, R']]",
     "algorithm": "L2 B2 F' L2 F R' F' L2 F R B2 L2",
     "htm": 12,
     "derive": {
@@ -792,7 +792,7 @@
     }
   },
   "IO": {
-    "commutator": "L2:[L U2 L',D]",
+    "commutator": "[L2: [L U2 L', D]]",
     "algorithm": "L' U2 L' D L U2 L' D' L2",
     "htm": 9,
     "derive": {
@@ -802,7 +802,7 @@
     }
   },
   "IP": {
-    "commutator": "L':[R' D' R,U2]",
+    "commutator": "[L' : [R' D' R, U2]]",
     "algorithm": "L' R' D' R U2 R' D R U2 L",
     "htm": 10,
     "derive": {
@@ -812,7 +812,7 @@
     }
   },
   "IU": {
-    "commutator": "L:[R B2 R',F2]",
+    "commutator": "[L: [R B2 R', F2]]",
     "algorithm": "L R B2 R' F2 R B2 R' F2 L'",
     "htm": 10,
     "derive": {
@@ -822,8 +822,8 @@
     }
   },
   "IV": {
-    "commutator": "D2 L:[R B' R',F2]",
-    "algorithm": "D2 L R B' R' F2 R B R' F2 L' D2",
+    "commutator": "[D2 L2: [U', R' D2 R]]",
+    "algorithm": "D2 L2 U' R' D2 R U R' D2 R L2 D2",
     "htm": 12,
     "derive": {
       "inverse": "VI",
@@ -832,8 +832,8 @@
     }
   },
   "IW": {
-    "commutator": "D L:[R B' R',F2]",
-    "algorithm": "D L R B' R' F2 R B R' F2 L' D'",
+    "commutator": "[D L2: [U', R' D2 R]]",
+    "algorithm": "D L2 U' R' D2 R U R' D2 R L2 D'",
     "htm": 12,
     "derive": {
       "inverse": "WI",
@@ -842,8 +842,8 @@
     }
   },
   "IX": {
-    "commutator": "L:[R B' R',F2]",
-    "algorithm": "L R B' R' F2 R B R' F2 L'",
+    "commutator": "[L2: [U', R' D2 R]]",
+    "algorithm": "L2 U' R' D2 R U R' D2 R L2",
     "htm": 10,
     "derive": {
       "inverse": "XI",
@@ -852,7 +852,7 @@
     }
   },
   "KL": {
-    "commutator": "[U L' U',R]",
+    "commutator": "[U L' U', R]",
     "algorithm": "U L' U' R U L U' R'",
     "htm": 8,
     "derive": {
@@ -862,9 +862,9 @@
     }
   },
   "KO": {
-    "commutator": "[F' U' F,D']",
-    "algorithm": "F' U' F D' F' U F D",
-    "htm": 8,
+    "commutator": "[U : [R U' R', D']]",
+    "algorithm": "U R U' R' D' R U R' D U'",
+    "htm": 10,
     "derive": {
       "inverse": "OK",
       "mirror": "PL",
@@ -872,7 +872,7 @@
     }
   },
   "KU": {
-    "commutator": "L2:[L' D2 L,U2]",
+    "commutator": "[L2: [L' D2 L, U2]]",
     "algorithm": "L D2 L U2 L' D2 L U2 L2",
     "htm": 9,
     "derive": {
@@ -882,9 +882,9 @@
     }
   },
   "KW": {
-    "commutator": "D2:[D' B' D,F2]",
-    "algorithm": "D B' D F2 D' B D F2 D2",
-    "htm": 9,
+    "commutator": "[u : [R', D L2 D']]",
+    "algorithm": "u R' D L2 D' R D L2 D' u'",
+    "htm": 10,
     "derive": {
       "inverse": "WK",
       "mirror": "PU",
@@ -892,7 +892,7 @@
     }
   },
   "KX": {
-    "commutator": "[U L2 U',R]",
+    "commutator": "[U L2 U', R]",
     "algorithm": "U L2 U' R U L2 U' R'",
     "htm": 8,
     "derive": {
@@ -902,7 +902,7 @@
     }
   },
   "LO": {
-    "commutator": "D:[R B2 R',F']",
+    "commutator": "[D : [R B2 R', F']]",
     "algorithm": "D R B2 R' F' R B2 R' F D'",
     "htm": 10,
     "derive": {
@@ -911,8 +911,8 @@
     }
   },
   "LV": {
-    "commutator": "D B2:[B D2 B',U2]",
-    "algorithm": "D B' D2 B' U2 B D2 B' U2 B2 D'",
+    "commutator": "[u R2 : [R D2 R', U2]]",
+    "algorithm": "u R' D2 R' U2 R D2 R' U2 R2 u'",
     "htm": 11,
     "derive": {
       "inverse": "VL",
@@ -921,9 +921,9 @@
     }
   },
   "LW": {
-    "commutator": "B2:[B D' B',U2]",
-    "algorithm": "B' D' B' U2 B D B' U2 B2",
-    "htm": 9,
+    "commutator": "[R2, U L' U']",
+    "algorithm": "R2 U L' U' R2 U L U'",
+    "htm": 8,
     "derive": {
       "inverse": "WL",
       "mirror": "OU",
@@ -931,7 +931,7 @@
     }
   },
   "LX": {
-    "commutator": "D':[D L D',R2]",
+    "commutator": "[L, D' R2 D]",
     "algorithm": "L D' R2 D L' D' R2 D",
     "htm": 8,
     "derive": {
@@ -941,7 +941,7 @@
     }
   },
   "UV": {
-    "commutator": "D2:[U L2 U',R2]",
+    "commutator": "[D2 : [U L2 U', R2]]",
     "algorithm": "D2 U L2 U' R2 U L2 U' R2 D2",
     "htm": 10,
     "derive": {
@@ -951,16 +951,16 @@
     }
   },
   "UW": {
-    "commutator": "D L D2:[D' R2 D,L']",
-    "algorithm": "D L D R2 D L' D' R2 D L D2 L' D'",
-    "htm": 13,
+    "commutator": "[R2, U' R2 D R2 U]",
+    "algorithm": "R2 U' R2 D R2 U R2 U' R2 D' R2 U",
+    "htm": 12,
     "derive": {
       "inverse": "WU",
       "mirror": "WU"
     }
   },
   "UX": {
-    "commutator": "[U' B2 U,F2]",
+    "commutator": "[U' B2 U, F2]",
     "algorithm": "U' B2 U F2 U' B2 U F2",
     "htm": 8,
     "derive": {
@@ -970,9 +970,9 @@
     }
   },
   "VX": {
-    "commutator": "L D2:[D' R2 D,L']",
-    "algorithm": "L D R2 D L' D' R2 D L D2 L'",
-    "htm": 11,
+    "commutator": "[D' : [R2, U' R2 D R2 U]]",
+    "algorithm": "D' R2 U' R2 D R2 U R2 U' R2 D' R2 U D",
+    "htm": 14,
     "derive": {
       "inverse": "XV"
     }
