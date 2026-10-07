@@ -1,0 +1,54 @@
+<div class="unique-cases-container">
+  <div class="header">
+    <h1>3-Style Groups (Conjugate Families)</h1>
+    <div class="toggle-group">
+      <button class="btn btn-outline" 
+              [class.active]="currentType === 'edge'" 
+              (click)="setType('edge')">Edges</button>
+      <button class="btn btn-outline" 
+              [class.active]="currentType === 'corner'" 
+              (click)="setType('corner')">Corners</button>
+      <button class="btn btn-outline toggle-singles-btn" 
+              [class.active]="!hideSingles"
+              (click)="toggleHideSingles()">
+        {{ hideSingles ? 'Show Singles' : 'Hide Singles' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="families-list">
+    <div class="family-card" *ngFor="let fam of currentFamilies">
+      <div class="family-header">
+        <h2>Core: <span class="core-text">[{{ fam.coreCommutator }}]</span></h2>
+        <span class="family-count">{{ fam.cases.length }} case(s)</span>
+      </div>
+      
+      <table class="unique-table">
+        <tbody>
+          <!-- We list all cases inside this family row by row, or we can use a layout similar to Unique Cases -->
+          <tr class="variants-row">
+            <td colspan="3" class="flex-variants">
+              <div 
+                *ngFor="let c of fam.cases"
+                class="clickable-cell flex-cell" 
+                [class.active]="fam.selectedVariant === c.letterPair"
+                [class.is-main]="c.isMain"
+                (click)="selectVariant(fam, c)">
+                <div class="cell-pair">{{ c.letterPair }}</div>
+                <div class="cell-setup">{{ c.isMain ? 'Pure' : c.setup }}</div>
+              </div>
+            </td>
+          </tr>
+          <!-- Algorithm Row for the selected case -->
+          <tr class="algorithm-row" *ngIf="fam.selectedVariant">
+            <td colspan="3">
+              <div class="alg-content">
+                <span class="alg-text">{{ fam.selectedAlgorithm }}</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
