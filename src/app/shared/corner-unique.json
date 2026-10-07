@@ -1,0 +1,980 @@
+{
+  "AB": {
+    "commutator": "B:[B R2 B',L']",
+    "algorithm": "B2 R2 B' L' B R2 B' L B'",
+    "htm": 9,
+    "derive": {
+      "inverse": "BA",
+      "mirror": "AD",
+      "mirror_inverse": "DA"
+    }
+  },
+  "AF": {
+    "commutator": "B:[B R2 B',L2]",
+    "algorithm": "B2 R2 B' L2 B R2 B' L2 B'",
+    "htm": 9,
+    "derive": {
+      "inverse": "FA",
+      "mirror": "AQ",
+      "mirror_inverse": "QA"
+    }
+  },
+  "AG": {
+    "commutator": "[R' D R,U2]",
+    "algorithm": "R' D R U2 R' D' R U2",
+    "htm": 8,
+    "derive": {
+      "inverse": "GA",
+      "mirror": "AT",
+      "mirror_inverse": "TA"
+    }
+  },
+  "AH": {
+    "commutator": "[F D2 F',U2]",
+    "algorithm": "F D2 F' U2 F D2 F' U2",
+    "htm": 8,
+    "derive": {
+      "inverse": "HA",
+      "mirror": "AS",
+      "mirror_inverse": "SA"
+    }
+  },
+  "AI": {
+    "commutator": "L2:[R B2 R',F2]",
+    "algorithm": "L2 R B2 R' F2 R B2 R' F2 L2",
+    "htm": 10,
+    "derive": {
+      "inverse": "IA",
+      "mirror": "AN",
+      "mirror_inverse": "NA"
+    }
+  },
+  "AK": {
+    "commutator": "[F D F',U2]",
+    "algorithm": "F D F' U2 F D' F' U2",
+    "htm": 8,
+    "derive": {
+      "inverse": "KA",
+      "mirror": "AP",
+      "mirror_inverse": "PA"
+    }
+  },
+  "AL": {
+    "commutator": "B:[B' U2 B,D']",
+    "algorithm": "U2 B D' B' U2 B D B'",
+    "htm": 8,
+    "derive": {
+      "inverse": "LA",
+      "mirror": "AO",
+      "mirror_inverse": "OA"
+    }
+  },
+  "AU": {
+    "commutator": "D' L2 D':[D' R2 D,L2]",
+    "algorithm": "D' L2 D2 R2 D L2 D' R2 D L2 D L2 D",
+    "htm": 13,
+    "derive": {
+      "inverse": "UA",
+      "mirror": "AW",
+      "mirror_inverse": "WA"
+    }
+  },
+  "AV": {
+    "commutator": "L2 D2:[U L2 U',R2]",
+    "algorithm": "L2 D2 U L2 U' R2 U L2 U' R2 D2 L2",
+    "htm": 12,
+    "derive": {
+      "inverse": "VA"
+    }
+  },
+  "AX": {
+    "commutator": "L2 D':[D' R2 D,L2]",
+    "algorithm": "L2 D2 R2 D L2 D' R2 D L2 D L2",
+    "htm": 11,
+    "derive": {
+      "inverse": "XA"
+    }
+  },
+  "BD": {
+    "commutator": "L2:[R' F' R,B2]",
+    "algorithm": "L2 R' F' R B2 R' F R B2 L2",
+    "htm": 10,
+    "derive": {
+      "inverse": "DB",
+      "mirror": "DB"
+    }
+  },
+  "BE": {
+    "commutator": "[R' F' R,B']",
+    "algorithm": "R' F' R B' R' F R B",
+    "htm": 8,
+    "derive": {
+      "inverse": "EB",
+      "mirror": "DR",
+      "mirror_inverse": "RD"
+    }
+  },
+  "BF": {
+    "commutator": "[L' B L,F']",
+    "algorithm": "L' B L F' L' B' L F",
+    "htm": 8,
+    "derive": {
+      "inverse": "FB",
+      "mirror": "DQ",
+      "mirror_inverse": "QD"
+    }
+  },
+  "BG": {
+    "commutator": "[R' D R,U]",
+    "algorithm": "R' D R U R' D' R U'",
+    "htm": 8,
+    "derive": {
+      "inverse": "GB",
+      "mirror": "DT",
+      "mirror_inverse": "TD"
+    }
+  },
+  "BH": {
+    "commutator": "[F D2 F',U]",
+    "algorithm": "F D2 F' U F D2 F' U'",
+    "htm": 8,
+    "derive": {
+      "inverse": "HB",
+      "mirror": "DS",
+      "mirror_inverse": "SD"
+    }
+  },
+  "BI": {
+    "commutator": "L:[D' B2 D,F2]",
+    "algorithm": "L D' B2 D F2 D' B2 D F2 L'",
+    "htm": 10,
+    "derive": {
+      "inverse": "IB",
+      "mirror": "DN",
+      "mirror_inverse": "ND"
+    }
+  },
+  "BK": {
+    "commutator": "[F D F',U]",
+    "algorithm": "F D F' U F D' F' U'",
+    "htm": 8,
+    "derive": {
+      "inverse": "KB",
+      "mirror": "DP",
+      "mirror_inverse": "PD"
+    }
+  },
+  "BL": {
+    "commutator": "D:[R' D' R,U]",
+    "algorithm": "D R' D' R U R' D R U' D'",
+    "htm": 10,
+    "derive": {
+      "inverse": "LB",
+      "mirror": "DO",
+      "mirror_inverse": "OD"
+    }
+  },
+  "BO": {
+    "commutator": "[R' F' R,B]",
+    "algorithm": "R' F' R B R' F R B'",
+    "htm": 8,
+    "derive": {
+      "inverse": "OB",
+      "mirror": "DL",
+      "mirror_inverse": "LD"
+    }
+  },
+  "BP": {
+    "commutator": "[R' D' R,U]",
+    "algorithm": "R' D' R U R' D R U'",
+    "htm": 8,
+    "derive": {
+      "inverse": "PB",
+      "mirror": "DK",
+      "mirror_inverse": "KD"
+    }
+  },
+  "BR": {
+    "commutator": "L':[R' F' R,B2]",
+    "algorithm": "L' R' F' R B2 R' F R B2 L",
+    "htm": 10,
+    "derive": {
+      "inverse": "RB",
+      "mirror": "DE",
+      "mirror_inverse": "ED"
+    }
+  },
+  "BS": {
+    "commutator": "[R' D2 R,U]",
+    "algorithm": "R' D2 R U R' D2 R U'",
+    "htm": 8,
+    "derive": {
+      "inverse": "SB",
+      "mirror": "DH",
+      "mirror_inverse": "HD"
+    }
+  },
+  "BT": {
+    "commutator": "[F D' F',U]",
+    "algorithm": "F D' F' U F D F' U'",
+    "htm": 8,
+    "derive": {
+      "inverse": "TB",
+      "mirror": "DG",
+      "mirror_inverse": "GD"
+    }
+  },
+  "BU": {
+    "commutator": "[D' B2 D,F2]",
+    "algorithm": "D' B2 D F2 D' B2 D F2",
+    "htm": 8,
+    "derive": {
+      "inverse": "UB",
+      "mirror": "DW",
+      "mirror_inverse": "WD"
+    }
+  },
+  "BV": {
+    "commutator": "D':[D' B2 D,F2]",
+    "algorithm": "D2 B2 D F2 D' B2 D F2 D",
+    "htm": 9,
+    "derive": {
+      "inverse": "VB",
+      "mirror": "DV",
+      "mirror_inverse": "VD"
+    }
+  },
+  "BW": {
+    "commutator": "D2:[D' B2 D,F2]",
+    "algorithm": "D B2 D F2 D' B2 D F2 D2",
+    "htm": 9,
+    "derive": {
+      "inverse": "WB",
+      "mirror": "DU",
+      "mirror_inverse": "UD"
+    }
+  },
+  "BX": {
+    "commutator": "[R' F' R,B2]",
+    "algorithm": "R' F' R B2 R' F R B2",
+    "htm": 8,
+    "derive": {
+      "inverse": "XB",
+      "mirror": "DX",
+      "mirror_inverse": "XD"
+    }
+  },
+  "EF": {
+    "commutator": "[U B U',F']",
+    "algorithm": "U B U' F' U B' U' F",
+    "htm": 8,
+    "derive": {
+      "inverse": "FE",
+      "mirror": "RQ",
+      "mirror_inverse": "QR"
+    }
+  },
+  "EG": {
+    "commutator": "D:[D' L2 D,R']",
+    "algorithm": "L2 D R' D' L2 D R D'",
+    "htm": 8,
+    "derive": {
+      "inverse": "GE",
+      "mirror": "RT",
+      "mirror_inverse": "TR"
+    }
+  },
+  "EH": {
+    "commutator": "L':[B R2 B',L]",
+    "algorithm": "L' B R2 B' L B R2 B'",
+    "htm": 8,
+    "derive": {
+      "inverse": "HE",
+      "mirror": "RS",
+      "mirror_inverse": "SR"
+    }
+  },
+  "EI": {
+    "commutator": "L':[L' D' L,U2]",
+    "algorithm": "L2 D' L U2 L' D L U2 L",
+    "htm": 9,
+    "derive": {
+      "inverse": "IE",
+      "mirror": "RN",
+      "mirror_inverse": "NR"
+    }
+  },
+  "EK": {
+    "commutator": "[D' L2 D,R']",
+    "algorithm": "D' L2 D R' D' L2 D R",
+    "htm": 8,
+    "derive": {
+      "inverse": "KE",
+      "mirror": "RP",
+      "mirror_inverse": "PR"
+    }
+  },
+  "EL": {
+    "commutator": "D:[R' B2 R,F]",
+    "algorithm": "D R' B2 R F R' B2 R F' D'",
+    "htm": 10,
+    "derive": {
+      "inverse": "LE",
+      "mirror": "RO",
+      "mirror_inverse": "OR"
+    }
+  },
+  "EN": {
+    "commutator": "L B':[B' L2 B,R2]",
+    "algorithm": "L B2 L2 B R2 B' L2 B R2 B L'",
+    "htm": 11,
+    "derive": {
+      "inverse": "NE",
+      "mirror": "RI",
+      "mirror_inverse": "IR"
+    }
+  },
+  "EO": {
+    "commutator": "[L F' L',B2]",
+    "algorithm": "L F' L' B2 L F L' B2",
+    "htm": 8,
+    "derive": {
+      "inverse": "OE",
+      "mirror": "RL",
+      "mirror_inverse": "LR"
+    }
+  },
+  "EP": {
+    "commutator": "[R' B2 R,F]",
+    "algorithm": "R' B2 R F R' B2 R F'",
+    "htm": 8,
+    "derive": {
+      "inverse": "PE",
+      "mirror": "RK",
+      "mirror_inverse": "KR"
+    }
+  },
+  "EQ": {
+    "commutator": "[B L B',R]",
+    "algorithm": "B L B' R B L' B' R'",
+    "htm": 8,
+    "derive": {
+      "inverse": "QE",
+      "mirror": "RF",
+      "mirror_inverse": "FR"
+    }
+  },
+  "ES": {
+    "commutator": "D2:[D' L2 D,R']",
+    "algorithm": "D L2 D R' D' L2 D R D2",
+    "htm": 9,
+    "derive": {
+      "inverse": "SE",
+      "mirror": "RH",
+      "mirror_inverse": "HR"
+    }
+  },
+  "ET": {
+    "commutator": "D':[R' B2 R,F]",
+    "algorithm": "D' R' B2 R F R' B2 R F' D",
+    "htm": 10,
+    "derive": {
+      "inverse": "TE",
+      "mirror": "RG",
+      "mirror_inverse": "GR"
+    }
+  },
+  "EU": {
+    "commutator": "[D' B D,F2]",
+    "algorithm": "D' B D F2 D' B' D F2",
+    "htm": 8,
+    "derive": {
+      "inverse": "UE",
+      "mirror": "RW",
+      "mirror_inverse": "WR"
+    }
+  },
+  "EV": {
+    "commutator": "D':[D' B D,F2]",
+    "algorithm": "D2 B D F2 D' B' D F2 D",
+    "htm": 9,
+    "derive": {
+      "inverse": "VE",
+      "mirror": "RV",
+      "mirror_inverse": "VR"
+    }
+  },
+  "EW": {
+    "commutator": "D2:[D' B D,F2]",
+    "algorithm": "D B D F2 D' B' D F2 D2",
+    "htm": 9,
+    "derive": {
+      "inverse": "WE",
+      "mirror": "RU",
+      "mirror_inverse": "UR"
+    }
+  },
+  "EX": {
+    "commutator": "[L F' L',B']",
+    "algorithm": "L F' L' B' L F L' B",
+    "htm": 8,
+    "derive": {
+      "inverse": "XE",
+      "mirror": "RX",
+      "mirror_inverse": "XR"
+    }
+  },
+  "FG": {
+    "commutator": "[U' R' U,L']",
+    "algorithm": "U' R' U L' U' R U L",
+    "htm": 8,
+    "derive": {
+      "inverse": "GF",
+      "mirror": "QT",
+      "mirror_inverse": "TQ"
+    }
+  },
+  "FH": {
+    "commutator": "[U' R' U,L2]",
+    "algorithm": "U' R' U L2 U' R U L2",
+    "htm": 8,
+    "derive": {
+      "inverse": "HF",
+      "mirror": "QS",
+      "mirror_inverse": "SQ"
+    }
+  },
+  "FK": {
+    "commutator": "[D' L D,R']",
+    "algorithm": "D' L D R' D' L' D R",
+    "htm": 8,
+    "derive": {
+      "inverse": "KF",
+      "mirror": "QP",
+      "mirror_inverse": "PQ"
+    }
+  },
+  "FL": {
+    "commutator": "D':[U' R' U,L2]",
+    "algorithm": "D' U' R' U L2 U' R U L2 D",
+    "htm": 10,
+    "derive": {
+      "inverse": "LF",
+      "mirror": "QO",
+      "mirror_inverse": "OQ"
+    }
+  },
+  "FN": {
+    "commutator": "B':[B' L2 B,R2]",
+    "algorithm": "B2 L2 B R2 B' L2 B R2 B",
+    "htm": 9,
+    "derive": {
+      "inverse": "NF",
+      "mirror": "QI",
+      "mirror_inverse": "IQ"
+    }
+  },
+  "FO": {
+    "commutator": "[U' B U,F]",
+    "algorithm": "U' B U F U' B' U F'",
+    "htm": 8,
+    "derive": {
+      "inverse": "OF",
+      "mirror": "QL",
+      "mirror_inverse": "LQ"
+    }
+  },
+  "FP": {
+    "commutator": "D2:[U' R' U,L2]",
+    "algorithm": "D2 U' R' U L2 U' R U L2 D2",
+    "htm": 10,
+    "derive": {
+      "inverse": "PF",
+      "mirror": "QK",
+      "mirror_inverse": "KQ"
+    }
+  },
+  "FQ": {
+    "commutator": "[U' B' U,F]",
+    "algorithm": "U' B' U F U' B U F'",
+    "htm": 8,
+    "derive": {
+      "inverse": "QF",
+      "mirror": "QF"
+    }
+  },
+  "FS": {
+    "commutator": "[R B2 R',F]",
+    "algorithm": "R B2 R' F R B2 R' F'",
+    "htm": 8,
+    "derive": {
+      "inverse": "SF",
+      "mirror": "QH",
+      "mirror_inverse": "HQ"
+    }
+  },
+  "FT": {
+    "commutator": "D:[U' R' U,L2]",
+    "algorithm": "D U' R' U L2 U' R U L2 D'",
+    "htm": 10,
+    "derive": {
+      "inverse": "TF",
+      "mirror": "QG",
+      "mirror_inverse": "GQ"
+    }
+  },
+  "FU": {
+    "commutator": "L2:[L' D' L,U2]",
+    "algorithm": "L D' L U2 L' D L U2 L2",
+    "htm": 9,
+    "derive": {
+      "inverse": "UF",
+      "mirror": "QW",
+      "mirror_inverse": "WQ"
+    }
+  },
+  "FV": {
+    "commutator": "D:[B' L2 B,R2]",
+    "algorithm": "D B' L2 B R2 B' L2 B R2 D'",
+    "htm": 10,
+    "derive": {
+      "inverse": "VF",
+      "mirror": "QV",
+      "mirror_inverse": "VQ"
+    }
+  },
+  "FW": {
+    "commutator": "[B' L2 B,R2]",
+    "algorithm": "B' L2 B R2 B' L2 B R2",
+    "htm": 8,
+    "derive": {
+      "inverse": "WF",
+      "mirror": "QU",
+      "mirror_inverse": "UQ"
+    }
+  },
+  "FX": {
+    "commutator": "[U' B2 U,F]",
+    "algorithm": "U' B2 U F U' B2 U F'",
+    "htm": 8,
+    "derive": {
+      "inverse": "XF",
+      "mirror": "QX",
+      "mirror_inverse": "XQ"
+    }
+  },
+  "GH": {
+    "commutator": "[D R' D',L']",
+    "algorithm": "D R' D' L' D R D' L",
+    "htm": 8,
+    "derive": {
+      "inverse": "HG",
+      "mirror": "TS",
+      "mirror_inverse": "ST"
+    }
+  },
+  "GI": {
+    "commutator": "D L':[L' D2 L,U2]",
+    "algorithm": "D L2 D2 L U2 L' D2 L U2 L D'",
+    "htm": 11,
+    "derive": {
+      "inverse": "IG",
+      "mirror": "TN",
+      "mirror_inverse": "NT"
+    }
+  },
+  "GK": {
+    "commutator": "[F L F',R']",
+    "algorithm": "F L F' R' F L' F' R",
+    "htm": 8,
+    "derive": {
+      "inverse": "KG",
+      "mirror": "TP",
+      "mirror_inverse": "PT"
+    }
+  },
+  "GN": {
+    "commutator": "B':[B' L B,R2]",
+    "algorithm": "B2 L B R2 B' L' B R2 B",
+    "htm": 9,
+    "derive": {
+      "inverse": "NG",
+      "mirror": "TI",
+      "mirror_inverse": "IT"
+    }
+  },
+  "GO": {
+    "commutator": "D2:[B U' B',D2]",
+    "algorithm": "D2 B U' B' D2 B U B'",
+    "htm": 8,
+    "derive": {
+      "inverse": "OG",
+      "mirror": "TL",
+      "mirror_inverse": "LT"
+    }
+  },
+  "GP": {
+    "commutator": "L:[B' U2 B,D2]",
+    "algorithm": "L B' U2 B D2 B' U2 B D2 L'",
+    "htm": 10,
+    "derive": {
+      "inverse": "PG",
+      "mirror": "TK",
+      "mirror_inverse": "KT"
+    }
+  },
+  "GS": {
+    "commutator": "D':[L U2 L',D]",
+    "algorithm": "D' L U2 L' D L U2 L'",
+    "htm": 8,
+    "derive": {
+      "inverse": "SG",
+      "mirror": "TH",
+      "mirror_inverse": "HT"
+    }
+  },
+  "GT": {
+    "commutator": "D:[F' L2 F,R]",
+    "algorithm": "D F' L2 F R F' L2 F R' D'",
+    "htm": 10,
+    "derive": {
+      "inverse": "TG",
+      "mirror": "TG"
+    }
+  },
+  "GV": {
+    "commutator": "D':[D' B' D,F2]",
+    "algorithm": "D2 B' D F2 D' B D F2 D",
+    "htm": 9,
+    "derive": {
+      "inverse": "VG",
+      "mirror": "TV",
+      "mirror_inverse": "VT"
+    }
+  },
+  "GW": {
+    "commutator": "[B' L B,R2]",
+    "algorithm": "B' L B R2 B' L' B R2",
+    "htm": 8,
+    "derive": {
+      "inverse": "WG",
+      "mirror": "TU",
+      "mirror_inverse": "UT"
+    }
+  },
+  "GX": {
+    "commutator": "B2:[B' D2 B,U']",
+    "algorithm": "B D2 B U' B' D2 B U B2",
+    "htm": 9,
+    "derive": {
+      "inverse": "XG",
+      "mirror": "TX",
+      "mirror_inverse": "XT"
+    }
+  },
+  "HI": {
+    "commutator": "L:[D' B D,F2]",
+    "algorithm": "L D' B D F2 D' B' D F2 L'",
+    "htm": 10,
+    "derive": {
+      "inverse": "IH",
+      "mirror": "SN",
+      "mirror_inverse": "NS"
+    }
+  },
+  "HK": {
+    "commutator": "D2:[R B2 R',F']",
+    "algorithm": "D2 R B2 R' F' R B2 R' F D2",
+    "htm": 10,
+    "derive": {
+      "inverse": "KH",
+      "mirror": "SP",
+      "mirror_inverse": "PS"
+    }
+  },
+  "HL": {
+    "commutator": "[B' U2 B,D']",
+    "algorithm": "B' U2 B D' B' U2 B D",
+    "htm": 8,
+    "derive": {
+      "inverse": "LH",
+      "mirror": "SO",
+      "mirror_inverse": "OS"
+    }
+  },
+  "HN": {
+    "commutator": "D B:[B D' B',U2]",
+    "algorithm": "D B2 D' B' U2 B D B' U2 B' D'",
+    "htm": 11,
+    "derive": {
+      "inverse": "NH",
+      "mirror": "SI",
+      "mirror_inverse": "IS"
+    }
+  },
+  "HO": {
+    "commutator": "L:[L F' L',B2]",
+    "algorithm": "L2 F' L' B2 L F L' B2 L'",
+    "htm": 9,
+    "derive": {
+      "inverse": "OH",
+      "mirror": "SL",
+      "mirror_inverse": "LS"
+    }
+  },
+  "HP": {
+    "commutator": "[B' U2 B,D2]",
+    "algorithm": "B' U2 B D2 B' U2 B D2",
+    "htm": 8,
+    "derive": {
+      "inverse": "PH",
+      "mirror": "SK",
+      "mirror_inverse": "KS"
+    }
+  },
+  "HU": {
+    "commutator": "D2 B2:[B D2 B',U2]",
+    "algorithm": "D2 B' D2 B' U2 B D2 B' U2 B2 D2",
+    "htm": 11,
+    "derive": {
+      "inverse": "UH",
+      "mirror": "SW",
+      "mirror_inverse": "WS"
+    }
+  },
+  "HV": {
+    "commutator": "D2:[U' B2 U,F']",
+    "algorithm": "D2 U' B2 U F' U' B2 U F D2",
+    "htm": 10,
+    "derive": {
+      "inverse": "VH",
+      "mirror": "SV",
+      "mirror_inverse": "VS"
+    }
+  },
+  "HW": {
+    "commutator": "[D L D',R2]",
+    "algorithm": "D L D' R2 D L' D' R2",
+    "htm": 8,
+    "derive": {
+      "inverse": "WH",
+      "mirror": "SU",
+      "mirror_inverse": "US"
+    }
+  },
+  "IK": {
+    "commutator": "L2:[L U2 L',D2]",
+    "algorithm": "L' U2 L' D2 L U2 L' D2 L2",
+    "htm": 9,
+    "derive": {
+      "inverse": "KI",
+      "mirror": "NP",
+      "mirror_inverse": "PN"
+    }
+  },
+  "IL": {
+    "commutator": "L2:[L' F2 L,B]",
+    "algorithm": "L F2 L B L' F2 L B' L2",
+    "htm": 9,
+    "derive": {
+      "inverse": "LI",
+      "mirror": "NO",
+      "mirror_inverse": "ON"
+    }
+  },
+  "IN": {
+    "commutator": "L2 B2:[F' L2 F,R']",
+    "algorithm": "L2 B2 F' L2 F R' F' L2 F R B2 L2",
+    "htm": 12,
+    "derive": {
+      "inverse": "NI",
+      "mirror": "NI"
+    }
+  },
+  "IO": {
+    "commutator": "L2:[L U2 L',D]",
+    "algorithm": "L' U2 L' D L U2 L' D' L2",
+    "htm": 9,
+    "derive": {
+      "inverse": "OI",
+      "mirror": "NL",
+      "mirror_inverse": "LN"
+    }
+  },
+  "IP": {
+    "commutator": "L':[R' D' R,U2]",
+    "algorithm": "L' R' D' R U2 R' D R U2 L",
+    "htm": 10,
+    "derive": {
+      "inverse": "PI",
+      "mirror": "NK",
+      "mirror_inverse": "KN"
+    }
+  },
+  "IU": {
+    "commutator": "L:[R B2 R',F2]",
+    "algorithm": "L R B2 R' F2 R B2 R' F2 L'",
+    "htm": 10,
+    "derive": {
+      "inverse": "UI",
+      "mirror": "NW",
+      "mirror_inverse": "WN"
+    }
+  },
+  "IV": {
+    "commutator": "D2 L:[R B' R',F2]",
+    "algorithm": "D2 L R B' R' F2 R B R' F2 L' D2",
+    "htm": 12,
+    "derive": {
+      "inverse": "VI",
+      "mirror": "NV",
+      "mirror_inverse": "VN"
+    }
+  },
+  "IW": {
+    "commutator": "D L:[R B' R',F2]",
+    "algorithm": "D L R B' R' F2 R B R' F2 L' D'",
+    "htm": 12,
+    "derive": {
+      "inverse": "WI",
+      "mirror": "NU",
+      "mirror_inverse": "UN"
+    }
+  },
+  "IX": {
+    "commutator": "L:[R B' R',F2]",
+    "algorithm": "L R B' R' F2 R B R' F2 L'",
+    "htm": 10,
+    "derive": {
+      "inverse": "XI",
+      "mirror": "NX",
+      "mirror_inverse": "XN"
+    }
+  },
+  "KL": {
+    "commutator": "[U L' U',R]",
+    "algorithm": "U L' U' R U L U' R'",
+    "htm": 8,
+    "derive": {
+      "inverse": "LK",
+      "mirror": "PO",
+      "mirror_inverse": "OP"
+    }
+  },
+  "KO": {
+    "commutator": "[F' U' F,D']",
+    "algorithm": "F' U' F D' F' U F D",
+    "htm": 8,
+    "derive": {
+      "inverse": "OK",
+      "mirror": "PL",
+      "mirror_inverse": "LP"
+    }
+  },
+  "KU": {
+    "commutator": "L2:[L' D2 L,U2]",
+    "algorithm": "L D2 L U2 L' D2 L U2 L2",
+    "htm": 9,
+    "derive": {
+      "inverse": "UK",
+      "mirror": "PW",
+      "mirror_inverse": "WP"
+    }
+  },
+  "KW": {
+    "commutator": "D2:[D' B' D,F2]",
+    "algorithm": "D B' D F2 D' B D F2 D2",
+    "htm": 9,
+    "derive": {
+      "inverse": "WK",
+      "mirror": "PU",
+      "mirror_inverse": "UP"
+    }
+  },
+  "KX": {
+    "commutator": "[U L2 U',R]",
+    "algorithm": "U L2 U' R U L2 U' R'",
+    "htm": 8,
+    "derive": {
+      "inverse": "XK",
+      "mirror": "PX",
+      "mirror_inverse": "XP"
+    }
+  },
+  "LO": {
+    "commutator": "D:[R B2 R',F']",
+    "algorithm": "D R B2 R' F' R B2 R' F D'",
+    "htm": 10,
+    "derive": {
+      "inverse": "OL",
+      "mirror": "OL"
+    }
+  },
+  "LV": {
+    "commutator": "D B2:[B D2 B',U2]",
+    "algorithm": "D B' D2 B' U2 B D2 B' U2 B2 D'",
+    "htm": 11,
+    "derive": {
+      "inverse": "VL",
+      "mirror": "OV",
+      "mirror_inverse": "VO"
+    }
+  },
+  "LW": {
+    "commutator": "B2:[B D' B',U2]",
+    "algorithm": "B' D' B' U2 B D B' U2 B2",
+    "htm": 9,
+    "derive": {
+      "inverse": "WL",
+      "mirror": "OU",
+      "mirror_inverse": "UO"
+    }
+  },
+  "LX": {
+    "commutator": "D':[D L D',R2]",
+    "algorithm": "L D' R2 D L' D' R2 D",
+    "htm": 8,
+    "derive": {
+      "inverse": "XL",
+      "mirror": "OX",
+      "mirror_inverse": "XO"
+    }
+  },
+  "UV": {
+    "commutator": "D2:[U L2 U',R2]",
+    "algorithm": "D2 U L2 U' R2 U L2 U' R2 D2",
+    "htm": 10,
+    "derive": {
+      "inverse": "VU",
+      "mirror": "WV",
+      "mirror_inverse": "VW"
+    }
+  },
+  "UW": {
+    "commutator": "D L D2:[D' R2 D,L']",
+    "algorithm": "D L D R2 D L' D' R2 D L D2 L' D'",
+    "htm": 13,
+    "derive": {
+      "inverse": "WU",
+      "mirror": "WU"
+    }
+  },
+  "UX": {
+    "commutator": "[U' B2 U,F2]",
+    "algorithm": "U' B2 U F2 U' B2 U F2",
+    "htm": 8,
+    "derive": {
+      "inverse": "XU",
+      "mirror": "WX",
+      "mirror_inverse": "XW"
+    }
+  },
+  "VX": {
+    "commutator": "L D2:[D' R2 D,L']",
+    "algorithm": "L D R2 D L' D' R2 D L D2 L'",
+    "htm": 11,
+    "derive": {
+      "inverse": "XV"
+    }
+  }
+}
