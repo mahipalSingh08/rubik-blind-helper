@@ -3,19 +3,27 @@
   <p class="subtitle">Advanced Method for 4-Piece Commutators</p>
 
   <div class="card" style="text-align: center;">
-    <div class="toggle-group" style="margin-bottom: 20px;">
-      <button 
-        [class.active]="pieceType === 'edges'" 
-        (click)="changePieceType('edges')"
-        class="btn btn-outline">
-        Edges
-      </button>
-      <button 
-        [class.active]="pieceType === 'corners'" 
-        (click)="changePieceType('corners')"
-        class="btn btn-outline">
-        Corners
-      </button>
+    <div class="controls-container" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; align-items: center; flex-wrap: wrap;">
+      <div class="toggle-group">
+        <button 
+          [class.active]="pieceType === 'edges'" 
+          (click)="changePieceType('edges')"
+          class="btn btn-outline">
+          Edges
+        </button>
+        <button 
+          [class.active]="pieceType === 'corners'" 
+          (click)="changePieceType('corners')"
+          class="btn btn-outline">
+          Corners
+        </button>
+      </div>
+
+      <div class="filter-group">
+        <select class="filter-select" [(ngModel)]="moveFilter" (change)="onFilterChange()">
+          <option *ngFor="let opt of moveFilterOptions" [value]="opt.value">{{ opt.label }}</option>
+        </select>
+      </div>
     </div>
 
     <div class="search-container">
@@ -34,8 +42,8 @@
       <h2 class="pair-title">{{ searchSequence | uppercase }}</h2>
       
       <div class="alg-display" *ngIf="!isEditing">
-        <p class="alg-short" *ngIf="currentAlg?.short">{{ currentAlg?.short }}</p>
-        <p class="alg-short" *ngIf="currentAlg?.expand" style="font-size: 1.1rem; color: var(--accent);">{{ currentAlg?.expand }}</p>
+        <p class="alg-short" *ngIf="currentAlg?.short">{{ currentAlg!.short }}</p>
+        <p class="alg-short" *ngIf="currentAlg?.expand" style="font-size: 1.1rem; color: var(--accent);">{{ currentAlg!.expand }}</p>
         <p class="alg-long">{{ currentAlg?.algorithm || 'No algorithm found for this 4-letter sequence.' }}</p>
         <button class="btn btn-edit" *ngIf="currentAlg" (click)="startEdit()">Edit Algorithm</button>
       </div>
@@ -67,7 +75,7 @@
     <!-- Letter Picker -->
     <div class="letter-picker">
       <div class="letter-btn" 
-           *ngFor="let letter of letters" 
+           *ngFor="let letter of availableLetters" 
            [class.active]="selectedLetter === letter"
            (click)="selectLetter(letter)">
         {{ letter }}
