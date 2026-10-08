@@ -23,7 +23,8 @@ export class FiveStyleDbComponent implements OnInit {
 
   letters = 'ABCDEFGHIJKLMNOPQRSTUVWX'.split('');
   selectedLetter: string | null = null;
-  filteredSequences: { sequence: string, short: string, expand: string, algorithm: string }[] = [];
+  filteredSequences: { sequence: string, short: string, expand: string, algorithm: string, htm?: number }[] = [];
+  moveFilter: string = 'all';
 
   constructor(public commutatorService: CommutatorService) {}
 
@@ -35,6 +36,7 @@ export class FiveStyleDbComponent implements OnInit {
         this.pieceType = state.pieceType || 'corners';
         this.searchSequence = state.searchSequence || '';
         this.selectedLetter = state.selectedLetter || null;
+        this.moveFilter = state.moveFilter || 'all';
         
         if (this.selectedLetter) {
           this.updateFilteredSequences();
@@ -50,12 +52,66 @@ export class FiveStyleDbComponent implements OnInit {
     localStorage.setItem('fivestyle-search-state', JSON.stringify({
       pieceType: this.pieceType,
       searchSequence: this.searchSequence,
-      selectedLetter: this.selectedLetter
+      selectedLetter: this.selectedLetter,
+      moveFilter: this.moveFilter
     }));
   }
 
   get isEdges() {
     return this.pieceType === 'edges';
+  }
+
+  get moveFilterOptions() {
+    if (this.isEdges) {
+      return [
+        { label: 'Show only 4 movers', value: '4' },
+        { label: 'Show 4 and 5 moves', value: '4,5' },
+        { label: 'Show all', value: 'all' }
+      ];
+    } else {
+      return [
+        { label: 'Show only 8 movers', value: '8' },
+        { label: 'Show 8 and 9 moves', value: '8,9' },
+        { label: 'Show all', value: 'all' }
+      ];
+    }
+  }
+
+  onFilterChange() {
+    this.selectedLetter = null;
+    this.searchSequence = '';
+    this.currentAlg = null;
+    this.isEditing = false;
+    this.filteredSequences = [];
+    this.saveState();
+  }
+
+  get availableLetters(): string[] {
+    if (this.moveFilter === 'all') return this.letters;
+    
+    let allSequences: string[] = this.isEdges 
+      ? this.commutatorService.getAll5StyleEdgePairs()
+      : this.commutatorService.getAll5StyleCornerPairs();
+      
+    const validSequences = allSequences.filter(p => this.isSequenceValid(p));
+    return this.letters.filter(letter => validSequences.some(seq => seq.includes(letter)));
+  }
+
+  isSequenceValid(seq: string): boolean {
+    if (this.moveFilter === 'all') return true;
+    
+    const alg = this.isEdges 
+      ? this.commutatorService.get5StyleEdgeAlg(seq)
+      : this.commutatorService.get5StyleCornerAlg(seq);
+      
+    if (!alg || !alg.htm) return false;
+    
+    if (this.moveFilter === '4') return alg.htm === 4;
+    if (this.moveFilter === '4,5') return alg.htm === 4 || alg.htm === 5;
+    if (this.moveFilter === '8') return alg.htm === 8;
+    if (this.moveFilter === '8,9') return alg.htm === 8 || alg.htm === 9;
+    
+    return true;
   }
 
   onSearch(isManualSearch = true) {
@@ -104,7 +160,7 @@ export class FiveStyleDbComponent implements OnInit {
     }
 
     this.filteredSequences = allSequences
-      .filter(p => p.includes(this.selectedLetter!))
+      .filter(p => p.includes(this.selectedLetter!) && this.isSequenceValid(p))
       .sort()
       .map(p => {
         const alg = this.isEdges ? this.commutatorService.get5StyleEdgeAlg(p) : this.commutatorService.get5StyleCornerAlg(p);
@@ -112,7 +168,8 @@ export class FiveStyleDbComponent implements OnInit {
           sequence: p, 
           short: alg?.short || '', 
           expand: alg?.expand || '',
-          algorithm: alg?.algorithm || '' 
+          algorithm: alg?.algorithm || '',
+          htm: alg?.htm
         };
       });
   }
@@ -128,9 +185,15 @@ export class FiveStyleDbComponent implements OnInit {
     this.searchSequence = '';
     this.currentAlg = null;
     this.isEditing = false;
+    this.moveFilter = 'all';
     
     if (this.selectedLetter) {
-      this.updateFilteredSequences();
+      if (!this.availableLetters.includes(this.selectedLetter)) {
+        this.selectedLetter = null;
+        this.filteredSequences = [];
+      } else {
+        this.updateFilteredSequences();
+      }
     }
     
     this.saveState();

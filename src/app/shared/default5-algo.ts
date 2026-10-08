@@ -6,6 +6,7 @@ export interface FiveStyleAlgDef {
   expand?: string;
   algorithm: string;
   buffer: string;
+  htm?: number;
 }
 
 export const DEFAULT_5STYLE_CORNERS: Record<string, FiveStyleAlgDef> = corner5 as unknown as Record<string, FiveStyleAlgDef>;
