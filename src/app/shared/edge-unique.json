@@ -116,8 +116,7 @@
     "algorithm": "M2 U M U2 M' U M2",
     "htm": 7,
     "derive": {
-      "inverse": "DB",
-      "mirror": "DB"
+      "inverse": "DB"
     }
   },
   "BE": {
@@ -881,8 +880,7 @@
     "algorithm": "R U' R E2 R' U R E2 R2",
     "htm": 9,
     "derive": {
-      "inverse": "LJ",
-      "mirror": "LJ"
+      "inverse": "LJ"
     }
   },
   "JQ": {
@@ -1068,8 +1066,7 @@
     "algorithm": "R U' R E' R2 E R2 R' U R'",
     "htm": 10,
     "derive": {
-      "inverse": "TR",
-      "mirror": "TR"
+      "inverse": "TR"
     }
   },
   "RU": {
