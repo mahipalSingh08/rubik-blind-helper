@@ -116,7 +116,7 @@ export class CubeEngine {
     }
   }
 
-  static generateScramble(moveSet: string = 'standard'): string {
+  static generateScramble(moveSet: string = 'standard', scrambleLength: number = 20): string {
     let moves = ['U', 'D', 'F', 'B', 'L', 'R'];
     
     if (moveSet === 'mu') moves = ['M', 'U'];
@@ -130,7 +130,7 @@ export class CubeEngine {
     let mNetRotation = 0; // track M slice net rotation
     let uNetRotation = 0; // track U face net rotation
     
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < scrambleLength; i++) {
       let nextMove = moves[Math.floor(Math.random() * moves.length)];
       while (nextMove === lastMove) {
         nextMove = moves[Math.floor(Math.random() * moves.length)];
