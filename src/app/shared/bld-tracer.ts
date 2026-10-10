@@ -6,8 +6,8 @@ export class BldTracer {
   ];
 
   private cornerPieces = [
-    ['A','R','E'], ['B','Q','N'], ['C','M','J'], ['D','I','F'], 
-    ['X','S','H'], ['W','T','O'], ['V','P','K'], ['U','L','G']
+    ['A','R','E'], ['B','N','Q'], ['C','J','M'], ['D','F','I'], 
+    ['X','H','S'], ['W','T','O'], ['V','P','K'], ['U','L','G']
   ];
 
   private l(letter: string) { return letter.charCodeAt(0) - 65; }
@@ -78,7 +78,9 @@ export class BldTracer {
         const opp2 = this.getPiece(t2, this.edgePieces).find(s => s !== t2)!;
         
         let temp = state[this.l(t1)]; state[this.l(t1)] = state[this.l(t2)]; state[this.l(t2)] = temp;
-        temp = state[this.l(opp1)]; state[this.l(opp1)] = state[this.l(opp2)]; state[this.l(opp2)] = temp;
+        if (opp1 !== t2) {
+          temp = state[this.l(opp1)]; state[this.l(opp1)] = state[this.l(opp2)]; state[this.l(opp2)] = temp;
+        }
         
       } else {
         // Normal trace
@@ -92,7 +94,9 @@ export class BldTracer {
         const opp2 = this.getPiece(t2, this.edgePieces).find(s => s !== t2)!;
         
         let temp = state[this.l(t1)]; state[this.l(t1)] = state[this.l(t2)]; state[this.l(t2)] = temp;
-        temp = state[this.l(opp1)]; state[this.l(opp1)] = state[this.l(opp2)]; state[this.l(opp2)] = temp;
+        if (opp1 !== t2) {
+          temp = state[this.l(opp1)]; state[this.l(opp1)] = state[this.l(opp2)]; state[this.l(opp2)] = temp;
+        }
       }
     }
 

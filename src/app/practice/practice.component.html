@@ -30,7 +30,9 @@
 
   <div class="scramble-box">
     <h2>Scramble</h2>
-    <div class="scramble-text">{{ scramble }}</div>
+    <div class="scramble-input-container">
+      <textarea [(ngModel)]="scramble" (ngModelChange)="onScrambleChange()" class="scramble-input" placeholder="Enter manual scramble..." rows="2"></textarea>
+    </div>
     <button id="generateBtn" (click)="generate()">🔄 Generate New Scramble</button>
   </div>
   

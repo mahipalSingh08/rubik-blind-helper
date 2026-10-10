@@ -138,10 +138,17 @@ button#generateBtn:active { transform: translateY(0px); }
   box-shadow: 0 4px 18px rgba(0,0,0,0.35);
 }
 .scramble-box h2 { margin-top: 0; color: var(--muted); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
-.scramble-text {
-  font-family: monospace; font-size: 1.8rem; font-weight: 800; color: #fff;
-  letter-spacing: 4px; margin-bottom: 24px; word-break: keep-all;
+.scramble-input-container {
+  width: 100%; display: flex; justify-content: center; margin-bottom: 24px;
 }
+.scramble-input {
+  width: 100%; font-family: monospace; font-size: 1.8rem; font-weight: 800; color: #fff;
+  letter-spacing: 2px; background: rgba(0,0,0,0.2); border: 1px solid transparent; border-radius: 8px; padding: 12px;
+  text-align: center; box-sizing: border-box; transition: border-color 0.2s ease, background 0.2s ease;
+  resize: none; overflow: hidden; line-height: 1.4;
+}
+.scramble-input:hover { border-color: #2b3040; background: rgba(0,0,0,0.4); }
+.scramble-input:focus { outline: none; border-color: #a162f7; background: #10131c; }
 button#generateBtn {
   padding: 12px 30px; border: none; border-radius: 8px;
   background: linear-gradient(135deg, #a162f7, #6633cc); color: #fff; font-weight: 700; font-size: 1.05rem;

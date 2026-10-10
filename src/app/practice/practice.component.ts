@@ -160,6 +160,14 @@ export class PracticeComponent implements OnInit {
     this.loadScramble(newScramble);
   }
 
+  onScrambleChange() {
+    this.scramble = this.scramble.toUpperCase();
+    localStorage.setItem('practiceScramble', this.scramble);
+    this.userSolution = '';
+    this.saveUserSolution();
+    this.loadScramble(this.scramble);
+  }
+
   retrace() {
     // Save updated buffer choices
     this.memoService.saveState();
