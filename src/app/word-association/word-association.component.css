@@ -5,6 +5,62 @@
 
 .main-content { width: 100%; max-width: 1000px; display: flex; flex-direction: column; gap: 30px; }
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 20px;
+  font-size: 1.4rem;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  background: #10131c;
+  border: 2px solid #2b3040;
+  color: var(--text);
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent2);
+  box-shadow: 0 0 16px rgba(77, 208, 225, 0.35);
+  transform: translateY(-2px);
+}
+
+.search-input::placeholder {
+  color: var(--muted);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.search-hint {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: -12px;
+  margin-bottom: 5px;
+}
+
+.search-hint code {
+  color: var(--accent2);
+  background: rgba(77, 208, 225, 0.12);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+}
+
 .letter-picker {
   display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
   background: var(--panel); padding: 20px; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);
@@ -36,6 +92,12 @@
 .editor-panel {
   background: linear-gradient(to bottom, #1e2233, #171a23);
   border: 1px solid var(--accent); border-radius: 12px; padding: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  animation: fadeInDown 0.25s ease-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 .editor-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #2b3040; padding-bottom: 12px; }
 .editor-header h2 { margin: 0; }

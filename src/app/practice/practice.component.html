@@ -39,7 +39,13 @@
     <div class="scramble-input-container">
       <textarea [(ngModel)]="scramble" (ngModelChange)="onScrambleChange()" class="scramble-input" placeholder="Enter manual scramble..." rows="2"></textarea>
     </div>
-    <button id="generateBtn" (click)="generate()">🔄 Generate New Scramble</button>
+    <div class="scramble-actions">
+      <button id="generateBtn" (click)="generate()">🔄 Generate New Scramble</button>
+      <button id="shareBtn" class="share-btn" (click)="shareScramble()" [class.copied]="copied" [title]="copied ? 'Link copied to clipboard!' : 'Copy shareable link with this scramble'">
+        <span *ngIf="!copied">🔗 Share Scramble</span>
+        <span *ngIf="copied">✓ Link Copied!</span>
+      </button>
+    </div>
   </div>
   
   <div class="cube-visualizer-container">

@@ -149,6 +149,14 @@ button#generateBtn:active { transform: translateY(0px); }
 }
 .scramble-input:hover { border-color: #2b3040; background: rgba(0,0,0,0.4); }
 .scramble-input:focus { outline: none; border-color: #a162f7; background: #10131c; }
+.scramble-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 button#generateBtn {
   padding: 12px 30px; border: none; border-radius: 8px;
   background: linear-gradient(135deg, #a162f7, #6633cc); color: #fff; font-weight: 700; font-size: 1.05rem;
@@ -157,6 +165,47 @@ button#generateBtn {
 }
 button#generateBtn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(161,98,247,0.5); }
 button#generateBtn:active { transform: translateY(0px); }
+
+button#shareBtn, .share-btn {
+  padding: 12px 26px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+
+button#shareBtn:hover, .share-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.5);
+  border-color: rgba(56, 189, 248, 0.8);
+}
+
+button#shareBtn:active, .share-btn:active {
+  transform: translateY(0px);
+}
+
+button#shareBtn.copied, .share-btn.copied {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-color: #34d399;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.45);
+  animation: share-pulse 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes share-pulse {
+  0% { transform: scale(0.94); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
 
 .parity-alert {
   background: rgba(255,138,61,0.1); border: 1px solid rgba(255,138,61,0.5); border-radius: 8px;
