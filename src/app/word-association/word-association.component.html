@@ -6,6 +6,59 @@
 
   <div class="main-content">
     
+    <!-- Search Bar (Like 3-Style) -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        class="search-input"
+        [(ngModel)]="searchPair" 
+        (input)="onSearch()" 
+        (keydown.enter)="focusCustomInput()"
+        placeholder="e.g. CD" 
+        maxlength="2"
+        autocomplete="off"
+        spellcheck="false">
+    </div>
+
+    <div *ngIf="!activePair && (!searchPair || searchPair.length !== 2)" class="search-hint">
+      Type a letter pair above (e.g. <code>CD</code>) or pick a letter below to view & edit words
+    </div>
+
+    <!-- Editor Panel (Result Display like 3-Style) -->
+    <div class="editor-panel" *ngIf="activePair">
+      <div class="editor-header">
+        <h2>Editing Pair: <span class="highlight">{{ activePair }}</span></h2>
+        <button class="close-btn" (click)="closeEditor()" title="Close editor">✖</button>
+      </div>
+      
+      <div class="editor-body">
+        <div class="custom-section">
+          <label>Your Custom Word</label>
+          <div class="input-group">
+            <input type="text" [(ngModel)]="customInput" placeholder="Enter custom word..." (keyup.enter)="saveCustomWord()">
+            <button class="save-btn" (click)="saveCustomWord()">Save</button>
+            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)">Clear</button>
+          </div>
+          <p class="status-text" *ngIf="dictionary.hasCustomWord(activePair)">✅ Using custom word: <strong>{{ dictionary.getCustomWord(activePair) }}</strong></p>
+          <p class="status-text default" *ngIf="!dictionary.hasCustomWord(activePair)">⚠️ Using default wiki suggestion: <strong>{{ dictionary.getWord(activePair) }}</strong></p>
+        </div>
+
+        <div class="suggestions-section">
+          <label>Wiki Suggestions</label>
+          <div class="chips">
+            <div class="chip" 
+                 *ngFor="let sug of dictionary.getSuggestions(activePair)"
+                 (click)="useSuggestion(sug)">
+              {{ sug }}
+            </div>
+            <div class="no-suggestions" *ngIf="dictionary.getSuggestions(activePair).length === 0">
+              No suggestions available for this pair.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Letter Picker -->
     <div class="letter-picker">
       <div class="letter-btn" 
@@ -24,44 +77,9 @@
              *ngFor="let second of letters"
              [class.active-card]="activePair === selectedLetter + second"
              [class.has-custom]="dictionary.hasCustomWord(selectedLetter + second)"
-             (click)="selectPair(selectedLetter + second)">
+             (click)="selectPair(selectedLetter + second, true)">
           <div class="pair-letters">{{ selectedLetter }}{{ second }}</div>
           <div class="pair-word">{{ dictionary.getWord(selectedLetter + second) }}</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Editor Panel -->
-    <div class="editor-panel" *ngIf="activePair">
-      <div class="editor-header">
-        <h2>Editing Pair: <span class="highlight">{{ activePair }}</span></h2>
-        <button class="close-btn" (click)="activePair = null">✖</button>
-      </div>
-      
-      <div class="editor-body">
-        <div class="custom-section">
-          <label>Your Custom Word</label>
-          <div class="input-group">
-            <input type="text" [(ngModel)]="customInput" placeholder="Enter custom word..." (keyup.enter)="saveCustomWord()">
-            <button class="save-btn" (click)="saveCustomWord()">Save</button>
-            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)">Clear</button>
-          </div>
-          <p class="status-text" *ngIf="dictionary.hasCustomWord(activePair)">✅ Using custom word</p>
-          <p class="status-text default" *ngIf="!dictionary.hasCustomWord(activePair)">⚠️ Using default wiki suggestion</p>
-        </div>
-
-        <div class="suggestions-section">
-          <label>Wiki Suggestions</label>
-          <div class="chips">
-            <div class="chip" 
-                 *ngFor="let sug of dictionary.getSuggestions(activePair)"
-                 (click)="useSuggestion(sug)">
-              {{ sug }}
-            </div>
-            <div class="no-suggestions" *ngIf="dictionary.getSuggestions(activePair).length === 0">
-              No suggestions available for this pair.
-            </div>
-          </div>
         </div>
       </div>
     </div>

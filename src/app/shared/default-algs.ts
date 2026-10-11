@@ -1443,8 +1443,8 @@ export const DEFAULT_EDGES: Record<string, AlgDef> = {
     "long": "F E F' R' F E' F' R"
   },
   "TW": {
-    "short": "[D' R D, M2]",
-    "long": "D' R D M2 D' R' D M2"
+    "short": "[M2, U' R' U]",
+    "long": "M2 U' R' U M2 U' R U"
   },
   "TX": {
     "short": "[R : [D M D', D2]]",
@@ -1675,8 +1675,8 @@ export const DEFAULT_EDGES: Record<string, AlgDef> = {
     "long": "M2 D L' D' M2 D L D'"
   },
   "WT": {
-    "short": "[M2, D' R D]",
-    "long": "M2 D' R D M2 D' R' D"
+    "short": "[U' R' U, M2]",
+    "long": "U' R' U M2 U' R U M2"
   },
   "WU": {
     "short": "M u2 M u2",

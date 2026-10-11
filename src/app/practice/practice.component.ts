@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { MemoService } from '../memo-generator/memo.service';
 import { DictionaryService } from '../shared/dictionary.service';
 import { CommutatorService } from '../shared/commutator.service';
@@ -25,7 +27,7 @@ export interface GroupedPair {
   templateUrl: './practice.component.html',
   styleUrls: ['./practice.component.css']
 })
-export class PracticeComponent implements OnInit {
+export class PracticeComponent implements OnInit, OnDestroy {
   scramble: string = '';
   edgePairs: string[] = [];
   cornerPairs: string[] = [];
@@ -40,6 +42,10 @@ export class PracticeComponent implements OnInit {
   scrambleLength: number = 20;
   grayOutUnused: boolean = true;
   userSolution: string = '';
+
+  copied: boolean = false;
+  private copyTimeout: any = null;
+  private querySub?: Subscription;
 
   engine!: CubeEngine;
   
@@ -60,16 +66,41 @@ export class PracticeComponent implements OnInit {
   constructor(
     public memoService: MemoService, 
     public dictionary: DictionaryService,
-    public commutator: CommutatorService
+    public commutator: CommutatorService,
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit() {
     this.loadSettings();
-    const saved = localStorage.getItem('practiceScramble');
-    if (saved) {
-      this.loadScramble(saved);
-    } else {
-      this.generate();
+
+    // Check for scramble in URL parameters (shared link)
+    this.querySub = this.route.queryParams.subscribe(params => {
+      let urlScramble = params['scramble'];
+      if (urlScramble && typeof urlScramble === 'string' && urlScramble.trim()) {
+        urlScramble = urlScramble.replace(/\+/g, ' ').trim().toUpperCase();
+        if (!this.engine || this.scramble !== urlScramble) {
+          this.scramble = urlScramble;
+          localStorage.setItem('practiceScramble', this.scramble);
+          this.userSolution = '';
+          this.saveUserSolution();
+          this.loadScramble(this.scramble);
+        }
+      } else if (!this.engine) {
+        const saved = localStorage.getItem('practiceScramble');
+        if (saved) {
+          this.loadScramble(saved);
+        } else {
+          this.generate();
+        }
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    this.querySub?.unsubscribe();
+    if (this.copyTimeout) {
+      clearTimeout(this.copyTimeout);
     }
   }
 
@@ -162,6 +193,13 @@ export class PracticeComponent implements OnInit {
     this.userSolution = '';
     this.saveUserSolution();
     this.loadScramble(newScramble);
+    this.copied = false;
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { scramble: newScramble },
+      queryParamsHandling: 'merge',
+      replaceUrl: true
+    });
   }
 
   onScrambleChange() {
@@ -170,6 +208,61 @@ export class PracticeComponent implements OnInit {
     this.userSolution = '';
     this.saveUserSolution();
     this.loadScramble(this.scramble);
+    this.copied = false;
+  }
+
+  async shareScramble() {
+    if (!this.scramble || !this.scramble.trim()) return;
+
+    const trimmedScramble = this.scramble.trim();
+
+    // Ensure the current URL has the query param
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { scramble: trimmedScramble },
+      queryParamsHandling: 'merge',
+      replaceUrl: true
+    });
+
+    const url = new URL(window.location.href);
+    url.searchParams.set('scramble', trimmedScramble);
+    const shareUrl = url.toString();
+
+    let success = false;
+    if (navigator?.clipboard?.writeText) {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        success = true;
+      } catch {
+        // Fallback below
+      }
+    }
+
+    if (!success) {
+      try {
+        const textArea = document.createElement('textarea');
+        textArea.value = shareUrl;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-9999px';
+        textArea.style.top = '0';
+        textArea.setAttribute('readonly', '');
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        success = document.execCommand('copy');
+        document.body.removeChild(textArea);
+      } catch (err) {
+        console.error('Failed to copy scramble link to clipboard', err);
+      }
+    }
+
+    this.copied = true;
+    if (this.copyTimeout) {
+      clearTimeout(this.copyTimeout);
+    }
+    this.copyTimeout = setTimeout(() => {
+      this.copied = false;
+    }, 2500);
   }
 
   retrace() {
