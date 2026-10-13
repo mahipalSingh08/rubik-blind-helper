@@ -38,7 +38,7 @@ export interface BackendHealth {
   providedIn: 'root'
 })
 export class FiveStyleService {
-  private readonly baseUrl = 'http://127.0.0.1:8000';
+  private readonly baseUrl = 'https://rubik-blind-helper-backend.onrender.com';
 
   constructor(private http: HttpClient) {}
 
