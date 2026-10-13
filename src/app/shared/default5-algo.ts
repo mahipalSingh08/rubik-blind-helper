@@ -1,13 +1,29 @@
-import corner5 from './corner5.json';
-import edge5 from './edge5.json';
-
 export interface FiveStyleAlgDef {
+  sequence?: string;
   short?: string;
   expand?: string;
   algorithm: string;
-  buffer: string;
+  buffer?: string;
   htm?: number;
+  moves?: number;
+  commutator?: string;
+  basealgo?: string;
+  setupmove?: string;
+  inverse?: string;
+  letters?: string[];
 }
 
-export const DEFAULT_5STYLE_CORNERS: Record<string, FiveStyleAlgDef> = corner5 as unknown as Record<string, FiveStyleAlgDef>;
-export const DEFAULT_5STYLE_EDGES: Record<string, FiveStyleAlgDef> = edge5 as unknown as Record<string, FiveStyleAlgDef>;
+export interface FiveStyleAlgItem {
+  sequence: string;
+  commutator?: string;
+  algorithm: string;
+  moves: number;
+  basealgo?: string;
+  setupmove?: string;
+  inverse?: string;
+  letters?: string[];
+}
+
+// 5-Style database is powered by FastAPI + MongoDB backend due to massive size (194,760+ cases).
+export const DEFAULT_5STYLE_CORNERS: Record<string, FiveStyleAlgDef> = {};
+export const DEFAULT_5STYLE_EDGES: Record<string, FiveStyleAlgDef> = {};
