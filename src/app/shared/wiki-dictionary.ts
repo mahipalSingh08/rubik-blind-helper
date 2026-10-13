@@ -174,6 +174,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "AAVE (African American Vernacular English)"
   ],
   "AW": [
+    "Award",
     "Amy Winehouse",
     "Awake",
     "Awe",
@@ -1130,6 +1131,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Grave"
   ],
   "GW": [
+    "Gwalior",
     "Grow",
     "Glow",
     "Ghost Wagon (car of the Ghost Busters)",
@@ -2136,6 +2138,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Northern Illinois University (NIU)"
   ],
   "NV": [
+    "Nvidia",
     "Navy",
     "Knave",
     "Nevada",
