@@ -25,6 +25,7 @@ export class FiveStyleDbComponent implements OnInit {
   // Search & Filter
   searchSequence: string = '';
   moveFilter: string = 'all';
+  sortBy: 'alphabetical' | 'moves' = 'alphabetical';
 
   // State flags
   loadingPairs: boolean = false;
@@ -58,6 +59,7 @@ export class FiveStyleDbComponent implements OnInit {
         this.selectedPair = state.selectedPair || null;
         this.searchSequence = state.searchSequence || '';
         this.moveFilter = state.moveFilter || 'all';
+        this.sortBy = state.sortBy || 'alphabetical';
 
         if (this.selectedLetter) {
           this.fetchPairs(this.selectedLetter, this.selectedPair);
@@ -103,8 +105,25 @@ export class FiveStyleDbComponent implements OnInit {
       selectedLetter: this.selectedLetter,
       selectedPair: this.selectedPair,
       searchSequence: this.searchSequence,
-      moveFilter: this.moveFilter
+      moveFilter: this.moveFilter,
+      sortBy: this.sortBy
     }));
+  }
+
+  setSortBy(sort: 'alphabetical' | 'moves') {
+    if (this.sortBy === sort) return;
+    this.sortBy = sort;
+    this.applySorting();
+    this.saveState();
+  }
+
+  applySorting() {
+    if (!this.algorithmsForPair || this.algorithmsForPair.length === 0) return;
+    if (this.sortBy === 'alphabetical') {
+      this.algorithmsForPair.sort((a, b) => a.sequence.localeCompare(b.sequence));
+    } else {
+      this.algorithmsForPair.sort((a, b) => (a.moves - b.moves) || a.sequence.localeCompare(b.sequence));
+    }
   }
 
   get isEdges() {
@@ -200,12 +219,13 @@ export class FiveStyleDbComponent implements OnInit {
     this.loadingAlgos = true;
     this.saveState();
 
-    this.fiveStyleService.getAlgorithmsByPair(this.pieceType, pair, this.moveFilter, 1, 150).subscribe({
+    this.fiveStyleService.getAlgorithmsByPair(this.pieceType, pair, this.moveFilter, 1, 500).subscribe({
       next: res => {
         this.algorithmsForPair = res.items || [];
+        this.applySorting();
         this.loadingAlgos = false;
 
-        // Auto-select the first (shortest move) algorithm if available
+        // Auto-select the first algorithm if available
         if (this.algorithmsForPair.length > 0 && (!this.selectedAlgorithm || !this.selectedAlgorithm.sequence.startsWith(pair))) {
           this.selectAlgorithm(this.algorithmsForPair[0], false);
         }
@@ -337,6 +357,7 @@ export class FiveStyleDbComponent implements OnInit {
         const idx = this.algorithmsForPair.findIndex(a => a.sequence === this.selectedAlgorithm?.sequence);
         if (idx !== -1) {
           this.algorithmsForPair[idx] = { ...this.selectedAlgorithm };
+          this.applySorting();
         }
 
         this.isEditing = false;
