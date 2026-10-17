@@ -53,6 +53,7 @@
           class="search-input"
           [(ngModel)]="searchSequence" 
           (input)="onSearch()" 
+          (keydown.enter)="onSearchEnter()"
           placeholder="Search 4-letter sequence (e.g. ABUD, BEWQ) or pair (e.g. AB)" 
           maxlength="4"
           autocomplete="off">
@@ -78,7 +79,17 @@
           <span class="badge badge-moves">{{ selectedAlgorithm.moves }} moves</span>
           <span class="badge badge-type">{{ pieceType | uppercase }}</span>
           <span class="badge badge-setup" *ngIf="selectedAlgorithm.setupmove">Setup: {{ selectedAlgorithm.setupmove }}</span>
-          <span class="badge badge-inverse" *ngIf="selectedAlgorithm.inverse">Inv: {{ selectedAlgorithm.inverse }}</span>
+          <button 
+            type="button"
+            id="badge-inverse-btn"
+            class="badge badge-inverse badge-clickable" 
+            *ngIf="selectedAlgorithm.inverse"
+            (click)="goToAlgorithm(selectedAlgorithm.inverse)"
+            [title]="'Jump to inverse algorithm: ' + selectedAlgorithm.inverse">
+            <span class="badge-icon">🔄</span>
+            <span>Inv: <strong>{{ selectedAlgorithm.inverse }}</strong></span>
+            <span class="badge-arrow">↗</span>
+          </button>
         </div>
 
         <div class="result-actions" *ngIf="!isEditing">
@@ -102,7 +113,17 @@
         </div>
 
         <div class="alg-meta-footer" *ngIf="selectedAlgorithm.basealgo">
-          <span>Base Alg: <code>{{ selectedAlgorithm.basealgo }}</code></span>
+          <button 
+            type="button"
+            id="base-alg-chip-btn"
+            class="base-alg-chip" 
+            (click)="goToAlgorithm(selectedAlgorithm.basealgo)"
+            [title]="selectedAlgorithm.basealgo === selectedAlgorithm.sequence ? 'Current algorithm is the base case' : 'Jump to base algorithm: ' + selectedAlgorithm.basealgo">
+            <span class="chip-label">Base Alg:</span>
+            <code class="chip-code">{{ selectedAlgorithm.basealgo }}</code>
+            <span class="chip-badge" *ngIf="selectedAlgorithm.basealgo === selectedAlgorithm.sequence">Base Case</span>
+            <span class="chip-arrow" *ngIf="selectedAlgorithm.basealgo !== selectedAlgorithm.sequence">↗</span>
+          </button>
         </div>
       </div>
 
@@ -239,6 +260,25 @@
 
           <div class="algo-moves-preview">
             {{ item.algorithm }}
+          </div>
+
+          <div class="algo-card-meta" *ngIf="item.inverse || (item.basealgo && item.basealgo !== item.sequence)">
+            <button 
+              type="button"
+              class="card-pill pill-inv" 
+              *ngIf="item.inverse" 
+              (click)="$event.stopPropagation(); goToAlgorithm(item.inverse)"
+              [title]="'Jump to inverse: ' + item.inverse">
+              🔄 {{ item.inverse }}
+            </button>
+            <button 
+              type="button"
+              class="card-pill pill-base" 
+              *ngIf="item.basealgo && item.basealgo !== item.sequence" 
+              (click)="$event.stopPropagation(); goToAlgorithm(item.basealgo)"
+              [title]="'Jump to base: ' + item.basealgo">
+              Base: {{ item.basealgo }}
+            </button>
           </div>
         </div>
       </div>
