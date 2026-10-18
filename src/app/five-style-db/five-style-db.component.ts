@@ -26,6 +26,7 @@ export class FiveStyleDbComponent implements OnInit {
   searchSequence: string = '';
   moveFilter: string = 'all';
   sortBy: 'alphabetical' | 'moves' = 'alphabetical';
+  private searchDebounceTimer: any = null;
 
   // State flags
   loadingPairs: boolean = false;
@@ -189,17 +190,18 @@ export class FiveStyleDbComponent implements OnInit {
     this.fetchPairs(letter);
   }
 
-  fetchPairs(letter: string, preservePair: string | null = null) {
+  fetchPairs(letter: string, preservePair: string | null = null, autoScroll = false) {
     this.loadingPairs = true;
     this.errorMessage = null;
 
     this.fiveStyleService.getPairsForLetter(this.pieceType, letter, this.moveFilter).subscribe({
       next: res => {
-        this.pairs = res.pairs || [];
         this.loadingPairs = false;
-
-        if (preservePair && this.pairs.some(p => p.pair === preservePair)) {
-          this.selectPair(preservePair, false);
+        if (this.selectedLetter === letter) {
+          this.pairs = res.pairs || [];
+          if (preservePair && this.pairs.some(p => p.pair === preservePair)) {
+            this.selectPair(preservePair, autoScroll, false);
+          }
         }
       },
       error: err => {
@@ -214,26 +216,28 @@ export class FiveStyleDbComponent implements OnInit {
    * User clicks on a letter pair (e.g. 'AB')
    * Fetches the 5-style algorithms for that pair
    */
-  selectPair(pair: string, autoScroll = true) {
+  selectPair(pair: string, autoScroll = true, autoSelectFirst = false) {
     this.selectedPair = pair;
     this.loadingAlgos = true;
     this.saveState();
 
     this.fiveStyleService.getAlgorithmsByPair(this.pieceType, pair, this.moveFilter, 1, 500).subscribe({
       next: res => {
-        this.algorithmsForPair = res.items || [];
-        this.applySorting();
         this.loadingAlgos = false;
+        if (this.selectedPair === pair) {
+          this.algorithmsForPair = res.items || [];
+          this.applySorting();
 
-        // Auto-select the first algorithm if available
-        if (this.algorithmsForPair.length > 0 && (!this.selectedAlgorithm || !this.selectedAlgorithm.sequence.startsWith(pair))) {
-          this.selectAlgorithm(this.algorithmsForPair[0], false);
-        }
+          // Auto-select the first algorithm ONLY if explicitly requested
+          if (autoSelectFirst && this.algorithmsForPair.length > 0 && (!this.selectedAlgorithm || !this.selectedAlgorithm.sequence.startsWith(pair))) {
+            this.selectAlgorithm(this.algorithmsForPair[0], false, false);
+          }
 
-        if (autoScroll) {
-          const el = document.getElementById('pair-algs-view');
-          if (el) {
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (autoScroll) {
+            const el = document.getElementById('pair-algs-view');
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
           }
         }
       },
@@ -247,9 +251,11 @@ export class FiveStyleDbComponent implements OnInit {
   /**
    * User selects a specific 5-style algorithm
    */
-  selectAlgorithm(item: FiveStyleAlgItem, scrollToTop = true) {
+  selectAlgorithm(item: FiveStyleAlgItem, scrollToTop = true, updateSearchBox = true) {
     this.selectedAlgorithm = item;
-    this.searchSequence = item.sequence;
+    if (updateSearchBox) {
+      this.searchSequence = item.sequence;
+    }
     this.isEditing = false;
     this.saveState();
 
@@ -259,52 +265,140 @@ export class FiveStyleDbComponent implements OnInit {
   }
 
   /**
-   * Manual search handler
+   * Jump directly to another algorithm (e.g. inverse or base algorithm)
    */
-  onSearch() {
-    const raw = this.searchSequence.trim().toUpperCase();
+  goToAlgorithm(sequence?: string) {
+    if (!sequence) return;
+    const cleanSeq = sequence.trim().toUpperCase();
+    if (cleanSeq.length !== 4 && cleanSeq.length !== 2) return;
+
+    // If already viewing this algorithm, scroll to top smoothly
+    if (this.selectedAlgorithm && this.selectedAlgorithm.sequence === cleanSeq) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    // Reset move filter to 'all' so the target algorithm and its pair are never filtered out
+    if (this.moveFilter !== 'all') {
+      this.moveFilter = 'all';
+    }
+
+    if (this.searchDebounceTimer) {
+      clearTimeout(this.searchDebounceTimer);
+      this.searchDebounceTimer = null;
+    }
+
+    this.searchSequence = cleanSeq;
+    this.execute4LetterSearch(cleanSeq, true);
+  }
+
+  /**
+   * Manual search handler triggered on input
+   */
+  onSearch(scrollToTop = false) {
+    if (this.searchDebounceTimer) {
+      clearTimeout(this.searchDebounceTimer);
+      this.searchDebounceTimer = null;
+    }
+
+    const raw = this.searchSequence ? this.searchSequence.trim().toUpperCase() : '';
     if (!raw) {
       this.selectedAlgorithm = null;
+      this.errorMessage = null;
       return;
     }
 
     if (raw.length === 4) {
-      this.loadingSingle = true;
-      this.errorMessage = null;
-
-      this.fiveStyleService.getAlgorithm(this.pieceType, raw).subscribe({
-        next: doc => {
-          this.loadingSingle = false;
-          this.selectedAlgorithm = doc;
-          this.isEditing = false;
-          this.saveState();
-
-          // Sync letter and pair selections
-          const let1 = raw[0];
-          const pair1 = raw.substring(0, 2);
-          if (this.selectedLetter !== let1) {
-            this.selectedLetter = let1;
-            this.fetchPairs(let1, pair1);
-          } else if (this.selectedPair !== pair1) {
-            this.selectPair(pair1, false);
-          }
-        },
-        error: () => {
-          this.loadingSingle = false;
-          this.selectedAlgorithm = null;
-          this.errorMessage = `No algorithm found for 4-letter sequence '${raw}' in ${this.pieceType}.`;
-        }
-      });
+      // 4-letter sequence: search immediately for the exact algorithm
+      this.execute4LetterSearch(raw, scrollToTop);
     } else if (raw.length === 2) {
-      const let1 = raw[0];
-      this.selectLetter(let1);
-      setTimeout(() => {
-        this.selectPair(raw);
-      }, 300);
+      // 2-letter pair: debounce by 500ms so typing a 4-letter sequence is never interrupted
+      this.searchDebounceTimer = setTimeout(() => {
+        this.execute2LetterSearch(raw);
+      }, 500);
+    } else {
+      // 1 or 3 letters: User is in the middle of typing, clear error and wait
+      this.errorMessage = null;
+    }
+  }
+
+  /**
+   * Immediate search trigger when user hits Enter
+   */
+  onSearchEnter() {
+    if (this.searchDebounceTimer) {
+      clearTimeout(this.searchDebounceTimer);
+      this.searchDebounceTimer = null;
+    }
+
+    const raw = this.searchSequence ? this.searchSequence.trim().toUpperCase() : '';
+    if (raw.length === 4) {
+      this.execute4LetterSearch(raw, true);
+    } else if (raw.length === 2) {
+      this.execute2LetterSearch(raw);
+    }
+  }
+
+  execute4LetterSearch(raw: string, scrollToTop = false) {
+    this.loadingSingle = true;
+    this.errorMessage = null;
+
+    this.fiveStyleService.getAlgorithm(this.pieceType, raw).subscribe({
+      next: doc => {
+        // Discard if user modified the search in the meantime
+        if (this.searchSequence.trim().toUpperCase() !== raw) {
+          this.loadingSingle = false;
+          return;
+        }
+
+        this.loadingSingle = false;
+        this.selectedAlgorithm = doc;
+        this.isEditing = false;
+        this.saveState();
+
+        if (scrollToTop) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Sync letter and pair selections without overriding the search box or auto-selecting other algs
+        const let1 = raw[0];
+        const pair1 = raw.substring(0, 2);
+        if (this.selectedLetter !== let1 || !this.pairs.length) {
+          this.selectedLetter = let1;
+          this.fetchPairs(let1, pair1, false);
+        } else if (this.selectedPair !== pair1 || !this.algorithmsForPair.length) {
+          this.selectPair(pair1, false, false);
+        }
+      },
+      error: () => {
+        if (this.searchSequence.trim().toUpperCase() !== raw) {
+          this.loadingSingle = false;
+          return;
+        }
+        this.loadingSingle = false;
+        this.selectedAlgorithm = null;
+        this.errorMessage = `No algorithm found for 4-letter sequence '${raw}' in ${this.pieceType}.`;
+      }
+    });
+  }
+
+  execute2LetterSearch(pair: string) {
+    const let1 = pair[0];
+    this.errorMessage = null;
+
+    if (this.selectedLetter !== let1 || !this.pairs.length) {
+      this.selectedLetter = let1;
+      this.fetchPairs(let1, pair, true);
+    } else if (this.selectedPair !== pair || !this.algorithmsForPair.length) {
+      this.selectPair(pair, true, false);
     }
   }
 
   clearSearch() {
+    if (this.searchDebounceTimer) {
+      clearTimeout(this.searchDebounceTimer);
+      this.searchDebounceTimer = null;
+    }
     this.searchSequence = '';
     this.selectedAlgorithm = null;
     this.errorMessage = null;
