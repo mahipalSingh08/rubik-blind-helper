@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { WIKI_DICTIONARY } from './wiki-dictionary';
-import { WORD_DICTIONARY as OLD_DICTIONARY } from './word-dictionary';
 
 @Injectable({
   providedIn: 'root'
@@ -27,60 +26,25 @@ export class DictionaryService {
     localStorage.setItem('customWords', JSON.stringify(this.customWords));
   }
 
-  // Get all suggestions (Old dictionary word first, then wiki)
+  // Get all suggestions from wiki-dictionary
   getSuggestions(pair: string): string[] {
     pair = pair.toUpperCase();
-    const suggestions: string[] = [];
-    const lowerWords = new Set<string>();
-    
-    const addWord = (w: string) => {
-      if (!w) return;
-      const lower = w.toLowerCase().trim();
-      if (!lowerWords.has(lower)) {
-        suggestions.push(w);
-        lowerWords.add(lower);
-      }
-    };
-    
-    addWord(OLD_DICTIONARY[pair]);
-    
     const wiki = WIKI_DICTIONARY[pair] || [];
-    for (const word of wiki) {
-      addWord(word);
-    }
-    
-    return suggestions;
+    return [...wiki];
   }
 
-  // Get the display string for Memo / Practice tabs (returns multiple words)
+  // Get the single priority word for this pair (custom word if set, otherwise 1st wiki word)
   getWord(pair: string): string {
     pair = pair.toUpperCase();
-    
-    const words: string[] = [];
-    const lowerWords = new Set<string>();
-    
-    const addWord = (w: string) => {
-      if (!w) return false;
-      const lower = w.toLowerCase().trim();
-      if (!lowerWords.has(lower)) {
-        words.push(w);
-        lowerWords.add(lower);
-        return true;
-      }
-      return false;
-    };
-    
-    addWord(this.customWords[pair]);
-    addWord(OLD_DICTIONARY[pair]);
-    
-    const wiki = WIKI_DICTIONARY[pair] || [];
-    for (const word of wiki) {
-      if (addWord(word)) {
-        if (words.length >= 3) break; // limit to 3 options
-      }
+    const custom = this.customWords[pair];
+    if (custom && custom.trim() !== '') {
+      return custom.trim();
     }
-    
-    return words.length > 0 ? words.join(', ') : '???';
+    const wiki = WIKI_DICTIONARY[pair];
+    if (wiki && wiki.length > 0) {
+      return wiki[0];
+    }
+    return '';
   }
 
   getCustomWord(pair: string): string {
