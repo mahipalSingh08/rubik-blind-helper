@@ -1,12 +1,12 @@
 <div class="dictionary-container">
   <div class="header">
     <h1>📖 Word Dictionary</h1>
-    <p class="subtitle">Customize your letter pair associations</p>
+    <p class="subtitle">Customize your single letter-pair word associations</p>
   </div>
 
   <div class="main-content">
     
-    <!-- Search Bar (Like 3-Style) -->
+    <!-- Search Bar -->
     <div class="search-container">
       <input 
         type="text" 
@@ -20,40 +20,63 @@
         spellcheck="false">
     </div>
 
-    <div *ngIf="!activePair && (!searchPair || searchPair.length !== 2)" class="search-hint">
+    <div *ngIf="searchError" class="search-error">
+      ⚠️ {{ searchError }}
+    </div>
+
+    <div *ngIf="!searchError && !activePair && (!searchPair || searchPair.length !== 2)" class="search-hint">
       Type a letter pair above (e.g. <code>CD</code>) or pick a letter below to view & edit words
     </div>
 
-    <!-- Editor Panel (Result Display like 3-Style) -->
+    <!-- Editor Panel -->
     <div class="editor-panel" *ngIf="activePair">
       <div class="editor-header">
-        <h2>Editing Pair: <span class="highlight">{{ activePair }}</span></h2>
+        <div class="pair-nav">
+          <button class="nav-btn prev" (click)="prevPair()" title="Previous Pair (Left Arrow)">◀ Prev</button>
+          <h2>Editing Pair: <span class="highlight">{{ activePair }}</span> 
+            <span class="pair-counter" *ngIf="getPairIndexInfo().current">({{ getPairIndexInfo().current }} / {{ getPairIndexInfo().total }})</span>
+          </h2>
+          <button class="nav-btn next" (click)="nextPair()" title="Next Pair (Right Arrow)">Next ▶</button>
+        </div>
         <button class="close-btn" (click)="closeEditor()" title="Close editor">✖</button>
       </div>
       
       <div class="editor-body">
-        <div class="custom-section">
-          <label>Your Custom Word</label>
-          <div class="input-group">
-            <input type="text" [(ngModel)]="customInput" placeholder="Enter custom word..." (keyup.enter)="saveCustomWord()">
-            <button class="save-btn" (click)="saveCustomWord()">Save</button>
-            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)">Clear</button>
+        <!-- Showcase for the single Priority Word (in Green) -->
+        <div class="priority-showcase">
+          <div class="priority-label">Priority Word to Imagine:</div>
+          <div class="priority-value">{{ dictionary.getWord(activePair) }}</div>
+          <div class="priority-source">
+            <span *ngIf="dictionary.hasCustomWord(activePair)" class="badge custom-badge">✓ Custom Word Active</span>
+            <span *ngIf="!dictionary.hasCustomWord(activePair)" class="badge default-badge">★ Default 1st Word from Wiki</span>
+            <span class="nav-hint">Tip: Use ◀ / ▶ arrow keys or buttons to review pairs</span>
           </div>
-          <p class="status-text" *ngIf="dictionary.hasCustomWord(activePair)">✅ Using custom word: <strong>{{ dictionary.getCustomWord(activePair) }}</strong></p>
-          <p class="status-text default" *ngIf="!dictionary.hasCustomWord(activePair)">⚠️ Using default wiki suggestion: <strong>{{ dictionary.getWord(activePair) }}</strong></p>
         </div>
 
+        <!-- Wiki Suggestions Section -->
         <div class="suggestions-section">
-          <label>Wiki Suggestions</label>
+          <label>Wiki Suggestions (Click any word to make it your priority):</label>
           <div class="chips">
             <div class="chip" 
                  *ngFor="let sug of dictionary.getSuggestions(activePair)"
+                 [class.priority]="isPriorityWord(sug)"
                  (click)="useSuggestion(sug)">
+              <span class="chip-check" *ngIf="isPriorityWord(sug)">✓</span>
               {{ sug }}
             </div>
             <div class="no-suggestions" *ngIf="dictionary.getSuggestions(activePair).length === 0">
               No suggestions available for this pair.
             </div>
+          </div>
+        </div>
+
+        <!-- Custom Input Section -->
+        <div class="custom-section">
+          <label>Or Type Your Own Custom Word</label>
+          <div class="input-group">
+            <input type="text" [(ngModel)]="customInput" placeholder="Enter custom word..." (keyup.enter)="saveCustomWord()">
+            <button class="save-btn" (click)="saveCustomWord()">Save</button>
+            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)" title="Reset to default 1st wiki word">Reset to Default</button>
           </div>
         </div>
       </div>
@@ -69,12 +92,15 @@
       </div>
     </div>
 
-    <!-- Pair Grid -->
+    <!-- Pair Grid (Excludes impossible AA, BB, CC pairs) -->
     <div class="pair-grid-container" *ngIf="selectedLetter">
-      <h2>Pairs starting with {{ selectedLetter }}</h2>
+      <div class="grid-header">
+        <h2>Valid pairs starting with {{ selectedLetter }} ({{ getValidSecondLetters(selectedLetter).length }} pairs)</h2>
+        <span class="grid-hint">Impossible same-letter pair {{ selectedLetter }}{{ selectedLetter }} is excluded</span>
+      </div>
       <div class="pair-grid">
         <div class="pair-card" 
-             *ngFor="let second of letters"
+             *ngFor="let second of getValidSecondLetters(selectedLetter)"
              [class.active-card]="activePair === selectedLetter + second"
              [class.has-custom]="dictionary.hasCustomWord(selectedLetter + second)"
              (click)="selectPair(selectedLetter + second, true)">

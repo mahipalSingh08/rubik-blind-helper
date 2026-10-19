@@ -1,20 +1,13 @@
 export const WIKI_DICTIONARY: Record<string, string[]> = {
-  "AA": [
-    "Aardvark",
-    "Anti-aircraft",
-    "American Airlines",
-    "AA Batteries",
-    "Aaliyah",
-    "Aces"
-  ],
   "AB": [
-    "Anthony Brooks",
     "Abacus",
+    "Anthony Brooks",
     "Abs",
     "Ali Baba",
     "ABBA"
   ],
   "AC": [
+    "AC",
     "Airconditioning",
     "Ace",
     "Acorn",
@@ -23,6 +16,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Acute"
   ],
   "AD": [
+    "AD",
     "Advertisement",
     "Add",
     "After Death",
@@ -32,45 +26,46 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Adrenaline"
   ],
   "AE": [
-    "American Eagle",
     "Aeroplane",
+    "American Eagle",
     "Aerosol can",
     "Aesop (fables)",
     "Amelia Earhart"
   ],
   "AF": [
+    "Africa",
     "Away From Keyboard (AFK)",
     "Afro",
     "Air Force",
     "Anne Frank",
-    "Africa",
     "Afrikaans"
   ],
   "AG": [
+    "Agent",
     "Agony",
     "Silver (Chemical symbol Ag)",
     "Ali G",
-    "Amy Grant",
-    "Agent"
+    "Amy Grant"
   ],
   "AH": [
+    "Air Horn",
     "Air hockey",
     "Auction House (Final Fantasy XI)",
     "Adolf Hitler",
-    "Air Horn",
     "Art History",
     "Anthony Hopkins"
   ],
   "AI": [
+    "AI",
     "Artificial Intelligence",
     "Allen Iverson",
     "American Idol",
     "All in (poker)"
   ],
   "AJ": [
+    "Apple Juice",
     "Ajax cleanser",
     "Angelina Jolie",
-    "Apple Juice",
     "Ace-Jack",
     "Action Jackson"
   ],
@@ -85,20 +80,20 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Akinator"
   ],
   "AL": [
+    "Aluminium",
     "Alien",
     "Abraham Lincoln",
     "Alligator",
-    "Aluminium",
     "Al Pacino",
     "Alabama",
     "Albania"
   ],
   "AM": [
+    "Ambulance",
     "Ammunition",
     "AM (time)",
     "Action Man",
     "Arctic Monkeys",
-    "Ambulance",
     "Alanis Morissette"
   ],
   "AN": [
@@ -110,18 +105,18 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Anne"
   ],
   "AO": [
+    "Aolong",
     "AOL",
     "Aerosol",
     "Aorta",
     "Aosu",
-    "Aolong",
     "Aochuang"
   ],
   "AP": [
+    "Apple",
     "Airplane",
     "Adrian Peterson",
     "Austin Powers",
-    "Apple",
     "Apollo (Space Shuttle) (Apollo Creed from Rocky)",
     "Application (Computer Program)",
     "Ape",
@@ -129,8 +124,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "APB"
   ],
   "AQ": [
-    "Aquarium",
     "Aqua (water)",
+    "Aquarium",
     "Al-Qaida",
     "Antique",
     "Anthony Quinn (old actor)",
@@ -152,20 +147,22 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Ashtray"
   ],
   "AT": [
+    "Atom",
     "Atlas",
     "AT-AT (Star Wars)",
     "Aphex Twin",
     "Atrium",
-    "Atom",
     "Atmosphere"
   ],
   "AU": [
+    "Auto",
     "Automobile",
     "Al Unser (IndyCar racer)",
     "Australia",
     "Gold (chemical symbol Au)"
   ],
   "AV": [
+    "Avinash",
     "Avenue",
     "Antonio Vivaldi",
     "AV (cube)",
@@ -188,20 +185,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Axel"
   ],
   "BA": [
-    "Bagel",
     "Batman",
+    "Bagel",
     "Bald",
     "Bao (Pixar short film)",
     "British Airways"
   ],
-  "BB": [
-    "Brittany billings",
-    "Blackberry",
-    "Basketball",
-    "Breaking Bad",
-    "BlockBuilding"
-  ],
   "BC": [
+    "BC",
     "Bicycle",
     "Battle Cruiser (Starcraft)",
     "British Columbia",
@@ -212,8 +203,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Benedict Cumberbatch"
   ],
   "BD": [
-    "Bed",
     "Body",
+    "Bed",
     "Blue Devils",
     "Bass Drum",
     "Bruce Dickinson",
@@ -222,30 +213,31 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Bad"
   ],
   "BE": [
-    "Belt",
     "Bee",
+    "Belt",
     "Belly",
-    "Beyonc\u00e9",
+    "Beyoncé",
     "Bean"
   ],
   "BF": [
+    "Boyfriend",
     "Bonfire",
     "Buffy (the vampire slayer)",
     "Brett Favre",
     "Butterfly",
     "Best Friends",
     "Beef",
-    "Boyfriend",
     "Big foot"
   ],
   "BG": [
+    "Bag",
     "Badge",
     "Borg",
-    "Bag",
     "Battle Ground",
     "Bee Gees"
   ],
   "BH": [
+    "Bharat",
     "Bee Hive",
     "Bah Humbug",
     "Bad Habits",
@@ -256,20 +248,20 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Beyer-Hardwick (BH) method"
   ],
   "BI": [
-    "Billiards",
     "Bird",
+    "Billiards",
     "Billy Idol",
     "Billboards"
   ],
   "BJ": [
+    "BJP",
     "Blackjack",
-    "Blowjob",
     "Billy Joel",
     "Bad Job"
   ],
   "BK": [
-    "Burger King",
     "Book",
+    "Burger King",
     "Black Knight",
     "Bike",
     "Beak"
@@ -285,6 +277,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Blake"
   ],
   "BM": [
+    "BMW",
     "Bum",
     "Bowel Movement",
     "Bad Manners",
@@ -299,14 +292,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Bill Nye"
   ],
   "BO": [
+    "Bottle",
     "Body Odor",
     "Barack Obama",
     "Bone",
     "Boat",
-    "Bottle",
     "Boar"
   ],
   "BP": [
+    "BP",
     "Backpack",
     "Ball pen",
     "Beep (sound)",
@@ -316,7 +310,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Best Possible Average (BPA)"
   ],
   "BQ": [
-    "Barbeque",
+    "BBQ-Barbeque",
     "Bouquet",
     "BenQ (electronics company)",
     "BQ (Phone Brand)",
@@ -356,21 +350,22 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Bulworth (movie)"
   ],
   "BV": [
+    "Brave",
     "Beaver",
     "BouleVard",
     "Believe"
   ],
   "BW": [
+    "Bowling",
     "Bow",
     "Bowl",
-    "Bowling",
     "Black widow",
     "Black & White",
     "Bruce Willis"
   ],
   "BX": [
-    "Boxer",
-    "Box"
+    "Box",
+    "Boxer"
   ],
   "CA": [
     "Camera",
@@ -380,26 +375,16 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Canada"
   ],
   "CB": [
-    "City Cab",
     "Cube",
+    "City Cab",
     "Cob (Corn Cob)",
     "Cub",
     "Cyclone Boys (Cubing Brand)",
     "Curb",
     "Christian Bale"
   ],
-  "CC": [
-    "Calculator",
-    "Coconut",
-    "Courteney Cox",
-    "Crispy Chicken",
-    "Cop Car",
-    "Crap Car",
-    "Cubic centimetre",
-    "Creative Cloud"
-  ],
   "CD": [
-    "Compact Disc",
+    "CD-Compact Disc",
     "Cod",
     "Code",
     "Cameron Diaz"
@@ -411,9 +396,9 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Clint Eastwood"
   ],
   "CF": [
-    "Cyoubx's Friends (FB Group)",
-    "Caf\u00e9",
     "Coffee",
+    "Cyoubx's Friends (FB Group)",
+    "Café",
     "Coffin",
     "Calf",
     "Cuffs",
@@ -422,59 +407,55 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "CFOP"
   ],
   "CG": [
+    "Cigarette",
     "Cog",
     "Cage",
-    "Cigarette",
     "Chris Griffin (family guy)",
     "CGI"
   ],
   "CH": [
-    "Chris Hardwick",
+    "Chair",
     "Cheer leader",
     "Cheer",
-    "Chair",
-    "Cher",
-    "Chuck",
-    "Chris Hardwick"
   ],
   "CI": [
-    "City",
     "CIA",
+    "City",
     "Cigar",
     "Cinnamon",
     "Cinema",
     "Circus",
-    "Chris Isaak"
   ],
   "CJ": [
+    "CJI",
     "Cujo",
     "Cojones",
     "Cajon (peruvian box drum)",
     "Carl Johnson (GTA)"
   ],
   "CK": [
-    "Calvin Klein",
     "Cake",
+    "Calvin Klein",
     "Cook",
     "Cockpit",
     "Cock"
   ],
   "CL": [
-    "Clown",
     "Clock",
+    "Clown",
     "CLL",
     "Clover",
-    "Courtney Love"
   ],
   "CM": [
-    "Comb",
     "Camel",
+    "Comb",
     "Cookie Monster",
     "Camera",
     "Claude Monet",
     "Centimetre"
   ],
   "CN": [
+    "CartoonNetwork",
     "Cone",
     "Cane",
     "Can",
@@ -483,47 +464,42 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "CNN"
   ],
   "CO": [
+    "Coke",
     "Colorado",
     "Coyote",
     "Cobalt",
-    "Coke",
     "Corner Orientation (CO)",
-    "Condom"
   ],
   "CP": [
-    "Cop",
     "Cap",
+    "Cop",
     "Cape",
     "Chris Pratt",
     "Corner Permutation (CP)"
   ],
   "CQ": [
+    "Cheque",
     "Croquet",
     "Conquest",
-    "Colin Quinn (comedian)"
   ],
   "CR": [
+    "Car",
     "Cross",
     "Chrome",
-    "Cristiano Ronaldo",
-    "Car",
-    "Chris Rock"
+    "Cristiano Ronaldo"
   ],
   "CS": [
-    "Counter-Strike",
-    "Chelsea Smith",
-    "Crime Scene",
     "Chess",
+    "Counter-Strike",
+    "Crime Scene",
     "Cheese",
-    "Casimir The Great",
     "Castle",
-    "Charlie Sheen",
     "Computer Science",
     "Cube Shape (CS)"
   ],
   "CT": [
-    "Cot (bed)",
     "Cat",
+    "Cot (bed)",
     "Coat",
     "Cute",
     "Charlize Theron",
@@ -547,56 +523,47 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Christopher Walken"
   ],
   "CX": [
-    "Coaxial cable (cable TV)",
     "Cyoubx",
+    "Coaxial cable (cable TV)",
     "Calx (metallic oxide)"
   ],
   "DA": [
+    "Dance",
     "Dagger",
     "Dark knight",
-    "Dance",
-    "Douglas Adams",
     "Day"
   ],
   "DB": [
+    "DB-Database",
     "Disco Ball",
     "Dobby (Harry Potter)",
     "Double",
-    "Database",
     "David Blaine",
     "D. B. Cooper",
     "Dab",
     "Debt"
   ],
   "DC": [
+    "DC-current",
     "Dan Cohen",
     "Washington DC",
     "Dice",
     "David Copperfield"
-  ],
-  "DD": [
-    "Dad",
-    "David Duchovny",
-    "Dungeons & Dragons",
-    "Don Draper",
-    "Dude"
   ],
   "DE": [
     "Dentist",
     "Dead",
     "Denmark",
     "Dean",
-    "Deutsch (German)"
   ],
   "DF": [
+    "Deaf",
     "Dafadils",
     "Dufflecoat",
     "Daffy Duck",
-    "Dolphin",
     "Dufflebag",
     "David Fincher",
-    "Dragonfly",
-    "Deaf"
+    "Dragonfly"
   ],
   "DG": [
     "Dog",
@@ -606,6 +573,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Dig Dug (old arcade game)"
   ],
   "DH": [
+    "Dhol",
     "Dough",
     "Doll House",
     "Dustin Hoffman",
@@ -619,6 +587,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Dinosaur"
   ],
   "DJ": [
+    "DJ light",
     "Disc Jockey",
     "Dwayne Johnson",
     "Dojo"
@@ -627,28 +596,28 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Duck",
     "Donkey Kong",
     "Duke",
-    "Disk",
-    "Dick"
+    "Disk"
   ],
   "DL": [
+    "Delhi",
     "Doll",
     "Dial",
     "Dell (brand)",
     "Doki Doki Literature Club (DDLC)"
   ],
   "DM": [
-    "Dome",
     "Dam",
+    "Dome",
     "Darth Maul",
     "Dumb",
     "Demi Moore",
     "Direct Message"
   ],
   "DN": [
+    "DNA",
     "Dungeon",
     "Dune",
     "Donut",
-    "Daniel Negreanu (poker player)",
     "Dane",
     "Dinner"
   ],
@@ -660,6 +629,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Document"
   ],
   "DP": [
+    "DP picture",
     "Diaper",
     "Deep",
     "Danica Patrick",
@@ -667,19 +637,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Dip (food)"
   ],
   "DQ": [
+    "Daku-DaQ",
     "Dairy Queen",
     "Drag Queen",
     "Disqualified",
-    "Die",
-    "Dennis Quaid (actor)"
   ],
   "DR": [
-    "Dragon",
     "Doctor",
-    "Daring",
+    "Dragon",
     "Door",
-    "Dr Dre",
-    "Dr Pepper",
     "Domino Reduction"
   ],
   "DS": [
@@ -692,13 +658,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Dr. Seuss"
   ],
   "DT": [
+    "Data",
     "Dart",
     "Debt",
     "Donald Trump",
     "Date",
-    "Data"
   ],
   "DU": [
+    "Delhi University",
     "Duck",
     "Dunkin doughnuts",
     "Duke",
@@ -707,25 +674,22 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Duet"
   ],
   "DV": [
+    "DVD",
     "Darth Vader",
     "Dove",
-    "DVD",
-    "D\u00e9j\u00e0 vu",
+    "Déjà vu",
     "Devil"
   ],
   "DW": [
+    "Dew",
     "Dreamworks",
-    "Dreamweaver",
     "Darkwing duck",
     "Dwarf",
-    "Dew"
   ],
   "DX": [
+    "Dexter",
     "Deluxe",
     "Deal Extreme (shop)",
-    "Durex",
-    "Doxxing",
-    "Dexter"
   ],
   "EA": [
     "Eagle",
@@ -733,28 +697,18 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
   ],
   "EB": [
     "Eyeball",
-    "Emmett Brown (Back to the Future)",
     "Easter Bunny"
   ],
   "EC": [
-    "Extra Credit",
-    "Emily Campbell",
-    "Ecclesiastical",
     "Eclair",
+    "Extra Credit",
     "Eclipse"
   ],
   "ED": [
-    "Edward (Twilight)",
-    "Mr. Ed",
+    "Edge",
     "Education",
     "Educator",
     "Ed Sheeran"
-  ],
-  "EE": [
-    "Eye",
-    "Eel",
-    "Electrical and Electronics",
-    "ExtraEmily"
   ],
   "EF": [
     "Elephant",
@@ -767,11 +721,12 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "EG method"
   ],
   "EH": [
+    "EH",
     "Edward Hicks"
   ],
   "EI": [
+    "Einstein",
     "Eskimo",
-    "Einstein"
   ],
   "EJ": [
     "Eject",
@@ -779,31 +734,34 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Erik Johnson"
   ],
   "EK": [
+    "EK-1",
     "Elk",
     "EKG",
     "Earthquake"
   ],
   "EL": [
+    "Eleven",
     "Elf",
     "Elvis",
     "Elmo",
-    "Eleven"
   ],
   "EM": [
+    "Email",
     "Emperor",
     "Eminem",
     "Emo",
     "Electro-Magnetic"
   ],
   "EN": [
-    "Entei (Pokemon)",
+    "Engine",
     "English",
+    "Entei (Pokemon)",
     "Envelope",
     "Ent (Lord of the Rings)"
   ],
   "EO": [
+    "Edge Orientation",
     "Eeyore (Winnie the pooh)",
-    "Edge Orientation"
   ],
   "EP": [
     "Edge Permutation",
@@ -812,8 +770,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Epstein"
   ],
   "EQ": [
-    "Equestrian",
     "Earthquake",
+    "Equestrian",
     "Equation",
     "Equator"
   ],
@@ -824,11 +782,11 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Era"
   ],
   "ES": [
+    "ESPN",
     "Esoteric",
     "Emily Schmitd",
     "Eastsheen",
-    "ESPN",
-    "Espa\u00f1ol (Spanish)",
+    "Español (Spanish)",
     "ESCube",
     "Eskimo"
   ],
@@ -837,30 +795,31 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Eat"
   ],
   "EU": [
-    "Euphonium",
     "Europe",
+    "Euphonium",
     "European Union",
     "Eucalyptus (species of tree)"
   ],
   "EV": [
+    "Electric Vehicle",
     "Evanescence",
     "Eevee",
     "Evil",
-    "Electric Vehicle"
   ],
   "EW": [
+    "Ewe",
     "Emily Wang",
-    "Ewe"
   ],
   "EX": [
+    "Ex",
     "Excalibur",
     "Example",
     "Extract",
     "Extreme",
     "Explosion",
-    "Ex"
   ],
   "FA": [
+    "FaceTime",
     "Fat Albert",
     "Field Artillery",
     "FIFA"
@@ -870,11 +829,11 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Facebook"
   ],
   "FC": [
+    "Face",
     "Fascism",
     "Fetch",
     "Fifty Cent",
     "Fewest Moves Challenge (FMC)",
-    "Face"
   ],
   "FD": [
     "Food",
@@ -883,47 +842,40 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Fedora"
   ],
   "FE": [
+    "Feather",
     "Ferret",
     "Ferrous",
     "Fossil Energy"
   ],
-  "FF": [
-    "Firefighter",
-    "Firstian Fushada",
-    "Free Fall"
-  ],
   "FG": [
-    "Fag",
     "Fog",
-    "Fig",
     "Frog",
     "FGTeeV (YouTuber)"
   ],
   "FH": [
-    "Fire Helmet",
-    "Fish",
     "Full House",
+    "Fire Helmet",
     "Fire Hydrant"
   ],
   "FI": [
-    "Fiddle",
     "Fish",
+    "Fiddle",
     "Fight",
     "Fiction (Sci-fi)"
   ],
   "FJ": [
+    "Fiji",
     "Fajita (dish)",
-    "Fiji"
   ],
   "FK": [
     "Fork"
   ],
   "FL": [
+    "Flower",
+    "Flood",
     "Flour",
     "Flying",
-    "Flood",
     "Florence",
-    "Flower"
   ],
   "FM": [
     "Foam",
@@ -932,20 +884,19 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Firm"
   ],
   "FN": [
+    "Fan",
     "Fin (shark fin)",
     "FNAF (Five Nights At Freddy's)",
     "Fang",
-    "Fan"
   ],
   "FO": [
     "Fossil",
-    "Fox",
     "Fool",
     "Foil"
   ],
   "FP": [
-    "Falcon Punch",
     "Flipper",
+    "Falcon Punch",
     "Frappachino (starbucks bottle)",
     "Fire Place",
     "Face Paints",
@@ -955,8 +906,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Fast-paced"
   ],
   "FQ": [
-    "Lord Farquaad",
     "Frequency",
+    "Lord Farquaad",
     "Frequently Asked Questions (FAQ)"
   ],
   "FR": [
@@ -968,19 +919,19 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "French"
   ],
   "FS": [
+    "Fast",
     "For Sure",
-    "Fish",
     "Fangshi"
   ],
   "FT": [
+    "Foot",
     "Boba Fett",
     "Fat guy",
     "Feet",
-    "Foot"
   ],
   "FU": [
-    "Fugitive",
     "Full",
+    "Fugitive",
     "Fufu & Egusi"
   ],
   "FV": [
@@ -989,14 +940,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Field of Vision"
   ],
   "FW": [
-    "Flower",
     "Forward",
+    "Flower",
     "Ferris Wheel"
   ],
   "FX": [
     "Fox"
   ],
   "GA": [
+    "Galaxy",
     "Gargoyle",
     "Ground Attack",
     "Ga permutation (PLL)",
@@ -1004,87 +956,81 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Gay"
   ],
   "GB": [
+    "Globe",
     "Ghost Busters",
     "Great Britain",
     "Gb permutation (PLL)",
     "Gaben",
     "Gobi Desert",
     "Gameboy",
-    "Globe"
   ],
   "GC": [
-    "Geek car",
+    "Golf Car",
     "Gamecube",
     "Google Classroom",
     "Gc permutation (PLL)",
     "Guacamole"
   ],
   "GD": [
-    "Godzilla",
     "God",
+    "Godzilla",
     "Gd permutation"
   ],
   "GE": [
-    "Gentleman",
     "Genie",
+    "Gentleman",
     "Gem",
     "Gene",
     "General Electric"
   ],
   "GF": [
-    "Giraffe",
     "Girlfriend",
     "Giraffe",
-    "Graphics Interchange Format (GIF)"
-  ],
-  "GG": [
-    "Google",
-    "Good Game",
-    "Gus gamboa",
-    "Goggles"
+    "Giraffe"
   ],
   "GH": [
-    "Green House",
     "Ghost",
+    "Green House",
     "Gandhi"
   ],
   "GI": [
+    "Gimbal",
     "Gin",
     "Ginny (harry potter)",
     "General Illumination",
     "G.I. Joe"
   ],
   "GJ": [
+    "Gujrat",
     "Green Giant",
     "Grape Jelly",
     "Grape Juice",
     "Good Job"
   ],
   "GK": [
-    "Green Knight",
+    "GK",
     "Geek",
     "Goku",
     "Greek"
   ],
   "GL": [
+    "Glue",
     "Globe",
     "Glass",
     "Gel",
     "Goal"
   ],
   "GM": [
+    "Good Morning",
     "Gallium",
     "Gem",
     "Gum",
-    "Gamma",
-    "General Motors Company (GMC)",
-    "Good Mythical Morning (GMM)",
-    "Good Morning"
+    "Gamma"
   ],
   "GN": [
+    "Gun",
     "Gondola",
     "Gengar",
-    "Gun",
     "Gin",
     "Good Night"
   ],
@@ -1103,14 +1049,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Green Queen (marijuana)"
   ],
   "GR": [
-    "Graduate",
     "Grass",
+    "Graduate",
     "Gore",
     "Green",
     "Gross"
   ],
   "GS": [
-    "Ghost",
     "Gas",
     "Goose"
   ],
@@ -1120,31 +1065,30 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Weilong GTS (GTS2M, GTS3M)"
   ],
   "GU": [
+    "Guitar",
     "Gull",
     "Gun",
-    "Guitar",
     "Guildford"
   ],
   "GV": [
+    "Grave",
     "Gravel",
     "Give",
-    "Grave"
   ],
   "GW": [
     "Gwalior",
     "Grow",
-    "Glow",
-    "Ghost Wagon (car of the Ghost Busters)",
-    "George Washington",
-    "George W. Bush"
+    "Glow"
   ],
   "GX": [
+    "GiX",
     "Lexus GX",
     "Yu-Gi-Oh! GX",
     "Global Xpress",
     "Germ-X (Hand Sanitizer)"
   ],
   "HA": [
+    "Ha",
     "Harp",
     "Harpoon"
   ],
@@ -1155,13 +1099,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "HBO"
   ],
   "HC": [
+    "Helicopter",
     "Hardcore",
-    "Helicopter"
   ],
   "HD": [
+    "Hot Dog",
     "Hard",
     "Head",
-    "Hot Dog",
     "High Definition (resolution)"
   ],
   "HE": [
@@ -1170,20 +1114,16 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Herb"
   ],
   "HF": [
+    "Half",
     "Huff",
     "Hot fudge",
-    "Half"
   ],
   "HG": [
+    "Hog",
     "Hang",
     "Hermione Granger",
-    "Hog",
     "Hug",
     "Rubeus Hagrid"
-  ],
-  "HH": [
-    "Hedgehog",
-    "Fishhook"
   ],
   "HI": [
     "Hi",
@@ -1191,27 +1131,26 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Hitler"
   ],
   "HJ": [
+    "Haj",
     "H. J. Heinz"
   ],
   "HK": [
-    "Captain Hook",
     "Hong Kong",
+    "Captain Hook",
     "Hook",
     "Honk"
   ],
   "HL": [
-    "Hell",
     "Hello",
-    "Hugh Laurie",
-    "Heel",
+    "Hell",
     "Hill",
     "Hole"
   ],
   "HM": [
+    "Hammer",
     "Hummingbird",
     "Hummer",
     "Home",
-    "Hammer"
   ],
   "HN": [
     "Honey",
@@ -1219,9 +1158,10 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "H1N1"
   ],
   "HO": [
+    "horizon",
+    "Hose",
     "House",
     "Hoax",
-    "Hose",
     "Hoe"
   ],
   "HP": [
@@ -1230,22 +1170,21 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Human Papillomavirus (HPV)"
   ],
   "HQ": [
+    "Headquarters",
     "Hockey",
     "Harley Quinn",
-    "Headquarters"
   ],
   "HR": [
     "Heart",
+    "Human Resources",
     "Hair",
     "Hare",
-    "Human Resources",
     "Harambe"
   ],
   "HS": [
+    "House",
     "Howard Stern",
     "Heather Smith",
-    "House",
-    "Hose",
     "High School"
   ],
   "HT": [
@@ -1256,10 +1195,10 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "High Templar"
   ],
   "HU": [
-    "Hunter",
+    "Humans",
     "Hummus",
+    "Hunter",
     "Humidity",
-    "Humans"
   ],
   "HV": [
     "Heaven",
@@ -1273,40 +1212,44 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
   ],
   "HX": [
     "Hoax",
+    "Hexagon",
     "Helix",
     "Hummer HX",
     "Hacksaw",
-    "Hexagon"
   ],
   "IA": [
     "Ian",
     "Iowa"
   ],
   "IB": [
+    "IB",
     "I-beam",
     "Ibis",
     "Ibuprofen",
     "Irritable bowel syndrome (IBS)"
   ],
   "IC": [
+    "Ice",
+    "IC circuit",
     "Icarus",
     "Ice cream",
-    "Ice"
   ],
   "ID": [
     "Identity Card",
     "Idaho"
   ],
   "IE": [
+    "Internet Explorer",
     "Ice",
-    "Internet Explorer"
   ],
   "IF": [
+    "If",
     "Ice fog",
     "Eiffel Tower",
     "Infinity"
   ],
   "IG": [
+    "IG",
     "Iguana",
     "Igloo",
     "Iggy Azalea",
@@ -1316,15 +1259,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Incredible Hulk",
     "IHOP (restaurant)"
   ],
-  "II": [
-    "II (2 in Roman numerals)"
-  ],
   "IJ": [
+    "Injection",
     "Injured",
     "Indiana Jones",
-    "Injection"
   ],
   "IK": [
+    "IeK",
     "Ink",
     "IKEA"
   ],
@@ -1334,24 +1275,25 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Illinois"
   ],
   "IM": [
+    "Iron Man",
     "Imposter",
-    "Iron Man"
   ],
   "IN": [
+    "India",
     "Intel Company",
-    "Indian",
     "Indiana",
     "Inch",
     "Inn"
   ],
   "IO": [
+    "IO moon",
     "Iowa",
     "Iodine"
   ],
   "IP": [
+    "IP address",
     "Ipod",
     "Ipad",
-    "IP address",
     "Internet Protocol"
   ],
   "IQ": [
@@ -1365,14 +1307,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Iran"
   ],
   "IS": [
-    "Ice skates",
     "ISS International Space Station",
-    "ISIS"
+    "Ice skates",
   ],
   "IT": [
+    "Italy",
     "It horror movie",
     "Information Technology",
-    "Italy",
     "Iced Tea"
   ],
   "IU": [
@@ -1382,7 +1323,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Ivy Cube",
     "Ivysaur",
     "Ivy",
-    "Ivory Coast (C\u00f4te d'Ivoire)"
+    "Ivory Coast (Côte d'Ivoire)"
   ],
   "IW": [
     "Ice Water",
@@ -1391,8 +1332,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Infinity Ward (video game company)"
   ],
   "IX": [
-    "Ibex",
     "Index",
+    "Ibex",
     "Intoxicated",
     "Ice Axe",
     "IX (9 in Roman Numerals)"
@@ -1405,31 +1346,28 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Jay"
   ],
   "JB": [
-    "Jukebox",
     "James Bond",
+    "Jukebox",
     "Job",
     "Justin Bieber"
   ],
   "JC": [
-    "Julius Caesar",
-    "John Carroll",
+    "JCB",
+    "Juice",
     "Jackie Chan",
     "Jesus Christ",
-    "Juice",
     "John Cena"
   ],
   "JD": [
-    "Jack Daniel's",
-    "Jess Donahue",
+    "Jordan",
     "Jessica Donahue",
     "Jedi",
     "John Dorian",
-    "Jordan"
   ],
   "JE": [
+    "Jet engine",
     "Jetplane",
     "Jesus",
-    "Jet engine"
   ],
   "JF": [
     "Jelly fish",
@@ -1439,73 +1377,71 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Jessica Fridrich"
   ],
   "JG": [
+    "Jaguar",
     "Jug",
     "Jig-A-Loo",
     "Joey Ghouly",
-    "Jaguar"
   ],
   "JH": [
+    "Jharkhand",
     "Jabba the Hut",
     "Janet Hicks"
   ],
   "JI": [
+    "Jira",
     "Jitters",
     "Jigsaw puzzle"
   ],
-  "JJ": [
-    "Jordan Jeffries",
-    "Justin Jaffray",
-    "Jamba Juice"
-  ],
   "JK": [
-    "Jackknife",
     "Joker",
+    "Jackknife",
     "John F. Kennedy"
   ],
   "JL": [
-    "Jack O' Lantern",
     "Jail",
+    "Jack O' Lantern",
     "Jelly"
   ],
   "JM": [
+    "Jamaica",
     "Just Married",
     "Jenn Mullins",
-    "Jamaica",
     "Jam"
   ],
   "JN": [
+    "Junction",
     "Juggernaut",
     "Jeans"
   ],
   "JO": [
-    "Joey",
+    "Jogi",
     "John",
     "Joe"
   ],
   "JP": [
+    "Japan",
     "Jurassic Park",
     "Jigglypuff (Pokemon)",
     "Jeep",
     "JPearly",
-    "Japan"
   ],
   "JQ": [
+    "jQuery",
     "Jack's Quest",
     "Johnny Quest",
     "Jacques Cousteau",
-    "jQuery",
     "John Quincy Adams"
   ],
   "JR": [
+    "Junier",
     "JRCuber (Jesse Hartnett)",
-    "Jar",
     "Jackrabbit",
     "Jack the Ripper"
   ],
   "JS": [
+    "Jesus",
     "Jester",
     "Jerry Springer",
-    "Jesus",
     "Johann Sebastian Bach",
     "Jess"
   ],
@@ -1513,20 +1449,17 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Jet"
   ],
   "JU": [
+    "Juice",
     "Jungle",
     "Jurassic (Geologic period)",
     "Juggle",
-    "Juice"
   ],
   "JV": [
-    "Jive",
-    "Jenna valentine",
-    "Javelin",
-    "Junior Varsity",
-    "Java island (island in Indonesia)",
+    "JAVA",
     "JavaScript"
   ],
   "JW": [
+    "JWT",
     "Jigsaw puzzle",
     "Jewish (religion)",
     "Jaws (shark)"
@@ -1542,14 +1475,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Kirby"
   ],
   "KC": [
+    "Kiction",
     "Kansas city",
     "Kicks",
-    "KFC",
     "Kurt Cobain"
   ],
   "KD": [
-    "Kraft Dinner",
     "Kid",
+    "Kraft Dinner",
     "Kevin Durant"
   ],
   "KE": [
@@ -1558,40 +1491,36 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Key"
   ],
   "KF": [
-    "Kentucky Fried Chicken (KFC)"
+    "KFC"
   ],
   "KG": [
-    "King Kong",
     "Kindergarten",
+    "King Kong",
     "Kevin Garnett"
   ],
   "KH": [
     "Keyhole",
     "Khmer Rouge",
     "DJ Khaled",
-    "Burj Khalifa",
-    "Mia Khalifa",
-    "Wiz Khalifa"
   ],
   "KI": [
     "Kite",
     "Kinetic Energy"
   ],
   "KJ": [
+    "Kaju",
     "Knee-jerk",
     "Kirjava",
     "Kilojoules",
     "Kylie Jenner"
   ],
-  "KK": [
-    "King Koopa",
-    "KKK (Kataastaasan, Kagalanggalangang Katipunan ng mga Anak ng Bayan)"
-  ],
   "KL": [
+    "Klua",
     "Kuala Lumpur",
     "Kill"
   ],
   "KM": [
+    "Kilometer",
     "Kimono",
     "Kermit the frog",
     "Kristy McCarthy",
@@ -1599,16 +1528,17 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Kimchi"
   ],
   "KN": [
+    "Knife",
     "Knight",
     "Kennel",
-    "Knife"
   ],
   "KO": [
-    "Koala",
     "Knock Out",
+    "Koala",
     "Korea"
   ],
   "KP": [
+    "Kappa",
     "King Koopa",
     "Krabby Patty",
     "K-pop"
@@ -1618,8 +1548,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Kumquat"
   ],
   "KR": [
+    "KKR-Knight Rider",
     "Kryptonite",
-    "Knight Rider",
     "Kronos"
   ],
   "KS": [
@@ -1627,33 +1557,37 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "KSI (YouTuber)"
   ],
   "KT": [
+    "KTM",
     "Katana",
     "Kitten",
     "Kite",
     "Kat"
   ],
   "KU": [
+    "Kuku",
     "Kate Upton",
     "Kuudra (Hypixel)",
     "Kuala Lumpur"
   ],
   "KV": [
+    "Kendriye Vidhalaya",
     "Kevlar",
     "Kill vehicle"
   ],
   "KW": [
-    "Killer whale",
     "Kiwi",
+    "Killer whale",
     "Kwik Trip"
   ],
   "KX": [
-    "KIX Cereal"
+    "KX Cereal"
   ],
   "LA": [
     "Lamp",
     "Los Angeles"
   ],
   "LB": [
+    "LBW",
     "Leo Borromeo",
     "Lazy Boy",
     "Lubricants",
@@ -1661,12 +1595,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Lobster"
   ],
   "LC": [
+    "LCD",
     "Locust",
     "Downloadable Content (DLC)",
     "Lick",
     "Lucifer"
   ],
   "LD": [
+    "Laddu",
     "Larry D. Nichols",
     "Lead",
     "Ladder",
@@ -1682,7 +1618,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Elf"
   ],
   "LG": [
-    "Lego",
+    "LG Logo",
     "Log",
     "Lady Gaga",
     "Leg",
@@ -1693,38 +1629,33 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Lynsey Hilbourn"
   ],
   "LI": [
+    "Lion",
     "Listerine",
     "Lips",
     "Lightake",
-    "Lion"
   ],
   "LJ": [
+    "Live Journal",
     "Lodge",
     "Lebron James",
-    "Live Journal"
   ],
   "LK": [
-    "Liu Kang",
     "Lock",
+    "Liu Kang",
     "Luke Skywalker",
     "Lick",
     "Elk"
   ],
-  "LL": [
-    "Lollipop",
-    "LanLan",
-    "Last Layer"
-  ],
   "LM": [
+    "Lemon",
     "Lamb",
     "Llama",
     "Lionel Messi",
-    "Lemon"
   ],
   "LN": [
+    "Lanlan",
     "Lantern",
     "Land",
-    "Lanlan",
     "Lune",
     "Loony Tunes"
   ],
@@ -1736,8 +1667,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Log"
   ],
   "LP": [
-    "Lapras (Pokemon)",
     "Laptop",
+    "Lapras (Pokemon)",
     "Lap",
     "Loop",
     "Leap",
@@ -1753,21 +1684,21 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Lord of the Rings"
   ],
   "LS": [
-    "Luke Skywalker",
-    "Lightsaber",
     "Lasso",
+    "Lightsaber",
     "Lose",
     "Last Slot"
   ],
   "LT": [
+    "Light",
     "Lieutenant",
     "Lottery",
     "Lettuce",
     "Loot",
     "LTcuber",
-    "Light"
   ],
   "LU": [
+    "Lulu",
     "Lute",
     "Lunchables",
     "Luau"
@@ -1779,6 +1710,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Leaves"
   ],
   "LW": [
+    "Law",
     "Lawnmower",
     "Lil Wayne",
     "Law",
@@ -1786,12 +1718,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Lifting weights"
   ],
   "LX": [
+    "Lux",
     "Laxative"
   ],
   "MA": [
+    "ma",
     "Ma (Whistler's Mother)",
     "Magikarp",
-    "Masturbate",
     "Mail"
   ],
   "MB": [
@@ -1801,6 +1734,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Mercedes Benz"
   ],
   "MC": [
+    "MaC",
     "Master of Ceremonies",
     "Mortal Combat",
     "Magician",
@@ -1811,8 +1745,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Mitochondria"
   ],
   "MD": [
-    "Media",
     "Mountain Dew",
+    "Media",
     "Medical Doctor",
     "Mud",
     "Mood ring",
@@ -1821,6 +1755,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Maid"
   ],
   "ME": [
+    "Megaminx",
     "Mephisto",
     "Mass Effect",
     "Microsoft Edge",
@@ -1830,6 +1765,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Meth"
   ],
   "MF": [
+    "Mufler",
     "Megaphone",
     "Muffin",
     "Microphone",
@@ -1846,6 +1782,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Migraine"
   ],
   "MH": [
+    "Maharashtara",
     "Mohican",
     "Mike Hughey",
     "Manhole",
@@ -1853,8 +1790,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "mH (milli-Hertz)"
   ],
   "MI": [
-    "Mobile Infantry",
     "Milk",
+    "Mobile Infantry",
     "MI5, MI6, MI8, or MI9 (UK Military Intelligence)",
     "Military Intelligence",
     "Monsters, Inc.",
@@ -1863,17 +1800,19 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Minnesota"
   ],
   "MJ": [
-    "Mary Jane (spider man)",
     "Michael Jackson",
+    "Mary Jane (spider man)",
     "Michael Jordan"
   ],
   "MK": [
+    "MK Ganhi",
     "Monkey",
     "Mike Guy",
     "Mickey Mouse",
     "Mary Kay"
   ],
   "ML": [
+    "Machine learning",
     "Mona Lisa",
     "Melting",
     "Mario Luigi",
@@ -1882,20 +1821,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "MLG",
     "Mole"
   ],
-  "MM": [
-    "Mike Mathews",
-    "Master Magic",
-    "Megaminx",
-    "Mom"
-  ],
   "MN": [
-    "Manager",
     "Moon",
+    "Manager",
     "Man/Men",
     "Minnesota",
     "Money"
   ],
   "MO": [
+    "Mobile",
     "Molasses",
     "Mom",
     "Moose",
@@ -1903,26 +1837,26 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Molester",
     "Microsoft Office",
     "Missouri",
-    "Mobile",
     "Mode",
     "Month"
   ],
   "MP": [
+    "MP state",
     "Mop",
     "Map",
     "Max Park"
   ],
   "MQ": [
+    "Mannequin",
     "Mortal Combat",
     "Masquerade (mask)",
-    "Mannequin",
     "Molotov cocktail",
     "Messaging Queue",
     "Mosquito"
   ],
   "MR": [
-    "Marvin (H2G2)",
     "Mars",
+    "Marvin (H2G2)",
     "Monorail",
     "Mister",
     "Mark",
@@ -1931,12 +1865,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Mermaid"
   ],
   "MS": [
+    "Mahipal Singh",
     "Minos",
     "Microsoft",
     "Moss",
     "Mouse"
   ],
   "MT": [
+    "Megatron",
     "Minotaur",
     "Mutant",
     "Mountain",
@@ -1946,13 +1882,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Mittens"
   ],
   "MU": [
+    "Mushroom",
     "Mule",
     "Muscle",
-    "Mushroom",
     "Mustard",
     "Monsters University"
   ],
   "MV": [
+    "Movie",
     "Minivan",
     "Mats Valk",
     "Maverick",
@@ -1962,6 +1899,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Max Verstappen"
   ],
   "MW": [
+    "Mawa",
     "Mech Warrior",
     "Mew",
     "Mace Windu",
@@ -1970,13 +1908,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Meow"
   ],
   "MX": [
+    "Max Park",
     "Maximus",
     "Malcom X",
-    "Max Park",
     "Maximum",
     "Mixer"
   ],
   "NA": [
+    "Nariyal",
     "Naseous",
     "Nacho",
     "Sodium (atomic symbol 'NA')",
@@ -1985,36 +1924,36 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "North America"
   ],
   "NB": [
+    "Note book",
     "Nebuchadnezzar",
     "Nutter butter",
-    "Notebook",
     "Nuts & Bolts",
     "Nude Beach",
     "Nub (Alex Davani)"
   ],
   "NC": [
+    "Nacho", 
     "Nicademus",
     "Necktie",
     "No change",
     "Nyancat",
     "North Carolina",
-    "Nacho"
   ],
   "ND": [
-    "Nude",
     "Needle",
     "Ned Stark",
     "Nancy Drew",
     "North Dakota"
   ],
   "NE": [
-    "Neo",
     "Neon",
+    "Neo",
     "Nebraska",
     "any (pronouncing N-E)",
     "Knee"
   ],
   "NF": [
+    "Netflix",
     "Knife",
     "Nicole Feeley",
     "Niagara Falls",
@@ -2024,6 +1963,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "NFT"
   ],
   "NG": [
+    "NG - angular",
     "Nalgene bottle",
     "Noggin",
     "Egg Nog",
@@ -2035,6 +1975,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Chicken Nuggets"
   ],
   "NH": [
+    "National Highway",
     "No Hate",
     "North Harford",
     "Neighborhood",
@@ -2066,30 +2007,22 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Nick"
   ],
   "NL": [
+    "Nali",
     "Noel",
-    "Nail",
     "Night Light",
     "Noodles",
     "Not Lucky"
   ],
   "NM": [
-    "Necromonger",
-    "Necromancer",
-    "\"Nom\" (eating)",
+    "Namak",
     "Nematode",
     "New Mexico",
     "Name",
     "Nicki Minaj"
   ],
-  "NN": [
-    "word",
-    "Nun",
-    "noun"
-  ],
   "NO": [
-    "Gnome",
     "Nose",
-    "\"NO!\"",
+    "Gnome",
     "Noose",
     "Nitric Oxide",
     "Noh (Japanese Theater)"
@@ -2103,21 +2036,23 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Nipple"
   ],
   "NQ": [
+    "NQ",
     "Nerf Quarterback (the nerf football)",
     "NASDAQ (stock market trading floor)",
     "NQ&A (Jhahoua Rubik's)"
   ],
   "NR": [
+    "National Record",
     "Nordic Track",
     "Norris (chuck)",
     "Nerd",
     "Nori (sushi)",
-    "National Record",
     "Nervous",
     "Nerve",
     "Nair (Hair Remover)"
   ],
   "NS": [
+    "Nasa",
     "Nintendo Switch",
     "Nest",
     "Noose",
@@ -2146,28 +2081,29 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
   ],
   "NW": [
     "No Water",
+    "Northwest",
     "Newt",
     "Nuclear waste",
     "Nuclear Warfare",
-    "Northwest",
     "Northwest Airlines",
     "Narwhal"
   ],
   "NX": [
-    "Knicks",
     "Nixon (Owen)",
+    "Knicks",
     "Nixon (I am not a crook)",
     "Nintendo NX"
   ],
   "OA": [
+    "Oats",
     "Oatmeal",
     "OSHA",
     "Overeaters Anonymous",
     "Oar"
   ],
   "OB": [
-    "Obelisk",
     "Obama",
+    "Obelisk",
     "OB/GYN"
   ],
   "OC": [
@@ -2178,30 +2114,33 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Original Creation"
   ],
   "OD": [
+    "Oddisa",
     "Overdose",
     "Oddish (Pokemon)",
     "Old",
     "One Direction band"
   ],
   "OE": [
+    "Oral Exam",
     "Optical effect",
     "Oboe",
     "Oreo biscuits"
   ],
   "OF": [
+    "Office",
     "Outfielder",
     "Officer",
-    "Office"
   ],
   "OG": [
+    "Ogiie",
     "Ogre",
     "Original Gangster",
     "Oh God",
     "Orange"
   ],
   "OH": [
-    "One-handed (Ryan Patricio, world champion one-handed 3x3)",
     "One hand",
+    "One-handed (Ryan Patricio, world champion one-handed 3x3)",
     "..."
   ],
   "OI": [
@@ -2210,11 +2149,12 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Oink (pig)"
   ],
   "OJ": [
-    "OJ Simpson",
     "Orange Juice",
+    "OJ Simpson",
     "OJHobbies"
   ],
   "OK": [
+    "OK",
     "Obi-wan Kenobi (Star Wars)",
     "Olive Knolls",
     "OKCupid",
@@ -2222,15 +2162,16 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "oll korrect"
   ],
   "OL": [
+    "Ola",
     "Olive",
     "OLL",
     "LOL",
     "All"
   ],
   "OM": [
-    "Buddhist monk (\"aum\" chant)",
+    "Ohm",
+    "Buddhist monk",
     "Oatmeal",
-    "Ohm"
   ],
   "ON": [
     "Onion",
@@ -2238,10 +2179,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Onision",
     "On fleek"
   ],
-  "OO": [
-    "Ooze"
-  ],
   "OP": [
+    "Oppo",
     "Opera",
     "Pop",
     "Soda pop",
@@ -2252,21 +2191,23 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Original Poster"
   ],
   "OQ": [
+    "Old Queen",
     "Old Quill",
     "Orc"
   ],
   "OR": [
+    "Orange",
     "Orbitz",
     "Oar (for paddling)",
-    "Orange",
     "Oreo",
     "..."
   ],
   "OS": [
+    "Operating System",
     "Ostrich",
-    "Operating System"
   ],
   "OT": [
+    "Otii",
     "Oliver Twist",
     "Otter",
     "Occupational Therapy",
@@ -2291,13 +2232,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Owen"
   ],
   "OX": [
+    "Oxygen",
     "Ox",
-    "Oxygen"
   ],
   "PA": [
+    "Paper",
     "Pa (man from America Gothic 1930)",
     "Pam Anderson",
-    "Paper",
     "Particle Accelerator",
     "Paper Airplane",
     "Paprika"
@@ -2310,11 +2251,12 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Personal best"
   ],
   "PC": [
-    "Peacock",
     "Personal Computer",
+    "Peacock",
     "Popcorn"
   ],
   "PD": [
+    "Pen Drive",
     "Panda",
     "Pediatrician",
     "Pad",
@@ -2324,19 +2266,20 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Pod"
   ],
   "PE": [
+    "Pen",
     "Penguin",
     "Peru",
     "Physical Education",
     "Pee",
-    "Peanut"
   ],
   "PF": [
-    "Pirate Flag",
+    "PF",
     "PDF",
+    "Pirate Flag",
     "Parafuso",
-    "Pizza's Friends"
   ],
   "PG": [
+    "PG paying guest",
     "Piggy bank",
     "Pig",
     "Penguin",
@@ -2344,21 +2287,24 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Peter Griffin"
   ],
   "PH": [
+    "pH level",
     "Pharoah",
     "Phat",
-    "pH"
   ],
   "PI": [
     "Pie",
+    "Pizza",
     "Pi (3.14159...)",
     "Pier"
   ],
   "PJ": [
+    "PJ",
     "PJ (name/nickname)",
     "Patrick Jameson",
     "Pyjamas"
   ],
   "PK": [
+    "PK movie",
     "Ice-pick",
     "Pikachu",
     "Parkour",
@@ -2366,12 +2312,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Puck"
   ],
   "PL": [
+    "Pluto",
     "Pliers",
     "Markiplier",
     "Play",
-    "Pluto"
   ],
   "PM": [
+    "PM modi",
     "Pram",
     "Pamela (Anderson)",
     "Pyraminx",
@@ -2380,25 +2327,19 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Pomegranate"
   ],
   "PN": [
+    "Peanut",
     "Peter Pan",
-    "Penis",
     "Penny",
     "Pornography",
     "Pan",
-    "Pen"
   ],
   "PO": [
+    "Post Office",
     "Postman",
     "Poop",
-    "Post Office"
-  ],
-  "PP": [
-    "Pepperoni pizza",
-    "Pica Pau",
-    "Philadelphia Phillies"
   ],
   "PQ": [
-    "Mark Twain (\"mind your P's and Q's\")",
+    "PQ",
     "Porqupine",
     "Palanquin",
     "Patchwork Quilt",
@@ -2406,8 +2347,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Play Quotient"
   ],
   "PR": [
-    "Predator",
     "Proton",
+    "Predator",
     "Prayer",
     "Public Relations",
     "Puerto Rico",
@@ -2415,15 +2356,16 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Pear"
   ],
   "PS": [
-    "Pencil Sharpener",
+    "Photo shop",
     "Playstation",
+    "Pencil Sharpener",
     "Polysterene",
-    "Photoshop",
     "Post script",
     "Postage Stamp",
     "Police Station"
   ],
   "PT": [
+    "PT",
     "Pterodactyl",
     "Powerthirst",
     "P.T. Silent Hill",
@@ -2431,12 +2373,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Pet"
   ],
   "PU": [
-    "Punisher",
     "Puma",
+    "Punisher",
     "P.U.",
     "Puddle"
   ],
   "PV": [
+    "PaaV",
     "Pole vault",
     "PVC",
     "Peeve",
@@ -2449,13 +2392,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Pew"
   ],
   "PX": [
+    "Pixel",
     "K-Pax",
     "Pickaxe",
-    "Pixel",
     "Pax Romana",
     "Pax Prime"
   ],
   "QA": [
+    "QAtar",
     "Quartz",
     "Quail (Bird)",
     "Quarter",
@@ -2465,15 +2409,17 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Qantas"
   ],
   "QB": [
+    "QuBul",
     "Quarterback",
     "Cubie"
   ],
   "QC": [
-    "Quaich",
     "Quick",
+    "Quaich",
     "Quinceanera"
   ],
   "QD": [
+    "QD",
     "Quidditch",
     "Qdoba",
     "Cutie",
@@ -2481,35 +2427,39 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Quarter Deck"
   ],
   "QE": [
+    "Queen Elizabeth",
     "Qeue",
     "Queen",
-    "Queen Elizabeth",
     "Queen of England"
   ],
   "QF": [
+    "QF",
     "Quake Fiend",
     "Quaffle (Harry Potter)",
     "Queef",
-    "Quarteto Fant\u00e1stico"
+    "Quarteto Fantástico"
   ],
   "QG": [
+    "QG",
     "Qui-Gon Jinn",
     "Quagmire (Family Guy)",
     "Quantum Gravity Theory"
   ],
   "QH": [
+    "QH",
     "Don Quixote",
     "Quiche",
     "Quahog, Rhode Island (Family Guy)"
   ],
   "QI": [
+    "QIlla",
     "Quiet!",
     "Quill (from Harry Potter)",
     "Qi energy (Chinese Culture)"
   ],
   "QJ": [
+    "QJ puzzle",
     "Squeegee",
-    "QJ puzzle"
   ],
   "QK": [
     "Quark",
@@ -2518,92 +2468,95 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Quaker Oats"
   ],
   "QL": [
+    "QL",
     "Quail",
     "Quill",
     "Yell at a person"
   ],
   "QM": [
+    "Queen Mary",
     "Quail Man",
     "Quantum Mechanics",
-    "Queen Mary",
     "Quasimodo (Hunchback)",
     "Quagmire (Family Guy)"
   ],
   "QN": [
+    "Queen",
+    "QN",
     "Quinn Lewis",
     "Harley Quinn",
-    "Queen",
     "Quinoa"
   ],
   "QO": [
+    "QO",
     "Ko (a Go board)",
     "Quaker oats (imagine the guy on box)",
     "Quotient",
     "Qui-Gon Jinn"
   ],
   "QP": [
+    "QP",
     "Quarter Pounder",
     "Quip",
     "Quadriplegic"
   ],
-  "QQ": [
-    "Qqref person",
-    "Qashqai",
-    "Quartz"
-  ],
   "QR": [
-    "Chronicles of Riddick (Riddick)",
     "QR Code",
+    "Chronicles of Riddick (Riddick)",
     "Qatar",
     "Queer",
     "Quarter"
   ],
   "QS": [
+    "Quick sand",
     "Q/Star trek (the character Q)",
-    "Quicksand",
     "Quicksilver",
     "Questions",
     "Quest",
     "Quesadilla"
   ],
   "QT": [
+    "Q-Ti",
     "Quarantine",
     "Quart(dq quart)",
     "Quest",
     "Cutie",
-    "Q-Tip",
     "Quartz"
   ],
   "QU": [
-    "Quarry",
+    "QuaK",
     "Queen",
+    "Quarry",
     "Qu programming language",
     "Queue (Line)"
   ],
   "QV": [
+    "QV",
     "Quiver"
   ],
   "QW": [
+    "QW",
     "Nestle's Quick",
     "Quality of Water (murky water)",
     "Qwerty Keyboard"
   ],
   "QX": [
+    "QX",
     "Quicksand",
     "Qix (old coin op game .)",
     "Quality of Experience",
     "QX magazine"
   ],
   "RA": [
-    "Rancor",
     "Rabbit",
+    "Rancor",
     "Racoon",
     "Race car",
     "Rack",
     "Ra (Egyptian sun god)"
   ],
   "RB": [
-    "Robocop",
+    "Robo cop",
     "Rabbit",
     "Rub",
     "Rhubarb",
@@ -2612,23 +2565,24 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Robot"
   ],
   "RC": [
+    "Race Car",
     "Rubik's Cube",
-    "Race (Car)",
     "Rack",
     "Record (Vinyl)",
     "Relic",
     "Rice"
   ],
   "RD": [
+    "Red",
     "Rubber Duckie",
     "Road Runner",
     "Road",
     "Rude",
     "Radical",
-    "Red",
     "Rod"
   ],
   "RE": [
+    "Rekha",
     "Ren (Ren and Stimpy)",
     "Reaver",
     "Reply",
@@ -2645,6 +2599,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Rough"
   ],
   "RG": [
+    "Rahul Gandhi",
     "Rig",
     "Rag",
     "Rug",
@@ -2657,12 +2612,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Rhino"
   ],
   "RI": [
+    "Rice",
+    "River",
     "Riddler",
     "Rhino",
-    "Rice",
     "Rig"
   ],
   "RJ": [
+    "Rajesthan",
     "Ron Jeremy",
     "Rj Basaline",
     "Run-jump",
@@ -2671,13 +2628,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Re-adjust(ment)"
   ],
   "RK": [
-    "Rake",
     "Rock",
+    "Rake",
     "Rack",
     "Rick Astley",
     "Ruckus"
   ],
   "RL": [
+    "Rail",
     "Red Lobster",
     "Railing",
     "Ray Lewis",
@@ -2687,9 +2645,9 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Roller Skates"
   ],
   "RM": [
+    "Ram",
     "Rome",
     "Ryan Miesel",
-    "Ram",
     "RAM",
     "REM",
     "Rim",
@@ -2697,57 +2655,53 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Rum"
   ],
   "RN": [
+    "Rain",
     "RN (registered nurse)",
     "Raisins",
     "Run",
-    "Rain",
     "Rondori"
   ],
   "RO": [
+    "Rock",
     "Rook (chess piece)",
     "Rope",
     "Roe",
-    "Rock"
   ],
   "RP": [
+    "Rope",
     "Rapper",
     "Ryan Patricio (WR 3x3x3 OH)",
     "Rip",
-    "Rope"
   ],
   "RQ": [
-    "Raquetball",
     "Racquet",
+    "Raquetball",
     "Rock",
     "Request"
   ],
-  "RR": [
-    "Ryan Reese",
-    "Railroad"
-  ],
   "RS": [
+    "Rose",
     "Ross (Friends)",
     "Rust",
-    "Rose",
     "Rest",
     "Rami Sbahi"
   ],
   "RT": [
-    "Rot (carion)",
     "Rat",
+    "Rot (carion)",
     "Ritz crackers",
     "Rut"
   ],
   "RU": [
-    "Roulette",
     "Ruby",
+    "Roulette",
     "Are you? Are you? Coming to the tree?",
     "Roux",
     "Ruxpin"
   ],
   "RV": [
-    "RV (Recreational Vehicle)",
     "Raven",
+    "RV (Recreational Vehicle)",
     "Rave",
     "River",
     "Rover"
@@ -2759,11 +2713,12 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Raw"
   ],
   "RX": [
+    "Roux",
     "T-Rex",
     "Medications, pharmacy",
-    "Roux"
   ],
   "SA": [
+    "Salad",
     "Saw",
     "South America (map of)",
     "Satellite",
@@ -2771,6 +2726,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Sexaholics Anonymous"
   ],
   "SB": [
+    "SaB TV",
     "Submarine",
     "Sub",
     "Saab",
@@ -2789,10 +2745,10 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Sheldon Cooper (Big Bang Theory)"
   ],
   "SD": [
+    "SD card",
     "Star Destroyer",
     "Scooby Doo",
     "San Diego",
-    "SD card",
     "Snare Drum",
     "Sand",
     "Salad",
@@ -2802,14 +2758,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Sled"
   ],
   "SE": [
+    "Sea",
     "Semaphore",
     "Semen",
-    "Sea",
     "Special Education",
     "Special Edition",
     "Sesame Seed"
   ],
   "SF": [
+    "SaiF",
     "San Francisco",
     "Soft",
     "safe",
@@ -2823,14 +2780,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Sag"
   ],
   "SH": [
-    "Stonehenge .",
     "Ship",
+    "Stonehenge .",
     "Shoehorn .",
     "Shop",
     "Shit",
     "Sheep"
   ],
   "SI": [
+    "Singapore",
     "Satellite",
     "Sink",
     "Silicone",
@@ -2839,9 +2797,9 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Sigh"
   ],
   "SJ": [
+    "Steve Jobs",
     "Slim Jim",
     "Judge (Social Justice)",
-    "Steve Jobs",
     "Sage"
   ],
   "SK": [
@@ -2859,8 +2817,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Slippery"
   ],
   "SM": [
-    "Smoky the Bear",
     "Smoke",
+    "Smoky the Bear",
     "Sam I Am",
     "SMH",
     "Sum",
@@ -2870,8 +2828,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Samus"
   ],
   "SN": [
-    "Sonic the Hedgehog",
     "Sun",
+    "Sonic the Hedgehog",
     "Son",
     "Sand",
     "Sans serif",
@@ -2889,11 +2847,11 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "sold"
   ],
   "SP": [
+    "Spider",
     "Spaghetti",
     "Sap",
     "Sop",
     "Sip",
-    "'Sup",
     "Soap"
   ],
   "SQ": [
@@ -2906,6 +2864,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Squan"
   ],
   "SR": [
+    "Srinagar",
     "Sarah Conner",
     "Syringe",
     "Senior",
@@ -2920,15 +2879,9 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Sir",
     "Sriracha"
   ],
-  "SS": [
-    "ShengShou",
-    "Sarah Sovinsky",
-    "Sarah Strong",
-    "Speed Solving"
-  ],
   "ST": [
-    "Starship Enterprise",
     "Star",
+    "Starship Enterprise",
     "Star Trek",
     "Statue",
     "Street",
@@ -2938,31 +2891,31 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Santa"
   ],
   "SU": [
+    "Sugar",
     "Steve Urkel",
     "Sunchips",
     "Super",
     "Sun",
-    "Sugar"
   ],
   "SV": [
+    "Seven",
     "Starving",
     "SUV car",
-    "Seven",
     "Sven (Frozen)",
     "Save",
     "Savor"
   ],
   "SW": [
+    "Sweet",
     "Swatter",
     "Swan",
-    "Sweet",
     "Swiss",
     "Swing",
     "Subway"
   ],
   "SX": [
+    "Six",
     "Saxophone",
-    "Sex",
     "Sound Effects (SFX)"
   ],
   "TA": [
@@ -2973,6 +2926,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Taste"
   ],
   "TB": [
+    "TB",
     "Tab",
     "Table",
     "Tub",
@@ -2984,6 +2938,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Tina Belcher (Bob's Burgers)"
   ],
   "TC": [
+    "TC",
     "The Tick",
     "TC taco",
     "Tic",
@@ -2994,6 +2949,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "TPC"
   ],
   "TD": [
+    "Teddy",
     "Toad",
     "Toydarian",
     "Ted",
@@ -3002,6 +2958,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Teddy Bear"
   ],
   "TE": [
+    "Tesla",
     "Tent",
     "Telephone",
     "Tea",
@@ -3009,34 +2966,35 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Tee"
   ],
   "TF": [
+    "Tiffin",
     "Tie Fighter",
     "Taffy",
     "Transformer",
     "The F***?",
     "Tiff",
-    "Tiffany",
     "Tough"
   ],
   "TG": [
-    "Tiger",
+    "Tag",
     "Tigger",
     "Trigger",
     "Tug",
-    "Tag",
     "2-Gen"
   ],
   "TH": [
-    "Thor",
+    "Thar",
     "Thong",
     "Thought",
     "th HTML tag"
   ],
   "TI": [
+    "Tiger",
     "Tire",
     "TIE fighter",
     "Tile"
   ],
   "TJ": [
+    "Tojo",
     "Trojan horse",
     "Thomas Jefferson",
     "Tejon Ranch"
@@ -3046,6 +3004,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Tack"
   ],
   "TL": [
+    "Tala",
     "Turtle",
     "Tail (Goku)",
     "Troll",
@@ -3057,14 +3016,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Table"
   ],
   "TM": [
+    "Tamatar",
     "Timpani",
     "Tinman",
     "Trademark",
     "Tingman"
   ],
   "TN": [
-    "Tinman",
     "TNT (dynamite)",
+    "Tinman",
     "Tamil Nadu",
     "Tan",
     "10",
@@ -3074,11 +3034,11 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Ton"
   ],
   "TO": [
+    "To",
     "Tomb",
     "Toe",
     "Tora",
     "Toa",
-    "To",
     "Tot"
   ],
   "TP": [
@@ -3090,14 +3050,14 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "TPC"
   ],
   "TQ": [
+    "Tequila",
     "Tack",
     "Taqueria",
-    "Tequila",
     "Taquitos"
   ],
   "TR": [
-    "Bear trap",
     "Tree",
+    "Bear trap",
     "Tarantula",
     "Trouble",
     "Trap",
@@ -3107,76 +3067,75 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Tire"
   ],
   "TS": [
+    "table salt",
     "Tom Sawyer",
     "Tassle",
     "Lady TSunade",
-    "Salt (table salt)",
     "Tsunami",
     "Tishira",
     "Toast"
   ],
-  "TT": [
-    "Tooth",
-    "Tutu",
-    "Takara Tomy",
-    "Tater Tots"
-  ],
   "TU": [
+    "Tub",
     "Tutu (a ballerina)",
     "Tuxedo",
     "Tut",
     "Tutorial",
-    "Tub"
   ],
   "TV": [
     "Televison"
   ],
   "TW": [
-    "Towel (Arthur Dent H2G2)",
+    "Towel",
     "Tower",
     "Tow Truck",
     "Taiwan"
   ],
   "TX": [
-    "Tex (a cowboy)",
+    "Tax",
     "Taxes",
     "Texas",
     "Tux"
   ],
   "UA": [
+    "UA",
     "United Airlines",
     "Under Armour shirt",
     "Unarmed",
     "USA"
   ],
   "UB": [
+    "Usain Bolt",
     "U-boat",
     "Umbrella",
-    "Usain Bolt"
   ],
   "UC": [
-    "Unicorn",
+    "Uni corn",
     "University of California",
     "UCLA"
   ],
   "UD": [
+    "UD",
     "U-derelict (the derelict from the movie Alien)",
     "Udder",
     "Under"
   ],
   "UE": [
+    "UE",
     "Ukelele instrument"
   ],
   "UF": [
-    "UFO sighting",
+    "UFO",
     "Ufffff!"
   ],
   "UG": [
+    "Under graduate",
     "Ugly",
     "Uggs",
     "Eugene"
   ],
   "UH": [
+    "UH",
     "Frankenstein \"Uuuuuuuh..\"",
     "U-haul (trucks)",
     "Ugly head (like Frankensteins)",
@@ -3184,10 +3143,12 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Uhaul"
   ],
   "UI": [
+    "UI",
     "Unicycle",
     "User Interface"
   ],
   "UJ": [
+    "UJala",
     "Jerome Eugene Morrow (GATTACA)"
   ],
   "UK": [
@@ -3196,30 +3157,33 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Ukraine"
   ],
   "UL": [
-    "Unlucky",
+    "Un Lucky",
     "Ulysses S. Grant"
   ],
   "UM": [
     "Umbrella",
-    "Umm\u2026"
+    "Umm…"
   ],
   "UN": [
+    "University",
     "Uno (card game)",
     "Universe",
-    "University",
     "Underwear"
   ],
   "UO": [
+    "UO",
     "Ambiguously gay duo",
     "Yugi-Oh",
     "Duo"
   ],
   "UP": [
+    "UP state",
     "UPS truck",
     "Up (in the sky)",
     "Uplifting"
   ],
   "UQ": [
+    "UQ",
     "Ultra Quick (the Flash)",
     "Urquhart (Urquhart castle in Scotland)",
     "Uruk-hai (Lord of the Rings)"
@@ -3238,32 +3202,29 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Uncle Sam"
   ],
   "UT": [
+    "Under taker",
     "Ultra Terminator (T1000)",
-    "Undertaker",
     "Utility",
     "Utah",
     "Utter"
   ],
-  "UU": [
-    "Halfturn (U2)",
-    "Yo-Yo"
-  ],
   "UV": [
+    "Ultra-violet",
     "Hoverboard",
-    "Ultra-violet"
   ],
   "UW": [
     "Under Water",
     "University of Wisconsin"
   ],
   "UX": [
+    "UX",
     "Tuxedo",
     "User Experience",
     "Yuxin"
   ],
   "VA": [
+    "Van",
     "Prince Valium (Spaceballs)",
-    "Vagina",
     "Vaporise",
     "Vermont",
     "V8"
@@ -3280,40 +3241,45 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "voodoo"
   ],
   "VE": [
+    "Venus",
     "Vending machine",
     "Vent",
     "Vermillion"
   ],
   "VF": [
+    "VF",
     "Venus Flytrap",
     "Vafers"
   ],
   "VG": [
     "Vegas",
     "Virgin",
-    "Vagina",
     "Vegetables"
   ],
   "VH": [
+    "Vehicle",
     "Van Helsing",
     "VHLS",
     "Van Halen",
     "VHS Tape",
-    "Vehicle"
   ],
   "VI": [
+    "VIx",
     "Visor",
     "Visa"
   ],
   "VJ": [
+    "Vija",
     "Virgil",
     "VGJ"
   ],
   "VK": [
+    "Vikky",
     "Viking",
     "Weak"
   ],
   "VL": [
+    "VLC media",
     "Vlad (Count Dracula based on him)",
     "Vial",
     "Valve",
@@ -3321,16 +3287,16 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Vole"
   ],
   "VM": [
-    "Venom (Spiderman)",
+    "Venom",
     "Vroom",
     "Vermont",
     "Vomit",
     "Vending Machine"
   ],
   "VN": [
+    "Vanila",
     "Vogon (H2G2)",
     "Violin",
-    "Van",
     "Vons"
   ],
   "VO": [
@@ -3342,31 +3308,26 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "VIP"
   ],
   "VQ": [
+    "VQ",
     "Ventriloquist",
     "Evacuation"
   ],
   "VR": [
-    "Virtual Reality",
-    "..."
+    "Virtual Reality"
   ],
   "VS": [
+    "VS bhawan",
     "Vase",
     "Vise"
   ],
   "VT": [
+    "Vote",
     "Vault",
     "Vat",
     "Vet",
-    "Vote"
   ],
   "VU": [
-    "Vulture",
-    "..."
-  ],
-  "VV": [
-    "V-2 (Nazi missile .)",
-    "Valve (Steam owner)",
-    "Volvo"
+    "Vulture"
   ],
   "VW": [
     "Volkswagen",
@@ -3379,8 +3340,8 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Vauxhall"
   ],
   "WA": [
-    "Whale",
     "Water",
+    "Whale",
     "Wallaby",
     "..."
   ],
@@ -3390,6 +3351,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Warner Bros"
   ],
   "WC": [
+    "World Cup",
     "Witch",
     "WC schools",
     "WIC",
@@ -3397,35 +3359,38 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Bathroom"
   ],
   "WD": [
+    "WooD",
     "Weed",
     "WD-40",
-    "Wood",
     "Wad",
     "Wedding Dress"
   ],
   "WE": [
+    "Weed",
     "Welder",
-    "Weed"
   ],
   "WF": [
+    "Water Fall",
     "Warf (Startrek)",
     "Waffle fries",
-    "Water Fall",
     "WTF",
     "3x3 With Feet",
     "Waffle"
   ],
   "WG": [
+    "White Goat",
     "Wig",
     "Wog",
     "Wag"
   ],
   "WH": [
-    "Whip",
+    "white house",
     "Wheat",
+    "Whip",
     "Whistle"
   ],
   "WI": [
+    "West Indies",
     "Wine",
     "Wire",
     "Wisconsin",
@@ -3433,15 +3398,15 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Nintendo Wii"
   ],
   "WJ": [
+    "WJ",
     "Wedges (potatoe)",
     "Ouija board",
     "..."
   ],
   "WK": [
+    "Wikipedia",
     "Wok",
-    "Wikipedia (Logo)",
-    "Wookie",
-    "..."
+    "Wookie"
   ],
   "WL": [
     "Wall",
@@ -3449,9 +3414,9 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Will"
   ],
   "WM": [
+    "Water melon",
     "Wal-mart",
     "Worm",
-    "Watermelon"
   ],
   "WN": [
     "Window",
@@ -3459,8 +3424,7 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Won"
   ],
   "WO": [
-    "Wolf (werewolf)",
-    "..."
+    "Wolf"
   ],
   "WP": [
     "Weapons",
@@ -3469,45 +3433,46 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Whip"
   ],
   "WQ": [
+    "WQ",
     "Wicker",
     "Watch"
   ],
   "WR": [
+    "World Record",
     "Wizard",
     "War",
-    "World Record",
     "Wrench"
   ],
   "WS": [
+    "WS",
     "Walrus",
     "Wuss",
     "With Salt",
     "Wasabi"
   ],
   "WT": [
-    "Water Tower",
+    "Water Tank",
+    "Weights",
     "Water",
-    "Weights"
+    "Water Tower",
   ],
   "WU": [
+    "WU",
     "Worm-tongue (wurm)",
     "Wu-Tang Clan",
     "..."
   ],
   "WV": [
+    "Wave",
     "Weaver",
     "Winter Variation",
-    "Wave"
-  ],
-  "WW": [
-    "Willy Wonka",
-    "WWE"
   ],
   "WX": [
     "Wax",
     "Windex"
   ],
   "XA": [
+    "Xaka",
     "A-team (Mr. T)",
     "Electrocuted Alligator",
     "Xavier (Professor in X-Men)",
@@ -3515,47 +3480,53 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Xanax"
   ],
   "XB": [
+    "XB",
     "Beast (X-men)",
     "Electrocuted Bulbasaur",
     "xb27",
     "Something (X) boiling"
   ],
   "XC": [
+    "XCross",
     "Cyclops (X-men)",
     "Electrocuted Charizard",
     "Cross Country",
     "X-cube",
     "X-acto",
-    "XCross"
   ],
   "XD": [
-    "Dark Tower (Barad-d\u00fbr from LOTR)",
+    "XD",
+    "Dark Tower (Barad-dûr from LOTR)",
     "Electrocuted Diglett",
     "Something (X) digging",
     "Emoticon"
   ],
   "XE": [
+    "XE",
     "Electric eel",
     "Electrocuted Eel",
     "Xenon"
   ],
   "XF": [
+    "XF",
     "Phantom of the Opera",
     "Electrocuted Fox",
     "Xerife"
   ],
   "XG": [
-    "Gambit (X-men)",
+    "XG",
     "Electrocuted Gorilla",
     "Expert gamer",
     "..."
   ],
   "XH": [
+    "XH",
     "Helicopter",
     "Electrocuted Hitler",
     "..."
   ],
   "XI": [
+    "XI - 11",
     "Xylophone",
     "Electrocuted Ivysaur",
     "XingYu",
@@ -3563,45 +3534,50 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Xindi (Star Trek)"
   ],
   "XJ": [
+    "XJ",
     "Jubilee (X-men)",
     "Electrocuted JigglyPuff",
     "Jaguar XJ-220 (car)",
     "Juggernaut (X-Men)"
   ],
   "XK": [
+    "XK",
     "Ghengis Kahn",
     "Electrocuted Kangaroo",
     "Something (X) killing",
     "..."
   ],
   "XL": [
+    "xtra Large",
     "Lord of the Ring (Sauron)",
     "Electrocuted Lapras",
-    "Extra Large"
   ],
   "XM": [
-    "Magneto (X-men)",
+    "X-men",
     "Electrocuted Magikarp",
     "X-Mas",
     "Xenomorph"
   ],
   "XN": [
+    "XN",
     "Night Crawler (X-men)",
     "Xanax",
     "Christian"
   ],
   "XO": [
+    "XOXO",
     "Ororo Munro (a.k.a Storm from X-men)",
     "Electrocuted Odder",
     "Extremely Old",
     "Tic-Tac-Toe (Noughts & Crosses)"
   ],
   "XP": [
+    "Windows XP",
     "Python",
     "Electrocuted Pikachu",
-    "Windows XP"
   ],
   "XQ": [
+    "XQ",
     "Quasar",
     "Electrocuted Queen",
     "Quicksilver (X-men)",
@@ -3610,271 +3586,40 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "XiangQi (board game)"
   ],
   "XR": [
+    "X-ray",
     "Rogue (X-men)",
     "Electrocuted Riachu",
-    "X-ray",
     "X rating"
   ],
   "XS": [
+    "xtra small",
     "Spiderman",
     "Electrocuted Snorlax",
     "Spider",
     "..."
   ],
   "XT": [
+    "Xtreme",
     "Terminator (model 101)",
     "Electrocuted Turtle",
     "..."
   ],
   "XU": [
+    "XU",
     "Uruk-hai",
     "Electrocuted unicorn",
     "Something (X) underground",
     "..."
   ],
   "XV": [
-    "Xavier (X-men)",
+    "Xavier",
     "Electrocuted Venasaur",
     "..."
   ],
   "XW": [
+    "X-Wing",
     "Wolverine (X-men)",
     "Electrocuted Whale",
     "Crossword",
-    "X-Wing (star wars)"
-  ],
-  "YA": [
-    "Yacht",
-    "Yamaha"
-  ],
-  "YB": [
-    "Yearbook"
-  ],
-  "YC": [
-    "YC",
-    "YmCa"
-  ],
-  "YD": [
-    "Yield (sign)",
-    "Yoda",
-    "Yard"
-  ],
-  "YE": [
-    "Yankees"
-  ],
-  "YF": [
-    "Yellow Fever",
-    "Yiff"
-  ],
-  "YG": [
-    "Yogurt",
-    "Yoga"
-  ],
-  "YH": [
-    "Yahoo",
-    "Yamaha"
-  ],
-  "YI": [
-    "Yeti",
-    "Yoshi"
-  ],
-  "YJ": [
-    "YJ",
-    "Yellowjacket (insect)"
-  ],
-  "YK": [
-    "Yolk",
-    "Yankees",
-    "Yukon (Canadian territory)"
-  ],
-  "YL": [
-    "Yield (sign)"
-  ],
-  "YM": [
-    "Yamaha"
-  ],
-  "YN": [
-    "Yen (Japanese currency)",
-    "Yuan (Chinese currency)"
-  ],
-  "YO": [
-    "Yo-Yo"
-  ],
-  "YP": [
-    "YP",
-    "Yep",
-    "Yap"
-  ],
-  "YQ": [
-    "YQ"
-  ],
-  "YR": [
-    "Yarn",
-    "Yard"
-  ],
-  "YS": [
-    "Yellowstone (National Park)",
-    "Yard sale"
-  ],
-  "YT": [
-    "YouTube",
-    "Yeti",
-    "Yacht"
-  ],
-  "YU": [
-    "YU",
-    "You"
-  ],
-  "YV": [
-    "YV"
-  ],
-  "YW": [
-    "Yellow"
-  ],
-  "ZA": [
-    "Zebra"
-  ],
-  "ZB": [
-    "Zebra",
-    "Zak Bagans",
-    "Zombie",
-    "Zimbabwe",
-    "ZB method"
-  ],
-  "ZC": [
-    "Zucchini",
-    "Zinc",
-    "Zanchi"
-  ],
-  "ZD": [
-    "Zelda"
-  ],
-  "ZE": [
-    "Zeus"
-  ],
-  "ZF": [
-    "ZF"
-  ],
-  "ZG": [
-    "Zig-Zag"
-  ],
-  "ZH": [
-    "ZH",
-    "Chinese (language code)"
-  ],
-  "ZI": [
-    "Zucchini",
-    "Zit"
-  ],
-  "ZJ": [
-    "Zildjian (cymbal manufacturer)"
-  ],
-  "ZK": [
-    "ZK",
-    "Zack"
-  ],
-  "ZL": [
-    "Zillo (magazine)",
-    "Zillo (Star Wars)",
-    "Zales"
-  ],
-  "ZM": [
-    "Zimbabwe",
-    "Zimmer (German: room)",
-    "Zombie"
-  ],
-  "ZN": [
-    "Zen"
-  ],
-  "ZO": [
-    "Zozo (demon)",
-    "Zoo",
-    "Zillo (magazine)",
-    "Zillo (star wars)"
-  ],
-  "ZP": [
-    "Zipper",
-    "Zapper (video-game character)",
-    "Zippo (lighter)",
-    "Z-perm"
-  ],
-  "ZQ": [
-    "ZQ"
-  ],
-  "ZR": [
-    "Zero"
-  ],
-  "ZS": [
-    "Zeus"
-  ],
-  "ZT": [
-    "ZT",
-    "Z3 cubing"
-  ],
-  "ZU": [
-    "ZU"
-  ],
-  "ZV": [
-    "ZV"
-  ],
-  "ZW": [
-    "Zillow (real estate company)",
-    "Zimbabwe"
-  ],
-  "AY": [],
-  "AZ": [],
-  "BY": [],
-  "BZ": [],
-  "CY": [],
-  "CZ": [],
-  "DY": [],
-  "DZ": [],
-  "EY": [],
-  "EZ": [],
-  "FY": [],
-  "FZ": [],
-  "GY": [],
-  "GZ": [],
-  "HY": [],
-  "HZ": [],
-  "IY": [],
-  "IZ": [],
-  "JX": [],
-  "JY": [],
-  "JZ": [],
-  "KY": [],
-  "KZ": [],
-  "LY": [],
-  "LZ": [],
-  "MY": [],
-  "MZ": [],
-  "NY": [],
-  "NZ": [],
-  "OY": [],
-  "OZ": [],
-  "PY": [],
-  "PZ": [],
-  "QY": [],
-  "QZ": [],
-  "RY": [],
-  "RZ": [],
-  "SY": [],
-  "SZ": [],
-  "TY": [],
-  "TZ": [],
-  "UY": [],
-  "UZ": [],
-  "VY": [],
-  "VZ": [],
-  "WY": [],
-  "WZ": [],
-  "XX": [],
-  "XY": [],
-  "XZ": [],
-  "YX": [],
-  "YY": [],
-  "YZ": [],
-  "ZX": [],
-  "ZY": [],
-  "ZZ": []
+  ]
 };
