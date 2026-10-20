@@ -1952,7 +1952,7 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
   },
   "DO": {
     "short": "[U' : [R D R', U']]",
-    "long": "U' R D R' U' R D' R' U U"
+    "long": "U' R D R' U' R D' R' U2"
   },
   "DP": {
     "short": "[R' D' R, U']",
@@ -2244,7 +2244,7 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
   },
   "HN": {
     "short": "[U R : [R D' R', U2]]",
-    "long": "U R R D' R' U2 R D R' U2 R' U'"
+    "long": "U R2 D' R' U2 R D R' U2 R' U'"
   },
   "HO": {
     "short": "[L: [L F' L', B2]]",
@@ -2444,7 +2444,7 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
   },
   "LH": {
     "short": "[D : [R U R', D]]",
-    "long": "D R U R' D R U' R' D' D'"
+    "long": "D R U R' D R U' R' D2"
   },
   "LI": {
     "short": "[L2: [B, L' F2 L]]",
@@ -2516,7 +2516,7 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
   },
   "NH": {
     "short": "[U R : [U2, R D' R']]",
-    "long": "U R U2 R D' R' U2 R D R' R' U'"
+    "long": "U R U2 R D' R' U2 R D R2 U'"
   },
   "NI": {
     "short": "[L2 B2: [R', F' L2 F]]",
@@ -2548,7 +2548,7 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
   },
   "NT": {
     "short": "[U D R : [U2, R D' R']]",
-    "long": "UD R U2 R D' R' U2 R D R' R' UD'"
+    "long": "U D R U2 R D' R' U2 R D R2 D' U'"
   },
   "NU": {
     "short": "[U' R' : [R' D R, U2]]",
@@ -2576,7 +2576,7 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
   },
   "OD": {
     "short": "[U' : [U', R D R']]",
-    "long": "U' U' R D R' U R D' R' U"
+    "long": "U2 R D R' U R D' R' U"
   },
   "OE": {
     "short": "[B2, L F' L']",
@@ -2820,7 +2820,7 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
   },
   "RO": {
     "short": "[R' U : [U, R' D' R]]",
-    "long": "R' U U R' D' R U' R' D R U' R"
+    "long": "R' U2 R' D' R U' R' D R U' R"
   },
   "RP": {
     "short": "[F', R B' R']",
@@ -2967,8 +2967,8 @@ export const DEFAULT_CORNERS: Record<string, AlgDef> = {
     "long": "D2 L' U L D2 L' U' L"
   },
   "TN": {
-    "short": "[UD R : [R D' R', U2]]",
-    "long": "UD R R D' R' U2 R D R' U2 R' UD'"
+    "short": "[U D R : [R D' R', U2]]",
+    "long": "U D R2 D' R' U2 R D R' U2 R' D' U'"
   },
   "TP": {
     "short": "[D', R U R']",

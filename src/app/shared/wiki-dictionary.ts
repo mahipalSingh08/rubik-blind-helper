@@ -649,9 +649,9 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Domino Reduction"
   ],
   "DS": [
+    "Dino Saur",
     "Nintendo DS",
     "Death Star",
-    "Dinosaur",
     "Darude Sandstorm",
     "Dose",
     "Dish",
@@ -1153,14 +1153,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Home",
   ],
   "HN": [
-    "Honey",
     "Hen",
+    "Honey",
     "H1N1"
   ],
   "HO": [
     "horizon",
     "Hose",
-    "House",
     "Hoax",
     "Hoe"
   ],
@@ -2556,13 +2555,13 @@ export const WIKI_DICTIONARY: Record<string, string[]> = {
     "Ra (Egyptian sun god)"
   ],
   "RB": [
+    "Robot",
     "Robo cop",
     "Rabbit",
     "Rub",
     "Rhubarb",
     "Root Beer",
     "Arby's",
-    "Robot"
   ],
   "RC": [
     "Race Car",
