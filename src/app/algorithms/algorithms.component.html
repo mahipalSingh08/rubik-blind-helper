@@ -37,44 +37,104 @@
     </div>
 
     <div class="search-container" *ngIf="pieceType !== 'special' && pieceType !== 'base'">
-      <input 
-        type="text" 
-        class="search-input"
-        [(ngModel)]="searchPair" 
-        (input)="onSearch(true)" 
-        placeholder="e.g. CD" 
-        maxlength="2"
-        autocomplete="off">
+      <div class="search-bar-row">
+        <button 
+          type="button" 
+          class="search-nav-btn prev" 
+          (click)="goToPrevPair()" 
+          [title]="'Previous pair (' + prevPairName + ')'"
+          aria-label="Previous pair">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <input 
+          type="text" 
+          class="search-input"
+          [(ngModel)]="searchPair" 
+          (input)="onSearch(true)" 
+          (keydown.enter)="blurInput($event)"
+          placeholder="e.g. CD" 
+          maxlength="2"
+          autocomplete="off">
+        <button 
+          type="button" 
+          class="search-nav-btn next" 
+          (click)="goToNextPair()" 
+          [title]="'Next pair (' + nextPairName + ')'"
+          aria-label="Next pair">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <!-- Result Display -->
-    <div class="result-container" *ngIf="(pieceType !== 'special' && searchPair.length === 2) || (pieceType === 'special' && searchPair.length > 2)">
-      <h2 class="pair-title">{{ displayPairTitle | uppercase }}</h2>
-      
-      <div class="alg-display" *ngIf="!isEditing">
-        <p class="alg-short">{{ currentAlgShort || 'No algorithm set' }}</p>
-        <p class="alg-long" *ngIf="currentAlgLong">{{ currentAlgLong }}</p>
-        <button class="btn btn-edit" (click)="startEdit()">Edit Algorithm</button>
+    <!-- Result Display with Prev / Next Navigation -->
+    <div class="practice-carousel" *ngIf="(pieceType !== 'special' && searchPair.length === 2) || (pieceType === 'special' && searchPair.length > 2)">
+      <!-- Prev Button (Left) -->
+      <button 
+        type="button"
+        class="nav-arrow-btn prev-btn" 
+        (click)="goToPrevPair()" 
+        [title]="'Previous: ' + prevPairName + ' (← key)'" 
+        aria-label="Previous pair">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        <span class="nav-pair-label" *ngIf="prevPairName">{{ prevPairName }}</span>
+      </button>
+
+      <!-- Main Result Container (Center) -->
+      <div class="result-container">
+        <div class="pair-meta-header" *ngIf="currentPairNumber">
+          <span class="pair-badge">{{ currentPairNumber.current }} / {{ currentPairNumber.total }}</span>
+          <span class="pair-keyboard-hint">Arrow keys &larr; &rarr;</span>
+        </div>
+
+        <h2 class="pair-title">{{ displayPairTitle | uppercase }}</h2>
+        
+        <div class="alg-display" *ngIf="!isEditing">
+          <p class="alg-short">{{ currentAlgShort || 'No algorithm set' }}</p>
+          <p class="alg-long" *ngIf="currentAlgLong">{{ currentAlgLong }}</p>
+          <button class="btn btn-edit" (click)="startEdit()">Edit Algorithm</button>
+        </div>
+
+        <div class="alg-edit" *ngIf="isEditing">
+          <div class="input-group">
+            <label>Commutator (Short Form)</label>
+            <input type="text" class="edit-input" [(ngModel)]="editAlgShort" placeholder="e.g. [U, R D' R']">
+          </div>
+          <div class="input-group">
+            <label>Full Algorithm (Long Form)</label>
+            <input type="text" class="edit-input" [(ngModel)]="editAlgLong" placeholder="e.g. U R D' R' U' R D R'">
+          </div>
+          <div class="action-buttons">
+            <button class="btn btn-save" (click)="saveEdit()">Save</button>
+            <button class="btn btn-outline" (click)="cancelEdit()">Cancel</button>
+          </div>
+        </div>
       </div>
 
-      <div class="alg-edit" *ngIf="isEditing">
-        <div class="input-group">
-          <label>Commutator (Short Form)</label>
-          <input type="text" class="edit-input" [(ngModel)]="editAlgShort" placeholder="e.g. [U, R D' R']">
-        </div>
-        <div class="input-group">
-          <label>Full Algorithm (Long Form)</label>
-          <input type="text" class="edit-input" [(ngModel)]="editAlgLong" placeholder="e.g. U R D' R' U' R D R'">
-        </div>
-        <div class="action-buttons">
-          <button class="btn btn-save" (click)="saveEdit()">Save</button>
-          <button class="btn btn-outline" (click)="cancelEdit()">Cancel</button>
-        </div>
-      </div>
+      <!-- Next Button (Right) -->
+      <button 
+        type="button"
+        class="nav-arrow-btn next-btn" 
+        (click)="goToNextPair()" 
+        [title]="'Next: ' + nextPairName + ' (→ key)'" 
+        aria-label="Next pair">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+        <span class="nav-pair-label" *ngIf="nextPairName">{{ nextPairName }}</span>
+      </button>
     </div>
     
-    <div *ngIf="pieceType !== 'special' && pieceType !== 'base' && searchPair.length !== 2" style="color: var(--muted); margin-top: 10px; margin-bottom: 20px;">
-      Type a letter pair to view or edit its commutator.
+    <div *ngIf="pieceType !== 'special' && pieceType !== 'base' && searchPair.length !== 2" class="empty-practice-prompt">
+      <p style="color: var(--muted); margin-bottom: 12px;">Type a letter pair above or start practicing directly:</p>
+      <button type="button" class="btn btn-start-practice" (click)="startPractice()">
+        ▶ Practice All {{ isEdges ? 'Edge' : 'Corner' }} Pairs (Start with AB)
+      </button>
     </div>
     <div *ngIf="pieceType === 'special' && searchPair.length === 0" style="color: var(--muted); margin-top: 10px; margin-bottom: 20px;">
       Select a special case to view or edit its algorithm.
