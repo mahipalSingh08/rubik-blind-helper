@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CommutatorService } from '../shared/commutator.service';
@@ -151,16 +151,129 @@ export class AlgorithmsComponent implements OnInit {
 
   changePieceType(type: 'edges' | 'corners') {
     this.pieceType = type;
-    this.searchPair = '';
-    this.currentAlgShort = '';
-    this.currentAlgLong = '';
     this.isEditing = false;
+    
+    const available = this.getAvailablePairs();
+    if (this.searchPair && available.includes(this.searchPair.toUpperCase())) {
+      this.searchPair = this.searchPair.toUpperCase();
+      this.onSearch();
+    } else if (this.searchPair && available.length > 0) {
+      this.searchPair = available[0];
+      this.onSearch();
+    } else {
+      this.searchPair = '';
+      this.currentAlgShort = '';
+      this.currentAlgLong = '';
+    }
     
     if (this.selectedLetter) {
       this.updateFilteredPairs();
     }
     
     this.saveState();
+  }
+
+  getAvailablePairs(): string[] {
+    if (this.isEdges) {
+      return this.commutatorService.getAllEdgePairs().sort();
+    } else if (this.pieceType === 'corners') {
+      return this.commutatorService.getAllCornerPairs().sort();
+    } else if (this.pieceType === 'special') {
+      return ['PARITY', 'EDGE_FLIPS', 'CORNER_TWISTS'];
+    }
+    return [];
+  }
+
+  getCurrentPairIndex(): number {
+    const pairs = this.getAvailablePairs();
+    const current = (this.searchPair || '').toUpperCase().trim();
+    return pairs.indexOf(current);
+  }
+
+  get currentPairNumber(): { current: number, total: number } | null {
+    const pairs = this.getAvailablePairs();
+    const idx = this.getCurrentPairIndex();
+    if (idx === -1 || pairs.length === 0) return null;
+    return { current: idx + 1, total: pairs.length };
+  }
+
+  get prevPairName(): string {
+    const pairs = this.getAvailablePairs();
+    if (pairs.length === 0) return '';
+    const idx = this.getCurrentPairIndex();
+    if (idx === -1) {
+      const current = (this.searchPair || '').toUpperCase().trim();
+      const foundIdx = pairs.findIndex(p => p >= current);
+      return foundIdx > 0 ? pairs[foundIdx - 1] : pairs[pairs.length - 1];
+    }
+    return pairs[(idx - 1 + pairs.length) % pairs.length];
+  }
+
+  get nextPairName(): string {
+    const pairs = this.getAvailablePairs();
+    if (pairs.length === 0) return '';
+    const idx = this.getCurrentPairIndex();
+    if (idx === -1) {
+      const current = (this.searchPair || '').toUpperCase().trim();
+      const foundIdx = pairs.findIndex(p => p > current);
+      return foundIdx !== -1 ? pairs[foundIdx] : pairs[0];
+    }
+    return pairs[(idx + 1) % pairs.length];
+  }
+
+  goToPrevPair() {
+    const target = this.prevPairName;
+    if (target) {
+      this.selectPair(target);
+    }
+  }
+
+  goToNextPair() {
+    const target = this.nextPairName;
+    if (target) {
+      this.selectPair(target);
+    }
+  }
+
+  selectPair(pair: string) {
+    this.searchPair = pair.toUpperCase();
+    if (this.selectedLetter && !pair.toUpperCase().includes(this.selectedLetter)) {
+      this.selectedLetter = null;
+      this.filteredPairs = [];
+    }
+    this.onSearch();
+  }
+
+  startPractice() {
+    const pairs = this.getAvailablePairs();
+    if (pairs.length > 0) {
+      this.selectPair(pairs[0]);
+    }
+  }
+
+  blurInput(event: Event) {
+    const target = event.target as HTMLElement | null;
+    target?.blur();
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardNavigation(event: KeyboardEvent) {
+    if (this.isEditing) return;
+    const activeEl = document.activeElement;
+    const activeTag = (activeEl?.tagName || '').toLowerCase();
+    if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
+      return;
+    }
+    if (this.pieceType !== 'edges' && this.pieceType !== 'corners' && this.pieceType !== 'special') {
+      return;
+    }
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      this.goToPrevPair();
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      this.goToNextPair();
+    }
   }
 
   selectSpecialCategory() {
