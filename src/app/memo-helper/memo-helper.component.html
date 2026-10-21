@@ -11,7 +11,10 @@
     <div class="flashcard" [class.flipped]="flashcardFlipped">
       <div class="front">
         <span class="label">Letter</span>
-        <div class="big-text">{{ currentLetter }}</div>
+        <div class="big-text">
+          {{ language.toDisplayLetter(currentLetter) }}
+          <span *ngIf="language.isHindi()" style="font-size: 1.5rem; color: var(--muted); display: block;">({{ currentLetter }})</span>
+        </div>
         <div class="hint">Tap to flip</div>
       </div>
       <div class="back">

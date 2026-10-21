@@ -198,6 +198,23 @@
   letter-spacing: 0.5px;
 }
 
+.speffz-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.priority-meaning {
+  font-size: 0.95rem;
+  color: #a7f3d0;
+  background: rgba(16, 185, 129, 0.1);
+  border-left: 3px solid #10b981;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
 .priority-source {
   display: flex;
   align-items: center;

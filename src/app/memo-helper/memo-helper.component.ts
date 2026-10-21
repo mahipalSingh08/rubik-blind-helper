@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../shared/language.service';
 
 @Component({
   selector: 'app-memo-helper',
@@ -13,6 +14,8 @@ export class MemoHelperComponent implements OnInit {
   currentLetter = 'A';
   currentPosition = '';
   mode: 'corners' | 'edges' = 'corners';
+
+  constructor(public language: LanguageService) {}
   
   private letters = 'ABCDEFGHIJKLMNOPQRSTUVWX'.split('');
   

@@ -1,10 +1,25 @@
 <nav class="top-nav">
-  <div class="nav-brand">BLD Tools</div>
+  <div class="nav-left">
+    <div class="nav-brand">BLD Tools</div>
+    
+    <!-- Global Language Switcher -->
+    <button class="lang-toggle-btn" 
+            (click)="language.toggleLanguage()" 
+            [title]="language.isHindi() ? 'Switch to English (A–X)' : 'Switch to हिंदी (आ–ल)'">
+      <span class="lang-icon">🌐</span>
+      <span class="lang-text" [class.is-hindi]="language.isHindi()">
+        {{ language.isHindi() ? 'हिंदी' : 'English' }}
+      </span>
+      <span class="lang-sub">({{ language.isHindi() ? 'आ–ल' : 'A–X' }})</span>
+    </button>
+  </div>
+
   <button class="mobile-menu-btn" (click)="toggleMobileMenu()" aria-label="Toggle navigation menu">
     <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
     <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
     <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
   </button>
+  
   <div class="nav-links" [class.mobile-open]="isMobileMenuOpen">
     <a routerLink="/word-association" routerLinkActive="active" (click)="closeMobileMenu()">Word Dictionary</a>
     <a routerLink="/memo-generator" routerLinkActive="active" (click)="closeMobileMenu()">Memo Gen</a>
@@ -23,3 +38,4 @@
 <main class="content">
   <router-outlet></router-outlet>
 </main>
+

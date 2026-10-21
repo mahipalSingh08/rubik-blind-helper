@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DictionaryService } from '../shared/dictionary.service';
+import { SPEFFZ_LETTERS } from '../shared/hindi-scheme';
 
 @Component({
   selector: 'app-word-association',
@@ -11,7 +12,7 @@ import { DictionaryService } from '../shared/dictionary.service';
   styleUrls: ['./word-association.component.css']
 })
 export class WordAssociationComponent implements OnInit {
-  letters = 'ABCDEFGHIJKLMNOPQRSTUVWX'.split('');
+  speffzLetters = [...SPEFFZ_LETTERS];
   selectedLetter: string | null = null;
   activePair: string | null = null;
   searchPair: string = '';
@@ -38,14 +39,14 @@ export class WordAssociationComponent implements OnInit {
 
   // Get valid second letters (skips same letter: AA, BB, CC, etc.)
   getValidSecondLetters(first: string): string[] {
-    return this.letters.filter(second => second !== first);
+    return this.speffzLetters.filter(second => second !== first);
   }
 
   // All 552 valid cube pairs
   getAllValidPairs(): string[] {
     const pairs: string[] = [];
-    for (const first of this.letters) {
-      for (const second of this.letters) {
+    for (const first of this.speffzLetters) {
+      for (const second of this.speffzLetters) {
         if (first !== second) {
           pairs.push(first + second);
         }
@@ -105,19 +106,29 @@ export class WordAssociationComponent implements OnInit {
 
   onSearch() {
     this.searchError = '';
-    this.searchPair = this.searchPair.toUpperCase().replace(/[^A-X]/g, '');
-    if (this.searchPair.length === 2) {
-      const first = this.searchPair[0];
-      const second = this.searchPair[1];
+    const raw = this.searchPair.trim();
+    if (!raw) {
+      this.activePair = null;
+      this.saveState();
+      return;
+    }
+
+    // Convert input from either Hindi (e.g. 'खफ') or English (e.g. 'FR') to Speffz
+    const converted = this.dictionary.language.toSpeffzPair(raw);
+
+    if (converted.length === 2 && /^[A-X]{2}$/.test(converted)) {
+      const first = converted[0];
+      const second = converted[1];
       if (first === second) {
-        this.searchError = `${this.searchPair} is an impossible cube pair (a sticker cannot pair with itself).`;
+        const displayPair = this.dictionary.language.toDisplayPair(converted);
+        this.searchError = `${displayPair} is an impossible cube pair (a sticker cannot pair with itself).`;
         this.activePair = null;
         return;
       }
       this.selectedLetter = first;
-      this.selectPair(this.searchPair, false);
-    } else if (this.searchPair.length === 1) {
-      this.selectedLetter = this.searchPair;
+      this.selectPair(converted, false);
+    } else if (converted.length === 1 && /^[A-X]$/.test(converted)) {
+      this.selectedLetter = converted;
       this.activePair = null;
     } else {
       this.activePair = null;
@@ -142,7 +153,7 @@ export class WordAssociationComponent implements OnInit {
     } else {
       this.selectedLetter = letter;
       this.activePair = null;
-      this.searchPair = letter;
+      this.searchPair = this.dictionary.language.toDisplayLetter(letter);
     }
     this.searchError = '';
     this.saveState();
@@ -150,7 +161,7 @@ export class WordAssociationComponent implements OnInit {
 
   selectPair(pair: string, shouldScroll: boolean = false) {
     this.activePair = pair;
-    this.searchPair = pair;
+    this.searchPair = this.dictionary.language.toDisplayPair(pair);
     this.selectedLetter = pair[0];
     this.customInput = this.dictionary.getCustomWord(pair);
     this.searchError = '';
@@ -192,3 +203,4 @@ export class WordAssociationComponent implements OnInit {
     return currentPriority.trim().toLowerCase() === word.trim().toLowerCase();
   }
 }
+

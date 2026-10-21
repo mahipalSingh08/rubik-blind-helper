@@ -54,8 +54,8 @@
           [(ngModel)]="searchPair" 
           (input)="onSearch(true)" 
           (keydown.enter)="blurInput($event)"
-          placeholder="e.g. CD" 
-          maxlength="2"
+          [placeholder]="language.isHindi() ? 'उदा. कप / CD' : 'e.g. CD'" 
+          maxlength="4"
           autocomplete="off">
         <button 
           type="button" 
@@ -82,7 +82,7 @@
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
-        <span class="nav-pair-label" *ngIf="prevPairName">{{ prevPairName }}</span>
+        <span class="nav-pair-label" *ngIf="prevPairName">{{ language.toDisplayPair(prevPairName) }}</span>
       </button>
 
       <!-- Main Result Container (Center) -->
@@ -126,7 +126,7 @@
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
-        <span class="nav-pair-label" *ngIf="nextPairName">{{ nextPairName }}</span>
+        <span class="nav-pair-label" *ngIf="nextPairName">{{ language.toDisplayPair(nextPairName) }}</span>
       </button>
     </div>
     
@@ -187,18 +187,21 @@
            *ngFor="let letter of letters" 
            [class.active]="selectedLetter === letter"
            (click)="selectLetter(letter)">
-        {{ letter }}
+        {{ language.toDisplayLetter(letter) }}
       </div>
     </div>
 
     <!-- Pair Grid for Selected Letter -->
     <div class="pair-grid-container" *ngIf="selectedLetter && pieceType !== 'special' && pieceType !== 'base'">
-      <h2>Pairs containing '{{ selectedLetter }}'</h2>
+      <h2>Pairs containing '{{ language.toDisplayLetter(selectedLetter) }}'</h2>
       <div class="pair-grid">
         <div class="pair-card" 
              *ngFor="let item of filteredPairs"
              (click)="selectPairFromList(item.pair)">
-          <div class="pair-letters">{{ item.pair }}</div>
+          <div class="pair-letters">
+            {{ language.toDisplayPair(item.pair) }} 
+            <small *ngIf="language.isHindi()" style="font-size:0.75rem; color:var(--muted)">({{ item.pair }})</small>
+          </div>
           <div class="pair-word" [class.no-alg]="!item.short">{{ item.short || 'No alg' }}</div>
         </div>
       </div>

@@ -169,21 +169,21 @@
         [id]="'letter-btn-' + letter"
         [class.active]="selectedLetter === letter"
         (click)="selectLetter(letter)">
-        {{ letter }}
+        {{ language.toDisplayLetter(letter) }}
       </button>
     </div>
 
     <!-- Loading Pairs Indicator -->
     <div class="loading-state" *ngIf="loadingPairs">
       <div class="spinner"></div>
-      <p>Loading letter pairs for '{{ selectedLetter }}' from Atlas DB...</p>
+      <p>Loading letter pairs for '{{ language.toDisplayLetter(selectedLetter || "") }}' from Atlas DB...</p>
     </div>
 
     <!-- STEP 2: Pairs Grid for Selected Letter -->
     <div class="pairs-section" *ngIf="selectedLetter && !loadingPairs">
       <div class="section-divider">
         <span class="step-badge">Step 2</span>
-        <h3>Letter Pairs for '{{ selectedLetter }}' ({{ pairs.length }} pairs)</h3>
+        <h3>Letter Pairs for '{{ language.toDisplayLetter(selectedLetter) }}' ({{ pairs.length }} pairs)</h3>
       </div>
       <p class="section-desc">Click any letter pair to view its 5-style algorithms:</p>
 
@@ -194,20 +194,23 @@
           [id]="'pair-card-' + item.pair"
           [class.active]="selectedPair === item.pair"
           (click)="selectPair(item.pair)">
-          <div class="pair-letters">{{ item.pair }}</div>
+          <div class="pair-letters">
+            {{ language.toDisplayPair(item.pair) }} 
+            <small *ngIf="language.isHindi()" style="font-size:0.75rem; color:var(--text-muted)">({{ item.pair }})</small>
+          </div>
           <div class="pair-count-badge">{{ item.count }} algs</div>
         </div>
       </div>
 
       <div class="empty-state" *ngIf="pairs.length === 0">
-        No pairs found for letter '{{ selectedLetter }}' with current move filter.
+        No pairs found for letter '{{ language.toDisplayLetter(selectedLetter) }}' with current move filter.
       </div>
     </div>
 
     <!-- Loading Algos Indicator -->
     <div class="loading-state" *ngIf="loadingAlgos">
       <div class="spinner"></div>
-      <p>Loading algorithms for pair '{{ selectedPair }}'...</p>
+      <p>Loading algorithms for pair '{{ language.toDisplayPair(selectedPair || "") }}'...</p>
     </div>
 
     <!-- STEP 3: 5-Style Algorithms List for Selected Pair -->
@@ -215,7 +218,7 @@
       <div class="section-divider step3-header">
         <div class="step-title-group">
           <span class="step-badge">Step 3</span>
-          <h3>Algorithms for '{{ selectedPair }}' ({{ algorithmsForPair.length }} cases)</h3>
+          <h3>Algorithms for '{{ language.toDisplayPair(selectedPair) }}' ({{ algorithmsForPair.length }} cases)</h3>
         </div>
         <div class="sort-controls">
           <label class="sort-label">Sort:</label>

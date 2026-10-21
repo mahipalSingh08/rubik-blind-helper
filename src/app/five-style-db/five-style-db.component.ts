@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FiveStyleService, PairItem, BackendHealth } from '../shared/five-style.service';
 import { FiveStyleAlgItem } from '../shared/default5-algo';
+import { LanguageService } from '../shared/language.service';
 
 @Component({
   selector: 'app-five-style-db',
@@ -45,7 +46,10 @@ export class FiveStyleDbComponent implements OnInit {
   editMoves: number = 0;
   savingEdit: boolean = false;
 
-  constructor(public fiveStyleService: FiveStyleService) {}
+  constructor(
+    public fiveStyleService: FiveStyleService,
+    public language: LanguageService
+  ) {}
 
   ngOnInit() {
     this.checkBackendHealth();

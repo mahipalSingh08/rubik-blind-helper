@@ -1,7 +1,9 @@
 <div class="dictionary-container">
   <div class="header">
     <h1>📖 Word Dictionary</h1>
-    <p class="subtitle">Customize your single letter-pair word associations</p>
+    <p class="subtitle">
+      {{ dictionary.language.isHindi() ? 'अक्षर-युग्म (Letter Pairs) और उनके शब्द' : 'Customize your single letter-pair word associations' }}
+    </p>
   </div>
 
   <div class="main-content">
@@ -14,8 +16,8 @@
         [(ngModel)]="searchPair" 
         (input)="onSearch()" 
         (keydown.enter)="focusCustomInput()"
-        placeholder="e.g. CD" 
-        maxlength="2"
+        [placeholder]="dictionary.language.isHindi() ? 'उदा. कप / FR' : 'e.g. CD'" 
+        maxlength="4"
         autocomplete="off"
         spellcheck="false">
     </div>
@@ -24,8 +26,10 @@
       ⚠️ {{ searchError }}
     </div>
 
-    <div *ngIf="!searchError && !activePair && (!searchPair || searchPair.length !== 2)" class="search-hint">
-      Type a letter pair above (e.g. <code>CD</code>) or pick a letter below to view & edit words
+    <div *ngIf="!searchError && !activePair && (!searchPair || searchPair.length < 2)" class="search-hint">
+      {{ dictionary.language.isHindi() 
+          ? 'ऊपर कोई अक्षर-युग्म टाइप करें (उदा. कप) या नीचे से अक्षर चुनें' 
+          : 'Type a letter pair above (e.g. CD) or pick a letter below to view & edit words' }}
     </div>
 
     <!-- Editor Panel -->
@@ -33,7 +37,10 @@
       <div class="editor-header">
         <div class="pair-nav">
           <button class="nav-btn prev" (click)="prevPair()" title="Previous Pair (Left Arrow)">◀ Prev</button>
-          <h2>Editing Pair: <span class="highlight">{{ activePair }}</span> 
+          <h2>
+            Editing Pair: 
+            <span class="highlight">{{ dictionary.language.toDisplayPair(activePair) }}</span>
+            <span class="speffz-sub" *ngIf="dictionary.language.isHindi()">({{ activePair }})</span>
             <span class="pair-counter" *ngIf="getPairIndexInfo().current">({{ getPairIndexInfo().current }} / {{ getPairIndexInfo().total }})</span>
           </h2>
           <button class="nav-btn next" (click)="nextPair()" title="Next Pair (Right Arrow)">Next ▶</button>
@@ -44,18 +51,25 @@
       <div class="editor-body">
         <!-- Showcase for the single Priority Word (in Green) -->
         <div class="priority-showcase">
-          <div class="priority-label">Priority Word to Imagine:</div>
+          <div class="priority-label">
+            {{ dictionary.language.isHindi() ? 'याद रखने का मुख्य शब्द / चित्र (PRIORITY WORD):' : 'Priority Word to Imagine:' }}
+          </div>
           <div class="priority-value">{{ dictionary.getWord(activePair) }}</div>
+          <div class="priority-meaning" *ngIf="dictionary.getMeaning(activePair)">
+            💡 {{ dictionary.getMeaning(activePair) }}
+          </div>
           <div class="priority-source">
             <span *ngIf="dictionary.hasCustomWord(activePair)" class="badge custom-badge">✓ Custom Word Active</span>
-            <span *ngIf="!dictionary.hasCustomWord(activePair)" class="badge default-badge">★ Default 1st Word from Wiki</span>
+            <span *ngIf="!dictionary.hasCustomWord(activePair)" class="badge default-badge">
+              ★ {{ dictionary.language.isHindi() ? 'डिफ़ॉल्ट हिंदी शब्द' : 'Default 1st Word from Wiki' }}
+            </span>
             <span class="nav-hint">Tip: Use ◀ / ▶ arrow keys or buttons to review pairs</span>
           </div>
         </div>
 
         <!-- Wiki Suggestions Section -->
         <div class="suggestions-section">
-          <label>Wiki Suggestions (Click any word to make it your priority):</label>
+          <label>{{ dictionary.language.isHindi() ? 'शब्द सुझाव (क्लिक करके चुनें):' : 'Wiki Suggestions (Click any word to make it your priority):' }}</label>
           <div class="chips">
             <div class="chip" 
                  *ngFor="let sug of dictionary.getSuggestions(activePair)"
@@ -72,11 +86,11 @@
 
         <!-- Custom Input Section -->
         <div class="custom-section">
-          <label>Or Type Your Own Custom Word</label>
+          <label>{{ dictionary.language.isHindi() ? 'या अपना मनपसंद शब्द लिखें' : 'Or Type Your Own Custom Word' }}</label>
           <div class="input-group">
             <input type="text" [(ngModel)]="customInput" placeholder="Enter custom word..." (keyup.enter)="saveCustomWord()">
             <button class="save-btn" (click)="saveCustomWord()">Save</button>
-            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)" title="Reset to default 1st wiki word">Reset to Default</button>
+            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)" title="Reset to default word">Reset to Default</button>
           </div>
         </div>
       </div>
@@ -85,18 +99,24 @@
     <!-- Letter Picker -->
     <div class="letter-picker">
       <div class="letter-btn" 
-           *ngFor="let letter of letters" 
+           *ngFor="let letter of speffzLetters" 
            [class.active]="selectedLetter === letter"
            (click)="selectLetter(letter)">
-        {{ letter }}
+        {{ dictionary.language.toDisplayLetter(letter) }}
       </div>
     </div>
 
-    <!-- Pair Grid (Excludes impossible AA, BB, CC pairs) -->
+    <!-- Pair Grid (Excludes impossible same-letter pairs) -->
     <div class="pair-grid-container" *ngIf="selectedLetter">
       <div class="grid-header">
-        <h2>Valid pairs starting with {{ selectedLetter }} ({{ getValidSecondLetters(selectedLetter).length }} pairs)</h2>
-        <span class="grid-hint">Impossible same-letter pair {{ selectedLetter }}{{ selectedLetter }} is excluded</span>
+        <h2>
+          {{ dictionary.language.isHindi() ? 'अक्षर से शुरू होने वाले जोड़े: ' : 'Valid pairs starting with ' }}
+          <strong>{{ dictionary.language.toDisplayLetter(selectedLetter) }}</strong>
+          ({{ getValidSecondLetters(selectedLetter).length }} pairs)
+        </h2>
+        <span class="grid-hint">
+          Same-letter pair {{ dictionary.language.toDisplayLetter(selectedLetter) }}{{ dictionary.language.toDisplayLetter(selectedLetter) }} is excluded
+        </span>
       </div>
       <div class="pair-grid">
         <div class="pair-card" 
@@ -104,7 +124,7 @@
              [class.active-card]="activePair === selectedLetter + second"
              [class.has-custom]="dictionary.hasCustomWord(selectedLetter + second)"
              (click)="selectPair(selectedLetter + second, true)">
-          <div class="pair-letters">{{ selectedLetter }}{{ second }}</div>
+          <div class="pair-letters">{{ dictionary.language.toDisplayPair(selectedLetter + second) }}</div>
           <div class="pair-word">{{ dictionary.getWord(selectedLetter + second) }}</div>
         </div>
       </div>

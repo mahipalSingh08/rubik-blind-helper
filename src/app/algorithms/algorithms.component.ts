@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CommutatorService } from '../shared/commutator.service';
+import { LanguageService } from '../shared/language.service';
 
 @Component({
   selector: 'app-algorithms',
@@ -28,7 +29,10 @@ export class AlgorithmsComponent implements OnInit {
   newBaseName: string = '';
   newBaseAlgText: string = '';
 
-  constructor(public commutatorService: CommutatorService) {}
+  constructor(
+    public commutatorService: CommutatorService,
+    public language: LanguageService
+  ) {}
 
   ngOnInit() {
     const savedState = localStorage.getItem('alg-search-state');
@@ -63,6 +67,10 @@ export class AlgorithmsComponent implements OnInit {
 
   get displayPairTitle() {
     if (this.pieceType === 'special') return this.searchPair.replace('_', ' ');
+    const speffz = this.language.toSpeffzPair(this.searchPair);
+    if (this.language.isHindi() && speffz.length === 2) {
+      return `${this.language.toDisplayPair(speffz)} (${speffz})`;
+    }
     return this.searchPair;
   }
 
@@ -86,10 +94,11 @@ export class AlgorithmsComponent implements OnInit {
       return;
     }
 
-    if (this.searchPair.length === 2) {
+    const pair = this.language.toSpeffzPair(this.searchPair);
+    if (pair.length === 2 && /^[A-X]{2}$/.test(pair)) {
       const alg = this.isEdges
-      ? this.commutatorService.getEdgeAlg(this.searchPair)
-      : this.commutatorService.getCornerAlg(this.searchPair);
+      ? this.commutatorService.getEdgeAlg(pair)
+      : this.commutatorService.getCornerAlg(pair);
       
       if (alg) {
         this.currentAlgShort = alg.short;
