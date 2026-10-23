@@ -1,7 +1,25 @@
 <div class="dictionary-container">
   <div class="header">
-    <h1>📖 Word Dictionary</h1>
-    <p class="subtitle">Customize your single letter-pair word associations</p>
+    <div class="header-top">
+      <div class="header-titles">
+        <h1>📖 Word Dictionary</h1>
+        <p class="subtitle">Customize your single letter-pair word associations for 3BLD memo</p>
+      </div>
+      <div class="mode-selector">
+        <button 
+          class="mode-tab" 
+          [class.active]="dictionary.isHindiMode()" 
+          (click)="dictionary.setMode('hindi')">
+          🇮🇳 Hindi Words (A–X)
+        </button>
+        <button 
+          class="mode-tab" 
+          [class.active]="!dictionary.isHindiMode()" 
+          (click)="dictionary.setMode('english')">
+          🇬🇧 English Wiki
+        </button>
+      </div>
+    </div>
   </div>
 
   <div class="main-content">
@@ -45,17 +63,27 @@
         <!-- Showcase for the single Priority Word (in Green) -->
         <div class="priority-showcase">
           <div class="priority-label">Priority Word to Imagine:</div>
-          <div class="priority-value">{{ dictionary.getWord(activePair) }}</div>
+          <div class="priority-value-row">
+            <span class="priority-value">{{ dictionary.getWord(activePair) }}</span>
+            <span class="hindi-devanagari-badge" *ngIf="dictionary.isHindiMode() && dictionary.getHindiEntry(activePair) as h">
+              {{ h.devanagari }}
+            </span>
+          </div>
+          <div class="priority-meaning-row" *ngIf="dictionary.isHindiMode() && dictionary.getHindiEntry(activePair) as h">
+            <span class="meaning-label">Meaning:</span> 
+            <span class="meaning-value">{{ h.meaning }}</span>
+          </div>
           <div class="priority-source">
             <span *ngIf="dictionary.hasCustomWord(activePair)" class="badge custom-badge">✓ Custom Word Active</span>
-            <span *ngIf="!dictionary.hasCustomWord(activePair)" class="badge default-badge">★ Default 1st Word from Wiki</span>
+            <span *ngIf="!dictionary.hasCustomWord(activePair) && dictionary.isHindiMode()" class="badge hindi-badge">🇮🇳 Default Hindi Word</span>
+            <span *ngIf="!dictionary.hasCustomWord(activePair) && !dictionary.isHindiMode()" class="badge default-badge">🇬🇧 Default English Wiki Word</span>
             <span class="nav-hint">Tip: Use ◀ / ▶ arrow keys or buttons to review pairs</span>
           </div>
         </div>
 
-        <!-- Wiki Suggestions Section -->
+        <!-- Wiki / Hindi Suggestions Section -->
         <div class="suggestions-section">
-          <label>Wiki Suggestions (Click any word to make it your priority):</label>
+          <label>{{ dictionary.isHindiMode() ? 'Suggestions & Alternatives' : 'Wiki Suggestions' }} (Click any word to make it your priority):</label>
           <div class="chips">
             <div class="chip" 
                  *ngFor="let sug of dictionary.getSuggestions(activePair)"
@@ -76,7 +104,7 @@
           <div class="input-group">
             <input type="text" [(ngModel)]="customInput" placeholder="Enter custom word..." (keyup.enter)="saveCustomWord()">
             <button class="save-btn" (click)="saveCustomWord()">Save</button>
-            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)" title="Reset to default 1st wiki word">Reset to Default</button>
+            <button class="clear-btn" (click)="clearCustomWord()" *ngIf="dictionary.hasCustomWord(activePair)" title="Reset to default">Reset to Default</button>
           </div>
         </div>
       </div>
@@ -106,9 +134,13 @@
              (click)="selectPair(selectedLetter + second, true)">
           <div class="pair-letters">{{ selectedLetter }}{{ second }}</div>
           <div class="pair-word">{{ dictionary.getWord(selectedLetter + second) }}</div>
+          <div class="pair-devanagari" *ngIf="dictionary.isHindiMode() && dictionary.getHindiEntry(selectedLetter + second) as h">
+            {{ h.devanagari }}
+          </div>
         </div>
       </div>
     </div>
 
   </div>
 </div>
+

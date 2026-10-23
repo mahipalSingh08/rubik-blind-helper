@@ -51,7 +51,12 @@
         <div class="word-item edge-card" *ngFor="let p of memoService.edgePairs">
           <div class="word-header">
             <span class="pair-tag">{{ p }}</span> 
-            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+            <span class="word-name" *ngIf="showWords">
+              {{ getWord(p) }}
+              <span class="word-devanagari" *ngIf="dictionary.isHindiMode() && dictionary.getHindiEntry(p) as h">
+                ({{ h.devanagari }})
+              </span>
+            </span>
           </div>
           <div class="alg-section" *ngIf="showCommutators">
             <div class="alg-container" *ngIf="commutator.getEdgeAlg(p) as alg">
@@ -69,7 +74,12 @@
         <div class="word-item corner-card" *ngFor="let p of memoService.cornerPairs">
           <div class="word-header">
             <span class="pair-tag">{{ p }}</span> 
-            <span class="word-name" *ngIf="showWords">{{ getWord(p) }}</span>
+            <span class="word-name" *ngIf="showWords">
+              {{ getWord(p) }}
+              <span class="word-devanagari" *ngIf="dictionary.isHindiMode() && dictionary.getHindiEntry(p) as h">
+                ({{ h.devanagari }})
+              </span>
+            </span>
           </div>
           <div class="alg-section" *ngIf="showCommutators">
             <div class="alg-container" *ngIf="commutator.getCornerAlg(p) as alg">
