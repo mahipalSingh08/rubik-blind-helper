@@ -9,11 +9,48 @@
   margin-bottom: 30px;
   position: relative;
 }
+.nav-brand-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .nav-brand {
   font-weight: 800;
   font-size: 1.2rem;
   color: var(--accent);
   letter-spacing: 1px;
+}
+.dict-mode-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--text);
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.dict-mode-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--accent2);
+  transform: translateY(-1px);
+}
+.dict-mode-btn.hindi-active {
+  background: linear-gradient(135deg, rgba(255, 138, 61, 0.22), rgba(255, 111, 61, 0.12));
+  border-color: rgba(255, 138, 61, 0.5);
+  color: #ff9e58;
+  box-shadow: 0 0 12px rgba(255, 138, 61, 0.2);
+}
+.mode-icon {
+  font-size: 0.95rem;
+}
+.mode-text {
+  font-size: 0.82rem;
 }
 .nav-links {
   display: flex;
