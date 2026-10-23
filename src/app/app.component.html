@@ -1,5 +1,15 @@
 <nav class="top-nav">
-  <div class="nav-brand">BLD Tools</div>
+  <div class="nav-brand-container">
+    <div class="nav-brand">BLD Tools</div>
+    <button 
+      class="dict-mode-btn" 
+      [class.hindi-active]="dictionary.isHindiMode()"
+      (click)="toggleDictMode()"
+      [title]="dictionary.isHindiMode() ? 'Active: Hindi Words. Click to switch to English Wiki.' : 'Active: English Wiki. Click to switch to Hindi Words.'">
+      <span class="mode-icon">{{ dictionary.isHindiMode() ? '🇮🇳' : '🇬🇧' }}</span>
+      <span class="mode-text">{{ dictionary.isHindiMode() ? 'Hindi Memo' : 'English Wiki' }}</span>
+    </button>
+  </div>
   <button class="mobile-menu-btn" (click)="toggleMobileMenu()" aria-label="Toggle navigation menu">
     <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
     <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>

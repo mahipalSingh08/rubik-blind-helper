@@ -346,7 +346,7 @@ export class PracticeComponent implements OnInit, OnDestroy {
   }
 
   getWord(pair: string): string {
-    return this.dictionary.getWord(pair);
+    return this.dictionary.getDisplayWord(pair);
   }
 
   toggleWords() {
