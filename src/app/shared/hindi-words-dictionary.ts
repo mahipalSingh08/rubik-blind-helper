@@ -383,7 +383,7 @@ export const HINDI_WORDS_DICTIONARY: Record<string, HindiPairWord> = {
   "PP": { word: "papita", devanagari: "पपीता", meaning: "papaya" },
   "PQ": { word: "pakwaan", devanagari: "पकवान", meaning: "feast dishes" },
   "PR": { word: "parda", devanagari: "परदा", meaning: "curtain" },
-  "PS": { word: "pasina", devanagari: "पसीना", meaning: "sweat" },
+  "PS": { word: "paisa", devanagari: "पैसा", meaning: "money / coin" },
   "PT": { word: "patang", devanagari: "पतंग", meaning: "kite" },
   "PU": { word: "puja", devanagari: "पूजा", meaning: "worship / prayer" },
   "PV": { word: "pavan", devanagari: "पवन", meaning: "wind" },
