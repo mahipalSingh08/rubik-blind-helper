@@ -1,48 +1,185 @@
-<div class="memo-container">
-  <h1>🧠 Multi-Blind Generator</h1>
-  <p class="subtitle">Generate letter pairs for multiple cubes at once</p>
-
-  <div class="controls">
-    <div class="field">
-      <label for="cubeCount">Cubes</label>
-      <input type="number" id="cubeCount" min="2" max="20" [(ngModel)]="memoService.multiCubeCount">
-    </div>
-    <div class="field">
-      <label for="multiPairsEach">Pairs each</label>
-      <input type="number" id="multiPairsEach" min="1" max="11" [(ngModel)]="memoService.multiPairsEach">
-    </div>
-    <div class="field">
-      <label for="cornerBuffer">Corner buffer</label>
-      <input type="text" id="cornerBuffer" maxlength="1" [(ngModel)]="memoService.cornerBuffer">
-    </div>
-    <div class="field">
-      <label for="edgeBuffer">Edge buffer</label>
-      <input type="text" id="edgeBuffer" maxlength="1" [(ngModel)]="memoService.edgeBuffer">
-    </div>
-    <button id="generateBtn" (click)="generate()">🔀 Generate Multi-Set</button>
+<div class="multi-blind-container">
+  <div class="header-section">
+    <h1>🧠 Multi-Blind Scrambler</h1>
+    <p class="subtitle">Generate standard 20-move 3x3 scrambles with 2D matching cube photo & hidden solutions</p>
   </div>
 
-  <div class="multi-cubes-list">
-    <div class="cube-card" *ngFor="let cube of memoService.multiCubes; let i = index">
-      <h2>Cube {{ i + 1 }}</h2>
-      
-      <div class="groups">
-        <div class="group edges">
-          <h3><span class="dot"></span>Edges</h3>
-          <div class="pairs">
-            <div class="pair" *ngFor="let p of cube.edgePairs">{{ p }}</div>
+  <!-- Top Controls: Only Decide How Many Cubes to Scramble (Max 100) -->
+  <div class="controls-panel">
+    <div class="cube-count-control">
+      <label for="cubeCountInput">Number of Cubes (1 - 100):</label>
+      <div class="input-with-presets">
+        <input 
+          type="number" 
+          id="cubeCountInput" 
+          min="1" 
+          max="100" 
+          [(ngModel)]="cubeCount" 
+          (change)="onCubeCountChange()"
+          aria-label="Number of cubes"
+        />
+        <div class="preset-chips">
+          <button type="button" class="chip" [class.active]="cubeCount === 2" (click)="setCubeCount(2)">2</button>
+          <button type="button" class="chip" [class.active]="cubeCount === 3" (click)="setCubeCount(3)">3</button>
+          <button type="button" class="chip" [class.active]="cubeCount === 5" (click)="setCubeCount(5)">5</button>
+          <button type="button" class="chip" [class.active]="cubeCount === 10" (click)="setCubeCount(10)">10</button>
+          <button type="button" class="chip" [class.active]="cubeCount === 20" (click)="setCubeCount(20)">20</button>
+          <button type="button" class="chip" [class.active]="cubeCount === 50" (click)="setCubeCount(50)">50</button>
+          <button type="button" class="chip" [class.active]="cubeCount === 100" (click)="setCubeCount(100)">100</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button id="generateBtn" class="primary-btn" (click)="generate()" title="Generate new scrambles for all cubes">
+        🔀 Generate Scrambles
+      </button>
+      <button 
+        type="button" 
+        class="secondary-btn copy-all-btn" 
+        [class.copied]="copiedAll"
+        (click)="copyAllScrambles()" 
+        title="Copy all scrambles to clipboard">
+        <span *ngIf="!copiedAll">📋 Copy All</span>
+        <span *ngIf="copiedAll">✓ All Copied!</span>
+      </button>
+      <button type="button" class="secondary-btn jump-btn" (click)="scrollToSolutions()" title="Jump down to solutions">
+        ⬇️ Solutions
+      </button>
+    </div>
+  </div>
+
+  <!-- Cubes List: Left Scramble, Right Scramble Photo to Match -->
+  <div class="cubes-scrambles-list">
+    <div class="cube-scramble-card" *ngFor="let cube of cubes; trackBy: trackByCubeId">
+      <div class="card-top-bar">
+        <div class="cube-index-badge">
+          <span class="cube-badge-number">#{{ cube.id }}</span>
+          <span class="cube-badge-label">Cube {{ cube.id }}</span>
+        </div>
+        <button 
+          type="button" 
+          class="card-copy-btn" 
+          [class.copied]="cube.copied"
+          (click)="copyScramble(cube)" 
+          title="Copy this scramble">
+          <span *ngIf="!cube.copied">📋 Copy Scramble</span>
+          <span *ngIf="cube.copied">✓ Copied!</span>
+        </button>
+      </div>
+
+      <div class="card-body-columns">
+        <!-- Left Side: Scramble Text -->
+        <div class="scramble-column">
+          <div class="scramble-box">
+            <div class="scramble-line" *ngFor="let line of cube.scrambleLines">
+              {{ line }}
+            </div>
           </div>
         </div>
-        
-        <div class="group corners">
-          <h3><span class="dot"></span>Corners</h3>
-          <div class="pairs">
-            <div class="pair" *ngFor="let p of cube.cornerPairs">{{ p }}</div>
+
+        <!-- Right Side: Scramble Photo (2D Unfolded Cube Net) -->
+        <div class="cube-photo-column">
+          <div class="unfolded-cube-wrapper">
+            <div class="unfolded-cube">
+              <!-- Top Row: U Face -->
+              <div class="face-spacer"></div>
+              <div class="cube-face" title="U Face (Up / Top)">
+                <div class="sticker" *ngFor="let color of cube.faces['U']" [style.background-color]="color"></div>
+              </div>
+              <div class="face-spacer"></div>
+              <div class="face-spacer"></div>
+
+              <!-- Middle Row: L, F, R, B Faces -->
+              <div class="cube-face" title="L Face (Left)">
+                <div class="sticker" *ngFor="let color of cube.faces['L']" [style.background-color]="color"></div>
+              </div>
+              <div class="cube-face" title="F Face (Front)">
+                <div class="sticker" *ngFor="let color of cube.faces['F']" [style.background-color]="color"></div>
+              </div>
+              <div class="cube-face" title="R Face (Right)">
+                <div class="sticker" *ngFor="let color of cube.faces['R']" [style.background-color]="color"></div>
+              </div>
+              <div class="cube-face" title="B Face (Back)">
+                <div class="sticker" *ngFor="let color of cube.faces['B']" [style.background-color]="color"></div>
+              </div>
+
+              <!-- Bottom Row: D Face -->
+              <div class="face-spacer"></div>
+              <div class="cube-face" title="D Face (Down / Bottom)">
+                <div class="sticker" *ngFor="let color of cube.faces['D']" [style.background-color]="color"></div>
+              </div>
+              <div class="face-spacer"></div>
+              <div class="face-spacer"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <footer>Buffers are shared with the single-blind Memo Generator.</footer>
+  <!-- Bottom Section: Solutions (Hidden by Default) -->
+  <div class="solutions-section" id="solutions-section">
+    <div class="solutions-banner">
+      <div class="solutions-title-group">
+        <h2>🎯 Multi-Blind Solutions</h2>
+        <p class="solutions-count-note">
+          Exact blindfolded memo for {{ cubes.length }} cube{{ cubes.length > 1 ? 's' : '' }} (hidden by default)
+        </p>
+      </div>
+
+      <button 
+        type="button" 
+        class="toggle-solutions-btn" 
+        [class.active]="showSolutions"
+        (click)="toggleSolutions()">
+        <span *ngIf="!showSolutions">👁️ Reveal Solutions</span>
+        <span *ngIf="showSolutions">🙈 Hide Solutions</span>
+      </button>
+    </div>
+
+    <!-- Solution Cards (Styled identical to Screenshot 1) -->
+    <div class="solutions-grid" *ngIf="showSolutions">
+      <div class="solution-cube-card" *ngFor="let cube of cubes; trackBy: trackByCubeId">
+        <div class="solution-card-header">
+          <h3>Cube {{ cube.id }}</h3>
+          <span class="solution-parity-tag" *ngIf="cube.parity">⚠️ Parity</span>
+        </div>
+
+        <div class="solution-groups">
+          <!-- Edges Group -->
+          <div class="solution-group edges">
+            <div class="group-header">
+              <span class="group-dot dot-edges"></span>
+              <span class="group-label">Edges</span>
+            </div>
+            <div class="pairs-row">
+              <div class="pair-pill pair-edge" *ngFor="let p of cube.edgePairs">
+                {{ p }}
+              </div>
+              <span class="no-memo" *ngIf="cube.edgePairs.length === 0">Solved</span>
+            </div>
+          </div>
+
+          <!-- Corners Group -->
+          <div class="solution-group corners">
+            <div class="group-header">
+              <span class="group-dot dot-corners"></span>
+              <span class="group-label">Corners</span>
+            </div>
+            <div class="pairs-row">
+              <div class="pair-pill pair-corner" *ngFor="let p of cube.cornerPairs">
+                {{ p }}
+              </div>
+              <span class="no-memo" *ngIf="cube.cornerPairs.length === 0">Solved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mb-footer">
+    Multi-Blind Practice • 20-move standard scrambles with exact trace solutions
+  </footer>
 </div>
