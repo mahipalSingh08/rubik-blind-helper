@@ -1,14 +1,6 @@
 <nav class="top-nav">
   <div class="nav-brand-container">
     <div class="nav-brand">BLD Tools</div>
-    <button 
-      class="dict-mode-btn" 
-      [class.hindi-active]="dictionary.isHindiMode()"
-      (click)="toggleDictMode()"
-      [title]="dictionary.isHindiMode() ? 'Active: Hindi Words. Click to switch to English Wiki.' : 'Active: English Wiki. Click to switch to Hindi Words.'">
-      <span class="mode-icon">{{ dictionary.isHindiMode() ? '🇮🇳' : '🇬🇧' }}</span>
-      <span class="mode-text">{{ dictionary.isHindiMode() ? 'Hindi Memo' : 'English Wiki' }}</span>
-    </button>
   </div>
   <button class="mobile-menu-btn" (click)="toggleMobileMenu()" aria-label="Toggle navigation menu">
     <span class="hamburger-line" [class.open]="isMobileMenuOpen"></span>
@@ -26,6 +18,70 @@
     <a routerLink="/learn" routerLinkActive="active" (click)="closeMobileMenu()">Learn</a>
     <a routerLink="/multi-blind" routerLinkActive="active" (click)="closeMobileMenu()">Multi-Blind</a>
     <a routerLink="/memo-helper" routerLinkActive="active" (click)="closeMobileMenu()">Memo Helper</a>
+
+    <!-- Language Toggle at the very end after Memo Helper -->
+    <div 
+      class="lang-switch-container" 
+      role="button"
+      tabindex="0"
+      (click)="toggleDictMode()"
+      (keydown.enter)="toggleDictMode()"
+      (keydown.space)="$event.preventDefault(); toggleDictMode()"
+      [title]="dictionary.isHindiMode() ? 'Current: Hindi Words. Click to switch to English.' : 'Current: English Wiki. Click to switch to Hindi.'">
+      
+      <span 
+        class="lang-label" 
+        [class.active]="!dictionary.isHindiMode()" 
+        (click)="$event.stopPropagation(); setDictMode('english')">
+        EN
+      </span>
+
+      <div class="switch-track" [class.hindi]="dictionary.isHindiMode()">
+        <div class="switch-knob" [class.hindi]="dictionary.isHindiMode()">
+          <!-- UK Flag for English -->
+          <svg class="flag-icon flag-uk" [class.show]="!dictionary.isHindiMode()" viewBox="0 0 32 32" width="20" height="20" aria-hidden="true">
+            <defs>
+              <clipPath id="uk-flag-clip">
+                <circle cx="16" cy="16" r="15"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#uk-flag-clip)">
+              <rect width="32" height="32" fill="#012169"/>
+              <path d="M0,0 L32,32 M32,0 L0,32" stroke="#FFFFFF" stroke-width="5.5"/>
+              <path d="M0,0 L32,32 M32,0 L0,32" stroke="#C8102E" stroke-width="2.5"/>
+              <path d="M16,0 V32 M0,16 H32" stroke="#FFFFFF" stroke-width="9"/>
+              <path d="M16,0 V32 M0,16 H32" stroke="#C8102E" stroke-width="5.5"/>
+            </g>
+            <circle cx="16" cy="16" r="15" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+          </svg>
+
+          <!-- India Flag for Hindi -->
+          <svg class="flag-icon flag-in" [class.show]="dictionary.isHindiMode()" viewBox="0 0 32 32" width="20" height="20" aria-hidden="true">
+            <defs>
+              <clipPath id="in-flag-clip">
+                <circle cx="16" cy="16" r="15"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#in-flag-clip)">
+              <rect width="32" height="10.67" fill="#FF9933"/>
+              <rect y="10.67" width="32" height="10.67" fill="#FFFFFF"/>
+              <rect y="21.33" width="32" height="11" fill="#138808"/>
+              <circle cx="16" cy="16" r="3.8" fill="none" stroke="#000080" stroke-width="1"/>
+              <circle cx="16" cy="16" r="1.1" fill="#000080"/>
+              <path d="M16,12.5 V19.5 M12.5,16 H19.5 M13.5,13.5 L18.5,18.5 M13.5,18.5 L18.5,13.5" stroke="#000080" stroke-width="0.75"/>
+            </g>
+            <circle cx="16" cy="16" r="15" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+          </svg>
+        </div>
+      </div>
+
+      <span 
+        class="lang-label" 
+        [class.active]="dictionary.isHindiMode()" 
+        (click)="$event.stopPropagation(); setDictMode('hindi')">
+        HI
+      </span>
+    </div>
   </div>
 </nav>
 

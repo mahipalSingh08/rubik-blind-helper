@@ -27,5 +27,8 @@ export class AppComponent {
   toggleDictMode() {
     this.dictionary.toggleMode();
   }
-}
 
+  setDictMode(mode: 'hindi' | 'english') {
+    this.dictionary.setMode(mode);
+  }
+}
